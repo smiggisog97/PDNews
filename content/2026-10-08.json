@@ -1,0 +1,873 @@
+{
+  "date": "2026-10-08",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1Z2zejX-stPstEpxU6RH2kWIbIz_tseL89L0nqiKnhDI/edit",
+  "highlights": [
+    {
+      "headline": "ChatGPT gets generative UI.",
+      "summary": "[OpenAI](https://openai.com) is rolling [GPT-6 with \"Intelligent UI\"](https://openai.com/index/gpt-6-for-everyone/) to all users, producing interactive diagrams, forms, graphs and calculators inside a chat.",
+      "ref": "gpt6-intelligent-ui"
+    },
+    {
+      "headline": "Cheaper small models.",
+      "summary": "[Anthropic](https://www.anthropic.com) shipped [Claude Haiku 5.5](https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5) at $0.10 input and $0.50 output per million tokens, built for routing and sub-agents.",
+      "ref": "claude-haiku-55"
+    },
+    {
+      "headline": "Gemini 4 Argon tops Hacker News.",
+      "summary": "[Google's launch post](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/) drew nearly 1,700 points, with debate over benchmarks and transparency.",
+      "ref": "gemini-4-argon"
+    },
+    {
+      "headline": "Claude moves into Docs, Sheets and Slides.",
+      "summary": "[Anthropic's Claude for Google Workspace](https://www.anthropic.com/news) is in public beta for paid plans.",
+      "ref": "claude-in-workspace"
+    },
+    {
+      "headline": "Agent design is shifting to documentation over memory.",
+      "summary": "A [widely shared essay](https://liao.gg/blog/agents-dont-need-memory) argues well-structured docs beat persistent memory for agents."
+    }
+  ],
+  "section_notes": {
+    "GitHub & Open Source": "Star counts come from third-party digests and are unverified.",
+    "Learning Corner": "Video: No verified video link surfaced today. Skip rather than guess."
+  },
+  "entries": [
+    {
+      "id": "gpt6-intelligent-ui",
+      "section": "AI Industry News",
+      "headline": "GPT-6 and Intelligent UI roll out to ChatGPT",
+      "summary": "Plus, Pro, Business and Enterprise users get GPT-6 Sol (from Oct 7). Free and Go users get GPT-6 Luna (from Oct 8). Intelligent UI generates buttons, forms, graphs and calculators in the conversation, and OpenAI reports web-search answers about 44% faster than GPT-5.6 Instant ([summary](https://note.com/kawara_works/n/n597fcab0c803)).",
+      "why_it_matters": "The chat surface is becoming a UI renderer. Designers will be designing components an LLM assembles at runtime, not fixed screens.",
+      "links": [
+        {
+          "label": "GPT-6 and Intelligent UI roll out to ChatGPT",
+          "url": "https://openai.com/index/gpt-6-for-everyone/"
+        },
+        {
+          "label": "summary",
+          "url": "https://note.com/kawara_works/n/n597fcab0c803"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "claude-haiku-55",
+      "section": "AI Industry News",
+      "headline": "Claude Haiku 5.5",
+      "summary": "1M-token context, up to 128K output, adaptive reasoning via an effort setting, and browser interaction support. Prices rise to $0.50 input and $2.50 output above 100K tokens. The new tokenizer counts about 30% more tokens than Haiku 4.5 for the same text.",
+      "why_it_matters": "Cheap, fast models make agent fan-out affordable. Budget for the tokenizer change before migrating.",
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5"
+        }
+      ],
+      "image_url": "https://platform.claude.com/web-api/og/docs/en/models/haiku-5-5/whats-new-haiku-5-5?design-rev=5",
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "gemini-4-argon",
+      "section": "AI Industry News",
+      "headline": "Gemini 4 Argon",
+      "summary": "[Google](https://deepmind.google) launched the model and the [Hacker News thread](https://news.ycombinator.com/item?id=49913571) hit 1,697 points. Commenters split between enthusiasm and doubts about benchmarking.",
+      "why_it_matters": "Test it on your own tasks before trusting leaderboard claims.",
+      "links": [
+        {
+          "label": "Gemini 4 Argon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "label": "Google",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "Hacker News thread",
+          "url": "https://news.ycombinator.com/item?id=49913571"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "mistral-large-4",
+      "section": "AI Industry News",
+      "headline": "Mistral Large 4 preview",
+      "summary": "[Mistral](https://mistral.ai) opened a public preview via its API, with open weights promised by end of October. It has 1.05T total parameters (49B active), a 1M-token context window and 160+ languages ([AI News](https://www.artificialintelligence-news.com/news/mistral-ai-launches-large-4-preview-ahead-open-weight-release/)).",
+      "why_it_matters": "A large open-weight model from a European lab gives teams a self-hostable option.",
+      "links": [
+        {
+          "label": "Mistral Large 4 preview",
+          "url": "https://mistral.ai/news/mistral-large-4/"
+        },
+        {
+          "label": "Mistral",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "AI News",
+          "url": "https://www.artificialintelligence-news.com/news/mistral-ai-launches-large-4-preview-ahead-open-weight-release/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "openai-math-results",
+      "section": "AI Industry News",
+      "headline": "OpenAI shares math results from an unreleased model",
+      "summary": "The [repository](https://github.com/openai/math) holds 722 manuscripts selected from about 4,000 attempts. OpenAI states unformalized results may contain errors.",
+      "why_it_matters": "A signal of where reasoning capability is heading. Treat the claims as unverified until reviewed.",
+      "links": [
+        {
+          "label": "OpenAI shares math results from an unreleased model",
+          "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+        },
+        {
+          "label": "repository",
+          "url": "https://github.com/openai/math"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "chatgpt-image-ads-watermarks",
+      "section": "AI Industry News",
+      "headline": "ChatGPT image ads and text watermarks",
+      "summary": "OpenAI will test labeled image ads in the US later this month, and its [textGrain watermark](https://openai.com/index/eu-text-provenance/) targets EU AI Act requirements. Detection reaches about 95% at 400 tokens.",
+      "why_it_matters": "Ad surfaces inside assistants are a new design problem: labeling, separation from answers and trust.",
+      "links": [
+        {
+          "label": "ChatGPT image ads and text watermarks",
+          "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/"
+        },
+        {
+          "label": "textGrain watermark",
+          "url": "https://openai.com/index/eu-text-provenance/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "synthid-detector",
+      "section": "AI Industry News",
+      "headline": "SynthID Detector goes public",
+      "summary": "Google released the detector globally for English speakers. It checks [images, video and audio](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/) for Google, [NVIDIA](https://www.nvidia.com), OpenAI and Kakao watermarks. A missing watermark does not prove human origin.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "SynthID Detector goes public",
+          "url": "https://synthid.com/"
+        },
+        {
+          "label": "images, video and audio",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "project-glasswing",
+      "section": "AI Industry News",
+      "headline": "Project Glasswing expands",
+      "summary": "About 150 new organizations in 15+ countries join. Partners reported at least 129,000 verified vulnerabilities from April to July.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Project Glasswing expands",
+          "url": "https://anthropic.com/news/expanding-project-glasswing"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "other-items-oct-8",
+      "section": "AI Industry News",
+      "headline": "Other items",
+      "summary": "[Lambda is raising up to $4B](https://www.wsj.com/tech/ai/ai-neocloud-lambda-is-raising-4-billion-in-final-round-before-planned-ipo-568182f9) at a $14.5B pre-money valuation, with a $35B Anthropic commitment driving its backlog. [Elon Musk teased a high-speed Grok 4.8](https://x.com/elonmusk/status/2107894231922876510) from [xAI](https://x.ai) for simple requests, with no release date.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Lambda is raising up to $4B",
+          "url": "https://www.wsj.com/tech/ai/ai-neocloud-lambda-is-raising-4-billion-in-final-round-before-planned-ipo-568182f9"
+        },
+        {
+          "label": "Elon Musk teased a high-speed Grok 4.8",
+          "url": "https://x.com/elonmusk/status/2107894231922876510"
+        },
+        {
+          "label": "xAI",
+          "url": "https://x.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "intelligent-ui-design",
+      "section": "Product Design & UX",
+      "headline": "Intelligent UI in ChatGPT",
+      "summary": "Study how [ChatGPT](https://chatgpt.com) decides when to show a control instead of text. The design questions are when to render UI, how to keep it consistent, and how users recover from a wrong choice.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Intelligent UI in ChatGPT",
+          "url": "https://openai.com/index/gpt-6-for-everyone/"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "figma-config-2026-shipping",
+      "section": "Product Design & UX",
+      "headline": "Figma Config 2026 features, now shipping",
+      "summary": "[Figma](https://www.figma.com) Motion builds timeline animations on the canvas and exports CSS, JSON, React, MP4, WebM, SVG or GIF. Generative plugins create plugins from a description. Shaders generate effects from a prompt. The Figma agent reads canvas context and supports reusable Skills ([recap](https://dev.classmethod.jp/en/articles/figma-config-2026-recap/)). I found no new Figma announcements in the past 24 hours, so this is the most recent confirmed update.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Config 2026 features, now shipping",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "recap",
+          "url": "https://dev.classmethod.jp/en/articles/figma-config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "claude-in-workspace",
+      "section": "Product Design & UX",
+      "headline": "Claude in Google Workspace",
+      "summary": "The [sidebar](https://www.anthropic.com/news) in [Google Docs, Sheets and Slides](https://workspace.google.com) includes an ask-before-editing mode that previews changes. That preview-then-apply pattern is worth copying in any AI editing flow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude in Google Workspace",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "sidebar",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "label": "Google Docs, Sheets and Slides",
+          "url": "https://workspace.google.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "corespeed",
+      "section": "New AI Tools",
+      "headline": "CoreSpeed",
+      "summary": "One MCP for apps, memory and tools your agents need.",
+      "why_it_matters": null,
+      "audience": "builders wiring agents to many services.",
+      "links": [
+        {
+          "label": "CoreSpeed",
+          "url": "https://www.producthunt.com/products/corespeed"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "fastrouter-ai",
+      "section": "New AI Tools",
+      "headline": "FastRouter.ai",
+      "summary": "Routes requests to the right LLM for cost, latency and quality.",
+      "why_it_matters": null,
+      "audience": "teams controlling model spend.",
+      "links": [
+        {
+          "label": "FastRouter.ai",
+          "url": "https://www.producthunt.com/products/fastrouter-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "yedric-ai",
+      "section": "New AI Tools",
+      "headline": "Yedric.ai",
+      "summary": "Lets users control a SaaS product with natural language.",
+      "why_it_matters": null,
+      "audience": "designers exploring command-driven UX.",
+      "links": [
+        {
+          "label": "Yedric.ai",
+          "url": "https://www.producthunt.com/products/yedric-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "directus",
+      "section": "New AI Tools",
+      "headline": "Directus",
+      "summary": "No-code app and dynamic API for any SQL database.",
+      "why_it_matters": null,
+      "audience": "prototyping a real backend fast.",
+      "links": [
+        {
+          "label": "Directus",
+          "url": "https://www.producthunt.com/products/directus"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "opengeni",
+      "section": "New AI Tools",
+      "headline": "Opengeni",
+      "summary": "Infrastructure to ship AI agents in minutes.",
+      "why_it_matters": null,
+      "audience": "developers and technical designers.",
+      "links": [
+        {
+          "label": "Opengeni",
+          "url": "https://www.producthunt.com/products/opengeni"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "flux-3-image",
+      "section": "New AI Tools",
+      "headline": "FLUX 3 Image",
+      "summary": "New image model from [Black Forest Labs](https://bfl.ai), heavily tested by developers on [Hacker News](https://news.ycombinator.com/item?id=49925974). Copyright and training-data concerns remain.",
+      "why_it_matters": null,
+      "audience": "creative and visual exploration.",
+      "links": [
+        {
+          "label": "FLUX 3 Image",
+          "url": "https://bfl.ai/models/flux-3-image"
+        },
+        {
+          "label": "Black Forest Labs",
+          "url": "https://bfl.ai"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49925974"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "pi-pod",
+      "section": "New AI Tools",
+      "headline": "Pi pod",
+      "summary": "Runs the pi coding agent in sandboxes on your own server.",
+      "why_it_matters": null,
+      "audience": "security-minded teams.",
+      "links": [
+        {
+          "label": "Pi pod",
+          "url": "https://pipod.dev/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "trend-generative-ui",
+      "section": "Trends to Watch",
+      "headline": "Generative UI in assistants",
+      "summary": "[Intelligent UI](https://openai.com/index/gpt-6-for-everyone/) and Figma's [code layers](https://dev.classmethod.jp/en/articles/figma-config-2026-recap/) point the same way: interfaces assembled on demand.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to design component systems and rules, not just screens."
+      },
+      "links": [
+        {
+          "label": "Intelligent UI",
+          "url": "https://openai.com/index/gpt-6-for-everyone/"
+        },
+        {
+          "label": "code layers",
+          "url": "https://dev.classmethod.jp/en/articles/figma-config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "trend-model-routing",
+      "section": "Trends to Watch",
+      "headline": "Model routing",
+      "summary": "[Fuxi](https://github.com/fuxicodex/Fuxi), [FastRouter.ai](https://www.producthunt.com/products/fastrouter-ai) and Musk's Grok routing tease all send easy requests to cheap models. Expect product behavior to vary by route.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi"
+        },
+        {
+          "label": "FastRouter.ai",
+          "url": "https://www.producthunt.com/products/fastrouter-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "trend-docs-over-memory",
+      "section": "Trends to Watch",
+      "headline": "Docs over memory for agents",
+      "summary": "The [discussion](https://news.ycombinator.com/item?id=49945933) favors clear, structured documentation. Writing good docs and design guidelines is now an agent-readiness skill.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "discussion",
+          "url": "https://news.ycombinator.com/item?id=49945933"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "trend-token-efficiency",
+      "section": "Trends to Watch",
+      "headline": "Token efficiency",
+      "summary": "[rtk](https://github.com/rtk-ai/rtk) and [headroom](https://github.com/headroomlabs-ai/headroom) compress context before it hits the model. Cost control is becoming a first-class feature.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "rtk",
+          "url": "https://github.com/rtk-ai/rtk"
+        },
+        {
+          "label": "headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "insp-inline-interactive",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT's inline interactive elements",
+      "summary": "Controls appear inside the answer, so users act without leaving the flow.",
+      "why_it_matters": "the interface matches the content instead of forcing a fixed layout.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT's inline interactive elements",
+          "url": "https://openai.com/index/gpt-6-for-everyone/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "insp-ask-before-editing",
+      "section": "Product Design Inspiration",
+      "headline": "Claude's ask-before-editing mode in Workspace",
+      "summary": "Changes are previewed before they apply.",
+      "why_it_matters": "it keeps the user in control while still letting the AI do the heavy lifting.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Claude's ask-before-editing mode in Workspace",
+          "url": "https://www.anthropic.com/news"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "insp-labeled-ads",
+      "section": "Product Design Inspiration",
+      "headline": "Labeled, separated ads in ChatGPT",
+      "summary": "OpenAI says the ads are labeled and separate from answers. Whether it works is unproven, but the principle of visibly separating paid content from answers is the right starting point to study.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Labeled, separated ads in ChatGPT",
+          "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "openbot",
+      "section": "GitHub & Open Source",
+      "headline": "CopilotKit/OpenBot",
+      "summary": "Sandboxed workstation per agent, with browser, file system and audit logs. Gaining attention for safe agent execution (6,043 stars).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CopilotKit/OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "treg",
+      "section": "GitHub & Open Source",
+      "headline": "superdesigndev/treg",
+      "summary": "Registry and proxy for agent tool API keys and secrets (4,153 stars).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "superdesigndev/treg",
+          "url": "https://github.com/superdesigndev/treg"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "zvec-grep",
+      "section": "GitHub & Open Source",
+      "headline": "zvec-ai/zvec-grep",
+      "summary": "Local code search combining BM25 and vector search for humans and agents (3,920 stars).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "zvec-ai/zvec-grep",
+          "url": "https://github.com/zvec-ai/zvec-grep"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "rtk",
+      "section": "GitHub & Open Source",
+      "headline": "rtk-ai/rtk",
+      "summary": "Rust CLI proxy claiming 60 to 90% token savings on dev commands.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "rtk-ai/rtk",
+          "url": "https://github.com/rtk-ai/rtk"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "understand-anything",
+      "section": "GitHub & Open Source",
+      "headline": "Egonex-AI/Understand-Anything",
+      "summary": "Turns a codebase into a queryable knowledge graph.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Egonex-AI/Understand-Anything",
+          "url": "https://github.com/Egonex-AI/Understand-Anything"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "nanobot",
+      "section": "GitHub & Open Source",
+      "headline": "HKUDS/nanobot",
+      "summary": "Lightweight self-hosted agent framework with web UI, memory and MCP support.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "HKUDS/nanobot",
+          "url": "https://github.com/HKUDS/nanobot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "openai-math-repo",
+      "section": "GitHub & Open Source",
+      "headline": "openai/math",
+      "summary": "The math manuscripts repository released Oct 7.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "openai/math",
+          "url": "https://github.com/openai/math"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "buzz-agents-docs",
+      "section": "Social Buzz",
+      "headline": "Agents don't need memory, they need documentation",
+      "kicker": "348 points",
+      "summary": "Embraced as a shift in agent design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents don't need memory, they need documentation",
+          "url": "https://news.ycombinator.com/item?id=49945933"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "buzz-gemini-4",
+      "section": "Social Buzz",
+      "headline": "Gemini 4 Argon",
+      "kicker": "1,697 points",
+      "summary": "Capability excitement against transparency doubts.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gemini 4 Argon",
+          "url": "https://news.ycombinator.com/item?id=49913571"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "buzz-pi-pod",
+      "section": "Social Buzz",
+      "headline": "Pi pod",
+      "kicker": "113 points",
+      "summary": "Self-hosted sandboxed agents appeal to security-minded developers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Pi pod",
+          "url": "https://news.ycombinator.com/item?id=49937304"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "buzz-show-hn-photo-search",
+      "section": "Social Buzz",
+      "headline": "Show HN: AI search for every photo and video frame on macOS",
+      "kicker": "137 points",
+      "summary": "Local, privacy-focused media search, praised by creatives ([repo](https://github.com/allenv0/SCM)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Show HN: AI search for every photo and video frame on macOS",
+          "url": "https://news.ycombinator.com/item?id=49952111"
+        },
+        {
+          "label": "repo",
+          "url": "https://github.com/allenv0/SCM"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "learn-agents-docs",
+      "section": "Learning Corner",
+      "headline": "Agents don't need memory, they need documentation",
+      "kicker": "Article",
+      "summary": "Changes how you structure context for agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents don't need memory, they need documentation",
+          "url": "https://liao.gg/blog/agents-dont-need-memory"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "learn-anthropics-skills",
+      "section": "Learning Corner",
+      "headline": "anthropics/skills",
+      "kicker": "GitHub project",
+      "summary": "A hub for the Agent Skills standard, useful for packaging repeatable workflows.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "anthropics/skills",
+          "url": "https://github.com/anthropics/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "learn-config-2026",
+      "section": "Learning Corner",
+      "headline": "What's new from Config 2026",
+      "kicker": "Design resource",
+      "summary": "The official list of Figma's new motion, plugin and agent features.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What's new from Config 2026",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "learn-route-by-difficulty",
+      "section": "Learning Corner",
+      "headline": "Route by difficulty",
+      "kicker": "AI workflow",
+      "summary": "As in [Fuxi](https://github.com/fuxicodex/Fuxi): send simple tasks to a cheap model like [Haiku 5.5](https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5) and reserve larger models for hard ones.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Route by difficulty",
+          "url": "https://github.com/fuxicodex/Fuxi"
+        },
+        {
+          "label": "Haiku 5.5",
+          "url": "https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5"
+        }
+      ],
+      "image_url": "https://platform.claude.com/web-api/og/docs/en/models/haiku-5-5/whats-new-haiku-5-5?design-rev=5",
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "opp-generative-ui-systems",
+      "section": "Opportunities",
+      "headline": "Design generative UI systems",
+      "summary": "Define the component library and rules an assistant draws from.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "opp-ad-provenance-ux",
+      "section": "Opportunities",
+      "headline": "AI ad and provenance UX",
+      "summary": "Labeling, disclosure and watermark indicators are new, unsolved design work.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "opp-agent-documentation",
+      "section": "Opportunities",
+      "headline": "Agent documentation design",
+      "summary": "Structure design systems so agents can use them.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "opp-preview-before-apply",
+      "section": "Opportunities",
+      "headline": "Preview-before-apply patterns",
+      "summary": "Productize safe AI editing flows for teams adopting Workspace-style assistants.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    },
+    {
+      "id": "exp-stress-test-intelligent-ui",
+      "section": "Today's Experiment",
+      "headline": "Stress-test Intelligent UI",
+      "kicker": "25 minutes",
+      "summary": "In [ChatGPT](https://chatgpt.com), ask the same three questions (a comparison, a calculation, a plan) and note when it renders controls versus plain text. Screenshot the three results and write down one rule you would give the system for when to show UI. Use it as a seed for your own generative-UI guidelines.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-08"
+    }
+  ],
+  "dont_miss": [
+    "Try [Intelligent UI in ChatGPT](https://openai.com/index/gpt-6-for-everyone/) and run today's experiment.",
+    "Read [Agents don't need memory, they need documentation](https://liao.gg/blog/agents-dont-need-memory).",
+    "Check [Haiku 5.5's changes](https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5) if you run anything on Haiku 4.5."
+  ],
+  "footnote": "Sources: Dev.to AI Daily Digest (Oct 7), a Japanese AI news roundup (Oct 7 to 8), agents-radar Hacker News and GitHub digests, Product Hunt, Figma Help Center, and linked primary pages. Some primary pages could not be fetched, so details on Gemini 4 Argon, FLUX 3 Image and GPT-6 come from secondary summaries."
+}
