@@ -1,0 +1,25 @@
+---
+// A story's picture. The section drawing is laid first; the article's own
+// preview sits over it and removes itself if it fails, so no frame is empty.
+import { sectionCover } from '../lib/iso';
+import { sectionOf, type Entry } from '../lib/content';
+
+interface Props { entry: Entry; eager?: boolean; reveal?: boolean; class?: string; style?: string }
+const { entry, eager = false, reveal = false, class: cls, style } = Astro.props;
+const s = sectionOf(entry.section);
+---
+<div class:list={['media', cls]} data-section={s.slug} style={style}>
+  <Fragment set:html={sectionCover(s.slug)} />
+  {entry.image_url && (
+    <img
+      class="media-img"
+      src={entry.image_url}
+      alt=""
+      loading="eager"
+      fetchpriority={eager ? 'high' : undefined}
+      decoding="async"
+      referrerpolicy="no-referrer"
+      onerror="this.remove()"
+    />
+  )}
+</div>

@@ -1,0 +1,203 @@
+---
+// Home, a front page. Layout signature: H7 mosaic hero, then 5/7 index rows,
+// the statement, a white 3-up band, a dark tools index, the journal list,
+// and section tiles on white.
+import Base from '../layouts/Base.astro';
+import Media from '../components/Media.astro';
+import Meter from '../components/Meter.astro';
+import PhotoCard from '../components/PhotoCard.astro';
+import { sectionCover } from '../lib/iso';
+import {
+  issues, issueNo, leadOf, sections, sectionOf, entryHref, issueHref, allEntries,
+  fmtLong, fmtShort, pad2, type Entry,
+} from '../lib/content';
+import { plain } from '../lib/md';
+
+const latest = issues[0];
+const lead = leadOf(latest);
+const byId = new Map(latest.entries.map((e) => [e.id, e]));
+const taken = new Set([lead.id]);
+const pick = (pred: (e: Entry) => boolean, n: number) => {
+  const out = latest.entries.filter((e) => !taken.has(e.id) && pred(e)).slice(0, n);
+  out.forEach((e) => taken.add(e.id));
+  return out;
+};
+const FEATURE = ['AI Industry News', 'Product Design & UX', 'Product Design Inspiration'];
+
+// Mosaic: the lead and the next two stories, photos first.
+const seconds = pick((e) => FEATURE.includes(e.section) && !!e.image_url, 2);
+if (seconds.length < 2) seconds.push(...pick((e) => FEATURE.includes(e.section), 2 - seconds.length));
+const more = pick((e) => FEATURE.includes(e.section), 6);
+const tools = [...latest.entries].filter((e) => e.tool_rating != null).sort((a, b) => b.tool_rating! - a.tool_rating!).slice(0, 5);
+
+const highlights = (latest.highlights ?? []).length
+  ? latest.highlights!
+  : latest.entries.slice(0, 5).map((e) => ({ headline: e.headline, summary: e.summary, ref: e.id }));
+const earlier = issues.slice(1, 7);
+const counts = Object.fromEntries(sections.map((s) => [s.slug, allEntries.filter((e) => e.section === s.name).length]));
+const total = latest.entries.length;
+const arrow = '<svg class="index__arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg>';
+---
+<Base title="Pathao Design News" nav="today">
+  <section class="container head head--split" aria-labelledby="hero-h">
+    <div>
+      <p class="head__eyebrow eyebrow reveal"><span>No. {issueNo(latest.date)}</span><span>{fmtLong(latest.date)}</span></p>
+      <h1 class="h2 head__title" id="hero-h" data-reveal="text">AI and product design news, read for the Pathao design team.</h1>
+    </div>
+    <div class="head__aside reveal" style="--d: .45s">
+      <p class="body-md muted">A new brief every morning at 9:00, Dhaka. Today's issue has {total} stories, from the industry to tools worth trying.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href={issueHref(latest.date)}>Read today's issue<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
+        <a class="btn btn--secondary" href="/archive/">Search the archive</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" aria-label="Today's top stories">
+    <div class="mosaic" data-stagger="80">
+      <PhotoCard entry={lead} lead class="reveal" />
+      {seconds.map((e) => <PhotoCard entry={e} class="reveal" />)}
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="brief-h">
+    <div class="container split">
+      <div class="split__aside">
+        <span class="intro__eyebrow eyebrow">01 / In brief</span>
+        <h2 class="h3" id="brief-h" data-reveal="text">Five things to know today.</h2>
+        <p class="body-md muted reveal">The short version of the issue. Each one opens the full story with its sources.</p>
+        <a class="btn btn--tertiary reveal" href={issueHref(latest.date)}>Read the full issue <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
+      </div>
+      <ol class="index" data-stagger="80">
+        {highlights.map((h, i) => (
+          <li class="reveal">
+            <a class="index__row" href={h.ref && byId.has(h.ref) ? entryHref(byId.get(h.ref)!) : issueHref(latest.date)}>
+              <span class="index__num eyebrow">{pad2(i + 1)}</span>
+              <span class="index__body">
+                <span class="h5">{h.headline}</span>
+                <span class="body-sm muted clamp-2">{plain(h.summary)}</span>
+              </span>
+              <Fragment set:html={arrow} />
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="statement" aria-label="What this is">
+    <div class="container"><p class="h0 statement__text" data-words>The AI and design news worth a designer's time, every morning at nine.</p></div>
+  </section>
+
+  {more.length > 0 && (
+    <section class="section section--white" aria-labelledby="more-h">
+      <div class="container">
+        <div class="intro intro--simple">
+          <div>
+            <span class="intro__eyebrow eyebrow">02 / More from today</span>
+            <h2 class="h3" id="more-h" data-reveal="text">Product, design and the industry.</h2>
+          </div>
+          <a class="btn btn--tertiary" href={issueHref(latest.date)}>All {total} stories <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg></a>
+        </div>
+        <ul class="grid grid--3" data-stagger="80">
+          {more.map((e) => (
+            <li class="reveal">
+              <a class="card-split" href={entryHref(e)}>
+                <Media entry={e} />
+                <span class="card-split__text">
+                  <span class="eyebrow">{sectionOf(e.section).short}</span>
+                  <h3 class="h4">{e.headline}</h3>
+                  <p class="body-md muted clamp-2">{plain(e.summary)}</p>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {tools.length > 0 && (
+    <section class="section section--dark" aria-labelledby="tools-h">
+      <div class="container">
+        <div class="intro">
+          <div>
+            <span class="intro__eyebrow eyebrow">03 / Tools worth trying</span>
+            <h2 class="h3" id="tools-h" data-reveal="text">Today's tools, rated out of ten.</h2>
+          </div>
+          <div class="intro__aside reveal">
+            <p class="body-md muted">What each one does and who it helps, best first. Every rating ever given lives on the tools page.</p>
+            <a class="btn btn--light" href="/tools/">See every rated tool</a>
+          </div>
+        </div>
+        <ol class="index index--tools" data-stagger="80">
+          {tools.map((e, i) => (
+            <li class="reveal">
+              <a class="index__row" href={entryHref(e)}>
+                <span class="index__num eyebrow">{pad2(i + 1)}</span>
+                <span class="index__body">
+                  <span class="h5">{e.headline}</span>
+                  <span class="body-sm muted clamp-2">{plain(e.summary)}</span>
+                </span>
+                <Meter value={e.tool_rating!} />
+                <Fragment set:html={arrow} />
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  <section class="section" aria-labelledby="earlier-h">
+    <div class="container">
+      <div class="intro intro--simple">
+        <div>
+          <span class="intro__eyebrow eyebrow">04 / Earlier issues</span>
+          <h2 class="h3" id="earlier-h" data-reveal="text">The archive, a day at a time.</h2>
+        </div>
+        {earlier.length > 0 && <a class="btn btn--tertiary" href="/archive/">Open the archive</a>}
+      </div>
+      {earlier.length ? (
+        <ol class="journal" data-stagger="80">
+          {earlier.map((i) => (
+            <li class="reveal">
+              <a class="journal__row" href={issueHref(i.date)}>
+                <span class="eyebrow muted">{fmtShort(i.date)}</span>
+                <span class="h4">{leadOf(i).headline}</span>
+                <span class="tag">No. {issueNo(i.date)}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <div class="empty reveal">
+          <h3 class="h5">This is the first issue.</h3>
+          <p class="body-md muted">Earlier briefs collect here from tomorrow morning. Until then, every story from today is in the archive.</p>
+          <a class="btn btn--secondary" href="/archive/">Browse today's stories</a>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="section section--white" aria-labelledby="sections-h">
+    <div class="container">
+      <div class="intro intro--simple">
+        <div>
+          <span class="intro__eyebrow eyebrow">05 / Sections</span>
+          <h2 class="h3" id="sections-h" data-reveal="text">Browse by section.</h2>
+        </div>
+      </div>
+      <ul class="grid grid--5" data-stagger="60">
+        {sections.map((s) => (
+          <li class="reveal">
+            <a class="tile" href={`/archive/?section=${s.slug}`}>
+              <span class="media"><Fragment set:html={sectionCover(s.slug)} /></span>
+              <span class="tile__body"><span class="h6">{s.title}</span><span class="eyebrow muted tabular">{counts[s.slug]}</span></span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,137 @@
+/* =========================================================
+   Editorial Taste tokens (compact web scale)
+   From github.com/iamshakibali/editorial-taste, MIT.
+   Fonts: Geist 400/500 + Geist Mono 400.
+
+   The system is light first. The dark theme below is this site's own
+   mapping: the same ramps, inverted, so every rule holds in both.
+   ========================================================= */
+:root {
+  /* Fonts */
+  --font-heading: 'Geist', system-ui, -apple-system, sans-serif;
+  --font-body: 'Geist', system-ui, -apple-system, sans-serif;
+  --font-ui: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Neutral */
+  --neutral-white: #ffffff; --neutral-50: #fafafa; --neutral-100: #f5f5f5; --neutral-150: #ededed;
+  --neutral-200: #e5e5e5; --neutral-300: #d4d4d4; --neutral-400: #a3a3a3; --neutral-500: #737373;
+  --neutral-600: #525252; --neutral-700: #404040; --neutral-800: #262626; --neutral-850: #1f1f1f;
+  --neutral-900: #171717; --neutral-950: #0a0a0a; --neutral-975: #050505; --neutral-black: #000000;
+
+  /* Base alpha ramps */
+  --light-100: #ededed; --light-88: #ededede0; --light-64: #edededa3; --light-48: #ededed7a;
+  --light-32: #ededed52; --light-16: #ededed29; --light-8: #ededed14; --light-4: #ededed0a;
+  --dark-100: #151515; --dark-88: #151515e0; --dark-64: #151515a3; --dark-48: #1515157a;
+  --dark-32: #15151552; --dark-16: #15151529; --dark-8: #15151514; --dark-4: #1515150a;
+
+  /* Spacing (5px scale) */
+  --space-5: 5px; --space-10: 10px; --space-15: 15px; --space-20: 20px; --space-25: 25px;
+  --space-30: 30px; --space-35: 35px; --space-40: 40px; --space-50: 50px; --space-60: 60px;
+  --space-75: 75px; --space-100: 100px;
+
+  /* Radius */
+  --radius-4: 4px; --radius-5: 5px; --radius-btn: 8px; --radius-10: 10px; --radius-20: 20px; --radius-pill: 9999px;
+
+  /* Layout (compact web scale) */
+  --container: 1280px; --grid-margin: 40px; --grid-gutter: 20px;
+  --section-gap: 32px; --section-pad: 96px;
+  --nav-h: 64px;
+
+  /* Effects (no shadows) */
+  --blur-glass: blur(16px);
+  --blur-chip: blur(15px);
+  --vignette-bottom: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .98) 100%);
+  --vignette-top: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 100%);
+
+  /* Motion */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --ease-in: cubic-bezier(.7, 0, .84, 0);
+  --ease: var(--ease-out);
+  --dur-fast: .2s; --dur-base: .45s; --dur-slow: .8s; --dur-xslow: 1.2s;
+
+  /* Signal: one status dot per isometric illustration, nowhere else */
+  --signal: #ff4d2e;
+
+  /* Type: web desktop (size / line-height / tracking) */
+  --h0-size: 72px; --h0-lh: 68px; --h0-ls: -2.5px;
+  --h1-size: 48px; --h1-lh: 48px; --h1-ls: -1.5px;
+  --h2-size: 40px; --h2-lh: 44px; --h2-ls: -1.5px;
+  --h3-size: 32px; --h3-lh: 36px; --h3-ls: -1px;
+  --h4-size: 24px; --h4-lh: 28px; --h4-ls: -0.75px;
+  --h5-size: 20px; --h5-lh: 24px; --h5-ls: -0.5px;
+  --h6-size: 14px; --h6-lh: 18px; --h6-ls: -0.25px;
+  --body-lg-size: 17px; --body-lg-lh: 26px; --body-lg-ls: -0.4px;
+  --body-md-size: 15px; --body-md-lh: 22px;
+  --body-sm-size: 13px; --body-sm-lh: 18px;
+  --btn-lg-size: 13px; --btn-lg-lh: 18px; --btn-lg-ls: -0.4px;
+  --btn-sm-size: 11px; --btn-sm-lh: 12px;
+  --label-lg-size: 11px; --label-lg-lh: 14px;
+  --label-sm-size: 10px; --label-sm-lh: 12px;
+
+  /* Components */
+  --btn-h: 40px; --btn-h-sm: 30px; --btn-min: 160px;
+  --btn-pad: 10px 18px; --btn-pad-sm: 8px 12px;
+
+  /* ---- Semantic, light (the system's own values) ---- */
+  --bg-base: var(--light-100);          /* page */
+  --bg-lift: #d9d9d9;                   /* hover fill, raised surface */
+  --surface: var(--neutral-white);      /* news and product cards */
+  --surface-2: var(--neutral-200);      /* case cards, image wells */
+  --tone-strong: var(--dark-100);
+  --tone-medium: var(--dark-64);
+  --tone-faint: var(--dark-16);
+  --border-subtle: var(--dark-16);
+  --text-muted: var(--neutral-600);     /* 600 on #EDEDED keeps body text at AA */
+  --fill-8: var(--dark-8);              /* secondary button, chips on light */
+  --fill-4: var(--dark-4);
+  --on-strong: var(--light-100);        /* text on a tone-strong fill */
+  --nav-bg: color-mix(in srgb, var(--light-100) 88%, transparent);
+
+  /* Isometric drawings */
+  --iso-grid: #d4d4d4; --iso-edge: #a3a3a3; --iso-top: #ffffff; --iso-left: #f5f5f5; --iso-right: #e5e5e5;
+  --iso-active-top: #f5f5f5; --iso-label: #404040; --iso-led: #d4d4d4; --iso-led-on: #737373; --iso-path: #737373;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg-base: var(--neutral-950);
+  --bg-lift: var(--neutral-800);
+  --surface: var(--dark-100);
+  --surface-2: var(--neutral-850);
+  --tone-strong: var(--light-100);
+  --tone-medium: var(--light-64);
+  --tone-faint: var(--light-16);
+  --border-subtle: var(--light-16);
+  --text-muted: var(--neutral-400);
+  --fill-8: var(--light-8);
+  --fill-4: var(--light-4);
+  --on-strong: var(--dark-100);
+  --nav-bg: color-mix(in srgb, var(--neutral-950) 88%, transparent);
+
+  --iso-grid: #262626; --iso-edge: #525252; --iso-top: #1f1f1f; --iso-left: #171717; --iso-right: #101010;
+  --iso-active-top: #262626; --iso-label: #a3a3a3; --iso-led: #404040; --iso-led-on: #a3a3a3; --iso-path: #737373;
+
+  color-scheme: dark;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --grid-margin: 20px; --grid-gutter: 12px; --section-gap: 24px; --section-pad: 64px;
+    --nav-h: 56px;
+    --h0-size: 44px; --h0-lh: 48px; --h0-ls: -1.5px;
+    --h1-size: 36px; --h1-lh: 40px; --h1-ls: -1.25px;
+    --h2-size: 30px; --h2-lh: 34px; --h2-ls: -1px;
+    --h3-size: 26px; --h3-lh: 30px; --h3-ls: -0.75px;
+    --h4-size: 20px; --h4-lh: 26px; --h4-ls: -0.5px;
+    --h5-size: 18px; --h5-lh: 22px; --h5-ls: -0.5px;
+    --h6-size: 12px; --h6-lh: 16px; --h6-ls: 0;
+    --body-lg-size: 15px; --body-lg-lh: 22px; --body-lg-ls: 0;
+    --body-md-size: 14px; --body-md-lh: 20px;
+    --body-sm-size: 12px; --body-sm-lh: 16px;
+    --btn-lg-size: 12px; --btn-sm-size: 10px;
+    --label-lg-size: 10px; --label-lg-lh: 12px;
+    --label-sm-size: 8px; --label-sm-lh: 10px;
+  }
+}

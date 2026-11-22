@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import Media from '../components/Media.astro';
+import Meter from '../components/Meter.astro';
+import { ratedTools, primaryUrl, entryHref, fmtShort, cap, pad2 } from '../lib/content';
+import { inline } from '../lib/md';
+
+const tools = ratedTools();
+---
+<Base title="Tools" nav="tools" description="Every tool the brief has rated, best first.">
+  <header class="container head">
+    <p class="head__eyebrow eyebrow reveal"><span>{tools.length} tools rated</span></p>
+    <h1 class="h2 head__title" data-reveal="text">Every tool the brief has tried, best first.</h1>
+    <div class="head__row reveal" style="--d: .45s">
+      <p class="body-md muted">Ratings are out of ten for design work. A tool that comes up again keeps its latest rating.</p>
+      <div class="chips" role="group" aria-label="Sort tools" style="justify-content: flex-end">
+        <button type="button" class="chip" data-sort="rating" aria-pressed="true">Best first</button>
+        <button type="button" class="chip" data-sort="date" aria-pressed="false">Newest first</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" style="padding-bottom: var(--section-pad)">
+    {tools.length === 0 ? (
+      <div class="empty">
+        <h2 class="h5">No rated tools yet.</h2>
+        <p class="body-md muted">Tools land here as soon as a brief rates one.</p>
+        <a class="btn btn--secondary" href="/">Read today's issue</a>
+      </div>
+    ) : (
+      <ol class="rows" data-tools data-stagger="60">
+        {tools.map((e, n) => {
+          const href = primaryUrl(e);
+          return (
+            <li class="row tool-row reveal" data-date={e.date} data-order={n}>
+              <span class="index__num eyebrow" data-rank>{pad2(n + 1)}</span>
+              {href ? <a href={href} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><Media entry={e} /></a> : <Media entry={e} />}
+              <div class="row__body">
+                <div class="row__top">
+                  <Meter value={e.tool_rating!} />
+                  {e.kicker && <span class="eyebrow">Released {e.kicker}</span>}
+                </div>
+                <h2 class="h5">{href ? <a href={href} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h2>
+                <p class="body-md prose" set:html={inline(e.summary)} />
+                {e.audience && <dl class="notes body-md prose"><div><dt class="eyebrow">For</dt><dd set:html={inline(cap(e.audience))} /></div></dl>}
+                <a class="eyebrow muted u-link" style="align-self: flex-start" href={entryHref(e)}>From the {fmtShort(e.date)} issue</a>
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+    )}
+  </div>
+
+  <script>
+    const list = document.querySelector<HTMLOListElement>('[data-tools]');
+    const buttons = [...document.querySelectorAll<HTMLButtonElement>('[data-sort]')];
+    if (list) {
+      const items = [...list.children] as HTMLElement[];
+      buttons.forEach((b) =>
+        b.addEventListener('click', () => {
+          const by = b.dataset.sort;
+          buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+          const sorted = [...items].sort((a, z) =>
+            by === 'date' ? z.dataset.date!.localeCompare(a.dataset.date!) || +a.dataset.order! - +z.dataset.order! : +a.dataset.order! - +z.dataset.order!,
+          );
+          sorted.forEach((el, i) => {
+            el.querySelector('[data-rank]')!.textContent = String(i + 1).padStart(2, '0');
+            list.appendChild(el);
+          });
+        }),
+      );
+    }
+  </script>
+</Base>

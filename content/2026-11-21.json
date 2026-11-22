@@ -1,0 +1,996 @@
+{
+  "date": "2026-11-21",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1DZsGyemVgu2TpukQVVvt81H9dFaYi_HvwjUM81w27N0/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic is now public, and the market is testing it.",
+      "ref": "anthropic-ipo",
+      "summary": "[Anthropic](https://www.anthropic.com) closed its IPO at about $93.5B gross after underwriters took their full extra allotment, but the stock slid on day two in a wider AI selloff ([roundup with sources](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-20))."
+    },
+    {
+      "headline": "OpenAI's week: new models plus a design rethink.",
+      "ref": "openai-gpt-6-2",
+      "summary": "[GPT-6.2 Astra and Sol](https://openai.com/index/introducing-gpt-6-2-astra-sol) shipped on Nov 17, and [ChatGPT](https://chatgpt.com) is now testing a mobile layout built around the user's always-on \"dot\" agent ([The Verge](https://www.theverge.com/ai-artificial-intelligence/1038334/openai-is-testing-a-new-design-for-mobile-chatgpt))."
+    },
+    {
+      "headline": "Google stacked three developer releases in two days.",
+      "ref": "google-neon-tool-retrieval-genie",
+      "summary": "[Gemini 4 Neon](https://openrouter.ai/google/gemini-4-neon), [Tool Retrieval in the Gemini API](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/), and [Genie 4 in Project Genie](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/)."
+    },
+    {
+      "headline": "Nvidia halted licensed Hopper shipments to China.",
+      "ref": "nvidia-hopper-china",
+      "summary": "[Nvidia](https://www.nvidia.com)'s interim CEO confirmed the stop on the earnings call and dropped China from guidance ([Reuters via bdnews24](https://bdnews24.com/business/pyentjtvr9))."
+    },
+    {
+      "headline": "Agents that operate your computer are the new battleground.",
+      "ref": "apple-computer-use-meta-muse",
+      "summary": "[Apple](https://www.apple.com) is reported to be closing its computer-use gap, [Gemini Spark on Mac](https://gemini.google/ag/mac/) already acts on local files, and [Meta](https://www.meta.com)'s Muse keeps surfacing privacy failures. Permission design is now a product problem, not a legal footnote."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Strict 48-hour launches were thin this week, so this list mixes the newest releases with recent tools that matter for AI-native design work."
+  },
+  "entries": [
+    {
+      "id": "anthropic-ipo",
+      "section": "AI Industry News",
+      "headline": "Anthropic closes a $93.5B IPO as shares retreat",
+      "summary": "[Anthropic priced its offering](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) at $83 per share and listed on Nasdaq as ANT on Nov 19. After the greenshoe was exercised, gross proceeds landed near $93.5B. The stock closed day one at $97.17, then dropped as much as 9% Friday alongside Nvidia and AMD ([CNBC](https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html)). Separately, [Foley & Lardner confirmed](https://www.foley.com/news/2026/11/foley-advises-riot-platforms-on-28-billion-powered-land-lease-at-corsicana-campus/) Anthropic is the tenant behind Riot Platforms' $28B, 910 MW Texas lease.",
+      "why_it_matters": "Public scrutiny now applies to compute commitments, pricing and uptime. [CNBC reports](https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html) two neocloud partners have disclosed missed financing deadlines on capacity Anthropic is counting on.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Expect more predictable product cadence and more pressure on margins. Watch for pricing tier changes in [Claude](https://claude.ai) plans over the next two quarters."
+      },
+      "links": [
+        {
+          "label": "Anthropic priced its offering",
+          "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+        },
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/20/anthropic-ipo-greenshoe.html"
+        },
+        {
+          "label": "Foley & Lardner confirmed",
+          "url": "https://www.foley.com/news/2026/11/foley-advises-riot-platforms-on-28-billion-powered-land-lease-at-corsicana-campus/"
+        },
+        {
+          "label": "CNBC reports",
+          "url": "https://www.cnbc.com/2026/11/20/tech-download-anthropic-compute-access.html"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": "https://assets.claude.com/6d4a0d28992ade92d6fa63646fd9c9d318245c6c.jpg",
+      "tool_rating": null,
+      "date": "2026-11-21",
+      "lead": true
+    },
+    {
+      "id": "openai-gpt-6-2",
+      "section": "AI Industry News",
+      "headline": "OpenAI ships GPT-6.2 Astra and Sol",
+      "summary": "[OpenAI](https://openai.com) released two models on Nov 17. Astra is the frontier tier; Sol keeps GPT-6.1 Sol's API prices. OpenAI says Sol lands within half a point of Astra on Cognition's FrontierCode 2.0 at roughly a fifth of the cost ([announcement](https://openai.com/index/introducing-gpt-6-2-astra-sol)). Astra's API price drops 20% versus GPT-6 Astra ([summary](https://letsdatascience.com/news/openai-launches-gpt-62-astra-frontier-model-and-gpt-62-sol-ccad09ba)).",
+      "why_it_matters": "OpenAI also reports a 3D-design Elo lead, with Astra ahead of Claude Fable 5.2. These are vendor numbers, not independent results.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "Run your own design prompts across Sol, Neon and Claude before switching defaults. \"Near-flagship at one fifth the cost\" is the tier most prototyping should live on."
+      },
+      "links": [
+        {
+          "label": "OpenAI ships GPT-6.2 Astra and Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "summary",
+          "url": "https://letsdatascience.com/news/openai-launches-gpt-62-astra-frontier-model-and-gpt-62-sol-ccad09ba"
+        }
+      ],
+      "image_url": "https://cdn.openai.com/mdx-assets/e193aefe-5e58-431c-8cd2-adadac0c1496/44573edd-9653-49b3-ba07-7b3643545ef9.d3072be3.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "google-neon-tool-retrieval-genie",
+      "section": "AI Industry News",
+      "headline": "Google: Gemini 4 Neon, Tool Retrieval, and Genie 4",
+      "summary": "[Google DeepMind](https://deepmind.google) released Gemini 4 Neon on Nov 18, a fast mid-priced model for coding and agent work at $3 input and $15 output per million tokens with a 1M context ([OpenRouter listing](https://openrouter.ai/google/gemini-4-neon)). Independent testing put Neon at about 17% cheaper per task than Gemini 4 Carbon ([The Decoder](https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/)). On Nov 19, the Gemini API added Tool Retrieval, which lets agents load tool schemas only when needed, including from remote MCP servers ([Google blog](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/)).",
+      "why_it_matters": "Tool Retrieval is a direct answer to MCP bloat. Agents with hundreds of tools stop paying a token tax on every turn.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "If you connect many MCP servers, defer-loading is now a standard pattern across vendors. Write tool names and descriptions to be searchable, because the model now picks them by search."
+      },
+      "links": [
+        {
+          "label": "Google: Gemini 4 Neon, Tool Retrieval, and Genie 4",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "OpenRouter listing",
+          "url": "https://openrouter.ai/google/gemini-4-neon"
+        },
+        {
+          "label": "The Decoder",
+          "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Tool_retrieval_hero.width-1300.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "nvidia-hopper-china",
+      "section": "AI Industry News",
+      "headline": "Nvidia stops shipping licensed Hopper chips to China",
+      "summary": "Interim CEO Colette Kress said Nvidia sold $2.4B of licensed Hopper products to China last quarter and is no longer shipping them; guidance excludes China ([Fox Business](https://www.foxbusiness.com/fox-news-tech/nvidia-halts-china-ai-chip-shipments-despite-us-approval.amp)). New US checks on remote compute access landed a day earlier ([Business Today](https://www.businesstoday.in/technology/news/story/nvidias-2-4-billion-china-chip-business-hits-pause-interim-ceo-confirms-shipment-halt-568089-2026-11-18)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "For builders",
+        "text": "More pressure on Chinese open-weight labs to train on domestic chips. Model availability and pricing from those labs may get less predictable."
+      },
+      "links": [
+        {
+          "label": "Fox Business",
+          "url": "https://www.foxbusiness.com/fox-news-tech/nvidia-halts-china-ai-chip-shipments-despite-us-approval.amp"
+        },
+        {
+          "label": "Business Today",
+          "url": "https://www.businesstoday.in/technology/news/story/nvidias-2-4-billion-china-chip-business-hits-pause-interim-ceo-confirms-shipment-halt-568089-2026-11-18"
+        }
+      ],
+      "image_url": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2025/12/1024/512/nvidia.jpg?ve=1&tl=1",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "apple-computer-use-meta-muse",
+      "section": "AI Industry News",
+      "headline": "Apple's computer-use gap and Meta's agent trust problem",
+      "summary": "Bloomberg's Mark Gurman reported that Apple's new CEO is pushing for an agentic Siri and flagged that Apple lacks a computer-use agent while rivals have one ([summary of the Power On report](https://fourweekmba.com/ai-apples-ternus-presses-federighi-on-ai-as-rd-rises-32/)). Meanwhile, Reuters reviewed internal posts where Meta staff flagged Muse mixing data across accounts ([CTV / Reuters](https://www.ctvnews.ca/sci-tech/article/as-meta-bets-big-on-muse-ai-agent-early-safety-mishaps-surface/)).",
+      "why_it_matters": "When the platform owner ships computer use, every app becomes a surface an agent can drive. Consent, scoping and audit UI become core product design work.",
+      "links": [
+        {
+          "label": "summary of the Power On report",
+          "url": "https://fourweekmba.com/ai-apples-ternus-presses-federighi-on-ai-as-rd-rises-32/"
+        },
+        {
+          "label": "CTV / Reuters",
+          "url": "https://www.ctvnews.ca/sci-tech/article/as-meta-bets-big-on-muse-ai-agent-early-safety-mishaps-surface/"
+        }
+      ],
+      "image_url": "https://www.ctvnews.ca/resizer/v2/FAB2YBMVERCB7NACTCLAQUXBD4.jpg?smart=true&auth=bfba4a83c1040468d6c445b88d56618bcf12167d2a0dce4f9ebe87d26f38e994&width=1200&height=630",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "chatgpt-dot-first-mobile",
+      "section": "Product Design & UX",
+      "headline": "ChatGPT tests a dot-first mobile app",
+      "summary": "The test layout gives the user's dot its own tab next to Home and adds a pinnable grid of tools such as Codex and Images. It starts with Pro users outside the EU, UK, Switzerland and South Korea ([The Verge](https://www.theverge.com/ai-artificial-intelligence/1038334/openai-is-testing-a-new-design-for-mobile-chatgpt), [Digital Trends](https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/)).",
+      "why_it_matters": "this is the clearest signal yet that agent-first apps are moving from \"chat log\" to \"persistent companion plus tool shelf\". Study the information architecture, not the visuals.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1038334/openai-is-testing-a-new-design-for-mobile-chatgpt"
+        },
+        {
+          "label": "Digital Trends",
+          "url": "https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/"
+        }
+      ],
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-19-at-5.01.12-PM.png?quality=90&strip=all&crop=0,29.53469684985,100,40.9306063003",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "chatgpt-live-dictation",
+      "section": "Product Design & UX",
+      "headline": "ChatGPT Live Dictation drops the 10-minute cap",
+      "summary": "Speech now streams to text as you talk, on every plan and platform ([9to5Mac](https://9to5mac.com/2026/11/18/chatgpt-app-gains-enhanced-live-dictation-streaming-without-10-minute-limit/)).",
+      "why_it_matters": "long voice briefs to an agent become realistic. Try dictating a full design critique instead of typing one.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "9to5Mac",
+          "url": "https://9to5mac.com/2026/11/18/chatgpt-app-gains-enhanced-live-dictation-streaming-without-10-minute-limit/"
+        }
+      ],
+      "image_url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/chatgpt-app-icon-dark-openai.jpg?quality=82&strip=all&resize=1200,628",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "figma-code-layers",
+      "section": "Product Design & UX",
+      "headline": "Figma code layers keep maturing in open beta",
+      "summary": "[Figma](https://www.figma.com)'s code layers, in open beta since Oct 14, let teams turn frames into interactive code on the shared canvas and import from GitHub ([Figma blog](https://www.figma.com/blog/design-together-with-code-layers/)). Figma reported its MCP server was its fastest-growing product last quarter, with write-back usage up 4x ([Q3 results](https://investingnews.com/figma-announces-third-quarter-2026-financial-results/)).",
+      "why_it_matters": "the canvas is becoming a place agents write to, not just read from.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma code layers keep maturing in open beta",
+          "url": "https://www.figma.com/blog/design-together-with-code-layers/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Q3 results",
+          "url": "https://investingnews.com/figma-announces-third-quarter-2026-financial-results/"
+        }
+      ],
+      "image_url": "https://cdn.sanity.io/images/599r6htc/regionalized/fd9f6ce97dbb2f1dadaf0baf1542447e73bcf51d-3840x2160.png?w=1200&q=70&fit=max&auto=format",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "cursor-voice-live-apps",
+      "section": "Product Design & UX",
+      "headline": "Cursor adds voice chat and live app publishing",
+      "summary": "[Cursor](https://cursor.com) shipped Build Live Apps (database, auth and hosting behind a shareable link) and realtime voice chat with agents earlier this month ([release notes](https://releasebot.io/updates/cursor)).",
+      "why_it_matters": "internal tools a designer builds can now be shared with teammates without a deploy step.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor adds voice chat and live app publishing",
+          "url": "https://releasebot.io/updates/cursor"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "gemini-4-neon",
+      "section": "New AI Tools",
+      "headline": "Gemini 4 Neon",
+      "kicker": "Nov 18",
+      "summary": "Fast, mid-priced Gemini 4 model aimed at coding, web builds and multi-turn tool use.",
+      "why_it_matters": null,
+      "audience": "designers vibe-coding prototypes who want a cheaper default.",
+      "links": [
+        {
+          "label": "Gemini 4 Neon",
+          "url": "https://openrouter.ai/google/gemini-4-neon"
+        }
+      ],
+      "image_url": "https://openrouter.ai/en-US/google/gemini-4-neon/opengraph-image-vc0va0?e64ee705e9bb9143",
+      "tool_rating": 8,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "gemini-api-tool-retrieval",
+      "section": "New AI Tools",
+      "headline": "Gemini API Tool Retrieval",
+      "kicker": "Nov 19",
+      "summary": "Loads tool schemas on demand, including whole MCP servers.",
+      "why_it_matters": null,
+      "audience": "anyone building agents with many connectors.",
+      "links": [
+        {
+          "label": "Gemini API Tool Retrieval",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Tool_retrieval_hero.width-1300.png",
+      "tool_rating": 7,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "genie-4-project-genie",
+      "section": "New AI Tools",
+      "headline": "Genie 4 in Project Genie",
+      "kicker": "Nov 18",
+      "summary": "Interactive world model you can redirect with prompts mid-session, with native audio. Ultra subscribers only.",
+      "why_it_matters": null,
+      "audience": "spatial and game designers exploring prompt-driven environments.",
+      "links": [
+        {
+          "label": "Genie 4 in Project Genie",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png",
+      "tool_rating": 6,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "chatgpt-live-dictation-tool",
+      "section": "New AI Tools",
+      "headline": "ChatGPT Live Dictation",
+      "kicker": "Nov 18",
+      "summary": "Streaming speech-to-text with no time cap.",
+      "why_it_matters": null,
+      "audience": "designers who think out loud.",
+      "links": [
+        {
+          "label": "ChatGPT Live Dictation",
+          "url": "https://9to5mac.com/2026/11/18/chatgpt-app-gains-enhanced-live-dictation-streaming-without-10-minute-limit/"
+        }
+      ],
+      "image_url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/chatgpt-app-icon-dark-openai.jpg?quality=82&strip=all&resize=1200,628",
+      "tool_rating": 7,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "clayzo",
+      "section": "New AI Tools",
+      "headline": "Clayzo",
+      "summary": "Motion engine plus agent skills so coding agents produce polished web animations and exportable video. Free.",
+      "why_it_matters": null,
+      "audience": "designers shipping motion through [Claude Code](https://www.anthropic.com/claude-code) or [Cursor](https://cursor.com).",
+      "links": [
+        {
+          "label": "Clayzo",
+          "url": "https://www.producthunt.com/products/clayzo"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "design-md",
+      "section": "New AI Tools",
+      "headline": "Design.MD",
+      "summary": "Library of DESIGN.md files that encode a brand's colors, type, spacing and components in a format agents read.",
+      "why_it_matters": null,
+      "audience": "anyone tired of generic AI-looking UI.",
+      "links": [
+        {
+          "label": "Design.MD",
+          "url": "https://www.producthunt.com/products/figma-for-ai-agents/launches/design-md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "magic-patterns-agent-2",
+      "section": "New AI Tools",
+      "headline": "Magic Patterns Agent 2.0",
+      "summary": "AI design agent that connects to your real component library via npm and exports to coding agents over MCP.",
+      "why_it_matters": null,
+      "audience": "product designers working inside an existing design system.",
+      "links": [
+        {
+          "label": "Magic Patterns Agent 2.0",
+          "url": "https://www.magicpatterns.com/blog/magic-patterns-agent-2-0"
+        }
+      ],
+      "image_url": "https://www.magicpatterns.com/blog/covers/MagicPatternsAgent20.png",
+      "tool_rating": 8,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "motion-studio",
+      "section": "New AI Tools",
+      "headline": "Motion Studio",
+      "summary": "Visual animation editor with a fast local editing agent that hands results to your coding agent.",
+      "why_it_matters": null,
+      "audience": "motion-heavy UI work in React.",
+      "links": [
+        {
+          "label": "Motion Studio",
+          "url": "https://motion.dev/magazine/introducing-motion-studio"
+        }
+      ],
+      "image_url": "https://images.motion.dev/og/fresh/v1/site/magazine-introducing-motion-studio-38e7kbq9udin2.png",
+      "tool_rating": 7,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "beacon",
+      "section": "New AI Tools",
+      "headline": "Beacon",
+      "summary": "Open-source memory layer that carries learnings across 20+ coding agents.",
+      "why_it_matters": null,
+      "audience": "designers who switch between agent tools and hate re-explaining a project.",
+      "links": [
+        {
+          "label": "Beacon",
+          "url": "https://beacon.sh"
+        }
+      ],
+      "image_url": "https://beacon.sh/opengraph-image?8a3ee717018a1e19",
+      "tool_rating": 7,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "glasshand",
+      "section": "New AI Tools",
+      "headline": "Glasshand",
+      "summary": "Rents your agent a real iPhone or Mac for testing apps on physical hardware.",
+      "why_it_matters": null,
+      "audience": "mobile designers testing agent-built prototypes on device.",
+      "links": [
+        {
+          "label": "Glasshand",
+          "url": "https://www.producthunt.com/products/glasshand"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "agents-drive-the-computer",
+      "section": "Trends to Watch",
+      "headline": "Agents that drive the whole computer",
+      "summary": "[Gemini Spark on Mac](https://support.google.com/gemini/answer/17208717), ChatGPT dots, Meta Muse, and Apple's reported push all converge on agents with system-level access.",
+      "why_it_matters": "the UI of the future includes an agent as a second user of every screen.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "accessibility trees and semantic markup, because that is how agents see your interface."
+      },
+      "links": [
+        {
+          "label": "Gemini Spark on Mac",
+          "url": "https://support.google.com/gemini/answer/17208717"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "lazy-tool-loading",
+      "section": "Trends to Watch",
+      "headline": "Lazy tool loading and the end of MCP bloat",
+      "summary": "Google's Tool Retrieval mirrors deferred-tool patterns elsewhere.",
+      "why_it_matters": "tool descriptions become discoverability copy for machines.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "writing tool names and descriptions like search-optimized microcopy."
+      },
+      "links": [
+        {
+          "label": "Lazy tool loading and the end of MCP bloat",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Tool_retrieval_hero.width-1300.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "design-systems-as-agent-context",
+      "section": "Trends to Watch",
+      "headline": "Design systems as agent context",
+      "summary": "DESIGN.md files, Figma library guidelines, and Magic Patterns' npm connection all solve the same problem: agents defaulting to generic UI.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to encode tokens, component rules and do/don't examples in plain Markdown."
+      },
+      "links": [
+        {
+          "label": "Design systems as agent context",
+          "url": "https://www.producthunt.com/products/figma-for-ai-agents/launches/design-md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "consent-permission-ux",
+      "section": "Trends to Watch",
+      "headline": "Consent and permission UX for agents",
+      "summary": "Muse's failures and Gemini's test of fewer permission prompts ([Windows Report](https://windowsreport.com/google-gemini-could-soon-take-control-of-your-mac-with-fewer-permission-prompts/)) pull in opposite directions.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "scoped grants, activity logs and reversible actions as first-class patterns."
+      },
+      "links": [
+        {
+          "label": "Windows Report",
+          "url": "https://windowsreport.com/google-gemini-could-soon-take-control-of-your-mac-with-fewer-permission-prompts/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "cheap-near-frontier-tiers",
+      "section": "Trends to Watch",
+      "headline": "Cheap near-frontier tiers become the default",
+      "summary": "GPT-6.2 Sol and Gemini 4 Neon both pitch near-flagship quality at a fraction of cost.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "build a personal eval set of 5 to 10 design prompts so you can switch models with evidence."
+      },
+      "links": [
+        {
+          "label": "Cheap near-frontier tiers become the default",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      ],
+      "image_url": "https://cdn.openai.com/mdx-assets/e193aefe-5e58-431c-8cd2-adadac0c1496/44573edd-9653-49b3-ba07-7b3643545ef9.d3072be3.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "chatgpt-dot-tab-tool-grid",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT's dot tab and tool grid",
+      "summary": "Giving the persistent agent its own tab separates \"my ongoing helper\" from \"start something new\", and the pinnable grid turns modes into user-arranged shortcuts ([The Verge](https://www.theverge.com/ai-artificial-intelligence/1038334/openai-is-testing-a-new-design-for-mobile-chatgpt)).",
+      "why_it_matters": "it maps two mental models to two places instead of overloading one chat screen. Also watch OpenAI's [dot mobile onboarding](https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026): naming and customizing the agent comes first, which builds ownership early.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1038334/openai-is-testing-a-new-design-for-mobile-chatgpt"
+        },
+        {
+          "label": "dot mobile onboarding",
+          "url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026"
+        }
+      ],
+      "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-19-at-5.01.12-PM.png?quality=90&strip=all&crop=0,29.53469684985,100,40.9306063003",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "genie-4-steering",
+      "section": "Product Design Inspiration",
+      "headline": "Genie 4: steering a world while you are inside it",
+      "summary": "Users type prompts mid-session to change weather or add characters, without restarting ([Google](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/)).",
+      "why_it_matters": "generation becomes continuous direction rather than one-shot prompting. The same pattern applies to live prototype editing.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "superside-card-wallet",
+      "section": "Product Design Inspiration",
+      "headline": "Superside's card wallet built with Figma code layers",
+      "summary": "A motion lead turned static frames into a scroll, tap-to-front, flip-to-reveal card stack using code layers and prompts, and noted results improved when he gave exact positions, sizes and spring values ([Figma blog](https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/)).",
+      "why_it_matters": "precise numbers beat adjectives when directing an agent on motion.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma blog",
+          "url": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/"
+        }
+      ],
+      "image_url": "https://cdn.sanity.io/images/599r6htc/regionalized/ae1c3c193908deb3921d2061f39ffd17878e4240-10835x6095.png?w=1200&q=70&fit=max&auto=format",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "github-spec-kit",
+      "section": "GitHub & Open Source",
+      "headline": "github/spec-kit",
+      "summary": "GitHub's spec-driven development toolkit for coding agents, past 147K stars.",
+      "why_it_matters": "teams are moving from loose vibe coding to structured specs agents can follow ([trend analysis](https://www.coddykit.com/pages/blog-detail?id=5130021&slug=github-trending-november-2026-from-a-147k-star-spec-driven-toolkit-to-a-2-78-tri)).",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "github/spec-kit",
+          "url": "https://github.com/github/spec-kit"
+        },
+        {
+          "label": "trend analysis",
+          "url": "https://www.coddykit.com/pages/blog-detail?id=5130021&slug=github-trending-november-2026-from-a-147k-star-spec-driven-toolkit-to-a-2-78-tri"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/5b9a16c37d3c0c2a68a96c12debc7b93652979b71f9aa16e9c251e4bf918de9b/github/spec-kit",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "agent-beacon",
+      "section": "GitHub & Open Source",
+      "headline": "Asymptote-Labs/agent-beacon",
+      "summary": "MIT-licensed memory and observability across Claude Code, Cursor, Codex and more.",
+      "why_it_matters": "top Product Hunt launch of the month and a GitHub Repository of the Day.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "Asymptote-Labs/agent-beacon",
+          "url": "https://github.com/Asymptote-Labs/agent-beacon"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/77d4c99662200976d90e0c49ba1645909cd4eacd3f153fe5d993bd095a4c3a89/Asymptote-Labs/agent-beacon",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "claude-mem",
+      "section": "GitHub & Open Source",
+      "headline": "thedotmack/claude-mem",
+      "summary": "Persistent memory engine for coding agents, past 108K stars ([trend analysis](https://www.coddykit.com/blog/github-trending-november-2026-from-a-108k-star-persistent-memory-engine-to-a-39k-5130013)).",
+      "why_it_matters": "session memory is the most requested missing piece in agent workflows.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        },
+        {
+          "label": "trend analysis",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-a-108k-star-persistent-memory-engine-to-a-39k-5130013"
+        }
+      ],
+      "image_url": "https://repository-images.githubusercontent.com/1048065319/62ccff98-4c97-4bab-97b7-ed6e1995cfba",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "lightpanda-browser",
+      "section": "GitHub & Open Source",
+      "headline": "lightpanda-io/browser",
+      "summary": "Headless browser built for AI agents rather than humans.",
+      "why_it_matters": "browser agents need speed and low memory more than rendering fidelity.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "lightpanda-io/browser",
+          "url": "https://github.com/lightpanda-io/browser"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/be6107b8fa1018444204d7dc266f0465e35b61406b428ae8de9ca2c97109e67e/lightpanda-io/browser",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "motion-anything",
+      "section": "GitHub & Open Source",
+      "headline": "nexu-io/motion-anything",
+      "summary": "Agent-driven motion workbench with hundreds of motion recipes and DESIGN.md brand packs.",
+      "why_it_matters": "motion is the next design layer agents are learning to do well.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "nexu-io/motion-anything",
+          "url": "https://github.com/nexu-io/motion-anything"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/e9012b02336d8b05018faa0cf152e8d960460b84c4d5e351f6d961865df52a2b/nexu-io/motion-anything",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "openmaic",
+      "section": "GitHub & Open Source",
+      "headline": "THU-MAIC/OpenMAIC",
+      "summary": "Open multi-agent interactive classroom, past 42K stars.",
+      "why_it_matters": "a strong reference for designing multi-agent experiences for non-technical users.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "THU-MAIC/OpenMAIC",
+          "url": "https://github.com/THU-MAIC/OpenMAIC"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/82a6daa565fae211c9b9227af848b69e5887cfa7a4d7bfdf6c160621fb49e411/THU-MAIC/OpenMAIC",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "hn-gpt-6-2-benchmarks",
+      "section": "Social Buzz",
+      "headline": "GPT-6.2 benchmarks under the microscope",
+      "kicker": "Hacker News",
+      "summary": "The [GPT-6.2 launch](https://openai.com/index/introducing-gpt-6-2-astra-sol) drew threads focused on cost-per-task claims and whether vendor evals hold up outside OpenAI's setup. Useful for seeing how practitioners sanity-check model claims.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "GPT-6.2 launch",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      ],
+      "image_url": "https://cdn.openai.com/mdx-assets/e193aefe-5e58-431c-8cd2-adadac0c1496/44573edd-9653-49b3-ba07-7b3643545ef9.d3072be3.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "riemann-hypothesis-claim",
+      "section": "Social Buzz",
+      "headline": "A claimed Riemann Hypothesis proof",
+      "kicker": "Math and AI circles",
+      "summary": "An Anthropic mathematician says he used Claude to produce a proof and posted it in Lean for checking; it is not independently verified ([Scientific American](https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/)). The takeaway: formal verification is becoming the trust layer for AI-generated work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Scientific American",
+          "url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/"
+        }
+      ],
+      "image_url": "https://static.scientificamerican.com/dam/asset/cee10388-a264-4ba7-b944-7f0a8daf537d/riemann.jpg?m=1795217260.215&w=1200",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "ph-agent-workspaces",
+      "section": "Social Buzz",
+      "headline": "Agent workspaces dominate",
+      "kicker": "Product Hunt",
+      "summary": "The [Nov 18 board](https://www.producthunt.com/leaderboard/daily/2026/11/18) was led by S.Space (team plus agents in one workspace), with Mermaid Flow, a visual builder for agent workflows, also in the top ten. Multiplayer agent spaces are the dominant launch category this month.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Nov 18 board",
+          "url": "https://www.producthunt.com/leaderboard/daily/2026/11/18"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "hn-hiring-and-ai",
+      "section": "Social Buzz",
+      "headline": "Hiring and AI",
+      "kicker": "HN weekly",
+      "summary": "A widely shared thread noted \"Who is Hiring?\" postings near 12-year lows as AI touches more roles ([weekly roundup](https://dev.to/rpgbyters/the-week-in-ai-november-16-2026-4a12)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "weekly roundup",
+          "url": "https://dev.to/rpgbyters/the-week-in-ai-november-16-2026-4a12"
+        }
+      ],
+      "image_url": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fb42st9iiyhq9wef8rglb.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "intent-is-the-scarce-skill",
+      "section": "Social Buzz",
+      "headline": "Intent is the scarce skill",
+      "kicker": "Design community",
+      "summary": "A popular [UX Collective essay](https://uxdesign.cc/every-designer-on-my-team-ships-the-same-quality-now-e6fbc0c4feec) argues that once agents share a design system, the gap between AI and human output shrinks, and the valuable skill becomes explaining intent clearly to stakeholders and agents alike.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "UX Collective essay",
+          "url": "https://uxdesign.cc/every-designer-on-my-team-ships-the-same-quality-now-e6fbc0c4feec"
+        }
+      ],
+      "image_url": "https://miro.medium.com/v2/resize:fit:1200/1*YEV767ysEPABTeV62uMreg.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "code-layers-six-ways",
+      "section": "Learning Corner",
+      "headline": "6 ways teams are experimenting with code layers",
+      "kicker": "Article",
+      "summary": "Concrete workflows from real teams, including how to prompt motion with exact values. 10 minutes, directly applicable.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "6 ways teams are experimenting with code layers",
+          "url": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/"
+        }
+      ],
+      "image_url": "https://cdn.sanity.io/images/599r6htc/regionalized/ae1c3c193908deb3921d2061f39ffd17878e4240-10835x6095.png?w=1200&q=70&fit=max&auto=format",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "dot-onboarding-demo",
+      "section": "Learning Corner",
+      "headline": "ChatGPT dot mobile onboarding demo",
+      "kicker": "Video",
+      "summary": "A short clip of how OpenAI onboards users to a persistent agent: naming, appearance, plugins. Pause it frame by frame and note each decision.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ChatGPT dot mobile onboarding demo",
+          "url": "https://cdn.openai.com/devhub/docs/dots/demos/dots-demo-mobile-onboarding-1080p-v1.webm"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "spec-kit-templates",
+      "section": "Learning Corner",
+      "headline": "github/spec-kit",
+      "kicker": "GitHub project",
+      "summary": "Read the templates to learn how to write specs agents follow reliably. Translates directly into better PRDs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "github/spec-kit",
+          "url": "https://github.com/github/spec-kit"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/5b9a16c37d3c0c2a68a96c12debc7b93652979b71f9aa16e9c251e4bf918de9b/github/spec-kit",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "design-md-library",
+      "section": "Learning Corner",
+      "headline": "Design.MD (getdesign.md)",
+      "kicker": "Design resource",
+      "summary": "Browse a few brand DESIGN.md files to see what level of detail actually changes agent output.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design.MD (getdesign.md)",
+          "url": "https://www.producthunt.com/products/figma-for-ai-agents/launches/design-md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "stitch-motion-studio-pipeline",
+      "section": "Learning Corner",
+      "headline": "Stitch to Motion Studio MCP to Claude Code pipeline",
+      "kicker": "AI workflow",
+      "summary": "Generate screens in [Google Stitch](https://stitch.withgoogle.com), export a design.md, add motion context via MCP, then build. A good template for a design-to-production loop without handoff.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Stitch to Motion Studio MCP to Claude Code pipeline",
+          "url": "https://medium.com/@karthikmulugu/the-ai-design-pipeline-nobody-told-you-about-motion-studio-mcp-google-stitch-claude-code-9ce15aef45b2"
+        },
+        {
+          "label": "Google Stitch",
+          "url": "https://stitch.withgoogle.com"
+        }
+      ],
+      "image_url": "https://miro.medium.com/v2/da:true/bc1f8416df0cad099e43cda2872716e5864f18a73bda2a7547ea082aca9b5632",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "agent-ready-design-systems",
+      "section": "Opportunities",
+      "headline": "Agent-ready design systems",
+      "summary": "Package an existing design system as a DESIGN.md plus a few skills so teammates' agents produce on-brand screens. Few teams have this yet, and the person who builds it owns the AI workflow.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "permission-consent-patterns",
+      "section": "Opportunities",
+      "headline": "Permission and consent patterns for agents",
+      "summary": "Muse's failures show the gap. Build a small public pattern library for scoped grants, activity logs and undo for agent actions. High portfolio value, low competition.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "motion-as-code-services",
+      "section": "Opportunities",
+      "headline": "Motion-as-code services",
+      "summary": "With [Clayzo](https://www.producthunt.com/products/clayzo), [Motion Studio](https://motion.dev/magazine/introducing-motion-studio) and Figma code layers, designers who direct agents on motion with exact values can ship launch videos and micro-interactions without a motion team.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Clayzo",
+          "url": "https://www.producthunt.com/products/clayzo"
+        },
+        {
+          "label": "Motion Studio",
+          "url": "https://motion.dev/magazine/introducing-motion-studio"
+        }
+      ],
+      "image_url": "https://images.motion.dev/og/fresh/v1/site/magazine-introducing-motion-studio-38e7kbq9udin2.png",
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "merchant-ops-tooling",
+      "section": "Opportunities",
+      "headline": "Merchant and ops tooling on cheap agent tiers",
+      "summary": "Near-frontier models at a fifth of the cost make internal agent tools for merchants (catalog cleanup, order triage, onboarding) economical. A designer who prototypes these end to end is valuable to commerce teams.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "voice-first-agent-interfaces",
+      "section": "Opportunities",
+      "headline": "Voice-first agent interfaces",
+      "summary": "Uncapped live dictation and voice chat in coding agents point to voice as a primary input. Designing turn-taking, progress updates and interruption for voice agents is an open field.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    },
+    {
+      "id": "design-md-ab-test",
+      "section": "Today's Experiment",
+      "headline": "DESIGN.md A/B test",
+      "kicker": "25 minutes",
+      "summary": "Write a one-page DESIGN.md, ask an agent for the same screen with and without it, and count how far each result drifts from your system.",
+      "why_it_matters": null,
+      "steps": [
+        {
+          "label": "Step 1 (8 min)",
+          "text": "Write a one-page DESIGN.md for one real product surface: 6 color tokens, type scale, spacing scale, radius, 3 component rules, and 3 \"never do\" rules. Use a file from [Design.MD](https://www.producthunt.com/products/figma-for-ai-agents/launches/design-md) as a structure reference."
+        },
+        {
+          "label": "Step 2 (7 min)",
+          "text": "In [Claude Code](https://www.anthropic.com/claude-code) or [Cursor](https://cursor.com), ask for the same screen twice in two empty folders: once with no context, once with your DESIGN.md in the project root."
+        },
+        {
+          "label": "Step 3 (5 min)",
+          "text": "Screenshot both side by side. Count deviations from your system in each."
+        },
+        {
+          "label": "Step 4 (5 min)",
+          "text": "Add one rule that fixes the biggest remaining deviation, rerun, and keep the file. You now have a reusable asset."
+        }
+      ],
+      "links": [
+        {
+          "label": "DESIGN.md A/B test",
+          "url": "https://www.producthunt.com/products/figma-for-ai-agents/launches/design-md"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-21"
+    }
+  ],
+  "dont_miss": [
+    "Look at the [ChatGPT dot-first mobile redesign](https://www.theverge.com/ai-artificial-intelligence/1038334/openai-is-testing-a-new-design-for-mobile-chatgpt). It is the clearest preview of how consumer agent apps will be structured.",
+    "Run the DESIGN.md experiment above. It is the highest-leverage 25 minutes for anyone shipping UI with agents.",
+    "Add [Gemini 4 Neon](https://openrouter.ai/google/gemini-4-neon) and [GPT-6.2 Sol](https://openai.com/index/introducing-gpt-6-2-astra-sol) to your model comparison for prototyping, since both target near-flagship quality at lower cost."
+  ],
+  "footnote": "Sourced from company announcements, news reports and community roundups published Nov 17 to 20, 2026, with a few earlier items included where they remain directly relevant. Vendor benchmark claims are reported as stated and have not been independently verified."
+}

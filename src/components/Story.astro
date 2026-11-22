@@ -1,0 +1,66 @@
+---
+// One entry as it prints in an issue: a feature (picture above, a spec-sheet
+// of notes below) or a row (thumbnail beside the words).
+import Media from './Media.astro';
+import Meter from './Meter.astro';
+import { primaryUrl, cap, type Entry } from '../lib/content';
+import { inline } from '../lib/md';
+
+interface Props { entry: Entry; layout: 'feature' | 'row'; lead?: boolean }
+const { entry: e, layout, lead = false } = Astro.props;
+const href = primaryUrl(e);
+const notes = [
+  e.audience ? { label: 'For', html: inline(cap(e.audience)) } : null,
+  e.why_it_matters ? { label: e.why_label ?? 'Why it matters', html: inline(cap(e.why_it_matters)) } : null,
+  e.takeaway ? { label: e.takeaway.label, html: inline(cap(e.takeaway.text)) } : null,
+].filter(Boolean) as { label: string; html: string }[];
+const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
+const sources = [...new Map(e.links.map((l) => [host(l.url), l])).values()].slice(0, 5);
+---
+{layout === 'feature' ? (
+  <article class="story" id={e.id}>
+    {href ? (
+      <a href={href} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><Media entry={e} eager={lead} reveal /></a>
+    ) : (
+      <Media entry={e} reveal />
+    )}
+    <div class="story__head reveal">
+      {e.kicker && <p class="eyebrow">{e.kicker}</p>}
+      <h3 class="h4">{href ? <a href={href} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>
+    </div>
+    <p class="story__text body-md prose reveal" set:html={inline(e.summary)} />
+    {notes.length > 0 && (
+      <dl class="notes body-md prose reveal">
+        {notes.map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}
+      </dl>
+    )}
+    {sources.length > 1 && (
+      <ul class="sources reveal" aria-label="Sources">
+        {sources.map((l) => <li><a class="tag" href={l.url} target="_blank" rel="noopener" title={l.label}>{host(l.url)}</a></li>)}
+      </ul>
+    )}
+  </article>
+) : (
+  <article class="row reveal" id={e.id}>
+    {href ? (
+      <a href={href} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><Media entry={e} /></a>
+    ) : (
+      <Media entry={e} />
+    )}
+    <div class="row__body">
+      {(e.kicker || e.tool_rating != null) && (
+        <div class="row__top">
+          {e.tool_rating != null && <Meter value={e.tool_rating} />}
+          {e.kicker && <span class="eyebrow">{e.kicker}</span>}
+        </div>
+      )}
+      <h3 class="h5">{href ? <a href={href} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>
+      <p class="body-md prose" set:html={inline(e.summary)} />
+      {notes.length > 0 && (
+        <dl class="notes body-md prose">
+          {notes.map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}
+        </dl>
+      )}
+    </div>
+  </article>
+)}

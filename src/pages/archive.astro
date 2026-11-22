@@ -1,0 +1,143 @@
+---
+import Base from '../layouts/Base.astro';
+import Media from '../components/Media.astro';
+import { issues, issueNo, grouped, sections, sectionOf, entryHref, issueHref, fmtLong, fmtShort } from '../lib/content';
+import { plain } from '../lib/md';
+
+const total = issues.reduce((n, i) => n + i.entries.length, 0);
+const first = issues[issues.length - 1]?.date ?? '';
+const last = issues[0]?.date ?? '';
+---
+<Base title="Archive" nav="archive" description="Every story from every brief, by section and date.">
+  <header class="container head">
+    <p class="head__eyebrow eyebrow reveal"><span>{issues.length} {issues.length === 1 ? 'issue' : 'issues'}</span><span>{total} stories</span></p>
+    <h1 class="h2 head__title" data-reveal="text">Every story, by section and date.</h1>
+    <div class="head__row reveal" style="--d: .45s">
+      <p class="body-md muted">Search headlines and summaries, or narrow by section and date. Filters stay in the address, so a view can be shared.</p>
+    </div>
+  </header>
+
+  <div class="container" style="padding-bottom: var(--section-pad)">
+    <form class="filters reveal" role="search" data-filters onsubmit="return false">
+      <div class="filters__row">
+        <label class="field field--search">
+          <span class="eyebrow">Search</span>
+          <input class="input" type="search" name="q" placeholder="Headline, tool, company" autocomplete="off" />
+        </label>
+        <label class="field">
+          <span class="eyebrow">From</span>
+          <input class="input" type="date" name="from" min={first} max={last} />
+        </label>
+        <label class="field">
+          <span class="eyebrow">To</span>
+          <input class="input" type="date" name="to" min={first} max={last} />
+        </label>
+      </div>
+      <div class="chips" role="group" aria-label="Sections">
+        <button type="button" class="chip" data-section="" aria-pressed="true">All</button>
+        {sections.map((s) => <button type="button" class="chip" data-section={s.slug} aria-pressed="false">{s.short}</button>)}
+      </div>
+    </form>
+
+    <div class="result-meta">
+      <span class="eyebrow" data-count aria-live="polite">{total} stories</span>
+      <button type="button" class="btn btn--secondary btn--sm" data-clear hidden>Clear filters</button>
+    </div>
+
+    <div data-results>
+      {issues.map((issue) => (
+        <section class="day" data-day={issue.date} aria-label={fmtLong(issue.date)}>
+          <div class="day__head">
+            <h2 class="h6"><a class="u-link" href={issueHref(issue.date)}>{fmtLong(issue.date)}</a></h2>
+            <span class="tag">No. {issueNo(issue.date)}</span>
+          </div>
+          <div class="rows">
+            {grouped(issue).flatMap((g) => g.entries).map((e) => {
+              const s = sectionOf(e.section);
+              const text = [e.headline, e.kicker, s.name, s.title, plain(e.summary), plain(e.why_it_matters), plain(e.audience)].filter(Boolean).join(' ').toLowerCase();
+              return (
+                <article class="row archive-row" data-entry data-section={s.slug} data-date={e.date} data-text={text}>
+                  <a href={entryHref(e)} tabindex="-1" aria-hidden="true"><Media entry={e} /></a>
+                  <div class="row__body">
+                    <div class="row__top"><span class="eyebrow">{s.short}{e.kicker ? ` / ${e.kicker}` : ''}</span></div>
+                    <h3 class="h5"><a href={entryHref(e)} data-hl>{e.headline}</a></h3>
+                    <p class="body-sm muted clamp-2">{plain(e.summary)}</p>
+                  </div>
+                  <span class="row__when eyebrow muted">{fmtShort(e.date)}</span>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+      <div class="empty" data-none hidden>
+        <h2 class="h5">No stories match.</h2>
+        <p class="body-md muted">Try a shorter search, another section, or a wider date range.</p>
+        <button type="button" class="btn btn--secondary" data-clear-2>Clear filters</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.querySelector<HTMLFormElement>('[data-filters]')!;
+    const q = form.querySelector<HTMLInputElement>('input[name=q]')!;
+    const from = form.querySelector<HTMLInputElement>('input[name=from]')!;
+    const to = form.querySelector<HTMLInputElement>('input[name=to]')!;
+    const chips = [...form.querySelectorAll<HTMLButtonElement>('.chip')];
+    const rows = [...document.querySelectorAll<HTMLElement>('[data-entry]')];
+    const days = [...document.querySelectorAll<HTMLElement>('[data-day]')];
+    const count = document.querySelector<HTMLElement>('[data-count]')!;
+    const none = document.querySelector<HTMLElement>('[data-none]')!;
+    const clears = [...document.querySelectorAll<HTMLButtonElement>('[data-clear], [data-clear-2]')];
+    const heads = new Map(rows.map((r) => [r, r.querySelector<HTMLAnchorElement>('[data-hl]')!]));
+    const original = new Map([...heads].map(([r, a]) => [r, a.textContent ?? '']));
+    let section = '';
+
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const reEsc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+    function readUrl() {
+      const p = new URLSearchParams(location.search);
+      q.value = p.get('q') ?? '';
+      from.value = p.get('from') ?? '';
+      to.value = p.get('to') ?? '';
+      section = p.get('section') ?? '';
+      if (!chips.some((b) => b.dataset.section === section)) section = '';
+    }
+    function writeUrl() {
+      const p = new URLSearchParams();
+      if (q.value.trim()) p.set('q', q.value.trim());
+      if (section) p.set('section', section);
+      if (from.value) p.set('from', from.value);
+      if (to.value) p.set('to', to.value);
+      const s = p.toString();
+      history.replaceState(null, '', s ? `?${s}` : location.pathname);
+    }
+    function apply() {
+      const terms = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      const re = terms.length ? new RegExp(`(${terms.map(reEsc).join('|')})`, 'gi') : null;
+      let shown = 0;
+      for (const r of rows) {
+        const d = r.dataset.date!;
+        const ok = (!section || r.dataset.section === section) && (!from.value || d >= from.value) && (!to.value || d <= to.value) && terms.every((t) => r.dataset.text!.includes(t));
+        r.hidden = !ok;
+        if (ok) shown++;
+        const text = original.get(r)!;
+        heads.get(r)!.innerHTML = ok && re ? esc(text).replace(re, '<mark>$1</mark>') : esc(text);
+      }
+      for (const d of days) d.hidden = !d.querySelector('[data-entry]:not([hidden])');
+      chips.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.section === section)));
+      count.textContent = `${shown} ${shown === 1 ? 'story' : 'stories'}`;
+      none.hidden = shown > 0;
+      clears[0].hidden = !(section || q.value || from.value || to.value);
+      writeUrl();
+    }
+    chips.forEach((b) => b.addEventListener('click', () => { section = b.dataset.section ?? ''; apply(); }));
+    q.addEventListener('input', apply);
+    from.addEventListener('change', apply);
+    to.addEventListener('change', apply);
+    clears.forEach((c) => c.addEventListener('click', () => { section = ''; q.value = ''; from.value = ''; to.value = ''; apply(); q.focus(); }));
+    readUrl();
+    apply();
+  </script>
+</Base>

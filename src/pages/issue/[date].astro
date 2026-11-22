@@ -1,0 +1,138 @@
+---
+// One day's brief. A full-bleed cover (the lead story's picture) runs under
+// the nav and carries the issue's details; then the stories on the left and
+// a narrow sticky column of cards on the right.
+import Base from '../../layouts/Base.astro';
+import Story from '../../components/Story.astro';
+import SectionBody from '../../components/SectionBody.astro';
+import { iso, stepsIso } from '../../lib/iso';
+import { issues, grouped, leadOf, fmtLong, fmtDay, fmtShort, issueHref, type Issue } from '../../lib/content';
+import { inline, plain } from '../../lib/md';
+
+export function getStaticPaths() {
+  return issues.map((issue, i) => ({
+    params: { date: issue.date },
+    props: { issue, newer: issues[i - 1] ?? null, older: issues[i + 1] ?? null },
+  }));
+}
+
+interface Props { issue: Issue; newer: Issue | null; older: Issue | null }
+const { issue, newer, older } = Astro.props;
+const groups = grouped(issue);
+const lead = leadOf(issue);
+const byId = new Map(issue.entries.map((e) => [e.id, e]));
+const FEATURE = new Set(['AI Industry News', 'Product Design & UX', 'Product Design Inspiration']);
+const OWN_LAYOUT = new Set(['tools', 'trends', 'open-source', 'social', 'learning', 'opportunities']);
+const isLatest = issues[0].date === issue.date;
+const weekday = fmtLong(issue.date).split(' ')[0];
+const dayMonth = fmtDay(issue.date).replace(/ \d{4}$/, '');
+// One of seven abstract covers (scripts/covers/render.py), turning with the date.
+const coverImg = `/covers/abstract-${(Math.floor(Date.parse(`${issue.date}T00:00:00Z`) / 86400000) % 7) + 1}.webp`;
+const arrowR = '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5"/></svg>';
+---
+<Base title={`Brief, ${fmtShort(issue.date)}`} description={plain(lead.headline)} nav={isLatest ? 'today' : 'archive'} overCover>
+  <section class="cover" aria-labelledby="cover-h">
+    <img class="cover__img" src={coverImg} alt="" width="2400" height="1200" fetchpriority="high" decoding="async" />
+    <div class="container cover__content">
+      <h1 class="h2 cover__title" id="cover-h">The brief for {weekday} {dayMonth}.</h1>
+    </div>
+  </section>
+
+  <div class="container sticky-split" style="padding-block: 56px var(--section-pad)">
+    <aside class="sticky-split__aside">
+      <nav class="aside-card toc-block" aria-label="In this issue">
+        <p class="eyebrow">In this issue</p>
+        <ul class="toc body-sm" data-toc>
+          {issue.highlights?.length ? <li><a href="#in-brief">In brief</a></li> : null}
+          {groups.map(({ section }) => <li><a href={`#${section.slug}`}>{section.title}</a></li>)}
+        </ul>
+      </nav>
+      {issue.dont_miss?.length ? (
+        <div class="aside-card">
+          <p class="eyebrow">Don't miss today</p>
+          <ul class="dont-miss body-sm prose">{issue.dont_miss.map((d) => <li set:html={inline(d)} />)}</ul>
+        </div>
+      ) : null}
+    </aside>
+
+    <div class="issue-main">
+      {issue.highlights?.length ? (
+        <section class="issue-sec" id="in-brief" aria-labelledby="in-brief-h">
+          <header class="issue-sec__head">
+            <h2 class="h3" id="in-brief-h" data-reveal="text">In brief</h2>
+          </header>
+          <ul class="brief" data-stagger="80">
+            {issue.highlights.map((h) => (
+              <li class="ncard ncard__body">
+                <div>
+                  <h3 class="h5">{h.ref && byId.has(h.ref) ? <a href={`#${h.ref}`}>{h.headline}</a> : h.headline}</h3>
+                  <p class="body-md muted prose" set:html={inline(h.summary)} />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {groups.map(({ section, entries }) => (
+        <section class="issue-sec" id={section.slug} aria-labelledby={`${section.slug}-h`}>
+          <header class="issue-sec__head">
+            <h2 class="h3" id={`${section.slug}-h`} data-reveal="text">{section.title}</h2>
+            {issue.section_notes?.[section.name] && <p class="body-md muted">{issue.section_notes[section.name]}</p>}
+          </header>
+          {section.name === "Today's Experiment" ? (
+            entries.map((e) => (
+              <article class="illo-split ncard ncard__body" id={e.id}>
+                <div class="illo-split__text reveal">
+                  {e.kicker && <p class="eyebrow muted">{e.kicker}</p>}
+                  <h3 class="h4">{e.headline}</h3>
+                  <p class="body-md muted prose" set:html={inline(e.summary)} />
+                  {e.steps?.length ? (
+                    <ol class="steps body-md prose">
+                      {e.steps.map((s) => <li><b>{s.label}.</b> <Fragment set:html={inline(s.text)} /></li>)}
+                    </ol>
+                  ) : null}
+                </div>
+                <figure class="illo"><Fragment set:html={iso(stepsIso(e.steps?.length || 4), { labels: false })} /></figure>
+              </article>
+            ))
+          ) : OWN_LAYOUT.has(section.slug) ? (
+            <SectionBody slug={section.slug} entries={entries} />
+          ) : FEATURE.has(section.name) ? (
+            entries.map((e) => <Story entry={e} layout="feature" lead={e.id === lead.id} />)
+          ) : (
+            <div class="rows">{entries.map((e) => <Story entry={e} layout="row" />)}</div>
+          )}
+        </section>
+      ))}
+
+      {issue.footnote && <p class="issue-foot body-sm">{issue.footnote}</p>}
+
+      <nav class="pager" aria-label="Issues">
+        <a class="btn btn--secondary" href={older ? issueHref(older.date) : undefined} aria-disabled={older ? undefined : 'true'}>{older ? 'Older issue' : 'This is the first issue'}</a>
+        <div class="btn-row">
+          {issue.doc_url && <a class="btn btn--tertiary" href={issue.doc_url} target="_blank" rel="noopener">Open the Google Doc</a>}
+          <a class="btn btn--tertiary" href="/archive/">Open the archive <Fragment set:html={arrowR} /></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    // The section on screen is ticked in the contents: the last one whose top
+    // has passed the top third of the window, or the last at the very bottom.
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-toc] a')];
+    const secs = [...document.querySelectorAll<HTMLElement>('.issue-sec[id]')];
+    let frame = 0;
+    function mark() {
+      frame = 0;
+      const atEnd = innerHeight + scrollY >= document.documentElement.scrollHeight - 4;
+      let current = secs[0];
+      for (const s of secs) if (s.getBoundingClientRect().top <= innerHeight * 0.3) current = s;
+      if (atEnd) current = secs[secs.length - 1];
+      links.forEach((a) => (a.hash === `#${current?.id}` ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
+    }
+    addEventListener('scroll', () => { if (!frame) frame = requestAnimationFrame(mark); }, { passive: true });
+    mark();
+  </script>
+</Base>

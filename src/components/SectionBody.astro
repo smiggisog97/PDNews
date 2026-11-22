@@ -1,0 +1,119 @@
+---
+// Each section of the brief gets its own simple layout, built from one white
+// card. Nothing is dropped: every field the brief has is shown.
+//   tools          two-up cards, picture on top, rating
+//   trends         one wide card each, headline left, words right
+//   open source    three-up cards, repo picture on top
+//   social         two-up text cards, source as a tag
+//   learning       horizontal cards, picture left
+//   opportunities  two-up text cards, the first one wide
+import Media from './Media.astro';
+import Meter from './Meter.astro';
+import { primaryUrl, cap, type Entry } from '../lib/content';
+import { inline } from '../lib/md';
+
+interface Props { slug: string; entries: Entry[] }
+const { slug, entries } = Astro.props;
+
+const notesOf = (e: Entry) => [
+  e.audience ? { label: 'For', html: inline(cap(e.audience)) } : null,
+  e.why_it_matters ? { label: e.why_label ?? 'Why it matters', html: inline(cap(e.why_it_matters)) } : null,
+  e.takeaway ? { label: e.takeaway.label, html: inline(cap(e.takeaway.text)) } : null,
+].filter(Boolean) as { label: string; html: string }[];
+const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; } };
+---
+{slug === 'tools' && (
+  <div class="cards-2">
+    {entries.map((e) => (
+      <article class="ncard" id={e.id}>
+        <Media entry={e} style="--ar: 16 / 9" />
+        <div class="ncard__body">
+          <div class="row__top">
+            {e.tool_rating != null && <Meter value={e.tool_rating} />}
+            {e.kicker && <span class="eyebrow">{e.kicker}</span>}
+          </div>
+          <h3 class="h5">{primaryUrl(e) ? <a href={primaryUrl(e)} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>
+          <p class="body-md muted prose" set:html={inline(e.summary)} />
+          <dl class="notes body-md prose">{notesOf(e).map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}</dl>
+        </div>
+      </article>
+    ))}
+  </div>
+)}
+
+{slug === 'trends' && (
+  <div class="stack">
+    {entries.map((e) => (
+      <article class="ncard ncard--split" id={e.id}>
+        <div class="ncard__body">
+          <h3 class="h4">{primaryUrl(e) ? <a href={primaryUrl(e)} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>
+          <div class="ncard__words">
+            <p class="body-md muted prose" set:html={inline(e.summary)} />
+            <dl class="notes body-md prose">{notesOf(e).map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}</dl>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+)}
+
+{slug === 'open-source' && (
+  <div class="cards-3">
+    {entries.map((e) => (
+      <article class="ncard" id={e.id}>
+        <Media entry={e} style="--ar: 2 / 1" />
+        <div class="ncard__body">
+          <h3 class="h6 mono-name">{primaryUrl(e) ? <a href={primaryUrl(e)} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>
+          <p class="body-sm muted prose" set:html={inline(e.summary)} />
+          <dl class="notes body-sm prose">{notesOf(e).map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}</dl>
+        </div>
+      </article>
+    ))}
+  </div>
+)}
+
+{slug === 'social' && (
+  <div class="cards-2">
+    {entries.map((e) => (
+      <article class="ncard" id={e.id}>
+        <div class="ncard__body">
+          {e.kicker && <span class="tag" style="align-self: flex-start">{e.kicker}</span>}
+          <h3 class="h4">{e.headline}</h3>
+          <p class="body-md muted prose" set:html={inline(e.summary)} />
+          {notesOf(e).length > 0 && <dl class="notes body-md prose">{notesOf(e).map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}</dl>}
+          {e.links[0] && <a class="ncard__source eyebrow muted u-link" href={e.links[0].url} target="_blank" rel="noopener">{host(e.links[0].url)}</a>}
+        </div>
+      </article>
+    ))}
+  </div>
+)}
+
+{slug === 'learning' && (
+  <div class="stack">
+    {entries.map((e) => (
+      <article class="ncard ncard--h" id={e.id}>
+        {primaryUrl(e) ? <a class="ncard__thumb" href={primaryUrl(e)} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><Media entry={e} /></a> : <div class="ncard__thumb"><Media entry={e} /></div>}
+        <div class="ncard__body">
+          {e.kicker && <span class="tag" style="align-self: flex-start">{e.kicker}</span>}
+          <h3 class="h5">{primaryUrl(e) ? <a href={primaryUrl(e)} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>
+          <p class="body-md muted prose" set:html={inline(e.summary)} />
+          {notesOf(e).length > 0 && <dl class="notes body-md prose">{notesOf(e).map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}</dl>}
+        </div>
+      </article>
+    ))}
+  </div>
+)}
+
+{slug === 'opportunities' && (
+  <div class="cards-2">
+    {entries.map((e, i) => (
+      <article class:list={['ncard', { 'ncard--wide': i === 0 }]} id={e.id}>
+        <div class="ncard__body">
+          <h3 class={i === 0 ? 'h3' : 'h4'}>{e.headline}</h3>
+          <p class={i === 0 ? 'body-lg muted prose' : 'body-md muted prose'} set:html={inline(e.summary)} />
+          {notesOf(e).length > 0 && <dl class="notes body-md prose">{notesOf(e).map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}</dl>}
+        </div>
+      </article>
+    ))}
+  </div>
+)}

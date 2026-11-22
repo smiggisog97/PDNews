@@ -1,0 +1,1020 @@
+{
+  "date": "2026-11-22",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1SQaUNqUDKt2VvHsD_UisRW69PowQAIitt1545tQe3ik/edit",
+  "highlights": [
+    {
+      "headline": "A claimed Riemann Hypothesis proof made with Claude.",
+      "ref": "riemann-proof-verification",
+      "summary": "[Anthropic](https://www.anthropic.com) mathematician Levent Alpöge released a [Lean](https://lean-lang.org)-formalized proof covering RH and the Generalized RH; a rival all-human draft surfaced at Stanford hours later. Independent builds are compiling, but expert review is just starting ([Al Jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked))."
+    },
+    {
+      "headline": "Anthropic is public.",
+      "ref": "anthropic-record-ipo",
+      "summary": "ANT priced at $83, opened at $111.50 and closed its first day at $97.17, in the largest IPO on record ([Neoteo](https://www.neoteo.com/en/anthropics-nasdaq-debut-leaves-the-ai-bubble-question-open), [Al Jazeera](https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo))."
+    },
+    {
+      "headline": "ChatGPT and Claude both moved to bottom tab bars on mobile in the same week.",
+      "ref": "chatgpt-agent-tab",
+      "summary": "[ChatGPT](https://chatgpt.com) gives your agent (\"dot\") its own tab; [Claude](https://claude.ai) splits Chat, Projects, Code and Artifacts. Agents are becoming navigation destinations, not features."
+    },
+    {
+      "headline": "Your prompts are leaking through the inference supply chain.",
+      "ref": "inference-supply-chain-leakage",
+      "summary": "[Dragos](https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens) seeded about two million canary prompts and found at least three compromised AI providers, resellers logging prompts, and ignored zero-retention flags."
+    },
+    {
+      "headline": "Apple is hiring to build a general computer-use agent",
+      "ref": "apple-computer-use-agent",
+      "summary": "It codes, uses apps and browses ([MacRumors](https://macrumors.com/2026/11/19/apple-ai-agent-development)), while [Nvidia](https://www.nvidia.com) faces an SEC disclosure probe after its CEO's exit."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "The past 48 hours were light on genuinely new design tools, so this list covers the strongest launches of the last two weeks."
+  },
+  "entries": [
+    {
+      "id": "riemann-proof-verification",
+      "section": "AI Industry News",
+      "headline": "Claude-assisted Riemann Hypothesis proof enters verification",
+      "summary": "On November 20, Levent Alpöge posted a four-page note saying that, working with [Claude](https://claude.ai), he found a proof of the Riemann Hypothesis, and that the method extends to the Generalized RH. He released only the [Lean](https://lean-lang.org) version for now ([Phys.org](https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html)). Hours later, AMS president Ravi Vakil posted an independent human-written draft by Stanford postdoc Alessandro Masullo ([The Decoder](https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/)). Imperial's Kevin Buzzard cautioned that nobody yet understands what the proof actually shows ([Al Jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)).",
+      "why_it_matters": "Machine-checked output shifts the question from \"is the AI right?\" to \"do humans understand what was verified?\" That gap between verified and understood is the same gap designers face reviewing agent-generated code and UI.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Formal or automated verification (tests, type checks, visual diffs) is becoming the trust layer for AI output. Build it into your workflow before you scale agent usage."
+      },
+      "links": [
+        {
+          "label": "Claude-assisted Riemann Hypothesis proof enters verification",
+          "url": "https://phys.org/news/2026-11-anthropic-claude-math-greatest-riddle.html"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "Lean",
+          "url": "https://lean-lang.org"
+        },
+        {
+          "label": "The Decoder",
+          "url": "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/"
+        },
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked"
+        }
+      ],
+      "image_url": "https://claude.ai/images/claude_ogimage.png",
+      "tool_rating": null,
+      "date": "2026-11-22",
+      "lead": true
+    },
+    {
+      "id": "anthropic-record-ipo",
+      "section": "AI Industry News",
+      "headline": "Anthropic's record IPO",
+      "summary": "[Anthropic](https://www.anthropic.com) listed on Nasdaq on November 19 as ANT. The IPO priced at $83, above the $70 to $78 range, opened at $111.50 and closed at $97.17 ([Neoteo](https://www.neoteo.com/en/anthropics-nasdaq-debut-leaves-the-ai-bubble-question-open)). The prospectus disclosed a $104B net loss for the first nine months of 2026 ([Al Jazeera](https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo)).",
+      "why_it_matters": "Claude's roadmap now answers to public markets. Expect quarterly disclosures you can use in vendor reviews, and pressure to ship consumer-facing products faster.",
+      "links": [
+        {
+          "label": "Anthropic's record IPO",
+          "url": "https://www.neoteo.com/en/anthropics-nasdaq-debut-leaves-the-ai-bubble-question-open"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo"
+        }
+      ],
+      "image_url": "https://www.nitroindex.com/opengraph/www.neoteo.com/og.png?url=https%3A%2F%2Fwww.neoteo.com%2Fen%2Fanthropics-nasdaq-debut-leaves-the-ai-bubble-question-open",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "inference-supply-chain-leakage",
+      "section": "AI Industry News",
+      "headline": "Inference supply chain: canary research exposes prompt leakage",
+      "summary": "[Dragos](https://www.dragos.com) ran roughly two million prompts carrying unique secrets through AI services from July to November. Findings: evidence of compromise at three or more providers, marketplace resellers able to view and retain prompts with standard logging, and providers ignoring zero-data-retention settings ([Dragos blog](https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact for builders",
+        "text": "If your product routes through AI routers or cheap resellers, assume prompts can be seen. Keep keys, customer PII and internal URLs out of prompts, and prefer first-party APIs for anything sensitive."
+      },
+      "links": [
+        {
+          "label": "Inference supply chain: canary research exposes prompt leakage",
+          "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+        },
+        {
+          "label": "Dragos",
+          "url": "https://www.dragos.com"
+        }
+      ],
+      "image_url": "https://dragos.brightspotcdn.com/dims4/default/41c5c4a/2147483647/strip/true/crop/1307x735+309+0/resize/1440x810!/format/webp/quality/90/?url=https%3A%2F%2Fdragos-production-dragos.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fd4%2Fb6%2Fb4dbcbe348a8b3506fb99c5419e7%2Fxot-hero.webp",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "apple-computer-use-agent",
+      "section": "AI Industry News",
+      "headline": "Apple is building a computer-use agent",
+      "summary": "A November 17 [Apple](https://www.apple.com) job listing describes an agent that navigates apps, browses the web and writes and debugs code ([iClarified](https://www.iclarified.com/103689/apple-is-building-an-ai-agent-to-use-apps-browse-the-web-and-write-code)). [MacRumors](https://macrumors.com/2026/11/19/apple-ai-agent-development) frames it as Apple's answer to Meta's Muse and OpenAI's Dots.",
+      "why_it_matters": "OS-level agents will read and operate your app's UI. Accessible labels, predictable layouts and clear states become agent-readability, not just a11y compliance.",
+      "links": [
+        {
+          "label": "Apple is building a computer-use agent",
+          "url": "https://www.iclarified.com/103689/apple-is-building-an-ai-agent-to-use-apps-browse-the-web-and-write-code"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com"
+        },
+        {
+          "label": "MacRumors",
+          "url": "https://macrumors.com/2026/11/19/apple-ai-agent-development"
+        }
+      ],
+      "image_url": "https://www.iclarified.com/images/news/103689/103689/103689-1280.jpg",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "nvidia-sec-probe",
+      "section": "AI Industry News",
+      "headline": "Nvidia under SEC scrutiny",
+      "summary": "The SEC opened a civil probe into whether [Nvidia](https://www.nvidia.com)'s disclosures misled investors, following Jensen Huang's November 12 resignation ([InvestmentNews](https://www.investmentnews.com/equities/embattled-nvidia-faces-sec-probe-as-california-attorney-general-eyes-action/269054)).",
+      "why_it_matters": "Nvidia is the AI trade's bellwether. Turbulence there affects funding sentiment and GPU pricing for everyone downstream.",
+      "links": [
+        {
+          "label": "Nvidia under SEC scrutiny",
+          "url": "https://www.investmentnews.com/equities/embattled-nvidia-faces-sec-probe-as-california-attorney-general-eyes-action/269054"
+        },
+        {
+          "label": "Nvidia",
+          "url": "https://www.nvidia.com"
+        }
+      ],
+      "image_url": "https://cdn-res.keymedia.com/cms/images/in/deni_638997536608019163.jpg",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "gemini-4-carbon-price",
+      "section": "AI Industry News",
+      "headline": "Gemini 4 Carbon price doubles on November 30",
+      "summary": "[Google](https://gemini.google.com)'s Gemini 4 Carbon went GA on November 10 at an intro rate of $2 input and $10 output per million tokens. On November 30 it rises to $4 and $20 ([Let's Data Science](https://letsdatascience.com/news/google-rolls-out-gemini-4-carbon-to-general-public-9b41bcb4)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "For builders",
+        "text": "If you are prototyping on Carbon, budget at the higher rate now."
+      },
+      "links": [
+        {
+          "label": "Gemini 4 Carbon price doubles on November 30",
+          "url": "https://letsdatascience.com/news/google-rolls-out-gemini-4-carbon-to-general-public-9b41bcb4"
+        },
+        {
+          "label": "Google",
+          "url": "https://gemini.google.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "chatgpt-agent-tab",
+      "section": "Product Design & UX",
+      "headline": "ChatGPT's mobile redesign: the agent gets a tab",
+      "summary": "[OpenAI](https://openai.com) started rolling out a new [ChatGPT](https://chatgpt.com) mobile layout on November 19: a bottom bar with Home, a dedicated Dot tab, and a grid of tools. Users long-press items in the grid to pin them to the tab bar ([Digital Trends](https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/)). It starts with eligible Pro users, can be toggled in Settings, and excludes the EEA, UK, Switzerland and Korea ([OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)). Dots also began testing with a small group of Plus users.",
+      "why_it_matters": "a user-configurable tab bar is a clean answer to feature sprawl. Worth studying if your super-app keeps adding verticals.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "ChatGPT's mobile redesign: the agent gets a tab",
+          "url": "https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "OpenAI release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        }
+      ],
+      "image_url": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/ChatGPT-makeover.jpg?resize=1200%2C630&ssl=1",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "claude-mobile-refresh",
+      "section": "Product Design & UX",
+      "headline": "Claude's mobile refresh: Chat, Projects, Code, Artifacts",
+      "summary": "[Anthropic](https://www.anthropic.com) began rolling out a refreshed [Claude](https://claude.ai) mobile app with a bottom navigation bar for chats, projects, code and artifacts, a day after ChatGPT's redesign ([dev.ua](https://dev.ua/en/news/anthropic-onovyla-dyzain-mobilnoho-zastosunku-claude-1795249677)). Users can slide between tabs, long-press for recent items and start code sessions from the home screen ([X trending summary](https://x.com/i/trending/2123901344277025253)).",
+      "why_it_matters": "long-press-for-recents is a strong pattern for resuming work on mobile without a cluttered home screen.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude's mobile refresh: Chat, Projects, Code, Artifacts",
+          "url": "https://dev.ua/en/news/anthropic-onovyla-dyzain-mobilnoho-zastosunku-claude-1795249677"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "X trending summary",
+          "url": "https://x.com/i/trending/2123901344277025253"
+        }
+      ],
+      "image_url": "https://dev.ua/storage/images/43/22/10/34/derived/e3a45755fb7a23ea52cdd35ba05d750b.webp",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "figma-motion-springs",
+      "section": "Product Design & UX",
+      "headline": "Figma Motion adds physics springs and Lottie previews",
+      "summary": "[Figma](https://www.figma.com) shipped physics-based springs, style presets and Lottie export previews in Figma Motion on November 10 ([Releasebot, Figma feed](https://releasebot.io/updates/figma)). Agent-generated vector illustrations and icons also improved on November 5.",
+      "why_it_matters": "springs plus Lottie preview means motion specs can ship from Figma without a separate After Effects pass for most micro-interactions.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Motion adds physics springs and Lottie previews",
+          "url": "https://releasebot.io/updates/figma"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": "https://cdn.sanity.io/images/599r6htc/regionalized/b08d37520f7d5ad8d6562975b5932dd2d9a862bb-1200x630.gif?w=1200&q=70&fit=max&auto=format",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "cursor-live-apps-voice",
+      "section": "Product Design & UX",
+      "headline": "Cursor builds and hosts live apps, now with voice",
+      "summary": "[Cursor](https://cursor.com) added Build Live Apps (database, auth and hosting behind a shareable link) on November 5 and realtime voice chat with agents on November 6 ([Havoptic](https://www.havoptic.com/releases/cursor/2026/11)).",
+      "why_it_matters": "designers can now ship internal tools with real auth and data without touching deploy config.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor builds and hosts live apps, now with voice",
+          "url": "https://www.havoptic.com/releases/cursor/2026/11"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": "https://www.havoptic.com/og-image.jpg",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "cursor-build-live-apps",
+      "section": "New AI Tools",
+      "headline": "Cursor Build Live Apps",
+      "summary": "Describe an app, get it built with database, auth and hosting, then share a link.",
+      "why_it_matters": null,
+      "audience": "designers shipping internal tools and prototypes with real data.",
+      "links": [
+        {
+          "label": "Cursor Build Live Apps",
+          "url": "https://cursor.com/docs/release-notes"
+        }
+      ],
+      "image_url": "https://cursor.com/og?path=%2Fdocs%2Frelease-notes",
+      "tool_rating": 8,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "claude-design",
+      "section": "New AI Tools",
+      "headline": "Claude Design",
+      "summary": "Create designs and interactive prototypes by chatting, with on-canvas editing and your design system attached; viewable full screen in the new mobile Artifacts tab.",
+      "why_it_matters": null,
+      "audience": "fast concepting and design-system-aware mockups.",
+      "links": [
+        {
+          "label": "Claude Design",
+          "url": "https://support.claude.com/en/articles/14604416-get-started-with-claude-design"
+        }
+      ],
+      "image_url": "https://downloads.intercomcdn.com/i/o/lupk8zyo/792494/717b10d3ebd874823db64841659b/76f3062d78ebbb04863fb1de3ef9cca0.png",
+      "tool_rating": 8,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "figma-motion-springs-tool",
+      "section": "New AI Tools",
+      "headline": "Figma Motion springs + Lottie preview",
+      "summary": "Physics-based easing and pre-export Lottie playback inside Figma.",
+      "why_it_matters": null,
+      "audience": "product designers owning micro-interactions.",
+      "links": [
+        {
+          "label": "Figma Motion springs + Lottie preview",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "kokonut-ui",
+      "section": "New AI Tools",
+      "headline": "Kokonut UI",
+      "summary": "Open-source UI components that your AI agent installs over MCP.",
+      "why_it_matters": null,
+      "audience": "designers vibe coding React UIs who want consistent components instead of agent-invented ones.",
+      "links": [
+        {
+          "label": "Kokonut UI",
+          "url": "https://www.producthunt.com/products/kokonutui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "clayzo",
+      "section": "New AI Tools",
+      "headline": "Clayzo",
+      "summary": "Lets coding agents like Claude Code, Cursor and Codex generate animations and motion graphics in code. Seen on the Product Hunt weekly leaderboard.",
+      "why_it_matters": null,
+      "audience": "motion-curious designers who already work in a coding agent.",
+      "links": [
+        {
+          "label": "Clayzo",
+          "url": "https://www.producthunt.com/leaderboard/weekly/2026/45"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "beacon-sh",
+      "section": "New AI Tools",
+      "headline": "beacon.sh",
+      "summary": "Open-source memory that captures what your coding agents do and feeds it to the next session.",
+      "why_it_matters": null,
+      "audience": "anyone running multiple agents daily who is tired of re-explaining context.",
+      "links": [
+        {
+          "label": "beacon.sh",
+          "url": "https://www.producthunt.com/products/asymptotelabs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "antelog",
+      "section": "New AI Tools",
+      "headline": "Antelog",
+      "summary": "Guardrails that stop coding agents from leaking or destroying data.",
+      "why_it_matters": null,
+      "audience": "designers pushing directly to production with agents.",
+      "links": [
+        {
+          "label": "Antelog",
+          "url": "https://www.producthunt.com/products/antelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "dex-semantics",
+      "section": "New AI Tools",
+      "headline": "Dex Semantics",
+      "summary": "A semantic layer so agents build analytics with fewer errors.",
+      "why_it_matters": null,
+      "audience": "designers who want to self-serve product metrics through an agent.",
+      "links": [
+        {
+          "label": "Dex Semantics",
+          "url": "https://trydex.ai"
+        }
+      ],
+      "image_url": "https://trydex.ai/opengraph-image-12o0cb?96d2304d42dec354",
+      "tool_rating": 6,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "agent-becomes-a-place",
+      "section": "Trends to Watch",
+      "headline": "The agent becomes a place in the app",
+      "summary": "Both [ChatGPT](https://chatgpt.com) and [Claude](https://claude.ai) restructured mobile navigation in the same 48 hours, and ChatGPT gave its always-on agent a dedicated tab. Agents are moving from a mode inside chat to a persistent entity with its own home, history and identity.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to design status, handoff and \"what did my agent do while I was away\" surfaces."
+      },
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": "https://cdn.openai.com/chatgpt/share-og.png",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "permission-layers-for-agents",
+      "section": "Trends to Watch",
+      "headline": "Permission layers for agents",
+      "summary": "[Walmart](https://www.walmart.com)'s Agent Gateway uses MCP, gives each authorized agent its own profile, and bars agents from payment data ([Consumer Goods Technology](https://consumergoods.com/walmart-builds-infrastructure-agentic-commerce-implications-brands)). Meanwhile [Signal](https://signal.org) now restricts screenshots on mobile to keep assistants out of chats ([Sam on AI](https://samonai.substack.com/p/ai-brief-november-21-2026)). Platforms are drawing explicit lines around what agents can see and do.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "scoped permissions, spend limits and revocation UX."
+      },
+      "links": [
+        {
+          "label": "Permission layers for agents",
+          "url": "https://consumergoods.com/walmart-builds-infrastructure-agentic-commerce-implications-brands"
+        },
+        {
+          "label": "Walmart",
+          "url": "https://www.walmart.com"
+        },
+        {
+          "label": "Signal",
+          "url": "https://signal.org"
+        },
+        {
+          "label": "Sam on AI",
+          "url": "https://samonai.substack.com/p/ai-brief-november-21-2026"
+        }
+      ],
+      "image_url": "https://assets1.consumergoods.com/images/v/16_x_9_640/2026-11/screenshot_2026-10-23_084019.png",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "verification-as-feature",
+      "section": "Trends to Watch",
+      "headline": "Verification as a product feature",
+      "summary": "The Riemann claim is credible largely because it compiles in Lean. [Framer](https://www.framer.com)'s agents always work on a branch before merging ([Product Hunt](https://www.producthunt.com/p/framer/framer-3-0-2)). The pattern: AI output earns trust through review surfaces, not confidence.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "diff views, preview branches and approval flows for generated work."
+      },
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/p/framer/framer-3-0-2"
+        }
+      ],
+      "image_url": "https://framerusercontent.com/images/vt65Mbfi3w8ymfTyRfbmgM4Tyo.png",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "agent-to-user-ui-protocol",
+      "section": "Trends to Watch",
+      "headline": "A protocol for agent-to-user UI",
+      "summary": "[AG-UI](https://github.com/ag-ui-protocol/ag-ui) is trending as the layer between agents and interfaces, alongside MCP (agent to tool) and A2A (agent to agent) ([DEV Community](https://dev.to/sh20raj/ag-ui-explained-a-protocol-for-real-time-agent-interfaces-3n17)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how streamed agent events map to UI states like progress, tool calls and interrupts."
+      },
+      "links": [
+        {
+          "label": "A protocol for agent-to-user UI",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        },
+        {
+          "label": "DEV Community",
+          "url": "https://dev.to/sh20raj/ag-ui-explained-a-protocol-for-real-time-agent-interfaces-3n17"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/f169e20b7b0d9390d3c79a62bd8bb5d53c2db786abd318f94f44fea6216a971b/ag-ui-protocol/ag-ui",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "inference-trust-design",
+      "section": "Trends to Watch",
+      "headline": "Inference trust is now a design concern",
+      "summary": "The [Dragos findings](https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens) mean \"which model provider\" is a privacy decision users will start asking about.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to communicate data handling in AI features without burying it in policy pages."
+      },
+      "links": [
+        {
+          "label": "Inference trust is now a design concern",
+          "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+        }
+      ],
+      "image_url": "https://dragos.brightspotcdn.com/dims4/default/41c5c4a/2147483647/strip/true/crop/1307x735+309+0/resize/1440x810!/format/webp/quality/90/?url=https%3A%2F%2Fdragos-production-dragos.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fd4%2Fb6%2Fb4dbcbe348a8b3506fb99c5419e7%2Fxot-hero.webp",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "chatgpt-pinnable-tab-bar",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT's pinnable tab bar",
+      "summary": "The grid tab tells users to long-press any tool to pin it to the bar ([Digital Trends](https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/)).",
+      "why_it_matters": "it solves the \"too many products, five tab slots\" problem by letting each user define their own primary navigation, while a stable Home and Dot tab keep orientation. A direct lesson for multi-vertical super-apps.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT's pinnable tab bar",
+          "url": "https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/"
+        }
+      ],
+      "image_url": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/ChatGPT-makeover.jpg?resize=1200%2C630&ssl=1",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "claude-long-press-recents",
+      "section": "Product Design Inspiration",
+      "headline": "Claude's long-press for recents",
+      "summary": "[Claude](https://claude.ai)'s new tab bar supports sliding between sections and long-pressing a tab to jump to recent items ([X trending summary](https://x.com/i/trending/2123901344277025253)).",
+      "why_it_matters": "resumption is the dominant mobile job for work tools. Hiding recents behind a long-press keeps the default view clean while making return trips one gesture.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Claude's long-press for recents",
+          "url": "https://dev.ua/en/news/anthropic-onovyla-dyzain-mobilnoho-zastosunku-claude-1795249677"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "X trending summary",
+          "url": "https://x.com/i/trending/2123901344277025253"
+        }
+      ],
+      "image_url": "https://dev.ua/storage/images/43/22/10/34/derived/e3a45755fb7a23ea52cdd35ba05d750b.webp",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "walmart-agent-profiles",
+      "section": "Product Design Inspiration",
+      "headline": "Walmart's Agent Profiles",
+      "summary": "Each authorized AI agent gets a dedicated profile inside the customer's [Walmart](https://www.walmart.com) account, and agents can shop for usual items without receiving full purchase history ([Consumer Goods Technology](https://consumergoods.com/walmart-builds-infrastructure-agentic-commerce-implications-brands)).",
+      "why_it_matters": "it treats an agent like a household member with scoped access, a mental model customers already understand from family accounts and card limits.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Walmart's Agent Profiles",
+          "url": "https://consumergoods.com/walmart-builds-infrastructure-agentic-commerce-implications-brands"
+        },
+        {
+          "label": "Walmart",
+          "url": "https://www.walmart.com"
+        }
+      ],
+      "image_url": "https://assets1.consumergoods.com/images/v/16_x_9_640/2026-11/screenshot_2026-10-23_084019.png",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "ag-ui",
+      "section": "GitHub & Open Source",
+      "headline": "ag-ui-protocol/ag-ui",
+      "summary": "An event protocol connecting agent backends to interactive frontends. Ranked second on GitHub Trending TypeScript on November 16 with a release on November 12 ([DEV Community](https://dev.to/sh20raj/ag-ui-explained-a-protocol-for-real-time-agent-interfaces-3n17)).",
+      "why_it_matters": "the most design-relevant protocol in the agent stack right now.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        },
+        {
+          "label": "DEV Community",
+          "url": "https://dev.to/sh20raj/ag-ui-explained-a-protocol-for-real-time-agent-interfaces-3n17"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/f169e20b7b0d9390d3c79a62bd8bb5d53c2db786abd318f94f44fea6216a971b/ag-ui-protocol/ag-ui",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "chrome-devtools-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Gives coding agents performance tracing, network inspection and accessibility auditing through MCP, past 56K stars ([CoddyKit](https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026)).",
+      "why_it_matters": "lets an agent verify the UI it just built.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        },
+        {
+          "label": "CoddyKit",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/bd61fba29ffd5afa7b67469672b44420eb9396a1d7524a6f0065a9ade245a673/ChromeDevTools/chrome-devtools-mcp",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "paperclip",
+      "section": "GitHub & Open Source",
+      "headline": "paperclipai/paperclip",
+      "summary": "Open-source project management for teams running AI agents, with support for Claude Code, Codex and others, over 110K stars ([CoddyKit](https://www.coddykit.com/blog/github-trending-november-2026-from-a-110k-star-agent-management-platform-to-a-38-5130017)).",
+      "why_it_matters": "signals that \"managing agents\" is becoming its own job.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip"
+        },
+        {
+          "label": "CoddyKit",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-a-110k-star-agent-management-platform-to-a-38-5130017"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/674b83b18fd56aebc80c10fbe5c4faa190aae886b4a5601a7e11a0fc43d78c00/paperclipai/paperclip",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "mobile-taste-skill",
+      "section": "GitHub & Open Source",
+      "headline": "draftbit/mobile-taste-skill",
+      "summary": "Claude Code skills that steer agents away from generic AI-looking mobile UI, with design-system, review and redesign skills that persist decisions in a MOBILE-DESIGN.md file.",
+      "why_it_matters": "directly useful for vibe-coded mobile work.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "draftbit/mobile-taste-skill",
+          "url": "https://github.com/draftbit/mobile-taste-skill"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/6bd48694b8657f46ab9a2981e513ee59937726e87350657d810db41b2a5d1c26/draftbit/mobile-taste-skill",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "univer",
+      "section": "GitHub & Open Source",
+      "headline": "dream-num/univer",
+      "summary": "Open-source office suite foundation ([CoddyKit](https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026)).",
+      "why_it_matters": "trending as agents move into documents and spreadsheets.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer"
+        },
+        {
+          "label": "CoddyKit",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026"
+        }
+      ],
+      "image_url": "https://repository-images.githubusercontent.com/543101941/e14b70fa-fc46-4249-8bd8-399630941326",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "hn-agent-credentials",
+      "section": "Social Buzz",
+      "headline": "Agent credentials",
+      "kicker": "Hacker News",
+      "summary": "A thread flagged that ChatGPT Desktop forwards your local SSH agent to remote machines, and a follow-up Show HN, lend, proxies SSH agent requests back to your laptop for approval ([HN digest, Nov 9](https://zeli.app/digest/2026-11-09), [HN digest, Nov 17](https://zeli.app/digest/2026-11-17)). Takeaway: credential scope for remote agents is an unsolved UX problem.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent credentials",
+          "url": "https://zeli.app/digest/2026-11-09"
+        },
+        {
+          "label": "HN digest, Nov 17",
+          "url": "https://zeli.app/digest/2026-11-17"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "hn-own-your-output",
+      "section": "Social Buzz",
+      "headline": "\"Own your output\"",
+      "kicker": "Hacker News",
+      "summary": "Engineers at AIE Code Summit drafted a manifesto, modeled on the Agile Manifesto, arguing AI output becomes slop when passed along without ownership of quality ([HN digest, Nov 13](https://zeli.app/digest/2026-11-13)). A useful framing for design reviews of AI-generated screens.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "\"Own your output\"",
+          "url": "https://zeli.app/digest/2026-11-13"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "x-claude-redesign",
+      "section": "Social Buzz",
+      "headline": "The Claude redesign",
+      "kicker": "X",
+      "summary": "Anthropic's design and product team shared the craft details behind the new tab bar, including quick device selection for code sessions ([X trending](https://x.com/i/trending/2123901344277025253)). Worth reading the threads for how they talk about polish.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The Claude redesign",
+          "url": "https://x.com/i/trending/2123901344277025253"
+        }
+      ],
+      "image_url": "https://pbs.twimg.com/media/HVQVtHaWsAAKguQ?format=webp&name=medium",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "mathematicians-riemann",
+      "section": "Social Buzz",
+      "headline": "Reactions to the Riemann claim",
+      "kicker": "Mathematicians",
+      "summary": "Reactions range from Brian Conrey calling it possibly the biggest event in mathematics to Kevin Buzzard warning that verification is not understanding ([TheJournal.ie](https://www.thejournal.ie/riemann-hypothesis-proved-by-ai-7233391-Nov2026/), [Al Jazeera](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Reactions to the Riemann claim",
+          "url": "https://www.thejournal.ie/riemann-hypothesis-proved-by-ai-7233391-Nov2026/"
+        },
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked"
+        }
+      ],
+      "image_url": "https://img2.thejournal.ie/article/7233391/river/?height=400&version=7233393",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "ph-agent-safety",
+      "section": "Social Buzz",
+      "headline": "Agent safety rising",
+      "kicker": "Product Hunt",
+      "summary": "Mid-November leaderboards featured [Antelog](https://www.producthunt.com/products/antelog) and [Kokonut UI](https://www.producthunt.com/products/kokonutui) side by side ([Nov 14 leaderboard](https://www.producthunt.com/leaderboard/daily/2026/11/14)): guardrails and agent-installable components are where indie makers are building.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent safety rising",
+          "url": "https://www.producthunt.com/leaderboard/daily/2026/11/14"
+        },
+        {
+          "label": "Antelog",
+          "url": "https://www.producthunt.com/products/antelog"
+        },
+        {
+          "label": "Kokonut UI",
+          "url": "https://www.producthunt.com/products/kokonutui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "ai-supply-chain-canaries",
+      "section": "Learning Corner",
+      "headline": "Three breaches, endless leaks: Your AI supply chain needs canaries",
+      "kicker": "Article",
+      "summary": "From Dragos. The clearest explanation yet of how AI routers and resellers handle your prompts. 15 minutes that will change how you pick providers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Three breaches, endless leaks: Your AI supply chain needs canaries",
+          "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+        }
+      ],
+      "image_url": "https://dragos.brightspotcdn.com/dims4/default/41c5c4a/2147483647/strip/true/crop/1307x735+309+0/resize/1440x810!/format/webp/quality/90/?url=https%3A%2F%2Fdragos-production-dragos.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fd4%2Fb6%2Fb4dbcbe348a8b3506fb99c5419e7%2Fxot-hero.webp",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "config-2026-keynote",
+      "section": "Learning Corner",
+      "headline": "Config 2026 Keynote with Dylan Field",
+      "kicker": "Video",
+      "summary": "Links to the YouTube recording. If you haven't watched how code layers, Motion and generative plugins fit together, this is the reference for where Figma is heading.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 Keynote with Dylan Field",
+          "url": "https://echai.ventures/videos/figma-config-2026-keynote-with-dylan-field"
+        }
+      ],
+      "image_url": "https://echai.ventures/og/collection/videos.png",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "ag-ui-learning",
+      "section": "Learning Corner",
+      "headline": "AG-UI",
+      "kicker": "GitHub project",
+      "summary": "Read the event types; they are effectively a state list for every agent UI you will design next year.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AG-UI",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/f169e20b7b0d9390d3c79a62bd8bb5d53c2db786abd318f94f44fea6216a971b/ag-ui-protocol/ag-ui",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "mobile-taste-skill-resource",
+      "section": "Learning Corner",
+      "headline": "mobile-taste-skill",
+      "kicker": "Design resource",
+      "summary": "Its catalog of AI-slop mobile patterns (indigo gradients, card stacks, emoji icons) doubles as a critique checklist for any AI-generated screen.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mobile-taste-skill",
+          "url": "https://github.com/draftbit/mobile-taste-skill"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/6bd48694b8657f46ab9a2981e513ee59937726e87350657d810db41b2a5d1c26/draftbit/mobile-taste-skill",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "claude-design-workflow",
+      "section": "Learning Corner",
+      "headline": "Get started with Claude Design",
+      "kicker": "AI workflow",
+      "summary": "Attach your design system, generate on canvas, then review on mobile in the Artifacts tab. A good loop for async concept work between meetings.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Get started with Claude Design",
+          "url": "https://support.claude.com/en/articles/14604416-get-started-with-claude-design"
+        }
+      ],
+      "image_url": "https://downloads.intercomcdn.com/i/o/lupk8zyo/792494/717b10d3ebd874823db64841659b/76f3062d78ebbb04863fb1de3ef9cca0.png",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "agent-permission-ux-commerce",
+      "section": "Opportunities",
+      "headline": "Agent permission UX for commerce",
+      "summary": "[Walmart](https://www.walmart.com) just published a template: per-agent profiles, spend limits, no payment access. Merchant and courier platforms will need the same. A case study designing \"agent profiles\" for a merchant dashboard is a strong portfolio piece.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Walmart",
+          "url": "https://www.walmart.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "while-you-were-away",
+      "section": "Opportunities",
+      "headline": "\"While you were away\" surfaces",
+      "summary": "With Dots and Claude agents working in the background, reviewing and approving agent activity is a new, under-designed screen type. Designers who define the patterns early will set the defaults.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "design-system-as-agent-context",
+      "section": "Opportunities",
+      "headline": "Design-system-as-agent-context",
+      "summary": "Tools like [Kokonut UI](https://www.producthunt.com/products/kokonutui) and [mobile-taste-skill](https://github.com/draftbit/mobile-taste-skill) show demand for design systems agents can read. Packaging your team's system as an MCP server or skill file is high-leverage internal work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kokonut UI",
+          "url": "https://www.producthunt.com/products/kokonutui"
+        },
+        {
+          "label": "mobile-taste-skill",
+          "url": "https://github.com/draftbit/mobile-taste-skill"
+        }
+      ],
+      "image_url": "https://opengraph.githubassets.com/6bd48694b8657f46ab9a2981e513ee59937726e87350657d810db41b2a5d1c26/draftbit/mobile-taste-skill",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "trust-data-disclosures",
+      "section": "Opportunities",
+      "headline": "Trust and data-handling disclosures in AI features",
+      "summary": "After the [Dragos report](https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens), product teams will need clear, honest UI for where prompts go. Few designers have worked on this; it is a credible specialty.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Dragos report",
+          "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"
+        }
+      ],
+      "image_url": "https://dragos.brightspotcdn.com/dims4/default/41c5c4a/2147483647/strip/true/crop/1307x735+309+0/resize/1440x810!/format/webp/quality/90/?url=https%3A%2F%2Fdragos-production-dragos.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fd4%2Fb6%2Fb4dbcbe348a8b3506fb99c5419e7%2Fxot-hero.webp",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "motion-as-code",
+      "section": "Opportunities",
+      "headline": "Motion as code",
+      "summary": "[Figma](https://www.figma.com) Motion's Lottie export and agent-driven tools like Clayzo make motion shippable by designers directly. Owning micro-interactions end to end is a visible differentiator.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": "https://cdn.sanity.io/images/599r6htc/regionalized/b08d37520f7d5ad8d6562975b5932dd2d9a862bb-1200x630.gif?w=1200&q=70&fit=max&auto=format",
+      "tool_rating": null,
+      "date": "2026-11-22"
+    },
+    {
+      "id": "taste-skill-audit",
+      "section": "Today's Experiment",
+      "headline": "Audit an AI-generated screen with a taste skill",
+      "kicker": "25 minutes",
+      "summary": "Outcome: a reusable checklist and a first draft of design rules your agents can follow.",
+      "why_it_matters": null,
+      "steps": [
+        {
+          "label": "Step 1",
+          "text": "Install [mobile-taste-skill](https://github.com/draftbit/mobile-taste-skill) in Claude Code (the README has a two-line plugin install)."
+        },
+        {
+          "label": "Step 2",
+          "text": "Point it at one mobile screen you recently vibe coded and run the design review skill."
+        },
+        {
+          "label": "Step 3",
+          "text": "Compare its Design Score and AI Slop Score findings with your own critique. Note where it caught something you missed and where your taste disagrees."
+        },
+        {
+          "label": "Step 4",
+          "text": "Fix the top two findings and save the resulting MOBILE-DESIGN.md as a seed for your team's agent-readable design rules."
+        }
+      ],
+      "links": [
+        {
+          "label": "Audit an AI-generated screen with a taste skill",
+          "url": "https://github.com/draftbit/mobile-taste-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-22"
+    }
+  ],
+  "dont_miss": [
+    "Read the [Dragos canary report](https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens) and check which providers your AI features route through.",
+    "Update ChatGPT and Claude on your phone and study both new tab bars side by side ([ChatGPT](https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/), [Claude](https://dev.ua/en/news/anthropic-onovyla-dyzain-mobilnoho-zastosunku-claude-1795249677)). Same problem, two answers.",
+    "Skim the [Riemann explainer](https://www.aljazeera.com/news/2026/11/21/riemann-hypothesis-has-the-worlds-most-famous-maths-problem-been-cracked) for the verification-versus-understanding debate; it is the clearest preview of how AI-produced work will be judged."
+  ],
+  "footnote": "Sourced from news reports, company release notes, Product Hunt leaderboards, GitHub trending roundups and Hacker News digests published November 9 to 22, 2026. Tool ratings are editorial judgments for a product designer working in AI-native workflows."
+}

@@ -1,0 +1,20 @@
+---
+// Mosaic tile: full-bleed article picture under a vignette with the words
+// pinned to the bottom. Without a picture it becomes the section drawing
+// above plain words (CSS switches on :has(.media-img)).
+import Media from './Media.astro';
+import { sectionOf, entryHref, type Entry } from '../lib/content';
+import { plain } from '../lib/md';
+
+interface Props { entry: Entry; lead?: boolean; class?: string; style?: string }
+const { entry: e, lead = false, class: cls, style } = Astro.props;
+const s = sectionOf(e.section);
+---
+<a class:list={['photo-card', cls]} href={entryHref(e)} style={style}>
+  <Media entry={e} eager={lead} />
+  <span class="photo-card__body">
+    <span class="tag">{s.short}{e.kicker && <><i></i>{e.kicker}</>}</span>
+    <span class:list={['h4', { 'clamp-3': !lead }]}>{e.headline}</span>
+    {lead && <p class="body-md clamp-2">{plain(e.summary)}</p>}
+  </span>
+</a>

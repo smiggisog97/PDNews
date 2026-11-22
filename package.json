@@ -1,0 +1,21 @@
+{
+  "name": "pdnews",
+  "private": true,
+  "type": "module",
+  "description": "Pathao Design News: the daily AI + Product Design morning brief for the Pathao design team.",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "validate": "node scripts/validate-content.mjs",
+    "images": "node scripts/fill-images.mjs",
+    "prebuild": "node scripts/validate-content.mjs && node scripts/check-dashes.mjs src content scripts README.md",
+    "build": "astro build",
+    "postbuild": "node scripts/check-dashes.mjs dist",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.4.13"
+  }
+}
