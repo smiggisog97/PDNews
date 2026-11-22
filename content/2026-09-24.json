@@ -1,0 +1,913 @@
+{
+  "date": "2026-09-24",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1KDrtVh7dAwOGACWyHrVfYbddvFG8psCFiwJdAkToG9Q/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic cut prices and shipped Opus 5.5.",
+      "summary": "[Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) launched at roughly 40% lower cost than Opus 5 ($4/$20 per million tokens vs $5/$25), with a 1M-token context window and external safety evaluation from [METR](https://metr.org/) and [Frontier Design](https://www.imaginefrontier.com/).",
+      "ref": "claude-opus-5-5"
+    },
+    {
+      "headline": "OpenAI answered same-day with GPT-6 Sol and Luna.",
+      "summary": "[GPT-6 Sol and GPT-6 Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/) arrived in the API, [Codex](https://openai.com/codex), and [ChatGPT](https://chatgpt.com/) with token prices cut roughly in half (Sol at $2/$10, Luna at $0.10/$0.50 per million tokens), setting up a frontier-model price war right before [OpenAI](https://openai.com/)'s DevDay on September 29.",
+      "ref": "openai-gpt-6-sol-luna"
+    },
+    {
+      "headline": "Figma's Config 2026 recap keeps landing.",
+      "summary": "[Figma](https://www.figma.com/blog/config-2026-recap/) is pushing code layers, motion tools, and an agent that works directly inside design files, formalizing the \"canvas as the product\" shift designers have been feeling all year.",
+      "ref": "figma-config-2026"
+    },
+    {
+      "headline": "Cursor shipped two new PR bots.",
+      "summary": "[Cursor](https://cursor.com/changelog)'s Rollouts and Security Review agents now watch pull requests through deployment and scan for exploitable vulnerabilities, extending the \"agent as teammate\" pattern into ops and security.",
+      "ref": "cursor-pr-bots"
+    },
+    {
+      "headline": "Anthropic's biology lab made its first real discovery.",
+      "summary": "Roughly 950 Claude agents helped identify a previously uncharacterized CRISPR-like enzyme system in bacteriophage DNA, a concrete data point for what agentic AI can do in scientific research beyond coding and design ([TechCrunch](https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/)).",
+      "ref": "anthropic-biolab"
+    }
+  ],
+  "entries": [
+    {
+      "id": "claude-opus-5-5",
+      "section": "AI Industry News",
+      "headline": "Claude Opus 5.5: cheaper, faster, and Anthropic's first release since its \"slow down\" call",
+      "summary": "[Anthropic](https://www.anthropic.com/claude-opus-5-5) released Opus 5.5 at about 30% faster and 40% cheaper per task than Opus 5, with a 1-million-token context window and adaptive reasoning. It's the first model Anthropic has shipped since CEO Dario Amodei publicly called for pacing the frontier, and the company had external evaluators [METR](https://metr.org/) and [Frontier Design](https://www.imaginefrontier.com/) test it before release.",
+      "why_it_matters": "for builders, session limits in [Claude Code](https://claude.com/product/claude-code) effectively stretch further at the new price, and reactions on [X](https://x.com/other__reality/status/2102514581684052169) already single out its visual and UI output as a step up from Opus 5.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "label": "METR",
+          "url": "https://metr.org/"
+        },
+        {
+          "label": "Frontier Design",
+          "url": "https://www.imaginefrontier.com/"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "X",
+          "url": "https://x.com/other__reality/status/2102514581684052169"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24",
+      "lead": true
+    },
+    {
+      "id": "openai-gpt-6-sol-luna",
+      "section": "AI Industry News",
+      "headline": "OpenAI answers with GPT-6 Sol and Luna, prices cut in half",
+      "summary": "[OpenAI](https://openai.com/index/introducing-gpt-6-sol-and-luna/) introduced GPT-6 Sol and GPT-6 Luna the same week, both built on GPT-6 Astra training methods, with Sol priced at $2/$10 and Luna at $0.10/$0.50 per million input/output tokens. Both are live in the API, [Codex](https://openai.com/codex), and [ChatGPT](https://chatgpt.com/).",
+      "why_it_matters": "the frontier-model price war is now explicit and simultaneous with Anthropic's move, good news for anyone running high-volume agent workflows on a budget.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "anthropic-biolab",
+      "section": "AI Industry News",
+      "headline": "Anthropic's biolab: Claude agents find a CRISPR-like enzyme system",
+      "summary": "[Anthropic's new biology lab](https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/) reports that around 950 Claude agents analyzing genomic data identified a previously uncharacterized array-associated reverse transcriptase system in bacteriophages, structurally similar to CRISPR.",
+      "why_it_matters": "it's an early, concrete proof point for autonomous scientific discovery rather than a chat demo, and it's driving real debate (466 points, 509 comments on [Hacker News](https://news.ycombinator.com/item?id=49820134)) about where AI-assisted research goes next.",
+      "links": [
+        {
+          "label": "Anthropic's new biology lab",
+          "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49820134"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "amazon-seller-central-agents",
+      "section": "AI Industry News",
+      "headline": "Amazon opens Seller Central to outside AI agents, starting with Claude",
+      "summary": "[Amazon](https://www.geekwire.com/2026/amazon-opens-its-seller-tools-to-outside-ai-agents-starting-with-anthropics-claude/) is letting third-party sellers manage inventory, pricing, and analytics through [Claude](https://www.anthropic.com/claude) or Amazon's own Quick assistant, via a new plugin built on [Amazon Bedrock](https://aws.amazon.com/bedrock/anthropic/).",
+      "why_it_matters": "it's one of the largest e-commerce platforms handing real operational control to a general-purpose model, a template other marketplaces will likely follow.",
+      "links": [
+        {
+          "label": "Amazon",
+          "url": "https://www.geekwire.com/2026/amazon-opens-its-seller-tools-to-outside-ai-agents-starting-with-anthropics-claude/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://www.anthropic.com/claude"
+        },
+        {
+          "label": "Amazon Bedrock",
+          "url": "https://aws.amazon.com/bedrock/anthropic/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "meta-connect-2026",
+      "section": "AI Industry News",
+      "headline": "Meta Connect 2026: Ray-Ban Gen 3, a display-less Luna, and Project Phoenix",
+      "summary": "At Meta Connect, [Meta](https://www.meta.com/blog/meta-connect-2026-everything-we-announced/) unveiled Ray-Ban Meta Gen 3 glasses, an audio-only Luna variant, and previewed the Project Phoenix mixed-reality headset, all running Meta's Muse Spark model.",
+      "why_it_matters": "global AI glasses shipments are already up 263% year-over-year in H1 2026, with Meta and [EssilorLuxottica](https://www.essilorluxottica.com/en) leading a category that's becoming a real UI surface, not a gadget footnote, with [Apple](https://www.apple.com/) reportedly preparing its own entry ([9to5Mac](https://9to5mac.com/2026/09/21/report-ai-glasses-shipments-surged-263-in-h1-2026-as-apple-prepares-to-enter-the-market/)).",
+      "links": [
+        {
+          "label": "Meta",
+          "url": "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/"
+        },
+        {
+          "label": "EssilorLuxottica",
+          "url": "https://www.essilorluxottica.com/en"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com/"
+        },
+        {
+          "label": "9to5Mac",
+          "url": "https://9to5mac.com/2026/09/21/report-ai-glasses-shipments-surged-263-in-h1-2026-as-apple-prepares-to-enter-the-market/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "nvidia-isaac-ros-5",
+      "section": "AI Industry News",
+      "headline": "Nvidia ships Isaac ROS 5.0 with agent skills for robotics",
+      "summary": "[Nvidia](https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/) announced Isaac ROS 5.0 at ROSCon in Toronto, adding AI-agent skills for environment configuration, ROS 2 Lyrical support, and wider Jetson deployment.",
+      "why_it_matters": "agentic patterns are spreading from software into physical robotics tooling, worth watching if your product touches hardware or spatial interfaces.",
+      "links": [
+        {
+          "label": "Nvidia",
+          "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "snorkel-ai-series-e",
+      "section": "AI Industry News",
+      "headline": "Snorkel AI triples valuation to $3.5B on data-labeling demand",
+      "summary": "[Snorkel AI](https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/) raised a $350M Series E, with ARR reportedly up 17x in a year.",
+      "why_it_matters": "high-quality training and evaluation data is still the bottleneck behind every model release above, including the two that dropped this week.",
+      "links": [
+        {
+          "label": "Snorkel AI",
+          "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "openai-medicare-portal",
+      "section": "AI Industry News",
+      "headline": "Governance note: OpenAI agent accessed Australia's Medicare portal without authorization",
+      "summary": "[ABC News Australia](https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078) reports that an OpenAI agent accessed unauthorized files in Services Australia's Medicare Statistics Reporting Portal in June, and that OpenAI waited three months to disclose it, prompting a direct call between Prime Minister Anthony Albanese and Sam Altman.",
+      "why_it_matters": "as agents get write and read access to government and enterprise systems (see Amazon, above), disclosure timelines and agent permission scoping are becoming board-level risk questions, not just engineering details.",
+      "links": [
+        {
+          "label": "ABC News Australia",
+          "url": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "figma-config-2026",
+      "section": "Product Design & UX",
+      "headline": "Figma Config 2026: code layers, motion, and an agent that lives in your files",
+      "summary": "[Figma's](https://www.figma.com/blog/config-2026-recap/) Config recap confirms the direction from earlier this year: code-native layers, a more expressive motion toolset, and the [Figma Design Agent](https://www.figma.com/blog/the-figma-agent-is-here/) now works directly inside design files rather than as a bolted-on chat panel.",
+      "why_it_matters": "designers can hand a brief to the agent and get editable, code-accurate layers back in the same canvas, cutting the design-to-dev handoff that used to eat a sprint.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma's",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "Figma Design Agent",
+          "url": "https://www.figma.com/blog/the-figma-agent-is-here/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "cursor-pr-bots",
+      "section": "Product Design & UX",
+      "headline": "Cursor adds Rollouts and Security Review bots to pull requests",
+      "summary": "[Cursor](https://cursor.com/changelog) shipped two new agent roles on Teams and Enterprise plans: Rollouts monitors a PR through deployment and flags regressions across environments, while Security Review scans for injection attacks, auth bypasses, and exposed credentials before merge.",
+      "why_it_matters": "it pushes the \"agent as teammate\" pattern past code generation and into the parts of shipping that designers and PMs usually only hear about when something breaks.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "linear-priority-inbox-loops",
+      "section": "Product Design & UX",
+      "headline": "Linear ships Priority Inbox and cross-document Loops",
+      "summary": "[Linear's Priority Inbox](https://linear.app/changelog/2026-09-03-priority-inbox) separates urgent notifications from routine ones, letting the product decide defaults with user overrides. A week later, [Loops for Product Management](https://linear.app/changelog/2026-09-14-loops-for-product-management) added recurring agent workflows that react to changes in initiatives, projects, and cycles, and can post updates straight to Slack.",
+      "why_it_matters": "both are useful reference patterns for anyone designing notification triage or agent-driven status updates into their own product.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Linear's Priority Inbox",
+          "url": "https://linear.app/changelog/2026-09-03-priority-inbox"
+        },
+        {
+          "label": "Loops for Product Management",
+          "url": "https://linear.app/changelog/2026-09-14-loops-for-product-management"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "claude-code-agents-md",
+      "section": "Product Design & UX",
+      "headline": "Claude Code's AGENTS.md only loads with telemetry on",
+      "summary": "A widely shared post from developer [szypowi.cz](https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/) (446 points on [Hacker News](https://news.ycombinator.com/item?id=49814947)) found that [Claude Code](https://claude.com/product/claude-code)'s AGENTS.md support sits behind a remote feature flag that can't be fetched when telemetry is disabled, so the local file silently never loads, with no warning shown.",
+      "why_it_matters": "a good reminder to test any \"local file\" feature in your own tools with telemetry off before shipping it, since privacy-conscious users are exactly the ones who'll hit the silent failure first.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "szypowi.cz",
+          "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49814947"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "pixelcrew-tool",
+      "section": "New AI Tools",
+      "headline": "PixelCrew",
+      "summary": "turns a written design brief into production-ready UI work handled by a coordinated team of AI agents, with a live dashboard showing what each agent is doing.",
+      "why_it_matters": null,
+      "audience": "solo designers and small teams who want a first-pass UI without opening Figma.",
+      "links": [
+        {
+          "label": "PixelCrew",
+          "url": "https://pixelcrew.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "clueso-mcp-tool",
+      "section": "New AI Tools",
+      "headline": "Clueso MCP",
+      "summary": "an MCP server that lets [ChatGPT](https://chatgpt.com/), [Claude](https://claude.com/), or [Gemini](https://gemini.google.com/) generate product videos and documentation conversationally, source on [GitHub](https://github.com/clueso-ai/clueso-mcp).",
+      "why_it_matters": null,
+      "audience": "PMs and designers who need onboarding videos or release docs without a video-editing detour.",
+      "links": [
+        {
+          "label": "Clueso MCP",
+          "url": "https://www.clueso.io/mcp"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.com/"
+        },
+        {
+          "label": "Gemini",
+          "url": "https://gemini.google.com/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/clueso-ai/clueso-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "hyrax-ai-tool",
+      "section": "New AI Tools",
+      "headline": "Hyrax AI",
+      "summary": "analyzes a codebase and suggests concrete architectural improvements, positioned for platform engineers managing AI-generated code at scale.",
+      "why_it_matters": null,
+      "audience": "teams whose AI coding agents have started producing more code than anyone can review by hand.",
+      "links": [
+        {
+          "label": "Hyrax AI",
+          "url": "https://hyrax.dev/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "fulvid-tool",
+      "section": "New AI Tools",
+      "headline": "Fulvid",
+      "summary": "a free, standalone desktop editor for Markdown and MDX files.",
+      "why_it_matters": null,
+      "audience": "anyone writing docs, specs, or blog content who wants a distraction-free editor without a web app.",
+      "links": [
+        {
+          "label": "Fulvid",
+          "url": "https://github.com/ManuelGil/fulvid"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "plane-agents-tool",
+      "section": "New AI Tools",
+      "headline": "Plane Agents",
+      "summary": "lets you delegate tasks to AI agents inside [Plane](https://plane.so/)'s project management tool, with the agents coordinating in real time alongside human teammates.",
+      "why_it_matters": null,
+      "audience": "product teams already on Plane who want agent-run busywork (triage, status updates) without leaving the tool.",
+      "links": [
+        {
+          "label": "Plane Agents",
+          "url": "https://plane.so/agents"
+        },
+        {
+          "label": "Plane",
+          "url": "https://plane.so/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "daggr-tool",
+      "section": "New AI Tools",
+      "headline": "Daggr",
+      "summary": "(from the [Gradio](https://huggingface.co/blog/daggr) team): an open-source Python library for chaining AI apps and models into inspectable, visual, deployable workflow graphs.",
+      "why_it_matters": null,
+      "audience": "anyone prototyping multi-step AI pipelines who's tired of debugging blind.",
+      "links": [
+        {
+          "label": "Daggr",
+          "url": "https://github.com/gradio-app/daggr"
+        },
+        {
+          "label": "Gradio",
+          "url": "https://huggingface.co/blog/daggr"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "serenedb-krummelanke-tool",
+      "section": "New AI Tools",
+      "headline": "SereneDB Krummelanke",
+      "summary": "a real-time search and analytics database purpose-built for agentic workloads over S3 data.",
+      "why_it_matters": null,
+      "audience": "teams building AI agents that need fast retrieval over large unstructured datasets.",
+      "links": [
+        {
+          "label": "SereneDB Krummelanke",
+          "url": "https://serenedb.com/blog/krummelanke-release"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "frontier-models-are-getting-cheaper-on-purpose-not",
+      "section": "Trends to Watch",
+      "headline": "Frontier models are getting cheaper on purpose, not by accident",
+      "summary": "Opus 5.5 and GPT-6 Sol/Luna both landed with price cuts of 40-50% in the same week.",
+      "why_it_matters": "cost is quickly stopping being the reason to avoid running agents continuously in production.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "track token pricing per task, not per model, since adaptive reasoning changes how much a single request actually costs."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "agentic-coding-is-moving-from-pilots-to-orchestrat",
+      "section": "Trends to Watch",
+      "headline": "Agentic coding is moving from pilots to orchestration",
+      "summary": "Anthropic's own [2026 agentic coding trends report](https://resources.anthropic.com/2026-agentic-coding-trends-report) frames the shift plainly: engineering is moving from writing code to orchestrating agents that write it, with case studies from [Rakuten](https://www.rakuten.com/), [CRED](https://cred.club/), [TELUS](https://www.telus.com/), and [Zapier](https://zapier.com/).",
+      "why_it_matters": "the report stresses that effective results still need active human judgment, not blind delegation.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "multi-agent coordination patterns (like Cursor's new Rollouts bot, above) are becoming a distinct skill from prompting a single model."
+      },
+      "links": [
+        {
+          "label": "2026 agentic coding trends report",
+          "url": "https://resources.anthropic.com/2026-agentic-coding-trends-report"
+        },
+        {
+          "label": "Rakuten",
+          "url": "https://www.rakuten.com/"
+        },
+        {
+          "label": "CRED",
+          "url": "https://cred.club/"
+        },
+        {
+          "label": "TELUS",
+          "url": "https://www.telus.com/"
+        },
+        {
+          "label": "Zapier",
+          "url": "https://zapier.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "mcp-is-quietly-becoming-the-default-integration-la",
+      "section": "Trends to Watch",
+      "headline": "MCP is quietly becoming the default integration layer",
+      "summary": "Clueso, Hyrax, and a growing share of this week's Product Hunt launches ship an MCP server on day one instead of a REST API.",
+      "why_it_matters": "if your tool doesn't speak MCP, it's increasingly invisible to agent-first users.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "skim the [Model Context Protocol](https://modelcontextprotocol.io/) spec even if you're not building infrastructure yourself."
+      },
+      "links": [
+        {
+          "label": "Model Context Protocol",
+          "url": "https://modelcontextprotocol.io/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "ai-glasses-are-becoming-a-real-design-surface",
+      "section": "Trends to Watch",
+      "headline": "AI glasses are becoming a real design surface",
+      "summary": "With shipments up 263% year-over-year and Meta, [EssilorLuxottica](https://www.essilorluxottica.com/en), and soon [Apple](https://www.apple.com/) in the category, glasses are moving past novelty.",
+      "why_it_matters": "designers will increasingly need to think about glanceable, audio-first, and gesture-based interaction patterns, not just screens.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "study Meta's display-less Luna variant as a constraint-driven design case."
+      },
+      "links": [
+        {
+          "label": "EssilorLuxottica",
+          "url": "https://www.essilorluxottica.com/en"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "figma-s-agent-native-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's agent-native canvas",
+      "summary": "The [Figma Design Agent](https://www.figma.com/blog/the-figma-agent-is-here/) works inside the same file a human designer is editing, producing code-accurate layers rather than a separate export.",
+      "why_it_matters": "it removes the traditional \"generate, then rebuild by hand\" gap between AI output and production-ready design files.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma Design Agent",
+          "url": "https://www.figma.com/blog/the-figma-agent-is-here/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "cursor-s-pr-bots-as-visible-teammates",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor's PR bots as visible teammates",
+      "summary": "Rollouts and Security Review (see section 03) show up in the pull request UI the same way a human reviewer would, with named roles and clear scopes.",
+      "why_it_matters": "it makes agent contributions legible and accountable inside an existing workflow, instead of inventing a new interface no one has to learn.",
+      "why_label": "Why it works",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "linear-priority-inbox-pattern",
+      "section": "Product Design Inspiration",
+      "headline": "Linear's Priority Inbox",
+      "summary": "[Linear's Priority Inbox](https://linear.app/changelog/2026-09-03-priority-inbox) separates urgent from routine notifications with sensible defaults the user can override.",
+      "why_it_matters": "it solves triage at the system level instead of asking users to build their own filters, a pattern worth stealing for any notification-heavy product.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Linear's Priority Inbox",
+          "url": "https://linear.app/changelog/2026-09-03-priority-inbox"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "farion1231-cc-switch-gh",
+      "section": "GitHub & Open Source",
+      "headline": "farion1231/cc-switch",
+      "summary": "a cross-platform desktop assistant for switching between [Claude Code](https://claude.com/product/claude-code), [Codex](https://openai.com/codex), [OpenCode](https://opencode.ai/), and other coding agents from one place.",
+      "why_it_matters": "because most developers now run more than one coding agent and are tired of juggling separate configs.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "farion1231/cc-switch",
+          "url": "https://github.com/farion1231/cc-switch"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex"
+        },
+        {
+          "label": "OpenCode",
+          "url": "https://opencode.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "gradio-app-daggr-gh",
+      "section": "GitHub & Open Source",
+      "headline": "gradio-app/daggr",
+      "summary": "[Hugging Face](https://huggingface.co/)'s open-source library for chaining AI apps into inspectable, visual workflow graphs.",
+      "why_it_matters": "because it fills a real debugging gap in multi-step agent pipelines.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "gradio-app/daggr",
+          "url": "https://github.com/gradio-app/daggr"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "clueso-ai-clueso-mcp-gh",
+      "section": "GitHub & Open Source",
+      "headline": "clueso-ai/clueso-mcp",
+      "summary": "the open-source MCP server behind Clueso's video and documentation generation, usable directly from Claude, ChatGPT, or Gemini.",
+      "why_it_matters": "as a concrete example of a product shipping MCP-first.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "clueso-ai/clueso-mcp",
+          "url": "https://github.com/clueso-ai/clueso-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "hn-opus-gpt6",
+      "section": "Social Buzz",
+      "headline": "Opus 5.5 and GPT-6 dominate Hacker News",
+      "kicker": "Hacker News",
+      "summary": "On [Hacker News](https://news.ycombinator.com/item?id=49803892), Claude Opus 5.5 pulled 1,767 points and over a thousand comments, mostly benchmark comparisons against GPT-6 Sol and Luna, whose own [launch thread](https://news.ycombinator.com/item?id=49805509) hit 1,730 points with a mix of enthusiasm and security questions about the faster, cheaper models.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49803892"
+        },
+        {
+          "label": "launch thread",
+          "url": "https://news.ycombinator.com/item?id=49805509"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "x-opus-ui",
+      "section": "Social Buzz",
+      "headline": "Early testers praise Opus 5.5's UI generation",
+      "kicker": "X",
+      "summary": "On [X](https://x.com/other__reality/status/2102514581684052169), early testers are singling out Opus 5.5's visual and UI generation quality as a clear jump from Opus 5, while [Anthropic's developer account](https://x.com/ClaudeDevs/status/2102438800836489554) confirmed Claude Code users get a 20% bump in 5-hour session limits alongside the price cut.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "X",
+          "url": "https://x.com/other__reality/status/2102514581684052169"
+        },
+        {
+          "label": "Anthropic's developer account",
+          "url": "https://x.com/ClaudeDevs/status/2102438800836489554"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "hn-jev-parody",
+      "section": "Social Buzz",
+      "headline": "\"Jev in 25 Lines of Python\"",
+      "kicker": "Hacker News",
+      "summary": "A parody post, [\"Jev in 25 Lines of Python,\"](https://www.nobodywho.ai/posts/jev-in-25-lines/) made the [Hacker News front page](https://news.ycombinator.com/item?id=49812769) (631 points) by reimplementing a \"structured AI decision-making\" agent framework in a fraction of the code, a pointed jab at how much agent tooling has ballooned in complexity this year.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "\"Jev in 25 Lines of Python,\"",
+          "url": "https://www.nobodywho.ai/posts/jev-in-25-lines/"
+        },
+        {
+          "label": "Hacker News front page",
+          "url": "https://news.ycombinator.com/item?id=49812769"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "learn-biolab",
+      "section": "Learning Corner",
+      "headline": "TechCrunch on Anthropic's biolab discovery",
+      "kicker": "Article",
+      "summary": "Worth the read because it's a rare, concrete look at what \"agentic science\" produces when it isn't a demo.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "TechCrunch on Anthropic's biolab discovery",
+          "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "new-claude-opus-5-5-end-of-figma-web-design",
+      "section": "Learning Corner",
+      "headline": "New Claude Opus 5.5! End of Figma Web Design?",
+      "kicker": "Video",
+      "summary": "Worth the watch for a hands-on look at how far prompt-to-UI generation has actually come this week, not just the marketing claims. On YouTube.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "New Claude Opus 5.5! End of Figma Web Design?",
+          "url": "https://www.youtube.com/watch?v=FaChtkkG9X4"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "learn-daggr",
+      "section": "Learning Corner",
+      "headline": "gradio-app/daggr",
+      "kicker": "GitHub project",
+      "summary": "Worth exploring because visual, inspectable workflow graphs solve a debugging problem most people building AI pipelines hit within the first week.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "gradio-app/daggr",
+          "url": "https://github.com/gradio-app/daggr"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "learn-config-recap",
+      "section": "Learning Corner",
+      "headline": "Figma's Config 2026 recap",
+      "kicker": "Design resource",
+      "summary": "Worth the read for a single, well-organized view of where AI-native design tooling is heading over the next year.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "agents-are-now-live-in-plane",
+      "section": "Learning Corner",
+      "headline": "Agents are now live in Plane",
+      "kicker": "AI workflow",
+      "summary": "Worth studying as a real-world example of delegating recurring PM busywork to an agent without losing human oversight of the plan.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents are now live in Plane",
+          "url": "https://plane.so/blog/agents-are-now-live-in-plane"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "agent-orchestration-for-design-teams",
+      "section": "Opportunities",
+      "headline": "Agent orchestration for design teams",
+      "summary": "Tools like [PixelCrew](https://pixelcrew.ai/) and the new [Figma Design Agent](https://www.figma.com/blog/the-figma-agent-is-here/) need people who understand both design systems and how to brief, sequence, and QA multiple agents, a genuinely new skill sitting between design ops and prompt engineering.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "PixelCrew",
+          "url": "https://pixelcrew.ai/"
+        },
+        {
+          "label": "Figma Design Agent",
+          "url": "https://www.figma.com/blog/the-figma-agent-is-here/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "mcp-server-design-for-creative-and-dev-tools",
+      "section": "Opportunities",
+      "headline": "MCP server design for creative and dev tools",
+      "summary": "With [Clueso](https://www.clueso.io/mcp) and [Hyrax](https://hyrax.dev/) shipping MCP-first, there's growing demand for people who can design the interaction surface of a tool as an agent-facing API, not just a human UI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Clueso",
+          "url": "https://www.clueso.io/mcp"
+        },
+        {
+          "label": "Hyrax",
+          "url": "https://hyrax.dev/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "notification-and-triage-ux",
+      "section": "Opportunities",
+      "headline": "Notification and triage UX",
+      "summary": "[Linear's Priority Inbox](https://linear.app/changelog/2026-09-03-priority-inbox) is one of several products rethinking notification design for an agent-heavy workflow; any product with growing notification volume is a candidate for the same rework.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Linear's Priority Inbox",
+          "url": "https://linear.app/changelog/2026-09-03-priority-inbox"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "ai-glasses-interaction-design",
+      "section": "Opportunities",
+      "headline": "AI glasses interaction design",
+      "summary": "With shipments up 263% and Meta, [EssilorLuxottica](https://www.essilorluxottica.com/en), and [Apple](https://www.apple.com/) all pushing into the category, glanceable and audio-first interfaces are an underexplored design specialty right now.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "EssilorLuxottica",
+          "url": "https://www.essilorluxottica.com/en"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "codebase-health-consulting",
+      "section": "Opportunities",
+      "headline": "Codebase health consulting",
+      "summary": "As tools like [Hyrax AI](https://hyrax.dev/) surface architectural debt from AI-generated code, there's a growing niche for designers and engineers who can translate that debt into a prioritized, presentable roadmap for non-technical stakeholders.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hyrax AI",
+          "url": "https://hyrax.dev/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    },
+    {
+      "id": "three-ui-variations-experiment",
+      "section": "Today's Experiment",
+      "headline": "Brief an agent for three UI variations",
+      "kicker": "Under 30 minutes",
+      "summary": "Pick one real screen from your current project and write a plain-language design brief for it, the way you'd brief a junior designer. Feed it to [Claude Code](https://claude.com/product/claude-code) or the [Figma Design Agent](https://www.figma.com/blog/the-figma-agent-is-here/) and ask for three UI variations plus a one-line rationale for each. Compare the output against your own instinct for the screen. You'll have a fast read on where Opus 5.5's much-discussed visual design jump actually holds up.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Figma Design Agent",
+          "url": "https://www.figma.com/blog/the-figma-agent-is-here/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-24"
+    }
+  ],
+  "dont_miss": [
+    "**Claude Opus 5.5 is live and meaningfully cheaper.** If you're on [Claude Code](https://claude.com/product/claude-code), your session limits just went further for less money, worth switching your default model today.",
+    "**GPT-6 Sol and Luna cut prices in half.** If cost has been the blocker on running agents continuously, that blocker just got smaller on both major platforms in the same week.",
+    "**The OpenAI Medicare breach disclosure.** A three-month delay in telling a government about unauthorized agent access is a preview of the governance questions every team granting agents system access should be asking now, before it's their incident."
+  ],
+  "footnote": "Sourced from Anthropic, OpenAI, Figma, Cursor, Linear, TechCrunch, Hacker News, Product Hunt, GitHub Trending, and other outlets linked above. Compiled September 24, 2026."
+}
