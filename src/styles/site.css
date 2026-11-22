@@ -172,7 +172,6 @@ a.tag:hover { background: var(--bg-lift); }
   display: flex; align-items: center;
   background: var(--nav-bg);
   -webkit-backdrop-filter: var(--blur-glass); backdrop-filter: var(--blur-glass);
-  border-bottom: 1px solid var(--border-subtle);
   transition: transform .6s var(--ease-out);
 }
 .nav.is-hidden { transform: translateY(-110%); }
@@ -244,7 +243,7 @@ a.tag:hover { background: var(--bg-lift); }
 .drawer.is-open .drawer__links li:nth-child(2) { transition-delay: .06s; }
 .drawer.is-open .drawer__links li:nth-child(3) { transition-delay: .12s; }
 .drawer.is-open .drawer__links li:nth-child(n+4) { transition-delay: .18s; }
-body.drawer-open .nav { background: var(--neutral-black); color: var(--light-100); border-bottom-color: var(--light-16); --tone-strong: var(--light-100); --bg-lift: var(--light-8); --fill-8: var(--light-8); }
+body.drawer-open .nav { background: var(--neutral-black); color: var(--light-100); --tone-strong: var(--light-100); --bg-lift: var(--light-8); --fill-8: var(--light-8); }
 
 /* ---------- 5. Page heads (H3 type-first, H7 mosaic on home) ---------- */
 .head { padding-block: 75px 56px; }
@@ -491,9 +490,9 @@ a.tile:hover { background: var(--bg-lift); }
 :root:not([data-theme='dark']) .cover :focus-visible { outline-color: var(--dark-100); }
 
 /* Nav over the cover: clear, white, glass chips */
-.nav { transition: transform .6s var(--ease-out), background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease); }
+.nav { transition: transform .6s var(--ease-out), background-color var(--dur-fast) var(--ease); }
 .nav.is-over {
-  background: transparent; border-bottom-color: transparent; -webkit-backdrop-filter: none; backdrop-filter: none;
+  background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none;
   color: var(--neutral-white);
   --tone-strong: var(--light-100); --fill-8: var(--light-16); --bg-lift: var(--light-32); --on-strong: var(--dark-100); --tone-faint: var(--light-16);
 }
