@@ -1,0 +1,747 @@
+{
+  "date": "2026-10-19",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1p-ss-lQlfcV8ptnJl_iNDsRhV79-jdfToVDnx0HGs2I/edit",
+  "highlights": [
+    {
+      "headline": "Design systems become agent context.",
+      "ref": "figma-specs",
+      "summary": "[Figma](https://www.figma.com) launched Specs, a Markdown editor for design rules that agents read, plus a central context store for libraries and guidelines ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/))."
+    },
+    {
+      "headline": "Anthropic is putting 5% of its shares into a public-benefit fund",
+      "ref": "anthropic-fund-canada",
+      "summary": "[Anthropic](https://www.anthropic.com) aims the fund at AI's labor-market impact, and signed a 20-year lease for its first Canadian data center ([announcement](https://www.anthropic.com/news/public-benefit-fund), [The Star](https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-signs-lease-for-first-canadian-data-center))."
+    },
+    {
+      "headline": "OpenAI signals a humanoid robot",
+      "ref": "openai-humanoid-aurora",
+      "summary": "The demo is targeted for 2027, and three undocumented \"aurora\" model IDs appeared in the [OpenAI](https://openai.com) API on October 18 ([Engadget](https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/), [Crypto Briefing](https://cryptobriefing.com/openai-aurora-alpha-models-api/))."
+    },
+    {
+      "headline": "Cursor ships cloud agent canvases",
+      "ref": "cursor-canvases",
+      "summary": "[Cursor](https://cursor.com) canvases can be opened by teammates from a link, plus an Environments API in beta ([changelog](https://cursor.com/changelog))."
+    },
+    {
+      "headline": "Agents hit the financial perimeter.",
+      "ref": "agent-security-infra",
+      "summary": "Schwab and JPMorgan say they block unauthorized AI agents from moving customer money ([Forkast](https://forkast.news/schwab-and-jpmorgan-block-unauthorized-ai-agents-from-moving-money-as-private-ordering-reaches-financial-core/))."
+    }
+  ],
+  "section_notes": {
+    "Social Buzz": "I could not retrieve live threads from X, Reddit, Hacker News or Product Hunt in this run, so this section reflects the most-discussed stories in the news cycle instead."
+  },
+  "entries": [
+    {
+      "id": "anthropic-fund-canada",
+      "section": "AI Industry News",
+      "headline": "Anthropic: public-benefit fund and Canadian data center",
+      "summary": "[Anthropic](https://www.anthropic.com) commits 5% of its shares (subject to stockholder approval) to a new wholly-owned LLC, with 2% more at board discretion for each 50% rise in company value above a baseline. The fund targets nonprofit grants and cash distributions tied to AI's labor-market impact ([source](https://www.anthropic.com/news/public-benefit-fund)). Separately, Anthropic signed a 20-year lease in Nova Scotia, phase one 95 MW, targeted for late 2027 ([source](https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-signs-lease-for-first-canadian-data-center)).",
+      "why_it_matters": "Capacity and governance are now product strategy. More compute means fewer rate limits for builders over time.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "source",
+          "url": "https://www.anthropic.com/news/public-benefit-fund"
+        },
+        {
+          "label": "source",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-signs-lease-for-first-canadian-data-center"
+        }
+      ],
+      "lead": true,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "openai-humanoid-aurora",
+      "section": "AI Industry News",
+      "headline": "OpenAI: humanoid plans and unannounced models",
+      "summary": "Sam Altman told Fortune \"we will definitely do a humanoid,\" and [OpenAI](https://openai.com) lists 27 robotics roles ([Engadget](https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/)). Model IDs aurora-red-alpha, aurora-green-alpha and aurora-blue-alpha surfaced in the API with no documentation ([source](https://cryptobriefing.com/openai-aurora-alpha-models-api/)).",
+      "why_it_matters": "A new model family looks close. Keep your prompts and evals portable so you can swap models fast.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Engadget",
+          "url": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/"
+        },
+        {
+          "label": "source",
+          "url": "https://cryptobriefing.com/openai-aurora-alpha-models-api/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "google-universal-gemini-agent",
+      "section": "AI Industry News",
+      "headline": "Google: universal Gemini agent in private preview",
+      "summary": "At Gemini at Work (October 8), [Google Cloud](https://cloud.google.com) introduced a single agent that handles multi-step tasks, coordinates sub-agents, and runs for hours or days on one objective. It runs on Gemini 3 Pro and works natively with Gmail, Docs, Drive, Sheets and Calendar. Private preview only, no pricing ([source](https://tech-insider.org/google-gemini-agent-launch-workplace-ai-2026/)).",
+      "why_it_matters": "Long-running agents with visible progress tracking set the UI pattern designers will be asked to build.",
+      "links": [
+        {
+          "label": "Google Cloud",
+          "url": "https://cloud.google.com"
+        },
+        {
+          "label": "source",
+          "url": "https://tech-insider.org/google-gemini-agent-launch-workplace-ai-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "agent-security-infra",
+      "section": "AI Industry News",
+      "headline": "Agent security and infrastructure",
+      "summary": "OpenCode disclosed a breach affecting 1.4% of Console users after a \"distillation attack,\" with stolen API keys used for charges ([source](https://huggingnews.com/cybersecurity/opencode-confirms-distillation-attack-hit-14percent-of-console-users-51c80aca)). The DOE advanced up to $4.4B in loans to restart three nuclear plants, mainly for AI data centers ([source](https://www.ckom.com/2026/10/17/u-s-revives-shuttered-nuclear-plants-to-power-massive-ai-data-centres/)). Chip stocks fell for an eighth straight day ([source](https://finance.biggo.com/news/4653f52e-d964-4a23-90e0-9b2091a94646)).",
+      "why_it_matters": "Rotate API keys, scope them tightly, and design permission and confirmation flows for agent actions.",
+      "why_label": "Impact for builders",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://huggingnews.com/cybersecurity/opencode-confirms-distillation-attack-hit-14percent-of-console-users-51c80aca"
+        },
+        {
+          "label": "source",
+          "url": "https://www.ckom.com/2026/10/17/u-s-revives-shuttered-nuclear-plants-to-power-massive-ai-data-centres/"
+        },
+        {
+          "label": "source",
+          "url": "https://finance.biggo.com/news/4653f52e-d964-4a23-90e0-9b2091a94646"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "figma-specs",
+      "section": "Product Design & UX",
+      "headline": "Figma Specs, context store and canvas agent",
+      "summary": "At its first Config in India, [Figma](https://www.figma.com) introduced Specs (Markdown documents that can reference canvas elements, FigJam diagrams, code layers and designs), a centralized context store for design libraries, code libraries and guidelines, and a wider rollout of the canvas agent. Code layers moved to open beta, and the MCP server gained 20+ tools. Figma is also integrating Payload CMS with Figma Make ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/), [Dataconomy](https://dataconomy.com/2026/10/15/figma-launches-specs-to-guide-ai-with-design-rules/)).",
+      "why_it_matters": "Write your design principles once as a Spec and every agent inherits them. Chief design officer Loredana Crisan noted AI raised code output 17x but releases only 1.3x, so exploration is outpacing shipping.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        },
+        {
+          "label": "Dataconomy",
+          "url": "https://dataconomy.com/2026/10/15/figma-launches-specs-to-guide-ai-with-design-rules/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "framer-skills",
+      "section": "Product Design & UX",
+      "headline": "Framer Skills",
+      "summary": "[Framer](https://www.framer.com) lets you save reusable instructions (design system or writing guidelines) for its agent, and added a Firewall for country and path rules on October 1 ([updates](https://www.framer.com/updates)).",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "updates",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "cursor-canvases",
+      "section": "Product Design & UX",
+      "headline": "Cursor cloud canvases and Remote Control",
+      "summary": "[Cursor](https://cursor.com) cloud agents can build interactive canvases shared via link, environments scale to 300 repos, and the iOS app can message local agents ([changelog](https://cursor.com/changelog)).",
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "changelog",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "protopie-mcp",
+      "section": "Product Design & UX",
+      "headline": "ProtoPie MCP update",
+      "summary": "[ProtoPie](https://www.protopie.io) Studio MCP can now insert components from custom libraries, accept element IDs in prompts, and Code MCP supports React Native among seven frameworks. Studio MCP needs a Pro plan, Code MCP needs Enterprise ([MotionMedia](https://www.motionmedia.com/mm-blog/protopie-mcp-official-release)).",
+      "links": [
+        {
+          "label": "ProtoPie",
+          "url": "https://www.protopie.io"
+        },
+        {
+          "label": "MotionMedia",
+          "url": "https://www.motionmedia.com/mm-blog/protopie-mcp-official-release"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "tool-figma-specs",
+      "section": "New AI Tools",
+      "headline": "Figma Specs",
+      "summary": "Markdown design rules that agents follow.",
+      "audience": "design system owners",
+      "links": [
+        {
+          "label": "Figma Specs",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "tool_rating": 9,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "tool-cursor-canvases",
+      "section": "New AI Tools",
+      "headline": "Cursor Cloud Agent Canvases",
+      "summary": "Agents build interactive canvases you share by link.",
+      "audience": "designers who prototype with engineers",
+      "links": [
+        {
+          "label": "Cursor Cloud Agent Canvases",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "tool_rating": 8,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "tool-framer-skills",
+      "section": "New AI Tools",
+      "headline": "Framer Skills",
+      "summary": "Teach the Framer agent your guidelines.",
+      "audience": "marketing-site designers",
+      "links": [
+        {
+          "label": "Framer Skills",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "tool_rating": 8,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "tool-protopie-mcp",
+      "section": "New AI Tools",
+      "headline": "ProtoPie MCP",
+      "summary": "Drive ProtoPie prototypes and export framework code from an AI client.",
+      "audience": "interaction designers on Pro or Enterprise",
+      "links": [
+        {
+          "label": "ProtoPie MCP",
+          "url": "https://www.protopie.io"
+        }
+      ],
+      "tool_rating": 7,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "tool-hyperframes",
+      "section": "New AI Tools",
+      "headline": "HyperFrames",
+      "summary": "Agents write HTML and render it to video.",
+      "audience": "motion and marketing work",
+      "links": [
+        {
+          "label": "HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "tool_rating": 7,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "tool-blender-ai-mcp",
+      "section": "New AI Tools",
+      "headline": "Blender AI MCP add-on",
+      "summary": "An AI assistant and MCP server for 3D scene work.",
+      "audience": "designers exploring 3D",
+      "links": [
+        {
+          "label": "Blender AI MCP add-on",
+          "url": "https://github.com/anujasid/blender-ai-mcp-addon"
+        }
+      ],
+      "tool_rating": 6,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "tool-solidcraft",
+      "section": "New AI Tools",
+      "headline": "Solidcraft",
+      "summary": "Open-source parametric CAD with MCP automation.",
+      "audience": "hardware and industrial designers",
+      "links": [
+        {
+          "label": "Solidcraft",
+          "url": "https://github.com/tangency-labs/solidcraft"
+        }
+      ],
+      "tool_rating": 6,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "trend-design-rules-context",
+      "section": "Trends to Watch",
+      "headline": "Design rules as agent context",
+      "summary": "Figma Specs and Framer Skills both turn guidelines into machine-readable instructions.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Learn to write precise, testable design principles."
+      },
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "trend-long-running-agents",
+      "section": "Trends to Watch",
+      "headline": "Long-running cloud agents",
+      "summary": "Cursor Projects, Google's universal agent and Cursor's cloud canvases all keep working when you close the laptop.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Learn to design status, interruption and review UI."
+      },
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "trend-mcp-everywhere",
+      "section": "Trends to Watch",
+      "headline": "MCP everywhere",
+      "summary": "Figma added 20+ MCP tools, ProtoPie ships two MCP servers, and trending repos are MCP-first.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Learn to build or at least configure MCP servers."
+      },
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "trend-agent-permissions",
+      "section": "Trends to Watch",
+      "headline": "Agent permissions and trust",
+      "summary": "Banks block outside agents and OpenCode's breach hit stored keys.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Learn consent, scoping and audit-trail patterns."
+      },
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "cursor-remote-control",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor Remote Control",
+      "summary": "[Cursor](https://cursor.com) lets the iOS app view and message agents running on your computer ([source](https://cursor.com/changelog)).",
+      "why_it_matters": "The phone becomes a lightweight supervisor, not a second editor.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "gemini-progress-tracking",
+      "section": "Product Design Inspiration",
+      "headline": "Gemini agent progress tracking",
+      "summary": "[Google](https://cloud.google.com) launches from one prompt box and shows visible progress for multi-step work ([source](https://tech-insider.org/google-gemini-agent-launch-workplace-ai-2026/)).",
+      "why_it_matters": "A single entry point keeps a complex system approachable.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://tech-insider.org/google-gemini-agent-launch-workplace-ai-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "cursor-rollouts-verdicts",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor Rollouts verdicts",
+      "summary": "Each PR gets a monitoring plan and a plain verdict: healthy, regression detected, or inconclusive ([source](https://cursor.com/changelog)).",
+      "why_it_matters": "Three states and no auto-actions keep humans in control.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "hyperframes",
+      "section": "GitHub & Open Source",
+      "headline": "heygen-com/hyperframes",
+      "summary": "Agents write HTML and render video.",
+      "why_it_matters": "Gaining attention because it uses a format agents already write well.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "claude-plugins-official",
+      "section": "GitHub & Open Source",
+      "headline": "anthropics/claude-plugins-official",
+      "summary": "Anthropic-managed directory of Claude Code plugins. A central place to discover plugins.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "cc-switch",
+      "section": "GitHub & Open Source",
+      "headline": "farion1231/cc-switch",
+      "summary": "Desktop assistant for Claude Code, Codex and other coding tools. Useful for people juggling several agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "farion1231/cc-switch",
+          "url": "https://github.com/farion1231/cc-switch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "rea",
+      "section": "GitHub & Open Source",
+      "headline": "morluto/rea",
+      "summary": "Agents that reverse engineer apps, from behavior to native binaries. Top of the MCP trending list this week.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "morluto/rea",
+          "url": "https://github.com/morluto/rea"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "stealth-browser-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "vibheksoni/stealth-browser-mcp",
+      "summary": "Browser automation for agents over MCP and Chrome DevTools Protocol.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vibheksoni/stealth-browser-mcp",
+          "url": "https://github.com/vibheksoni/stealth-browser-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "earshot",
+      "section": "GitHub & Open Source",
+      "headline": "Leonxlnx/earshot",
+      "summary": "Lets coding agents hear and review audio, CPU-only. Source: [gittrend.io](https://gittrend.io/trending/mcp).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Leonxlnx/earshot",
+          "url": "https://github.com/Leonxlnx/earshot"
+        },
+        {
+          "label": "gittrend.io",
+          "url": "https://gittrend.io/trending/mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "buzz-aurora-models",
+      "section": "Social Buzz",
+      "headline": "Unannounced OpenAI aurora models",
+      "summary": "Developers are probing model IDs that returned capacity and not-found errors ([source](https://cryptobriefing.com/openai-aurora-alpha-models-api/)).",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://cryptobriefing.com/openai-aurora-alpha-models-api/"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "buzz-agents-vs-banks",
+      "section": "Social Buzz",
+      "headline": "Agents vs. bank defenses",
+      "summary": "Schwab reports blocking \"tens and twenties\" of unauthorized agent attempts weekly ([source](https://forkast.news/schwab-and-jpmorgan-block-unauthorized-ai-agents-from-moving-money-as-private-ordering-reaches-financial-core/)).",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://forkast.news/schwab-and-jpmorgan-block-unauthorized-ai-agents-from-moving-money-as-private-ordering-reaches-financial-core/"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "buzz-figma-17x",
+      "section": "Social Buzz",
+      "headline": "Figma's 17x vs 1.3x stat",
+      "summary": "The code-output versus releases gap is fueling debate about whether exploration is replacing shipping ([source](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/)).",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "learn-build-by-design",
+      "section": "Learning Corner",
+      "headline": "Build by Design: New Workflows for New Ways of Building",
+      "kicker": "Article",
+      "summary": "From Figma. Frames how design and engineering workflows are converging.",
+      "links": [
+        {
+          "label": "Build by Design: New Workflows for New Ways of Building",
+          "url": "https://www.figma.com/blog/build-by-design/"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "learn-figma-youtube",
+      "section": "Learning Corner",
+      "headline": "Figma's YouTube channel",
+      "kicker": "Video",
+      "summary": "Watch the latest Config sessions on Specs and the canvas agent. I did not verify a single video URL this run.",
+      "links": [
+        {
+          "label": "Figma's YouTube channel",
+          "url": "https://www.youtube.com/@figma"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "learn-claude-plugins",
+      "section": "Learning Corner",
+      "headline": "claude-plugins-official",
+      "kicker": "GitHub project",
+      "summary": "Read a few plugins to see how agent capabilities are packaged.",
+      "links": [
+        {
+          "label": "claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "learn-framer-updates",
+      "section": "Learning Corner",
+      "headline": "Framer updates",
+      "kicker": "Design resource",
+      "summary": "Study how Skills phrase reusable agent instructions.",
+      "links": [
+        {
+          "label": "Framer updates",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "learn-cursor-projects",
+      "section": "Learning Corner",
+      "headline": "Cursor Projects",
+      "kicker": "AI workflow",
+      "summary": "September 10 entry. A coordinator agent plans and delegates work in the cloud, a model for how to scope big tasks.",
+      "links": [
+        {
+          "label": "Cursor Projects",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "opp-spec-writing",
+      "section": "Opportunities",
+      "headline": "Spec writing as a craft",
+      "summary": "Offer to turn a team's design language into agent-ready Figma Specs.",
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "opp-agent-supervision-ui",
+      "section": "Opportunities",
+      "headline": "Agent supervision UI",
+      "summary": "Long-running agents need status, interruption and review patterns, and few teams have them.",
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "opp-agent-consent",
+      "section": "Opportunities",
+      "headline": "Agent permission and consent design",
+      "summary": "Banks and breaches show demand for trustworthy authorization flows.",
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "opp-mcp-prototyping",
+      "section": "Opportunities",
+      "headline": "MCP-powered prototyping",
+      "summary": "Pair ProtoPie or Figma MCP with a coding agent to compress prototype-to-code cycles.",
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    },
+    {
+      "id": "experiment-figma-spec",
+      "section": "Today's Experiment",
+      "headline": "Write a 1-page Spec for your design system",
+      "kicker": "25 minutes",
+      "summary": "In [Figma](https://www.figma.com), create a Specs document covering spacing, color roles, button states and tone of voice. Ask the canvas agent to build one screen, then note which rules it ignored and tighten the wording. Repeat once.",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-19"
+    }
+  ],
+  "dont_miss": [
+    "[Figma Specs and the context store](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/): the clearest sign of where design systems are headed.",
+    "[Cursor cloud agent canvases](https://cursor.com/changelog): shareable agent output changes design-engineering handoff.",
+    "[OpenAI aurora model IDs](https://cryptobriefing.com/openai-aurora-alpha-models-api/): a possible model launch to prepare for."
+  ],
+  "footnote": "Sources: TechCrunch, Dataconomy, Cursor and Framer changelogs, AI Weekly, Tech Insider, MotionMedia, gittrend.io. Claims on X, Reddit, Hacker News and Product Hunt could not be verified this run."
+}
