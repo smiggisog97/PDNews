@@ -602,7 +602,7 @@
       "id": "anthropics-claude-code",
       "section": "GitHub & Open Source",
       "headline": "anthropics/claude-code",
-      "summary": "Written in TypeScript. the terminal-based agentic coding tool continues gaining stars as its ecosystem of skills and plugins grows.",
+      "summary": "Written in TypeScript. The terminal-based agentic coding tool continues gaining stars as its ecosystem of skills and plugins grows.",
       "why_it_matters": null,
       "links": [
         {
@@ -618,7 +618,7 @@
       "id": "addyosmani-agent-skills",
       "section": "GitHub & Open Source",
       "headline": "addyosmani/agent-skills",
-      "summary": "Written in JavaScript. production-grade, reusable capabilities designed specifically for AI coding agents, riding the same \"portable skills\" trend as Notion's release this week.",
+      "summary": "Written in JavaScript. Production-grade, reusable capabilities designed specifically for AI coding agents, riding the same \"portable skills\" trend as Notion's release this week.",
       "why_it_matters": null,
       "links": [
         {
@@ -634,7 +634,7 @@
       "id": "mem0ai-mem0",
       "section": "GitHub & Open Source",
       "headline": "mem0ai/mem0",
-      "summary": "Written in Python. a drop-in memory layer that gives agents long-term context retention, part of this week's surge in memory-focused agent tooling.",
+      "summary": "Written in Python. A drop-in memory layer that gives agents long-term context retention, part of this week's surge in memory-focused agent tooling.",
       "why_it_matters": null,
       "links": [
         {
@@ -650,7 +650,7 @@
       "id": "hkuds-nanobot",
       "section": "GitHub & Open Source",
       "headline": "HKUDS/nanobot",
-      "summary": "Written in Python. a lightweight, self-hosted agent framework with memory and multi-agent workflows built in, favored for local-first setups.",
+      "summary": "Written in Python. A lightweight, self-hosted agent framework with memory and multi-agent workflows built in, favored for local-first setups.",
       "why_it_matters": null,
       "links": [
         {
@@ -666,7 +666,7 @@
       "id": "infiniflow-ragflow",
       "section": "GitHub & Open Source",
       "headline": "infiniflow/ragflow",
-      "summary": "Written in Python. described as a leading open-source RAG engine fusing retrieval with agent capabilities, useful for teams building AI search over their own docs.",
+      "summary": "Written in Python. Described as a leading open-source RAG engine fusing retrieval with agent capabilities, useful for teams building AI search over their own docs.",
       "why_it_matters": null,
       "links": [
         {
@@ -682,7 +682,7 @@
       "id": "jamiepine-voicebox",
       "section": "GitHub & Open Source",
       "headline": "jamiepine/voicebox",
-      "summary": "Written in TypeScript. an open-source AI voice studio for cloning and voice creation, timely given OpenAI's GPT-Live-1 launch this week.",
+      "summary": "Written in TypeScript. An open-source AI voice studio for cloning and voice creation, timely given OpenAI's GPT-Live-1 launch this week.",
       "why_it_matters": null,
       "links": [
         {
