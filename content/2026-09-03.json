@@ -1,0 +1,678 @@
+{
+  "date": "2026-09-03",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/17zYnjO4ZlUvdpy7yi3A9Y7Ajx6XNqpsvZabOh20MIpg/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic launched Enterprise Frontier Safeguards,",
+      "summary": "a free zero-data-retention system with cross-session misuse detection, built with input from banks, KPMG, Mastercard, Salesforce, and Visa. [Read the announcement](https://www.anthropic.com/news/enterprise-frontier-safeguards)."
+    },
+    {
+      "headline": "Sony Music Publishing and Warner Chappell sued Anthropic,",
+      "summary": "naming CEO Dario Amodei and co-founder Ben Mann personally, seeking up to $150,000 per infringed song over alleged mass torrenting and scraping of lyrics to train Claude. [TechCrunch coverage](https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/)."
+    },
+    {
+      "headline": "OpenAI's forthcoming Astra model crossed the \"Critical\" cybersecurity threshold",
+      "summary": "in the company's Preparedness Framework, the first model to do so, after scoring a perfect result on ExploitBench and independently finding two zero-days. [OpenAI's writeup](https://openai.com/index/path-to-astra/)."
+    },
+    {
+      "headline": "Google begins shutting down Google Assistant",
+      "summary": "on Android and Wear OS starting September 4, with [Gemini](https://gemini.google.com/) taking over assistant duties on phones, tablets, watches, and Android Auto. [The Decoder](https://the-decoder.com/google-will-shut-down-google-assistant-starting-september-2026-as-gemini-takes-over-on-android-and-wear-os/)."
+    },
+    {
+      "headline": "Figma's Weave tools now run through MCP",
+      "summary": "inside [Claude](https://www.anthropic.com/claude), ChatGPT, or [Cursor](https://cursor.com), letting designers trigger AI image edits from their coding agent without leaving the conversation. [Figma's Config 2026 recap](https://www.figma.com/blog/config-2026-recap/)."
+    }
+  ],
+  "entries": [
+    {
+      "id": "anthropic-ships-enterprise-frontier-safeguards",
+      "section": "AI Industry News",
+      "headline": "Anthropic ships Enterprise Frontier Safeguards",
+      "summary": "On September 1, [Anthropic](https://www.anthropic.com) introduced Enterprise Frontier Safeguards (EFS), which pairs zero data retention with automated misuse detection that runs without human review of customer data. Customer logs stay in infrastructure the enterprise itself manages, not Anthropic's. The company built EFS with the Analysis and Resilience Center for Systemic Risk (bank CISOs) and companies including [KPMG](https://www.kpmg.com), [Mastercard](https://www.mastercard.com), [Salesforce](https://www.salesforce.com), and [Visa](https://www.visa.com). It is free and rolls out in phases through the fall. [Full announcement](https://www.anthropic.com/news/enterprise-frontier-safeguards).",
+      "why_it_matters": "enterprise buyers have been asking \"where does our data actually go\" for two years, and this is the first major lab answer that doesn't require trusting the vendor's internal review process.",
+      "links": [
+        {
+          "label": "Full announcement",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "sony-music-and-warner-chappell-sue-anthropic",
+      "section": "AI Industry News",
+      "headline": "Sony Music and Warner Chappell sue Anthropic",
+      "summary": "The two publishers allege Anthropic ran a \"brazen campaign\" of torrenting and scraping copyrighted songs, including tracks by Marvin Gaye and Mariah Carey, via sites like Library Genesis and lyrics sites Musixmatch and LyricFind, to train Claude. They're seeking up to $150,000 per song plus $25,000 per instance of stripped copyright management information. Anthropic says it will \"defend ourselves robustly in court.\" [Axios](https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright), [TechCrunch](https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/).",
+      "why_it_matters": "this follows the earlier author-copyright settlement pattern, but naming founders personally raises the stakes and signals labels see AI training data as the next major litigation front.",
+      "links": [
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/"
+        },
+        {
+          "label": "Axios",
+          "url": "https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "openai-s-astra-crosses-the-critical-cyber-threshol",
+      "section": "AI Industry News",
+      "headline": "OpenAI's Astra crosses the \"Critical\" cyber threshold",
+      "summary": "Astra is the first OpenAI model to hit the top tier of the company's Preparedness Framework for cybersecurity, meaning it can independently find and exploit zero-days across well-defended systems. OpenAI is adding chain-of-thought monitoring to catch actions outside authorized boundaries before release. [OpenAI: Path to Astra](https://openai.com/index/path-to-astra/), [SecurityWeek](https://www.securityweek.com/openais-astra-becomes-first-model-to-cross-critical-cybersecurity-threshold/).",
+      "why_it_matters": "this is the clearest public marker yet that frontier models have crossed into genuinely dual-use offensive capability, not just theoretical risk.",
+      "links": [
+        {
+          "label": "OpenAI: Path to Astra",
+          "url": "https://openai.com/index/path-to-astra/"
+        },
+        {
+          "label": "SecurityWeek",
+          "url": "https://www.securityweek.com/openais-astra-becomes-first-model-to-cross-critical-cybersecurity-threshold/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "google-retires-assistant-in-favor-of-gemini",
+      "section": "AI Industry News",
+      "headline": "Google retires Assistant in favor of Gemini",
+      "summary": "Starting September 4, [Google](https://www.google.com) is shutting down Google Assistant on Android phones, tablets, Wear OS watches, headphones, and Android Auto, replacing it system-wide with Gemini. [The Decoder](https://the-decoder.com/google-will-shut-down-google-assistant-starting-september-2026-as-gemini-takes-over-on-android-and-wear-os/).",
+      "why_it_matters": "any product with a voice or assistant integration on Android needs to check whether it depended on Assistant-specific APIs.",
+      "links": [
+        {
+          "label": "The Decoder",
+          "url": "https://the-decoder.com/google-will-shut-down-google-assistant-starting-september-2026-as-gemini-takes-over-on-android-and-wear-os/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "figma-s-agent-gets-four-upgrades-from-config-2026",
+      "section": "Product Design & UX",
+      "headline": "Figma's agent gets four upgrades from Config 2026, now shipping via MCP",
+      "summary": "[Figma](https://www.figma.com)'s in-canvas agent can now build and reuse custom skills from a team's own conventions, connect to external tools over MCP, pull live web data into designs, and make its conversations visible to the whole team by default. The newest piece: Weave tools (AI background swaps, logo placement, aspect-ratio changes) are reachable from Claude, ChatGPT, or Cursor via Figma's MCP server, so a designer or engineer can run an image edit without switching windows. [Figma blog](https://www.figma.com/blog/config-2026-recap/), [Weave's Config 2026 notes](https://help.weavy.ai/en/articles/15623550-what-s-new-from-config-2026).",
+      "why_it_matters": "teams that already run agent workflows in Cursor or Claude Code can now trigger production-quality image edits mid-conversation instead of round-tripping to Figma.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma blog",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "Weave's Config 2026 notes",
+          "url": "https://help.weavy.ai/en/articles/15623550-what-s-new-from-config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "solo-makers-debate-whether-ai-removes-the-need-for",
+      "section": "Product Design & UX",
+      "headline": "Solo makers debate whether AI removes the need for a UX designer",
+      "summary": "A [Product Hunt](https://www.producthunt.com/forums) forum thread asking \"do solo makers need a UI/UX designer?\" pulled in 175 comments in under a day. The consensus forming: AI-generated UI is fast but tends toward generic, and makers who skip design thinking entirely ship products that are usable but forgettable. [Read the thread](https://www.producthunt.com/p/runevr/do-solo-makers-need-a-ui-ux-designer).",
+      "why_it_matters": "worth reading if you're deciding how much design judgment to keep in-house versus delegate to a coding agent.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Read the thread",
+          "url": "https://www.producthunt.com/p/runevr/do-solo-makers-need-a-ui-ux-designer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "wispr-flow",
+      "section": "New AI Tools",
+      "headline": "Wispr Flow",
+      "summary": "Voice dictation that works across every app on your Mac or PC, not just one text field.",
+      "why_it_matters": null,
+      "audience": "anyone who thinks faster than they type, especially useful for drafting specs or briefs hands-free.",
+      "links": [
+        {
+          "label": "Wispr Flow",
+          "url": "https://www.producthunt.com/products/wisprflow"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "framer",
+      "section": "New AI Tools",
+      "headline": "Framer",
+      "summary": "An AI design agent that takes a site from idea to a published, responsive build, including Figma import.",
+      "why_it_matters": null,
+      "audience": "solo founders and small teams shipping marketing sites without a dedicated developer.",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.producthunt.com/products/framer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "shadcn-ui",
+      "section": "New AI Tools",
+      "headline": "shadcn/ui",
+      "summary": "Copy-in, own-your-code component library that's become the default output format for AI-generated UI.",
+      "why_it_matters": null,
+      "audience": "developers who want agent-generated interfaces to stay maintainable.",
+      "links": [
+        {
+          "label": "shadcn/ui",
+          "url": "https://www.producthunt.com/products/shadcn-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "cursor",
+      "section": "New AI Tools",
+      "headline": "Cursor",
+      "summary": "AI coding editor now shipping same-day model integrations (Grok 4.6 landed within a day of xAI's release).",
+      "why_it_matters": null,
+      "audience": "engineers who want their editor to double as an agent runner.",
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "figma-weave-via-mcp",
+      "section": "New AI Tools",
+      "headline": "Figma Weave (via MCP)",
+      "summary": "Run Figma's AI image tools from inside Claude, ChatGPT, or Cursor.",
+      "why_it_matters": null,
+      "audience": "designers and engineers who already live in an agent chat window.",
+      "links": [
+        {
+          "label": "Figma Weave (via MCP)",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "codeburn",
+      "section": "New AI Tools",
+      "headline": "codeburn",
+      "summary": "A free local tool (`npx codeburn`) that tracks AI coding token usage and cost across 37 tools and agents, broken down by model, project, and task.",
+      "why_it_matters": null,
+      "audience": "teams trying to understand what their Claude Code or Cursor spend is actually buying.",
+      "links": [
+        {
+          "label": "codeburn",
+          "url": "https://github.com/getagentseal/codeburn"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "archify",
+      "section": "New AI Tools",
+      "headline": "archify",
+      "summary": "An agent skill that turns architecture, workflow, and data-flow descriptions into self-contained, animated HTML diagrams.",
+      "why_it_matters": null,
+      "audience": "engineers who need to explain a system without opening a diagramming tool.",
+      "links": [
+        {
+          "label": "archify",
+          "url": "https://github.com/tt-a1i/archify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "mcp-is-becoming-the-default-bridge-between-design",
+      "section": "Trends to Watch",
+      "headline": "MCP is becoming the default bridge between design and code",
+      "summary": "Figma routing Weave tools through MCP into Claude, ChatGPT, and Cursor is the clearest signal yet that the protocol has moved past developer novelty into how design tools expect to be used.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "skim [Figma's Config 2026 recap](https://www.figma.com/blog/config-2026-recap/) for the concrete API shape."
+      },
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "cost-and-usage-observability-for-ai-coding-is-beco",
+      "section": "Trends to Watch",
+      "headline": "Cost and usage observability for AI coding is becoming its own tool category",
+      "summary": "[codeburn](https://github.com/getagentseal/codeburn) tracking spend across 37 different agents wouldn't have made sense a year ago; now it's trending.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "if you run a team on Claude Code or Cursor, this is worth 10 minutes to set up."
+      },
+      "links": [
+        {
+          "label": "codeburn",
+          "url": "https://github.com/getagentseal/codeburn"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "enterprise-trust-is-now-a-shipped-feature-not-a-sa",
+      "section": "Trends to Watch",
+      "headline": "Enterprise trust is now a shipped feature, not a sales promise",
+      "summary": "Anthropic's Enterprise Frontier Safeguards is a direct product response to the \"where does our data go\" objection. Expect OpenAI and Google to answer with their own versions.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "read how EFS separates automated monitoring from human review in [Anthropic's announcement](https://www.anthropic.com/news/enterprise-frontier-safeguards)."
+      },
+      "links": [
+        {
+          "label": "Anthropic's announcement",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "training-data-litigation-risk-is-rising-not-fallin",
+      "section": "Trends to Watch",
+      "headline": "Training-data litigation risk is rising, not falling",
+      "summary": "The Sony/Warner suit against Anthropic, naming individual founders, suggests labels are treating personal liability as a deterrence strategy.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "[Axios's summary](https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright) is a fast read on the legal theory."
+      },
+      "links": [
+        {
+          "label": "Axios's summary",
+          "url": "https://www.axios.com/2026/08/29/anthropic-sony-warner-music-copyright"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "figma-weave-s-in-canvas-ai-editing",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Weave's in-canvas AI editing",
+      "summary": "Selecting an image and running an AI edit without leaving the design file keeps the designer in flow. No export, no round-trip to a separate tool, no losing context. That's the whole interaction design lesson: AI features win when they remove a step, not add one. [See it in Figma's recap](https://www.figma.com/blog/config-2026-recap/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "framer-s-end-to-end-ai-design-agent",
+      "section": "Product Design Inspiration",
+      "headline": "Framer's end-to-end AI design agent",
+      "summary": "Framer's agent handles the full path from a description to a published, responsive site, including pulling in Claude Code or Codex for anything that needs real logic.",
+      "why_it_matters": "it doesn't try to replace a developer's judgment, it replaces the tedious 80% of site-building that rarely needed judgment in the first place.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Product Hunt listing",
+          "url": "https://www.producthunt.com/products/framer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "shadcn-ui-s-own-your-code-philosophy",
+      "section": "Product Design Inspiration",
+      "headline": "shadcn/ui's \"own your code\" philosophy",
+      "summary": "Instead of installing a black-box component library, shadcn/ui copies component source directly into your project.",
+      "why_it_matters": "that single decision is why it became the default target for AI-generated UI: agents can edit the components because there's no abstraction layer hiding them.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Product Hunt listing",
+          "url": "https://www.producthunt.com/products/shadcn-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "voltagent-awesome-design-md",
+      "section": "GitHub & Open Source",
+      "headline": "VoltAgent/awesome-design-md",
+      "summary": "A collection of DESIGN.md files distilled from popular brand design systems. Drop one into a project and a coding agent generates UI that matches the brand instead of generic defaults. Gaining attention because it solves the \"AI-generated UI looks the same everywhere\" complaint directly.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "VoltAgent/awesome-design-md",
+          "url": "https://github.com/VoltAgent/awesome-design-md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "tt-a1i-archify",
+      "section": "GitHub & Open Source",
+      "headline": "tt-a1i/archify",
+      "summary": "An agent skill for generating architecture, workflow, and sequence diagrams as self-contained animated HTML. Trending because it turns a normally tedious documentation task into a one-line agent request.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "tt-a1i/archify",
+          "url": "https://github.com/tt-a1i/archify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "getagentseal-codeburn",
+      "section": "GitHub & Open Source",
+      "headline": "getagentseal/codeburn",
+      "summary": "Local, free tracking of AI coding token spend across 37 tools and agents. Trending as teams start treating agent usage like cloud spend, something that needs a dashboard.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "getagentseal/codeburn",
+          "url": "https://github.com/getagentseal/codeburn"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "deeplethe-utopia",
+      "section": "GitHub & Open Source",
+      "headline": "deeplethe/utopia",
+      "summary": "A local-first, agent-assisted workbench for turning documents into ontologies. Gaining interest from teams building structured knowledge bases with agent help instead of manual tagging.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "deeplethe/utopia",
+          "url": "https://github.com/deeplethe/utopia"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "do-solo-makers-need-a-ui-ux-designer",
+      "section": "Social Buzz",
+      "headline": "\"Do solo makers need a UI/UX designer?\"",
+      "summary": "Pulled 175 comments on [Product Hunt's forum](https://www.producthunt.com/p/runevr/do-solo-makers-need-a-ui-ux-designer) in under a day. The most upvoted replies argue AI can generate usable UI fast but still needs a human editing pass to avoid the generic \"AI look.\"",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt's forum",
+          "url": "https://www.producthunt.com/p/runevr/do-solo-makers-need-a-ui-ux-designer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "cursor-or-claude-code",
+      "section": "Social Buzz",
+      "headline": "\"Cursor or Claude Code?\"",
+      "summary": "An ongoing [Product Hunt thread](https://www.producthunt.com/p/cursor/cursor-or-claude-code) comparing the two tools directly, worth skimming for real usage tradeoffs rather than marketing claims.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt thread",
+          "url": "https://www.producthunt.com/p/cursor/cursor-or-claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "handy-an-open-source-dictation-tool",
+      "section": "Social Buzz",
+      "headline": "Handy, an open-source dictation tool",
+      "summary": "Got a fresh mention push on [X from Scott Hanselman](https://x.com/shanselman), with the repo itself trending on [Trendshift](https://trendshift.io/repositories/15008). Worth a look if Wispr Flow's pricing doesn't fit your budget.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "X from Scott Hanselman",
+          "url": "https://x.com/shanselman"
+        },
+        {
+          "label": "Trendshift",
+          "url": "https://trendshift.io/repositories/15008"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "securityweek-s-breakdown-of-astra-s-critical-thres",
+      "section": "Learning Corner",
+      "headline": "SecurityWeek's breakdown of Astra's Critical threshold",
+      "kicker": "Article",
+      "summary": "SecurityWeek.",
+      "why_it_matters": "it explains exactly what \"Critical\" means under OpenAI's framework, not just that it happened.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "SecurityWeek's breakdown of Astra's Critical threshold",
+          "url": "https://www.securityweek.com/openais-astra-becomes-first-model-to-cross-critical-cybersecurity-threshold/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "config-2026-keynote-with-dylan-field",
+      "section": "Learning Corner",
+      "headline": "Config 2026 Keynote with Dylan Field",
+      "kicker": "Video",
+      "summary": "Worth the watch for the direct walkthrough of where Figma thinks agentic design is headed, straight from the CEO.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 Keynote with Dylan Field",
+          "url": "https://www.youtube.com/watch?v=2ZCc4k_IV5w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "voltagent-awesome-design-md-2",
+      "section": "Learning Corner",
+      "headline": "VoltAgent/awesome-design-md",
+      "kicker": "GitHub project",
+      "summary": "Worth the read because it's a practical, drop-in way to stop AI-generated UI from looking generic.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "VoltAgent/awesome-design-md",
+          "url": "https://github.com/VoltAgent/awesome-design-md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "untitled-ui-s-free-figma-kit",
+      "section": "Learning Corner",
+      "headline": "Untitled UI's free Figma kit",
+      "kicker": "Design resource",
+      "summary": "Worth the download because it's a full, free design system used by 380,000+ designers, a solid default when you don't have time to build tokens from scratch.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Untitled UI's free Figma kit",
+          "url": "https://www.untitledui.com/free-figma-ui-kit"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "figma-weave-through-mcp",
+      "section": "Learning Corner",
+      "headline": "Figma Weave through MCP",
+      "kicker": "AI workflow",
+      "summary": "Running [Figma Weave through MCP](https://www.figma.com/blog/config-2026-recap/) from inside Claude or Cursor. Worth trying because it's the clearest current example of a design tool meeting you inside your coding agent instead of the reverse.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Weave through MCP",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "build-mcp-connected-design-skills-for-teams",
+      "section": "Opportunities",
+      "headline": "Build MCP-connected design skills for teams",
+      "summary": "Figma's agent now supports custom reusable skills built from a team's own conventions; someone needs to actually build and package those for non-technical teams.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "consult-on-enterprise-ai-trust-ux",
+      "section": "Opportunities",
+      "headline": "Consult on enterprise AI trust UX",
+      "summary": "As Anthropic's Enterprise Frontier Safeguards rolls out, companies adopting it will need clear, non-scary UI to explain zero data retention and misuse monitoring to their own end users.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "build-cost-observability-dashboards-for-ai-coding",
+      "section": "Opportunities",
+      "headline": "Build cost-observability dashboards for AI coding teams",
+      "summary": "[codeburn](https://github.com/getagentseal/codeburn)'s traction shows demand for this; a polished, hosted version aimed at engineering managers is a real gap.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "codeburn",
+          "url": "https://github.com/getagentseal/codeburn"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "package-brand-aware-design-md-files-as-a-service",
+      "section": "Opportunities",
+      "headline": "Package brand-aware DESIGN.md files as a service",
+      "summary": "[awesome-design-md](https://github.com/VoltAgent/awesome-design-md)'s popularity suggests companies will pay to have their brand system distilled into an agent-readable format.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awesome-design-md",
+          "url": "https://github.com/VoltAgent/awesome-design-md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "offer-an-ai-generated-ui-editing-pass-service",
+      "section": "Opportunities",
+      "headline": "Offer an \"AI-generated UI editing pass\" service",
+      "summary": "The Product Hunt debate on solo makers and design shows there's a clear, unmet need: founders who vibe-coded a UI and now want a design pass without hiring full-time.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    },
+    {
+      "id": "run-a-figma-weave-edit-from-inside-claude-or-curso",
+      "section": "Today's Experiment",
+      "headline": "Run a Figma Weave edit from inside Claude or Cursor",
+      "kicker": "Under 30 minutes",
+      "summary": "Set up Figma's MCP server and run one Weave image edit (background swap or logo placement) from inside Claude or Cursor instead of the Figma UI directly. Time the whole loop, prompt to result, and compare it to doing the same edit manually in Figma. Under 30 minutes, and it's the fastest way to feel whether the MCP-connected workflow is actually faster or just different. [Setup reference](https://www.figma.com/blog/config-2026-recap/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Setup reference",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-03"
+    }
+  ],
+  "dont_miss": [
+    "[Anthropic's Enterprise Frontier Safeguards](https://www.anthropic.com/news/enterprise-frontier-safeguards): the first major, free, zero-data-retention-plus-misuse-detection offer from a frontier lab. If you sell into enterprises, expect this question to come up in your next security review.",
+    "[Sony Music and Warner Chappell's lawsuit against Anthropic](https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/): personal-liability claims against founders raise the stakes for every lab training on scraped creative content.",
+    "[Google Assistant's shutdown starting tomorrow](https://the-decoder.com/google-will-shut-down-google-assistant-starting-september-2026-as-gemini-takes-over-on-android-and-wear-os/): check any Android integration that assumed Assistant would still be there."
+  ],
+  "footnote": "Sourced from Anthropic, OpenAI, Figma, TechCrunch, Axios, SecurityWeek, The Decoder, Product Hunt, GitHub, and Trendshift. Compiled September 3, 2026."
+}
