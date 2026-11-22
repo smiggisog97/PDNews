@@ -1,0 +1,724 @@
+{
+  "date": "2026-10-02",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1rCmsAIiKaRtcm-1tHF57j5RAp_KrMTwuOF5oJrNctlE/edit",
+  "highlights": [
+    {
+      "headline": "Gemini 4 Argon is here, but gated.",
+      "summary": "[Google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/) released its new frontier model to vetted cyber defenders only, with a phased rollout."
+    },
+    {
+      "headline": "OpenAI shipped on two fronts.",
+      "summary": "[GPT 6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/) is pitched as near-Astra intelligence at a fifth of the price, and [Dots](https://openai.com/index/introducing-dots/) introduces always-on agents."
+    },
+    {
+      "headline": "Figma Motion is in open beta.",
+      "summary": "[Figma](https://spyingbee.com/updates/figma/2026-09) also added AI website generation in Make on Sep 30."
+    },
+    {
+      "headline": "Agent security is the hot open source theme.",
+      "summary": "[NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell) gained about 2,500 stars in a day."
+    },
+    {
+      "headline": "Government adoption.",
+      "summary": "[Anthropic](https://claude.com/blog/claude-for-government-is-now-generally-available) made FedRAMP High authorized Claude generally available."
+    }
+  ],
+  "section_notes": {
+    "Social Buzz": "X, Reddit and Product Hunt returned no verifiable threads in search this morning, so they are omitted.",
+    "Learning Corner": "No verified video found today."
+  },
+  "entries": [
+    {
+      "id": "google-launches-gemini-4-argon-with-restricted-access",
+      "section": "AI Industry News",
+      "headline": "Google launches Gemini 4 Argon with restricted access",
+      "summary": "[Google DeepMind](https://deepmind.google)'s new model targets software engineering, enterprise work and cybersecurity. Per [Dawn](https://dawn.com/news/2033975), access is limited to a vetted group of security experts with no public date. Google says it performs comparably to OpenAI's Astra and Anthropic's Opus on coding and cyber benchmarks.",
+      "why_it_matters": "Staged releases of frontier models are becoming the norm.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Plan on current models for builds this quarter and watch for API access later."
+      },
+      "links": [
+        {
+          "label": "Google launches Gemini 4 Argon with restricted access",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "Dawn",
+          "url": "https://dawn.com/news/2033975"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "openai-releases-gpt-6-1-sol",
+      "section": "AI Industry News",
+      "headline": "OpenAI releases GPT 6.1 Sol",
+      "summary": "[OpenAI](https://openai.com) claims near-Astra intelligence at about a fifth of the price. The [Hacker News thread](https://news.ycombinator.com/item?id=49896586) (1,000+ points) debates whether the gain comes from distillation or architecture.",
+      "why_it_matters": "Cheaper capable models make always-on features economically viable.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Re-run your cost models for AI features you shelved as too expensive."
+      },
+      "links": [
+        {
+          "label": "OpenAI releases GPT 6.1 Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Hacker News thread",
+          "url": "https://news.ycombinator.com/item?id=49896586"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "openai-introduces-dots-always-on-agents",
+      "section": "AI Industry News",
+      "headline": "OpenAI introduces Dots, always-on agents",
+      "summary": "Persistent agents that work across applications. The [discussion](https://news.ycombinator.com/item?id=49896604) focuses on privacy and implementation.",
+      "why_it_matters": "Interfaces shift from prompt and response to background work that needs status, interruption and trust patterns.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Designers should start prototyping agent activity feeds and permission moments."
+      },
+      "links": [
+        {
+          "label": "OpenAI introduces Dots, always-on agents",
+          "url": "https://openai.com/index/introducing-dots/"
+        },
+        {
+          "label": "discussion",
+          "url": "https://news.ycombinator.com/item?id=49896604"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "claude-for-government-reaches-general-availability",
+      "section": "AI Industry News",
+      "headline": "Claude for Government reaches general availability",
+      "summary": "[Anthropic](https://www.anthropic.com) offers FedRAMP High authorized Claude with coding and agent capabilities for federal and state agencies.",
+      "why_it_matters": "Compliance is now a competitive axis.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Public sector product work with AI becomes a real market."
+      },
+      "links": [
+        {
+          "label": "Claude for Government reaches general availability",
+          "url": "https://claude.com/blog/claude-for-government-is-now-generally-available"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "deepseek-builds-for-huawei-ascend",
+      "section": "AI Industry News",
+      "headline": "DeepSeek builds for Huawei Ascend",
+      "summary": "[DeepSeek](https://www.deepseek.com) is building software abstractions to make Chinese chips competitive for frontier training.",
+      "why_it_matters": "It could lower the cost of switching away from [NVIDIA](https://www.nvidia.com) GPUs.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Long term pressure on inference prices."
+      },
+      "links": [
+        {
+          "label": "DeepSeek builds for Huawei Ascend",
+          "url": "https://www.geopolitechs.org/p/deepseek-builds-for-huawei-ascend"
+        },
+        {
+          "label": "DeepSeek",
+          "url": "https://www.deepseek.com"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "figma-motion-opens-in-beta",
+      "section": "Product Design & UX",
+      "headline": "Figma Motion opens in beta",
+      "summary": "Animation now lives inside [Figma](https://www.figma.com) design files (Sep 30).",
+      "why_it_matters": "Fewer handoffs to separate motion tools for micro-interactions and onboarding.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Motion opens in beta",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "figma-make-generates-websites-from-prompts",
+      "section": "Product Design & UX",
+      "headline": "Figma Make generates websites from prompts",
+      "summary": "Also Sep 30, along with auto layout upgrades: grid flow options, better resizing and nested frame support. On Sep 24, Make gained visual editing, annotations and a design agent with contextual prompting.",
+      "why_it_matters": "Prompt to site to hand edit in one tool.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Make generates websites from prompts",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "figma-weave-for-ai-product-imagery",
+      "section": "Product Design & UX",
+      "headline": "Figma Weave for AI product imagery",
+      "summary": "Weave can generate consistent product photography from a single studio shot, and community tool publishing is open.",
+      "why_it_matters": "Faster asset production for landing pages and marketing.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Weave for AI product imagery",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "ideogram-4-5-edit-model",
+      "section": "Product Design & UX",
+      "headline": "Ideogram 4.5 edit model",
+      "summary": "[Ideogram](https://ideogram.ai) pitches targeted image edits that preserve surrounding content.",
+      "why_it_matters": "Precise revisions without regenerating a whole image.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Ideogram 4.5 edit model",
+          "url": "https://ideogram.ai/models/4.5"
+        },
+        {
+          "label": "Ideogram",
+          "url": "https://ideogram.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "figma-motion",
+      "section": "New AI Tools",
+      "headline": "Figma Motion",
+      "summary": "In-file animation, open beta.",
+      "why_it_matters": null,
+      "audience": "product designers.",
+      "links": [
+        {
+          "label": "Figma Motion",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "ideogram-4-5",
+      "section": "New AI Tools",
+      "headline": "Ideogram 4.5",
+      "summary": "Precise image edit model.",
+      "why_it_matters": null,
+      "audience": "designers doing asset revisions.",
+      "links": [
+        {
+          "label": "Ideogram 4.5",
+          "url": "https://ideogram.ai/models/4.5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "nvidia-openshell",
+      "section": "New AI Tools",
+      "headline": "NVIDIA OpenShell",
+      "summary": "Kernel-level file, network and credential controls for agents.",
+      "why_it_matters": null,
+      "audience": "anyone running agents with real credentials.",
+      "links": [
+        {
+          "label": "NVIDIA OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "e2b-embed",
+      "section": "New AI Tools",
+      "headline": "E2B Embed",
+      "summary": "Run [E2B](https://e2b.dev) sandboxes inside your own environment.",
+      "why_it_matters": null,
+      "audience": "teams building agent products with data constraints.",
+      "links": [
+        {
+          "label": "E2B Embed",
+          "url": "https://e2b.dev/resources/introducing-e2b-embed"
+        },
+        {
+          "label": "E2B",
+          "url": "https://e2b.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "ember-1",
+      "section": "New AI Tools",
+      "headline": "Ember-1",
+      "summary": "Apache 2.0 open-weight model from [Fireworks](https://fireworks.ai) tuned for function calling and structured output.",
+      "why_it_matters": null,
+      "audience": "builders wanting on-prem tool use.",
+      "links": [
+        {
+          "label": "Ember-1",
+          "url": "https://fireworks.ai/blog/ember-1"
+        },
+        {
+          "label": "Fireworks",
+          "url": "https://fireworks.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "praxis-1",
+      "section": "New AI Tools",
+      "headline": "Praxis-1",
+      "summary": "[Runway](https://runway.com)'s open-weight world action model, public release soon.",
+      "why_it_matters": null,
+      "audience": "mostly of interest to robotics and research folks.",
+      "links": [
+        {
+          "label": "Praxis-1",
+          "url": "https://runway.com/research/introducing-praxis-1"
+        },
+        {
+          "label": "Runway",
+          "url": "https://runway.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "always-on-agents",
+      "section": "Trends to Watch",
+      "headline": "Always-on agents",
+      "summary": "Dots and Figma's reported jump in agentic adoption (21% to 51%, per its [update log](https://spyingbee.com/updates/figma/2026-09)) point to background work as the next UI surface.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "status, handoff and undo patterns."
+      },
+      "links": [
+        {
+          "label": "update log",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "staged-frontier-releases",
+      "section": "Trends to Watch",
+      "headline": "Staged frontier releases",
+      "summary": "Gemini 4 Argon follows the limited-access approach Anthropic has used. Expect capability to reach consumer products later than benchmarks suggest.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "agent-sandboxing",
+      "section": "Trends to Watch",
+      "headline": "Agent sandboxing",
+      "summary": "OpenShell and E2B Embed show security becoming a product layer.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "permission models and least privilege for agents."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "design-and-code-convergence",
+      "section": "Trends to Watch",
+      "headline": "Design and code convergence",
+      "summary": "Figma now covers motion, site generation and an [MCP server](https://www.figma.com) link to coding tools.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to work across canvas and code."
+      },
+      "links": [
+        {
+          "label": "MCP server",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "figma-make-visual-editing-with-annotations",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Make visual editing with annotations",
+      "summary": "Pointing at an element and commenting in context removes the translation step between intent and prompt.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Make visual editing with annotations",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "openai-dots",
+      "section": "Product Design Inspiration",
+      "headline": "OpenAI Dots",
+      "summary": "A new interaction problem: how an agent that runs in the background earns trust. Study how it surfaces activity and asks permission.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenAI Dots",
+          "url": "https://openai.com/index/introducing-dots/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "figma-weave-single-shot-consistency",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Weave single-shot consistency",
+      "summary": "One reference image in, a consistent set out. A strong pattern for reducing input burden.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Weave single-shot consistency",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "nvidia-openshell-2",
+      "section": "GitHub & Open Source",
+      "headline": "NVIDIA/OpenShell",
+      "summary": "Secure runtime for autonomous agents, about 14k stars (+2,503). Agent security demand.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "NVIDIA/OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "mvschwarz-openrig",
+      "section": "GitHub & Open Source",
+      "headline": "mvschwarz/openrig",
+      "summary": "Persistent teams of agents with shared context and roles (+640). Multi-agent orchestration.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mvschwarz/openrig",
+          "url": "https://github.com/mvschwarz/openrig"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "t8y2-dbx",
+      "section": "GitHub & Open Source",
+      "headline": "t8y2/dbx",
+      "summary": "25MB database client with AI and MCP server support (+870). MCP as the standard connector.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "t8y2/dbx",
+          "url": "https://github.com/t8y2/dbx"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "mksglu-context-mode",
+      "section": "GitHub & Open Source",
+      "headline": "mksglu/context-mode",
+      "summary": "Manages coding agent context via sandboxing and memory. Practical agent constraint.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mksglu/context-mode",
+          "url": "https://github.com/mksglu/context-mode"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "vectifyai-pageindex",
+      "section": "GitHub & Open Source",
+      "headline": "VectifyAI/PageIndex",
+      "summary": "Vectorless, reasoning-based RAG. A different approach to retrieval.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "VectifyAI/PageIndex",
+          "url": "https://github.com/VectifyAI/PageIndex"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "debpalash-voicestudio",
+      "section": "GitHub & Open Source",
+      "headline": "debpalash/VoiceStudio",
+      "summary": "Fully local voice cloning and dubbing (+1,395). Local media production.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "hacker-news",
+      "section": "Social Buzz",
+      "headline": "Hacker News",
+      "kicker": "Hacker News",
+      "summary": "[Gemini 4 Argon](https://news.ycombinator.com/item?id=49913571) (1,180 points) compares benchmarks against GPT 6.1 Sol. [Ember-1](https://news.ycombinator.com/item?id=49868830) is praised for its license and on-prem use. [Cal Newport's call to investigate AI labs](https://news.ycombinator.com/item?id=49883471) drew broad agreement that voluntary commitments fall short.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gemini 4 Argon",
+          "url": "https://news.ycombinator.com/item?id=49913571"
+        },
+        {
+          "label": "Ember-1",
+          "url": "https://news.ycombinator.com/item?id=49868830"
+        },
+        {
+          "label": "Cal Newport's call to investigate AI labs",
+          "url": "https://news.ycombinator.com/item?id=49883471"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "the-ugly-economics-of-consumer-ai",
+      "section": "Learning Corner",
+      "headline": "The Ugly Economics of Consumer AI",
+      "kicker": "Article",
+      "summary": "On [TechCrunch](https://techcrunch.com). Essential context for pricing and business model decisions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The Ugly Economics of Consumer AI",
+          "url": "https://techcrunch.com/2026/09/30/the-ugly-economics-of-consumer-ai/"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "obra-superpowers",
+      "section": "Learning Corner",
+      "headline": "obra/superpowers",
+      "kicker": "GitHub project",
+      "summary": "An agentic skills framework and development methodology. Worth reading for workflow structure.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "figma-s-september-update-log",
+      "section": "Learning Corner",
+      "headline": "Figma's September update log",
+      "kicker": "Design resource",
+      "summary": "A fast way to see what changed in the canvas.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's September update log",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "awesome-claude-skills",
+      "section": "Learning Corner",
+      "headline": "awesome-claude-skills",
+      "kicker": "AI workflow",
+      "summary": "A curated list for customizing Claude workflows.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awesome-claude-skills",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "agent-activity-ux",
+      "section": "Opportunities",
+      "headline": "Agent activity UX",
+      "summary": "Dots-style products need design systems for status, interruption and approval.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "motion-for-product-teams",
+      "section": "Opportunities",
+      "headline": "Motion for product teams",
+      "summary": "Figma Motion lowers the barrier, so prototypes with real animation become a differentiator.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "public-sector-ai-products",
+      "section": "Opportunities",
+      "headline": "Public sector AI products",
+      "summary": "Government availability opens demand for accessible, compliant interfaces.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "cost-driven-feature-redesign",
+      "section": "Opportunities",
+      "headline": "Cost-driven feature redesign",
+      "summary": "Cheaper models like GPT 6.1 Sol justify revisiting always-on and in-context AI features.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    },
+    {
+      "id": "animate-one-onboarding-step-in-figma-motion",
+      "section": "Today's Experiment",
+      "headline": "Animate one onboarding step in Figma Motion",
+      "kicker": "25 minutes",
+      "summary": "Pick a single screen from a current project, add an entrance animation and one micro-interaction, then compare it to your static version with a colleague.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-02"
+    }
+  ],
+  "dont_miss": [
+    "Read the [Gemini 4 Argon announcement](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/).",
+    "Try [Figma Motion](https://www.figma.com) in open beta.",
+    "Skim [OpenAI Dots](https://openai.com/index/introducing-dots/) for agent UX patterns."
+  ],
+  "footnote": "Sources: [TLDR AI](https://ai.tldr.tech/p/2026-10-01-tldr-ai), [Dawn](https://dawn.com/news/2033975), [Hacker News AI Digest](https://github.com/datnguyenquy94/news-radar/issues/648), [AI Open Source Trends](https://github.com/Chestnuts-Sisyphus/gittok/issues/1574), [Figma update log](https://spyingbee.com/updates/figma/2026-09). Some linked pages (OpenAI, Ideogram, Anthropic) could not be fetched directly, so details come from the secondary sources above."
+}
