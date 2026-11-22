@@ -1,0 +1,691 @@
+{
+  "date": "2026-09-05",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1BSYij4HqwqRO1mQHvbLo2npnDc-2v-YVXxv1IFUs0eM/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic released Claude Fable 5.1 and Mythos 5.1,",
+      "summary": "[cutting cache-read pricing by 75% ($0.25/M tokens)](https://www.techspot.com/news/113701-anthropic-releases-claude-fable-51-stronger-coding-science.html), a direct win for anyone running long agentic coding sessions."
+    },
+    {
+      "headline": "OpenAI, Anthropic, and Google all suffered simultaneous outages",
+      "summary": "[on September 3](https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/), a reminder that most AI-dependent products now have a single point of failure across three vendors."
+    },
+    {
+      "headline": "Figma shipped a Claude Code to Figma integration,",
+      "summary": "[letting developers turn a running browser UI into editable Figma frames](https://www.figma.com/blog/introducing-claude-code-to-figma/), closing the code-to-design loop."
+    },
+    {
+      "headline": "Perplexity and Nvidia launched Portable Computer,",
+      "summary": "[an agent that runs locally on RTX/DGX hardware with zero token cost](https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs), pushing agentic AI off the cloud."
+    },
+    {
+      "headline": "OpenClaw continues its record run on GitHub,",
+      "summary": "[now past 346k stars](https://github.com/openclaw/openclaw), as an open-source, cross-platform AI operator agent."
+    }
+  ],
+  "entries": [
+    {
+      "id": "anthropic-cuts-cache-read-pricing-75-ships-fable-5",
+      "section": "AI Industry News",
+      "headline": "Anthropic cuts cache-read pricing 75%, ships Fable 5.1 and Mythos 5.1",
+      "summary": "[Anthropic released Claude Fable 5.1 and Claude Mythos 5.1](https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads), the same underlying model shipped with different safeguard levels, three months after the original Fable 5. Cache reads now cost $0.25 per million tokens, down from $1.",
+      "why_it_matters": "agentic workflows repeatedly resend the same repo, instructions, and tool specs to the model. This cut lowers typical workload costs by roughly 25% and highly agentic workloads by up to 45%, per [MarkTechPost's analysis](https://www.marktechpost.com/2026/09/01/anthropic-releases-claude-fable-5-1-and-claude-mythos-5-1-52-6-on-terminal-bench-science-and-75-cheaper-cache-reads/).",
+      "links": [
+        {
+          "label": "VentureBeat",
+          "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads"
+        },
+        {
+          "label": "TechSpot",
+          "url": "https://www.techspot.com/news/113701-anthropic-releases-claude-fable-51-stronger-coding-science.html"
+        },
+        {
+          "label": "MarkTechPost",
+          "url": "https://www.marktechpost.com/2026/09/01/anthropic-releases-claude-fable-5-1-and-claude-mythos-5-1-52-6-on-terminal-bench-science-and-75-cheaper-cache-reads/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "openai-anthropic-and-google-hit-simultaneous-outag",
+      "section": "AI Industry News",
+      "headline": "OpenAI, Anthropic, and Google hit simultaneous outages",
+      "summary": "On September 3, [all three major labs reported service disruptions](https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/) to their flagship products at once. For builders, this is a concrete argument for multi-provider fallbacks in production agent stacks rather than single-vendor dependence.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "eu-ai-act-transparency-rules-take-effect",
+      "section": "AI Industry News",
+      "headline": "EU AI Act transparency rules take effect",
+      "summary": "The EU AI Act has entered a new enforcement phase, with disclosure and provenance requirements now applying to chatbots and AI-generated content. [OpenAI has begun publishing training-data summaries and provenance signals](https://www.aidapted.ro/en/articles/ai-news-september-4-2026-nvidia-astra-anthropic/) in response.",
+      "why_it_matters": "expect more \"AI-generated\" labeling requirements to surface in design systems and content tools serving EU users.",
+      "why_label": "Impact",
+      "links": [
+        {
+          "label": "AI news, September 4",
+          "url": "https://www.aidapted.ro/en/articles/ai-news-september-4-2026-nvidia-astra-anthropic/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "perplexity-and-nvidia-launch-portable-computer",
+      "section": "AI Industry News",
+      "headline": "Perplexity and Nvidia launch Portable Computer",
+      "summary": "[Perplexity's Portable Computer](https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs) runs its agentic platform entirely on hardware the user already owns, starting with Nvidia's DGX Spark and RTX-equipped Linux machines. Local tasks incur no billing credits, and the system asks permission before escalating any step to a cloud frontier model.",
+      "why_it_matters": "this is one of the first serious pushes to move agent workloads off the cloud, which changes the cost and privacy calculus for teams running always-on agents.",
+      "links": [
+        {
+          "label": "VentureBeat",
+          "url": "https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "figma-ships-claude-code-to-figma",
+      "section": "Product Design & UX",
+      "headline": "Figma ships Claude Code to Figma",
+      "summary": "[Figma's new integration](https://www.figma.com/blog/introducing-claude-code-to-figma/) captures a real, running UI from a browser and converts it into editable frames on the Figma canvas, which can then be organized, duplicated, and refined like any other design.",
+      "why_it_matters": "designers can now pull production UI back into Figma for redesign work instead of rebuilding it from screenshots.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma blog",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "figma-adds-a-floating-agent-chat-and-ux-heuristic",
+      "section": "Product Design & UX",
+      "headline": "Figma adds a floating agent chat and UX-heuristic review skills",
+      "summary": "Following [Config 2026's Code Layers, Motion, and Shaders announcements](https://qubika.com/blog/figma-config-2026-announcements-for-designers/), Figma added a floating agent chat window to the desktop app for macOS and Windows that stays visible while designing, plus new AI skills that review files against UX heuristics, accessibility standards, visual hierarchy, and interaction design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Qubika",
+          "url": "https://qubika.com/blog/figma-config-2026-announcements-for-designers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "framer-pushes-agents-and-workshop-toward-productio",
+      "section": "Product Design & UX",
+      "headline": "Framer pushes Agents and Workshop toward production use",
+      "summary": "[Framer Agents](https://www.businesswire.com/news/home/20260616909966/en/Framer-Launches-AI-Agents) now co-edit sites in real time from the canvas (image iteration, responsive styling, CMS wiring), and [Workshop generates custom, on-brand components](https://www.oma-kase.com/blog/framer-ai-features) without code. Framer is also rolling out Branching, so AI edits land in a review-able branch before publishing.",
+      "why_it_matters": "reduces the risk of AI agents making live edits to production marketing sites.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer Agents",
+          "url": "https://www.businesswire.com/news/home/20260616909966/en/Framer-Launches-AI-Agents"
+        },
+        {
+          "label": "Framer AI features",
+          "url": "https://www.oma-kase.com/blog/framer-ai-features"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "linear-and-cursor-deepen-integration",
+      "section": "Product Design & UX",
+      "headline": "Linear and Cursor deepen integration",
+      "summary": "You can now [launch Cursor agents directly from Linear](https://composio.dev/learning/best-apps-for-cursor-designers) issues, and Linear is available as a Cursor plugin for pulling issues, projects, and docs into agent context.",
+      "why_it_matters": "shortens the loop between a filed bug/ticket and an agent starting work on it.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Composio",
+          "url": "https://composio.dev/learning/best-apps-for-cursor-designers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "openclaw",
+      "section": "New AI Tools",
+      "headline": "OpenClaw",
+      "summary": "Open-source AI operator agent that connects models, tools, and messaging channels (WhatsApp, Slack, Discord, iMessage) through one gateway.",
+      "why_it_matters": null,
+      "audience": "developers who want a self-hosted, cross-platform agent.",
+      "links": [
+        {
+          "label": "OpenClaw",
+          "url": "https://openclaw.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "perplexity-portable-computer",
+      "section": "New AI Tools",
+      "headline": "Perplexity Portable Computer",
+      "summary": "Local-first agent running on Nvidia RTX/DGX hardware with zero token cost for on-device tasks.",
+      "why_it_matters": null,
+      "audience": "teams wary of cloud token spend or data exposure.",
+      "links": [
+        {
+          "label": "Perplexity Portable Computer",
+          "url": "https://www.perplexity.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "claude-code-to-figma",
+      "section": "New AI Tools",
+      "headline": "Claude Code to Figma",
+      "summary": "Converts a live browser UI into editable Figma frames.",
+      "why_it_matters": null,
+      "audience": "designers redesigning existing production software.",
+      "links": [
+        {
+          "label": "Claude Code to Figma",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "framer-workshop",
+      "section": "New AI Tools",
+      "headline": "Framer Workshop",
+      "summary": "AI-generated custom on-brand components inside Framer's canvas.",
+      "why_it_matters": null,
+      "audience": "solo marketers and small teams shipping landing pages fast.",
+      "links": [
+        {
+          "label": "Framer Workshop",
+          "url": "https://www.framer.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "talktofigma-mcp",
+      "section": "New AI Tools",
+      "headline": "TalkToFigma MCP",
+      "summary": "Open-source MCP server connecting Cursor/Claude Code/Codex to Figma for reading and modifying designs programmatically.",
+      "why_it_matters": null,
+      "audience": "teams building custom design-to-code pipelines.",
+      "links": [
+        {
+          "label": "TalkToFigma MCP",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "rive-to-framer-component-export",
+      "section": "New AI Tools",
+      "headline": "Rive to Framer component export",
+      "summary": "Turns a Rive animation into a controllable Framer component with state machine inputs.",
+      "why_it_matters": null,
+      "audience": "motion designers shipping interactive animation to production sites.",
+      "links": [
+        {
+          "label": "Rive to Framer component export",
+          "url": "https://rive.app/blog/rive-framer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "almanac",
+      "section": "New AI Tools",
+      "headline": "Almanac",
+      "summary": "(YC S26) AI assistant that learns your company's context and answers organizational questions.",
+      "why_it_matters": null,
+      "audience": "ops and knowledge-management teams.",
+      "links": [
+        {
+          "label": "Almanac",
+          "url": "https://www.almanac.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "local-first-agentic-ai",
+      "section": "Trends to Watch",
+      "headline": "Local-first agentic AI",
+      "summary": "[Perplexity's Portable Computer](https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs) signals a shift toward running agent workloads on local GPUs rather than the cloud by default, escalating to frontier models only when needed.",
+      "why_it_matters": "lower cost, better privacy, and less lock-in to a single API vendor.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "how on-device inference and selective cloud escalation are architected."
+      },
+      "links": [
+        {
+          "label": "Perplexity's Portable Computer",
+          "url": "https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "design-to-code-and-code-to-design-convergence",
+      "section": "Trends to Watch",
+      "headline": "Design-to-code and code-to-design convergence",
+      "summary": "[Figma's Claude Code integration](https://www.figma.com/blog/introducing-claude-code-to-figma/) and [MCP bridges between coding agents and Figma](https://github.com/grab/cursor-talk-to-figma-mcp) point to design files and production code becoming two views of the same underlying source.",
+      "why_it_matters": "the traditional design-then-handoff workflow is being replaced by continuous sync in both directions.",
+      "links": [
+        {
+          "label": "Figma's Claude Code integration",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        },
+        {
+          "label": "MCP bridges between coding agents and Figma",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "multi-vendor-resilience-for-ai-dependent-products",
+      "section": "Trends to Watch",
+      "headline": "Multi-vendor resilience for AI-dependent products",
+      "summary": "The [simultaneous outages across OpenAI, Anthropic, and Google](https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/) make a practical case for building fallback logic across model providers into any product with an AI feature in the critical path.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Simultaneous outages",
+          "url": "https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "figma-s-own-onboarding",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's own onboarding",
+      "summary": "New users are dropped straight into a canvas and prompted to draw a shape, apply a color, and create a frame, per [Userpilot's 2026 onboarding review](https://userpilot.com/blog/best-user-onboarding-experience/).",
+      "why_it_matters": "learning happens by doing inside the real tool, not through a video tour.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Userpilot",
+          "url": "https://userpilot.com/blog/best-user-onboarding-experience/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "airtable-s-conversational-workspace-setup",
+      "section": "Product Design Inspiration",
+      "headline": "Airtable's conversational workspace setup",
+      "summary": "Airtable rebuilt onboarding around an AI that constructs a user's workspace from a short conversation, according to the same [Userpilot report](https://userpilot.com/blog/best-user-onboarding-experience/).",
+      "why_it_matters": "it replaces a blank-canvas cold start with a personalized result in under a minute.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Userpilot",
+          "url": "https://userpilot.com/blog/best-user-onboarding-experience/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "slack-s-conversational-setup-walkthrough",
+      "section": "Product Design Inspiration",
+      "headline": "Slack's conversational setup walkthrough",
+      "summary": "Slack's onboarding uses a friendly in-product chatbot to hand-hold new users through setup, asking about their team and first channel as it goes, per [Userpilot](https://userpilot.com/blog/best-user-onboarding-experience/).",
+      "why_it_matters": "it turns a multi-step setup form into a low-friction conversation.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Userpilot",
+          "url": "https://userpilot.com/blog/best-user-onboarding-experience/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "openclaw-openclaw",
+      "section": "GitHub & Open Source",
+      "headline": "openclaw/openclaw",
+      "summary": "Cross-platform AI operator agent that reached over 346,000 stars in under five months, one of the fastest-growing repos in GitHub's history. Gaining attention because it connects a single agent gateway to WhatsApp, Telegram, Slack, Discord, iMessage, and more, letting one operator run agents across every channel they already use.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "openclaw/openclaw",
+          "url": "https://github.com/openclaw/openclaw"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "grab-cursor-talk-to-figma-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "grab/cursor-talk-to-figma-mcp",
+      "summary": "MCP server that lets Cursor, Claude Code, and Codex read and modify Figma designs programmatically. Gaining attention as one of the more mature MCP bridges between coding agents and design tools.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "grab/cursor-talk-to-figma-mcp",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "caramaschihg-awesome-ai-agents-2026",
+      "section": "GitHub & Open Source",
+      "headline": "caramaschiHG/awesome-ai-agents-2026",
+      "summary": "A curated, monthly-updated list of 300+ AI agent frameworks and tools across 20+ categories. Useful as a single reference point given how fast the agent-tooling landscape is moving.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "caramaschiHG/awesome-ai-agents-2026",
+          "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "the-ai-design-aesthetic-taking-over-the-internet",
+      "section": "Social Buzz",
+      "headline": "The AI-design aesthetic taking over the internet",
+      "kicker": "Hacker News",
+      "summary": "A thread on [the AI-design aesthetic taking over the internet](https://news.ycombinator.com/item?id=48671684) compares the current wave of AI-generated visuals to how Canva standardized stock imagery and clipart, a useful frame for thinking about visual homogenization in AI-assisted design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The AI-design aesthetic taking over the internet",
+          "url": "https://news.ycombinator.com/item?id=48671684"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "which-ai-coding-tool-is-best-has-become-a-workflow",
+      "section": "Social Buzz",
+      "headline": "Which AI coding tool is best has become a workflow-fit question",
+      "kicker": "Hacker News",
+      "summary": "Ongoing discussion argues [the \"which AI coding tool is best\" debate has matured into workflow-fit questions](https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026): whether a tool preserves context over long sessions, inspects codebases efficiently, and lets a developer supervise without friction.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What Hacker News gets right about AI coding agents",
+          "url": "https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "september-s-launch-mix-shows-industrialized-ai-pac",
+      "section": "Social Buzz",
+      "headline": "September's launch mix shows \"industrialized\" AI packaging",
+      "kicker": "Product Hunt",
+      "summary": "September's launch mix ([via mean.ceo's roundup](https://blog.mean.ceo/ai-product-launches-news-september-2026/)) shows a shift toward \"industrialized\" AI packaging: bigger context windows, voice layers, cheaper model tiers, and enterprise wrappers shipping together rather than as standalone bets.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mean.ceo's roundup",
+          "url": "https://blog.mean.ceo/ai-product-launches-news-september-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "figma-config-2026-every-announcement-and-what-it-m",
+      "section": "Learning Corner",
+      "headline": "Figma Config 2026: Every Announcement, and What It Means for Designers",
+      "kicker": "Article",
+      "summary": "Qubika. Worth the time because it's the clearest single summary of where Figma is taking AI-assisted design this year.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Config 2026: Every Announcement, and What It Means for Designers",
+          "url": "https://qubika.com/blog/figma-config-2026-announcements-for-designers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "openclaw-github-your-own-ai-developer",
+      "section": "Learning Corner",
+      "headline": "OpenClaw + GitHub = Your Own AI Developer",
+      "kicker": "Video",
+      "summary": "Worth the time for a concrete walkthrough of wiring an open-source agent into a real dev workflow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenClaw + GitHub = Your Own AI Developer",
+          "url": "https://www.youtube.com/watch?v=nE36ARg0JK8"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "cursor-talk-to-figma-mcp",
+      "section": "Learning Corner",
+      "headline": "cursor-talk-to-figma-mcp",
+      "kicker": "GitHub project",
+      "summary": "Worth the time if you want to build your own design-to-code agent pipeline instead of waiting for vendor integrations.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "cursor-talk-to-figma-mcp",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "userpilot-s-best-user-onboarding-experiences-in-20",
+      "section": "Learning Corner",
+      "headline": "Userpilot's Best User Onboarding Experiences in 2026",
+      "kicker": "Design resource",
+      "summary": "Worth the time for concrete before/after onboarding patterns from Figma, Slack, and Airtable.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Userpilot's Best User Onboarding Experiences in 2026",
+          "url": "https://userpilot.com/blog/best-user-onboarding-experience/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "figma-s-claude-code-to-figma-guide",
+      "section": "Learning Corner",
+      "headline": "Figma's Claude Code to Figma guide",
+      "kicker": "AI workflow",
+      "summary": "Worth the time to learn the round-trip pattern of pulling live production UI back into an editable design file.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Claude Code to Figma guide",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "lightweight-mcp-connectors-for-niche-saas-tools",
+      "section": "Opportunities",
+      "headline": "Lightweight MCP connectors for niche SaaS tools",
+      "summary": "Build lightweight MCP connectors between niche SaaS tools and Figma/Cursor, following the pattern of [TalkToFigma](https://github.com/grab/cursor-talk-to-figma-mcp); the ecosystem is still thin outside the big players.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "TalkToFigma",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "ai-outage-resilience-audits",
+      "section": "Opportunities",
+      "headline": "AI outage resilience audits",
+      "summary": "Offer \"AI outage resilience\" audits to product teams, given the [September 3 multi-vendor outage](https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/); most teams have no fallback plan when their model provider goes down.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "September 3 multi-vendor outage",
+          "url": "https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "on-device-agent-uis-for-local-first-ai",
+      "section": "Opportunities",
+      "headline": "On-device agent UIs for local-first AI",
+      "summary": "Design and prototype on-device agent UIs for the emerging local-first AI category ([Perplexity's Portable Computer](https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs) is early proof of demand); permission and escalation UX for local-to-cloud handoff is largely undesigned.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Perplexity's Portable Computer",
+          "url": "https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "ux-heuristic-review-skills-as-a-service",
+      "section": "Opportunities",
+      "headline": "UX-heuristic review skills as a service",
+      "summary": "Package UX-heuristic review skills (accessibility, hierarchy, interaction design) as a service or plugin, mirroring what [Figma just built into its own agent](https://qubika.com/blog/figma-config-2026-announcements-for-designers/), for teams not yet on Figma's latest AI tier.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma just built into its own agent",
+          "url": "https://qubika.com/blog/figma-config-2026-announcements-for-designers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "eu-ai-act-disclosure-ux",
+      "section": "Opportunities",
+      "headline": "EU AI Act disclosure UX",
+      "summary": "Consult on EU AI Act disclosure UX (provenance labels, AI-generated content flags) as enforcement ramps up, per [this week's transparency requirement news](https://www.aidapted.ro/en/articles/ai-news-september-4-2026-nvidia-astra-anthropic/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "This week's transparency requirement news",
+          "url": "https://www.aidapted.ro/en/articles/ai-news-september-4-2026-nvidia-astra-anthropic/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    },
+    {
+      "id": "round-trip-a-component-between-code-and-figma",
+      "section": "Today's Experiment",
+      "headline": "Round-trip a component between code and Figma",
+      "kicker": "30 minutes",
+      "summary": "Spend 30 minutes wiring [TalkToFigma MCP](https://github.com/grab/cursor-talk-to-figma-mcp) into Claude Code or Cursor and pull one existing Figma frame into your codebase, or run it in reverse: capture a live component from your own product and push it into a new Figma frame using [Claude Code to Figma](https://www.figma.com/blog/introducing-claude-code-to-figma/). Note where the round-trip breaks (naming, styles, structure) to see how close design and code really are to merging.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "TalkToFigma MCP",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp"
+        },
+        {
+          "label": "Claude Code to Figma",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-05"
+    }
+  ],
+  "dont_miss": [
+    "[Claude Fable 5.1's 75% cache-read price cut](https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads), which materially lowers the cost of long agentic sessions starting now.",
+    "[Figma's Claude Code to Figma integration](https://www.figma.com/blog/introducing-claude-code-to-figma/), worth testing if you regularly redesign existing production UI.",
+    "[The September 3 tri-vendor AI outage](https://cryptobriefing.com/openai-anthropic-google-ai-service-outages/), a prompt to check whether your product has any fallback if your model provider goes down."
+  ],
+  "footnote": "Sourced from VentureBeat, TechSpot, MarkTechPost, Figma Blog, Qubika, Userpilot, Hacker News, GitHub, and other outlets linked throughout. Compiled automatically on September 5, 2026."
+}
