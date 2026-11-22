@@ -33,7 +33,6 @@ const tools = ratedTools();
           const href = primaryUrl(e);
           return (
             <li class="row tool-row reveal" data-date={e.date} data-order={n}>
-              <span class="index__num eyebrow" data-rank>{pad2(n + 1)}</span>
               {href ? <a href={href} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><Media entry={e} /></a> : <Media entry={e} />}
               <div class="row__body">
                 {e.kicker && <div class="row__top"><span class="eyebrow">Released {e.kicker}</span></div>}
@@ -61,10 +60,7 @@ const tools = ratedTools();
           const sorted = [...items].sort((a, z) =>
             by === 'date' ? z.dataset.date!.localeCompare(a.dataset.date!) || +a.dataset.order! - +z.dataset.order! : +a.dataset.order! - +z.dataset.order!,
           );
-          sorted.forEach((el, i) => {
-            el.querySelector('[data-rank]')!.textContent = String(i + 1).padStart(2, '0');
-            list.appendChild(el);
-          });
+          sorted.forEach((el) => list.appendChild(el));
         }),
       );
     }

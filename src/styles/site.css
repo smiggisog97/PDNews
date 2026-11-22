@@ -519,7 +519,7 @@ a.tile:hover { background: var(--bg-lift); }
 mark { background: var(--tone-faint); color: inherit; border-radius: 2px; }
 
 /* ---------- 13. Tools ---------- */
-.tool-row { grid-template-columns: 40px 160px minmax(0, 1fr); }
+.tool-row { grid-template-columns: 160px minmax(0, 1fr); }
 .tool-row .index__num { padding-top: 4px; }
 
 /* ---------- 14. Footer ---------- */
@@ -607,7 +607,7 @@ mark { background: var(--tone-faint); color: inherit; border-radius: 2px; }
   .journal__row > :last-child { justify-self: start; }
   .row, .archive-row { grid-template-columns: 96px minmax(0, 1fr); gap: var(--space-15); }
   .archive-row .row__when { display: none; }
-  .tool-row { grid-template-columns: 24px 80px minmax(0, 1fr); gap: var(--space-10); }
+  .tool-row { grid-template-columns: 96px minmax(0, 1fr); gap: var(--space-15); }
   .notes > div { grid-template-columns: 1fr; gap: var(--space-5); }
   .filters__row { grid-template-columns: 1fr 1fr; }
   .filters__row .field--search { grid-column: 1 / -1; }
