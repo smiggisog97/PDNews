@@ -1,0 +1,624 @@
+{
+  "date": "2026-09-15",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1nP32gl9C6QmQ9HKrG00kQETnyBX4Z9j2RYbGV_8Xt_E/edit",
+  "highlights": [
+    {
+      "headline": "Figma shipped MCP support for Weave tools,",
+      "summary": "so agents in [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), or [Cursor](https://cursor.com) can now trigger Figma's generative tools without opening the app. Read the details on the [Weave Knowledge Center](https://help.weavy.ai/en/articles/16202764-running-weave-tools-from-external-agents-mcp)."
+    },
+    {
+      "headline": "OpenAI's GPT-6 Astra rollout",
+      "summary": "is now reaching ChatGPT Plus, Pro, Business, and Enterprise tiers, with Greg Brockman calling it a \"generational leap\" in a report from [Axios](https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman). See [GPT-6 Astra](https://community.openai.com/t/introducing-gpt-6-astra-the-most-intelligent-and-aligned-model-in-the-world/1394703)."
+    },
+    {
+      "headline": "Claude Opus 5 remains the default model on Claude Max,",
+      "summary": "with an efficiency \"dial\" that lets users trade capability for cost, per [VentureBeat](https://venturebeat.com/orchestration/anthropic-launches-claude-opus-5-a-cheaper-ai-model-for-coding-agents-and-enterprise-workflows). See [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)."
+    },
+    {
+      "headline": "Anthropic, OpenAI, and Google DeepMind have been holding closed working-group meetings since July",
+      "summary": "toward an industry-led AI standards body, with Dario Amodei driving the effort."
+    },
+    {
+      "headline": "Hacker News sentiment has shifted from AI awe to AI operations:",
+      "summary": "this week's top threads centered on agent security, local-first tooling, and trust rather than raw capability."
+    }
+  ],
+  "entries": [
+    {
+      "id": "gpt-6-astra-openai-s-biggest-model-claim-yet",
+      "section": "AI Industry News",
+      "headline": "GPT-6 Astra: OpenAI's biggest model claim yet",
+      "summary": "OpenAI began rolling out [GPT-6 Astra](https://community.openai.com/t/introducing-gpt-6-astra-the-most-intelligent-and-aligned-model-in-the-world/1394703) on September 3, claiming state-of-the-art results on computer use, browsing, software engineering, and cybersecurity benchmarks. [The New Stack reports](https://thenewstack.io/openai-gpt6-astra-benchmarks/) the model saturates FrontierMath Tier 4 at 98% and ARC-AGI-3 at 99.9%. For builders, this means agentic workflows that previously needed heavy scaffolding (long-horizon planning, tool chaining) may now work closer to out of the box. Worth noting: [Al Jazeera](https://www.aljazeera.com/economy/2026/9/4/openai-unveils-gpt-6-astra-amid-rising-scrutiny-and-safety) flags this launch came with heightened safety scrutiny after a July incident involving Hugging Face.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "GPT-6 Astra",
+          "url": "https://community.openai.com/t/introducing-gpt-6-astra-the-most-intelligent-and-aligned-model-in-the-world/1394703"
+        },
+        {
+          "label": "The New Stack reports",
+          "url": "https://thenewstack.io/openai-gpt6-astra-benchmarks/"
+        },
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/9/4/openai-unveils-gpt-6-astra-amid-rising-scrutiny-and-safety"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "claude-opus-5-s-cost-dial",
+      "section": "AI Industry News",
+      "headline": "Claude Opus 5's cost dial",
+      "summary": "[Anthropic's Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) introduced an effort dial that lets developers control how much compute a task consumes, cutting cost at lower effort levels while preserving most of the model's performance, per [InfoWorld](https://www.infoworld.com/article/4201551/anthropic-releases-more-efficient-claude-opus-5.html). For product teams, this is a practical lever for keeping agent workflows affordable at scale rather than a headline capability jump.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic's Claude Opus 5",
+          "url": "https://www.anthropic.com/news/claude-opus-5"
+        },
+        {
+          "label": "InfoWorld",
+          "url": "https://www.infoworld.com/article/4201551/anthropic-releases-more-efficient-claude-opus-5.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "a-quiet-push-toward-an-ai-standards-body",
+      "section": "AI Industry News",
+      "headline": "A quiet push toward an AI standards body",
+      "summary": "Anthropic, OpenAI, and Google DeepMind have reportedly held working-group meetings since July aimed at an industry-led AI standards body, an alternative to waiting on government regulation. Dario Amodei is said to be driving it, with Sam Altman backing the idea. If it materializes, expect it to shape how agentic and coding tools get certified for enterprise use.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "figma-s-mcp-server-now-runs-weave-tools",
+      "section": "Product Design & UX",
+      "headline": "Figma's MCP server now runs Weave tools",
+      "summary": "[Figma's Dev Mode MCP server](https://www.figma.com/blog/introducing-figma-mcp-server/) now exposes [Weave generative tools](https://www.figma.com/mcp-catalog/) to external agents. A designer or engineer can describe what they need inside [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), or [Cursor](https://cursor.com), and the agent finds the right Weave tool, runs it, and returns the result in chat, using Weave credits rather than Figma AI credits. See the [developer docs](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/) for the tool list.",
+      "why_it_matters": "this narrows the design-to-code loop further, letting coding agents pull real design system tokens and generate assets without a human relaying context back and forth.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma's Dev Mode MCP server",
+          "url": "https://www.figma.com/blog/introducing-figma-mcp-server/"
+        },
+        {
+          "label": "Weave generative tools",
+          "url": "https://www.figma.com/mcp-catalog/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "developer docs",
+          "url": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "replit-agent-4-s-design-mode",
+      "section": "Product Design & UX",
+      "headline": "Replit Agent 4's Design Mode",
+      "summary": "Replit's Agent 4 (launched earlier this year) continues to be the reference point for \"agent builds the UI\" workflows, with a Design Mode for interactive mockups and checkpoint-based rollback, per comparisons on [Lovable's own guide](https://lovable.dev/guides/bolt-vs-replit-vs-lovable). Worth watching whether Figma's MCP move pressures Replit, [Bolt](https://bolt.new), and [v0](https://v0.dev) to deepen their own design-system integrations rather than generating UI from scratch each time.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Lovable's own guide",
+          "url": "https://lovable.dev/guides/bolt-vs-replit-vs-lovable"
+        },
+        {
+          "label": "Bolt",
+          "url": "https://bolt.new"
+        },
+        {
+          "label": "v0",
+          "url": "https://v0.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "keiki",
+      "section": "New AI Tools",
+      "headline": "Keiki",
+      "summary": "Build one customer-facing AI agent and deploy it across every channel from a single workflow.",
+      "why_it_matters": null,
+      "audience": "teams tired of rebuilding the same bot per channel.",
+      "links": [
+        {
+          "label": "Keiki",
+          "url": "https://www.producthunt.com/products/keiki"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "thunderphone",
+      "section": "New AI Tools",
+      "headline": "ThunderPhone",
+      "summary": "A platform for building reliable AI phone agents starting at roughly two cents a minute.",
+      "why_it_matters": null,
+      "audience": "ops teams testing voice agents cheaply.",
+      "links": [
+        {
+          "label": "ThunderPhone",
+          "url": "https://www.producthunt.com/categories/ai-agents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "trustedrouter",
+      "section": "New AI Tools",
+      "headline": "TrustedRouter",
+      "summary": "A unified interface across major AI models with verifiable privacy guarantees.",
+      "why_it_matters": null,
+      "audience": "teams juggling model choice and compliance.",
+      "links": [
+        {
+          "label": "TrustedRouter",
+          "url": "https://www.producthunt.com/categories/ai-software"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "sider-code",
+      "section": "New AI Tools",
+      "headline": "Sider Code",
+      "summary": "A Chrome extension that restyles any website from plain-language instructions.",
+      "why_it_matters": null,
+      "audience": "quick UX experiments without touching a design tool.",
+      "links": [
+        {
+          "label": "Sider Code",
+          "url": "https://www.producthunt.com/categories/ai-agents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "cursor-notion-integration",
+      "section": "New AI Tools",
+      "headline": "Cursor + Notion integration",
+      "summary": "Assign bugs and feature requests from a Notion task board directly to Cursor agents, with every run reviewable on the work item.",
+      "why_it_matters": null,
+      "audience": "teams already living in Notion who want agent work visible outside the IDE.",
+      "links": [
+        {
+          "label": "Cursor + Notion integration",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "figma-mcp-weave",
+      "section": "New AI Tools",
+      "headline": "Figma MCP + Weave",
+      "summary": "Run Figma's generative design tools from inside your coding agent.",
+      "why_it_matters": null,
+      "audience": "design-engineering pairs shipping UI fast.",
+      "links": [
+        {
+          "label": "Figma MCP + Weave",
+          "url": "https://www.figma.com/mcp-catalog/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "mcp-becomes-the-default-integration-layer",
+      "section": "Trends to Watch",
+      "headline": "MCP becomes the default integration layer",
+      "summary": "Figma joining [Notion](https://www.notion.so) and others in shipping first-class MCP support confirms the pattern: tools are competing on how well they plug into agents, not just their own UI.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "Model Context Protocol basics now if you haven't; it's becoming table stakes for any tool aiming at agentic workflows."
+      },
+      "links": [
+        {
+          "label": "Notion",
+          "url": "https://www.notion.so"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "effort-dials-over-bigger-models",
+      "section": "Trends to Watch",
+      "headline": "Effort dials over bigger models",
+      "summary": "Claude Opus 5's cost/capability dial and similar \"reasoning effort\" controls elsewhere signal a shift from chasing raw benchmark scores toward tunable, budget-aware inference. Product teams should start exposing similar controls to their own users rather than hard-coding a single model tier.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Opus 5",
+          "url": "https://www.anthropic.com/news/claude-opus-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "security-is-now-a-design-requirement-not-an-aftert",
+      "section": "Trends to Watch",
+      "headline": "Security is now a design requirement, not an afterthought",
+      "summary": "Hacker News threads this week tied agent adoption directly to phishing, prompt injection, and connected-app risk. Expect enterprise buyers to start asking design and product teams for agent permission UX (what an agent can touch, and how a user revokes it) as a checklist item, not a nice-to-have.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "notion-s-agent-on-the-task-board-pattern",
+      "section": "Product Design Inspiration",
+      "headline": "Notion's agent-on-the-task-board pattern",
+      "summary": "Instead of bolting a chat window onto a task manager, [Notion's](https://www.notion.so) integration with [Cursor](https://cursor.com) puts the agent's work directly on the card it's assigned to.",
+      "why_it_matters": "the review surface is the same surface the team already uses for human work, so agent output doesn't need a separate review ritual.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Notion's",
+          "url": "https://www.notion.so"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "figma-s-mcp-result-in-chat-pattern",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's MCP result-in-chat pattern",
+      "summary": "Rather than forcing a context switch back to the Figma canvas, Weave tool results now return inside the agent conversation itself. This respects the user's current flow state, a small but meaningful onboarding-adjacent decision: don't make the user leave the tool they're already succeeding in.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Weave tools via MCP",
+          "url": "https://www.figma.com/mcp-catalog/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "replit-s-checkpoint-rollback-in-design-mode",
+      "section": "Product Design Inspiration",
+      "headline": "Replit's checkpoint rollback in Design Mode",
+      "summary": "Letting users step backward through an agent's UI generation attempts, rather than accepting or discarding a single output, turns a black-box generation into an editable history. It's a pattern worth borrowing anywhere an agent produces irreversible-feeling output.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "langflow",
+      "section": "GitHub & Open Source",
+      "headline": "Langflow",
+      "summary": "(146k+ stars) A visual builder for LLM workflows, still the most-starred entry point for no-code agent building.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Langflow",
+          "url": "https://github.com/langflow-ai/langflow"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "dify",
+      "section": "GitHub & Open Source",
+      "headline": "Dify",
+      "summary": "(136k+ stars) An open-source LLM app development platform combining agent workflows, RAG pipelines, and model management in one visual interface.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Dify",
+          "url": "https://github.com/langgenius/dify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "flowise",
+      "section": "GitHub & Open Source",
+      "headline": "Flowise",
+      "summary": "(51k+ stars) A drag-and-drop builder for customized LLM flows, popular for prototyping agents without writing orchestration code.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Flowise",
+          "url": "https://github.com/FlowiseAI/Flowise"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "metagpt-and-crewai",
+      "section": "GitHub & Open Source",
+      "headline": "MetaGPT and CrewAI",
+      "summary": "[MetaGPT](https://github.com/geekan/MetaGPT) and [CrewAI](https://github.com/crewAIInc/crewAI): multi-agent coordination frameworks continuing to gain traction as teams move past single-agent demos into agents that hand off work to each other. These are gaining attention because the ecosystem is visibly moving from single-agent chat demos toward orchestration: getting several purpose-built agents to hand off work reliably is now the harder, more interesting problem.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "MetaGPT",
+          "url": "https://github.com/geekan/MetaGPT"
+        },
+        {
+          "label": "CrewAI",
+          "url": "https://github.com/crewAIInc/crewAI"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "debian-s-vote-to-permit-responsible-use-of-generat",
+      "section": "Social Buzz",
+      "headline": "Debian's vote to permit \"responsible use of generative AI\"",
+      "kicker": "Hacker News",
+      "summary": "A thread on [Debian's vote to permit \"responsible use of generative AI\"](https://news.ycombinator.com/) drew nearly 500 points and 465 comments, a proxy for how contested AI-assisted contribution still is inside trusted open-source communities.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Debian's vote to permit \"responsible use of generative AI\"",
+          "url": "https://news.ycombinator.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "ai-developing-hidden-objectives-without-a-clear-re",
+      "section": "Social Buzz",
+      "headline": "AI developing hidden objectives without a clear reward signal",
+      "kicker": "Hacker News",
+      "summary": "Discussion of AI developing hidden objectives in domains without a clear reward signal (surfaced through mathematics research) reopened debate on what alignment even means once a model is doing genuinely novel work.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "privacy-toggles-resetting-after-client-updates",
+      "section": "Social Buzz",
+      "headline": "Privacy toggles resetting after client updates",
+      "kicker": "Reddit and Hacker News",
+      "summary": "Privacy toggles for training-data opt-outs reportedly reset after client updates on multiple platforms, drawing criticism as a dark pattern worth designers auditing in their own settings flows.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "figma-mcp-server-tools-and-prompts",
+      "section": "Learning Corner",
+      "headline": "Figma MCP Server: Tools and Prompts",
+      "kicker": "Article",
+      "summary": "The official reference for what an agent can actually call in your design files. Worth it if you're wiring up any coding agent to a design system this week.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma MCP Server: Tools and Prompts",
+          "url": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "crewai",
+      "section": "Learning Corner",
+      "headline": "CrewAI",
+      "kicker": "GitHub project",
+      "summary": "A clean, well-documented starting point for learning multi-agent orchestration patterns beyond a single chatbot.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CrewAI",
+          "url": "https://github.com/crewAIInc/crewAI"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "figma-s-mcp-catalog",
+      "section": "Learning Corner",
+      "headline": "Figma's MCP Catalog",
+      "kicker": "Design resource",
+      "summary": "A running list of what's newly agent-accessible in Figma; useful to skim monthly.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's MCP Catalog",
+          "url": "https://www.figma.com/mcp-catalog/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "notion-cursor-task-board-to-agent-pattern",
+      "section": "Learning Corner",
+      "headline": "Notion + Cursor task-board-to-agent pattern",
+      "kicker": "AI workflow",
+      "summary": "The pattern described in section 06; worth reproducing with your own stack even if you don't use either tool, since the underlying idea (agent work lives where human work already lives) transfers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Notion",
+          "url": "https://www.notion.so"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "figma-weave-tools-now-via-mcp",
+      "section": "Learning Corner",
+      "headline": "Figma Weave tools, now via MCP",
+      "kicker": "Video",
+      "summary": "A short walkthrough of the new integration in action.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Weave tools, now via MCP",
+          "url": "https://www.youtube.com/watch?v=7choyJqMEkc"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "agent-permission-ux",
+      "section": "Opportunities",
+      "headline": "Agent permission UX",
+      "summary": "As agents get broader tool access (Figma, task boards, phone calls), someone needs to design the consent and revocation flows. This is a wide-open product design niche right now.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "mcp-tool-authoring-for-design-systems",
+      "section": "Opportunities",
+      "headline": "MCP tool authoring for design systems",
+      "summary": "Teams with mature design systems could package their own component libraries as MCP-accessible tools, similar to what Figma just did with Weave, ahead of most competitors.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "cost-aware-ai-product-design",
+      "section": "Opportunities",
+      "headline": "Cost-aware AI product design",
+      "summary": "As effort dials and per-token pricing become common, there's room to design better UI for showing users what a given AI action will cost before they run it.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "agent-to-agent-handoff-review-tools",
+      "section": "Opportunities",
+      "headline": "Agent-to-agent handoff review tools",
+      "summary": "As multi-agent frameworks like [CrewAI](https://github.com/crewAIInc/crewAI) and [MetaGPT](https://github.com/geekan/MetaGPT) spread, teams need better visual tooling to audit what one agent handed to another and why.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CrewAI",
+          "url": "https://github.com/crewAIInc/crewAI"
+        },
+        {
+          "label": "MetaGPT",
+          "url": "https://github.com/geekan/MetaGPT"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    },
+    {
+      "id": "generate-code-from-design-tokens-through-figma-s-m",
+      "section": "Today's Experiment",
+      "headline": "Generate code from design tokens through Figma's MCP server",
+      "kicker": "Under 30 minutes",
+      "summary": "Connect [Figma's MCP server](https://www.figma.com/mcp-catalog/) to [Claude](https://claude.ai) or [Cursor](https://cursor.com) (if you have Figma Dev Mode access), pick one component from a design file, and ask the agent to generate a working code implementation directly from the design tokens. Compare it against a version you'd hand-code. Should take under 30 minutes and gives a concrete read on how close design-to-code handoff has gotten.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's MCP server",
+          "url": "https://www.figma.com/mcp-catalog/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-15"
+    }
+  ],
+  "dont_miss": [
+    "**Figma's MCP support for Weave tools**: the most immediately actionable item for anyone doing design-to-code work today.",
+    "**GPT-6 Astra's phased rollout**: if you're on a Plus, Pro, Business, or Enterprise ChatGPT plan, check whether you have access yet, and test it against your current agent workflows.",
+    "**HN's pivot to agent security and trust**: worth 10 minutes if you're shipping anything agent-facing, since it's a preview of the questions enterprise buyers will start asking."
+  ],
+  "footnote": "Sourced from Anthropic, OpenAI, Figma, Axios, VentureBeat, InfoWorld, The New Stack, Al Jazeera, Product Hunt, GitHub, and Hacker News. Links point to original sources where available; some Product Hunt and social items reflect the best available listing pages rather than individual post URLs."
+}
