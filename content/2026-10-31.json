@@ -1,0 +1,823 @@
+{
+  "date": "2026-10-31",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1kS7mWh6SKoZwMqfoKCYU2Bs6JWWfjSdjXr3oXTp9eSQ/edit",
+  "highlights": [
+    {
+      "headline": "Four labs back one training opt-out.",
+      "summary": "[Google](https://www.google.com), [Microsoft](https://www.microsoft.com), [Anthropic](https://www.anthropic.com) and [OpenAI](https://openai.com) will support a single robots.txt token for AI training preferences ([SiliconANGLE](https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/))."
+    },
+    {
+      "headline": "Computer-use models get cheap.",
+      "summary": "OpenAI's [GPT-6.1 Terra](https://openai.com/index/introducing-gpt-6-1-terra/) operates apps by screen, click and keystroke at $1 per million input tokens and $5 per million output tokens."
+    },
+    {
+      "headline": "Anthropic filed to go public.",
+      "summary": "The [S-1](https://www.anthropic.com/news/s1-sec) reports $16.3B in first-half 2026 revenue (per newsletter coverage, see sourcing note)."
+    },
+    {
+      "headline": "Agents write to the design canvas.",
+      "summary": "[Figma's canvas is open to agents](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) via the use_figma tool, free in beta, with usage-based pricing planned."
+    },
+    {
+      "headline": "Agents become shippable software.",
+      "summary": "[Cursor](https://cursor.com) made its Agent SDK generally available and [Replit](https://replit.com) shipped a Monitoring Agent that investigates and fixes production issues."
+    }
+  ],
+  "entries": [
+    {
+      "id": "google-microsoft-anthropic-and-openai-back-one-ai",
+      "section": "AI Industry News",
+      "headline": "Google, Microsoft, Anthropic and OpenAI back one AI-training opt-out token",
+      "summary": "On October 30 the four companies said they will support a shared robots.txt signal (__usage_ai-training) so a site can opt out of generative AI training across all crawlers in one entry. It is an individual IETF Internet-Draft authored by Anthropic's Kevin Kelley, not a formal standard. Rollout dates are staggered: [Microsoft](https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/) targets February 1, 2027 (per AI Weekly), OpenAI says \"coming months\" ([announcement](https://openai.com/index/helping-websites-express-ai-training-preferences/)), Google 2027. Sources: [AI Weekly](https://aiweekly.co/alerts/openai-google-microsoft-anthropic-back-one-ai-opt-out-token), [The Verge](https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out).",
+      "why_it_matters": "It controls training only, not fetching, and cannot remove content already in datasets. Microsoft also plans a separate \"AI Grounding\" setting for answer-time fetches.",
+      "takeaway": {
+        "label": "Impact for builders",
+        "text": "If you ship content sites or docs, add the one-line entry. If you build crawlers or RAG, expect training and grounding to be treated as different permissions."
+      },
+      "links": [
+        {
+          "label": "Google, Microsoft, Anthropic and OpenAI back one AI-training opt-out token",
+          "url": "https://aiweekly.co/alerts/openai-google-microsoft-anthropic-back-one-ai-opt-out-token"
+        },
+        {
+          "label": "Microsoft",
+          "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+        },
+        {
+          "label": "announcement",
+          "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+        },
+        {
+          "label": "The Verge",
+          "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31",
+      "lead": true
+    },
+    {
+      "id": "gpt-6-1-terra-and-gemini-4-carbon",
+      "section": "AI Industry News",
+      "headline": "GPT-6.1 Terra and Gemini 4 Carbon",
+      "summary": "[GPT-6.1 Terra](https://openai.com/index/introducing-gpt-6-1-terra/) targets screen-driven app operation (for example entering invoices into accounting software) at roughly half the old price, rolling out in ChatGPT's Work and Codex modes. [Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/) scores 59 on the Artificial Analysis index, one point above Claude Opus 5.5, but is limited to select cyber defenders for now. Source: [AI News for October 30](https://aisdg.substack.com/p/ai-news-for-october-30-2026). I could not open the primary posts, so details are from that newsletter.",
+      "why_it_matters": "Cheaper computer-use makes UI-driven automation viable for small teams. It also raises the stakes on how your product's interface reads to an agent.",
+      "links": [
+        {
+          "label": "GPT-6.1 Terra and Gemini 4 Carbon",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/"
+        },
+        {
+          "label": "Gemini 4 Carbon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        },
+        {
+          "label": "AI News for October 30",
+          "url": "https://aisdg.substack.com/p/ai-news-for-october-30-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "anthropic-files-for-a-nasdaq-ipo",
+      "section": "AI Industry News",
+      "headline": "Anthropic files for a Nasdaq IPO",
+      "summary": "[Anthropic](https://www.anthropic.com) filed October 26 to list as \"ANT.\" Reported figures: $16.3B revenue in H1 2026 versus $1.2B a year earlier, and 11,900+ customers paying $100,000 or more. Coverage: [TechCrunch](https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/), [CNBC](https://www.cnbc.com/2026/10/26/anthropic-ipo-might-trigger-tech-reset-if-ipo-underperforms.html).",
+      "why_it_matters": "Public-company scrutiny will shape pricing, safeguards and roadmap commitments for tools you build on.",
+      "links": [
+        {
+          "label": "Anthropic files for a Nasdaq IPO",
+          "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-might-trigger-tech-reset-if-ipo-underperforms.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "safety-and-monitoring",
+      "section": "AI Industry News",
+      "headline": "Safety and monitoring",
+      "summary": "OpenAI described [staged monitors for rogue agent behavior](https://openai.com/index/how-we-detect-frontier-model-misalignment/) and updated its [Model Spec](https://openai.com/index/updated-model-spec/). Anthropic published [research on Claude self-assessing conversations for misuse](https://safeguards.anthropic.com/2026/self-assessment/). Separately, [Axios reports banks blocking AI agents](https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access) that log in with customers' credentials.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact for builders",
+        "text": "Agent identity and delegated authorization are now a product design problem, not just a security one."
+      },
+      "links": [
+        {
+          "label": "Safety and monitoring",
+          "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/"
+        },
+        {
+          "label": "Model Spec",
+          "url": "https://openai.com/index/updated-model-spec/"
+        },
+        {
+          "label": "research on Claude self-assessing conversations for misuse",
+          "url": "https://safeguards.anthropic.com/2026/self-assessment/"
+        },
+        {
+          "label": "Axios reports banks blocking AI agents",
+          "url": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "other-moves",
+      "section": "AI Industry News",
+      "headline": "Other moves",
+      "summary": "[Mistral](https://mistral.ai) released [Large 4 with open weights](https://mistral.ai/news/mistral-large-4-oss/) (trillion parameters, multimodal). [Canva](https://www.canva.com) launched [Craft](https://www.canva.com/newsroom/news/canva-craft/), an image model that plans layout and text first and outputs editable layers. Anthropic raised the Messages API request limit from 32 MB to 128 MB ([ClaudeDevs on X](https://x.com/ClaudeDevs/status/2115923971279614171)). [Reddit](https://www.reddit.com)'s CEO says [Google's AI Mode sends no traffic](https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Other moves",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "Large 4 with open weights",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/"
+        },
+        {
+          "label": "Canva",
+          "url": "https://www.canva.com"
+        },
+        {
+          "label": "Craft",
+          "url": "https://www.canva.com/newsroom/news/canva-craft/"
+        },
+        {
+          "label": "ClaudeDevs on X",
+          "url": "https://x.com/ClaudeDevs/status/2115923971279614171"
+        },
+        {
+          "label": "Reddit",
+          "url": "https://www.reddit.com"
+        },
+        {
+          "label": "Google's AI Mode sends no traffic",
+          "url": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "figma-opens-the-canvas-to-agents",
+      "section": "Product Design & UX",
+      "headline": "Figma opens the canvas to agents",
+      "summary": "[Figma](https://www.figma.com)'s [post](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) describes the MCP use_figma tool letting Claude Code, Codex, Cursor, Copilot and others write to files using real components, variables and auto layout, with a screenshot-and-fix loop. Skills (plain markdown) encode your design system rules. It is free during beta and \"will eventually be a usage-based paid feature.\"",
+      "why_it_matters": "write a skill for your own tokens and spacing rules now, so agent output stays on-system. Budget for metering later.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma opens the canvas to agents",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "cursor-agent-sdk-and-shareable-canvases",
+      "section": "Product Design & UX",
+      "headline": "Cursor: Agent SDK and shareable canvases",
+      "summary": "[Cursor](https://cursor.com) shipped its Agent SDK (Oct 20) with eval, local dev and deploy commands, plus Cloud Agent Canvases (Oct 16) that teams share by link. Source: [Releasebot](https://releasebot.io/updates/cursor).",
+      "why_it_matters": "agent-built interactive canvases are a new review surface for design critique.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor: Agent SDK and shareable canvases",
+          "url": "https://releasebot.io/updates/cursor"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "replit-and-notion",
+      "section": "Product Design & UX",
+      "headline": "Replit and Notion",
+      "summary": "[Replit](https://replit.com)'s Oct 23 update adds a Monitoring Agent, reusable workspace skills and chat sharing ([notes](https://releasebot.io/updates/replit)). [Notion](https://www.notion.com) rebuilt Agents on Oct 19 with their own computer and browser, a model router, BYOK and new credits, and its Oct 26 developer update adds a connection Health tab ([notes](https://releasebot.io/updates/notion)). [Framer](https://www.framer.com) is promoting \"Framer AI Agents\" on [Product Hunt](https://www.producthunt.com/products/framer), but no feature details were published on the page.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Replit and Notion",
+          "url": "https://replit.com"
+        },
+        {
+          "label": "notes",
+          "url": "https://releasebot.io/updates/replit"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        },
+        {
+          "label": "notes",
+          "url": "https://releasebot.io/updates/notion"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/products/framer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "useit-studio",
+      "section": "New AI Tools",
+      "headline": "UseIt Studio",
+      "summary": "AI design agent that outputs editable physical-product files (dielines, bleed, real dimensions) for stickers, boxes and cards. Launched Oct 21, #1 of the day on [Product Hunt](https://www.producthunt.com/products/useit-studio-from-idea-to-delivery).",
+      "why_it_matters": null,
+      "audience": "brand and packaging designers.",
+      "links": [
+        {
+          "label": "UseIt Studio",
+          "url": "https://useit.im/"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "mao",
+      "section": "New AI Tools",
+      "headline": "MAO",
+      "summary": "Puts Claude Code, Codex and Grok on one canvas.",
+      "why_it_matters": null,
+      "audience": "developers comparing coding agents side by side.",
+      "links": [
+        {
+          "label": "MAO",
+          "url": "https://www.producthunt.com/products/mao-multi-agentic-orchestration-tool"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "flatbread",
+      "section": "New AI Tools",
+      "headline": "Flatbread",
+      "summary": "Share a whole agent run instead of a screenshot.",
+      "why_it_matters": null,
+      "audience": "teams reviewing agent work.",
+      "links": [
+        {
+          "label": "Flatbread",
+          "url": "https://www.producthunt.com/products/flatbread"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "floot-in-chatgpt",
+      "section": "New AI Tools",
+      "headline": "Floot in ChatGPT",
+      "summary": "Build and publish apps without leaving ChatGPT.",
+      "why_it_matters": null,
+      "audience": "fast prototyping.",
+      "links": [
+        {
+          "label": "Floot in ChatGPT",
+          "url": "https://www.producthunt.com/products/floot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "arco",
+      "section": "New AI Tools",
+      "headline": "Arco",
+      "summary": "Brings GitHub and Linear issues into Codex.",
+      "why_it_matters": null,
+      "audience": "devs who live in [Linear](https://linear.app).",
+      "links": [
+        {
+          "label": "Arco",
+          "url": "https://www.producthunt.com/products/arco-4"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "suno-mcp",
+      "section": "New AI Tools",
+      "headline": "Suno MCP",
+      "summary": "A music layer for agent workflows via MCP.",
+      "why_it_matters": null,
+      "audience": "prototype soundtracks and motion work.",
+      "links": [
+        {
+          "label": "Suno MCP",
+          "url": "https://www.producthunt.com/products/suno"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "dedica",
+      "section": "New AI Tools",
+      "headline": "Dedica",
+      "summary": "Scores a website out of 100 on 125 checks for AI assistant usability; free scan.",
+      "why_it_matters": null,
+      "audience": "anyone designing for agent-readable interfaces.",
+      "links": [
+        {
+          "label": "Dedica",
+          "url": "https://getdedica.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "empacer",
+      "section": "New AI Tools",
+      "headline": "Empacer",
+      "summary": "Voice-first business assistant that proposes tasks after a three-question setup. Worth a look for its onboarding pattern.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Empacer",
+          "url": "https://www.producthunt.com/products/empacer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "agents-as-canvas-users",
+      "section": "Trends to Watch",
+      "headline": "Agents as canvas users",
+      "summary": "Figma, Cursor canvases and Notion agents with their own browsers all treat agents as collaborators in the same file.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "writing skills files that encode design systems."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "agent-identity-and-access",
+      "section": "Trends to Watch",
+      "headline": "Agent identity and access",
+      "summary": "Banks blocking agents and OpenAI's monitoring work point to a gap: products cannot tell approved agents from rogue ones.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "delegated auth patterns and consent UI."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "cheap-computer-use",
+      "section": "Trends to Watch",
+      "headline": "Cheap computer use",
+      "summary": "Terra's pricing makes screen-operating agents a default option.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "designing UIs that are legible to agents (clear labels, stable layouts)."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "agent-metering",
+      "section": "Trends to Watch",
+      "headline": "Agent metering",
+      "summary": "Figma, Replit and Notion all moved to credits or usage billing.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "usage and cost transparency UI."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "canva-craft",
+      "section": "Product Design Inspiration",
+      "headline": "Canva Craft",
+      "summary": "The model plans layout and text before drawing and returns editable layers. See [Canva Craft](https://www.canva.com/newsroom/news/canva-craft/).",
+      "why_it_matters": "generated output stays editable, which removes the dead-end of flat images.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Canva Craft",
+          "url": "https://www.canva.com/newsroom/news/canva-craft/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "useit-studio-2",
+      "section": "Product Design Inspiration",
+      "headline": "UseIt Studio",
+      "summary": "Asks designer-style questions first, then lets you circle any part to change it. See [UseIt Studio](https://www.producthunt.com/products/useit-studio-from-idea-to-delivery).",
+      "why_it_matters": "direct pointing replaces prompt rewriting, and a manufacturing check validates files against factory specs.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "UseIt Studio",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "flatbread-2",
+      "section": "Product Design Inspiration",
+      "headline": "Flatbread",
+      "summary": "Shares the full agent run, not a screenshot. See [Flatbread](https://www.producthunt.com/products/flatbread).",
+      "why_it_matters": "it makes process reviewable, which is the missing trust layer for agent output.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Flatbread",
+          "url": "https://www.producthunt.com/products/flatbread"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "oil-oil-oil-ui",
+      "section": "GitHub & Open Source",
+      "headline": "oil-oil/oil-ui",
+      "summary": "A UI design skill for Claude Code, Codex and other agents that explores directions, compares them side by side and refines against screenshots. 2.2k stars.",
+      "why_it_matters": "directly useful for designers working with coding agents.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "oil-oil/oil-ui",
+          "url": "https://github.com/oil-oil/oil-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "deeplethe-solid-glass",
+      "section": "GitHub & Open Source",
+      "headline": "deeplethe/solid-glass",
+      "summary": "A design system for AI applications. 2.2k stars.",
+      "why_it_matters": "a reference for AI-native UI styling.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "deeplethe/solid-glass",
+          "url": "https://github.com/deeplethe/solid-glass"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "shader-effects-inc-shaders",
+      "section": "GitHub & Open Source",
+      "headline": "shader-effects-inc/shaders",
+      "summary": "WebGPU components for React, Vue, Svelte, Solid and Framer. 5.5k stars.",
+      "why_it_matters": "cheap path to GPU effects in prototypes.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "shader-effects-inc/shaders",
+          "url": "https://github.com/shader-effects-inc/shaders"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "kaankiziltug-logo-design-skill",
+      "section": "GitHub & Open Source",
+      "headline": "kaankiziltug/logo-design-skill",
+      "summary": "A logo design skill for Claude, Gemini CLI and Codex covering principles, SVG craft and testing. 4.5k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "kaankiziltug/logo-design-skill",
+          "url": "https://github.com/kaankiziltug/logo-design-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "pascalorg-editor",
+      "section": "GitHub & Open Source",
+      "headline": "pascalorg/editor",
+      "summary": "Open-source 3D architectural editor with a CLI and MCP tools for agents. 24.8k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "pascalorg/editor",
+          "url": "https://github.com/pascalorg/editor"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "chromedevtools-chrome-devtools-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Chrome DevTools for coding agents. 53.3k stars. Star counts come from an auto-generated list (AgentAtlas) and the GitHub MCP topic page, and were not verified against live data.",
+      "why_it_matters": "lets agents inspect and debug real rendered UI.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "product-hunt-and-agent-driven-account-access",
+      "section": "Social Buzz",
+      "headline": "Product Hunt and agent-driven account access",
+      "kicker": "Product Hunt",
+      "summary": "I could not load [Hacker News](https://news.ycombinator.com/) or live X and Reddit threads in this run, so this section covers only what was verifiable. On [Product Hunt](https://www.producthunt.com/) today, [Gemini 4 Carbon](https://www.producthunt.com/products/gemini-4-carbon), [Empacer](https://www.producthunt.com/products/empacer) and [Floot in ChatGPT](https://www.producthunt.com/products/floot) sit near the top of the launch list. The strongest theme across today's newsletters is agents operating real accounts and apps, from [bank access concerns](https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access) to [Reddit moving toward a logged-in experience](https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito) to limit scraping.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt and agent-driven account access",
+          "url": "https://www.producthunt.com/"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "label": "Gemini 4 Carbon",
+          "url": "https://www.producthunt.com/products/gemini-4-carbon"
+        },
+        {
+          "label": "Empacer",
+          "url": "https://www.producthunt.com/products/empacer"
+        },
+        {
+          "label": "Floot in ChatGPT",
+          "url": "https://www.producthunt.com/products/floot"
+        },
+        {
+          "label": "bank access concerns",
+          "url": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access"
+        },
+        {
+          "label": "Reddit moving toward a logged-in experience",
+          "url": "https://www.axios.com/2026/10/29/reddit-logged-in-ai-search-incognito"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "agents-meet-the-figma-canvas",
+      "section": "Learning Corner",
+      "headline": "Agents, meet the Figma canvas",
+      "kicker": "Article",
+      "summary": "Explains skills and the agent-to-canvas loop you will use this year. [Agents, meet the Figma canvas](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents, meet the Figma canvas",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "elevenlabs-developers-youtube-channel",
+      "section": "Learning Corner",
+      "headline": "ElevenLabs Developers YouTube channel",
+      "kicker": "Video",
+      "summary": "No new verified video surfaced today. Closest: the new [ElevenLabs Developers YouTube channel](https://x.com/ElevenLabsDevs/status/2115403955463471400) announcement, with speech and agent tutorials.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ElevenLabs Developers YouTube channel",
+          "url": "https://x.com/ElevenLabsDevs/status/2115403955463471400"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "oil-oil-oil-ui-2",
+      "section": "Learning Corner",
+      "headline": "oil-oil/oil-ui",
+      "kicker": "GitHub project",
+      "summary": "Read its skill file to see how a design workflow is encoded for agents. [oil-oil/oil-ui](https://github.com/oil-oil/oil-ui).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "oil-oil/oil-ui",
+          "url": "https://github.com/oil-oil/oil-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "solid-glass",
+      "section": "Learning Corner",
+      "headline": "solid-glass",
+      "kicker": "Design resource",
+      "summary": "A fresh take on a design system built for AI apps. [solid-glass](https://github.com/deeplethe/solid-glass).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "solid-glass",
+          "url": "https://github.com/deeplethe/solid-glass"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "cursor-agent-sdk-flow",
+      "section": "Learning Corner",
+      "headline": "Cursor Agent SDK flow",
+      "kicker": "AI workflow",
+      "summary": "[Cursor](https://cursor.com)'s Agent SDK flow (init, dev, eval, deploy) from the [Oct 20 release](https://releasebot.io/updates/cursor). Worth the time because evals are what separate a demo agent from a dependable one.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor Agent SDK flow",
+          "url": "https://releasebot.io/updates/cursor"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "design-system-skills",
+      "section": "Opportunities",
+      "headline": "Design-system skills",
+      "summary": "Package a team's tokens and rules as Figma agent skills. Few designers can do this yet.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "agent-legibility-audits",
+      "section": "Opportunities",
+      "headline": "Agent legibility audits",
+      "summary": "Offer reviews of how readable a product is to agents, using a tool like [Dedica](https://getdedica.com/) as a baseline.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent legibility audits",
+          "url": "https://getdedica.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "agent-consent-and-identity-ux",
+      "section": "Opportunities",
+      "headline": "Agent consent and identity UX",
+      "summary": "Banks are blocking agents; someone has to design the approval flows.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "agent-run-review-interfaces",
+      "section": "Opportunities",
+      "headline": "Agent run review interfaces",
+      "summary": "Flatbread and Cursor canvases show demand for better ways to inspect agent work.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "opt-out-tooling-for-publishers",
+      "section": "Opportunities",
+      "headline": "Opt-out tooling for publishers",
+      "summary": "A simple generator and checker for the new robots.txt token before rollouts land.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    },
+    {
+      "id": "encode-your-design-rules-as-a-skill",
+      "section": "Today's Experiment",
+      "headline": "Encode your design rules as a skill",
+      "kicker": "25 minutes",
+      "summary": "Write a short markdown file listing your spacing scale, type scale, color tokens and three \"never do\" rules. Install [oil-ui](https://github.com/oil-oil/oil-ui) as a model for structure, then ask your coding agent to build one screen with and without the skill. Compare the two outputs side by side and note which rules the agent ignored.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Encode your design rules as a skill",
+          "url": "https://github.com/oil-oil/oil-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-31"
+    }
+  ],
+  "dont_miss": [
+    "Read [Figma's agent canvas post](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) and plan a skills file before metering starts.",
+    "Add the shared AI-training opt-out to any site you own once your hosts support it ([details](https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/)).",
+    "Try the [Cursor](https://cursor.com) Agent SDK or [oil-ui](https://github.com/oil-oil/oil-ui) experiment above."
+  ],
+  "footnote": "Sources: [The Neuron](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/), [AI News for October 30](https://aisdg.substack.com/p/ai-news-for-october-30-2026), [SiliconANGLE](https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/), [AI Weekly](https://aiweekly.co/alerts/openai-google-microsoft-anthropic-back-one-ai-opt-out-token), [Releasebot](https://releasebot.io/updates/cursor), Product Hunt and GitHub. Primary posts for Gemini 4 Carbon, GPT-6.1 Terra and the Anthropic S-1 could not be opened, so those figures come from secondary coverage. Hacker News was unavailable this run."
+}
