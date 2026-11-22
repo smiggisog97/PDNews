@@ -1,6 +1,6 @@
 ---
 // Home, a front page. Layout signature: H7 mosaic hero, then 5/7 index rows,
-// the statement, a white 3-up band, a dark tools index, the journal list,
+// a white 3-up band, a dark tools index, the journal list,
 // and section tiles on white.
 import Base from '../layouts/Base.astro';
 import Media from '../components/Media.astro';
@@ -83,10 +83,6 @@ const arrow = '<svg class="index__arrow" viewBox="0 0 12 12" fill="none" stroke=
         ))}
       </ol>
     </div>
-  </section>
-
-  <section class="statement" aria-label="What this is">
-    <div class="container"><p class="h0 statement__text" data-words>The AI and design news worth a designer's time, every morning at nine.</p></div>
   </section>
 
   {more.length > 0 && (
