@@ -1,0 +1,634 @@
+{
+  "date": "2026-09-12",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1l_P5Gf9H3sPpqLI4fe_vLjkLE9VutW0nkfMJg4dcBEI/edit",
+  "highlights": [
+    {
+      "headline": "DeepSeek shipped V4.1-Flash,",
+      "summary": "a [552B-parameter model that beats its own flagship V4-Pro](https://deepseek.com/en/news/deepseek-v4-1-flash/) on cost and speed, and DeepSeek is retiring V4-Pro because of it."
+    },
+    {
+      "headline": "Figma's Config 2026 recap confirms code, motion, and shaders are now native canvas materials,",
+      "summary": "plus a new [Weave MCP server](https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server) that lets you run Figma tools from [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), or [Cursor](https://cursor.com) without leaving your agent. See the [recap](https://www.figma.com/blog/config-2026-recap/)."
+    },
+    {
+      "headline": "OpenAI asked lawmakers whether a coordinated industry AI slowdown would be legal,",
+      "summary": "a day after five separate launches, and paused new $200/month [Pro](https://openai.com/index/introducing-chatgpt-pro/) subscriptions because of system strain."
+    },
+    {
+      "headline": "Anthropic disclosed that Mythos, a model held back for safety reasons, was breached through a third-party vendor portal,",
+      "summary": "and separately reported escalating distillation attacks on its models from China-based labs."
+    },
+    {
+      "headline": "A McKinsey report found nearly a third of surveyed organizations chose to build software in-house with AI coding agents instead of buying it,",
+      "summary": "a growing line item in enterprise tech spending."
+    }
+  ],
+  "entries": [
+    {
+      "id": "deepseek-retires-its-own-flagship-for-a-smaller-fa",
+      "section": "AI Industry News",
+      "headline": "DeepSeek retires its own flagship for a smaller, faster model",
+      "summary": "[DeepSeek V4.1-Flash](https://deepseek.com/en/news/deepseek-v4-1-flash/) uses an asymmetric encoder-decoder design, 8B active parameters on input and 16B on output, and stores its key-value cache in 4-bit floating point, cutting memory footprint to about a quarter of the prior V4-Flash. Pricing lands at $0.15 per million input tokens and $0.60 per million output. Starting September 14, API calls to V4-Pro get silently rerouted to V4.1-Flash at the cheaper rate. ([SiliconANGLE](https://siliconangle.com/2026/09/10/deepseek-releases-v4-1-flash-says-it-outperforms-flagship-v4-pro/))",
+      "why_it_matters": "open-weight models are closing the gap on cost-efficiency faster than closed labs can defend margin, which keeps pushing inference prices down for everyone building on top.",
+      "links": [
+        {
+          "label": "DeepSeek V4.1-Flash",
+          "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/"
+        },
+        {
+          "label": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/09/10/deepseek-releases-v4-1-flash-says-it-outperforms-flagship-v4-pro/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "openai-questions-its-own-growth-pace",
+      "section": "AI Industry News",
+      "headline": "OpenAI questions its own growth pace",
+      "summary": "[OpenAI](https://openai.com) asked Congress if a coordinated slowdown across AI labs would even be legal under antitrust law, then a day later launched five products including Astra. Pro subscriptions were paused because Astra's launch put unusual strain on infrastructure, and [Amazon](https://amazon.com) advertisers can now buy ChatGPT ad placements through Amazon DSP in a US pilot. ([Carly AI News](https://www.usecarly.com/blog/ai-news-2026-09-11/))",
+      "why_it_matters": "the pause signals real capacity limits behind the growth headlines, and the Amazon ad pilot is the clearest sign yet that OpenAI is monetizing ChatGPT surfaces directly.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://amazon.com"
+        },
+        {
+          "label": "Carly AI News",
+          "url": "https://www.usecarly.com/blog/ai-news-2026-09-11/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "anthropic-s-held-back-model-gets-breached-anyway",
+      "section": "AI Industry News",
+      "headline": "Anthropic's held-back model gets breached anyway",
+      "summary": "[Anthropic](https://www.anthropic.com) confirmed that Mythos, a model deliberately withheld under its Project Glasswing safeguards for its ability to autonomously discover zero-days, was accessed through a compromised third-party vendor portal, not a direct attack on Anthropic's own systems. The company separately said it blocked biology-related queries that could aid weapons development and flagged AI-assisted cyber operations and industrial espionage attempts. ([Tech Startups](https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/))",
+      "why_it_matters": "vendor-chain security, not model security, is turning into the real attack surface for frontier labs.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Tech Startups",
+          "url": "https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "google-commits-big-to-cloud-capacity",
+      "section": "AI Industry News",
+      "headline": "Google commits big to cloud capacity",
+      "summary": "[Google Cloud](https://cloud.google.com) committed up to $40B at a $350B valuation for 5GW of additional capacity over five years, part of the broader industry buildout also seeing Microsoft map a 38-gigawatt expansion and Oracle book a $664B cloud backlog. ([Tech Startups](https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/))",
+      "why_it_matters": "capacity constraints, not model quality, are increasingly the bottleneck shaping which products ship on schedule.",
+      "links": [
+        {
+          "label": "Google Cloud",
+          "url": "https://cloud.google.com"
+        },
+        {
+          "label": "Tech Startups",
+          "url": "https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "california-signs-a-wave-of-ai-legislation",
+      "section": "AI Industry News",
+      "headline": "California signs a wave of AI legislation",
+      "summary": "Governor Newsom signed several AI-related bills, including child online protection measures and an \"IVO\" (identity verification and oversight) framework. ([Transparency Coalition](https://www.transparencycoalition.ai/news/ai-legislative-update-september11-2026))",
+      "why_it_matters": "this lands the same week Anthropic's own age-assurance policy for Claude is under scrutiny, so builders should expect compliance requirements around age verification to tighten across the board, not just at one company.",
+      "links": [
+        {
+          "label": "Transparency Coalition",
+          "url": "https://www.transparencycoalition.ai/news/ai-legislative-update-september11-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "figma-turns-code-motion-and-shaders-into-first-cla",
+      "section": "Product Design & UX",
+      "headline": "Figma turns code, motion, and shaders into first-class canvas materials",
+      "summary": "[Figma's Config 2026 recap](https://www.figma.com/blog/config-2026-recap/) details Code Layers (two-way conversion between design and code directly on canvas), [Figma Motion](https://www.figma.com) (a full timeline editor with keyframes and presets, exportable to CSS, React, MP4, or SVG), shader fills generated from text prompts, and Generative Plugins that let teams build custom tools by describing behavior in plain language, no API knowledge required.",
+      "why_it_matters": "the gap between \"design tool\" and \"code editor\" keeps shrinking, and designers who can direct these materials with prompts get leverage that used to require an engineer.",
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "Figma Motion",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "figma-s-weave-tools-reach-agents-directly",
+      "section": "Product Design & UX",
+      "headline": "Figma's Weave tools reach agents directly",
+      "summary": "Figma added MCP server support so [Weave tools](https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server) can be invoked from [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), or [Cursor](https://cursor.com) without switching apps, building on the existing [Figma Dev Mode MCP server](https://www.figma.com/blog/introducing-figma-mcp-server/) that already exposes components, variables, and layout data to coding agents. ([Figma Help Center](https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026))",
+      "why_it_matters": "a designer-to-code handoff that used to take a ticket and a Slack thread can now be a single prompt inside the same agent session used for coding.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Weave tools",
+          "url": "https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Figma Dev Mode MCP server",
+          "url": "https://www.figma.com/blog/introducing-figma-mcp-server/"
+        },
+        {
+          "label": "Figma Help Center",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "airjelly",
+      "section": "New AI Tools",
+      "headline": "AirJelly",
+      "summary": "An always-on desktop agent that watches your screen activity, infers what you're working on, and proactively surfaces to-dos and follow-ups instead of waiting to be asked. Free, macOS now, Windows and Linux in progress.",
+      "why_it_matters": null,
+      "audience": "people drowning in scattered tasks across apps.",
+      "links": [
+        {
+          "label": "AirJelly",
+          "url": "https://www.airjelly.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "deepseek-v4-1-flash",
+      "section": "New AI Tools",
+      "headline": "DeepSeek V4.1-Flash",
+      "summary": "An open-weight, vision-capable model that beats DeepSeek's own flagship on cost and speed. Free to try via the DeepSeek API.",
+      "why_it_matters": null,
+      "audience": "builders who want frontier-adjacent quality at a fraction of closed-model pricing.",
+      "links": [
+        {
+          "label": "DeepSeek V4.1-Flash",
+          "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "keiki",
+      "section": "New AI Tools",
+      "headline": "Keiki",
+      "summary": "Build one customer-facing AI agent and deploy it across every channel (web, chat, voice) from a single workflow.",
+      "why_it_matters": null,
+      "audience": "small teams that don't want to maintain separate bots per channel.",
+      "links": [
+        {
+          "label": "Keiki",
+          "url": "https://www.producthunt.com/products/airjelly"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tovel-ai",
+      "section": "New AI Tools",
+      "headline": "Tovel AI",
+      "summary": "Converts spoken conversation into structured action in three steps, aimed at wearable and voice-first productivity use cases.",
+      "why_it_matters": null,
+      "audience": "people testing voice-native workflows.",
+      "links": [],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "t-rex-label",
+      "section": "New AI Tools",
+      "headline": "T-Rex Label",
+      "summary": "One-click vision dataset annotation, cutting a normally tedious labeling step down to a single action.",
+      "why_it_matters": null,
+      "audience": "small computer-vision teams without a dedicated labeling pipeline.",
+      "links": [],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "figma-weave-via-mcp",
+      "section": "New AI Tools",
+      "headline": "Figma Weave via MCP",
+      "summary": "Run Figma's node-based generative workflows from inside Claude, ChatGPT, or Cursor.",
+      "why_it_matters": null,
+      "audience": "designers already living in an agent-driven workflow.",
+      "links": [
+        {
+          "label": "Figma Weave via MCP",
+          "url": "https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "agent-infrastructure-is-now-a-mainstream-product-c",
+      "section": "Trends to Watch",
+      "headline": "Agent infrastructure is now a mainstream product category, not a demo",
+      "summary": "The volume of production-ready agent tools launching weekly, from voice phone agents to multi-channel bots like [Keiki](https://www.producthunt.com/products/airjelly), shows the market has moved from \"AI that helps you write faster\" to \"AI that takes over a task end to end and brings the work back for review.\"",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how your product's workflows map to a hand-off point where an agent, not a human, does the middle step."
+      },
+      "links": [
+        {
+          "label": "Keiki",
+          "url": "https://www.producthunt.com/products/airjelly"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "design-tools-are-absorbing-code-motion-and-generat",
+      "section": "Trends to Watch",
+      "headline": "Design tools are absorbing code, motion, and generative logic as native materials",
+      "summary": "Figma's Config 2026 announcements make code and motion first-class canvas objects, not exports.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "Figma's Code Layers and Generative Plugins now, before \"can you make this interactive\" stops being an engineering handoff."
+      },
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "mcp-governance-is-becoming-its-own-security-catego",
+      "section": "Trends to Watch",
+      "headline": "MCP governance is becoming its own security category",
+      "summary": "Tools like Tenable's CyberAgents Exchange AI Inspector now exist specifically to vet agents, skills, and MCP servers before deployment, a direct response to incidents like Anthropic's Mythos vendor-portal breach. ([Cyber Desserts](https://blog.cyberdesserts.com/ai-agent-security-risks/))",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "what an MCP server actually exposes before wiring one into a production workflow."
+      },
+      "links": [
+        {
+          "label": "Cyber Desserts",
+          "url": "https://blog.cyberdesserts.com/ai-agent-security-risks/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "doordash-calm-and-duolingo-s-onboarding-discipline",
+      "section": "Product Design Inspiration",
+      "headline": "Doordash, Calm, and Duolingo's onboarding discipline",
+      "summary": "These apps consistently cap their product tour at three or four cards tied to a real user benefit, defer non-essential profile setup, and give new users something to do immediately rather than a blank empty state. ([UXCam](https://uxcam.com/blog/10-apps-with-great-user-onboarding/))",
+      "why_it_matters": "most of a user's activation decision happens in the first ninety seconds, before they've done anything meaningful, so the flow has to earn trust before asking for effort.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "UXCam",
+          "url": "https://uxcam.com/blog/10-apps-with-great-user-onboarding/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "figma-motion-s-timeline-editor",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Motion's timeline editor",
+      "summary": "Building a full keyframe timeline directly into the design canvas, with export to CSS, React, or video, removes the round trip between a designer's intent and an engineer's implementation of motion. ([Figma Blog](https://www.figma.com/blog/config-2026-recap/))",
+      "why_it_matters": "motion has always been the hardest design decision to communicate precisely; giving designers the actual timeline instead of a Lottie file and a hope closes that gap.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma Blog",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "progressive-disclosure-in-onboarding-forms",
+      "section": "Product Design Inspiration",
+      "headline": "Progressive disclosure in onboarding forms",
+      "summary": "Passkeys, saved progress, and deferred KYC steps have cut onboarding drop-off by 40-50% in major markets this year. ([Design Studio UI/UX](https://www.designstudiouiux.com/blog/mobile-app-onboarding-best-practices/))",
+      "why_it_matters": "every field you don't ask for up front is a field that can't cause someone to abandon the flow.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Design Studio UI/UX",
+          "url": "https://www.designstudiouiux.com/blog/mobile-app-onboarding-best-practices/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "openclaw",
+      "section": "GitHub & Open Source",
+      "headline": "OpenClaw",
+      "summary": "An autonomous agent framework that went from an unlisted repo to over 380,000 stars in under a year, reportedly the fastest star growth in GitHub's history. Gaining attention because it packages agent orchestration in a way solo developers can run locally without enterprise tooling. ([Star History](https://www.star-history.com/openclaw/openclaw/))",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenClaw",
+          "url": "https://github.com/openclaw/openclaw"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "langflow",
+      "section": "GitHub & Open Source",
+      "headline": "Langflow",
+      "summary": "A drag-and-drop visual builder for AI agent pipelines, now at roughly 146k stars. Gaining attention as part of a broader shift toward no-code agent design, mirroring what happened to early web development.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Langflow",
+          "url": "https://github.com/langflow-ai/langflow"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "figma-mcp-server-guide",
+      "section": "GitHub & Open Source",
+      "headline": "figma/mcp-server-guide",
+      "summary": "The official guide for wiring the Figma MCP server into Cursor, Claude Code, and other agentic coding tools. Gaining attention alongside this week's Weave MCP rollout as designers and engineers set up design-to-code pipelines.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "figma/mcp-server-guide",
+          "url": "https://github.com/figma/mcp-server-guide"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "deepseek-v4-1-flash-tao-and-villani-and-claude-age",
+      "section": "Social Buzz",
+      "headline": "DeepSeek V4.1-Flash, Tao and Villani, and Claude age assurance",
+      "kicker": "Hacker News",
+      "summary": "The top AI thread this week centered on [DeepSeek V4.1-Flash's](https://deepseek.com/en/news/deepseek-v4-1-flash/) architecture, alongside a pointed debate sparked by Fields Medalists Terence Tao and Cédric Villani, who argued that AI labs treating unsolved major math problems as benchmarks is a misaligned use of both mathematicians' time and model capability. Separately, discussion continues around [Anthropic's age-assurance policy on Claude](https://support.claude.com/en/articles/15171100-age-assurance-on-claude), after adult users reported accounts incorrectly suspended for being flagged as minors, with several since reinstated after ID verification. ([Zeli HN Digest](https://zeli.app/digest/2026-09-11))",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "DeepSeek V4.1-Flash's",
+          "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/"
+        },
+        {
+          "label": "Anthropic's age-assurance policy on Claude",
+          "url": "https://support.claude.com/en/articles/15171100-age-assurance-on-claude"
+        },
+        {
+          "label": "Zeli HN Digest",
+          "url": "https://zeli.app/digest/2026-09-11"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "deepseek-releases-v4-1-flash-says-it-outperforms-f",
+      "section": "Learning Corner",
+      "headline": "DeepSeek releases V4.1-Flash, says it outperforms flagship V4-Pro",
+      "kicker": "Article",
+      "summary": "SiliconANGLE. Worth it for a clear technical breakdown of the encoder-decoder split and why smaller active-parameter counts are winning on cost.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "DeepSeek releases V4.1-Flash, says it outperforms flagship V4-Pro",
+          "url": "https://siliconangle.com/2026/09/10/deepseek-releases-v4-1-flash-says-it-outperforms-flagship-v4-pro/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "the-first-truly-proactive-ai-agent-is-here-airjell",
+      "section": "Learning Corner",
+      "headline": "The First Truly Proactive AI Agent Is Here (AirJelly)",
+      "kicker": "Video",
+      "summary": "Worth it as a concrete look at what \"proactive agent\" means in practice, beyond the marketing phrase.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The First Truly Proactive AI Agent Is Here (AirJelly)",
+          "url": "https://www.youtube.com/watch?v=a9S9y0fy9FE"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "figma-mcp-server-guide-2",
+      "section": "Learning Corner",
+      "headline": "figma/mcp-server-guide",
+      "kicker": "GitHub project",
+      "summary": "Worth it if you want your design files reachable from whichever coding agent you already use.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "figma/mcp-server-guide",
+          "url": "https://github.com/figma/mcp-server-guide"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "config-2026-new-materials-new-tools-and-a-more-exp",
+      "section": "Learning Corner",
+      "headline": "Config 2026: New Materials, New Tools and a More Expressive Canvas",
+      "kicker": "Design resource",
+      "summary": "Figma Blog. Worth it as the single most complete map of where Figma is taking the canvas this year.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026: New Materials, New Tools and a More Expressive Canvas",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "claude-code-and-figma-set-up-the-mcp-server",
+      "section": "Learning Corner",
+      "headline": "Claude Code and Figma: Set up the MCP server",
+      "kicker": "AI workflow",
+      "summary": "Figma Help Center. Worth it as a direct, working setup guide rather than a conceptual overview.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code and Figma: Set up the MCP server",
+          "url": "https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "agent-ux-design",
+      "section": "Opportunities",
+      "headline": "Agent UX design",
+      "summary": "As tools like [AirJelly](https://www.airjelly.ai/) and [Keiki](https://www.producthunt.com/products/airjelly) push agents from reactive to proactive, someone has to design what it feels like when software acts without being asked. That's a genuinely new UX problem, not a rehash of chatbot design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AirJelly",
+          "url": "https://www.airjelly.ai/"
+        },
+        {
+          "label": "Keiki",
+          "url": "https://www.producthunt.com/products/airjelly"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "design-to-code-workflow-consulting",
+      "section": "Opportunities",
+      "headline": "Design-to-code workflow consulting",
+      "summary": "With Figma's Code Layers and Weave MCP server live, teams need people who can actually wire these into a real pipeline, not just demo them.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "trust-and-verification-ux",
+      "section": "Opportunities",
+      "headline": "Trust and verification UX",
+      "summary": "Age-assurance policies and California's new IVO framework mean every consumer product touching minors now needs a verification flow. Designing one that isn't hostile to legitimate adult users (the exact failure Anthropic is dealing with) is a real, billable problem.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "motion-design-for-interactive-products",
+      "section": "Opportunities",
+      "headline": "Motion design for interactive products",
+      "summary": "Figma Motion lowers the floor for who can produce production-grade motion, which raises the ceiling for what's expected in a polished product. Early fluency here is a differentiator.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "dataset-and-annotation-tooling-ux",
+      "section": "Opportunities",
+      "headline": "Dataset and annotation tooling UX",
+      "summary": "Tools like T-Rex Label show there's still real design work in making unglamorous ML infrastructure steps (labeling, review, QA) fast and low-friction.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "generate-a-component-through-the-figma-mcp-server",
+      "section": "Today's Experiment",
+      "headline": "Generate a component through the Figma MCP server",
+      "kicker": "Under 30 minutes",
+      "summary": "Set up the [Figma MCP server](https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server) with Claude or Cursor (roughly 15 minutes) and ask it to generate a working component from one of your existing Figma frames. Compare the output against what you'd normally hand off to an engineer, and note where it gets the spacing or interaction wrong. Under 30 minutes total, and it's the fastest way to feel whether design-to-code agents are actually ready for your stack yet.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma MCP server",
+          "url": "https://help.figma.com/hc/en-us/articles/39888612464151-Claude-Code-and-Figma-Set-up-the-MCP-server"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-12"
+    }
+  ],
+  "dont_miss": [
+    "**[DeepSeek V4.1-Flash's API pricing switch](https://deepseek.com/en/news/deepseek-v4-1-flash/)** takes effect September 14: any code hitting the V4-Pro endpoint gets silently rerouted, so check your integration now if you use DeepSeek's API.",
+    "**[Figma's Config 2026 features](https://www.figma.com/blog/config-2026-recap/)** (Code Layers, Motion, Weave MCP) are rolling out now, worth a first look this week rather than after adoption pressure builds.",
+    "**[Anthropic's Claude age-assurance policy](https://support.claude.com/en/articles/15171100-age-assurance-on-claude)** and California's new IVO framework both point to verification UX becoming a near-term requirement, not a nice-to-have, for any consumer AI product."
+  ],
+  "footnote": "Sources: AI Weekly, TechCrunch, Tech Startups, Carly AI News, Transparency Coalition, SiliconANGLE, Dataconomy, Figma Blog, Figma Help Center, UXCam, Design Studio UI/UX, Star History, Zeli HN Digest, Cyber Desserts, and Product Hunt listings, all accessed September 12, 2026."
+}
