@@ -1,0 +1,913 @@
+{
+  "date": "2026-09-25",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1S0LVMfyRZ69Kg8FZ-M4WjK9UmdZFsvukasmEcwMK1po/edit",
+  "highlights": [
+    {
+      "headline": "Price war goes nuclear.",
+      "summary": "[OpenAI](https://openai.com/index/introducing-gpt-6-sol-and-luna/) launched [GPT-6 Sol and Luna](https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/) on September 22 at half the price of the 5.6 series, and [Anthropic](https://www.anthropic.com/claude-opus-5-5) shipped [Claude Opus 5.5](https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/) just 90 minutes earlier the same day. Frontier-adjacent quality is now arriving at commodity prices."
+    },
+    {
+      "headline": "Agentic commerce turns into a turf war.",
+      "summary": "[Amazon blocked Meta's Muse AI agent](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/) from shopping on its site, citing undisclosed credential storage and non-transparent browsing. Amazon has done the same to agents from Google, OpenAI, and Perplexity, meaning every major shopping agent now faces a live access fight."
+    },
+    {
+      "headline": "Claude found something in a lab, not a chat window.",
+      "summary": "[Anthropic's new life sciences group](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) reports that Claude autonomously identified a [CRISPR-like enzyme system](https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/) in bacteriophage DNA using roughly 950 agents over 21 hours. Humans still run the physical lab work."
+    },
+    {
+      "headline": "\"Agent skills\" is the new plugin layer.",
+      "summary": "[Notion](https://www.notion.com/releases), [Framer](https://www.framer.com/updates), and [Linear](https://linear.app/changelog) all shipped reusable, shareable AI-instruction systems this month, portable across tools including Claude Code and Cursor. This is becoming the standard way teams encode \"how we work\" for agents."
+    },
+    {
+      "headline": "Gemini 4 is close.",
+      "summary": "[DeepMind](https://deepmind.google/)'s chief signaled a [pre-year-end Gemini 4 launch](https://northeasttimes.com/2026/09/24/google-deepmind-s-new-chief-signals-gemini-4-launch-is-close/), and Google separately shipped [Gemini 3.8 Flash TTS](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/) with 2,000+ voices and cloning support."
+    }
+  ],
+  "entries": [
+    {
+      "id": "openai-cuts-gpt-6-prices-in-half-with-sol-and-luna",
+      "section": "AI Industry News",
+      "headline": "OpenAI cuts GPT-6 prices in half with Sol and Luna",
+      "summary": "[OpenAI](https://openai.com/) released [GPT-6 Sol and Luna](https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/) on September 22, extending the GPT-6 family it opened with [Astra](https://evolink.ai/blog/gpt-6-release-date/) earlier this month. Sol targets complex tasks like coding at \"Astra-level reliability\" with roughly half the error rate of its predecessor; Luna is built for high-volume, low-complexity work like summarizing or extracting information. Both cost half of what the 5.6-series charged, which OpenAI attributes to better caching and inference efficiency.",
+      "why_it_matters": "for builders, this means near-flagship reasoning is now available at a price point that makes it viable for high-volume production features, not just prototypes.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/"
+        },
+        {
+          "label": "GPT-6 Sol and Luna",
+          "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
+        },
+        {
+          "label": "Astra",
+          "url": "https://evolink.ai/blog/gpt-6-release-date/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "anthropic-ships-opus-5-5-and-finds-a-new-enzyme-system",
+      "section": "AI Industry News",
+      "headline": "Anthropic ships Opus 5.5 and finds a new enzyme system",
+      "summary": "[Anthropic](https://www.anthropic.com/) released [Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) on September 22, its first frontier model since committing to slower release cadence. It performs close to Anthropic's premium Fable 5.1 tier on most tasks, completed a 680,000-line code migration in under a day, and cut typical workload costs by about 40%. Sonnet 5.5 and Haiku 5.5 are coming \"in the coming weeks.\" Separately, Anthropic announced a [new life sciences research group](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) after Claude autonomously identified a CRISPR-like enzyme system, a discovery [still awaiting independent validation](https://www.aljazeera.com/economy/2026/9/24/ai-model-claude-discovers-crispr-like-enzyme-system-anthropic-says) from the broader research community. For now, all physical lab work stays human-run.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/"
+        },
+        {
+          "label": "Claude Opus 5.5",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "label": "new life sciences research group",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        },
+        {
+          "label": "still awaiting independent validation",
+          "url": "https://www.aljazeera.com/economy/2026/9/24/ai-model-claude-discovers-crispr-like-enzyme-system-anthropic-says"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "google-deepmind-signals-gemini-4-ships-gemini-3-8-tts",
+      "section": "AI Industry News",
+      "headline": "Google DeepMind signals Gemini 4, ships Gemini 3.8 TTS",
+      "summary": "[Google DeepMind](https://deepmind.google/)'s chief said Gemini 4 is in early post-training with a target of shipping before year-end, per a [report from this week](https://northeasttimes.com/2026/09/24/google-deepmind-s-new-chief-signals-gemini-4-launch-is-close/). In the meantime, Google shipped [Gemini 3.8 Flash TTS and Flash-Lite TTS](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/), its most expressive audio models yet, supporting 2,000+ voices across 100+ languages with voice design from a text prompt and cloning.",
+      "why_it_matters": "worth watching for anyone building voice interfaces or conversational agents.",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google/"
+        },
+        {
+          "label": "report from this week",
+          "url": "https://northeasttimes.com/2026/09/24/google-deepmind-s-new-chief-signals-gemini-4-launch-is-close/"
+        },
+        {
+          "label": "Gemini 3.8 Flash TTS and Flash-Lite TTS",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "xai-ships-grok-4-7-with-multimodal-input",
+      "section": "AI Industry News",
+      "headline": "xAI ships Grok 4.7 with multimodal input",
+      "summary": "[xAI](https://x.ai/) released [Grok 4.7](https://emergent.sh/news/xai-launches-grok-4-7-new-multimodal-ai-model) on September 21, adding unified text, image, and video understanding for tasks like document analysis and visual question answering. It's now generally available with tiered API access, giving teams a third credible multimodal option alongside OpenAI and Google.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "xAI",
+          "url": "https://x.ai/"
+        },
+        {
+          "label": "Grok 4.7",
+          "url": "https://emergent.sh/news/xai-launches-grok-4-7-new-multimodal-ai-model"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "amazon-blocks-meta-s-muse-in-an-agentic-shopping-standoff",
+      "section": "AI Industry News",
+      "headline": "Amazon blocks Meta's Muse in an agentic-shopping standoff",
+      "summary": "[Meta's Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/) agent saw a download surge this week, but [Amazon](https://www.amazon.com/) responded by [blocking it from Amazon.com](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/), telling users that \"unauthorized AI agent\" access violates its terms. Amazon's stated concerns: Muse didn't ask permission, doesn't identify itself while browsing, and stores customer credentials in ways that risk account security. Amazon has previously blocked agents from Google, OpenAI, and Perplexity too, despite a separate multibillion-dollar chip deal with Meta. At [Meta Connect 2026](https://www.tomsguide.com/news/live/meta-connect-2026-live), Meta pushed further into Muse-powered hardware, including new AI glasses and a teased handheld device.",
+      "why_it_matters": "this is the clearest sign yet that agentic commerce needs a standardized, consent-based protocol before it scales.",
+      "links": [
+        {
+          "label": "Meta's Muse",
+          "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/"
+        },
+        {
+          "label": "blocking it from Amazon.com",
+          "url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/"
+        },
+        {
+          "label": "Meta Connect 2026",
+          "url": "https://www.tomsguide.com/news/live/meta-connect-2026-live"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "amazon-opens-seller-central-to-ai-agents",
+      "section": "AI Industry News",
+      "headline": "Amazon opens Seller Central to AI agents",
+      "summary": "Separately, [Amazon](https://www.amazon.com/) launched a beta plugin letting sellers manage inventory, pricing, and analytics through [Claude](https://claude.ai/) or Amazon's own Quick assistant via Seller Central APIs, bundling a free 12-month Quick Plus subscription for eligible sellers through the end of 2026.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "figma-pushes-further-into-ai-native-workflows",
+      "section": "Product Design & UX",
+      "headline": "Figma pushes further into AI-native workflows",
+      "summary": "[Figma](https://www.figma.com/) had a busy month: [Weave for AI product photography](https://spyingbee.com/updates/figma/2026-09) that preserves labels, colors, and textures shipped September 21, community publishing for AI-native canvas tools followed on the 16th, and generative shaders moved to open beta on September 1. Figma also published a [guide to building an AI-native organization](https://spyingbee.com/updates/figma/2026-09) this week, drawing on Adyen, Atlassian, and Rocket.",
+      "why_it_matters": "teams doing e-commerce or catalog work can now prototype on-brand product photography without a studio shoot.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "label": "Weave for AI product photography",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "framer-notion-and-linear-all-ship-agent-skills",
+      "section": "Product Design & UX",
+      "headline": "Framer, Notion, and Linear all ship \"agent skills\"",
+      "summary": "[Framer](https://www.framer.com/) launched [Skills](https://www.framer.com/updates) on September 22, letting teams save reusable instructions for design systems, writing style, or CMS workflows. [Notion](https://www.notion.com/) shipped [Notion 3.7](https://www.notion.com/releases) on September 15 with a team-wide skills library that can be downloaded into Claude Code or Cursor, plus custom sub-agents and admin controls over which models teams can use. [Linear](https://linear.app/) added [adaptive model routing and open-weight model support](https://linear.app/changelog) to its coding agent on September 24.",
+      "why_it_matters": "the pattern across all three: \"how our team works\" is becoming a portable, shareable artifact instead of tribal knowledge.",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com/"
+        },
+        {
+          "label": "Skills",
+          "url": "https://www.framer.com/updates"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com/"
+        },
+        {
+          "label": "Notion 3.7",
+          "url": "https://www.notion.com/releases"
+        },
+        {
+          "label": "Linear",
+          "url": "https://linear.app/"
+        },
+        {
+          "label": "adaptive model routing and open-weight model support",
+          "url": "https://linear.app/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "linear-s-priority-inbox-and-team-scale-controls",
+      "section": "Product Design & UX",
+      "headline": "Linear's Priority Inbox and team-scale controls",
+      "summary": "[Linear](https://linear.app/changelog) shipped a Priority Inbox on September 3 that splits notifications into \"needs your attention\" versus \"can wait,\" filterable by source. This week it added custom project labels, lead-team ownership, and durable IDs, aimed at organizations running many concurrent projects through Linear's agent-assisted workflows.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Linear",
+          "url": "https://linear.app/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "rive-adds-constraint-navigation-and-path-simplification",
+      "section": "Product Design & UX",
+      "headline": "Rive adds constraint navigation and path simplification",
+      "summary": "[Rive](https://rive.app/)'s editor picked up [constraint navigation and path simplification](https://alternativeto.net/news/2026/9/rive-editor-adds-constraint-navigation-and-path-simplification/) this month, making it easier to debug complex interactive animations and clean up vector paths without leaving the canvas.",
+      "why_it_matters": "useful for motion and interaction designers building state-driven UI animation.",
+      "links": [
+        {
+          "label": "Rive",
+          "url": "https://rive.app/"
+        },
+        {
+          "label": "constraint navigation and path simplification",
+          "url": "https://alternativeto.net/news/2026/9/rive-editor-adds-constraint-navigation-and-path-simplification/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "gpt-6-sol",
+      "section": "New AI Tools",
+      "headline": "GPT-6 Sol",
+      "summary": "OpenAI: a coding- and reasoning-focused model at half the price of the previous generation.",
+      "why_it_matters": null,
+      "audience": "developers who need near-flagship quality in production.",
+      "links": [
+        {
+          "label": "GPT-6 Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "gpt-6-luna",
+      "section": "New AI Tools",
+      "headline": "GPT-6 Luna",
+      "summary": "OpenAI: built for high-volume, low-complexity work like summarizing or extraction.",
+      "why_it_matters": null,
+      "audience": "teams processing large document or support volumes cheaply.",
+      "links": [
+        {
+          "label": "GPT-6 Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "claude-opus-5-5",
+      "section": "New AI Tools",
+      "headline": "Claude Opus 5.5",
+      "summary": "Anthropic: large-scale code migrations and web performance tuning at 40% lower typical cost than Opus 5.",
+      "why_it_matters": null,
+      "audience": "engineering teams tackling legacy codebases.",
+      "links": [
+        {
+          "label": "Claude Opus 5.5",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "figma-weave",
+      "section": "New AI Tools",
+      "headline": "Figma Weave",
+      "summary": "Figma: generates on-brand AI product photography while preserving labels, colors, and textures.",
+      "why_it_matters": null,
+      "audience": "e-commerce and DTC designers.",
+      "links": [
+        {
+          "label": "Figma Weave",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "framer-skills",
+      "section": "New AI Tools",
+      "headline": "Framer Skills",
+      "summary": "Framer: saves reusable AI instructions for design systems and CMS workflows, referenced project-wide.",
+      "why_it_matters": null,
+      "audience": "design teams standardizing how their AI agent builds pages.",
+      "links": [
+        {
+          "label": "Framer Skills",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "notion-agent-skills",
+      "section": "New AI Tools",
+      "headline": "Notion Agent Skills",
+      "summary": "Notion 3.7: a shareable skills library that exports into Claude Code and Cursor.",
+      "why_it_matters": null,
+      "audience": "ops and PM teams codifying process for AI agents.",
+      "links": [
+        {
+          "label": "Notion Agent Skills",
+          "url": "https://www.notion.com/releases"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "linear-coding-agent",
+      "section": "New AI Tools",
+      "headline": "Linear Coding Agent",
+      "summary": "Linear: adaptive routing sends simple tasks to faster models and now supports open-weight models like GLM.",
+      "why_it_matters": null,
+      "audience": "engineering teams wanting cost control on agent-driven tickets.",
+      "links": [
+        {
+          "label": "Linear Coding Agent",
+          "url": "https://linear.app/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "rive-editor",
+      "section": "New AI Tools",
+      "headline": "Rive Editor",
+      "summary": "Rive: constraint navigation and path simplification for interactive animation work.",
+      "why_it_matters": null,
+      "audience": "motion/UI designers building state machines.",
+      "links": [
+        {
+          "label": "Rive Editor",
+          "url": "https://alternativeto.net/news/2026/9/rive-editor-adds-constraint-navigation-and-path-simplification/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "gemini-3-8-flash-tts",
+      "section": "New AI Tools",
+      "headline": "Gemini 3.8 Flash TTS",
+      "summary": "Google: prompt-based voice design and cloning across 2,000+ voices and 100+ languages.",
+      "why_it_matters": null,
+      "audience": "conversational agent and voice-UI designers.",
+      "links": [
+        {
+          "label": "Gemini 3.8 Flash TTS",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "grok-4-7",
+      "section": "New AI Tools",
+      "headline": "Grok 4.7",
+      "summary": "xAI: unified text, image, and video understanding for document analysis and visual QA.",
+      "why_it_matters": null,
+      "audience": "teams wanting multimodal vendor diversity.",
+      "links": [
+        {
+          "label": "Grok 4.7",
+          "url": "https://x.ai/news"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "agentic-commerce-needs-a-protocol-fast",
+      "section": "Trends to Watch",
+      "headline": "Agentic commerce needs a protocol, fast",
+      "summary": "Amazon has now blocked shopping agents from [Meta, Google, OpenAI, and Perplexity](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/). The unresolved questions (should agents use public APIs or simulate browsing, must they self-identify, can merchants unilaterally block them) will shape how every AI-assisted checkout flow gets designed for the next year.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "watch for an emerging standard here the way robots.txt standardized web crawling."
+      },
+      "links": [
+        {
+          "label": "Meta, Google, OpenAI, and Perplexity",
+          "url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "skills-as-the-new-integration-layer",
+      "section": "Trends to Watch",
+      "headline": "\"Skills\" as the new integration layer",
+      "summary": "Notion, Framer, Linear, and Claude itself now all support portable, reusable agent instructions. This is quietly becoming the equivalent of the plugin ecosystem for the agent era.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "start writing and versioning your own skill files now, before every tool has a slightly incompatible format."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "frontier-quality-is-becoming-a-commodity",
+      "section": "Trends to Watch",
+      "headline": "Frontier quality is becoming a commodity",
+      "summary": "GPT-6 Sol/Luna and Opus 5.5 both cut prices by roughly 40-50% while closing the gap to their flagship siblings.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "cost is no longer the main reason to avoid frontier-adjacent models in production features."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "ai-native-biology-research-is-now-public-and-adversarial-to-",
+      "section": "Trends to Watch",
+      "headline": "AI-native biology research is now public and adversarial to scrutinize",
+      "summary": "Anthropic's [enzyme discovery](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) is impressive but unverified by outside researchers, and Dario Amodei has acknowledged prior art from Stanford.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "treat AI science claims from any lab as preliminary until peer-reviewed, regardless of the agent count involved."
+      },
+      "links": [
+        {
+          "label": "enzyme discovery",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "mcp-infrastructure-is-maturing-past-hobby-servers",
+      "section": "Trends to Watch",
+      "headline": "MCP infrastructure is maturing past hobby servers",
+      "summary": "[AWS's MCP server suite](https://github.com/awslabs/mcp/releases/tag/2026.09.20260922000649) shipped security hardening (SSRF prevention, SQL policy enforcement) this week, a sign MCP is moving from experimental to production-grade infrastructure.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "if you're deploying MCP servers internally, security review is now table stakes, not optional."
+      },
+      "links": [
+        {
+          "label": "AWS's MCP server suite",
+          "url": "https://github.com/awslabs/mcp/releases/tag/2026.09.20260922000649"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "linear-s-priority-inbox",
+      "section": "Product Design Inspiration",
+      "headline": "Linear's Priority Inbox",
+      "summary": "[Linear's Priority Inbox](https://linear.app/changelog) splits notifications into what needs attention now versus what can wait, with per-source and custom filtering.",
+      "why_it_matters": "it doesn't ask users to triage everything themselves; it makes a confident first pass and lets people override it.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Linear's Priority Inbox",
+          "url": "https://linear.app/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "notion-s-agent-skills-library",
+      "section": "Product Design Inspiration",
+      "headline": "Notion's Agent Skills library",
+      "summary": "[Notion 3.7's skills library](https://www.notion.com/releases) treats \"how our team works\" as a shareable, downloadable artifact that exports directly into Claude Code or Cursor.",
+      "why_it_matters": "it turns tacit process knowledge into a portable object instead of a wiki page nobody reads.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Notion 3.7's skills library",
+          "url": "https://www.notion.com/releases"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "framer-skills-referenced-in-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Framer Skills, referenced in-canvas",
+      "summary": "[Framer's Skills](https://www.framer.com/updates) feature lets a saved instruction reference actual project elements (specific pages, components) rather than living as generic prose.",
+      "why_it_matters": "the instruction stays grounded in the real file, reducing drift between what's documented and what's built.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Framer's Skills",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "nousresearch-hermes-agent",
+      "section": "GitHub & Open Source",
+      "headline": "NousResearch/hermes-agent",
+      "summary": "An open, self-improving agent framework from Nous Research that has climbed to roughly 248,000 stars on trending trackers this week. Gaining attention for its self-evolution approach to optimizing prompts and skills over time.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "NousResearch/hermes-agent",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "mendableai-firecrawl",
+      "section": "GitHub & Open Source",
+      "headline": "mendableai/firecrawl",
+      "summary": "A web data API for scraping and searching at scale, widely used as the data-fetching backbone for agent projects. It's trending again this week alongside renewed interest in agent-driven research workflows.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mendableai/firecrawl",
+          "url": "https://github.com/mendableai/firecrawl"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "awslabs-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "awslabs/mcp",
+      "summary": "AWS's official collection of MCP servers, which shipped a [release this week](https://github.com/awslabs/mcp/releases/tag/2026.09.20260922000649) adding vended-metrics tooling for HealthOmics, Cost Optimization Hub integration for billing, and SSRF/SQL-injection hardening across several servers. Worth watching if you're standardizing on MCP for enterprise data access.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awslabs/mcp",
+          "url": "https://github.com/awslabs/mcp"
+        },
+        {
+          "label": "release this week",
+          "url": "https://github.com/awslabs/mcp/releases/tag/2026.09.20260922000649"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "claude-discovers-a-novel-enzyme-system",
+      "section": "Social Buzz",
+      "headline": "Claude discovers a novel enzyme system",
+      "kicker": "Hacker News",
+      "summary": "(684 points): the top AI story of the week, with commenters split between excitement and skepticism about the \"950 agents, 21 hours\" framing.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude discovers a novel enzyme system",
+          "url": "https://news.ycombinator.com/item?id=49820134"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "transformers-explained-visually",
+      "section": "Social Buzz",
+      "headline": "Transformers Explained Visually",
+      "kicker": "Hacker News",
+      "summary": "(456 points): a well-received visual walkthrough of transformer fundamentals, useful to bookmark for onboarding new team members.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Transformers Explained Visually",
+          "url": "https://news.ycombinator.com/item?id=49792342"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "ai-coding-has-made-ci-a-bottleneck-so-we-reworked-ours-to-ke",
+      "section": "Social Buzz",
+      "headline": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+      "kicker": "Hacker News",
+      "summary": "(260 points): a practical account of what breaks in continuous integration once most commits are AI-generated, and how one team restructured their pipeline.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+          "url": "https://news.ycombinator.com/item?id=49792067"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "can-gzip-be-a-language-model",
+      "section": "Social Buzz",
+      "headline": "Can gzip be a language model?",
+      "kicker": "Hacker News",
+      "summary": "(196 points): a technical dive into using compression algorithms as a crude language model, popular with the \"understand the fundamentals\" crowd.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Can gzip be a language model?",
+          "url": "https://news.ycombinator.com/item?id=49797323"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "i-said-no-and-apple-said-yes",
+      "section": "Social Buzz",
+      "headline": "I said no and Apple said yes",
+      "kicker": "Hacker News",
+      "summary": "(300 points): a widely discussed personal account of Apple Intelligence overriding a user's stated preference, worth reading as a cautionary UX case study in consent and permissions design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "I said no and Apple said yes",
+          "url": "https://news.ycombinator.com/item?id=49797982"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "amazon-blocks-muse",
+      "section": "Social Buzz",
+      "headline": "Amazon blocks Muse",
+      "kicker": "Reddit",
+      "summary": "The [Amazon-blocks-Muse story](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/) was the most discussed AI topic across communities this week, with most threads focused on who actually owns the customer relationship in agentic shopping.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Amazon-blocks-Muse story",
+          "url": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "i-said-no-and-apple-said-yes-2",
+      "section": "Learning Corner",
+      "headline": "I said no and Apple said yes",
+      "kicker": "Article",
+      "summary": "A first-hand account of Apple Intelligence acting against an explicit user preference. Worth the read because it's a concrete case study in what happens when a system's defaults quietly override consent.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "I said no and Apple said yes",
+          "url": "https://dbushell.com/2026/09/22/apple-intelligence/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "the-anatomy-of-an-ai-agent",
+      "section": "Learning Corner",
+      "headline": "The Anatomy of an AI Agent",
+      "kicker": "Video",
+      "summary": "A clear breakdown of the components (planning, memory, tools) that make up a modern agent, useful groundwork for anyone designing agent-facing UI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The Anatomy of an AI Agent",
+          "url": "https://www.youtube.com/watch?v=CyB7jpMt144"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "nousresearch-hermes-agent-2",
+      "section": "Learning Corner",
+      "headline": "NousResearch/hermes-agent",
+      "kicker": "GitHub project",
+      "summary": "Worth exploring to see how an open-source team is structuring self-improving agent skills, a preview of where the Notion/Framer/Linear \"skills\" pattern may head.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "NousResearch/hermes-agent",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "state-of-ai-design-2026-the-tools-chapter",
+      "section": "Learning Corner",
+      "headline": "State of AI Design 2026, the Tools chapter",
+      "kicker": "Design resource",
+      "summary": "A grounded survey of which AI tools designers are actually adopting versus abandoning, useful for cutting through hype.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "State of AI Design 2026, the Tools chapter",
+          "url": "https://stateofaidesign.com/chapters/tools"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "build-a-notion-agent-skill-for-your-team-s-design-system",
+      "section": "Learning Corner",
+      "headline": "Build a Notion Agent Skill for your team's design system",
+      "kicker": "AI workflow",
+      "summary": "Then [export it into Claude Code or Cursor](https://www.notion.com/releases). It's a concrete way to see the \"skills\" pattern working end to end rather than reading about it.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Build a Notion Agent Skill for your team's design system",
+          "url": "https://www.notion.com/releases"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "agentic-commerce-ux-design",
+      "section": "Opportunities",
+      "headline": "Agentic-commerce UX design",
+      "summary": "With Amazon blocking major shopping agents over consent and identification concerns, there's a near-term need for designers who can build transparent, self-identifying agent-to-merchant flows.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "skill-authoring-and-packaging",
+      "section": "Opportunities",
+      "headline": "Skill authoring and packaging",
+      "summary": "Notion, Framer, Linear, and Claude all now support portable agent skills. Teams need people who can write, test, and maintain these as first-class artifacts, not side documents.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "ai-product-photography-workflows",
+      "section": "Opportunities",
+      "headline": "AI product photography workflows",
+      "summary": "[Figma Weave](https://spyingbee.com/updates/figma/2026-09) makes on-brand product photography generation practical; DTC and e-commerce brands will need designers who can build repeatable pipelines around it.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Weave",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "voice-ux-design",
+      "section": "Opportunities",
+      "headline": "Voice UX design",
+      "summary": "[Gemini 3.8 Flash TTS](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/)'s prompt-based voice design opens room for designers who can craft distinct, brand-appropriate voices for conversational products.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gemini 3.8 Flash TTS",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "explaining-ai-science-to-non-specialists",
+      "section": "Opportunities",
+      "headline": "Explaining AI science to non-specialists",
+      "summary": "As labs like Anthropic publish findings such as its [enzyme discovery](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system), there's growing demand for designers and writers who can turn dense research into accurate, accessible visual explainers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "enzyme discovery",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "write-one-agent-skill-for-a-real-team-convention",
+      "section": "Today's Experiment",
+      "headline": "Write one agent skill for a real team convention",
+      "kicker": "Under 30 minutes",
+      "summary": "Open [Framer](https://www.framer.com/updates) or [Notion](https://www.notion.com/releases) and write a single \"skill\" describing one real convention your team follows (a naming pattern, a CMS structure, a tone-of-voice rule). Save it, then test whether an agent in that tool actually follows the instruction on a fresh task. This is the fastest way to understand what \"agent skills\" concretely change about your workflow, versus just reading the announcement.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Write one agent skill for a real team convention",
+          "url": "https://www.framer.com/updates"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com/releases"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-25"
+    }
+  ],
+  "dont_miss": [
+    "**Amazon vs. Meta's Muse.** The [agentic-shopping standoff](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/) is the clearest signal yet that AI shopping agents need a consent and identification standard before they can scale.",
+    "**GPT-6 Sol/Luna vs. Opus 5.5.** [OpenAI](https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/) and [Anthropic](https://www.anthropic.com/claude-opus-5-5) both cut prices roughly in half within 90 minutes of each other on September 22, changing the cost calculus for production AI features.",
+    "**Claude's enzyme discovery.** Anthropic's [CRISPR-like enzyme system finding](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) is the first big public claim from its new biology lab, and it's still awaiting outside validation."
+  ],
+  "footnote": "Sourced from OpenAI, Anthropic, Google DeepMind, xAI, Meta, Amazon, Figma, Framer, Notion, Linear, Rive, TechCrunch, Al Jazeera, GeekWire, 9to5Mac, Hacker News, GitHub, and other outlets linked throughout. Compiled by an automated morning briefing routine; verify time-sensitive figures before acting on them."
+}
