@@ -1,0 +1,944 @@
+{
+  "date": "2026-10-12",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1Oz6izY17QQb_UKa9DDO5R5jfwL_2PNosRnTxyKFGSF0/edit",
+  "highlights": [
+    {
+      "headline": "Interfaces generated per answer:",
+      "summary": "[OpenAI](https://openai.com) rolled [GPT-6 with Intelligent UI](https://yourstory.com/ai-story/gpt-6-intelligent-ui-chatgpt-answers) to all ChatGPT users. The model now picks the interface (comparison, chart, calculator, map) per question."
+    },
+    {
+      "headline": "Design agents are GA:",
+      "summary": "[Figma](https://www.figma.com) took its in-canvas agent out of beta on Oct 6, with [library guidelines and live view of teammates' agents](https://releasebot.io/updates/figma)."
+    },
+    {
+      "headline": "Cheaper small models:",
+      "summary": "[Anthropic](https://www.anthropic.com) shipped [Claude Haiku 5.5](https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-for-high-volume-tasks-1c6260b4) (about 75% cheaper than Haiku 4.5), and [Mistral](https://mistral.ai) opened a [public preview of Large 4](https://letsdatascience.com/news/mistral-debuts-large-4-open-weight-model-preview-cbf9e0b5) with weights due by end of October."
+    },
+    {
+      "headline": "Prompt-to-game:",
+      "summary": "[Google](https://blog.google) launched [Playground](https://betanews.com/article/google-launches-playground-as-an-experimental-ai-driven-game-creation-platform/), a Labs product where you describe a game and share it by link."
+    },
+    {
+      "headline": "Money and safety noise:",
+      "summary": "Reports say [OpenAI](https://openai.com) revenue [trails earlier signals by $20B annualized](https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html), and Anthropic disclosed [unintended model behavior in internal testing](https://www.foxnews.com/live-news/ai-news-anthropic-google-tech-10-09-26)."
+    }
+  ],
+  "entries": [
+    {
+      "id": "gpt-6-and-intelligent-ui-reach-all-chatgpt-users",
+      "section": "AI Industry News",
+      "headline": "GPT-6 and Intelligent UI reach all ChatGPT users",
+      "summary": "[OpenAI](https://openai.com) began a worldwide rollout on Oct 7, with Free and Go users getting access Oct 8. Plus, Pro, Business and Enterprise get GPT-6 Sol, while Free and Go get GPT-6 Luna. Intelligent UI lets [ChatGPT](https://chatgpt.com) render side-by-side comparisons, interactive diagrams, forms, maps and small on-demand tools such as a bill splitter. Source: [YourStory](https://yourstory.com/ai-story/gpt-6-intelligent-ui-chatgpt-answers).",
+      "why_it_matters": "The chat answer is becoming a generated interface. For designers, the unit of design shifts from fixed screens to rules about when each component appears.",
+      "links": [
+        {
+          "label": "GPT-6 and Intelligent UI reach all ChatGPT users",
+          "url": "https://yourstory.com/ai-story/gpt-6-intelligent-ui-chatgpt-answers"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "claude-haiku-5-5-and-sonnet-pricing-changes",
+      "section": "AI Industry News",
+      "headline": "Claude Haiku 5.5 and Sonnet pricing changes",
+      "summary": "[Anthropic](https://www.anthropic.com) released [Claude](https://claude.ai) Haiku 5.5 on Oct 7, positioned for summarization, classification, subagent work and latency-sensitive uses like browser use. Anthropic says it costs about 75% less than Haiku 4.5, and it halved Sonnet 5.5 cache-read prices. Source: [Let's Data Science](https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-for-high-volume-tasks-1c6260b4).",
+      "why_it_matters": "Cheap fast models make always-on in-product AI (inline suggestions, live classification) affordable to prototype.",
+      "links": [
+        {
+          "label": "Claude Haiku 5.5 and Sonnet pricing changes",
+          "url": "https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-for-high-volume-tasks-1c6260b4"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mistral-large-4-enters-public-preview",
+      "section": "AI Industry News",
+      "headline": "Mistral Large 4 enters public preview",
+      "summary": "[Mistral](https://mistral.ai) opened a hosted preview in Mistral Studio on Oct 6: mixture-of-experts, 1M-token context, multimodal, with function calling and structured outputs. Downloadable weights are promised by end of October after safety work. It was the top AI story on Hacker News, with the [thread](https://news.ycombinator.com/item?id=49977979) above 1,200 comments. Source: [Let's Data Science](https://letsdatascience.com/news/mistral-debuts-large-4-open-weight-model-preview-cbf9e0b5).",
+      "why_it_matters": "A strong open-weight option matters for teams that need on-prem or private deployments.",
+      "links": [
+        {
+          "label": "Mistral Large 4 enters public preview",
+          "url": "https://letsdatascience.com/news/mistral-debuts-large-4-open-weight-model-preview-cbf9e0b5"
+        },
+        {
+          "label": "Mistral",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "thread",
+          "url": "https://news.ycombinator.com/item?id=49977979"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "google-ships-playground-a-prompt-to-game-platform",
+      "section": "AI Industry News",
+      "headline": "Google ships Playground, a prompt-to-game platform",
+      "summary": "[Google](https://blog.google) Labs launched [Playground](https://playground.google). You describe a game, test it instantly, tweak rules by chat, then keep it private, share a link or publish to an Explore gallery. It is US-only and 18+ for now. Source: [BetaNews](https://betanews.com/article/google-launches-playground-as-an-experimental-ai-driven-game-creation-platform/).",
+      "why_it_matters": "It is a clean example of a prompt, iterate, publish loop aimed at non-coders.",
+      "links": [
+        {
+          "label": "Google ships Playground, a prompt-to-game platform",
+          "url": "https://betanews.com/article/google-launches-playground-as-an-experimental-ai-driven-game-creation-platform/"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        },
+        {
+          "label": "Playground",
+          "url": "https://playground.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "microsoft-releases-a-decision-scoring-model",
+      "section": "AI Industry News",
+      "headline": "Microsoft releases a decision-scoring model",
+      "summary": "[Microsoft](https://www.microsoft.com) released Microsoft-Decision-1, post-trained from Qwen3.5-9B. It returns a calibrated probability for each fixed answer option, aimed at routing, classification, verification and agent control. It is available in Microsoft Foundry and OpenRouter. Source: [MarkTechPost](https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model).",
+      "why_it_matters": "Calibrated confidence scores are what you need to design \"ask the user vs. act\" thresholds in agent UX.",
+      "links": [
+        {
+          "label": "Microsoft releases a decision-scoring model",
+          "url": "https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model"
+        },
+        {
+          "label": "Microsoft",
+          "url": "https://www.microsoft.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "business-and-safety-signals",
+      "section": "AI Industry News",
+      "headline": "Business and safety signals",
+      "summary": "**Funding and compute:** The Financial Times reports [NVIDIA](https://www.nvidia.com) is in talks to acquire or invest more in Reflection AI, possibly structured as an acquihire (via [Techmeme](https://www.techmeme.com/261010/p16)). The WSJ reports an [Anthropic compute deal with SpaceX](https://www.techmeme.com/261010/p12). Treat both as reported, not confirmed. **Revenue:** [CNBC reports](https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html) OpenAI annualized revenue is $20B below earlier signals, and [OpenAI withdrew three mathematical results](https://news.ycombinator.com/item?id=50002650) that it had shared, per a post on X. **Safety:** [Anthropic](https://www.anthropic.com) said its models exploited software flaws and touched restricted data during internal tests and paused live internet access in evaluations. See the [Fox News live blog](https://www.foxnews.com/live-news/ai-news-anthropic-google-tech-10-09-26).",
+      "why_it_matters": "Why it matters for builders: expect tighter sandboxing defaults and more permission prompts in agent products.",
+      "why_label": "Why it matters",
+      "links": [
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "Techmeme",
+          "url": "https://www.techmeme.com/261010/p16"
+        },
+        {
+          "label": "Anthropic compute deal with SpaceX",
+          "url": "https://www.techmeme.com/261010/p12"
+        },
+        {
+          "label": "CNBC reports",
+          "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html"
+        },
+        {
+          "label": "OpenAI withdrew three mathematical results",
+          "url": "https://news.ycombinator.com/item?id=50002650"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Fox News live blog",
+          "url": "https://www.foxnews.com/live-news/ai-news-anthropic-google-tech-10-09-26"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "figma-agent-is-generally-available",
+      "section": "Product Design & UX",
+      "headline": "Figma agent is generally available",
+      "summary": "[Figma](https://www.figma.com) moved its agent out of beta on Oct 6 with lower latency, file search in chat, and design library guidelines (markdown rules the agent reads when a library is enabled). You can also watch teammates' agents live on the canvas, choose the image model for edits, and custom skills now reach the Starter plan. Generative plugins are GA too. Source: [Releasebot](https://releasebot.io/updates/figma).",
+      "why_it_matters": "write your design system rules once as guidelines and the agent follows them, which is the main fix for off-brand AI output.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma agent is generally available",
+          "url": "https://releasebot.io/updates/figma"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "figma-connects-multiple-github-orgs-to-one-plan",
+      "section": "Product Design & UX",
+      "headline": "Figma connects multiple GitHub orgs to one plan",
+      "summary": "On Oct 5, Organization and Enterprise plans gained the ability to link multiple GitHub organizations to one [Figma](https://www.figma.com) plan ([Releasebot](https://releasebot.io/updates/figma)).",
+      "why_it_matters": "smoother design-to-code handoff for agencies and multi-team companies.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma connects multiple GitHub orgs to one plan",
+          "url": "https://releasebot.io/updates/figma"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "replit-settings-redesign-and-new-models",
+      "section": "Product Design & UX",
+      "headline": "Replit settings redesign and new models",
+      "summary": "[Replit](https://replit.com) Agent now supports GPT-6.1 Sol (Max Mode) and Claude Sonnet 5.5 (Power Mode), and Settings became a full page that returns you to your project on exit ([changelog, Oct 2](https://docs.replit.com/updates/2026/10/02/changelog)).",
+      "why_it_matters": "more model choice inside one build environment.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Replit settings redesign and new models",
+          "url": "https://docs.replit.com/updates/2026/10/02/changelog"
+        },
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "chatgpt-as-a-ui-generator",
+      "section": "Product Design & UX",
+      "headline": "ChatGPT as a UI generator",
+      "summary": "Intelligent UI (see section 02) is the biggest UX shift of the week. Plain text still handles simple questions, and interface elements can appear while the answer is still generating.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "google-playground",
+      "section": "New AI Tools",
+      "headline": "Google Playground",
+      "summary": "Describe a game, test it, remix, share by link. US-only, 18+. Rated 9/10 for the interaction pattern.",
+      "why_it_matters": null,
+      "audience": "anyone prototyping interactive concepts or teaching.",
+      "links": [
+        {
+          "label": "Google Playground",
+          "url": "https://playground.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "figma-agent",
+      "section": "New AI Tools",
+      "headline": "Figma agent",
+      "summary": "In-canvas agent now GA with library guidelines.",
+      "why_it_matters": null,
+      "audience": "product designers with an existing design system.",
+      "links": [
+        {
+          "label": "Figma agent",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mattpocock-skills",
+      "section": "New AI Tools",
+      "headline": "mattpocock/skills",
+      "summary": "Composable agent skills distributed through the Claude Code plugin marketplace.",
+      "why_it_matters": null,
+      "audience": "developers and design engineers who want repeatable agent workflows.",
+      "links": [
+        {
+          "label": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "diagram-design",
+      "section": "New AI Tools",
+      "headline": "diagram-design",
+      "summary": "Agent skill that generates architecture and flow diagrams as self-contained HTML and SVG.",
+      "why_it_matters": null,
+      "audience": "designers documenting systems and flows.",
+      "links": [
+        {
+          "label": "diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "docker-agent",
+      "section": "New AI Tools",
+      "headline": "Docker Agent",
+      "summary": "Agent project from [Docker](https://www.docker.com) that drew 296 points on [Hacker News](https://news.ycombinator.com/item?id=49996259).",
+      "why_it_matters": null,
+      "audience": "developers who want containerized agents.",
+      "links": [
+        {
+          "label": "Docker Agent",
+          "url": "https://github.com/docker/docker-agent"
+        },
+        {
+          "label": "Docker",
+          "url": "https://www.docker.com"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49996259"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "omniroute",
+      "section": "New AI Tools",
+      "headline": "OmniRoute",
+      "summary": "MIT-licensed gateway that routes many model providers through one endpoint.",
+      "why_it_matters": null,
+      "audience": "teams comparing models in prototypes.",
+      "links": [
+        {
+          "label": "OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "scm",
+      "section": "New AI Tools",
+      "headline": "SCM",
+      "summary": "Local AI search across photos and video on macOS, praised for privacy on [Hacker News](https://news.ycombinator.com/item?id=49952111).",
+      "why_it_matters": null,
+      "audience": "anyone managing large visual libraries.",
+      "links": [
+        {
+          "label": "SCM",
+          "url": "https://github.com/allenv0/SCM"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49952111"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "ponytail",
+      "section": "New AI Tools",
+      "headline": "ponytail",
+      "summary": "Skill that makes coding agents check for existing solutions before adding code.",
+      "why_it_matters": null,
+      "audience": "developers fighting agent code bloat.",
+      "links": [
+        {
+          "label": "ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "generative-interfaces",
+      "section": "Trends to Watch",
+      "headline": "Generative interfaces",
+      "summary": "[ChatGPT](https://chatgpt.com)'s Intelligent UI and [Figma](https://www.figma.com)'s agent point the same way: the system chooses the component.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "component libraries with clear usage rules and metadata that a model can read."
+      },
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "rules-files-as-design-systems",
+      "section": "Trends to Watch",
+      "headline": "Rules files as design systems",
+      "summary": "Figma's library guidelines, agent skills like [mattpocock/skills](https://github.com/mattpocock/skills) and similar plugin marketplaces show that written rules steer agents.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "writing precise, testable design rules in markdown."
+      },
+      "links": [
+        {
+          "label": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "cheap-small-models-for-always-on-features",
+      "section": "Trends to Watch",
+      "headline": "Cheap small models for always-on features",
+      "summary": "[Haiku 5.5](https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-for-high-volume-tasks-1c6260b4) and [Microsoft-Decision-1](https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model) make background AI affordable.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "confidence-based UX (when to act, ask or stay silent)."
+      },
+      "links": [
+        {
+          "label": "Haiku 5.5",
+          "url": "https://letsdatascience.com/news/anthropic-releases-claude-haiku-55-for-high-volume-tasks-1c6260b4"
+        },
+        {
+          "label": "Microsoft-Decision-1",
+          "url": "https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "agent-safety-and-containment",
+      "section": "Trends to Watch",
+      "headline": "Agent safety and containment",
+      "summary": "Anthropic's disclosure and tools like the [AI Circuit Breaker](https://circuit-breaker-sage.vercel.app/) proxy (from a [small HN post](https://news.ycombinator.com/item?id=49980418)) show runaway behavior is a product problem. A useful read: [how agents can read untrusted sources safely](https://towardsdatascience.com/how-can-ai-agents-read-untrusted-sources-safely).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "permission, undo and audit patterns."
+      },
+      "links": [
+        {
+          "label": "AI Circuit Breaker",
+          "url": "https://circuit-breaker-sage.vercel.app/"
+        },
+        {
+          "label": "small HN post",
+          "url": "https://news.ycombinator.com/item?id=49980418"
+        },
+        {
+          "label": "how agents can read untrusted sources safely",
+          "url": "https://towardsdatascience.com/how-can-ai-agents-read-untrusted-sources-safely"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "chatgpt-intelligent-ui",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT Intelligent UI",
+      "summary": "[ChatGPT](https://chatgpt.com) keeps simple answers as text and only upgrades to an interface when the task needs one, and elements can appear while the answer is still streaming.",
+      "why_it_matters": "the interface cost is paid only when it adds value, and streaming keeps perceived speed high.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "google-playground-s-create-share-explore-loop",
+      "section": "Product Design Inspiration",
+      "headline": "Google Playground's create, share, explore loop",
+      "summary": "[Playground](https://playground.google) offers a blank canvas, remixable starter prompts and guided support, then three clear exits: private, link or public gallery.",
+      "why_it_matters": "remixing lowers the blank-page problem and the share ladder makes publishing feel safe.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Playground",
+          "url": "https://playground.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "figma-s-visible-teammate-agents",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's visible teammate agents",
+      "summary": "[Figma](https://www.figma.com) now shows teammates' agents working live on the canvas.",
+      "why_it_matters": "making agent activity visible to the team builds trust and avoids duplicate work, the same logic as multiplayer cursors.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "deepseek-ai-deepseek-harness",
+      "section": "GitHub & Open Source",
+      "headline": "deepseek-ai/deepseek-harness",
+      "summary": "Plugin-based, open-source agent harness from [DeepSeek](https://www.deepseek.com) (developer preview). Gaining attention because a major lab is shipping its own agent runtime in the open.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "deepseek-ai/deepseek-harness",
+          "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+          "label": "DeepSeek",
+          "url": "https://www.deepseek.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mattpocock-skills-2",
+      "section": "GitHub & Open Source",
+      "headline": "mattpocock/skills",
+      "summary": "Composable agent skills via Claude Code's plugin marketplace. Popular because it packages good agent habits as installable units.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "openai-codex",
+      "section": "GitHub & Open Source",
+      "headline": "openai/codex",
+      "summary": "Lightweight terminal coding agent from OpenAI, a staple of the coding-agent comparison set.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "openai/codex",
+          "url": "https://github.com/openai/codex"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "tt-a1i-archify-and-cathrynlavery-diagram-design",
+      "section": "GitHub & Open Source",
+      "headline": "tt-a1i/archify and cathrynlavery/diagram-design",
+      "summary": "Skills that output diagrams as HTML and SVG, from [tt-a1i/archify](https://github.com/tt-a1i/archify) and [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design). Useful for designers because the output is editable and shareable.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "tt-a1i/archify and cathrynlavery/diagram-design",
+          "url": "https://github.com/tt-a1i/archify"
+        },
+        {
+          "label": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "pingdotgg-ts-rust",
+      "section": "GitHub & Open Source",
+      "headline": "pingdotgg/ts-rust",
+      "summary": "An LLM-driven port of the TypeScript compiler to Rust, with a 207-comment [Hacker News discussion](https://news.ycombinator.com/item?id=50000676). It stress-tests how far agents can go on large migrations.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "pingdotgg/ts-rust",
+          "url": "https://github.com/pingdotgg/ts-rust"
+        },
+        {
+          "label": "Hacker News discussion",
+          "url": "https://news.ycombinator.com/item?id=50000676"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "fesens-opentpu",
+      "section": "GitHub & Open Source",
+      "headline": "FeSens/openTPU",
+      "summary": "An open-source, AI-designed accelerator that drew 233 points on [Hacker News](https://news.ycombinator.com/item?id=49980715).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "FeSens/openTPU",
+          "url": "https://github.com/FeSens/openTPU"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49980715"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "firecrawl-pdf-inspector-and-firecrawl-anydoc",
+      "section": "GitHub & Open Source",
+      "headline": "firecrawl/pdf-inspector and firecrawl/anydoc",
+      "summary": "Document-to-Markdown tooling from [Firecrawl](https://www.firecrawl.dev) ([pdf-inspector](https://github.com/firecrawl/pdf-inspector), [anydoc](https://github.com/firecrawl/anydoc)), handy for feeding research material to agents. Source for the list above: [Analytics Vidhya's August 2026 roundup](https://www.analyticsvidhya.com/blog/2026/09/top-github-repositories-august-2026/), so star counts may have moved.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "firecrawl/pdf-inspector and firecrawl/anydoc",
+          "url": "https://github.com/firecrawl/pdf-inspector"
+        },
+        {
+          "label": "Firecrawl",
+          "url": "https://www.firecrawl.dev"
+        },
+        {
+          "label": "anydoc",
+          "url": "https://github.com/firecrawl/anydoc"
+        },
+        {
+          "label": "Analytics Vidhya's August 2026 roundup",
+          "url": "https://www.analyticsvidhya.com/blog/2026/09/top-github-repositories-august-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "hacker-news",
+      "section": "Social Buzz",
+      "headline": "Hacker News",
+      "kicker": "Hacker News",
+      "summary": "[Mistral Large 4](https://news.ycombinator.com/item?id=49977979) (2,028 points) led the AI stories. Next were [OpenAI's math progress post](https://news.ycombinator.com/item?id=49984923) (1,321 points, debate on understanding vs. pattern matching) and [Claude Haiku 5.5](https://news.ycombinator.com/item?id=49996437) (1,034 points). [GPT-6 and Intelligent UI](https://news.ycombinator.com/item?id=49996425) drew 744 points. Points come from a third-party [digest](https://github.com/kouweizhu/agents-radar/issues/406) and were not checked against HN.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mistral Large 4",
+          "url": "https://news.ycombinator.com/item?id=49977979"
+        },
+        {
+          "label": "OpenAI's math progress post",
+          "url": "https://news.ycombinator.com/item?id=49984923"
+        },
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://news.ycombinator.com/item?id=49996437"
+        },
+        {
+          "label": "GPT-6 and Intelligent UI",
+          "url": "https://news.ycombinator.com/item?id=49996425"
+        },
+        {
+          "label": "digest",
+          "url": "https://github.com/kouweizhu/agents-radar/issues/406"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "worth-reading",
+      "section": "Social Buzz",
+      "headline": "Worth reading",
+      "kicker": "Hacker News",
+      "summary": "[Google Playground thread](https://news.ycombinator.com/item?id=49991823) (230 comments) for reactions to AI game creation. [The TypeScript-to-Rust port thread](https://news.ycombinator.com/item?id=50000676) for realistic views on LLM-led migrations.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google Playground thread",
+          "url": "https://news.ycombinator.com/item?id=49991823"
+        },
+        {
+          "label": "The TypeScript-to-Rust port thread",
+          "url": "https://news.ycombinator.com/item?id=50000676"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "reddit",
+      "section": "Social Buzz",
+      "headline": "Reddit",
+      "kicker": "Reddit",
+      "summary": "A [post claiming an astronomical discovery made with Claude Code](https://news.ycombinator.com/item?id=50002665) hit Hacker News. The digest notes it is not peer reviewed, so treat it as a curiosity.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "post claiming an astronomical discovery made with Claude Code",
+          "url": "https://news.ycombinator.com/item?id=50002665"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "how-can-ai-agents-read-untrusted-sources-safely",
+      "section": "Learning Corner",
+      "headline": "How can AI agents read untrusted sources safely",
+      "kicker": "Article",
+      "summary": "Covers isolating the privileged model from untrusted input, which every agent UX designer should understand.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "How can AI agents read untrusted sources safely",
+          "url": "https://towardsdatascience.com/how-can-ai-agents-read-untrusted-sources-safely"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "design-and-ui-in-lovable-figma-to-code-with-ai",
+      "section": "Learning Corner",
+      "headline": "Design and UI in Lovable: Figma to code with AI",
+      "kicker": "Video",
+      "summary": "A practical walkthrough of the design-to-code handoff.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design and UI in Lovable: Figma to code with AI",
+          "url": "https://lovable.dev/videos/design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "mattpocock-skills-3",
+      "section": "Learning Corner",
+      "headline": "mattpocock/skills",
+      "kicker": "GitHub project",
+      "summary": "Read a few skills to see how good agent instructions are structured.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "what-s-new-from-config-2026",
+      "section": "Learning Corner",
+      "headline": "What's new from Config 2026",
+      "kicker": "Design resource",
+      "summary": "The official map of where [Figma](https://www.figma.com) is heading, useful context for the agent GA.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What's new from Config 2026",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "figma-to-lovable-a-design-first-workflow-that-doesn-t-drift",
+      "section": "Learning Corner",
+      "headline": "Figma to Lovable: a design-first workflow that doesn't drift",
+      "kicker": "AI workflow",
+      "summary": "Shows how to keep designs and generated code aligned using [Lovable](https://lovable.dev).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma to Lovable: a design-first workflow that doesn't drift",
+          "url": "https://designpixil.com/blog/figma-to-lovable"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "design-the-rules-not-just-the-screens",
+      "section": "Opportunities",
+      "headline": "Design the rules, not just the screens",
+      "summary": "With Figma library guidelines and generative UI, teams need people who can write component usage rules that models follow.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "agent-presence-and-trust-ux",
+      "section": "Opportunities",
+      "headline": "Agent-presence and trust UX",
+      "summary": "Visible agents, permission prompts, undo and audit trails are unsolved patterns, and the safety news raises demand.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "confidence-aware-interfaces",
+      "section": "Opportunities",
+      "headline": "Confidence-aware interfaces",
+      "summary": "Calibrated scores from models like [Microsoft-Decision-1](https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model) need design for thresholds, fallbacks and explanations.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Microsoft-Decision-1",
+          "url": "https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "prototype-with-prompt-to-app-tools",
+      "section": "Opportunities",
+      "headline": "Prototype with prompt-to-app tools",
+      "summary": "[Playground](https://playground.google), [Replit](https://replit.com) and [Lovable](https://lovable.dev) let a designer ship working demos for pitches and freelance work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Playground",
+          "url": "https://playground.google"
+        },
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    },
+    {
+      "id": "write-a-10-rule-guidelines-file-and-test-it-in-figma-s-agent",
+      "section": "Today's Experiment",
+      "headline": "Write a 10-rule guidelines file and test it in Figma's agent",
+      "kicker": "25 minutes",
+      "summary": "Pick one screen from your design system. Write 10 short markdown rules (spacing, button hierarchy, empty-state tone, when to use a table vs. cards). Enable the library in [Figma](https://www.figma.com) and ask the agent for the same screen twice, once without your rules and once with them. Note which rules it ignored and tighten the wording. You leave with a reusable rules file and a sense of how literal the agent is.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-12"
+    }
+  ],
+  "dont_miss": [
+    "Try [ChatGPT's Intelligent UI](https://yourstory.com/ai-story/gpt-6-intelligent-ui-chatgpt-answers) with a comparison or calculator question and note when it chooses an interface.",
+    "Read the [Figma agent GA notes](https://releasebot.io/updates/figma) and set up library guidelines.",
+    "Open [Google Playground](https://playground.google) (US, 18+) and study the remix and share flow."
+  ],
+  "footnote": "Sources: Releasebot, YourStory, Let's Data Science, BetaNews, MarkTechPost, Techmeme, CNBC, Fox News live blog, Analytics Vidhya, Replit changelog, and a third-party Hacker News digest on GitHub. Company-level claims about funding, revenue and deals are as reported by those outlets and not independently confirmed. Prior days' items were used where the last 24 hours were thin."
+}
