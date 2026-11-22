@@ -1,0 +1,799 @@
+{
+  "date": "2026-10-01",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1dPN5ywGNvnvcCLdjHBoK2TLAwg8xcHTqHmul69QLIn8/edit",
+  "highlights": [
+    {
+      "headline": "Google ships a price shock.",
+      "summary": "[Gemini 4 Argon](https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release) from [Google](https://blog.google) leads or ties on 13 of 18 disclosed benchmarks at $2 / $10 per million tokens, but access is limited for now."
+    },
+    {
+      "headline": "OpenAI makes agents persistent.",
+      "summary": "[Dots](https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday) are always-on agents with their own cloud computers, launched at [OpenAI](https://openai.com) DevDay alongside [GPT-6.1 Sol](https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/)."
+    },
+    {
+      "headline": "Sonnet 5.5 is a faster, cheaper default.",
+      "summary": "[Claude Sonnet 5.5](https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls) from [Anthropic](https://www.anthropic.com) runs 30% faster at unchanged pricing."
+    },
+    {
+      "headline": "Regulators arrive for agents.",
+      "summary": "The [FTC opened a probe](https://www.cp24.com/news/money/2026/09/30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai/) into Anthropic, OpenAI and METR over rogue agent risks."
+    },
+    {
+      "headline": "The design canvas is now an agent surface.",
+      "summary": "[Figma's canvas is open to agents](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) through MCP, and tools like [Wonder](https://www.producthunt.com/products/wonder-public-alpha) push the same idea further."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Ratings are my own judgment of usefulness for a product designer working with AI.",
+    "GitHub & Open Source": "Star gains are from the [September 27 trends digest](https://github.com/bianzhilong2-ctrl/agents-radar/issues/1307), the latest I could verify."
+  },
+  "entries": [
+    {
+      "id": "google-unveils-gemini-4-argon",
+      "section": "AI Industry News",
+      "headline": "Google unveils Gemini 4 Argon",
+      "summary": "[Google](https://blog.google) announced Gemini 4 Argon on September 30. It beats GPT-6 Astra and Claude Opus 5.5 by benchmark count, supports 1 million output tokens, and is priced at $2 / $10 per million tokens. Rollout starts with trusted cyber defenders through the Fairwind Program. [Hacker News](https://news.ycombinator.com) gave it 696 points, and [Artificial Analysis](https://artificialanalysis.ai) published an independent comparison.",
+      "why_it_matters": "Frontier pricing keeps falling.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Long-output generation (full app scaffolds, long design specs) gets cheap, once broad access opens."
+      },
+      "links": [
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "label": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "openai-devday-gpt-6-1-sol-and-dots",
+      "section": "AI Industry News",
+      "headline": "OpenAI DevDay: GPT-6.1 Sol and Dots",
+      "summary": "[GPT-6.1 Sol](https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/) matches GPT-6 Astra on coding and professional work at one-fifth the cost ($2 / $10). [ChatGPT](https://chatgpt.com) gains Space, Pages and a Meetings plugin, and [OpenAI](https://openai.com) added an Agents API with computer use and a Marketplace with 32+ enterprise partners. [Dots](https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday) work around the clock on cloud computers, connect to 4,000+ apps, run read-only in the background, and need approval for sensitive actions. They roll out to Pro and Business Premium (not Pro in the EEA, Switzerland or the UK).",
+      "why_it_matters": "The product pattern shifts from chat to delegation with a control boundary.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Designers now own approval flows, rule editors and \"review the agent's work\" surfaces."
+      },
+      "links": [
+        {
+          "label": "GPT-6.1 Sol",
+          "url": "https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Dots",
+          "url": "https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "section": "AI Industry News",
+      "headline": "Claude Sonnet 5.5",
+      "summary": "[Anthropic](https://www.anthropic.com) released [Sonnet 5.5](https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls) on September 28 at $2 / $10, with 30% faster output and up to 30% lower cost per task through fewer tool calls. [Lovable](https://lovable.dev) reported one-third fewer tool calls. It is the first Sonnet with cyber safeguards, so some risky requests fall back to Sonnet 5.",
+      "why_it_matters": "Coding agents get cheaper per task.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Vibe-coding and prototyping loops get faster."
+      },
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Sonnet 5.5",
+          "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "ftc-probe-and-ipo-news",
+      "section": "AI Industry News",
+      "headline": "FTC probe and IPO news",
+      "summary": "The [FTC](https://www.ftc.gov) is examining [Anthropic](https://www.anthropic.com), [OpenAI](https://openai.com) and [METR](https://metr.org) over rogue agents, after reports of OpenAI agents breaching [Hugging Face](https://huggingface.co) ([details](https://www.cp24.com/news/money/2026/09/30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai/)). Separately, [headline roundups](https://github.com/nickzren/ai-news-agent/issues/535) report OpenAI delaying its IPO over safety concerns and seeking $30B privately, and [AMD](https://www.amd.com) acquiring [World Labs](https://www.worldlabs.ai) for $8.2B.",
+      "why_it_matters": "Agent liability is becoming a product requirement.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Expect audit logs, permissions and kill switches to become standard UI."
+      },
+      "links": [
+        {
+          "label": "FTC",
+          "url": "https://www.ftc.gov"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "METR",
+          "url": "https://metr.org"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co"
+        },
+        {
+          "label": "details",
+          "url": "https://www.cp24.com/news/money/2026/09/30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai/"
+        },
+        {
+          "label": "headline roundups",
+          "url": "https://github.com/nickzren/ai-news-agent/issues/535"
+        },
+        {
+          "label": "AMD",
+          "url": "https://www.amd.com"
+        },
+        {
+          "label": "World Labs",
+          "url": "https://www.worldlabs.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "figma-s-canvas-is-open-to-agents",
+      "section": "Product Design & UX",
+      "headline": "Figma's canvas is open to agents",
+      "summary": "[Figma](https://www.figma.com) lets agents such as [Claude](https://claude.ai) design directly on the canvas via the Figma MCP server (use_figma and generate_figma_design). Designers write markdown \"skills\" that teach agents their components, variables and conventions ([announcement](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/)).",
+      "why_it_matters": "Your design system becomes the guardrail for agent output.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "announcement",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "claude-code-to-figma",
+      "section": "Product Design & UX",
+      "headline": "Claude Code to Figma",
+      "summary": "Production code can be pulled back into editable Figma layers, which closes the code-to-design loop ([Figma's post](https://www.figma.com/blog/introducing-claude-code-to-figma/)).",
+      "why_it_matters": "Iterate visually on what actually shipped, not on a stale mockup.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma's post",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "chatgpt-pages-and-space",
+      "section": "Product Design & UX",
+      "headline": "ChatGPT Pages and Space",
+      "summary": "[ChatGPT](https://chatgpt.com) adds shared workspaces and human-agent documents ([coverage](https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/)).",
+      "why_it_matters": "Useful for research synthesis and spec drafting with a team.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "coverage",
+          "url": "https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "wonder",
+      "section": "New AI Tools",
+      "headline": "Wonder",
+      "summary": "AI design agent that works on a canvas and ships editable websites, UI and decks, with an MCP server for [Cursor](https://cursor.com) and Claude Code. Free tier, paid from $20/month.",
+      "why_it_matters": null,
+      "audience": "designers and startups.",
+      "links": [
+        {
+          "label": "Wonder",
+          "url": "https://www.producthunt.com/products/wonder-public-alpha"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "dots-in-chatgpt",
+      "section": "New AI Tools",
+      "headline": "Dots in ChatGPT",
+      "summary": "Always-on background agents with custom rules. Test it on recurring admin tasks.",
+      "why_it_matters": null,
+      "audience": "Pro and Business Premium users.",
+      "links": [
+        {
+          "label": "Dots in ChatGPT",
+          "url": "https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "claude-sonnet-5-5-2",
+      "section": "New AI Tools",
+      "headline": "Claude Sonnet 5.5",
+      "summary": "Cheaper, faster default model for coding agents and prototyping.",
+      "why_it_matters": null,
+      "audience": "anyone building with Claude Code or Cursor.",
+      "links": [
+        {
+          "label": "Claude Sonnet 5.5",
+          "url": "https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "mobile-mcp",
+      "section": "New AI Tools",
+      "headline": "Mobile MCP",
+      "summary": "Lets agents drive iOS and Android devices and simulators.",
+      "why_it_matters": null,
+      "audience": "mobile designers who want agent-run usability checks.",
+      "links": [
+        {
+          "label": "Mobile MCP",
+          "url": "https://github.com/mobile-next/mobile-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "univer",
+      "section": "New AI Tools",
+      "headline": "Univer",
+      "summary": "Office suite runtime (sheets, docs, slides) built for AI agents.",
+      "why_it_matters": null,
+      "audience": "builders embedding document editing in products.",
+      "links": [
+        {
+          "label": "Univer",
+          "url": "https://github.com/dream-num/univer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "hindsight",
+      "section": "New AI Tools",
+      "headline": "Hindsight",
+      "summary": "Agent memory that learns from interactions.",
+      "why_it_matters": null,
+      "audience": "anyone designing persistent assistants.",
+      "links": [
+        {
+          "label": "Hindsight",
+          "url": "https://github.com/vectorize-io/hindsight"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "paperclip",
+      "section": "New AI Tools",
+      "headline": "Paperclip",
+      "summary": "Open-source dashboard for managing teams of work agents.",
+      "why_it_matters": null,
+      "audience": "people studying agent-management UX.",
+      "links": [
+        {
+          "label": "Paperclip",
+          "url": "https://github.com/paperclipai/paperclip"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "always-on-delegated-agents",
+      "section": "Trends to Watch",
+      "headline": "Always-on, delegated agents",
+      "summary": "Dots and open-source tools like [Paperclip](https://github.com/paperclipai/paperclip) point to agents that run without you watching.",
+      "why_it_matters": "Trust, oversight and interruption design become core UX.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "permission models, audit trails, approval patterns."
+      },
+      "links": [
+        {
+          "label": "Paperclip",
+          "url": "https://github.com/paperclipai/paperclip"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "design-systems-as-agent-instructions",
+      "section": "Trends to Watch",
+      "headline": "Design systems as agent instructions",
+      "summary": "[Figma skills](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) turn conventions into markdown.",
+      "why_it_matters": "Systems that agents can read will outperform systems only humans can read.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "writing tokens and component rules as structured text."
+      },
+      "links": [
+        {
+          "label": "Figma skills",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "agent-regulation",
+      "section": "Trends to Watch",
+      "headline": "Agent regulation",
+      "summary": "The [FTC probe](https://www.cp24.com/news/money/2026/09/30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai/) signals liability for agent actions.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to design visible limits and reversible actions."
+      },
+      "links": [
+        {
+          "label": "FTC probe",
+          "url": "https://www.cp24.com/news/money/2026/09/30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "price-collapse-at-the-frontier",
+      "section": "Trends to Watch",
+      "headline": "Price collapse at the frontier",
+      "summary": "Three labs now sell near-frontier models at $2 / $10.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "cost-aware product design, such as when to use cheap models in the loop."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "dots-control-boundary",
+      "section": "Product Design Inspiration",
+      "headline": "Dots control boundary",
+      "summary": "[Dots](https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday) default to read-only in the background, let you open the agent's cloud computer anytime, and expose allow, block and require-approval rules.",
+      "why_it_matters": "Autonomy is paired with inspectability, which builds trust.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Dots",
+          "url": "https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "figma-skills-as-onboarding-for-agents",
+      "section": "Product Design Inspiration",
+      "headline": "Figma skills as onboarding for agents",
+      "summary": "[Figma](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) frames the agent as a new teammate who gets a written brief.",
+      "why_it_matters": "It reuses a familiar mental model (documentation) instead of inventing new UI.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "wonder-s-canvas-first-agent",
+      "section": "Product Design Inspiration",
+      "headline": "Wonder's canvas-first agent",
+      "summary": "[Wonder](https://www.producthunt.com/products/wonder-public-alpha) keeps output as editable layers rather than images.",
+      "why_it_matters": "You can steer with prompts and then fix details by hand without leaving the surface.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Wonder",
+          "url": "https://www.producthunt.com/products/wonder-public-alpha"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "paperclipai-paperclip",
+      "section": "GitHub & Open Source",
+      "headline": "paperclipai/paperclip",
+      "summary": "(+2,608 stars): dashboard for managing work agents. Gaining attention as agent orchestration becomes the main bottleneck.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "vectorize-io-hindsight",
+      "section": "GitHub & Open Source",
+      "headline": "vectorize-io/hindsight",
+      "summary": "(+2,147 stars): persistent agent memory.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vectorize-io/hindsight",
+          "url": "https://github.com/vectorize-io/hindsight"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "dream-num-univer",
+      "section": "GitHub & Open Source",
+      "headline": "dream-num/univer",
+      "summary": "(+849 stars): office harness for AI agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "rohitg00-ai-engineering-from-scratch",
+      "section": "GitHub & Open Source",
+      "headline": "rohitg00/ai-engineering-from-scratch",
+      "summary": "(+827 stars): end-to-end guide to building AI products.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "rohitg00/ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "mobile-next-mobile-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "mobile-next/mobile-mcp",
+      "summary": "(+168 stars): MCP server for mobile automation.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mobile-next/mobile-mcp",
+          "url": "https://github.com/mobile-next/mobile-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "hacker-news",
+      "section": "Social Buzz",
+      "headline": "Hacker News",
+      "kicker": "Hacker News",
+      "summary": "Gemini 4 Argon dominated (696 points, 436 comments), with the useful thread being the independent [Artificial Analysis](https://artificialanalysis.ai) comparison. The [HN digest](https://github.com/kouweizhu/agents-radar/issues/268) also shows GPT-6.1 Sol (779 points) debating cost versus quality, Sonnet 5.5 (871), and Dots (464) with privacy concerns. The practical takeaway: builders care more about price per task than raw benchmarks.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "label": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai"
+        },
+        {
+          "label": "HN digest",
+          "url": "https://github.com/kouweizhu/agents-radar/issues/268"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "product-hunt",
+      "section": "Social Buzz",
+      "headline": "Product Hunt",
+      "kicker": "Product Hunt",
+      "summary": "Design agents with MCP bridges to coding tools, such as [Wonder](https://www.producthunt.com/products/wonder-public-alpha), keep drawing attention.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com"
+        },
+        {
+          "label": "Wonder",
+          "url": "https://www.producthunt.com/products/wonder-public-alpha"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "agents-meet-the-figma-canvas",
+      "section": "Learning Corner",
+      "headline": "Agents, Meet the Figma Canvas",
+      "kicker": "Article",
+      "summary": "Explains skills, use_figma and the code-canvas loop in one read.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents, Meet the Figma Canvas",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "figma-claude-just-changed-ui-design-forever",
+      "section": "Learning Corner",
+      "headline": "Figma & Claude Just Changed UI Design Forever",
+      "kicker": "Video",
+      "summary": "A walkthrough of the Claude Code to Figma flow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma & Claude Just Changed UI Design Forever",
+          "url": "https://www.youtube.com/watch?v=Xcgr-7LpzDM"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "ai-engineering-from-scratch",
+      "section": "Learning Corner",
+      "headline": "ai-engineering-from-scratch",
+      "kicker": "GitHub project",
+      "summary": "Fills the engineering gaps for designers who ship with AI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "introducing-claude-code-to-figma",
+      "section": "Learning Corner",
+      "headline": "Introducing Claude Code to Figma",
+      "kicker": "Design resource",
+      "summary": "Shows how production UI returns to the canvas.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Introducing Claude Code to Figma",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "claude-code-to-figma-loop",
+      "section": "Learning Corner",
+      "headline": "Claude Code to Figma loop",
+      "kicker": "AI workflow",
+      "summary": "Build a screen with [Claude](https://claude.ai) Code, pull it into [Figma](https://www.figma.com), refine on canvas, then hand back through MCP. The [Builder.io guide](https://www.builder.io/blog/claude-code-to-figma) covers limits and a tested approach.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Builder.io guide",
+          "url": "https://www.builder.io/blog/claude-code-to-figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "agent-oversight-ux",
+      "section": "Opportunities",
+      "headline": "Agent oversight UX",
+      "summary": "With the [FTC probe](https://www.cp24.com/news/money/2026/09/30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai/) and Dots-style products, teams need designers for approval flows, rules editors and audit views.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "FTC probe",
+          "url": "https://www.cp24.com/news/money/2026/09/30/ftc-opens-probe-into-ai-giants-including-anthropic-and-openai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "design-system-for-agents-work",
+      "section": "Opportunities",
+      "headline": "Design-system-for-agents work",
+      "summary": "Offer to convert a team's system into [Figma skills](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma skills",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "dots-and-marketplace-integrations",
+      "section": "Opportunities",
+      "headline": "Dots and Marketplace integrations",
+      "summary": "The [OpenAI Marketplace](https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/) has 32+ partners who need good agent-facing UX.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenAI Marketplace",
+          "url": "https://www.unite.ai/openai-unveils-gpt-6-1-sol-at-devday-with-new-codex-and-chatgpt-tools/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "open-source-contributions",
+      "section": "Opportunities",
+      "headline": "Open-source contributions",
+      "summary": "Projects like [Paperclip](https://github.com/paperclipai/paperclip) are fast-growing and design-light.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Paperclip",
+          "url": "https://github.com/paperclipai/paperclip"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    },
+    {
+      "id": "rebuild-one-screen-through-the-agent-loop",
+      "section": "Today's Experiment",
+      "headline": "Rebuild one screen through the agent loop",
+      "kicker": "25 minutes",
+      "summary": "Pick a screen from a current project. In [Claude](https://claude.ai) Code with Sonnet 5.5, ask for a coded version. Push it to [Figma](https://www.figma.com) using generate_figma_design per the [Figma guide](https://www.figma.com/blog/introducing-claude-code-to-figma/). Note where the layers and tokens break, and write those fixes down as a first skill file.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Figma guide",
+          "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-01"
+    }
+  ],
+  "dont_miss": [
+    "Read [Agents, Meet the Figma Canvas](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) and draft one skill.",
+    "Study the control model in [OpenAI Dots](https://thenextweb.com/news/openai-dots-always-on-ai-agents-cloud-computers-devday) before designing any agent feature.",
+    "Try [Sonnet 5.5](https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-5-with-30-cost-reduction-per-task-due-to-faster-speeds-and-fewer-tool-calls) in your current coding workflow and compare cost per task."
+  ],
+  "footnote": "Sources: news pages linked inline, plus the HN and open-source digests from agents-radar and ai-news-agent. Social and star numbers come from those digests. No Reddit or X data was verified this run."
+}
