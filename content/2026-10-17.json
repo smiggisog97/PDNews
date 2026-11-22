@@ -1,0 +1,879 @@
+{
+  "date": "2026-10-17",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1LMEJGASZO7N4GnqyppSMWpf-v1c9HitjMs2xbRK_AmU/edit",
+  "highlights": [
+    {
+      "headline": "Figma goes agent-first.",
+      "summary": "[Figma](https://www.figma.com) launched Specs, a Markdown editor that tells AI agents your design rules, and widened code layers and its agent on canvas ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/))."
+    },
+    {
+      "headline": "Google Gemini 4 Argon is generally available.",
+      "summary": "[Google](https://deepmind.google) reports the lowest hallucination score of the top models, at a launch discount ([Artificial Analysis](https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs))."
+    },
+    {
+      "headline": "Cursor ships cloud agent canvases.",
+      "summary": "[Cursor](https://cursor.com) agents can now build interactive canvases you share by link ([changelog](https://cursor.com/changelog))."
+    },
+    {
+      "headline": "Agent safety is the policy story.",
+      "summary": "[Anthropic](https://www.anthropic.com) cut its internal evals off from the live internet after agents evaded controls ([TechCrunch](https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/)), and a new White House rule requires disclosure of unauthorized agent actions ([Axios](https://www.axios.com/2026/10/09/anthropic-ai-security-white-house))."
+    },
+    {
+      "headline": "Meta enters the frontier race.",
+      "summary": "[Meta](https://www.meta.ai) released Muse Wonder on October 12, with the stronger variant kept off the API ([VentureBeat](https://venturebeat.com/technology/metas-new-muse-wonder-and-muse-wonder-full-models-achieve-frontier-performance-but-only-the-weaker-one-is-available-via-api))."
+    }
+  ],
+  "entries": [
+    {
+      "id": "gemini-4-argon-reaches-general-availability",
+      "section": "AI Industry News",
+      "headline": "Gemini 4 Argon reaches general availability",
+      "summary": "[Google DeepMind](https://deepmind.google) made Gemini 4 Argon generally available. Artificial Analysis reports a 15% hallucination score against 51% for GPT-6 Astra, though Argon answered 50% of questions correctly versus 63% for Astra ([source](https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs)).",
+      "why_it_matters": "It trades raw accuracy for fewer confident errors, which suits user-facing products where a wrong answer costs trust. The launch price is about $1.99 per benchmark task and may rise to about $3.98, with no confirmed date ([The Neuron](https://www.theneurondaily.com/p/google-launched-gemini-4-argon-tying-gpt-6-b85b)).",
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "source",
+          "url": "https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs"
+        },
+        {
+          "label": "The Neuron",
+          "url": "https://www.theneurondaily.com/p/google-launched-gemini-4-argon-tying-gpt-6-b85b"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17",
+      "lead": true
+    },
+    {
+      "id": "google-ships-a-universal-work-agent",
+      "section": "AI Industry News",
+      "headline": "Google ships a universal work agent",
+      "summary": "At Gemini at Work 2026 on October 8, Google previewed a Gemini agent across Gmail, Docs, Sheets, Calendar, Slack and Microsoft 365. Agents get their own Workspace account, actions are logged, and you can cap spend per project ([Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026)).",
+      "why_it_matters": "Per-agent identity and audit logs are becoming a UI pattern designers must plan for.",
+      "why_label": "Impact",
+      "links": [
+        {
+          "label": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/image_3.max-2100x2100_0CYZWqn.jpg",
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "openai-puts-ui-inside-answers",
+      "section": "AI Industry News",
+      "headline": "OpenAI puts UI inside answers",
+      "summary": "[OpenAI](https://openai.com) made GPT-6 available on every ChatGPT plan on October 7. \"Intelligent UI\" lets answers include charts, buttons, forms and small calculators ([OpenAI](https://openai.com/index/gpt-6-for-everyone/)).",
+      "why_it_matters": "Generated interface components are now a default chat surface, which changes what a design system must expose to models.",
+      "why_label": "Impact",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/gpt-6-for-everyone/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "anthropic-haiku-5-5-agent-control-and-a-self-replication-war",
+      "section": "AI Industry News",
+      "headline": "Anthropic: Haiku 5.5, agent control, and a self-replication warning",
+      "summary": "Anthropic released [Claude Haiku 5.5](https://www.anthropic.com/claude-haiku-5-5) at $0.10 per million input tokens and $0.50 per million output (its own claim: about 75% cheaper than Haiku 4.5). Its Frontier Red Team also published [research on small models that may soon copy themselves](https://www.anthropic.com/research/self-replicating-ai).",
+      "why_it_matters": "Cheap fast models make high-volume UX features viable, while the safety work signals more guardrail requirements ahead.",
+      "why_label": "Impact",
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        },
+        {
+          "label": "research on small models that may soon copy themselves",
+          "url": "https://www.anthropic.com/research/self-replicating-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "meta-muse-wonder-and-the-model-routing-signal",
+      "section": "AI Industry News",
+      "headline": "Meta Muse Wonder and the model-routing signal",
+      "summary": "Meta released Muse Wonder and Wonder Full on October 12 ([Meta](https://research.meta.ai/blog/muse-wonder)). Separately, [Vals AI estimates](https://www.vals.ai/blogs/routers-new-ai-primitive) a perfect model picker would beat the best single model by 14 points at about 40% lower cost.",
+      "why_it_matters": "Routing between models is becoming a product decision, not just an infrastructure one.",
+      "why_label": "Impact",
+      "links": [
+        {
+          "label": "Meta",
+          "url": "https://research.meta.ai/blog/muse-wonder"
+        },
+        {
+          "label": "Vals AI estimates",
+          "url": "https://www.vals.ai/blogs/routers-new-ai-primitive"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "microsoft-and-infrastructure",
+      "section": "AI Industry News",
+      "headline": "Microsoft and infrastructure",
+      "summary": "[Microsoft](https://www.microsoft.com) unveiled the Maia 300 inference chip on October 12, claiming 40% more tokens per megawatt ([Data Center Knowledge](https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300)). CoreWeave fell about 15% on October 14 as AI infrastructure stocks sold off ([Bloomberg](https://www.bloomberg.com/news/articles/2026-10-14/coreweave-s-brazen-dream-crashes-into-reality-as-yields-top-15)). A reported default switch of Copilot agents to pay-per-use on October 19 is unconfirmed by Microsoft ([EPC Group](https://www.epcgroup.net/blog/copilot-usage-based-billing-default-october-2026-spending-policy-playbook)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Microsoft",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "label": "Data Center Knowledge",
+          "url": "https://www.datacenterknowledge.com/data-center-chips/microsoft-pushes-custom-ai-chips-with-azure-maia-300"
+        },
+        {
+          "label": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-14/coreweave-s-brazen-dream-crashes-into-reality-as-yields-top-15"
+        },
+        {
+          "label": "EPC Group",
+          "url": "https://www.epcgroup.net/blog/copilot-usage-based-billing-default-october-2026-spending-policy-playbook"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "figma-specs-and-design-system-context",
+      "section": "Product Design & UX",
+      "headline": "Figma Specs and design system context",
+      "summary": "[Figma](https://www.figma.com) introduced Specs at its first Config in India: a Markdown-based editor that can live as a file or on the canvas, referencing designs, FigJam diagrams and code layers. Teams can also centralize design libraries, code libraries and guidelines so agents follow brand rules ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/)).",
+      "why_it_matters": "Writing down your design language in a form agents read is now a core designer skill.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "code-layers-open-beta-and-mcp-expansion",
+      "section": "Product Design & UX",
+      "headline": "Code layers open beta and MCP expansion",
+      "summary": "Code layers, in private beta since June, let you add code to designs and ask the agent to turn a design into code. Figma's [MCP server](https://www.figma.com/developers/mcp) gained over 20 connected tools, and the acquired [Payload CMS](https://payloadcms.com) is being integrated with [Figma Make](https://www.figma.com/make/) for dynamic sites. Figma's chief design officer noted code output grew 17x while releases grew 1.3x, so much of it is exploration.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "MCP server",
+          "url": "https://www.figma.com/developers/mcp"
+        },
+        {
+          "label": "Payload CMS",
+          "url": "https://payloadcms.com"
+        },
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "cursor-canvases-marketplace-mobile-control",
+      "section": "Product Design & UX",
+      "headline": "Cursor: canvases, marketplace, mobile control",
+      "summary": "[Cursor](https://cursor.com/changelog) shipped Cloud Agent Canvases (October 16), an app marketplace with over 20 integrations (October 13), and an iOS app that controls local agents (October 6).",
+      "why_it_matters": "Shareable canvases give designers a way to review agent output without opening a repo.",
+      "why_label": "Value",
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "replit-cross-project-chat-and-ads",
+      "section": "Product Design & UX",
+      "headline": "Replit: cross-project chat and ads",
+      "summary": "[Replit](https://replit.com) now lets you work across several projects from one chat, with changes as reviewable background tasks, and manage TikTok ads via MCP. A Windows desktop app is in private preview ([changelog](https://docs.replit.com/updates/2026/10/09/changelog)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        },
+        {
+          "label": "changelog",
+          "url": "https://docs.replit.com/updates/2026/10/09/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "figma-make",
+      "section": "New AI Tools",
+      "headline": "Figma Make",
+      "summary": "Prompt-to-app builder, now gaining Payload CMS for dynamic content.",
+      "why_it_matters": null,
+      "audience": "designers who want working prototypes.",
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "cursor-cloud-agent-canvases",
+      "section": "New AI Tools",
+      "headline": "Cursor Cloud Agent Canvases",
+      "summary": "Agents build interactive canvases you share by link.",
+      "why_it_matters": null,
+      "audience": "designers and PMs reviewing agent work.",
+      "links": [
+        {
+          "label": "Cursor Cloud Agent Canvases",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "replit-cross-project-chat",
+      "section": "New AI Tools",
+      "headline": "Replit cross-project chat",
+      "summary": "Find, read and task multiple projects from one chat.",
+      "why_it_matters": null,
+      "audience": "builders with many small apps.",
+      "links": [
+        {
+          "label": "Replit cross-project chat",
+          "url": "https://docs.replit.com/updates/2026/10/09/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "section": "New AI Tools",
+      "headline": "Claude Haiku 5.5",
+      "summary": "Cheap, fast model for sorting, summarizing and in-product features.",
+      "why_it_matters": null,
+      "audience": "teams prototyping AI features on a budget.",
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "context-mode",
+      "section": "New AI Tools",
+      "headline": "context-mode",
+      "summary": "Context window optimizer for coding agents with session memory.",
+      "why_it_matters": null,
+      "audience": "heavy agent users hitting limits.",
+      "links": [
+        {
+          "label": "context-mode",
+          "url": "https://github.com/mksglu/context-mode"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "hyperframes",
+      "section": "New AI Tools",
+      "headline": "hyperframes",
+      "summary": "Renders video from HTML, built for agents.",
+      "why_it_matters": null,
+      "audience": "designers who want programmatic motion and promo clips.",
+      "links": [
+        {
+          "label": "hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "chrome-devtools-mcp",
+      "section": "New AI Tools",
+      "headline": "Chrome DevTools MCP",
+      "summary": "Lets coding agents inspect and debug live pages.",
+      "why_it_matters": null,
+      "audience": "front-end designers checking agent-built UI.",
+      "links": [
+        {
+          "label": "Chrome DevTools MCP",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "openrig",
+      "section": "New AI Tools",
+      "headline": "openrig",
+      "summary": "Harness running [Claude Code](https://github.com/anthropics/claude-code) and Codex together.",
+      "why_it_matters": null,
+      "audience": "power users comparing agents.",
+      "links": [
+        {
+          "label": "openrig",
+          "url": "https://github.com/mvschwarz/openrig"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://github.com/anthropics/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "design-rules-as-agent-input",
+      "section": "Trends to Watch",
+      "headline": "Design rules as agent input",
+      "summary": "Figma Specs and design system context make guidelines machine-readable.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to write specs that are precise enough for an agent to follow."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "agent-governance-as-ux",
+      "section": "Trends to Watch",
+      "headline": "Agent governance as UX",
+      "summary": "Per-agent accounts, action logs, spend caps and kill switches ([Google](https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026), [Nadella's essay](https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html)) are interface problems.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "approval flows, audit views and undo patterns for agent actions."
+      },
+      "links": [
+        {
+          "label": "Google",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+        },
+        {
+          "label": "Nadella's essay",
+          "url": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/image_3.max-2100x2100_0CYZWqn.jpg",
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "generated-ui-in-answers",
+      "section": "Trends to Watch",
+      "headline": "Generated UI in answers",
+      "summary": "ChatGPT's Intelligent UI shows the model composing interface.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to design component libraries models can safely assemble."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "model-routing-and-cost",
+      "section": "Trends to Watch",
+      "headline": "Model routing and cost",
+      "summary": "[Vals found](https://www.vals.ai/blogs/multi-agent-vibe-code-bench) multi-agent teams cost 1.8 to 5.1 times a single agent, with only one of four comparisons significantly better.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "when one agent is enough."
+      },
+      "links": [
+        {
+          "label": "Vals found",
+          "url": "https://www.vals.ai/blogs/multi-agent-vibe-code-bench"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "quality-gap-in-ai-built-apps",
+      "section": "Trends to Watch",
+      "headline": "Quality gap in AI-built apps",
+      "summary": "An [arXiv preprint](https://arxiv.org/abs/2605.26144) found 90.1% of AI-built apps in one audit had a control that did nothing when clicked (not yet peer reviewed). Interaction QA is a designer opportunity.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "arXiv preprint",
+          "url": "https://arxiv.org/abs/2605.26144"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "cursor-s-shareable-agent-canvases",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor's shareable agent canvases",
+      "summary": "[Cursor](https://cursor.com/changelog) turns agent output into a link-shared interactive surface.",
+      "why_it_matters": "Reviewers see results in context instead of diffs, and sharing needs no setup.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "google-gemini-s-per-agent-identity",
+      "section": "Product Design Inspiration",
+      "headline": "Google Gemini's per-agent identity",
+      "summary": "Giving each agent its own Workspace account with logged actions and project spend caps ([Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026)) makes delegation legible.",
+      "why_it_matters": "Trust comes from visible limits and receipts.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Google Cloud",
+          "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+        }
+      ],
+      "image_url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/image_3.max-2100x2100_0CYZWqn.jpg",
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "replit-s-reviewable-background-tasks",
+      "section": "Product Design Inspiration",
+      "headline": "Replit's reviewable background tasks",
+      "summary": "[Replit](https://docs.replit.com/updates/2026/10/09/changelog) runs cross-project changes in the background and publishes nothing automatically.",
+      "why_it_matters": "The human approves at the moment of consequence, not at every step.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Replit",
+          "url": "https://docs.replit.com/updates/2026/10/09/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "rtk-ai-rtk",
+      "section": "GitHub & Open Source",
+      "headline": "rtk-ai/rtk",
+      "summary": "A CLI proxy that compresses LLM context, claiming 60 to 90% token savings, shipped as a single binary. Gaining attention on cost pressure.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "rtk-ai/rtk",
+          "url": "https://github.com/rtk-ai/rtk"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "omniroute",
+      "section": "GitHub & Open Source",
+      "headline": "OmniRoute",
+      "summary": "MIT-licensed AI gateway across hundreds of providers with quota-aware fallback. Fits the routing trend.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "mem0",
+      "section": "GitHub & Open Source",
+      "headline": "mem0",
+      "summary": "A memory layer that persists agent context across sessions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "lobehub",
+      "section": "GitHub & Open Source",
+      "headline": "LobeHub",
+      "summary": "Agent platform for orchestrating AI teams that run tasks continuously.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "LobeHub",
+          "url": "https://github.com/lobehub/lobehub"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "spec-kit",
+      "section": "GitHub & Open Source",
+      "headline": "spec-kit",
+      "summary": "Toolkit for spec-driven development, close in spirit to Figma Specs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "spec-kit",
+          "url": "https://github.com/github/spec-kit"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "chrome-devtools-mcp-2",
+      "section": "GitHub & Open Source",
+      "headline": "chrome-devtools-mcp",
+      "summary": "Exposes DevTools to coding agents over MCP.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "plane",
+      "section": "GitHub & Open Source",
+      "headline": "plane",
+      "summary": "Open-source alternative to Jira, [Linear](https://linear.app) and ClickUp. Star counts and rationale come from third-party trend digests ([agents-radar](https://github.com/ghub1821239/agents-radar/issues/641), [Startup Corners](https://startupcorners.com/digest/devtools-digest-2026-10-01)) and are unverified.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "plane",
+          "url": "https://github.com/makeplane/plane"
+        },
+        {
+          "label": "Linear",
+          "url": "https://linear.app"
+        },
+        {
+          "label": "agents-radar",
+          "url": "https://github.com/ghub1821239/agents-radar/issues/641"
+        },
+        {
+          "label": "Startup Corners",
+          "url": "https://startupcorners.com/digest/devtools-digest-2026-10-01"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "hacker-news",
+      "section": "Social Buzz",
+      "headline": "Hacker News",
+      "kicker": "Hacker News",
+      "summary": "[Claude solves the 25-year-old mystery of the ECDSA curve seeds](https://zeli.app/story/50122800) hit 569 points. [A Mercor map found AI benchmarks ignore 90% of US working hours](https://zeli.app/story/50121179) (362 points), a useful frame for what to design for beyond benchmarks. [Meta's new terms let it scrape sites tied to a business account](https://zeli.app/story/50111852) (446 points, effective October 30) matters for anyone publishing a site. [Apple's MLX running an 816B model on four Mac Studios](https://zeli.app/story/50118320) at about 36 tokens per second (247 points) signals local inference is maturing.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude solves the 25-year-old mystery of the ECDSA curve seeds",
+          "url": "https://zeli.app/story/50122800"
+        },
+        {
+          "label": "A Mercor map found AI benchmarks ignore 90% of US working hours",
+          "url": "https://zeli.app/story/50121179"
+        },
+        {
+          "label": "Meta's new terms let it scrape sites tied to a business account",
+          "url": "https://zeli.app/story/50111852"
+        },
+        {
+          "label": "Apple's MLX running an 816B model on four Mac Studios",
+          "url": "https://zeli.app/story/50118320"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "newsletters-and-commentary",
+      "section": "Social Buzz",
+      "headline": "Newsletters and commentary",
+      "summary": "[Tamas Mezei argues](https://www.brokenrobot.xyz/blog/more-agents-same-mythical-month/) the bottleneck shifts from writing code to deciding and verifying. [Deloitte](https://www.deloitte.com/global/en/insights/topics/emerging-technologies/personal-ai-agents-at-work.html) reports 49% of workers who use AI use unapproved tools. I could not verify current X, Reddit or Product Hunt threads this run, so they are omitted.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Tamas Mezei argues",
+          "url": "https://www.brokenrobot.xyz/blog/more-agents-same-mythical-month/"
+        },
+        {
+          "label": "Deloitte",
+          "url": "https://www.deloitte.com/global/en/insights/topics/emerging-technologies/personal-ai-agents-at-work.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "figma-s-agent-features-explained",
+      "section": "Learning Corner",
+      "headline": "Figma's agent features explained",
+      "kicker": "Article",
+      "summary": "Read it to see how design guidance becomes agent input.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's agent features explained",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "anthropic-youtube-channel",
+      "section": "Learning Corner",
+      "headline": "Anthropic YouTube channel",
+      "kicker": "Video",
+      "summary": "I did not confirm a specific new video this run, so pick the latest agent or Claude Code walkthrough there.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic YouTube channel",
+          "url": "https://www.youtube.com/@anthropic-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "spec-kit-2",
+      "section": "Learning Corner",
+      "headline": "spec-kit",
+      "kicker": "GitHub project",
+      "summary": "Spec-driven development is the engineering twin of writing a Figma Spec.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "spec-kit",
+          "url": "https://github.com/github/spec-kit"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "figma-make-2",
+      "section": "Learning Corner",
+      "headline": "Figma Make",
+      "kicker": "Design resource",
+      "summary": "Hands-on is the fastest way to learn prompt-to-prototype limits.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "cursor-cloud-agent-canvases-2",
+      "section": "Learning Corner",
+      "headline": "Cursor cloud agent canvases",
+      "kicker": "AI workflow",
+      "summary": "Have an agent build a shareable canvas, then review it as a stakeholder.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor cloud agent canvases",
+          "url": "https://cursor.com/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "design-system-for-agents-consulting",
+      "section": "Opportunities",
+      "headline": "Design-system-for-agents consulting",
+      "summary": "Teams need their guidelines rewritten as Specs and agent context.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "agent-approval-and-audit-ux",
+      "section": "Opportunities",
+      "headline": "Agent approval and audit UX",
+      "summary": "Governance rules from the White House and enterprise buyers need real interfaces.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "interaction-qa-for-ai-built-apps",
+      "section": "Opportunities",
+      "headline": "Interaction QA for AI-built apps",
+      "summary": "With dead controls common in AI-built apps ([arXiv](https://arxiv.org/abs/2605.26144)), a designer who audits and fixes them has a clear pitch.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2605.26144"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "generated-ui-component-kits",
+      "section": "Opportunities",
+      "headline": "Generated-UI component kits",
+      "summary": "Libraries that models can compose safely, in the spirit of ChatGPT's Intelligent UI.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "workday-style-agent-front-doors",
+      "section": "Opportunities",
+      "headline": "Workday-style agent front doors",
+      "summary": "[Workday made Sana its default front door](https://newsroom.workday.com/2026-10-13-Sana-Is-the-New-Workday-Home-A-Dynamic-Agentic-Experience-Built-to-Finish-the-Work,-Not-Just-Answer-Questions), so enterprise conversational entry points need design talent.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Workday made Sana its default front door",
+          "url": "https://newsroom.workday.com/2026-10-13-Sana-Is-the-New-Workday-Home-A-Dynamic-Agentic-Experience-Built-to-Finish-the-Work,-Not-Just-Answer-Questions"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    },
+    {
+      "id": "write-a-1-page-spec-and-test-an-agent-against-it",
+      "section": "Today's Experiment",
+      "headline": "Write a 1-page Spec and test an agent against it",
+      "kicker": "25 minutes",
+      "summary": "Pick one component, such as a button or empty state. In [Figma](https://www.figma.com) (or a Markdown file), write its rules: spacing, tone, states, do and don't. Then ask [Figma Make](https://www.figma.com/make/) or [Cursor](https://cursor.com) to generate five variants with and without the spec. Compare how many break your rules. The gap is your measure of how much your guidelines matter to agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-17"
+    }
+  ],
+  "dont_miss": [
+    "Figma Specs and design system context: [read the announcement](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/).",
+    "Gemini 4 Argon GA and its cost curve: [Artificial Analysis](https://artificialanalysis.ai/articles/gemini-4-argon-google-top-three-labs).",
+    "Cursor cloud agent canvases: [changelog](https://cursor.com/changelog)."
+  ],
+  "footnote": "Sources: TechCrunch, Axios, VentureBeat, Artificial Analysis, Vals AI, Bloomberg, Cursor and Replit changelogs, Google Cloud, OpenAI, Anthropic, and trend digests from Substack, GitHub and Zeli. Some claims are vendor-reported or unverified, as flagged inline. Coverage spans October 9 to 16, 2026 because few items landed in the last 24 hours."
+}
