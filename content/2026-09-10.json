@@ -1,0 +1,698 @@
+{
+  "date": "2026-09-10",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/198i9xVZU59pEYFoHS_isUhAceg4xpYtdhNy3qzGZlyo/edit",
+  "highlights": [
+    {
+      "headline": "Meta launched Muse,",
+      "summary": "a personal AI agent that can shop, email, book travel, and pay on a user's behalf, immediately raising the trust question given Meta's privacy record. See [Muse on Product Hunt](https://www.producthunt.com/products/muse-22) and the [TechCrunch analysis](https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/)."
+    },
+    {
+      "headline": "Figma's Config 2026 reframed the canvas",
+      "summary": "around code, motion, and shaders as first-class design materials, with code layers, Figma Motion, and generative shader tools all shipping or entering beta. Read the [full recap](https://www.figma.com/blog/config-2026-recap/)."
+    },
+    {
+      "headline": "Anthropic shipped Claude Fable 5.1 and Mythos 5.1,",
+      "summary": "cutting cache-read pricing 75% and cybersecurity false positives roughly 60%, a direct win for anyone running agentic coding workloads. See [the announcement](https://www.anthropic.com/claude-fable-and-mythos-5-1)."
+    },
+    {
+      "headline": "OpenAI launched Astra,",
+      "summary": "a [powerful but controversial new model](https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/), days after shipping [ChatGPT Images 2.5](https://www.producthunt.com/products/openai) with sharper visuals and faster generation."
+    },
+    {
+      "headline": "Security for agents is becoming its own category:",
+      "summary": "[Harden](https://www.producthunt.com/products/agent-integrity-foundation-aif), a free local tool that screens tool calls before AI coding agents execute them, was the second most-upvoted launch on Product Hunt this week, right behind an agent-building framework."
+    }
+  ],
+  "entries": [
+    {
+      "id": "meta-bets-its-consumer-ai-future-on-muse",
+      "section": "AI Industry News",
+      "headline": "Meta bets its consumer AI future on Muse",
+      "summary": "Meta introduced [Muse](https://www.producthunt.com/products/muse-22), a personal AI agent for adults in the US that connects to email, calendars, payments, health apps, and shopping accounts to complete real tasks: booking travel, negotiating bills, filling out forms, and checking out via Link by Stripe. It runs in what Meta calls a secure virtual machine, separate from its ad systems, and costs $0, $20, or $100 a month depending on usage. The launch lands less than two weeks after Meta's [$18 billion child-safety settlement](https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/), which is why [TechCrunch's coverage](https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/) frames this as a test of consumer trust, not just capability.",
+      "why_it_matters": "for builders, the interesting part is the connector model: users opt in app by app, and Muse falls back to browser automation when no API exists, a pattern worth studying for anyone designing agent permissions.",
+      "links": [
+        {
+          "label": "Muse",
+          "url": "https://www.producthunt.com/products/muse-22"
+        },
+        {
+          "label": "$18 billion child-safety settlement",
+          "url": "https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/"
+        },
+        {
+          "label": "TechCrunch's coverage",
+          "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "anthropic-cuts-agentic-coding-costs-and-false-posi",
+      "section": "AI Industry News",
+      "headline": "Anthropic cuts agentic coding costs and false positives",
+      "summary": "[Claude Fable 5.1 and Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1) shipped September 1 with cache-read pricing down from $1.00 to $0.25 per million tokens (a 75% cut) and roughly 60% fewer cybersecurity false positives in Claude Code. Fable 5.1 also scores 52.6% on Terminal-Bench-Science, more than double Fable 5's 24.7%. Mythos 5.1 is the same model with fewer safeguards, gated to trusted access programs for cybersecurity and life-sciences work.",
+      "why_it_matters": "agentic workflows that lean on long context and repeated tool calls just got meaningfully cheaper to run.",
+      "why_label": "Practical impact",
+      "links": [
+        {
+          "label": "Claude Fable 5.1 and Mythos 5.1",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "openai-ships-astra-its-most-capable-and-most-conte",
+      "section": "AI Industry News",
+      "headline": "OpenAI ships Astra, its most capable and most contested model yet",
+      "summary": "OpenAI [launched Astra](https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/) on September 3, alongside a broader wave of frontier releases (Gemini 3.8 Flash and Muse Spark 1.3 landed within days of each other). Astra's capability jump has drawn scrutiny for the same reasons every recent frontier launch has: benchmark disputes and safety questions are now a routine part of the release cycle, not an afterthought.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "launched Astra",
+          "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "frontier-labs-sign-a-joint-pledge-on-ai-cyber-defe",
+      "section": "AI Industry News",
+      "headline": "Frontier labs sign a joint pledge on AI cyber defense",
+      "summary": "OpenAI, Anthropic, Google, Microsoft, and over 100 other companies [signed an open letter](https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/) urging coordinated defense against AI-related cyber threats, following reports of autonomous, multi-agent credential-harvesting campaigns and prompt-injection attacks against production chatbots.",
+      "why_it_matters": "if you're shipping an agent with tool access, assume adversarial prompts are already a live threat model, not a hypothetical one.",
+      "links": [
+        {
+          "label": "signed an open letter",
+          "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "figma-config-2026-code-motion-and-shaders-join-the",
+      "section": "Product Design & UX",
+      "headline": "Figma Config 2026: code, motion, and shaders join the canvas",
+      "summary": "[Figma's Config 2026 recap](https://www.figma.com/blog/config-2026-recap/) centers on one idea: code is a design material now, not a separate discipline. Code layers let you turn any layer into interactive code with a click or a prompt, then extract it back to editable design layers when needed. Figma Motion adds a full timeline with keyframes and presets directly in Figma Design, exportable as CSS, JSON, React, or MP4/WebM/animated SVG, and readable line-by-line in Dev Mode. Shader fills and effects, and fully custom generative plugins, can now be built by describing what you want, no plugin API knowledge required. The Figma agent, rolled out to everyone this week, gains connectors to Notion, Slack, GitHub, Atlassian, and more, plus shared team-visible chats. For product design teams, this collapses a real amount of design-to-dev handoff work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "figma-also-shipped-nested-folders-and-scalable-opa",
+      "section": "Product Design & UX",
+      "headline": "Figma also shipped nested folders and scalable opacity",
+      "summary": "Two quieter but widely requested updates: [nested folders](https://www.figma.com/blog/config-2026-recap/) for organizing files at scale, and scalable opacity in Variables so you can alias opacity for overlays and disabled states without detaching from a linked color style. Small, but the kind of fix that removes daily friction for large design systems.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "nested folders",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "vibe-coding-tools-keep-converging-on-full-stack",
+      "section": "Product Design & UX",
+      "headline": "Vibe coding tools keep converging on full-stack",
+      "summary": "Editors that started as UI generators ([bolt.new](https://www.producthunt.com/products/bolt-new), [Lovable](https://www.producthunt.com/products/lovable)) now bundle databases, auth, and hosting, while [Cursor](https://cursor.com) and [Claude Code](https://www.anthropic.com/claude-code) push deeper into existing codebases with diff review panels and expanded context. The practical takeaway for design-to-code workflows: which tool you reach for now depends less on \"can it generate UI\" and more on how much of the rest of the stack you want it to own.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "bolt.new",
+          "url": "https://www.producthunt.com/products/bolt-new"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://www.producthunt.com/products/lovable"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "mastra-factory",
+      "section": "New AI Tools",
+      "headline": "Mastra Factory",
+      "summary": "An open-source framework from the team behind Gatsby for building AI agents with workflows, memory, streaming, evals, and tracing, plus an interactive dev UI called Studio.",
+      "why_it_matters": null,
+      "audience": "developers building production agents who want observability out of the box.",
+      "links": [
+        {
+          "label": "Mastra Factory",
+          "url": "https://www.producthunt.com/products/mastra"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "harden",
+      "section": "New AI Tools",
+      "headline": "Harden",
+      "summary": "A free, local security layer for AI coding agents that checks tool calls before they run, using a post-trained model that beat frontier models on agent-security benchmarks while keeping code on your machine.",
+      "why_it_matters": null,
+      "audience": "anyone running autonomous coding agents with file or shell access.",
+      "links": [
+        {
+          "label": "Harden",
+          "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "chatgpt-images-2-5",
+      "section": "New AI Tools",
+      "headline": "ChatGPT Images 2.5",
+      "summary": "OpenAI's image generation update, sharper visuals, faster generation, and finer creative control.",
+      "why_it_matters": null,
+      "audience": "designers doing rapid concept exploration.",
+      "links": [
+        {
+          "label": "ChatGPT Images 2.5",
+          "url": "https://www.producthunt.com/products/openai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "muse",
+      "section": "New AI Tools",
+      "headline": "Muse",
+      "summary": "Meta's personal AI agent for everyday tasks, shopping, bills, travel, health.",
+      "why_it_matters": null,
+      "audience": "anyone who wants to test how far agentic task execution has come, with eyes open about the data it asks for.",
+      "links": [
+        {
+          "label": "Muse",
+          "url": "https://www.producthunt.com/products/muse-22"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "49agents-ide",
+      "section": "New AI Tools",
+      "headline": "49agents IDE",
+      "summary": "A 2D canvas IDE that maps every agent, terminal, repo, and machine you own onto one spatial view, aimed at engineers juggling many parallel agent sessions.",
+      "why_it_matters": null,
+      "audience": "developers running multiple coding agents at once.",
+      "links": [
+        {
+          "label": "49agents IDE",
+          "url": "https://www.producthunt.com/products/49agents-ide"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "gomodel",
+      "section": "New AI Tools",
+      "headline": "GoModel",
+      "summary": "A self-hosted, open-source AI gateway in Go, one OpenAI-compatible API across providers with budgets, caching, and failover, positioned as an alternative to OpenRouter.",
+      "why_it_matters": null,
+      "audience": "teams that want provider flexibility without a hosted middleman.",
+      "links": [
+        {
+          "label": "GoModel",
+          "url": "https://www.producthunt.com/products/gomodel"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "airuncode",
+      "section": "New AI Tools",
+      "headline": "Airuncode",
+      "summary": "Runs multiple local coding agents on your own machine in parallel.",
+      "why_it_matters": null,
+      "audience": "developers who want agent parallelism without cloud costs.",
+      "links": [
+        {
+          "label": "Airuncode",
+          "url": "https://www.producthunt.com/products/airuncode"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tucky",
+      "section": "New AI Tools",
+      "headline": "Tucky",
+      "summary": "Notes docked to your screen edge with an AI agent built in.",
+      "why_it_matters": null,
+      "audience": "anyone who wants lightweight always-on note capture during research or design work.",
+      "links": [
+        {
+          "label": "Tucky",
+          "url": "https://www.producthunt.com/products/tucky"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "routines-by-databox",
+      "section": "New AI Tools",
+      "headline": "Routines by Databox",
+      "summary": "An AI analyst that runs analysis and reports on a schedule.",
+      "why_it_matters": null,
+      "audience": "product and growth teams who want recurring metrics digests without building dashboards by hand.",
+      "links": [
+        {
+          "label": "Routines by Databox",
+          "url": "https://www.producthunt.com/products/databox"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "personal-agents-are-the-new-front-line",
+      "section": "Trends to Watch",
+      "headline": "Personal agents are the new front line",
+      "summary": "[Meta's Muse](https://www.producthunt.com/products/muse-22) joins [Gemini Spark](https://gemini.google/overview/agent/spark/) and [Claude Cowork](https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/) in a race to own the agent that acts on your behalf across apps, not just answers questions. Watch how each company handles consent and data scoping, since that UX pattern will define the category more than raw model capability.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Meta's Muse",
+          "url": "https://www.producthunt.com/products/muse-22"
+        },
+        {
+          "label": "Gemini Spark",
+          "url": "https://gemini.google/overview/agent/spark/"
+        },
+        {
+          "label": "Claude Cowork",
+          "url": "https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "design-tools-are-absorbing-code-motion-and-generat",
+      "section": "Trends to Watch",
+      "headline": "Design tools are absorbing code, motion, and generative media",
+      "summary": "Figma's Config 2026 announcements point at a broader shift: the boundary between \"design tool\" and \"dev tool\" is dissolving. Learn code layers and Weave-style node-based generative workflows now, they will be table stakes within a year.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "agent-security-is-becoming-its-own-product-categor",
+      "section": "Trends to Watch",
+      "headline": "Agent security is becoming its own product category",
+      "summary": "[Harden](https://www.producthunt.com/products/agent-integrity-foundation-aif)'s strong launch, alongside the frontier labs' [joint cyber-defense letter](https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/), signals that \"who checks what an agent is about to do\" is turning into real infrastructure, not a nice-to-have.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Harden",
+          "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif"
+        },
+        {
+          "label": "joint cyber-defense letter",
+          "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "mcp-and-connector-ecosystems-keep-expanding",
+      "section": "Trends to Watch",
+      "headline": "MCP and connector ecosystems keep expanding",
+      "summary": "Figma's agent now reaches Notion, Slack, GitHub, and Atlassian directly, and Muse builds ad hoc connectors to any service with a public API. The pattern to learn: standing up a connector is becoming the default distribution strategy for new AI products.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "muse-s-opt-in-connector-screen",
+      "section": "Product Design Inspiration",
+      "headline": "Muse's opt-in connector screen",
+      "summary": "Rather than one blanket permission grant, Meta's onboarding for Muse has users connect apps one at a time, with a visible usage meter and clear warnings before a subscription upsell. Given Meta's trust deficit, granular, legible consent screens are doing real persuasive work here, a pattern worth studying regardless of how you feel about the product.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Muse's opt-in connector screen",
+          "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "figma-motion-s-inline-dev-mode-timeline",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Motion's inline Dev Mode timeline",
+      "summary": "Every keyframe and easing curve in Figma Motion is inspectable in Dev Mode and exportable straight to CSS or React. It is a clean example of designing a feature so the handoff artifact and the working file are the same object, instead of two things that drift apart.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Motion's inline Dev Mode timeline",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "49agents-ide-s-spatial-canvas-for-agent-management",
+      "section": "Product Design Inspiration",
+      "headline": "49agents IDE's spatial canvas for agent management",
+      "summary": "49agents IDE treats tab-switching fatigue as a spatial memory problem and solves it with a citybuilder-style map where every agent, terminal, and repo has a fixed place you build yourself. A good reminder that spatial metaphors still outperform lists once the number of things you're tracking gets past a handful.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "49agents IDE's spatial canvas for agent management",
+          "url": "https://www.producthunt.com/products/49agents-ide"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "mastra",
+      "section": "GitHub & Open Source",
+      "headline": "Mastra",
+      "summary": "Open-source agent framework (workflows, memory, evals, tracing, plus a Studio dev UI) from the Gatsby team, gaining fast adoption as teams look for production-grade agent infrastructure instead of gluing one together themselves.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mastra",
+          "url": "https://www.producthunt.com/products/mastra"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "harden-aif",
+      "section": "GitHub & Open Source",
+      "headline": "Harden AIF",
+      "summary": "An open, local security tool for AI coding agents that screens tool calls before execution. Gaining attention because it addresses a gap that's gone from theoretical to urgent as coding agents get more autonomous.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Harden AIF",
+          "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "awesome-ai-agents-2026",
+      "section": "GitHub & Open Source",
+      "headline": "awesome-ai-agents-2026",
+      "summary": "A curated, monthly-updated list of 300+ AI agent frameworks and tools across 20+ categories, a useful map of the fast-moving agent-tooling landscape.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awesome-ai-agents-2026",
+          "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "top-ai-threads-on-hacker-news-today",
+      "section": "Social Buzz",
+      "headline": "Top AI threads on Hacker News today",
+      "kicker": "Hacker News",
+      "summary": "The top AI threads today are a widely discussed resignation post from an Anthropic employee (600+ points), Meta's Muse launch, a piece on AI \"mining\" open math problems, and reactions to ChatGPT Images 2.5. Worth a skim for the comment threads more than the headlines.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "cursor-or-claude-code",
+      "section": "Social Buzz",
+      "headline": "\"Cursor or Claude Code?\"",
+      "kicker": "Product Hunt",
+      "summary": "The top forum thread this week is a straightforward but genuinely useful debate, alongside a running poll on whether builders buy the domain or build the product first.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "\"Cursor or Claude Code?\"",
+          "url": "https://www.producthunt.com/p/cursor/cursor-or-claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "meta-debuts-its-muse-ai-agent-will-consumers-trust",
+      "section": "Learning Corner",
+      "headline": "Meta debuts its Muse AI agent. Will consumers trust it?",
+      "kicker": "Article",
+      "summary": "TechCrunch. The clearest breakdown yet of how a major platform is designing consent and data scoping for an agent with real-world purchasing power.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Meta debuts its Muse AI agent. Will consumers trust it?",
+          "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "figma-s-config-2026-recap",
+      "section": "Learning Corner",
+      "headline": "Figma's Config 2026 recap",
+      "kicker": "Design resource",
+      "summary": "Read this even if you skip the keynote, it is the single best primer on where design tooling is headed this year.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "mastra-2",
+      "section": "Learning Corner",
+      "headline": "Mastra",
+      "kicker": "GitHub project",
+      "summary": "Worth an afternoon if you want to understand how production agent frameworks structure memory, evals, and tracing.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mastra",
+          "url": "https://www.producthunt.com/products/mastra"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "figma-s-weave-tools",
+      "section": "Learning Corner",
+      "headline": "Figma's Weave tools",
+      "kicker": "AI workflow",
+      "summary": "A node-based canvas for chaining generative models into reusable, remixable workflows instead of one-off prompts. A good model for thinking about any multi-step generative pipeline, not just visual ones.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Weave tools",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "figma-s-config-2026-keynote-coverage",
+      "section": "Learning Corner",
+      "headline": "Figma's Config 2026 keynote coverage",
+      "kicker": "Video",
+      "summary": "The Config recap post links out to session recordings on code layers, motion, and shaders, useful if you want to see the tools in motion rather than read about them.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 keynote coverage",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "agent-security-and-permissioning-ux",
+      "section": "Opportunities",
+      "headline": "Agent security and permissioning UX",
+      "summary": "As agents like [Muse](https://www.producthunt.com/products/muse-22) and coding tools guarded by [Harden](https://www.producthunt.com/products/agent-integrity-foundation-aif) proliferate, someone needs to design the consent, scoping, and audit interfaces that make \"an AI can act for me\" feel safe rather than reckless.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Muse",
+          "url": "https://www.producthunt.com/products/muse-22"
+        },
+        {
+          "label": "Harden",
+          "url": "https://www.producthunt.com/products/agent-integrity-foundation-aif"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "design-to-code-tooling-built-on-figma-s-new-primit",
+      "section": "Opportunities",
+      "headline": "Design-to-code tooling built on Figma's new primitives",
+      "summary": "Code layers and Figma Motion just opened a new surface area for plugins, templates, and design-system tooling that bridges the two worlds.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "onboarding-flows-for-personal-ai-agents",
+      "section": "Opportunities",
+      "headline": "Onboarding flows for personal AI agents",
+      "summary": "Connector-by-connector opt-in, usage meters, and approval screens are becoming their own UX discipline, and most companies shipping agents right now are doing it badly.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "motion-design-systems",
+      "section": "Opportunities",
+      "headline": "Motion design systems",
+      "summary": "Figma Motion turns animation into a first-class, reusable design-system element for the first time, which creates real demand for people who can define motion tokens the way we already define color and type tokens.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "agent-management-interfaces",
+      "section": "Opportunities",
+      "headline": "Agent-management interfaces",
+      "summary": "Tools like [49agents IDE](https://www.producthunt.com/products/49agents-ide) show there's real appetite for spatial, visual ways to manage many parallel AI agents, a category barely a year old.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "49agents IDE",
+          "url": "https://www.producthunt.com/products/49agents-ide"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "rebuild-a-hover-state-with-figma-motion",
+      "section": "Today's Experiment",
+      "headline": "Rebuild a hover state with Figma Motion",
+      "kicker": "Under 30 minutes",
+      "summary": "Pick one small UI you've already designed in Figma and rebuild its hover or transition state using [Figma Motion](https://www.figma.com/blog/config-2026-recap/)'s new timeline instead of describing it in a comment. Export the result as React or CSS from Dev Mode and compare it against what you'd have handed a developer last week. Should take under 30 minutes and gives you a direct read on how much handoff time the new tooling actually saves.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Motion",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-10"
+    }
+  ],
+  "dont_miss": [
+    "**Meta's Muse launch**: the most consequential UX and trust test in consumer AI this month. Worth understanding even if you never use it, because its connector and consent patterns will get copied. [Read the TechCrunch piece](https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/).",
+    "**Figma Config 2026**: code layers, Figma Motion, and generative shaders change what \"design tool\" means. [Read the full recap](https://www.figma.com/blog/config-2026-recap/).",
+    "**Claude Fable 5.1's cost cuts**: 75% cheaper cache reads and far fewer false positives, directly useful if you run agentic coding workloads today. [See the announcement](https://www.anthropic.com/claude-fable-and-mythos-5-1)."
+  ],
+  "footnote": "Sourced from Figma, Anthropic, OpenAI, TechCrunch, Product Hunt, Hacker News, and GitHub on the morning of September 10, 2026. Some items reflect the most significant news from the past 2-3 days where same-day coverage was limited."
+}
