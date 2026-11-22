@@ -1,0 +1,769 @@
+{
+  "date": "2026-10-24",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/188VZbJ9895pRcIcoTzM0wggV1wlmFqOuk8clKmMSqLE/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic opened Claude Duet.",
+      "summary": "[Anthropic](https://www.anthropic.com) released [Claude Duet](https://macrumors.com/2026/10/21/anthropic-claude-duet/), a proactive agent on Opus 5.5 that sends morning briefs and acts in its own cloud browser. It is a research preview for US [Claude](https://claude.com) Pro and Max users."
+    },
+    {
+      "headline": "Figma moved from canvas to code.",
+      "summary": "[Figma](https://www.figma.com) put code layers and Specs into open beta and added a built-in backend (Payload) to Figma Make. Code layer creation is free on paid plans until November 4."
+    },
+    {
+      "headline": "Google Cloud now hosts all three frontier families.",
+      "summary": "[Google Cloud](https://cloud.google.com) started a private preview of [OpenAI](https://openai.com) models next to Gemini and Claude."
+    },
+    {
+      "headline": "Agents are becoming coworkers with identities.",
+      "summary": "[Google's enterprise Gemini agent](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/) gets its own Workspace account, and Walmart is building rails for agent shoppers while [Amazon blocks them](https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/)."
+    },
+    {
+      "headline": "Local coding models keep improving.",
+      "summary": "Recursive's open-weights [Flint](https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/) runs on standard laptops."
+    }
+  ],
+  "section_notes": {
+    "GitHub & Open Source": "Star counts on trending aggregators were stale this run, so rankings are omitted.",
+    "Social Buzz": "Direct access to [Hacker News](https://news.ycombinator.com), [Reddit](https://www.reddit.com), [Product Hunt](https://www.producthunt.com), and X was blocked this run, so this section is limited to what aggregators surfaced."
+  },
+  "entries": [
+    {
+      "id": "claude-duet",
+      "section": "AI Industry News",
+      "headline": "Claude Duet: a proactive agent in a persistent thread",
+      "summary": "[Anthropic](https://www.anthropic.com) launched [Claude Duet](https://macrumors.com/2026/10/21/anthropic-claude-duet/) on Opus 5.5. It connects to your apps, checks them every few hours, sends a short morning brief, and works in a cloud VM with its own browser. It asks approval before sending messages, paying, signing, or deleting. Access is by waitlist for US Pro and Max users, on web and iOS, and it draws on your existing plan limits.",
+      "why_it_matters": "The interaction model shifts from prompt and response to a single ongoing thread with approval gates.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Designers should study the approval pattern, because it is the new core UX primitive for agents."
+      },
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Claude Duet",
+          "url": "https://macrumors.com/2026/10/21/anthropic-claude-duet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24",
+      "lead": true
+    },
+    {
+      "id": "google-cloud-openai",
+      "section": "AI Industry News",
+      "headline": "Google Cloud adds OpenAI models",
+      "summary": "[Google Cloud began a private preview](https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three/) of GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna alongside [Gemini](https://deepmind.google) and Claude.",
+      "why_it_matters": "Model choice is becoming a dropdown inside one platform.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Build products that are model-agnostic and route by task."
+      },
+      "links": [
+        {
+          "label": "Google Cloud began a private preview",
+          "url": "https://the-decoder.com/google-cloud-now-offers-openai-models-alongside-gemini-and-claude-becoming-the-only-major-provider-with-all-three/"
+        },
+        {
+          "label": "Gemini",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "php-zero-day",
+      "section": "AI Industry News",
+      "headline": "AI models find a critical PHP zero-day",
+      "summary": "OpenAI's GPT-5.6 Sol and Google's Gemini 4 Argon independently found a zero-day in PHP's core under the Patch the Planet initiative, and [Wiz](https://www.wiz.io) confirmed it within hours, per [The Decoder](https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "Security review by agent is now a credible default step in any shipping pipeline."
+      },
+      "links": [
+        {
+          "label": "Wiz",
+          "url": "https://www.wiz.io"
+        },
+        {
+          "label": "The Decoder",
+          "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "agentic-commerce",
+      "section": "AI Industry News",
+      "headline": "Agentic commerce splits retail",
+      "summary": "[Walmart](https://www.walmart.com) launched agent infrastructure with spending thresholds, category limits, and biometric approval for large purchases, while [Amazon](https://www.amazon.com) uses CAPTCHAs and behavioral firewalls against agents ([TechCrunch](https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "Designing for agent-as-user, with limits and approvals, is a real product surface now."
+      },
+      "links": [
+        {
+          "label": "Walmart",
+          "url": "https://www.walmart.com"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "other-moves",
+      "section": "AI Industry News",
+      "headline": "Other moves",
+      "summary": "[Anthropic](https://www.anthropic.com) open-sourced [Scion](https://aiweekly.co/alerts/anthropic-builds-scion-to-replace-git-after-merges-hit-30000day), a Git replacement, and shipped [Claude Code v2.1.302](https://aiweekly.co/alerts/claude-code-21302-turns-on-fork-subagents-in-sdk-and-apps) with an official plugin system. [Google DeepMind](https://deepmind.google)'s Demis Hassabis [now expects AGI in 2 to 3 years](https://the-decoder.com/deepmind-founder-hassabis-shortens-agi-timeline-from-five-to-two-to-three-years/). [Moonshot AI](https://www.moonshot.ai) launched Kimi K3.1 Pro (reported $2 and $10 per million tokens, 1M context, open weights to follow) per [llm-stats](https://llm-stats.com/ai-news). [OpenAI](https://openai.com) says it will stop training on the live internet. Earlier this month, [Meta released Muse Wonder](https://research.meta.ai/blog/muse-wonder).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Scion",
+          "url": "https://aiweekly.co/alerts/anthropic-builds-scion-to-replace-git-after-merges-hit-30000day"
+        },
+        {
+          "label": "Claude Code v2.1.302",
+          "url": "https://aiweekly.co/alerts/claude-code-21302-turns-on-fork-subagents-in-sdk-and-apps"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "now expects AGI in 2 to 3 years",
+          "url": "https://the-decoder.com/deepmind-founder-hassabis-shortens-agi-timeline-from-five-to-two-to-three-years/"
+        },
+        {
+          "label": "Moonshot AI",
+          "url": "https://www.moonshot.ai"
+        },
+        {
+          "label": "llm-stats",
+          "url": "https://llm-stats.com/ai-news"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Meta released Muse Wonder",
+          "url": "https://research.meta.ai/blog/muse-wonder"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "figma-code-layers",
+      "section": "Product Design & UX",
+      "headline": "Figma code layers (open beta)",
+      "summary": "Teams build code-backed prototypes directly on the canvas from designs, GitHub repos, local folders, or the Chrome extension. It is on all plans, and creating and editing is free on paid plans through November 4. Source: [Figma release notes](https://releasebot.io/updates/figma).",
+      "why_it_matters": "prototypes with real behavior, without leaving the file.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "figma-specs",
+      "section": "Product Design & UX",
+      "headline": "Specs (open beta)",
+      "summary": "A canvas container for Markdown and design context that embeds Figma work and lets agents collaborate.",
+      "why_it_matters": "your PRD, rules, and screens live in one place that agents can read.",
+      "why_label": "Practical value",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "payload-figma-make",
+      "section": "Product Design & UX",
+      "headline": "Payload in Figma Make",
+      "summary": "[Figma Make](https://www.figma.com/make/) gains a built-in backend: database, file storage, user login, and admin panel. Hosting is in beta and free for now, rolling out to all accounts over the coming weeks.",
+      "why_it_matters": "a designer can ship a working app with auth and data in one tool.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "figma-agent-gemini-argon",
+      "section": "Product Design & UX",
+      "headline": "Figma agent and Gemini 4 Argon",
+      "summary": "The Figma agent is generally available (since Oct 6) with library guidelines, file search, custom skills, and credit-based usage. [Gemini 4 Argon](https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability) is in the Figma Make model picker on all plans. On Oct 22, Figma added enterprise admin controls for AI credits and SCIM.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gemini 4 Argon",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "figma-motion",
+      "section": "Product Design & UX",
+      "headline": "Motion (open beta)",
+      "summary": "Reusable animation styles, text animations, audio on timelines, and Lottie, MP4, and WebM export arrived Sep 30. Worth a look if you use [Rive](https://rive.app) or [Framer](https://www.framer.com) for motion today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Rive",
+          "url": "https://rive.app"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "tool-claude-duet",
+      "section": "New AI Tools",
+      "headline": "Claude Duet",
+      "summary": "Proactive agent with morning briefs and a cloud browser.",
+      "why_it_matters": null,
+      "audience": "busy PMs and designers on US Pro or Max (waitlist).",
+      "links": [
+        {
+          "label": "Claude Duet",
+          "url": "https://macrumors.com/2026/10/21/anthropic-claude-duet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "tool-figma-code-layers",
+      "section": "New AI Tools",
+      "headline": "Figma code layers",
+      "summary": "Code-backed prototypes on the canvas. Free creation on paid plans until Nov 4.",
+      "why_it_matters": null,
+      "audience": "designers who prototype interactions.",
+      "links": [
+        {
+          "label": "Figma code layers",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "tool-figma-make-payload",
+      "section": "New AI Tools",
+      "headline": "Figma Make with Payload",
+      "summary": "Prompt to app with built-in database and login.",
+      "why_it_matters": null,
+      "audience": "designers shipping real internal tools.",
+      "links": [
+        {
+          "label": "Figma Make with Payload",
+          "url": "https://www.figma.com/make/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "tool-flint",
+      "section": "New AI Tools",
+      "headline": "Flint by Recursive",
+      "summary": "Open-weights coding model for laptops.",
+      "why_it_matters": null,
+      "audience": "developers who want private, offline coding help.",
+      "links": [
+        {
+          "label": "Flint by Recursive",
+          "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "tool-kimi-k3-1-pro",
+      "section": "New AI Tools",
+      "headline": "Kimi K3.1 Pro",
+      "summary": "From [Kimi](https://www.kimi.com): reported 65.7% on Terminal-Bench 4.0 at low token prices. Verify benchmarks yourself.",
+      "why_it_matters": null,
+      "audience": "teams comparing cheap agentic models.",
+      "links": [
+        {
+          "label": "Kimi K3.1 Pro",
+          "url": "https://llm-stats.com/ai-news"
+        },
+        {
+          "label": "Kimi",
+          "url": "https://www.kimi.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "tool-knowledge-work-plugins",
+      "section": "New AI Tools",
+      "headline": "Knowledge work plugins for Claude",
+      "summary": "Open-source plugin collection for non-coding work.",
+      "why_it_matters": null,
+      "audience": "anyone customizing Claude workflows.",
+      "links": [
+        {
+          "label": "Knowledge work plugins for Claude",
+          "url": "https://github.com/anthropics/knowledge-work-plugins"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "tool-scion",
+      "section": "New AI Tools",
+      "headline": "Scion",
+      "summary": "Anthropic's open-source Git replacement for agent-scale merges.",
+      "why_it_matters": null,
+      "audience": "engineering leads curious about agent-era version control.",
+      "links": [
+        {
+          "label": "Scion",
+          "url": "https://aiweekly.co/alerts/anthropic-builds-scion-to-replace-git-after-merges-hit-30000day"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "trend-proactive-agents",
+      "section": "Trends to Watch",
+      "headline": "Proactive agents",
+      "summary": "Duet and Google's tasks inbox both show agents that start work without a prompt.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "approval-gate and notification design, plus audit trails that attribute actions to the agent."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "trend-design-code-converge",
+      "section": "Trends to Watch",
+      "headline": "Design and code converge",
+      "summary": "Figma code layers, Specs, and Payload erase the handoff.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "enough front-end and data modeling to direct an agent confidently."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "trend-agent-identity-commerce",
+      "section": "Trends to Watch",
+      "headline": "Agent identity and commerce",
+      "summary": "Agents with their own accounts and spending limits (Google, Walmart) need new permission UIs.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "spend caps, scoped credentials, and escalation flows."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "trend-mcp-plumbing",
+      "section": "Trends to Watch",
+      "headline": "MCP as plumbing",
+      "summary": "Google's agent connects to any [MCP](https://modelcontextprotocol.io) server, and Figma's MCP added 20 partner integrations.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to build and consume MCP servers."
+      },
+      "links": [
+        {
+          "label": "MCP",
+          "url": "https://modelcontextprotocol.io"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "insp-duet-approval-gates",
+      "section": "Product Design Inspiration",
+      "headline": "Claude Duet's approval gates",
+      "summary": "Duet pauses before sending, paying, signing, or deleting. See [MacRumors](https://macrumors.com/2026/10/21/anthropic-claude-duet/).",
+      "why_it_matters": "risk is tiered: low-stakes work flows, irreversible work asks.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "MacRumors",
+          "url": "https://macrumors.com/2026/10/21/anthropic-claude-duet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "insp-google-tasks-inbox",
+      "section": "Product Design Inspiration",
+      "headline": "Google's tasks inbox",
+      "summary": "The enterprise Gemini agent shows reasoning, subagent delegation, and progress in an inbox, and logs actions to the agent, not a person. See [TechCrunch](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/).",
+      "why_it_matters": "it reuses a familiar mental model (an inbox) for supervising non-human work.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "insp-walmart-agent-limits",
+      "section": "Product Design Inspiration",
+      "headline": "Walmart's layered agent limits",
+      "summary": "Spending thresholds, category limits, and biometric approval for large buys. See [TechCrunch](https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/).",
+      "why_it_matters": "friction scales with consequence.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "gh-knowledge-work-plugins",
+      "section": "GitHub & Open Source",
+      "headline": "anthropics/knowledge-work-plugins",
+      "summary": "Plugins for knowledge workers using Claude Cowork.",
+      "why_it_matters": "gaining attention as plugin systems land across Claude products.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "gh-hyperframes",
+      "section": "GitHub & Open Source",
+      "headline": "heygen-com/hyperframes",
+      "summary": "Creates video from HTML, built for AI agents.",
+      "why_it_matters": "useful for designers who want motion output from markup.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "gh-codebase-memory-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "DeusData/codebase-memory-mcp",
+      "summary": "An MCP server that indexes a codebase into a persistent knowledge graph.",
+      "why_it_matters": "attention comes from cutting agent token use on large repos.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "DeusData/codebase-memory-mcp",
+          "url": "https://github.com/DeusData/codebase-memory-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "gh-cursor-talk-to-figma-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "grab/cursor-talk-to-figma-mcp",
+      "summary": "A long-running bridge between [Cursor](https://cursor.com) and Figma over MCP.",
+      "why_it_matters": "still the reference for agent-to-canvas workflows.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "grab/cursor-talk-to-figma-mcp",
+          "url": "https://github.com/grab/cursor-talk-to-figma-mcp"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "buzz-claude-duet",
+      "section": "Social Buzz",
+      "headline": "Claude Duet",
+      "kicker": "Hacker News",
+      "summary": "Posted to Hacker News via the [AI Weekly alert](https://aiweekly.co/alerts/anthropic-opens-claude-duet-a-proactive-opus-55-agent-to-us-pro-and-max-users), and the theme is trust: proactive agents versus approval fatigue.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI Weekly alert",
+          "url": "https://aiweekly.co/alerts/anthropic-opens-claude-duet-a-proactive-opus-55-agent-to-us-pro-and-max-users"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "buzz-design-slop",
+      "section": "Social Buzz",
+      "headline": "Design slop",
+      "summary": "Adrian Krebs's [analysis of Show HN submissions](https://www.adriankrebs.ch/blog/design-slop/) scores generated sites for repeated AI design patterns. Useful as a checklist of what to avoid.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "analysis of Show HN submissions",
+          "url": "https://www.adriankrebs.ch/blog/design-slop/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "learn-google-agentic-gemini",
+      "section": "Learning Corner",
+      "headline": "Google's agentic Gemini launch",
+      "kicker": "Article",
+      "summary": "It shows how a big vendor frames objectives, oversight, and agent identity.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google's agentic Gemini launch",
+          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "learn-figma-youtube",
+      "section": "Learning Corner",
+      "headline": "Figma YouTube channel",
+      "kicker": "Video",
+      "summary": "Look for the Config India 2026 sessions on code layers and Specs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma YouTube channel",
+          "url": "https://www.youtube.com/@figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "learn-knowledge-work-plugins",
+      "section": "Learning Corner",
+      "headline": "knowledge-work-plugins",
+      "kicker": "GitHub project",
+      "summary": "Read how plugins package skills and connectors.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "learn-design-slop",
+      "section": "Learning Corner",
+      "headline": "Design slop",
+      "kicker": "Design resource",
+      "summary": "A concrete list of AI design tells to design against.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design slop",
+          "url": "https://www.adriankrebs.ch/blog/design-slop/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "learn-figma-specs-workflow",
+      "section": "Learning Corner",
+      "headline": "Figma Specs plus agent",
+      "kicker": "AI workflow",
+      "summary": "[Figma](https://www.figma.com) Specs plus agent: write your product rules in a Spec, then let the Figma agent generate screens against it. See the [release notes](https://releasebot.io/updates/figma) for current capabilities.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "release notes",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "opp-agent-approval-ux",
+      "section": "Opportunities",
+      "headline": "Agent approval UX",
+      "summary": "Teams shipping proactive agents lack patterns for tiered consent. Prototype and publish a pattern library.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "opp-design-to-code",
+      "section": "Opportunities",
+      "headline": "Design-to-code freelancing",
+      "summary": "With Figma code layers, clients will want designers who deliver working prototypes, not static frames.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "opp-agentic-commerce",
+      "section": "Opportunities",
+      "headline": "Agentic commerce flows",
+      "summary": "Retailers following [Walmart](https://www.walmart.com) need spending-limit and approval interfaces.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Walmart",
+          "url": "https://www.walmart.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "opp-mcp-design-systems",
+      "section": "Opportunities",
+      "headline": "MCP tooling for design systems",
+      "summary": "Packaging a design system as an MCP server or plugin is an open niche.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    },
+    {
+      "id": "exp-spec-driven-screen",
+      "section": "Today's Experiment",
+      "headline": "Build a Spec-driven screen",
+      "kicker": "25 minutes",
+      "summary": "In [Figma](https://www.figma.com), create a Spec with a 10-line product brief and three UI rules. Ask the Figma agent to generate one onboarding screen from it. Then turn on a code layer to add one real interaction. Note where the agent ignored your rules.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-24"
+    }
+  ],
+  "dont_miss": [
+    "Read the [Claude Duet](https://macrumors.com/2026/10/21/anthropic-claude-duet/) coverage and join the waitlist if you are in the US.",
+    "Try Figma code layers before the free window ends on November 4 ([details](https://releasebot.io/updates/figma)).",
+    "Study [Walmart's agent limits](https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/) as a design reference."
+  ],
+  "footnote": "Aggregated from TechCrunch, MacRumors, The Decoder, AI Weekly, llm-stats, and Figma release notes via Releasebot, covering Oct 20 to 24, 2026, with some items from Oct 8 to 15 for context. Several figures are secondhand from aggregators; verify before relying on them."
+}
