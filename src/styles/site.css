@@ -520,6 +520,8 @@ mark { background: var(--tone-faint); color: inherit; border-radius: 2px; }
 
 /* ---------- 13. Tools ---------- */
 .tool-row { grid-template-columns: 160px minmax(0, 1fr); }
+.tool-controls { display: flex; flex-wrap: wrap; gap: var(--space-10) var(--space-20); justify-content: flex-end; }
+.tool-row .media { --ar: 16 / 10; }
 .tool-row .index__num { padding-top: 4px; }
 
 /* ---------- 14. Footer ---------- */
@@ -613,6 +615,7 @@ mark { background: var(--tone-faint); color: inherit; border-radius: 2px; }
   .filters__row .field--search { grid-column: 1 / -1; }
   .site-foot__top { gap: var(--space-30) var(--space-20); padding-bottom: var(--space-40); }
   .pager .btn { flex: 1 1 0; }
+  .tool-controls { justify-content: flex-start; }
   .cards-2, .cards-3 { grid-template-columns: 1fr; }
   .ncard--split .ncard__body { grid-template-columns: 1fr; }
   .ncard--h { flex-direction: column; }

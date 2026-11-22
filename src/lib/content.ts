@@ -77,6 +77,18 @@ export function ratedTools(): Entry[] {
   return out.sort((a, b) => b.tool_rating! - a.tool_rating! || b.date.localeCompare(a.date));
 }
 
+/** Open-source projects, one per link (the most recent mention wins), newest first. */
+export function openSource(): Entry[] {
+  const seen = new Set<string>();
+  return allEntries.filter((e) => {
+    if (e.section !== 'GitHub & Open Source') return false;
+    const key = primaryUrl(e) ?? e.headline.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 const at = (date: string) => new Date(`${date}T00:00:00Z`);
 export const fmtLong = (date: string) =>
   at(date).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });

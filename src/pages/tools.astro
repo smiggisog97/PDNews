@@ -2,20 +2,34 @@
 import Base from '../layouts/Base.astro';
 import Media from '../components/Media.astro';
 import Meter from '../components/Meter.astro';
-import { ratedTools, primaryUrl, entryHref, fmtShort, cap, pad2 } from '../lib/content';
+import { ratedTools, openSource, primaryUrl, entryHref, fmtShort, cap } from '../lib/content';
 import { inline } from '../lib/md';
 
-const tools = ratedTools();
+// Rated AI tools first (best first), then open-source projects (newest first).
+const rated = ratedTools();
+const repos = openSource();
+const tools = [...rated, ...repos];
+const notesOf = (e: (typeof tools)[number]) => [
+  e.audience ? { label: 'For', html: inline(cap(e.audience)) } : null,
+  e.why_it_matters ? { label: e.why_label ?? 'Why it matters', html: inline(cap(e.why_it_matters)) } : null,
+].filter(Boolean) as { label: string; html: string }[];
 ---
-<Base title="Tools" nav="tools" description="Every tool the brief has rated, best first.">
+<Base title="Tools" nav="tools" description="Every AI tool and open-source project the brief has picked.">
   <header class="container head">
-    <p class="head__eyebrow eyebrow reveal"><span>{tools.length} tools rated</span></p>
-    <h1 class="h2 head__title" data-reveal="text">Every tool the brief has tried, best first.</h1>
+    <p class="head__eyebrow eyebrow reveal"><span>{rated.length} AI tools</span><span>{repos.length} open source</span></p>
+    <h1 class="h2 head__title" data-reveal="text">Every tool the brief has picked.</h1>
     <div class="head__row reveal" style="--d: .45s">
-      <p class="body-md muted">Ratings are out of ten for design work. A tool that comes up again keeps its latest rating.</p>
-      <div class="chips" role="group" aria-label="Sort tools" style="justify-content: flex-end">
-        <button type="button" class="chip" data-sort="rating" aria-pressed="true">Best first</button>
-        <button type="button" class="chip" data-sort="date" aria-pressed="false">Newest first</button>
+      <p class="body-md muted">AI tools rated out of ten for design work, and the open-source projects worth a look. Anything that comes up again keeps its latest mention.</p>
+      <div class="tool-controls">
+        <div class="chips" role="group" aria-label="Show">
+          <button type="button" class="chip" data-kind="" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-kind="tool" aria-pressed="false">AI tools</button>
+          <button type="button" class="chip" data-kind="repo" aria-pressed="false">Open source</button>
+        </div>
+        <div class="chips" role="group" aria-label="Sort">
+          <button type="button" class="chip" data-sort="rating" aria-pressed="true">Best first</button>
+          <button type="button" class="chip" data-sort="date" aria-pressed="false">Newest first</button>
+        </div>
       </div>
     </div>
   </header>
@@ -32,13 +46,16 @@ const tools = ratedTools();
         {tools.map((e, n) => {
           const href = primaryUrl(e);
           return (
-            <li class="row tool-row reveal" data-date={e.date} data-order={n}>
+            <li class="row tool-row reveal" data-date={e.date} data-order={n} data-kind={e.tool_rating != null ? 'tool' : 'repo'}>
               {href ? <a href={href} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><Media entry={e} /></a> : <Media entry={e} />}
               <div class="row__body">
                 {e.kicker && <div class="row__top"><span class="eyebrow">Released {e.kicker}</span></div>}
-                <div class="title-row"><h2 class="h5">{href ? <a href={href} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h2><Meter value={e.tool_rating!} /></div>
+                <div class="title-row">
+                  <h2 class:list={['h5', { 'mono-name': e.tool_rating == null }]}>{href ? <a href={href} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h2>
+                  {e.tool_rating != null ? <Meter value={e.tool_rating} /> : <span class="tag rating">Open source</span>}
+                </div>
                 <p class="body-md prose" set:html={inline(e.summary)} />
-                {e.audience && <dl class="notes body-md prose"><div><dt class="eyebrow">For</dt><dd set:html={inline(cap(e.audience))} /></div></dl>}
+                {notesOf(e).length > 0 && <dl class="notes body-md prose">{notesOf(e).map((x) => <div><dt class="eyebrow">{x.label}</dt><dd set:html={x.html} /></div>)}</dl>}
                 <a class="eyebrow muted u-link" style="align-self: flex-start" href={entryHref(e)}>From the {fmtShort(e.date)} issue</a>
               </div>
             </li>
@@ -50,17 +67,23 @@ const tools = ratedTools();
 
   <script>
     const list = document.querySelector<HTMLOListElement>('[data-tools]');
-    const buttons = [...document.querySelectorAll<HTMLButtonElement>('[data-sort]')];
+    const sorts = [...document.querySelectorAll<HTMLButtonElement>('[data-sort]')];
+    const kinds = [...document.querySelectorAll<HTMLButtonElement>('[data-kind]')].filter((b) => b.tagName === 'BUTTON');
     if (list) {
       const items = [...list.children] as HTMLElement[];
-      buttons.forEach((b) =>
+      sorts.forEach((b) =>
         b.addEventListener('click', () => {
-          const by = b.dataset.sort;
-          buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-          const sorted = [...items].sort((a, z) =>
-            by === 'date' ? z.dataset.date!.localeCompare(a.dataset.date!) || +a.dataset.order! - +z.dataset.order! : +a.dataset.order! - +z.dataset.order!,
-          );
-          sorted.forEach((el) => list.appendChild(el));
+          sorts.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+          const byDate = b.dataset.sort === 'date';
+          [...items]
+            .sort((a, z) => (byDate ? z.dataset.date!.localeCompare(a.dataset.date!) : 0) || +a.dataset.order! - +z.dataset.order!)
+            .forEach((el) => list.appendChild(el));
+        }),
+      );
+      kinds.forEach((b) =>
+        b.addEventListener('click', () => {
+          kinds.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+          items.forEach((el) => (el.hidden = !!b.dataset.kind && el.dataset.kind !== b.dataset.kind));
         }),
       );
     }
