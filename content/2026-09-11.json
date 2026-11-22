@@ -1,0 +1,659 @@
+{
+  "date": "2026-09-11",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1b1WxkV8uty7CJUDde9pS0j8ysN-7SslkxvfwBSyiUpw/edit",
+  "highlights": [
+    {
+      "headline": "OpenAI launched ChatGPT for Financial Services",
+      "summary": "on GPT-6 Astra, [built with Morgan Stanley and Evercore](https://openai.com/index/introducing-workspace-agents-in-chatgpt/), pushing agentic AI further into regulated, high-stakes work."
+    },
+    {
+      "headline": "Claude Design is maturing fast:",
+      "summary": "[recent updates](https://www.anthropic.com/news/claude-design-anthropic-labs) give \"vibe coders\" and their design leads more control, a direct shot at [Figma](https://www.figma.com)'s territory for non-designers."
+    },
+    {
+      "headline": "Figma shipped animated, interactive shaders and nested folders;",
+      "summary": "[Figma](https://www.figma.com/blog/introducing-figmas-integration-with-framer/) and [Framer](https://www.framer.com/updates) added a CMS List field and full 3D transform support in its Agent."
+    },
+    {
+      "headline": "Model fatigue is real:",
+      "summary": "[Anthropic](https://www.anthropic.com), [OpenAI](https://openai.com), [Google](https://www.google.com), and [Meta](https://www.meta.com) all shipped new models within days of each other in early September."
+    },
+    {
+      "headline": "ECC, an agent harness optimization system",
+      "summary": "for [Claude Code](https://claude.com/product/claude-code), [Codex](https://openai.com/codex/), and [Cursor](https://cursor.com), [is one of the fastest-growing repos on GitHub right now](https://github.com/affaan-m/ECC), a sign that \"harness engineering\" is becoming its own discipline."
+    }
+  ],
+  "entries": [
+    {
+      "id": "openai-launches-chatgpt-for-financial-services",
+      "section": "AI Industry News",
+      "headline": "OpenAI launches ChatGPT for Financial Services",
+      "summary": "On September 10, [OpenAI](https://openai.com) [introduced a tailored ChatGPT Work experience](https://openai.com/index/introducing-workspace-agents-in-chatgpt/) for finance teams, pairing built-in financial data with [GPT-6 Astra](https://tech-insider.org/chatgpt-financial-services-gpt-6-astra-2026/) reasoning for research, financial modeling, and client materials. It was co-designed with [Morgan Stanley](https://www.morganstanley.com) and [Evercore](https://www.evercore.com), and includes compliance exports and default no-training-on-business-data policies.",
+      "why_it_matters": "this is the clearest sign yet that foundation labs are packaging agents around specific regulated verticals rather than shipping general chat, which raises the bar for anyone building narrow AI products.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "introduced a tailored ChatGPT Work experience",
+          "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/"
+        },
+        {
+          "label": "GPT-6 Astra",
+          "url": "https://tech-insider.org/chatgpt-financial-services-gpt-6-astra-2026/"
+        },
+        {
+          "label": "Morgan Stanley",
+          "url": "https://www.morganstanley.com"
+        },
+        {
+          "label": "Evercore",
+          "url": "https://www.evercore.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "a-week-of-model-fatigue",
+      "section": "AI Industry News",
+      "headline": "A week of \"model fatigue\"",
+      "summary": "In the first week of September, [Anthropic](https://www.anthropic.com) shipped Claude Fable 5.1 and Mythos 5.1, [Google](https://www.google.com) released Gemini 3.8 Flash (including a cyber-focused variant), and OpenAI followed with GPT-6 Astra, all within days of each other, per [Startup Fortune's roundup](https://startupfortune.com/anthropic-openai-meta-and-google-all-shipped-new-ai-models-in-one-week/).",
+      "why_it_matters": "release cadence is now so fast that picking a default model is a moving target; teams building on top of these APIs should design for swapping models, not marrying one.",
+      "links": [
+        {
+          "label": "Startup Fortune's roundup",
+          "url": "https://startupfortune.com/anthropic-openai-meta-and-google-all-shipped-new-ai-models-in-one-week/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "frontier-labs-coordinate-on-cyber-and-rogue-ai-def",
+      "section": "AI Industry News",
+      "headline": "Frontier labs coordinate on cyber and rogue-AI defenses",
+      "summary": "[Anthropic](https://www.anthropic.com), [OpenAI](https://openai.com), and [Google](https://www.google.com) jointly [unveiled cyber AI models, safeguards, and access programs](https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html), alongside a broader [100+ company call to action on rogue AI defense](https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/).",
+      "why_it_matters": "as agents get more autonomous, the labs are visibly hedging against their own products; expect more built-in guardrails in the tools you already use.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Google",
+          "url": "https://www.google.com"
+        },
+        {
+          "label": "unveiled cyber AI models, safeguards, and access programs",
+          "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html"
+        },
+        {
+          "label": "100+ company call to action on rogue AI defense",
+          "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "openai-s-ad-business-hits-1b-run-rate",
+      "section": "AI Industry News",
+      "headline": "OpenAI's ad business hits $1B run rate",
+      "summary": "[OpenAI](https://openai.com)'s ChatGPT advertising business reportedly hit a $1 billion annualized revenue run rate in 200 days and is expanding self-serve ads to 40+ countries, ahead of a rumored Q4 2026 IPO.",
+      "why_it_matters": "ad-supported AI products are now proven revenue, which will shape how free tiers of design and coding tools are monetized next.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "figma-ships-animated-shaders-and-nested-folders",
+      "section": "Product Design & UX",
+      "headline": "Figma ships animated shaders and nested folders",
+      "summary": "[Figma](https://www.figma.com) [rolled out](https://www.figma.com/release-notes/) animated, interactive shaders that react to mouse movement, plus community publishing for generative plugins and shaders. Nested folders, for organizing files as teams scale, is rolling out to all users over the coming weeks.",
+      "why_it_matters": "motion and reactive fills move from custom code into native Figma primitives, cutting handoff friction with engineering.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "framer-s-cms-and-agent-get-more-capable",
+      "section": "Product Design & UX",
+      "headline": "Framer's CMS and Agent get more capable",
+      "summary": "[Framer](https://www.framer.com/updates) added a List field to its CMS for grouping repeating content like FAQs, and its AI Agent now supports full 3D transform properties (rotate XYZ, perspective, depth).",
+      "why_it_matters": "less manual field duplication for content-heavy sites, and more expressive layouts without leaving the prompt-to-site workflow.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "claude-design-adds-more-control-for-teams",
+      "section": "Product Design & UX",
+      "headline": "Claude Design adds more control for teams",
+      "summary": "[Anthropic's updated Claude Design](https://www.fastcompany.com/91561193/anthropics-updated-claude-design-gives-vibe-coders-and-their-design-overlords-more-control) gives design leads more oversight over what \"vibe coders\" and non-designers produce, pulling brand colors, fonts, and components straight from a team's design system.",
+      "why_it_matters": "it narrows the gap between prompt-generated prototypes and production-ready, on-brand output.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Anthropic's updated Claude Design",
+          "url": "https://www.fastcompany.com/91561193/anthropics-updated-claude-design-gives-vibe-coders-and-their-design-overlords-more-control"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "claude-design",
+      "section": "New AI Tools",
+      "headline": "Claude Design",
+      "summary": "Prompt-to-prototype tool that generates decks, one-pagers, and UI mockups from a team's own design system.",
+      "why_it_matters": null,
+      "audience": "founders, PMs, and marketers without a design background.",
+      "links": [
+        {
+          "label": "Claude Design",
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "chatgpt-for-financial-services",
+      "section": "New AI Tools",
+      "headline": "ChatGPT for Financial Services",
+      "summary": "GPT-6 Astra workspace with built-in financial data and compliance controls.",
+      "why_it_matters": null,
+      "audience": "research and IB/equity teams.",
+      "links": [
+        {
+          "label": "ChatGPT for Financial Services",
+          "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "figma-animated-shaders-nested-folders",
+      "section": "New AI Tools",
+      "headline": "Figma (animated shaders + nested folders)",
+      "summary": "Native reactive motion fills and better file organization at scale.",
+      "why_it_matters": null,
+      "audience": "product design teams already in Figma.",
+      "links": [
+        {
+          "label": "Figma (animated shaders + nested folders)",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "framer",
+      "section": "New AI Tools",
+      "headline": "Framer",
+      "summary": "CMS List fields and 3D-capable Agent for prompt-to-site building.",
+      "why_it_matters": null,
+      "audience": "solo builders and marketing sites.",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "ecc",
+      "section": "New AI Tools",
+      "headline": "ECC",
+      "summary": "An agent harness operating system (skills, memory, security, routing) for [Claude Code](https://claude.com/product/claude-code), [Codex](https://openai.com/codex/), [Cursor](https://cursor.com), and more.",
+      "why_it_matters": null,
+      "audience": "developers running multiple coding agents who want portable, reusable behavior.",
+      "links": [
+        {
+          "label": "ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "ponytail",
+      "section": "New AI Tools",
+      "headline": "ponytail",
+      "summary": "Makes coding agents write far less code per task (80-94% reduction in testing) by defaulting to restraint.",
+      "why_it_matters": null,
+      "audience": "teams fighting AI-generated code bloat.",
+      "links": [
+        {
+          "label": "ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "uizard",
+      "section": "New AI Tools",
+      "headline": "Uizard",
+      "summary": "Rapid UI generation and prototyping from text or sketches.",
+      "why_it_matters": null,
+      "audience": "early-stage teams validating ideas fast.",
+      "links": [
+        {
+          "label": "Uizard",
+          "url": "https://uizard.io"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "vertical-agents-over-general-chat",
+      "section": "Trends to Watch",
+      "headline": "Vertical agents over general chat",
+      "summary": "OpenAI's finance workspace and similar moves from other labs show foundation models increasingly shipped as narrow, domain-specific agents rather than general assistants.",
+      "why_it_matters": "the opportunity for builders is shifting from \"wrap a chatbot\" to \"own a workflow\" in a specific industry.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "how retrieval and compliance layers get bolted onto a general model for a regulated use case."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "harness-engineering-as-its-own-layer",
+      "section": "Trends to Watch",
+      "headline": "Harness engineering as its own layer",
+      "summary": "Tools like [ECC](https://github.com/affaan-m/ECC) and [ponytail](https://github.com/DietrichGebert/ponytail) treat the coding agent itself as infrastructure to be tuned, with skills, memory, and routing rules that move across [Claude Code](https://claude.com/product/claude-code), [Cursor](https://cursor.com), and [Codex](https://openai.com/codex/).",
+      "why_it_matters": "the differentiator is shifting from which model you use to how well you've configured the agent around it.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "the basics of agent skills, hooks, and context management."
+      },
+      "links": [
+        {
+          "label": "ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        },
+        {
+          "label": "ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "design-systems-become-the-api-for-ai-generation",
+      "section": "Trends to Watch",
+      "headline": "Design systems become the API for AI generation",
+      "summary": "Both [Claude Design](https://www.anthropic.com/news/claude-design-anthropic-labs) and [Figma](https://www.figma.com)'s native AI tools now pull directly from a team's existing design tokens and components.",
+      "why_it_matters": "a clean, well-documented design system is quickly becoming a prerequisite for getting usable AI-generated UI, not a nice-to-have.",
+      "why_label": "Why it matters",
+      "links": [
+        {
+          "label": "Claude Design",
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "figma-s-reactive-shaders",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's reactive shaders",
+      "summary": "[Animated shaders that respond to mouse movement](https://www.figma.com/release-notes/) turn static fills into a live material.",
+      "why_it_matters": "it adds motion without requiring engineers to hand-code shader logic, keeping designers in control of a previously code-only effect.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma's reactive shaders",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "framer-s-cms-list-field",
+      "section": "Product Design Inspiration",
+      "headline": "Framer's CMS List field",
+      "summary": "Grouping repeating content, like FAQ items, into a single structured list instead of duplicated fields is a small change with outsized effect on editing speed.",
+      "why_it_matters": "it matches how content actually gets edited: as a set, not as isolated fields.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Framer updates",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "chatgpt-for-financial-services-artifact-first-desi",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT for Financial Services' artifact-first design",
+      "summary": "[OpenAI's finance workspace](https://openai.com/index/introducing-workspace-agents-in-chatgpt/) was built by watching bankers' actual workflow bottlenecks, prioritizing \"high-quality artifact creation\" over open-ended chat.",
+      "why_it_matters": "it treats the deliverable, not the conversation, as the product.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "OpenAI's finance workspace",
+          "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "affaan-m-ecc",
+      "section": "GitHub & Open Source",
+      "headline": "affaan-m/ECC",
+      "summary": "An agent harness performance optimization system spanning skills, memory, security scanning, and routing across 17 platforms. Gaining attention for treating \"the agent's operating environment\" as its own product surface, with a 2.0 release positioning it as a cross-harness OS.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "dietrichgebert-ponytail",
+      "section": "GitHub & Open Source",
+      "headline": "DietrichGebert/ponytail",
+      "summary": "Nudges coding agents toward minimal, restrained code output. Gained roughly 12k stars in a week; popular because AI-generated code bloat has become a real maintenance cost for teams.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "pushback-on-the-ai-agent-label",
+      "section": "Social Buzz",
+      "headline": "Pushback on the \"AI agent\" label",
+      "kicker": "r/ArtificialIntelligence",
+      "summary": "An active thread pushes back on the \"AI agent\" label, arguing many 2025-2026 products marketed as agents are really scripted automations with a chatbot front end that don't adapt when a plan fails. Worth reading if you're evaluating agent tools for your own stack: it's a useful checklist for what a \"real\" agent should do.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "r/ArtificialIntelligence",
+          "url": "https://www.reddit.com/r/ArtificialIntelligence/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "tools-that-compress-workflow-end-to-end",
+      "section": "Social Buzz",
+      "headline": "Tools that compress workflow end to end",
+      "kicker": "Product Hunt",
+      "summary": "Discussion is clustering around tools that compress workflow end to end: turning a prompt directly into an editable interface, prototype, and code-linked output, rather than separate steps for wireframe, design, and handoff.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/categories/ai-designer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "venturebeat-on-claude-design",
+      "section": "Learning Corner",
+      "headline": "VentureBeat on Claude Design",
+      "kicker": "Article",
+      "summary": "Good primer on how Anthropic is positioning itself against Figma for the non-designer segment.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "VentureBeat on Claude Design",
+          "url": "https://venturebeat.com/technology/anthropic-just-launched-claude-design-an-ai-tool-that-turns-prompts-into-prototypes-and-challenges-figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "datacamp-s-claude-design-walkthrough",
+      "section": "Learning Corner",
+      "headline": "DataCamp's Claude Design walkthrough",
+      "kicker": "Video/Explainer",
+      "summary": "Practical look at the sliders and controls for people who've never opened a design tool.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "DataCamp's Claude Design walkthrough",
+          "url": "https://www.datacamp.com/blog/claude-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "affaan-m-ecc-2",
+      "section": "Learning Corner",
+      "headline": "affaan-m/ECC",
+      "kicker": "GitHub project",
+      "summary": "Worth a skim even if you don't install it, since the skills/hooks/rules structure is a good mental model for organizing any coding agent setup.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "figma-s-config-2026-recap",
+      "section": "Learning Corner",
+      "headline": "Figma's Config 2026 recap",
+      "kicker": "Design resource",
+      "summary": "A concise rundown of everything shipped at Figma's flagship conference this cycle.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "figma-s-guide-to-ai-product-design-tools",
+      "section": "Learning Corner",
+      "headline": "Figma's guide to AI product design tools",
+      "kicker": "AI workflow",
+      "summary": "A practical map of where AI fits across research, wireframing, and handoff today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's guide to AI product design tools",
+          "url": "https://www.figma.com/resource-library/ai-product-design/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "vertical-ai-design-consulting",
+      "section": "Opportunities",
+      "headline": "Vertical AI + design consulting",
+      "summary": "As labs ship industry-specific agents (finance, and likely legal or healthcare next), teams that can pair domain knowledge with rapid prototyping in tools like [Claude Design](https://www.anthropic.com/news/claude-design-anthropic-labs) can move faster than in-house teams.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Design",
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "design-system-as-a-service",
+      "section": "Opportunities",
+      "headline": "Design-system-as-a-service",
+      "summary": "Since AI generation quality now depends on clean design tokens, packaging design system audits and cleanup as a service is newly valuable.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "agent-harness-configuration",
+      "section": "Opportunities",
+      "headline": "Agent harness configuration",
+      "summary": "Knowing how to set up tools like [ECC](https://github.com/affaan-m/ECC) across a team's coding agents is a specialized, in-demand skill right now.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "compliance-aware-ai-product-design",
+      "section": "Opportunities",
+      "headline": "Compliance-aware AI product design",
+      "summary": "OpenAI's finance workspace shows regulated industries need UX for audit trails and data retention, not just chat; product designers who understand compliance have an edge.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "teaching-real-agent-evaluation",
+      "section": "Opportunities",
+      "headline": "Teaching \"real agent\" evaluation",
+      "summary": "Given the Reddit backlash against agent-washing, a simple framework or course for evaluating whether a tool is a true agent or a scripted workflow would find an audience.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    },
+    {
+      "id": "turn-one-slide-into-three-variants-in-claude-desig",
+      "section": "Today's Experiment",
+      "headline": "Turn one slide into three variants in Claude Design",
+      "kicker": "20 minutes",
+      "summary": "Open [Claude Design](https://www.anthropic.com/news/claude-design-anthropic-labs) and prompt it to turn one existing slide or one-pager into three visual variants using your own brand colors. Compare how closely each variant matches your actual design system, and note where you'd still need manual cleanup. Twenty minutes, one clear signal on whether it's ready for your workflow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Design",
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-11"
+    }
+  ],
+  "dont_miss": [
+    "[OpenAI's ChatGPT for Financial Services](https://openai.com/index/introducing-workspace-agents-in-chatgpt/), the clearest example yet of a vertical AI agent product.",
+    "[Claude Design's new controls](https://www.fastcompany.com/91561193/anthropics-updated-claude-design-gives-vibe-coders-and-their-design-overlords-more-control) for teams, narrowing the gap between prompt output and production-ready design.",
+    "[ECC](https://github.com/affaan-m/ECC) on GitHub, worth a look if you run more than one coding agent day to day."
+  ],
+  "footnote": "Sourced from OpenAI, Anthropic, Figma, Framer, TechCrunch, VentureBeat, Fast Company, The Hacker News, Startup Fortune, GitHub, Reddit, and Product Hunt. Compiled the morning of September 11, 2026."
+}
