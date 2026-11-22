@@ -36,11 +36,8 @@ const tools = ratedTools();
               <span class="index__num eyebrow" data-rank>{pad2(n + 1)}</span>
               {href ? <a href={href} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><Media entry={e} /></a> : <Media entry={e} />}
               <div class="row__body">
-                <div class="row__top">
-                  <Meter value={e.tool_rating!} />
-                  {e.kicker && <span class="eyebrow">Released {e.kicker}</span>}
-                </div>
-                <h2 class="h5">{href ? <a href={href} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h2>
+                {e.kicker && <div class="row__top"><span class="eyebrow">Released {e.kicker}</span></div>}
+                <div class="title-row"><h2 class="h5">{href ? <a href={href} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h2><Meter value={e.tool_rating!} /></div>
                 <p class="body-md prose" set:html={inline(e.summary)} />
                 {e.audience && <dl class="notes body-md prose"><div><dt class="eyebrow">For</dt><dd set:html={inline(cap(e.audience))} /></div></dl>}
                 <a class="eyebrow muted u-link" style="align-self: flex-start" href={entryHref(e)}>From the {fmtShort(e.date)} issue</a>

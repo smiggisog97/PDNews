@@ -28,11 +28,8 @@ const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./,
       <article class="ncard" id={e.id}>
         <Media entry={e} style="--ar: 16 / 9" />
         <div class="ncard__body">
-          <div class="row__top">
-            {e.tool_rating != null && <Meter value={e.tool_rating} />}
-            {e.kicker && <span class="eyebrow">{e.kicker}</span>}
-          </div>
-          <h3 class="h5">{primaryUrl(e) ? <a href={primaryUrl(e)} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>
+          {e.kicker && <div class="row__top"><span class="eyebrow">{e.kicker}</span></div>}
+          <div class="title-row"><h3 class="h5">{primaryUrl(e) ? <a href={primaryUrl(e)} target="_blank" rel="noopener">{e.headline}</a> : e.headline}</h3>{e.tool_rating != null && <Meter value={e.tool_rating} />}</div>
           <p class="body-md muted prose" set:html={inline(e.summary)} />
           <dl class="notes body-md prose">{notesOf(e).map((n) => <div><dt class="eyebrow">{n.label}</dt><dd set:html={n.html} /></div>)}</dl>
         </div>

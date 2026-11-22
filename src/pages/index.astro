@@ -130,12 +130,11 @@ const arrow = '<svg class="index__arrow" viewBox="0 0 12 12" fill="none" stroke=
           {tools.map((e, i) => (
             <li class="reveal">
               <a class="index__row" href={entryHref(e)}>
-                <span class="index__num eyebrow">{pad2(i + 1)}</span>
+                <Media entry={e} class="index__thumb" />
                 <span class="index__body">
-                  <span class="h5">{e.headline}</span>
+                  <span class="title-row"><span class="h5">{e.headline}</span><Meter value={e.tool_rating!} /></span>
                   <span class="body-sm muted clamp-2">{plain(e.summary)}</span>
                 </span>
-                <Meter value={e.tool_rating!} />
                 <Fragment set:html={arrow} />
               </a>
             </li>

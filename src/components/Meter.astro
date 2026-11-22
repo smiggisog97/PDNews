@@ -1,8 +1,6 @@
 ---
+// A tool's rating, shown as a small "8/10" chip beside its title.
 interface Props { value: number }
 const { value } = Astro.props;
 ---
-<span class="meter" title={`Rated ${value} out of 10`}>
-  <span class="meter-bar" style={`--v:${value}`} aria-hidden="true"><i></i></span>
-  <span class="eyebrow tabular">{value}/10</span>
-</span>
+<span class="rating tag" title={`Rated ${value} out of 10`}><span class="sr-only">Rated </span>{value}/10</span>

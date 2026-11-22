@@ -50,7 +50,6 @@ const sources = [...new Map(e.links.map((l) => [host(l.url), l])).values()].slic
     <div class="row__body">
       {(e.kicker || e.tool_rating != null) && (
         <div class="row__top">
-          {e.tool_rating != null && <Meter value={e.tool_rating} />}
           {e.kicker && <span class="eyebrow">{e.kicker}</span>}
         </div>
       )}
