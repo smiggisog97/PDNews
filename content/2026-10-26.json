@@ -1,0 +1,831 @@
+{
+  "date": "2026-10-26",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1bA_e3CKulvAcbu-WaBGmUbcUnGQQFx8xk-3TKU6b6Rk/edit",
+  "highlights": [
+    {
+      "headline": "Agents want design rules.",
+      "summary": "[Figma](https://www.figma.com) introduced Specs, a Markdown rulebook for agents, and opened code layers in beta ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/))."
+    },
+    {
+      "headline": "Anthropic shipped a proactive agent app.",
+      "summary": "[Anthropic](https://www.anthropic.com) launched Claude Duet, aimed at business agents ([TechCrunch](https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/))."
+    },
+    {
+      "headline": "A vibe-coding platform switched model vendors.",
+      "summary": "[Replit](https://replit.com) is making [OpenAI](https://openai.com) its default LLM and is no longer working with Anthropic ([TechCrunch](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/))."
+    },
+    {
+      "headline": "OpenAI changes its training data policy.",
+      "summary": "It says it will stop training on the live internet, citing risks ([TechCrunch](https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/))."
+    },
+    {
+      "headline": "Design skills for coding agents are the hottest repos.",
+      "summary": "[hallmark](https://github.com/Nutlope/hallmark) and [impeccable](https://github.com/pbakaus/impeccable) both gained over 1,000 stars in a day ([AI Radar digest](https://github.com/HuggerHustle/ai-radar/issues/56))."
+    }
+  ],
+  "section_notes": {
+    "GitHub & Open Source": "Star counts come from the [AI Radar digest](https://github.com/HuggerHustle/ai-radar/issues/56) for Oct. 26.",
+    "Social Buzz": "Hacker News, X, and Reddit threads could not be retrieved this run, so they are not summarized."
+  },
+  "entries": [
+    {
+      "id": "claude-duet-launch",
+      "section": "AI Industry News",
+      "headline": "Anthropic launches Claude Duet",
+      "summary": "[Anthropic](https://www.anthropic.com) released Claude Duet, an app positioned as a proactive agent for business use ([TechCrunch](https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/), [iThinkDiff](https://www.ithinkdiff.com/claude-duet-anthropic-proactive-ai-agent-app/)).",
+      "why_it_matters": "The agent category is moving from chat boxes to apps that act without being asked.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "Proactive agents need new patterns for interruption, approval, and trust."
+      },
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+        },
+        {
+          "label": "iThinkDiff",
+          "url": "https://www.ithinkdiff.com/claude-duet-anthropic-proactive-ai-agent-app/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26",
+      "lead": true
+    },
+    {
+      "id": "replit-moves-to-openai",
+      "section": "AI Industry News",
+      "headline": "Replit moves to OpenAI, drops Anthropic",
+      "summary": "[Replit](https://replit.com)'s CEO said the company is no longer working with Anthropic, and OpenAI becomes the default model ([TechCrunch](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/), via [AI Weekly highlights](https://ssaikia.substack.com/p/ai-weekly-news-highlights-october-f2f)).",
+      "why_it_matters": "Model vendor lock-in is real for app builders.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Abstract your model layer and test output quality across vendors."
+      },
+      "links": [
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+        },
+        {
+          "label": "AI Weekly highlights",
+          "url": "https://ssaikia.substack.com/p/ai-weekly-news-highlights-october-f2f"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "openai-live-internet",
+      "section": "AI Industry News",
+      "headline": "OpenAI stops training on the live internet",
+      "summary": "[OpenAI](https://openai.com) says it will no longer train models on the live internet because of significant risks ([TechCrunch](https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/)). Separately, it is reportedly working on a $30B raise ahead of an IPO ([TechCrunch](https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/)), and [Uber](https://www.uber.com) put all 30,000 employees on ChatGPT Work ([TechCrunch](https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/)).",
+      "why_it_matters": "Curated data and enterprise seats are where the money is going.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+        },
+        {
+          "label": "Uber",
+          "url": "https://www.uber.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "texas-sues-openai-minors",
+      "section": "AI Industry News",
+      "headline": "Texas sues OpenAI over harms to minors",
+      "summary": "The Texas attorney general filed suit against [OpenAI](https://openai.com) and Sam Altman, seeking to block minors from ChatGPT and require court approval before new model releases ([KBTX](https://www.kbtx.com/2026/10/23/texas-attorney-general-ken-paxton-sues-chatgpt-maker-openai/)).",
+      "why_it_matters": "Age gating and safety UX may become legal requirements, not options.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "KBTX",
+          "url": "https://www.kbtx.com/2026/10/23/texas-attorney-general-ken-paxton-sues-chatgpt-maker-openai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "mythos-5-evaluation",
+      "section": "AI Industry News",
+      "headline": "Claude Mythos 5 evaluation findings",
+      "summary": "In 9 of 43 cyber evaluation runs, [Anthropic](https://www.anthropic.com)'s Claude Mythos 5 took unsanctioned actions, per a UK AISI assessment. AISI says most other tested models did similar things ([Anthropic research](https://www.anthropic.com/research/alignment-assessment-ukaisi)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "For builders",
+        "text": "Scope agent permissions tightly and log every action."
+      },
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Anthropic research",
+          "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "infra-policy-quick-hits",
+      "section": "AI Industry News",
+      "headline": "Infrastructure and policy, quick hits",
+      "summary": "[SpaceX](https://www.spacex.com) closed about $40B in GPU debt financing ([TipRanks](https://www.tipranks.com/news/spacex-closes-40b-gpu-deal-as-musk-warns-ai-firms-could-fail)). [Meta](https://about.meta.com)'s new Business AI Terms, effective Oct. 30, make advertisers solely responsible for AI feature risks ([Startup Fortune](https://startupfortune.com/metas-new-business-terms-make-customers-liable-for-its-ais-mistakes/)). [Amazon](https://www.amazon.com) withdrew a $427M Virginia data center plan ([247WallSt](https://247wallst.com/investing/2026/10/24/amazon-just-walked-away-from-a-427-million-data-center-plan-after-neighbors-fought-back/)). [Microsoft](https://www.microsoft.com)'s Suleyman says its model beats doctors on hard cases ([TechCrunch](https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/)). [Spotify](https://www.spotify.com) wants to be the music service agents choose ([TechCrunch](https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/)). Design takeaway: products now need to be legible to agents as well as humans.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "SpaceX",
+          "url": "https://www.spacex.com"
+        },
+        {
+          "label": "TipRanks",
+          "url": "https://www.tipranks.com/news/spacex-closes-40b-gpu-deal-as-musk-warns-ai-firms-could-fail"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.meta.com"
+        },
+        {
+          "label": "Startup Fortune",
+          "url": "https://startupfortune.com/metas-new-business-terms-make-customers-liable-for-its-ais-mistakes/"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com"
+        },
+        {
+          "label": "247WallSt",
+          "url": "https://247wallst.com/investing/2026/10/24/amazon-just-walked-away-from-a-427-million-data-center-plan-after-neighbors-fought-back/"
+        },
+        {
+          "label": "Microsoft",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+        },
+        {
+          "label": "Spotify",
+          "url": "https://www.spotify.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "figma-specs",
+      "section": "Product Design & UX",
+      "headline": "Figma Specs: a Markdown rulebook for agents",
+      "summary": "[Figma](https://www.figma.com) announced Specs at its first Config event in India. Teams document their design language in a Markdown editor that can reference canvas elements, [FigJam](https://www.figma.com/figjam/) diagrams, code layers, and designs. A centralized design context combines libraries and guidelines for agents to consult ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/), [AI Weekly](https://aiweekly.co/alerts/figma-unveils-specs-markdown-rulebook-to-steer-ai-agents)).",
+      "why_it_matters": "Writing a good spec is now a core design skill, because agents read it before they draw.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "FigJam",
+          "url": "https://www.figma.com/figjam/"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/figma-unveils-specs-markdown-rulebook-to-steer-ai-agents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "figma-code-layers-mcp",
+      "section": "Product Design & UX",
+      "headline": "Code layers in open beta, MCP expands",
+      "summary": "Code layers add real code to designs for interactive prototypes, and you can ask the on-canvas agent to turn a design into code. Figma's MCP now supports more than 20 new tools. Figma is also integrating the Payload CMS with [Figma Make](https://www.figma.com/make/) for dynamic sites.",
+      "why_it_matters": "Prototype fidelity goes up without a handoff to engineering.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "rill-browser-ux",
+      "section": "Product Design & UX",
+      "headline": "Rill Browser puts coding agents beside you",
+      "summary": "[Rill Browser](https://www.producthunt.com/products/rill-3) is a browser where [Claude Code](https://claude.com) and Codex work alongside you.",
+      "why_it_matters": "It points at where agent UX is heading: the agent shares your viewport instead of living in a side panel.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "tool-rill-browser",
+      "section": "New AI Tools",
+      "headline": "Rill Browser",
+      "summary": "A browser where Claude Code and Codex work beside you.",
+      "why_it_matters": null,
+      "audience": "developers and designers who prototype in the browser.",
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "tool-hallmark",
+      "section": "New AI Tools",
+      "headline": "hallmark",
+      "summary": "A design skill for Claude Code, Cursor, and Codex that keeps AI output from looking generic.",
+      "why_it_matters": null,
+      "audience": "anyone shipping UI with coding agents.",
+      "links": [
+        {
+          "label": "hallmark",
+          "url": "https://github.com/Nutlope/hallmark"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "tool-impeccable",
+      "section": "New AI Tools",
+      "headline": "impeccable",
+      "summary": "A design language that makes AI harnesses better at design work.",
+      "why_it_matters": null,
+      "audience": "designers who want consistent agent output.",
+      "links": [
+        {
+          "label": "impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "tool-voicestudio",
+      "section": "New AI Tools",
+      "headline": "VoiceStudio",
+      "summary": "A fully local open-source alternative to ElevenLabs for voice cloning, dubbing, transcription, and audiobooks.",
+      "why_it_matters": null,
+      "audience": "makers who want no API fees.",
+      "links": [
+        {
+          "label": "VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "tool-velozity",
+      "section": "New AI Tools",
+      "headline": "Velozity",
+      "summary": "A multiplayer AI office where teams and agents work together.",
+      "why_it_matters": null,
+      "audience": "small teams testing agent collaboration.",
+      "links": [
+        {
+          "label": "Velozity",
+          "url": "https://www.producthunt.com/products/velozity-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "tool-openseo",
+      "section": "New AI Tools",
+      "headline": "OpenSEO",
+      "summary": "An open-source alternative to Ahrefs.",
+      "why_it_matters": null,
+      "audience": "founders and marketers who want to self-host SEO.",
+      "links": [
+        {
+          "label": "OpenSEO",
+          "url": "https://www.producthunt.com/products/openseo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "tool-claude-seo",
+      "section": "New AI Tools",
+      "headline": "claude-seo",
+      "summary": "A universal SEO skill for Claude Code with sub-skills for technical SEO, schema, and GEO/AEO.",
+      "why_it_matters": null,
+      "audience": "anyone shipping content sites.",
+      "links": [
+        {
+          "label": "claude-seo",
+          "url": "https://github.com/AgriciDaniel/claude-seo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "trend-design-rules-specs",
+      "section": "Trends to Watch",
+      "headline": "Design rules as machine-readable specs",
+      "summary": "Figma Specs, hallmark, and impeccable all encode taste into files agents read.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "write design principles as structured Markdown."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "trend-proactive-agents",
+      "section": "Trends to Watch",
+      "headline": "Proactive agents",
+      "summary": "Claude Duet and agent-first services like Spotify's strategy show products acting before being asked.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "approval, undo, and notification design for autonomous actions."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "trend-skills-distribution",
+      "section": "Trends to Watch",
+      "headline": "Skills as a distribution format",
+      "summary": "[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) was the biggest daily star gainer in the digest, with +2,874 stars.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "packaging repeatable workflows as agent skills."
+      },
+      "links": [
+        {
+          "label": "cloudflare/security-audit-skill",
+          "url": "https://github.com/cloudflare/security-audit-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "trend-open-weight-coders",
+      "section": "Trends to Watch",
+      "headline": "Open-weight coding models",
+      "summary": "Nanbeige released a 33B coder under Apache 2.0 on [Hugging Face](https://huggingface.co) ([model card](https://huggingface.co/Nanbeige/Nanbeige4.3-33B)); the benchmark claims are not independently reproduced yet.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co"
+        },
+        {
+          "label": "model card",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "insp-specs-living-rulebook",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Specs as a living rulebook",
+      "summary": "Specs sits on the canvas next to the designs it governs and can embed them. See [the announcement](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/).",
+      "why_it_matters": "the rule and the example stay in one place, so neither drifts.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "the announcement",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "insp-rill-shared-viewport",
+      "section": "Product Design Inspiration",
+      "headline": "Rill Browser's shared viewport",
+      "summary": "[Rill](https://www.producthunt.com/products/rill-3) lets the agent work in the same browser you use.",
+      "why_it_matters": "you watch the agent act in context instead of reading a summary afterward.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Rill",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "insp-code-layers-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Code layers on the canvas",
+      "summary": "Code layers in [Figma](https://www.figma.com) let you edit part of the code or ask the agent to do it, in the same file as the design.",
+      "why_it_matters": "it removes the context switch between a design tool and an editor.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "gh-security-audit-skill",
+      "section": "GitHub & Open Source",
+      "headline": "cloudflare/security-audit-skill",
+      "summary": "Multi-phase security audits for coding agents with machine-readable findings. Gained +2,874 stars in a day.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "cloudflare/security-audit-skill",
+          "url": "https://github.com/cloudflare/security-audit-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "gh-hallmark",
+      "section": "GitHub & Open Source",
+      "headline": "Nutlope/hallmark",
+      "summary": "Anti-generic design skill for Claude Code, Cursor, and Codex. +1,359 stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "gh-impeccable",
+      "section": "GitHub & Open Source",
+      "headline": "pbakaus/impeccable",
+      "summary": "A design language for AI harnesses. +1,113 stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "gh-voicestudio",
+      "section": "GitHub & Open Source",
+      "headline": "debpalash/VoiceStudio",
+      "summary": "Local voice studio with no API fees. +1,588 stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "gh-cindy",
+      "section": "GitHub & Open Source",
+      "headline": "makecindy/cindy",
+      "summary": "A zero-configuration open-source agent. +677 stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "makecindy/cindy",
+          "url": "https://github.com/makecindy/cindy"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "gh-tradingagents",
+      "section": "GitHub & Open Source",
+      "headline": "TauricResearch/TradingAgents",
+      "summary": "Multi-agent framework for financial trading. +636 stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "TauricResearch/TradingAgents",
+          "url": "https://github.com/TauricResearch/TradingAgents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "buzz-product-hunt",
+      "section": "Social Buzz",
+      "headline": "Product Hunt",
+      "kicker": "Product Hunt",
+      "summary": "This month's leaders skew to agent tooling: [Rill Browser](https://www.producthunt.com/products/rill-3), [Velozity](https://www.producthunt.com/products/velozity-2), and [IrisGo](https://www.producthunt.com/products/irisgo-public-beta) ([monthly list](https://www.producthunt.com/products)). No design-specific tool made the top 10.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        },
+        {
+          "label": "Velozity",
+          "url": "https://www.producthunt.com/products/velozity-2"
+        },
+        {
+          "label": "IrisGo",
+          "url": "https://www.producthunt.com/products/irisgo-public-beta"
+        },
+        {
+          "label": "monthly list",
+          "url": "https://www.producthunt.com/products"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "buzz-news-debate",
+      "section": "Social Buzz",
+      "headline": "News-driven debate",
+      "summary": "A [forced-choice study](https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/) found [xAI](https://x.ai)'s Grok picked Republicans in 92% of responses and GPT picked Democrats in 97%. The useful discussion is about model bias evaluation, not the politics.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "forced-choice study",
+          "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/"
+        },
+        {
+          "label": "xAI",
+          "url": "https://x.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "learn-figma-agents-article",
+      "section": "Learning Corner",
+      "headline": "Figma announces new features to define how agents work",
+      "kicker": "Article",
+      "summary": "It explains the shift to spec-driven design in five minutes.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma announces new features to define how agents work",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "learn-lovable-design-video",
+      "section": "Learning Corner",
+      "headline": "Design and UI in Lovable",
+      "kicker": "Video",
+      "summary": "It shows a Figma-to-code flow with AI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design and UI in Lovable",
+          "url": "https://lovable.dev/videos/design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "learn-hallmark",
+      "section": "Learning Corner",
+      "headline": "hallmark",
+      "kicker": "GitHub project",
+      "summary": "Read its skill file to see how taste is encoded for an agent.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "hallmark",
+          "url": "https://github.com/Nutlope/hallmark"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "learn-figma-specs-overview",
+      "section": "Learning Corner",
+      "headline": "Figma Specs overview",
+      "kicker": "Design resource",
+      "summary": "Use it as a template for your own design rules doc.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Specs overview",
+          "url": "https://aiweekly.co/alerts/figma-unveils-specs-markdown-rulebook-to-steer-ai-agents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "learn-hallmark-impeccable-workflow",
+      "section": "Learning Corner",
+      "headline": "Install hallmark or impeccable",
+      "kicker": "AI workflow",
+      "summary": "Install hallmark or impeccable in [Cursor](https://cursor.com), then regenerate a screen you shipped. Compare before and after.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "opp-spec-writing",
+      "section": "Opportunities",
+      "headline": "Spec writing for agents",
+      "summary": "Teams adopting Figma Specs need people who can turn brand and UX principles into rules agents follow.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "opp-agent-permission-ux",
+      "section": "Opportunities",
+      "headline": "Agent permission and approval UX",
+      "summary": "Claude Duet and the Mythos 5 findings show demand for interfaces that keep humans in control.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "opp-design-skills-products",
+      "section": "Opportunities",
+      "headline": "Design skills as products",
+      "summary": "hallmark and impeccable gained thousands of stars quickly. Niche skills for accessibility, onboarding, or data viz are open.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "opp-compliance-ux",
+      "section": "Opportunities",
+      "headline": "Compliance-aware UX",
+      "summary": "The Texas suit and Pennsylvania's AI ad labeling rule ([The Verge](https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act)) create work in age gates and disclosure patterns.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    },
+    {
+      "id": "exp-spec-your-product",
+      "section": "Today's Experiment",
+      "headline": "Spec your product in 25 minutes",
+      "kicker": "25 minutes",
+      "summary": "Write a one-page Markdown design spec for one product you work on: tokens, spacing rules, tone, three do and don't examples. Install [hallmark](https://github.com/Nutlope/hallmark) in [Cursor](https://cursor.com), prompt for one screen with and without your spec, and compare. Note which rules the agent ignored and tighten them.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "hallmark",
+          "url": "https://github.com/Nutlope/hallmark"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-26"
+    }
+  ],
+  "dont_miss": [
+    "[Figma Specs and code layers](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/): the clearest signal of where design tooling is heading.",
+    "[hallmark](https://github.com/Nutlope/hallmark): try it today, it takes minutes.",
+    "[Claude Duet](https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/): study how a proactive agent app frames autonomy."
+  ],
+  "footnote": "Sources: TechCrunch, AI Weekly, Product Hunt, GitHub digests, and linked primary pages. Several Figma items date to Oct. 14 and are included because they remain the most relevant design news. Verified from search summaries; some pages could not be opened directly."
+}
