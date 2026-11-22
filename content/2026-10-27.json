@@ -1,0 +1,726 @@
+{
+  "date": "2026-10-27",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1bsQH6olBUQvuufHBeAngD-5sbKs9YcKU4geMhtCcUnM/edit",
+  "highlights": [
+    {
+      "headline": "Agents are now a security story.",
+      "summary": "A new report says [agents built by a startup breached Anthropic's internal systems in under 12 hours](https://aiweekly.co/ai-news-today/anthropic-news) via third-party software, and researchers keep showing that malicious AGENTS.md files can steer coding agents."
+    },
+    {
+      "headline": "Anthropic open-sourced the sandbox runtime behind Claude Code",
+      "summary": "[Anthropic](https://www.anthropic.com) open-sourced the sandbox runtime behind [Claude Code](https://www.anthropic.com/claude-code) (Apache 2.0, Linux, macOS, Windows), a practical building block for safely running agents."
+    },
+    {
+      "headline": "A court ruling lifted the federal ban on Anthropic",
+      "summary": "The ruling lifted the ban in government agencies after a DOJ appeal, per [Bloomberg via AI Weekly](https://aiweekly.co/ai-news-today/anthropic-news)."
+    },
+    {
+      "headline": "Figma is shipping code-backed design.",
+      "summary": "[Figma](https://www.figma.com) code layers are in open beta and free to create on paid plans through November 4, and the [Figma agent is generally available](https://releasebot.io/updates/figma)."
+    },
+    {
+      "headline": "Model vendor lock-in is loosening.",
+      "summary": "[Replit](https://replit.com)'s CEO said OpenAI models are now the default over Anthropic, though [insiders dispute the extent](https://techcrunch.com/2026/10/20/replit-is-no-longer-working-with-anthropic-ceo-says/)."
+    }
+  ],
+  "section_notes": {
+    "Social Buzz": "Live [Hacker News](https://news.ycombinator.com), Reddit, X or [Product Hunt](https://www.producthunt.com) threads could not be retrieved for this run, so there are no verified discussion links today.",
+    "Learning Corner": "No verified video link was found today."
+  },
+  "entries": [
+    {
+      "id": "sandbox-runtime-open-source",
+      "section": "AI Industry News",
+      "headline": "Anthropic sandbox-runtime goes open source",
+      "summary": "[Anthropic](https://www.anthropic.com) published the sandbox runtime used by [Claude Code](https://www.anthropic.com/claude-code) under Apache 2.0 on October 24 ([AI Weekly roundup](https://aiweekly.co/ai-news-today/anthropic-news)). Repo: [anthropic-experimental/sandbox-runtime](https://github.com/anthropic-experimental/sandbox-runtime).",
+      "why_it_matters": "Filesystem and network isolation for agents is now reusable instead of rebuilt by every team.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Anyone shipping an agent feature can put a real boundary around it."
+      },
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        },
+        {
+          "label": "AI Weekly roundup",
+          "url": "https://aiweekly.co/ai-news-today/anthropic-news"
+        },
+        {
+          "label": "anthropic-experimental/sandbox-runtime",
+          "url": "https://github.com/anthropic-experimental/sandbox-runtime"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27",
+      "lead": true
+    },
+    {
+      "id": "agent-security-escalates",
+      "section": "AI Industry News",
+      "headline": "Agent security keeps escalating",
+      "summary": "The [Washington Post reported](https://aiweekly.co/ai-news-today/anthropic-news) that agents from a startup breached Anthropic systems through third-party software in under 12 hours. Separately, a report cited the same day says a malicious AGENTS.md hijacks coding agents, affecting [Codex](https://openai.com/codex) in over 90% of tests. [NVIDIA](https://www.nvidia.com)'s red team documented the [same class of attack in April](https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/).",
+      "why_it_matters": "Instruction files are an attack surface.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Treat AGENTS.md and skill files like code: review them, pin them, and restrict agent write access."
+      },
+      "links": [
+        {
+          "label": "Washington Post reported",
+          "url": "https://aiweekly.co/ai-news-today/anthropic-news"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "same class of attack in April",
+          "url": "https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "replit-default-openai",
+      "section": "AI Industry News",
+      "headline": "Replit shifts its default model to OpenAI",
+      "summary": "At Disrupt, [Replit](https://replit.com) CEO Amjad Masad said the company is no longer working with Anthropic and cited cost and benchmark performance. [TechCrunch reports](https://techcrunch.com/2026/10/20/replit-is-no-longer-working-with-anthropic-ceo-says/) users can still pick Claude, and insiders dispute his account. [OpenAI](https://openai.com) is now the default.",
+      "why_it_matters": "Defaults decide spend.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "Build model-agnostic; your product's default will matter more than its menu."
+      },
+      "links": [
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        },
+        {
+          "label": "TechCrunch reports",
+          "url": "https://techcrunch.com/2026/10/20/replit-is-no-longer-working-with-anthropic-ceo-says/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "recent-model-landscape",
+      "section": "AI Industry News",
+      "headline": "Recent model landscape (context from the past three weeks)",
+      "summary": "Per [Hello Growth's October roundup](https://hellogrowth.ai/en/blog/ai-news-october-2026): GPT-6 reached all [ChatGPT](https://chatgpt.com) plans with generated charts, forms and calculators in answers (Oct 7); [Anthropic](https://www.anthropic.com) shipped Claude Haiku 5.5 at $0.10 per million input tokens; [Google](https://deepmind.google) released Gemini 4 Argon with a background tasks mode; [Meta](https://ai.meta.com) launched its first frontier models, Muse Wonder. Expect pricing pressure to continue.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hello Growth's October roundup",
+          "url": "https://hellogrowth.ai/en/blog/ai-news-october-2026"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Google",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "Meta",
+          "url": "https://ai.meta.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "figma-code-layers-specs",
+      "section": "Product Design & UX",
+      "headline": "Figma code layers and Specs (open beta)",
+      "summary": "[Figma](https://www.figma.com) introduced [code layers](https://releasebot.io/updates/figma), which let teams build code-backed prototypes directly on the canvas. Creating and editing is free on paid plans through November 4. Try it before the free window closes.",
+      "why_it_matters": "Prototypes behave like the real thing without leaving the canvas.",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "code layers",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "figma-agent-ga",
+      "section": "Product Design & UX",
+      "headline": "Figma agent generally available",
+      "summary": "The agent now shows live views of teammates' agent activity, respects design-library guidelines, and uses AI credits. Custom skills extend to the Starter plan.",
+      "why_it_matters": "Documented guidelines now directly shape agent output, so your design system docs become an input, not an afterthought.",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "figma-make-backend",
+      "section": "Product Design & UX",
+      "headline": "Figma Make adds a backend",
+      "summary": "[Figma Make](https://www.figma.com) can scaffold a [Payload](https://payloadcms.com) backend with CMS, storage, login and an admin panel, and now runs Gemini 4 Argon.",
+      "why_it_matters": "Prototypes with real content models and auth become testable with users.",
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Payload",
+          "url": "https://payloadcms.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "figma-small-but-useful",
+      "section": "Product Design & UX",
+      "headline": "Small but useful",
+      "summary": "New iPhone Duo and iPhone 18 frame presets landed October 23, and enterprise admins get SCIM controls over AI credit access ([Figma release notes](https://releasebot.io/updates/figma)). Motion is in open beta with Lottie and MP4 export.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "tool-motiff-ai-2",
+      "section": "New AI Tools",
+      "headline": "Motiff AI 2.0",
+      "summary": "A chat-based UI design partner that turns ideas and websites into editable designs, generates options and translates text. Listing: [Hunted](https://hunted.space/product/motiff).",
+      "why_it_matters": null,
+      "audience": "designers who want prompt-first iteration.",
+      "links": [
+        {
+          "label": "Motiff AI 2.0",
+          "url": "https://motiff.com"
+        },
+        {
+          "label": "Hunted",
+          "url": "https://hunted.space/product/motiff"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "tool-sandbox-runtime",
+      "section": "New AI Tools",
+      "headline": "Anthropic sandbox-runtime",
+      "summary": "Isolation for agent processes.",
+      "why_it_matters": null,
+      "audience": "engineers and technical designers building agent prototypes.",
+      "links": [
+        {
+          "label": "Anthropic sandbox-runtime",
+          "url": "https://github.com/anthropic-experimental/sandbox-runtime"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "tool-figma-code-layers",
+      "section": "New AI Tools",
+      "headline": "Figma code layers",
+      "summary": "Code-backed prototypes in the canvas. Free on paid plans until November 4.",
+      "why_it_matters": null,
+      "audience": "designers who prototype with real behavior.",
+      "links": [
+        {
+          "label": "Figma code layers",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "tool-figma-make-payload",
+      "section": "New AI Tools",
+      "headline": "Figma Make with Payload",
+      "summary": "Prompt to prototype with a working backend.",
+      "why_it_matters": null,
+      "audience": "designers testing flows with login and content.",
+      "links": [
+        {
+          "label": "Figma Make with Payload",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "tool-google-stitch",
+      "section": "New AI Tools",
+      "headline": "Google Stitch",
+      "summary": "Free multi-screen UI generation from Google Labs.",
+      "why_it_matters": null,
+      "audience": "quick exploration before committing to Figma.",
+      "links": [
+        {
+          "label": "Google Stitch",
+          "url": "https://stitch.withgoogle.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "tool-nvidia-garak",
+      "section": "New AI Tools",
+      "headline": "NVIDIA garak",
+      "summary": "LLM vulnerability scanner for prompt-injection testing.",
+      "why_it_matters": null,
+      "audience": "anyone shipping agent features.",
+      "links": [
+        {
+          "label": "NVIDIA garak",
+          "url": "https://github.com/NVIDIA/garak"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "trend-agent-hardening",
+      "section": "Trends to Watch",
+      "headline": "Agent hardening",
+      "summary": "Sandboxing, identity and permission layers are becoming product requirements, not infrastructure trivia. Replit's CEO made the same argument at Disrupt.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "capability-based permissions and how to design confirmation UX for risky actions."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "trend-design-code-merging",
+      "section": "Trends to Watch",
+      "headline": "Design and code merging on one canvas",
+      "summary": "Code layers and Specs in [Figma](https://www.figma.com), plus [Claude](https://claude.ai)'s design tooling, point to artifacts that are both visual and executable.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "enough front-end to read and edit generated components."
+      },
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "trend-generative-ui-chat",
+      "section": "Trends to Watch",
+      "headline": "Generative UI in chat",
+      "summary": "[ChatGPT](https://chatgpt.com)'s Intelligent UI returns charts, forms and calculators inside answers.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "designing component vocabularies that a model can safely compose."
+      },
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "trend-model-agnostic",
+      "section": "Trends to Watch",
+      "headline": "Model-agnostic stacks",
+      "summary": "The [Replit](https://replit.com) episode shows vendors swapping fast.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "eval harnesses so you can switch models on evidence."
+      },
+      "links": [
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "insp-figma-agent-live-view",
+      "section": "Product Design Inspiration",
+      "headline": "Figma live view of teammates' agent activity",
+      "summary": "Making agent work visible to the whole team turns a private chat into shared, reviewable work. See [Figma](https://www.figma.com).",
+      "why_it_matters": "transparency builds trust in automation.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "insp-chatgpt-intelligent-ui",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT Intelligent UI",
+      "summary": "Answers that become charts, forms or calculators on demand move the interface from reading to doing. See [ChatGPT](https://chatgpt.com).",
+      "why_it_matters": "the response shape matches the task.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "insp-gemini-background-tasks",
+      "section": "Product Design Inspiration",
+      "headline": "Gemini background tasks mode",
+      "summary": "Letting work continue without an open chat reframes the interaction as delegation, which demands clear status and a good return moment ([source](https://hellogrowth.ai/en/blog/ai-news-october-2026)). See [Gemini](https://deepmind.google).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "source",
+          "url": "https://hellogrowth.ai/en/blog/ai-news-october-2026"
+        },
+        {
+          "label": "Gemini",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "gh-sandbox-runtime",
+      "section": "GitHub & Open Source",
+      "headline": "anthropic-experimental/sandbox-runtime",
+      "summary": "The newly open-sourced isolation layer for agent execution.",
+      "why_it_matters": "every agent team needs it and it is production-proven.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "anthropic-experimental/sandbox-runtime",
+          "url": "https://github.com/anthropic-experimental/sandbox-runtime"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "gh-mcp-servers",
+      "section": "GitHub & Open Source",
+      "headline": "modelcontextprotocol/servers",
+      "summary": "Reference MCP servers, the best starting point for connecting agents to tools. See also the [MCP site](https://modelcontextprotocol.io).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "modelcontextprotocol/servers",
+          "url": "https://github.com/modelcontextprotocol/servers"
+        },
+        {
+          "label": "MCP site",
+          "url": "https://modelcontextprotocol.io"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "gh-garak-nemo-guardrails",
+      "section": "GitHub & Open Source",
+      "headline": "NVIDIA/garak and NVIDIA/NeMo-Guardrails",
+      "summary": "Scanning and guardrails tools recommended in NVIDIA's AGENTS.md injection write-up, timely given this week's reports. See [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "NVIDIA/garak and NVIDIA/NeMo-Guardrails",
+          "url": "https://github.com/NVIDIA/garak"
+        },
+        {
+          "label": "NeMo-Guardrails",
+          "url": "https://github.com/NVIDIA/NeMo-Guardrails"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "gh-mcp-server-github-actions",
+      "section": "GitHub & Open Source",
+      "headline": "ka1ss3r23/mcp-server-github-actions",
+      "summary": "MCP server that lets assistants read CI logs and rerun failed jobs. A smaller project from a [May roundup](https://theanthropicstack.substack.com/p/five-mcp-servers-that-actually-ship), included as a practical template.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ka1ss3r23/mcp-server-github-actions",
+          "url": "https://github.com/ka1ss3r23/mcp-server-github-actions"
+        },
+        {
+          "label": "May roundup",
+          "url": "https://theanthropicstack.substack.com/p/five-mcp-servers-that-actually-ship"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "buzz-themes",
+      "section": "Social Buzz",
+      "headline": "Themes in the news feed",
+      "summary": "The dominant themes in the news feed: supply-chain risk for agent instruction files, and whether Replit's model switch signals a wider move away from single-vendor stacks. Check the HN front page for those two threads.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "learn-agents-md-injection",
+      "section": "Learning Corner",
+      "headline": "Mitigating indirect AGENTS.md injection attacks",
+      "kicker": "Article",
+      "summary": "A concrete attack walkthrough with mitigations. Ten minutes, directly applicable.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mitigating indirect AGENTS.md injection attacks",
+          "url": "https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "learn-figma-config",
+      "section": "Learning Corner",
+      "headline": "Figma Config 2026 sessions",
+      "kicker": "Video",
+      "summary": "No verified video link found today. Search for Figma Config 2026 sessions on code layers at [Figma Config](https://www.figma.com/config/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Config",
+          "url": "https://www.figma.com/config/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "learn-sandbox-runtime",
+      "section": "Learning Corner",
+      "headline": "sandbox-runtime",
+      "kicker": "GitHub project",
+      "summary": "Read the README to learn how agent isolation is structured.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "sandbox-runtime",
+          "url": "https://github.com/anthropic-experimental/sandbox-runtime"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "learn-claude-design-comparison",
+      "section": "Learning Corner",
+      "headline": "Claude Design vs Figma, Lovable, v0",
+      "kicker": "Design resource",
+      "summary": "A useful job-to-be-done comparison; note it reflects April 2026 information.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Design vs Figma, Lovable, v0",
+          "url": "https://mantlr.com/blog/claude-design-vs-figma-lovable-v0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "learn-claude-code-figma-workflow",
+      "section": "Learning Corner",
+      "headline": "Claude Code with Figma's MCP integration",
+      "kicker": "AI workflow",
+      "summary": "Pair [Claude Code](https://www.anthropic.com/claude-code) with [Figma](https://www.figma.com)'s MCP integration: generate a component in code, push it to the canvas as editable layers, refine, and send it back (workflow described in [Department of Product](https://departmentofproduct.substack.com/p/claude-code-to-figma-and-the-new)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Department of Product",
+          "url": "https://departmentofproduct.substack.com/p/claude-code-to-figma-and-the-new"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "opp-agent-permission-ux",
+      "section": "Opportunities",
+      "headline": "Agent permission UX",
+      "summary": "Few teams design approval, scope and audit screens well. Design patterns for them and publish a case study.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "opp-design-system-docs-agents",
+      "section": "Opportunities",
+      "headline": "Design-system documentation for agents",
+      "summary": "With [Figma](https://www.figma.com) agents honoring library guidelines, writing machine-readable guidelines is a billable skill.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "opp-code-layer-prototyping",
+      "section": "Opportunities",
+      "headline": "Code-layer prototyping services",
+      "summary": "Offer behavior-accurate prototypes to startups before the free beta window ends.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "opp-generative-ui-kits",
+      "section": "Opportunities",
+      "headline": "Generative UI component kits",
+      "summary": "Define the component sets that chat products render, for teams adopting patterns like [ChatGPT](https://chatgpt.com)'s Intelligent UI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    },
+    {
+      "id": "exp-audit-instruction-files",
+      "section": "Today's Experiment",
+      "headline": "Audit your agent instruction files",
+      "kicker": "20 minutes",
+      "summary": "Open one of your repos and list every AGENTS.md, skill file and config an agent reads. Ask [Claude](https://claude.ai) to review them for instructions that hide changes or ignore the user. Then read the [NVIDIA mitigations](https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/) and add one: pin the file or flag edits in review.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "NVIDIA mitigations",
+          "url": "https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-27"
+    }
+  ],
+  "dont_miss": [
+    "Try [Figma](https://www.figma.com) code layers before the free window closes on November 4 ([details](https://releasebot.io/updates/figma)).",
+    "Read [NVIDIA's AGENTS.md injection write-up](https://developer.nvidia.com/blog/mitigating-indirect-agents-md-injection-attacks-in-agentic-environments/) and audit your own instruction files.",
+    "Skim [sandbox-runtime](https://github.com/anthropic-experimental/sandbox-runtime) to see how agent isolation is built."
+  ],
+  "footnote": "Sources: AI Weekly, Hello Growth, Releasebot (Figma), TechCrunch, NVIDIA Developer Blog, Mantlr, Department of Product. Some items rely on aggregator summaries; the Anthropic court ruling and breach report were not independently verified at the primary source. Social sections were limited by retrieval."
+}
