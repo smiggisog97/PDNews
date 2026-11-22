@@ -2,10 +2,9 @@
 import './motion';
 
 const root = document.documentElement;
-const reduce = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ------------------------------------------------------------- theme ---
- * A circle opens from the switch to the farthest corner. */
+ * A plain switch: the colours change on the spot, nothing animates. */
 const toggles = [...document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]')];
 const label = () => {
   const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
@@ -13,30 +12,10 @@ const label = () => {
 };
 label();
 toggles.forEach((toggle) =>
-  toggle.addEventListener('click', async () => {
-    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
-    const apply = () => {
-      root.dataset.theme = next;
-      try { localStorage.setItem('pdn-theme', next); } catch {}
-      label();
-    };
-    const vt = (document as any).startViewTransition?.bind(document);
-    if (!vt || reduce()) return apply();
-    const r = toggle.getBoundingClientRect();
-    const x = r.left + r.width / 2;
-    const y = r.top + r.height / 2;
-    const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
-    root.classList.add('is-theming');
-    const t = vt(apply);
-    try {
-      await t.ready;
-      await root.animate(
-        { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
-        { duration: 800, easing: 'cubic-bezier(.65, 0, .35, 1)', pseudoElement: '::view-transition-new(root)' },
-      ).finished;
-    } finally {
-      root.classList.remove('is-theming');
-    }
+  toggle.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('pdn-theme', root.dataset.theme); } catch {}
+    label();
   }),
 );
 

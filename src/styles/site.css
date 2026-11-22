@@ -480,12 +480,26 @@ a.tile:hover { background: var(--bg-lift); }
 .btn--glass { background: var(--light-16); color: var(--light-100); -webkit-backdrop-filter: var(--blur-glass); backdrop-filter: var(--blur-glass); }
 .btn--glass:hover { background: var(--light-32); }
 
+/* Light theme: the same image turned to white silk, with dark type on it */
+:root:not([data-theme='dark']) .cover {
+  color: var(--dark-100); background: var(--neutral-white);
+  --tone-strong: var(--dark-100); --text-muted: var(--dark-64); --border-subtle: var(--dark-16);
+}
+:root:not([data-theme='dark']) .cover__img { filter: invert(1); }
+:root:not([data-theme='dark']) .cover::before { background: linear-gradient(0deg, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, .9) 100%); }
+:root:not([data-theme='dark']) .cover::after { background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, .98) 100%); }
+:root:not([data-theme='dark']) .cover :focus-visible { outline-color: var(--dark-100); }
+
 /* Nav over the cover: clear, white, glass chips */
 .nav { transition: transform .6s var(--ease-out), background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease); }
 .nav.is-over {
   background: transparent; border-bottom-color: transparent; -webkit-backdrop-filter: none; backdrop-filter: none;
   color: var(--neutral-white);
   --tone-strong: var(--light-100); --fill-8: var(--light-16); --bg-lift: var(--light-32); --on-strong: var(--dark-100); --tone-faint: var(--light-16);
+}
+:root:not([data-theme='dark']) .nav.is-over {
+  color: var(--dark-100);
+  --tone-strong: var(--dark-100); --fill-8: var(--dark-8); --bg-lift: #d9d9d9; --on-strong: var(--light-100); --tone-faint: var(--dark-16);
 }
 .nav.is-over .nav__link { -webkit-backdrop-filter: var(--blur-glass); backdrop-filter: var(--blur-glass); }
 .nav.is-over :focus-visible { outline-color: var(--light-100); }
@@ -549,8 +563,6 @@ mark { background: var(--tone-faint); color: inherit; border-radius: 2px; }
 .site-foot__col a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform var(--dur-base) var(--ease-out); }
 .site-foot__col a:hover::after { transform: scaleX(1); transform-origin: left; }
 .site-foot__bottom { display: flex; justify-content: space-between; gap: var(--space-20); flex-wrap: wrap; padding-top: var(--space-20); color: var(--text-muted); }
-.site-foot__wordmark { margin-top: var(--space-40); color: var(--light-8); }
-.site-foot__wordmark svg { display: block; width: 100%; height: auto; }
 
 /* ---------- 15. Motion ---------- */
 /* Hidden start states apply only when JS runs (html.js) and the reader allows
@@ -578,9 +590,6 @@ mark { background: var(--tone-faint); color: inherit; border-radius: 2px; }
   :is(.btn, .nav__link):hover .roll > span + span { transform: none; }
 
 }
-/* The theme switch runs its own reveal; page transitions stand down for it. */
-html.is-theming::view-transition-old(root), html.is-theming::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
-html.is-theming::view-transition-group(root) { animation: none; }
 
 @keyframes navIn { from { opacity: 0; translate: 0 -12px; } to { opacity: 1; translate: 0 0; } }
 @keyframes vtOut { to { opacity: 0; translate: 0 -12px; } }
