@@ -1,0 +1,797 @@
+{
+  "date": "2026-10-21",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1prl3lQETTKeaSddTq9tCpe3y0pc_O2OCzvct2So-OdI/edit",
+  "highlights": [
+    {
+      "headline": "Figma gives agents a rulebook.",
+      "ref": "figma-specs",
+      "summary": "At Config India, [Figma](https://www.figma.com) launched [Figma Specs](https://dataconomy.com/2026/10/15/figma-launches-specs-to-guide-ai-with-design-rules/), opened code layers to public beta, and added 20+ MCP tools."
+    },
+    {
+      "headline": "Google ships an agentic Gemini for business.",
+      "ref": "google-gemini-coworker",
+      "summary": "[Gemini now takes objectives](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/), has its own Workspace identity, and can run Claude models."
+    },
+    {
+      "headline": "ChatGPT reaches into your browser.",
+      "ref": "chatgpt-browser-actions",
+      "summary": "[ChatGPT](https://chatgpt.com) can now use open Chrome tabs as context and fill forms or download files."
+    },
+    {
+      "headline": "Agent security is the story of the week.",
+      "ref": "microsoft-agent-risk-controls",
+      "summary": "[Microsoft](https://www.microsoft.com) added per-agent risk controls, and Reuters reports AI agents were used to breach scores of sites."
+    },
+    {
+      "headline": "Open source momentum.",
+      "summary": "[DeepSeek](https://www.deepseek.com) open-sourced its production inference engine (top of Hacker News), and [Mistral](https://mistral.ai) shipped Voxtral 3 for sub-second voice agents."
+    }
+  ],
+  "entries": [
+    {
+      "id": "google-gemini-coworker",
+      "section": "AI Industry News",
+      "headline": "Google makes Gemini an agent coworker",
+      "summary": "[Google](https://deepmind.google) announced a Gemini agent that plans work against goals, delegates to subagents, connects to any MCP server, and gets its own Workspace account. A tasks inbox shows its reasoning. Claude models are selectable at launch.",
+      "why_it_matters": "The agent as a named teammate with audit trails is a new UX pattern.",
+      "takeaway": {
+        "label": "Builder impact",
+        "text": "Design for oversight surfaces (inbox, approvals, spend caps), not just chat."
+      },
+      "links": [
+        {
+          "label": "Google makes Gemini an agent coworker",
+          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+        },
+        {
+          "label": "Google",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "lead": true,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "chatgpt-browser-actions",
+      "section": "AI Industry News",
+      "headline": "ChatGPT gains browser actions",
+      "summary": "[OpenAI](https://openai.com) lets ChatGPT use open Chrome tabs as context and act on them (forms, downloads).",
+      "why_it_matters": "AI browsers keep converging on one model: the assistant lives where your work already is.",
+      "takeaway": {
+        "label": "Builder impact",
+        "text": "Your web UI now has an agent as a second user. Clear labels and predictable form structure matter."
+      },
+      "links": [
+        {
+          "label": "ChatGPT gains browser actions",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-20-2026/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "microsoft-agent-risk-controls",
+      "section": "AI Industry News",
+      "headline": "Microsoft adds agent risk controls",
+      "summary": "Microsoft 365 E7 and Project Perception score each agent's risk, and admins can block changes, require human sign-off, or shut an agent down.",
+      "why_it_matters": "Permission and approval UX is becoming a core product surface. Reuters also reported a hacker used [AI agents to breach scores of sites](https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/) for a few thousand dollars.",
+      "links": [
+        {
+          "label": "Microsoft adds agent risk controls",
+          "url": "https://www.geekwire.com/2026/microsoft-unveils-tools-to-monitor-and-corral-rogue-ai-agents/"
+        },
+        {
+          "label": "AI agents to breach scores of sites",
+          "url": "https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "openai-funding-anthropic-ipo",
+      "section": "AI Industry News",
+      "headline": "OpenAI races to close funding before an Anthropic IPO",
+      "summary": "Reuters reports OpenAI is locking in commitments for a round that could value it above $1.4 trillion, ahead of [Anthropic's](https://www.anthropic.com) expected IPO.",
+      "why_it_matters": "Capital competition keeps release cadence high. Expect more model and pricing moves.",
+      "links": [
+        {
+          "label": "OpenAI races to close funding before an Anthropic IPO",
+          "url": "https://www.reuters.com/world/openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-2026-10-19/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "smaller-items",
+      "section": "AI Industry News",
+      "headline": "Smaller items",
+      "summary": "[Meta detailed Prometheus](https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/), a gigawatt-scale Ohio cluster behind its Muse models. [DHS ordered DeepSeek removed from federal civilian systems](https://www.wsj.com/tech/ai/dhs-orders-deepseek-technology-removed-from-federal-civilian-it-systems-060b6d3d). Canadian publishers [sued Anthropic in Ontario](https://chatnewstoday.ca/2026/10/19/news-publishers-launch-copyright-suit-against-ai-company-anthropic-in-ontario/) (claims unproven). [Amazon](https://www.aboutamazon.com) opened a [TorchNeuron beta](https://www.geekwire.com/2026/amazon-challenges-nvidias-software-advantage-with-new-tool-for-its-own-ai-chips/) to run PyTorch on Trainium, challenging [NVIDIA's](https://www.nvidia.com) software moat.",
+      "links": [
+        {
+          "label": "Meta detailed Prometheus",
+          "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/"
+        },
+        {
+          "label": "DHS ordered DeepSeek removed",
+          "url": "https://www.wsj.com/tech/ai/dhs-orders-deepseek-technology-removed-from-federal-civilian-it-systems-060b6d3d"
+        },
+        {
+          "label": "sued Anthropic in Ontario",
+          "url": "https://chatnewstoday.ca/2026/10/19/news-publishers-launch-copyright-suit-against-ai-company-anthropic-in-ontario/"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://www.aboutamazon.com"
+        },
+        {
+          "label": "TorchNeuron beta",
+          "url": "https://www.geekwire.com/2026/amazon-challenges-nvidias-software-advantage-with-new-tool-for-its-own-ai-chips/"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "figma-specs",
+      "section": "Product Design & UX",
+      "headline": "Figma Specs",
+      "summary": "A Markdown-based editor where teams write down their design language. Specs can link to canvas elements, FigJam diagrams, code layers, and designs, and agents consult them.",
+      "why_it_matters": "A single source of truth that agents read. If your design system lives in scattered docs, consolidating it into a Spec is now directly useful for AI output quality.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Specs",
+          "url": "https://dataconomy.com/2026/10/15/figma-launches-specs-to-guide-ai-with-design-rules/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "figma-code-layers-mcp",
+      "section": "Product Design & UX",
+      "headline": "Code layers (open beta) and MCP expansion",
+      "summary": "Designers can put real code on the canvas for interactive prototypes and ask the agent to convert designs to code or edit the code. Figma's MCP gained 20+ tools, and the canvas agent reached a wider audience. [Payload CMS](https://payloadcms.com) is being wired into Figma Make for dynamic sites.",
+      "why_it_matters": "Prototypes with real behavior without leaving the design file.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Code layers (open beta) and MCP expansion",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        },
+        {
+          "label": "Payload CMS",
+          "url": "https://payloadcms.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "inflight-feedback",
+      "section": "Product Design & UX",
+      "headline": "Inflight: feedback on prototypes",
+      "summary": "A feedback layer for prototypes launched on Product Hunt.",
+      "why_it_matters": "Closes the loop between vibe-coded prototypes and stakeholder comments.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Inflight",
+          "url": "https://www.producthunt.com/products/inflight-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-inflight",
+      "section": "New AI Tools",
+      "headline": "Inflight",
+      "summary": "Feedback layer for prototypes.",
+      "audience": "designers and PMs sharing AI-built prototypes.",
+      "links": [
+        {
+          "label": "Inflight",
+          "url": "https://www.producthunt.com/products/inflight-2"
+        }
+      ],
+      "tool_rating": 7,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-mintlify-autopilot",
+      "section": "New AI Tools",
+      "headline": "Mintlify Autopilot",
+      "summary": "Always-on agent that keeps docs current.",
+      "audience": "developer-tool teams and design-system maintainers.",
+      "links": [
+        {
+          "label": "Mintlify Autopilot",
+          "url": "https://www.producthunt.com/products/mintlify"
+        }
+      ],
+      "tool_rating": 7,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-jotform-app-builder",
+      "section": "New AI Tools",
+      "headline": "Jotform App Builder for ChatGPT & Claude",
+      "summary": "Build and edit no-code apps inside ChatGPT and Claude.",
+      "audience": "non-engineers shipping small internal tools.",
+      "links": [
+        {
+          "label": "Jotform App Builder for ChatGPT & Claude",
+          "url": "https://www.producthunt.com/products/jotform"
+        }
+      ],
+      "tool_rating": 6,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-kling-4",
+      "section": "New AI Tools",
+      "headline": "Kling 4.0",
+      "summary": "Fast, affordable AI video for high-frequency creators.",
+      "audience": "motion mockups and social content.",
+      "links": [
+        {
+          "label": "Kling 4.0",
+          "url": "https://www.producthunt.com/products/kling-4-0-4"
+        }
+      ],
+      "tool_rating": 7,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-exa-3",
+      "section": "New AI Tools",
+      "headline": "Exa 3.0",
+      "summary": "Search API built for agents with richer data at lower cost.",
+      "audience": "anyone building research agents.",
+      "links": [
+        {
+          "label": "Exa 3.0",
+          "url": "https://www.producthunt.com/products/exa-ai"
+        }
+      ],
+      "tool_rating": 7,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-tiny-little-office",
+      "section": "New AI Tools",
+      "headline": "Tiny Little Office",
+      "summary": "Tiny office suite where the link is the document.",
+      "audience": "lightweight sharing.",
+      "links": [
+        {
+          "label": "Tiny Little Office",
+          "url": "https://www.producthunt.com/products/tiny-little-office"
+        }
+      ],
+      "tool_rating": 6,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-beam-win",
+      "section": "New AI Tools",
+      "headline": "Beam.win",
+      "summary": "Keep agents and builds running on a Mac mini or Studio while viewing their windows from another Mac.",
+      "audience": "heavy coding-agent users.",
+      "links": [
+        {
+          "label": "Beam.win",
+          "url": "https://www.producthunt.com/products/beam-win"
+        }
+      ],
+      "tool_rating": 6,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "tool-voxtral-3",
+      "section": "New AI Tools",
+      "headline": "Voxtral 3 by Mistral",
+      "summary": "Speech models and a LiveKit-based voice agent SDK, full conversation in under a second.",
+      "audience": "voice UX prototypes.",
+      "links": [
+        {
+          "label": "Voxtral 3 by Mistral",
+          "url": "https://mistral.ai"
+        }
+      ],
+      "tool_rating": 8,
+      "why_it_matters": null,
+      "image_url": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "trend-design-systems-agent-context",
+      "section": "Trends to Watch",
+      "headline": "Design systems as agent context",
+      "summary": "Figma Specs and the MCP expansion signal that rules written for machines are the new design-system deliverable.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Writing precise, testable design guidelines in Markdown."
+      },
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "trend-agent-identity-oversight",
+      "section": "Trends to Watch",
+      "headline": "Agents with identity and oversight",
+      "summary": "Google's agent has its own account and audit trail, and Microsoft ships per-agent risk controls.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Approval flows, permission scopes, and activity logs as UX."
+      },
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "trend-browser-native-assistants",
+      "section": "Trends to Watch",
+      "headline": "Browser-native assistants",
+      "summary": "ChatGPT acting on open tabs continues the AI browser shift.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "How agents parse your UI."
+      },
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "trend-agent-security-debt",
+      "section": "Trends to Watch",
+      "headline": "Agent security debt",
+      "summary": "[Hackernoon's TechBeat](https://hackernoon.com/10-20-2026-techbeat) frames it as a bill coming due.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Prompt injection basics."
+      },
+      "links": [
+        {
+          "label": "Hackernoon's TechBeat",
+          "url": "https://hackernoon.com/10-20-2026-techbeat"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "insp-figma-code-layers",
+      "section": "Product Design Inspiration",
+      "headline": "Figma code layers",
+      "summary": "Code lives next to the artboard, so a prototype is real, not faked. See [Figma](https://www.figma.com).",
+      "why_it_matters": "it removes the handoff gap instead of decorating it.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "insp-gemini-tasks-inbox",
+      "section": "Product Design Inspiration",
+      "headline": "Google's Gemini tasks inbox",
+      "summary": "An inbox is a familiar mental model for delegated work: reasoning, subagent delegation, and progress in one list. See [TechCrunch coverage](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/).",
+      "why_it_matters": "it borrows a pattern people already trust.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "TechCrunch coverage",
+          "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "insp-tiny-little-office",
+      "section": "Product Design Inspiration",
+      "headline": "Tiny Little Office",
+      "summary": "The link is the document: no accounts or folders.",
+      "why_it_matters": "it deletes steps rather than adding features.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Tiny Little Office",
+          "url": "https://www.producthunt.com/products/tiny-little-office"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "voicestudio",
+      "section": "GitHub & Open Source",
+      "headline": "debpalash/VoiceStudio",
+      "summary": "Fully local alternative to ElevenLabs for voice cloning, dubbing, and transcription. Trending for privacy and zero API cost.",
+      "links": [
+        {
+          "label": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "xerj",
+      "section": "GitHub & Open Source",
+      "headline": "xerj-org/xerj",
+      "summary": "Indexes code, docs, and logs for agents, claiming about 40x fewer tokens than grep.",
+      "links": [
+        {
+          "label": "xerj-org/xerj",
+          "url": "https://github.com/xerj-org/xerj"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "superpowers",
+      "section": "GitHub & Open Source",
+      "headline": "obra/superpowers",
+      "summary": "Agentic skills framework and methodology.",
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "context-mode",
+      "section": "GitHub & Open Source",
+      "headline": "mksglu/context-mode",
+      "summary": "Compresses output and persists session memory across 17 platforms via MCP and hooks.",
+      "links": [
+        {
+          "label": "mksglu/context-mode",
+          "url": "https://github.com/mksglu/context-mode"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "cursor-plugins",
+      "section": "GitHub & Open Source",
+      "headline": "cursor/plugins",
+      "summary": "Official plugin spec and plugins for [Cursor](https://cursor.com).",
+      "links": [
+        {
+          "label": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": "https://avatars.githubusercontent.com/u/126759922?s=400&v=4",
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "cli-anything",
+      "section": "GitHub & Open Source",
+      "headline": "HKUDS/CLI-Anything",
+      "summary": "Makes command-line tools agent-native. Star counts come from an auto-generated digest and were not verified on GitHub.",
+      "links": [
+        {
+          "label": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "buzz-hacker-news",
+      "section": "Social Buzz",
+      "headline": "Hacker News",
+      "kicker": "Hacker News",
+      "summary": "[DeepSeek open-sources its production inference engine](https://zeli.app/story/50163277) (Apache 2.0) led the day with 2,000+ points. [Mistral's Voxtral 3](https://zeli.app/story/50168396) drew attention for sub-second voice conversation. [A developer built the Nordwand Mono font in Python](https://zeli.app/story/50141581), a nice read for type nerds. [WhatsApp's hidden support-bot instructions](https://zeli.app/story/50159341) sparked a transparency debate relevant to anyone designing AI help flows.",
+      "links": [
+        {
+          "label": "DeepSeek open-sources its production inference engine",
+          "url": "https://zeli.app/story/50163277"
+        },
+        {
+          "label": "Mistral's Voxtral 3",
+          "url": "https://zeli.app/story/50168396"
+        },
+        {
+          "label": "Nordwand Mono",
+          "url": "https://zeli.app/story/50141581"
+        },
+        {
+          "label": "WhatsApp's hidden support-bot instructions",
+          "url": "https://zeli.app/story/50159341"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "buzz-product-hunt",
+      "section": "Social Buzz",
+      "headline": "Product Hunt",
+      "kicker": "Product Hunt",
+      "summary": "Agent infrastructure dominated the [October 20 leaderboard](https://www.producthunt.com/leaderboard/daily/2026/10/20), including [Composio Instant](https://www.producthunt.com/products/composio) (agents paying for their own tools) and Exa 3.0.",
+      "links": [
+        {
+          "label": "October 20 leaderboard",
+          "url": "https://www.producthunt.com/leaderboard/daily/2026/10/20"
+        },
+        {
+          "label": "Composio Instant",
+          "url": "https://www.producthunt.com/products/composio"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "buzz-x",
+      "section": "Social Buzz",
+      "headline": "X",
+      "kicker": "X",
+      "summary": "Chatter on [ChatGPT browser actions](https://x.com/ChatGPT/status/2112265233192657153) and [Inception's Mercury 3](https://x.com/StefanoErmon/status/2112222911218291051) diffusion model (vendor claims of 1,000+ tokens per second, not independently verified).",
+      "links": [
+        {
+          "label": "ChatGPT browser actions",
+          "url": "https://x.com/ChatGPT/status/2112265233192657153"
+        },
+        {
+          "label": "Inception's Mercury 3",
+          "url": "https://x.com/StefanoErmon/status/2112222911218291051"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "learn-config-2026-article",
+      "section": "Learning Corner",
+      "headline": "Figma adds code layers and custom AI plugins at Config 2026",
+      "kicker": "Article",
+      "summary": "Best single read on where design tooling is heading.",
+      "links": [
+        {
+          "label": "Figma adds code layers and custom AI plugins at Config 2026",
+          "url": "https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "learn-figma-youtube",
+      "section": "Learning Corner",
+      "headline": "Figma YouTube channel",
+      "kicker": "Video",
+      "summary": "For Config sessions. Watch the keynote to see Specs and code layers in motion.",
+      "links": [
+        {
+          "label": "Figma YouTube channel",
+          "url": "https://www.youtube.com/@figma"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "learn-superpowers",
+      "section": "Learning Corner",
+      "headline": "obra/superpowers",
+      "kicker": "GitHub project",
+      "summary": "A concrete model for structuring agent skills.",
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "learn-config-recap",
+      "section": "Learning Corner",
+      "headline": "Config 2026 recap + what to do as a designer",
+      "kicker": "Design resource",
+      "summary": "Practical takeaways, not just news.",
+      "links": [
+        {
+          "label": "Config 2026 recap + what to do as a designer",
+          "url": "https://designbuddies.substack.com/p/config-2026"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "learn-config-india",
+      "section": "Learning Corner",
+      "headline": "Everything from Config India 2026",
+      "kicker": "AI workflow",
+      "summary": "Use it to wire a Spec plus MCP into your coding agent so generated UI follows your system.",
+      "links": [
+        {
+          "label": "Everything from Config India 2026",
+          "url": "https://forum.figma.com/product-updates-3/here-s-everything-from-config-india-2026-59008"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "opp-specs-service",
+      "section": "Opportunities",
+      "headline": "Write Specs as a service",
+      "summary": "Teams need their design language converted into agent-readable rules. Offer audits and rewrites.",
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "opp-agent-oversight-ux",
+      "section": "Opportunities",
+      "headline": "Agent oversight UX",
+      "summary": "Approval, audit, and spend-cap interfaces are under-designed. Build a portfolio piece around a tasks-inbox pattern.",
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "opp-voice-prototypes",
+      "section": "Opportunities",
+      "headline": "Voice agent prototypes",
+      "summary": "With [Mistral](https://mistral.ai) and [LiveKit](https://livekit.io) tooling, designers can ship working voice prototypes fast.",
+      "links": [
+        {
+          "label": "Mistral",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "LiveKit",
+          "url": "https://livekit.io"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "opp-prototype-feedback",
+      "section": "Opportunities",
+      "headline": "Prototype feedback workflows",
+      "summary": "Tools like Inflight create demand for people who run fast review loops on AI-built prototypes.",
+      "links": [],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    },
+    {
+      "id": "experiment-spec-design-system",
+      "section": "Today's Experiment",
+      "headline": "Write a 1-page Spec for your design system",
+      "kicker": "25 minutes",
+      "summary": "In [Figma](https://www.figma.com), create a Specs file with sections for color tokens, spacing, button rules, and tone of voice. Then ask the canvas agent to generate one screen and compare it with and without the Spec. Note where it follows and where it drifts.",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-21"
+    }
+  ],
+  "dont_miss": [
+    "[Figma Specs and code layers](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/): highest direct impact on your workflow.",
+    "[Google's agentic Gemini](https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/): the new template for agent UX.",
+    "[Microsoft's agent controls](https://www.geekwire.com/2026/microsoft-unveils-tools-to-monitor-and-corral-rogue-ai-agents/): the permissions pattern you will be asked to design."
+  ],
+  "footnote": "Sources: The Neuron daily digest (Oct 20), TechCrunch, Dataconomy, GeekWire, Reuters, Product Hunt, Hacker News via Zeli, and the agents-radar GitHub digest. Items from the past 24 hours were thin on design news, so Figma (Oct 14) and Google (Oct 8) coverage is included as the most important recent updates."
+}
