@@ -1,0 +1,838 @@
+{
+  "date": "2026-10-30",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/18SLhcYWhs7PY-gGlKAwtAXHCzBEvgPGv6MbJ_A-7rVQ/edit",
+  "highlights": [
+    {
+      "headline": "Agents now write a large share of code.",
+      "summary": "[GitHub](https://github.com) says agents started more than 40% of pull requests in September, up from 17% in March ([Octoverse 2026](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/))."
+    },
+    {
+      "headline": "Google shipped a gated frontier model.",
+      "summary": "[Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/) is limited to cyber defenders while government pre-release testing finishes."
+    },
+    {
+      "headline": "Agent security is now a real operating risk.",
+      "summary": "[Anthropic](https://www.anthropic.com) confirmed AI agents reached some of its sales, HR and IT systems through a third-party vendor ([The Decoder](https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/))."
+    },
+    {
+      "headline": "Design systems are becoming agent instructions.",
+      "summary": "[Figma](https://www.figma.com) Specs and code layers (announced Oct 14) treat brand rules as Markdown that agents read."
+    },
+    {
+      "headline": "Open source is converging on harnesses, memory and design critique for coding agents,",
+      "summary": "led by [impeccable](https://github.com/pbakaus/impeccable)."
+    }
+  ],
+  "section_notes": {
+    "AI Industry News": "Note: most items below are from Oct 27 to 29, since coverage for the last 24 hours was thin."
+  },
+  "entries": [
+    {
+      "id": "google-launches-gemini-4-carbon-with-restricted-ac",
+      "section": "AI Industry News",
+      "headline": "Google launches Gemini 4 Carbon with restricted access",
+      "summary": "[Google](https://blog.google) released a model aimed at cybersecurity and long-horizon engineering on Oct 28. Reported results: 88.2% on SEC-bench Pro and 71.0% on CWE-bench. Access runs through the Fairwind Program, with introductory pricing of $2 per million input tokens and $10 per million output tokens. Source: [Ars Technica](https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/).",
+      "why_it_matters": "gated releases tied to government testing are becoming the norm for the strongest models. Builders should expect capability tiers that public APIs do not expose.",
+      "links": [
+        {
+          "label": "Google launches Gemini 4 Carbon with restricted access",
+          "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30",
+      "lead": true
+    },
+    {
+      "id": "google-deepmind-previews-genie-4",
+      "section": "AI Industry News",
+      "headline": "Google DeepMind previews Genie 4",
+      "summary": "[Google DeepMind](https://deepmind.google) showed a real-time world model with native audio and scene consistency up to two minutes (Genie 3 managed one). Trusted testers only. Source: [MarkTechPost](https://www.marktechpost.com/2026/10/28/google-deepmind-genie-4-world-model).",
+      "why_it_matters": "interactive generated environments are a new prototyping surface for games, simulation and spatial UX.",
+      "links": [
+        {
+          "label": "Google DeepMind previews Genie 4",
+          "url": "https://www.marktechpost.com/2026/10/28/google-deepmind-genie-4-world-model"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "anthropic-enterprise-spend-tools-a-vendor-breach-a",
+      "section": "AI Industry News",
+      "headline": "Anthropic: enterprise spend tools, a vendor breach, and an exploit-chaining model",
+      "summary": "Anthropic launched [smart reports, surveys and pooled budgets](https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets) for Claude Enterprise. Separately, the company confirmed a security startup used AI agents to reach limited sales, HR and IT data through third-party software. It says Claude chats, source code and model weights were not exposed. Its [Frontier Red Team research](https://www.anthropic.com/research/discovering-vulnerabilities-with-claude) describes an unreleased model chaining browser and OS flaws into proof-of-concept exploits, with 62 CVEs patched by Google.",
+      "why_it_matters": "your SaaS vendors are now part of your attack surface, and offense capability is scaling fast.",
+      "links": [
+        {
+          "label": "Anthropic: enterprise spend tools, a vendor breach, and an exploit-chaining model",
+          "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets"
+        },
+        {
+          "label": "Frontier Red Team research",
+          "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude"
+        }
+      ],
+      "image_url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets/opengraph-image/og",
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "openai-election-monitoring-and-a-lawsuit",
+      "section": "AI Industry News",
+      "headline": "OpenAI: election monitoring and a lawsuit",
+      "summary": "[OpenAI](https://openai.com) is staffing a monitoring center for the Nov 3 midterms ([Politico](https://www.politico.com/news/2026/10/28/openai-election-war-room-interference-01137690)). A family also filed a wrongful-death suit over GPT-4o medical advice, with allegations unadjudicated ([The Next Web](https://thenextweb.com/news/parents-sue-openai-chatgpt-seizure-medication)).",
+      "why_it_matters": "high-stakes advice flows need explicit guardrails and escalation design.",
+      "links": [
+        {
+          "label": "OpenAI: election monitoring and a lawsuit",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Politico",
+          "url": "https://www.politico.com/news/2026/10/28/openai-election-war-room-interference-01137690"
+        },
+        {
+          "label": "The Next Web",
+          "url": "https://thenextweb.com/news/parents-sue-openai-chatgpt-seizure-medication"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "alphabet-q3-and-the-capex-race",
+      "section": "AI Industry News",
+      "headline": "Alphabet Q3 and the capex race",
+      "summary": "Alphabet reported $127.58B revenue, Cloud at $30.7B, and 1 billion Gemini app users, and shares fell about 7%. It says capex will top $200B this year and exceed $300B in 2027 ([CNBC](https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html)). [Amazon](https://aws.amazon.com) reportedly raised its 2026 capex outlook to about $220B.",
+      "why_it_matters": "compute spend is still accelerating, which keeps model prices falling for builders.",
+      "links": [
+        {
+          "label": "Alphabet Q3 and the capex race",
+          "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://aws.amazon.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "other-moves",
+      "section": "AI Industry News",
+      "headline": "Other moves",
+      "summary": "[NVIDIA](https://www.nvidia.com) released [Nemotron 3.5 Transcribe](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary), an open-weight speech-to-text model (40 languages, up to eight speakers, no live audio). [Meta](https://www.meta.com) may delay its AI-related business terms past Nov 20 after publisher pushback ([The Verge](https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely)). Reuters reports DeepSeek and Moonshot relied on OpenAI \"Astra\" outputs through distillation ([Reuters via TradingView](https://www.tradingview.com/news/reuters.com,2026:newsml_P8N3P10CQ:0-moonshot-ai-and-deepseek-relied-outputs-from-openai-s-astra-when-developing-their-latest-models-released-this-month-the-information/)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Other moves",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "Nemotron 3.5 Transcribe",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+        },
+        {
+          "label": "Meta",
+          "url": "https://www.meta.com"
+        },
+        {
+          "label": "The Verge",
+          "url": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely"
+        },
+        {
+          "label": "Reuters via TradingView",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_P8N3P10CQ:0-moonshot-ai-and-deepseek-relied-outputs-from-openai-s-astra-when-developing-their-latest-models-released-this-month-the-information/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "chrome-autofill-can-pull-from-gmail",
+      "section": "Product Design & UX",
+      "headline": "Chrome autofill can pull from Gmail",
+      "summary": "With Personal Intelligence on, [Chrome](https://www.google.com/chrome/) suggests flight confirmations, order numbers and membership IDs when filling forms. Opt-in, rolling out in the U.S. Source: [TechCrunch](https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/).",
+      "why_it_matters": "forms that expect users to hunt through email are now a design smell.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Chrome autofill can pull from Gmail",
+          "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/"
+        },
+        {
+          "label": "Chrome",
+          "url": "https://www.google.com/chrome/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "figma-specs-and-code-layers-oct-14-still-the-key-d",
+      "section": "Product Design & UX",
+      "headline": "Figma Specs and code layers (Oct 14, still the key design-tool story)",
+      "summary": "Figma Specs is a Markdown editor for defining a design language that agents follow. Code layers are in public beta, and MCP support grew by more than 20 tools. Source: [TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/).",
+      "why_it_matters": "writing your design rules as structured text is now a core design skill.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Specs and code layers (Oct 14, still the key design-tool story)",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "claude-legal-review-artifacts",
+      "section": "Product Design & UX",
+      "headline": "Claude legal review artifacts",
+      "summary": "[Claude](https://claude.ai) added ready-made contract and regulatory review workspaces ([announcement on X](https://x.com/claudeai/status/2115467192276025500)).",
+      "why_it_matters": "a template for packaging a professional workflow as a reusable artifact.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude legal review artifacts",
+          "url": "https://x.com/claudeai/status/2115467192276025500"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "websites-must-now-work-for-agents",
+      "section": "Product Design & UX",
+      "headline": "Websites must now work for agents",
+      "summary": "[Dedica](https://www.producthunt.com/products/dedica) runs 125 checks for tasks AI browsing agents cannot complete on your site.",
+      "why_it_matters": "agent-readable UX is becoming a QA category.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Websites must now work for agents",
+          "url": "https://www.producthunt.com/products/dedica"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "impeccable",
+      "section": "New AI Tools",
+      "headline": "impeccable",
+      "summary": "A design vocabulary (polish, critique, audit) that tells coding agents how to avoid generic AI-looking UI.",
+      "why_it_matters": null,
+      "audience": "designers who ship with agents.",
+      "links": [
+        {
+          "label": "impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "anatomy",
+      "section": "New AI Tools",
+      "headline": "anatomy",
+      "summary": "An agent skill that explains technical ideas as interactive isometric machines.",
+      "why_it_matters": null,
+      "audience": "anyone who explains systems to stakeholders.",
+      "links": [
+        {
+          "label": "anatomy",
+          "url": "https://github.com/wheresryan22/anatomy"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "jev-ultrafast",
+      "section": "New AI Tools",
+      "headline": "jev-ultrafast",
+      "summary": "A browser agent that reads pages as a numbered element list instead of screenshots, reportedly far faster.",
+      "why_it_matters": null,
+      "audience": "automation and UX test scripting.",
+      "links": [
+        {
+          "label": "jev-ultrafast",
+          "url": "https://github.com/browser-use/jev-ultrafast"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "magpie",
+      "section": "New AI Tools",
+      "headline": "magpie",
+      "summary": "A menu-bar gateway that routes Claude Code, Codex, Gemini CLI and other agents to any model with failover.",
+      "why_it_matters": null,
+      "audience": "heavy agent users who hit quotas.",
+      "links": [
+        {
+          "label": "magpie",
+          "url": "https://github.com/yetone/magpie"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "coucou",
+      "section": "New AI Tools",
+      "headline": "coucou",
+      "summary": "A notch-resident character that alerts you when an agent needs input and lets you approve from iPhone.",
+      "why_it_matters": null,
+      "audience": "anyone running long agent tasks.",
+      "links": [
+        {
+          "label": "coucou",
+          "url": "https://github.com/Louis-CFM/coucou"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "nemotron-3-5-transcribe",
+      "section": "New AI Tools",
+      "headline": "Nemotron 3.5 Transcribe",
+      "summary": "Open-weight transcription with speaker labels.",
+      "why_it_matters": null,
+      "audience": "UX researchers processing interview recordings.",
+      "links": [
+        {
+          "label": "Nemotron 3.5 Transcribe",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "dedica",
+      "section": "New AI Tools",
+      "headline": "Dedica",
+      "summary": "Checks whether AI agents can complete tasks on your site.",
+      "why_it_matters": null,
+      "audience": "product teams preparing for agentic traffic.",
+      "links": [
+        {
+          "label": "Dedica",
+          "url": "https://www.producthunt.com/products/dedica"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "concat",
+      "section": "New AI Tools",
+      "headline": "Concat",
+      "summary": "A free local video editor with a built-in MCP server (beta).",
+      "why_it_matters": null,
+      "audience": "making demo videos with agent help.",
+      "links": [
+        {
+          "label": "Concat",
+          "url": "https://github.com/jub0t/Concat"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "design-rules-as-agent-input",
+      "section": "Trends to Watch",
+      "headline": "Design rules as agent input",
+      "summary": "Figma Specs and impeccable both turn taste into text that agents consume.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to write precise, testable design principles."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "agent-harnesses-and-memory",
+      "section": "Trends to Watch",
+      "headline": "Agent harnesses and memory",
+      "summary": "Most trending repos are harnesses, skill packs and memory layers ([claude-mem](https://github.com/thedotmack/claude-mem), [Mem0](https://github.com/mem0ai/mem0)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how context persists across sessions."
+      },
+      "links": [
+        {
+          "label": "Agent harnesses and memory",
+          "url": "https://github.com/thedotmack/claude-mem"
+        },
+        {
+          "label": "Mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "agent-ready-websites",
+      "section": "Trends to Watch",
+      "headline": "Agent-ready websites",
+      "summary": "Zocdoc now lets registered agents book appointments with explicit patient consent ([Zocdoc](https://www.zocdoc.com)), and Dedica audits for agent task completion.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to design for two users: human and agent."
+      },
+      "links": [
+        {
+          "label": "Agent-ready websites",
+          "url": "https://www.zocdoc.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "gated-frontier-models",
+      "section": "Trends to Watch",
+      "headline": "Gated frontier models",
+      "summary": "Capability tiers and government testing change what you can build on and when.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "chrome-s-gmail-aware-autofill",
+      "section": "Product Design Inspiration",
+      "headline": "Chrome's Gmail-aware autofill",
+      "summary": "It removes a task rather than adding a feature, and it is opt-in. See the [Verge write-up](https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence).",
+      "why_it_matters": "the value is clear before the permission ask.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Chrome's Gmail-aware autofill",
+          "url": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "coucou-s-notch-companion",
+      "section": "Product Design Inspiration",
+      "headline": "coucou's notch companion",
+      "summary": "[coucou](https://github.com/Louis-CFM/coucou) puts agent status in the macOS notch as a small character.",
+      "why_it_matters": "it is ambient, interrupts only when input is needed, and extends to the phone for approval.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "coucou's notch companion",
+          "url": "https://github.com/Louis-CFM/coucou"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "anatomy-s-interactive-isometric-explainers",
+      "section": "Product Design Inspiration",
+      "headline": "anatomy's interactive isometric explainers",
+      "summary": "[anatomy](https://github.com/wheresryan22/anatomy) turns abstract systems into manipulable machines.",
+      "why_it_matters": "spatial metaphor makes mechanism visible, which beats a static diagram.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "anatomy's interactive isometric explainers",
+          "url": "https://github.com/wheresryan22/anatomy"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "pbakaus-impeccable",
+      "section": "GitHub & Open Source",
+      "headline": "pbakaus/impeccable",
+      "summary": "Design critique and polish commands for coding agents, the top daily star gainer in the latest trending digest. It addresses \"AI slop\" directly. Source: [AI Open Source Trends, Oct 30](https://github.com/HuggerHustle/ai-radar/issues/99). Star counts come from automated digests and were not independently verified.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        },
+        {
+          "label": "AI Open Source Trends, Oct 30",
+          "url": "https://github.com/HuggerHustle/ai-radar/issues/99"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "obra-superpowers",
+      "section": "GitHub & Open Source",
+      "headline": "obra/superpowers",
+      "summary": "An agentic skills framework and development methodology, gaining about 1,000 stars a day.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "elayadesign-ai-design-skills",
+      "section": "GitHub & Open Source",
+      "headline": "elayadesign/ai-design-skills",
+      "summary": "A design skills pack for agents, also climbing fast.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "elayadesign/ai-design-skills",
+          "url": "https://github.com/elayadesign/ai-design-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "jetbrains-thinkrail",
+      "section": "GitHub & Open Source",
+      "headline": "JetBrains/thinkrail",
+      "summary": "A lightweight, customizable IDE for vibe coding. A major IDE vendor entering the space explains the attention.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JetBrains/thinkrail",
+          "url": "https://github.com/JetBrains/thinkrail"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "copilotkit-openbot",
+      "section": "GitHub & Open Source",
+      "headline": "CopilotKit/OpenBot",
+      "summary": "Self-hosted AI coworkers, each with its own sandboxed computer and a logged action trail.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CopilotKit/OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "graphify-labs-graphify",
+      "section": "GitHub & Open Source",
+      "headline": "Graphify-Labs/graphify",
+      "summary": "Converts codebases, docs and PDFs into a knowledge graph with no vector store.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "tigerless-labs-agent-memory",
+      "section": "GitHub & Open Source",
+      "headline": "tigerless-labs/agent-memory",
+      "summary": "Long-term agent memory in plain Markdown with a SQLite index.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "tigerless-labs/agent-memory",
+          "url": "https://github.com/tigerless-labs/agent-memory"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "agent-written-code-at-scale",
+      "section": "Social Buzz",
+      "headline": "Agent-written code at scale",
+      "summary": "Simon Willison's [Octoverse notes](https://simonwillison.net/2026/Oct/28/github-octoverse-2026/) are the best starting point for the debate on agents opening 40% of PRs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent-written code at scale",
+          "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "agent-ready-sites",
+      "section": "Social Buzz",
+      "headline": "Agent-ready sites",
+      "kicker": "Product Hunt",
+      "summary": "[Dedica on Product Hunt](https://www.producthunt.com/products/dedica) reflects growing interest in auditing sites for agent traffic.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent-ready sites",
+          "url": "https://www.producthunt.com/products/dedica"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "creative-backlash",
+      "section": "Social Buzz",
+      "headline": "Creative backlash",
+      "summary": "Instagram's Adam Mosseri expects AI negativity to grow, especially in creative fields ([The Verge](https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity)). Designers using AI should expect to defend their process.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Creative backlash",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "octoverse-2026",
+      "section": "Learning Corner",
+      "headline": "Octoverse 2026",
+      "kicker": "Article",
+      "summary": "Hard data on how fast agent-authored work is growing, useful for planning your own skill mix. [Octoverse 2026](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Octoverse 2026",
+          "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "figma-youtube-channel",
+      "section": "Learning Corner",
+      "headline": "Figma YouTube channel",
+      "kicker": "Video",
+      "summary": "Walkthroughs of Specs, code layers and MCP workflows at the [Figma YouTube channel](https://www.youtube.com/@Figma). I did not verify a single video today, so start with the latest upload.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma YouTube channel",
+          "url": "https://www.youtube.com/@Figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "impeccable-2",
+      "section": "Learning Corner",
+      "headline": "impeccable",
+      "kicker": "GitHub project",
+      "summary": "Read its command definitions to see how critique is encoded for agents. [impeccable](https://github.com/pbakaus/impeccable).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "figma-s-specs-announcement",
+      "section": "Learning Corner",
+      "headline": "Figma's Specs announcement",
+      "kicker": "Design resource",
+      "summary": "Read [Figma's Specs announcement](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/), then try drafting a Specs file for your own product.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Specs announcement",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "critique-and-audit-pass-with-impeccable",
+      "section": "Learning Corner",
+      "headline": "Critique and audit pass with impeccable",
+      "kicker": "AI workflow",
+      "summary": "Generate UI with your coding agent, then run a critique and audit pass using [impeccable](https://github.com/pbakaus/impeccable) before review. It adds a repeatable quality gate.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Critique and audit pass with impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "write-design-system-specs-for-agents",
+      "section": "Opportunities",
+      "headline": "Write design-system specs for agents",
+      "summary": "Teams adopting [Figma](https://www.figma.com) Specs need people who can express brand and interaction rules precisely.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Write design-system specs for agents",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "agent-ready-ux-audits",
+      "section": "Opportunities",
+      "headline": "Agent-ready UX audits",
+      "summary": "Offer audits of whether agents can complete key flows, using tools like [Dedica](https://www.producthunt.com/products/dedica).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent-ready UX audits",
+          "url": "https://www.producthunt.com/products/dedica"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "approval-and-oversight-ux",
+      "section": "Opportunities",
+      "headline": "Approval and oversight UX",
+      "summary": "Products like [coucou](https://github.com/Louis-CFM/coucou) show demand for interfaces where humans supervise agents. Design the notification and approval patterns.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Approval and oversight UX",
+          "url": "https://github.com/Louis-CFM/coucou"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "consent-and-trust-patterns-for-personal-data-ai",
+      "section": "Opportunities",
+      "headline": "Consent and trust patterns for personal-data AI",
+      "summary": "Chrome's Gmail autofill and Zocdoc's agent booking both hinge on clear consent flows.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    },
+    {
+      "id": "run-an-ai-slop-audit-on-your-own-ui",
+      "section": "Today's Experiment",
+      "headline": "Run an AI-slop audit on your own UI",
+      "kicker": "25 minutes",
+      "summary": "Install [impeccable](https://github.com/pbakaus/impeccable) in your coding agent of choice such as [Cursor](https://cursor.com). Pick one screen you generated recently. Run the critique command, apply the top three fixes, and screenshot before and after. Note which fixes were taste and which were mechanical, then turn those into three written rules for your next prompt.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Run an AI-slop audit on your own UI",
+          "url": "https://github.com/pbakaus/impeccable"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-30"
+    }
+  ],
+  "dont_miss": [
+    "[impeccable](https://github.com/pbakaus/impeccable): the most relevant new repo for designers shipping with agents.",
+    "[Octoverse 2026](https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/): agents opening over 40% of PRs reshapes your role.",
+    "[The Anthropic vendor breach](https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/): a reminder to review agent access in your own stack."
+  ],
+  "footnote": "Sources: roundups from The Neuron, Kill The AI and RIO Rundown (Oct 29), TechCrunch, GitHub trend digests, and linked primary articles. Star counts and benchmark figures are as reported by those sources."
+}
