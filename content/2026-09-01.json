@@ -1,0 +1,591 @@
+{
+  "date": "2026-09-01",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1hpAYHQE_XOL8IKiuVgEgn3rjF1iYCdK8UgB5w6FbVqU/edit",
+  "highlights": [
+    {
+      "headline": "Apple's leadership just changed.",
+      "summary": "[John Ternus became Apple CEO on September 1](https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/), with Tim Cook moving to executive chairman, putting AI strategy squarely on the new chief's desk."
+    },
+    {
+      "headline": "Anthropic is cleaning up a credential-theft incident.",
+      "summary": "[Infostealer malware hijacked active Claude login sessions](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/) on Anthropic's platform, draining usage on compromised accounts. Anthropic force-signed-out affected users and stripped saved payment methods."
+    },
+    {
+      "headline": "Custom silicon is real competition for Nvidia now.",
+      "summary": "[OpenAI's first results from its Jalapeño inference chip](https://openai.com/index/jalapeno-first-results/), built with [Broadcom](https://www.broadcom.com), show meaningfully better throughput and power efficiency, a direct signal that inference cost curves are about to bend."
+    },
+    {
+      "headline": "Google Assistant is being retired in favor of Gemini.",
+      "summary": "Starting September 4, [Gemini](https://gemini.google/release-notes/) fully replaces Google Assistant across Android phones, tablets, Wear OS, and Android Auto."
+    },
+    {
+      "headline": "Figma's Config 2026 announcements are still reshaping the design-to-code conversation.",
+      "summary": "[Code Layers, Figma Motion, and Shader Effects](https://www.figma.com/blog/config-2026-recap/) put Figma on direct competitive ground with AI coding tools like [Cursor](https://cursor.com)."
+    }
+  ],
+  "entries": [
+    {
+      "id": "anthropic-locks-down-accounts-after-infostealer-ca",
+      "section": "AI Industry News",
+      "headline": "Anthropic locks down accounts after infostealer campaign",
+      "summary": "[Anthropic detected on August 30 that general-purpose infostealers](https://www.helpnetsecurity.com/2026/08/31/claude-accounts-compromised-through-infostealer/) (Vidar, LummaC2, StealC, RedLine, Acreed, and Atomic Stealer) had stolen session cookies from users' own compromised machines, letting attackers ride into Claude accounts without needing a password or 2FA. [Affected users saw usage limits refill and drain while they weren't active](https://securityaffairs.com/198166/ai/infostealers-are-hijacking-claude-sessions-and-draining-subscriptions.html). Anthropic force-signed-out compromised sessions, stripped saved payment methods, and issued refunds; the company stressed the malware came from users' own systems, not from Claude itself.",
+      "why_it_matters": "session-hijacking is becoming the go-to attack vector against AI subscriptions. If you use Claude, ChatGPT, or any paid AI tool, treat active login sessions like you would a bank session: sign out of shared or old devices and watch for unusual usage.",
+      "links": [
+        {
+          "label": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/08/31/claude-accounts-compromised-through-infostealer/"
+        },
+        {
+          "label": "Security Affairs",
+          "url": "https://securityaffairs.com/198166/ai/infostealers-are-hijacking-claude-sessions-and-draining-subscriptions.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "apple-s-ai-strategy-gets-a-new-owner",
+      "section": "AI Industry News",
+      "headline": "Apple's AI strategy gets a new owner",
+      "summary": "[John Ternus, formerly SVP of Hardware Engineering, became Apple CEO on September 1](https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/), with Tim Cook moving to executive chairman.",
+      "why_it_matters": "Apple Intelligence has lagged competitors, and Ternus inherits the job of closing that gap while Apple's unified-memory Macs are increasingly used by rivals: [OpenAI has bought tens of thousands of Macs for reinforcement-learning workloads](https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html), and Anthropic rents Mac capacity via AWS.",
+      "links": [
+        {
+          "label": "Apple Newsroom",
+          "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/"
+        },
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "openai-s-custom-chip-shows-real-numbers",
+      "section": "AI Industry News",
+      "headline": "OpenAI's custom chip shows real numbers",
+      "summary": "[OpenAI published first performance results for Jalapeño](https://openai.com/index/jalapeno-first-results/), its inference-only chip co-designed with [Broadcom](https://www.broadcom.com), showing higher throughput and lower latency at lower power draw across multiple models.",
+      "why_it_matters": "if custom inference silicon scales, API pricing for high-volume users could drop meaningfully over the next year, and [it's a genuine margin threat to Nvidia](https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html).",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/jalapeno-first-results/"
+        },
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "gemini-replaces-google-assistant",
+      "section": "AI Industry News",
+      "headline": "Gemini replaces Google Assistant",
+      "summary": "Google confirmed [Google Assistant is being removed from Android phones, tablets, Wear OS, and Android Auto starting September 4](https://gemini.google/release-notes/), with Gemini becoming the default assistant everywhere.",
+      "why_it_matters": "this is the largest forced migration of a consumer AI surface to date, over a billion Android devices switch assistants at once.",
+      "links": [
+        {
+          "label": "Gemini release notes",
+          "url": "https://gemini.google/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "grok-4-5-targets-coding-and-agentic-work",
+      "section": "AI Industry News",
+      "headline": "Grok 4.5 targets coding and agentic work",
+      "summary": "[xAI's Grok 4.5](https://felloai.com/all-we-know-so-far-about-grok-5/), positioned as its strongest model yet for coding and agentic tasks, is priced at $2 per million input tokens and $6 per million output tokens.",
+      "why_it_matters": "pricing puts it competitively between budget and frontier models, worth a look if you're benchmarking coding agents.",
+      "links": [
+        {
+          "label": "xAI's Grok 4.5",
+          "url": "https://felloai.com/all-we-know-so-far-about-grok-5/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "figma-s-config-2026-features-are-rolling-out-in-ph",
+      "section": "Product Design & UX",
+      "headline": "Figma's Config 2026 features are rolling out in phases",
+      "summary": "[Figma's Config 2026 recap](https://www.figma.com/blog/config-2026-recap/) confirms **Code Layers** (turn any design layer into an interactive, code-backed layer with a click or prompt) is in early access, **Figma Motion** is live now for Full seat holders, and **Shader Effects** plus an upgraded AI agent are live on paid plans. [Code Layers directly challenges Cursor's territory](https://www.techtimes.com/articles/319041/20260625/figma-config-2026-code-layers-challenge-cursor-gpu-shaders-hit-paid-plans.htm) by putting a live code surface on the same canvas as design.",
+      "why_it_matters": "if you're on a Figma Full seat, try Motion this week; Code Layers applications are worth getting on the list for even if you won't use it immediately.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "Tech Times",
+          "url": "https://www.techtimes.com/articles/319041/20260625/figma-config-2026-code-layers-challenge-cursor-gpu-shaders-hit-paid-plans.htm"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "framer-leans-further-into-ai-site-generation",
+      "section": "Product Design & UX",
+      "headline": "Framer leans further into AI site generation",
+      "summary": "[Framer's 2026 AI upgrades](https://www.xhtmlteam.com/blog/figma-to-framer-workflow-2026-whats-new-whats-faster/) let designers import Figma frames and get responsive sections, SEO copy, CMS collections, and working navigation generated automatically.",
+      "why_it_matters": "if your team ships marketing sites from Figma comps, this collapses a handoff step that used to take days.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer's 2026 AI upgrades",
+          "url": "https://www.xhtmlteam.com/blog/figma-to-framer-workflow-2026-whats-new-whats-faster/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "flowstep",
+      "section": "New AI Tools",
+      "headline": "Flowstep",
+      "summary": "Turns a text prompt into a connected, multi-screen UI flow with editable layers and one-click Figma copy-paste.",
+      "why_it_matters": null,
+      "audience": "designers who want to skip blank-canvas paralysis on early concepts.",
+      "links": [
+        {
+          "label": "Flowstep",
+          "url": "https://flowstep.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "moonchild-ai",
+      "section": "New AI Tools",
+      "headline": "Moonchild AI",
+      "summary": "A chat-based design tool that imports your actual design system from Figma, a live URL, or a GitHub repo, then generates screens that match your real components rather than generic templates.",
+      "why_it_matters": null,
+      "audience": "product teams with an established design system.",
+      "links": [
+        {
+          "label": "Moonchild AI",
+          "url": "https://moonchild.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "ux-pilot",
+      "section": "New AI Tools",
+      "headline": "UX Pilot",
+      "summary": "Generates wireframes and high-fidelity UI from text prompts, with a free tier and Figma export.",
+      "why_it_matters": null,
+      "audience": "solo founders or PMs sketching flows without a designer on hand.",
+      "links": [
+        {
+          "label": "UX Pilot",
+          "url": "https://uxpilot.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "figma-make",
+      "section": "New AI Tools",
+      "headline": "Figma Make",
+      "summary": "Figma's built-in prompt-to-prototype tool, now positioned alongside Code Layers as part of the same canvas.",
+      "why_it_matters": null,
+      "audience": "teams already living inside Figma who want working prototypes without leaving the file.",
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "cursor",
+      "section": "New AI Tools",
+      "headline": "Cursor",
+      "summary": "The AI code editor now facing direct competition from Figma's Code Layers, still the most capable option for full-repo coding work.",
+      "why_it_matters": null,
+      "audience": "engineers doing serious feature work, not quick mockups.",
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "framer",
+      "section": "New AI Tools",
+      "headline": "Framer",
+      "summary": "AI site builder that now generates full responsive sections, copy, and CMS structure from Figma imports.",
+      "why_it_matters": null,
+      "audience": "shipping a marketing site fast.",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "coding-agents-have-crossed-the-adoption-threshold",
+      "section": "Trends to Watch",
+      "headline": "Coding agents have crossed the adoption threshold",
+      "summary": "[JetBrains research finds 90% of professional developers now use AI coding agents weekly](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/), 68% daily, with Claude Code usage jumping from 18% to 39% of developers since January.",
+      "why_it_matters": "the skill that separates good builders now is orchestrating agents, not writing every line yourself.",
+      "links": [
+        {
+          "label": "JetBrains research",
+          "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "agentic-browsers-are-becoming-a-real-product-categ",
+      "section": "Trends to Watch",
+      "headline": "Agentic browsers are becoming a real product category",
+      "summary": "The market is projected to grow from roughly $4.5B in 2024 to $76.8B by 2034, per [Bright Data's landscape analysis](https://brightdata.com/blog/ai/best-agent-browsers).",
+      "why_it_matters": "expect more of your web-based workflows (research, form-filling, competitive audits) to be delegable to an agent within the year.",
+      "links": [
+        {
+          "label": "Bright Data",
+          "url": "https://brightdata.com/blog/ai/best-agent-browsers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "design-and-code-are-merging-onto-one-canvas",
+      "section": "Trends to Watch",
+      "headline": "Design and code are merging onto one canvas",
+      "summary": "Figma's Code Layers and Framer's AI generation both point the same direction: the design file and the shipped product are converging into a single artifact. Learn the code-adjacent parts of your design tool now, before it's assumed knowledge.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "figma-s-own-onboarding",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's own onboarding",
+      "summary": "New users aren't shown a tutorial video, they're dropped straight into a canvas and prompted to draw a shape, apply a color, and create a frame.",
+      "why_it_matters": "it teaches by doing in the actual product surface, not a simulated one.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "airtable-s-onboarding",
+      "section": "Product Design Inspiration",
+      "headline": "Airtable's onboarding",
+      "summary": "Role-based paths route different user cohorts to different setup flows, so a marketer and an engineer see relevant value within the first minute instead of a generic tour.",
+      "why_it_matters": "it treats \"new user\" as a segment, not a single persona.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Airtable",
+          "url": "https://www.airtable.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "sony-ps5-setup-flow",
+      "section": "Product Design Inspiration",
+      "headline": "Sony PS5 setup flow",
+      "summary": "Walks through system preferences, data migration, and family controls in a strict, low-choice sequence right at first boot.",
+      "why_it_matters": "hardware onboarding has one shot to get configuration right, so it front-loads decisions instead of letting users discover settings later.",
+      "why_label": "Why it works",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "coding-tools-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "coding-tools-mcp",
+      "summary": "A model-neutral MCP server giving any AI agent file reading/search, structured multi-file patches, command execution, and git access. Gaining attention as a reusable backbone for building coding agents instead of writing that plumbing from scratch each time.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "coding-tools-mcp",
+          "url": "https://github.com/xyTom/coding-tools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "awesome-ai-agents-2026",
+      "section": "GitHub & Open Source",
+      "headline": "awesome-ai-agents-2026",
+      "summary": "A curated, monthly-updated list of 300+ AI agent frameworks and tools across 20+ categories. Useful as a single reference when evaluating what's actually out there before building something custom.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awesome-ai-agents-2026",
+          "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "developer-sentiment-on-coding-agents-has-shifted-f",
+      "section": "Social Buzz",
+      "headline": "Developer sentiment on coding agents has shifted from novelty to default",
+      "summary": "[JetBrains' 2026 survey data](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/) is circulating widely because it quantifies what practitioners have been saying anecdotally: daily agent use is now the norm, not the exception, among professional developers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JetBrains' 2026 survey data",
+          "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "the-anthropic-infostealer-story-is-prompting-broad",
+      "section": "Social Buzz",
+      "headline": "The Anthropic infostealer story is prompting broader security discussion",
+      "summary": "It is about how AI subscription accounts are becoming attack targets in their own right, distinct from account-takeover attacks on email or banking. [Coverage across security outlets](https://www.darkreading.com/cyberattacks-data-breaches/anthropic-users-infostealer-attacks-session-thefts) is pushing \"treat your AI login like a financial credential\" as practical advice.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Dark Reading",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-users-infostealer-attacks-session-thefts"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "anthropic-locks-out-claude-users-after-infostealer",
+      "section": "Learning Corner",
+      "headline": "Anthropic locks out Claude users after infostealers hijack login sessions",
+      "kicker": "Article",
+      "summary": "Help Net Security.",
+      "why_it_matters": "it's a concrete, current case study in a threat model (session hijacking) that applies to every AI tool you use, not just Claude.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "Anthropic locks out Claude users after infostealers hijack login sessions",
+          "url": "https://www.helpnetsecurity.com/2026/08/31/claude-accounts-compromised-through-infostealer/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "config-2026-opening-keynote-with-dylan-field",
+      "section": "Learning Corner",
+      "headline": "Config 2026 Opening Keynote with Dylan Field",
+      "kicker": "Video",
+      "summary": "Figma.",
+      "why_it_matters": "it lays out Figma's full thesis on design-and-code convergence in one sitting, context for everything in section 03.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "Config 2026 Opening Keynote with Dylan Field",
+          "url": "https://www.youtube.com/watch?v=2ZCc4k_IV5w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "awesome-ai-agents-2026-2",
+      "section": "Learning Corner",
+      "headline": "awesome-ai-agents-2026",
+      "kicker": "GitHub project",
+      "summary": "Worth bookmarking as a living map of the agent tooling landscape so you're not rebuilding evaluation criteria from scratch each time a new tool launches.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awesome-ai-agents-2026",
+          "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "figma-s-top-ai-tools-for-ux-designers",
+      "section": "Learning Corner",
+      "headline": "Figma's \"Top AI Tools for UX Designers\"",
+      "kicker": "Design resource",
+      "summary": "Resource library. Worth skimming because it's maintained by the platform most of these tools plug into, so the comparisons stay current.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Top AI Tools for UX Designers",
+          "url": "https://www.figma.com/resource-library/ai-tools-for-ux-designers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "import-a-figma-frame-into-framer",
+      "section": "Learning Corner",
+      "headline": "Import a Figma frame into Framer",
+      "kicker": "AI workflow",
+      "summary": "Import a Figma frame into [Framer](https://www.framer.com/) and let it generate the responsive sections and copy, then hand-edit only what's off-brand.",
+      "why_it_matters": "it turns a multi-day handoff into a same-day one.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "design-system-to-code-auditing",
+      "section": "Opportunities",
+      "headline": "Design-system-to-code auditing",
+      "summary": "As tools like [Moonchild AI](https://moonchild.ai/) and [Figma Code Layers](https://www.figma.com/blog/config-2026-recap/) generate UI from existing design systems, teams need people who can audit whether AI-generated screens actually match brand and accessibility standards.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Moonchild AI",
+          "url": "https://moonchild.ai/"
+        },
+        {
+          "label": "Figma Code Layers",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "ai-security-literacy-for-creative-teams",
+      "section": "Opportunities",
+      "headline": "AI security literacy for creative teams",
+      "summary": "The Anthropic infostealer incident shows most design and product teams have no session-hygiene habits for their AI tools. Someone who can write a five-minute internal security briefing for non-technical teammates is immediately useful.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "prompt-to-prototype-specialist",
+      "section": "Opportunities",
+      "headline": "Prompt-to-prototype specialist",
+      "summary": "Tools like [Flowstep](https://flowstep.ai/) and [UX Pilot](https://uxpilot.ai/) reward people who are fast and precise at prompting for UI, this is becoming a distinct, hireable skill separate from traditional visual design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Flowstep",
+          "url": "https://flowstep.ai/"
+        },
+        {
+          "label": "UX Pilot",
+          "url": "https://uxpilot.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "agent-orchestration-for-product-teams",
+      "section": "Opportunities",
+      "headline": "Agent orchestration for product teams",
+      "summary": "With 90% of developers using coding agents weekly, product designers who understand how to brief and review agent output (not just write specs for humans) will be disproportionately valuable on small teams.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    },
+    {
+      "id": "compare-three-alternate-layouts-of-one-of-your-scr",
+      "section": "Today's Experiment",
+      "headline": "Compare three alternate layouts of one of your screens",
+      "kicker": "Under 30 minutes",
+      "summary": "Pick one existing screen from your own product. Feed a screenshot and a one-sentence goal into [UX Pilot](https://uxpilot.ai/) or [Flowstep](https://flowstep.ai/) and ask for three alternate layouts. Spend 15 minutes comparing them against your actual design system, not for polish, but to see which structural ideas you wouldn't have generated yourself. Note the one worth stealing. Total time: under 30 minutes.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "UX Pilot",
+          "url": "https://uxpilot.ai/"
+        },
+        {
+          "label": "Flowstep",
+          "url": "https://flowstep.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-01"
+    }
+  ],
+  "dont_miss": [
+    "**Check your AI tool login sessions.** The [Anthropic infostealer incident](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/) is a reminder to sign out of old devices and review saved payment methods on any AI subscription.",
+    "**If you're on a Figma Full seat, try Figma Motion today.** It's live now, per the [Config 2026 recap](https://www.figma.com/blog/config-2026-recap/), and worth 15 minutes to see if it replaces a step in your current prototyping workflow.",
+    "**Watch the Gemini/Assistant migration if you're on Android.** [Google Assistant is removed starting September 4](https://gemini.google/release-notes/), three days from now, so any automations or routines built on Assistant need a Gemini equivalent before then."
+  ],
+  "footnote": "Sourced from OpenAI, Anthropic, Google, Figma, Framer, and independent reporting (TechCrunch, CNBC, BleepingComputer, Help Net Security, Dark Reading, JetBrains, Bright Data) as of September 1, 2026."
+}
