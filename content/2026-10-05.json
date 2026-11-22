@@ -1,0 +1,824 @@
+{
+  "date": "2026-10-05",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1MP-4_St7cuGM_WLAlN1a8pG2CU7dGsTt5rDSy3_OTtc/edit",
+  "highlights": [
+    {
+      "headline": "Frontier model race tightened.",
+      "summary": "[OpenAI](https://openai.com) shipped [GPT 6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/) (pitched as near-Astra intelligence for a fifth of the price) and [Google](https://deepmind.google) shipped [Gemini 4 Argon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/). Both led Hacker News on Oct 1."
+    },
+    {
+      "headline": "Always-on agents arrive.",
+      "summary": "OpenAI introduced [Dots](https://openai.com/index/introducing-dots/), an always-on agent product, and Conductor put cloud coding agents on the iPhone."
+    },
+    {
+      "headline": "Agents are a security surface.",
+      "summary": "[Anthropic](https://www.anthropic.com)'s Mythos model found a critical server bug, a GitLab AI gateway sandbox escape scored CVSS 9.9, and [Apple](https://www.apple.com) tightened Full Disk Access over agent privacy risk."
+    },
+    {
+      "headline": "Design tools keep absorbing motion and generation.",
+      "summary": "[Figma](https://www.figma.com) added motion export (Lottie, MP4, WebM), vector erasing, and generative plugins with MCP updates."
+    },
+    {
+      "headline": "Open models are good enough for many jobs.",
+      "summary": "Cloudflare Clef, Kev 1.0 and Rapid-MLX all shipped small, local-friendly models and runtimes."
+    }
+  ],
+  "entries": [
+    {
+      "id": "gpt-6-1-sol-and-gemini-4-argon-land-the-same-week",
+      "section": "AI Industry News",
+      "headline": "GPT 6.1 Sol and Gemini 4 Argon land the same week",
+      "summary": "**What happened:** OpenAI's [GPT 6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/) topped Hacker News (1,050 points) with a price-performance pitch. Google's [Gemini 4 Argon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/) followed at 962 points. CNBC asked whether Google can [catch up at the frontier](https://www.cnbc.com/2026/10/02/tech-download-google-argon-frontier-openai-anthropic.html).",
+      "why_it_matters": "Cheaper near-frontier models change what is affordable to run inside a design or research product.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "re-run your evals on both before your next model decision."
+      },
+      "links": [
+        {
+          "label": "GPT 6.1 Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        },
+        {
+          "label": "Gemini 4 Argon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "label": "catch up at the frontier",
+          "url": "https://www.cnbc.com/2026/10/02/tech-download-google-argon-frontier-openai-anthropic.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "anthropic-mythos-finds-a-critical-bug-broadcom-lines-up-60b",
+      "section": "AI Industry News",
+      "headline": "Anthropic Mythos finds a critical bug; Broadcom lines up $60B",
+      "summary": "**What happened:** Per [The Register](https://www.theregister.com), Anthropic's Mythos helped [Horizon3](https://www.horizon3.ai) find CVE-2026-61500, an authentication bypass in Rejetto HTTP File Server, reportedly exploited within 24 hours of disclosure. Separately, [Bloomberg reports](https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic) Broadcom is assembling $60B in financing for chips for Anthropic and other customers. [OpenAI](https://openai.com)'s Sam Altman also said there is \"a lot of daylight\" between the two labs on risk regulation ([Politico](https://www.politico.com)).",
+      "why_it_matters": "Model-driven vulnerability discovery is outpacing patch cycles, and compute financing shows how capital intensive the frontier is.",
+      "links": [
+        {
+          "label": "The Register",
+          "url": "https://www.theregister.com"
+        },
+        {
+          "label": "Horizon3",
+          "url": "https://www.horizon3.ai"
+        },
+        {
+          "label": "Bloomberg reports",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Politico",
+          "url": "https://www.politico.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "google-pauses-its-open-source-bug-bounty",
+      "section": "AI Industry News",
+      "headline": "Google pauses its open source bug bounty",
+      "summary": "[Tom's Hardware](https://www.tomshardware.com) reports Google suspended submissions to its Open Source Software Vulnerability Reward Program on Oct 1 after AI-generated hallucinated reports flooded maintainers.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "any product that lets users file AI-assisted reports needs friction and verification in the flow."
+      },
+      "links": [
+        {
+          "label": "Tom's Hardware",
+          "url": "https://www.tomshardware.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "apple-restricts-full-disk-access",
+      "section": "AI Industry News",
+      "headline": "Apple restricts Full Disk Access",
+      "summary": "[Apple tightened Full Disk Access](https://developer.apple.com/news?id=p6zjojqw) because of agent privacy risks.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "desktop agent products must design permission requests as a first-class experience."
+      },
+      "links": [
+        {
+          "label": "Apple tightened Full Disk Access",
+          "url": "https://developer.apple.com/news?id=p6zjojqw"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "other-signals",
+      "section": "AI Industry News",
+      "headline": "Other signals",
+      "summary": "[NVIDIA](https://www.nvidia.com) DGX Spark 64GB ships Oct 23 at $4,999 and runs models up to 100B parameters locally ([NVIDIA blog](https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/)). [Meta](https://about.meta.com) Ray-Bans were pulled from some Dutch and Belgian retail over privacy concerns. [Supabase](https://supabase.com) is [acquiring Turso](https://supabase.com/blog/supabase-is-acquiring-turso) for agent-ready SQLite-class databases.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "NVIDIA blog",
+          "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.meta.com"
+        },
+        {
+          "label": "Supabase",
+          "url": "https://supabase.com"
+        },
+        {
+          "label": "acquiring Turso",
+          "url": "https://supabase.com/blog/supabase-is-acquiring-turso"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "figma-pushes-into-motion-and-generation",
+      "section": "Product Design & UX",
+      "headline": "Figma pushes into motion and generation",
+      "summary": "[Recent Figma releases](https://releasebot.io/updates/figma) include custom animation styles, an audio timeline, text animation, and export to Lottie, dotLottie, MP4 and WebM. Design systems get vertical wrap in auto layout, variable-driven opacity, and CSS-flexbox-style spacing (Around, Evenly, Between). The eraser now removes vector paths. Users can post \"riffs\" to Community and publish Weave tools and generative plugins and shaders.",
+      "why_it_matters": "animation handoff no longer needs a separate tool, and the flexbox-parity spacing narrows the design-to-code gap.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Recent Figma releases",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "claude-code-mods",
+      "section": "Product Design & UX",
+      "headline": "Claude Code Mods",
+      "summary": "[Claude Code Mods](https://claude.dev/blog/getting-started-with-claude-code-mods/) let users customize [Claude](https://claude.ai) behavior, including a plugin that surfaces details you missed.",
+      "why_it_matters": "agent UI is becoming user-extensible, so interface patterns for status and review matter more.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude Code Mods",
+          "url": "https://claude.dev/blog/getting-started-with-claude-code-mods/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "flux-3-image-gets-a-spatial-canvas",
+      "section": "Product Design & UX",
+      "headline": "FLUX 3 Image gets a spatial canvas",
+      "summary": "[FLUX 3 Image](https://bfl.ai/models/flux-3-image) uses a 0 to 1000 canvas with bounding boxes for selective recolor or replace at 2K and 4K.",
+      "why_it_matters": "region-based edits fit a designer's mental model better than prompt-only edits.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "FLUX 3 Image",
+          "url": "https://bfl.ai/models/flux-3-image"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "quiverai-arrow",
+      "section": "New AI Tools",
+      "headline": "QuiverAI Arrow",
+      "summary": "converts sketches and rasters into editable vector geometry.",
+      "why_it_matters": null,
+      "audience": "designers and illustrators.",
+      "links": [
+        {
+          "label": "QuiverAI Arrow",
+          "url": "https://app.quiver.ai/discover"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "flux-3-image",
+      "section": "New AI Tools",
+      "headline": "FLUX 3 Image",
+      "summary": "region-aware image editing on a bounding-box canvas.",
+      "why_it_matters": null,
+      "audience": "visual designers and asset production.",
+      "links": [
+        {
+          "label": "FLUX 3 Image",
+          "url": "https://bfl.ai/models/flux-3-image"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "text-to-cad",
+      "section": "New AI Tools",
+      "headline": "text-to-cad",
+      "summary": "MIT-licensed CAD creation from text or images with STEP, STL, 3MF and GLB export.",
+      "why_it_matters": null,
+      "audience": "hardware and 3D prototypers.",
+      "links": [
+        {
+          "label": "text-to-cad",
+          "url": "https://github.com/earthtojake/text-to-cad"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "every-agent",
+      "section": "New AI Tools",
+      "headline": "Every Agent",
+      "summary": "Slack agent that works across codebases, PRs, Drive, Gmail, Notion and Figma. $30 per user per month.",
+      "why_it_matters": null,
+      "audience": "small product teams.",
+      "links": [
+        {
+          "label": "Every Agent",
+          "url": "https://every.to/agent"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "conductor-mobile",
+      "section": "New AI Tools",
+      "headline": "Conductor Mobile",
+      "summary": "iPhone app for cloud coding agents, code review and merging.",
+      "why_it_matters": null,
+      "audience": "developers and design engineers.",
+      "links": [
+        {
+          "label": "Conductor Mobile",
+          "url": "https://apps.apple.com/us/app/conductor-build/id6791228564"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "what-s-agent-doing",
+      "section": "New AI Tools",
+      "headline": "What's Agent Doing",
+      "summary": "Claude Code plugin showing current step, elapsed time and history.",
+      "why_it_matters": null,
+      "audience": "anyone studying agent status UX.",
+      "links": [
+        {
+          "label": "What's Agent Doing",
+          "url": "https://github.com/tzafrir/whats-agent-doing"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "lightpanda-1-0",
+      "section": "New AI Tools",
+      "headline": "Lightpanda 1.0",
+      "summary": "a Zig-based headless browser for machines, compatible with Puppeteer and Playwright.",
+      "why_it_matters": null,
+      "audience": "people building browser agents and UX test automation.",
+      "links": [
+        {
+          "label": "Lightpanda 1.0",
+          "url": "https://lightpanda.io/blog/posts/lightpanda-1-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "audionaut",
+      "section": "New AI Tools",
+      "headline": "Audionaut",
+      "summary": "a multitrack audio editor that agents drive via MCP.",
+      "why_it_matters": null,
+      "audience": "prototyping MCP-controlled creative tools.",
+      "links": [
+        {
+          "label": "Audionaut",
+          "url": "https://github.com/kvoltmer/Audionaut"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "always-on-and-background-agents",
+      "section": "Trends to Watch",
+      "headline": "Always-on and background agents",
+      "summary": "[Dots](https://openai.com/index/introducing-dots/) and [Conductor Mobile](https://apps.apple.com/us/app/conductor-build/id6791228564) move agents off the foreground.",
+      "why_it_matters": "the design problem shifts to notifications, handoffs and review.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "asynchronous UX patterns."
+      },
+      "links": [
+        {
+          "label": "Dots",
+          "url": "https://openai.com/index/introducing-dots/"
+        },
+        {
+          "label": "Conductor Mobile",
+          "url": "https://apps.apple.com/us/app/conductor-build/id6791228564"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "agent-permissions-and-privacy",
+      "section": "Trends to Watch",
+      "headline": "Agent permissions and privacy",
+      "summary": "[Apple's Full Disk Access change](https://developer.apple.com/news?id=p6zjojqw) and the GitLab sandbox escape show agents need scoped, legible permissions.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "consent flows and sandbox basics."
+      },
+      "links": [
+        {
+          "label": "Apple's Full Disk Access change",
+          "url": "https://developer.apple.com/news?id=p6zjojqw"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "local-and-small-models",
+      "section": "Trends to Watch",
+      "headline": "Local and small models",
+      "summary": "[DGX Spark 64GB](https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/), [Rapid-MLX](https://rapidmlx.com/download) and [Cloudflare Clef](https://huggingface.co/Cloudflare/clef) make on-device AI practical.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "when a small decision model beats a big generator."
+      },
+      "links": [
+        {
+          "label": "DGX Spark 64GB",
+          "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/"
+        },
+        {
+          "label": "Rapid-MLX",
+          "url": "https://rapidmlx.com/download"
+        },
+        {
+          "label": "Cloudflare Clef",
+          "url": "https://huggingface.co/Cloudflare/clef"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "mcp-everywhere",
+      "section": "Trends to Watch",
+      "headline": "MCP everywhere",
+      "summary": "[Hermes Desktop](https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp) ships a one-click MCP catalog and Figma's MCP now supports third-party agents.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "build one MCP server for your own design workflow."
+      },
+      "links": [
+        {
+          "label": "Hermes Desktop",
+          "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "cua-spaces-permissions-as-product",
+      "section": "Product Design Inspiration",
+      "headline": "Cua Spaces: permissions as product",
+      "summary": "[Cua Spaces](https://spaces.cua.ai/) bundles sign-in, permissions and storage for agent desktops.",
+      "why_it_matters": "it treats trust boundaries as visible UI instead of buried settings.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Cua Spaces",
+          "url": "https://spaces.cua.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "flux-3-image-edit-by-region",
+      "section": "Product Design Inspiration",
+      "headline": "FLUX 3 Image: edit by region",
+      "summary": "[FLUX 3 Image](https://bfl.ai/models/flux-3-image) lets you draw a box and recolor or replace inside it.",
+      "why_it_matters": "direct manipulation beats re-prompting the whole image.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "FLUX 3 Image",
+          "url": "https://bfl.ai/models/flux-3-image"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "gauth-unlimited-canvas-explanation-as-a-board",
+      "section": "Product Design Inspiration",
+      "headline": "Gauth Unlimited Canvas: explanation as a board",
+      "summary": "[Gauth](https://www.gauth.com/) shows concept maps, narrated boards and Quick Checks for step-by-step solutions.",
+      "why_it_matters": "spatial layout plus checkpoints keeps learners engaged instead of reading a wall of text.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Gauth",
+          "url": "https://www.gauth.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "nvidia-openshell",
+      "section": "GitHub & Open Source",
+      "headline": "NVIDIA/OpenShell",
+      "summary": "a secure, private runtime for autonomous agents, 594 stars in a day. Trending because sandboxing is the top agent concern.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "NVIDIA/OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "headroomlabs-ai-headroom",
+      "section": "GitHub & Open Source",
+      "headline": "headroomlabs-ai/headroom",
+      "summary": "compresses tool outputs before they reach the LLM, claiming 20 to 95% token savings.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "headroomlabs-ai/headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "dietrichgebert-ponytail",
+      "section": "GitHub & Open Source",
+      "headline": "DietrichGebert/ponytail",
+      "summary": "1,435 stars in a day for agent efficiency through code minimization.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "mvschwarz-openrig",
+      "section": "GitHub & Open Source",
+      "headline": "mvschwarz/openrig",
+      "summary": "persistent agent teams with shared context across platforms.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mvschwarz/openrig",
+          "url": "https://github.com/mvschwarz/openrig"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "mem0ai-mem0",
+      "section": "GitHub & Open Source",
+      "headline": "mem0ai/mem0",
+      "summary": "production memory layer so agents persist state across sessions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mem0ai/mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "jaredpalmer-kev",
+      "section": "GitHub & Open Source",
+      "headline": "jaredpalmer/kev",
+      "summary": "Kev 1.0 decision models from 0.8B to 27B with public weights.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "jaredpalmer/kev",
+          "url": "https://github.com/jaredpalmer/kev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "hacker-news",
+      "section": "Social Buzz",
+      "headline": "Hacker News",
+      "kicker": "Hacker News",
+      "summary": "[It's Time to Investigate the AI Labs](https://calnewport.com/its-time-to-investigate-the-ai-labs/) (620 points) and [What would a serious AI product look like?](https://blog.glyph.im/2026/09/serious-ai-product.html) (174 points) drove the thoughtful threads. [MicroLLM Lab](https://stateofutopia.com/experiments/microllmlab/) (281 points) runs seven tiny LLMs in the browser. [Ember-1](https://fireworks.ai/blog/ember-1) from [Fireworks](https://fireworks.ai) reached 587 points.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "It's Time to Investigate the AI Labs",
+          "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/"
+        },
+        {
+          "label": "What would a serious AI product look like?",
+          "url": "https://blog.glyph.im/2026/09/serious-ai-product.html"
+        },
+        {
+          "label": "MicroLLM Lab",
+          "url": "https://stateofutopia.com/experiments/microllmlab/"
+        },
+        {
+          "label": "Ember-1",
+          "url": "https://fireworks.ai/blog/ember-1"
+        },
+        {
+          "label": "Fireworks",
+          "url": "https://fireworks.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "reddit",
+      "section": "Social Buzz",
+      "headline": "Reddit",
+      "kicker": "Reddit",
+      "summary": "Kaggle ARC-AGI-3 scores jumped from 7% to 56% in 30 days using reasoning harnesses on open-weight models, with an $850K prize closing Nov 2.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "worth-noting",
+      "section": "Social Buzz",
+      "headline": "Worth noting",
+      "summary": "World Labs is [joining AMD](https://www.worldlabs.ai/blog/amd-announcement).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "joining AMD",
+          "url": "https://www.worldlabs.ai/blog/amd-announcement"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "what-would-a-serious-ai-product-look-like",
+      "section": "Learning Corner",
+      "headline": "What would a serious AI product look like?",
+      "kicker": "Article",
+      "summary": "A product-level critique useful for anyone shipping AI features.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What would a serious AI product look like?",
+          "url": "https://blog.glyph.im/2026/09/serious-ai-product.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "google-cloud-advent-of-agents",
+      "section": "Learning Corner",
+      "headline": "Google Cloud Advent of Agents",
+      "kicker": "Video",
+      "summary": "none verified today. Google Cloud Advent of Agents is a free 31-day series on production agents (Gemini, ADK, Vertex AI) and the closest substitute.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google Cloud Advent of Agents",
+          "url": "https://adventofagents.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "mem0",
+      "section": "Learning Corner",
+      "headline": "mem0",
+      "kicker": "GitHub project",
+      "summary": "Reading how agent memory is structured clarifies personalization design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "figma-release-notes",
+      "section": "Learning Corner",
+      "headline": "Figma release notes",
+      "kicker": "Design resource",
+      "summary": "Skim the motion and auto layout updates to refresh your toolkit.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "mercor-s-human-baseline-study",
+      "section": "Learning Corner",
+      "headline": "Mercor's human baseline study",
+      "kicker": "AI workflow",
+      "summary": "Shows how to benchmark a model against real professionals. Copy the method for your own design QA.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mercor's human baseline study",
+          "url": "https://www.mercor.com/blog/human-baselines-for-benchmarks-ai-now-outperforms-junior-accountants/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "agent-permission-and-consent-ux",
+      "section": "Opportunities",
+      "headline": "Agent permission and consent UX",
+      "summary": "Apple's change makes this a hiring-grade skill.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "async-agent-review-interfaces",
+      "section": "Opportunities",
+      "headline": "Async agent review interfaces",
+      "summary": "Always-on agents need status, diff and approval patterns.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "motion-design-handoff",
+      "section": "Opportunities",
+      "headline": "Motion design handoff",
+      "summary": "Figma's Lottie and MP4 export rewards designers who can ship animation specs.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "local-first-ai-product-design",
+      "section": "Opportunities",
+      "headline": "Local-first AI product design",
+      "summary": "On-device models with private data need new onboarding and trust patterns.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "vertical-agent-services",
+      "section": "Opportunities",
+      "headline": "Vertical agent services",
+      "summary": "[Arceus](https://arceus.legal/) raised $17M for flat-rate agent-plus-lawyer contracts, a template for other professions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Arceus",
+          "url": "https://arceus.legal/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    },
+    {
+      "id": "audit-an-agent-s-status-ux-in-25-minutes",
+      "section": "Today's Experiment",
+      "headline": "Audit an agent's status UX in 25 minutes",
+      "summary": "Install [What's Agent Doing](https://github.com/tzafrir/whats-agent-doing) in Claude Code, run one multi-step task, and screenshot the status states. Sketch in [Figma](https://www.figma.com) a better version with three states: working, needs approval, done. Note what a user would need to decide without reading logs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What's Agent Doing",
+          "url": "https://github.com/tzafrir/whats-agent-doing"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-05"
+    }
+  ],
+  "dont_miss": [
+    "Compare [GPT 6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/) and [Gemini 4 Argon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/) on your own prompts.",
+    "Read [Dots](https://openai.com/index/introducing-dots/) for the always-on agent interaction model.",
+    "Skim [Figma's motion and auto layout updates](https://releasebot.io/updates/figma)."
+  ],
+  "footnote": "Sources: [AI Weekly](https://aiweekly.co/ai-news-today), [The Neuron](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-2-2026/), [Hacker News AI Digest](https://github.com/kouweizhu/agents-radar/issues/284), [AI Open Source Trends](https://github.com/ghub1821239/agents-radar/issues/506), [Releasebot](https://releasebot.io/updates/figma). Several primary pages (OpenAI, Google, CNBC) could not be opened in this unattended run, so details for those items come from the aggregators and headlines."
+}
