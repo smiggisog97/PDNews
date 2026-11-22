@@ -1,0 +1,897 @@
+{
+  "date": "2026-10-14",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1XE_P0BPFnTGFR8KqwnT5rNXAvXt4cxUBV6EEcHmX6F8/edit",
+  "highlights": [
+    {
+      "headline": "Self-replication research lands.",
+      "summary": "[Anthropic](https://www.anthropic.com) published [research](https://www.anthropic.com/research/self-replicating-ai) showing a 26B-parameter model running across 15 cheap Android TV boxes. Sub-30B models can do individual replication steps but cannot yet chain them. [CNBC covered it](https://cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html)."
+    },
+    {
+      "headline": "Figma's agent is now generally available.",
+      "summary": "[Figma](https://www.figma.com) shipped its design agent with custom tools, file attachments in prompts, parallel multi-prompt runs and design system upkeep automation."
+    },
+    {
+      "headline": "Cheap, fast small models are the new default for subagents.",
+      "summary": "[Claude Haiku 5.5](https://aicatchup.com/news/claude-haiku-5-5) (Oct 7) costs $0.10 / $0.50 per million tokens and adds effort levels."
+    },
+    {
+      "headline": "OpenAI has a credibility week.",
+      "summary": "It [withdrew three mathematical results](https://twitter.com/danintheory/status/2108065033070789090) after its [math announcement](https://openai.com/index/sharing-ai-progress-in-mathematics/), and [fired three safety researchers](https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/)."
+    },
+    {
+      "headline": "The browser becomes an agent surface.",
+      "summary": "[Rill Browser](https://www.producthunt.com/products/rill-3) topped Product Hunt's weekly board by turning any page into a Claude Code or Codex task with one shortcut."
+    }
+  ],
+  "entries": [
+    {
+      "id": "anthropic-models-that-copy-themselves-onto-home-hardware",
+      "section": "AI Industry News",
+      "headline": "Anthropic: models that copy themselves onto home hardware",
+      "summary": "Researchers ran Gemma4-26B-A4B across 15 Android TV boxes (about $55 each) at 0.39 tokens per second. Models under 30B can perform single replication steps but fail at chaining them end to end. The team projects capable models could appear by year's end if trends hold ([CNBC](https://cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html)).",
+      "why_it_matters": "The threat model moves from datacenters to consumer devices.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Expect tighter safety language around agent autonomy and device permissions, and more scrutiny of any product that lets an agent act on its own hardware."
+      },
+      "links": [
+        {
+          "label": "Anthropic research",
+          "url": "https://www.anthropic.com/research/self-replicating-ai"
+        },
+        {
+          "label": "CNBC",
+          "url": "https://cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14",
+      "lead": true
+    },
+    {
+      "id": "anthropic-anti-distillation-safeguards-and-a-free-oss-scanne",
+      "section": "AI Industry News",
+      "headline": "Anthropic: anti-distillation safeguards and a free OSS scanner",
+      "summary": "Anthropic says new safeguards cut data extraction from [Claude](https://claude.com) by 90% to 99%, blocked tens of thousands of accounts, and named Zhipu and Moonshot as copying attempts. Separately, it is [offering a free OSS Scanner](https://edtechinnovationhub.com/news/anthropic-offers-free-ai-security-scans-as-bug-discoveries-outpace-human-review) as AI-found bugs outpace human review.",
+      "why_it_matters": "Model access is getting more policed, and open source maintainers get free security help.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "If you ship open source, run the scanner before your next release."
+      },
+      "links": [
+        {
+          "label": "free OSS Scanner",
+          "url": "https://edtechinnovationhub.com/news/anthropic-offers-free-ai-security-scans-as-bug-discoveries-outpace-human-review"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "model-pricing-reset-haiku-5-5-gpt-6-1-sol-mistral-large-4",
+      "section": "AI Industry News",
+      "headline": "Model pricing reset: Haiku 5.5, GPT-6.1 Sol, Mistral Large 4",
+      "summary": "[Claude Haiku 5.5](https://aicatchup.com/news/claude-haiku-5-5) launched Oct 7 at $0.10 / $0.50 per million tokens, with adjustable effort, positioned for subagents, summaries and compaction. [OpenAI](https://openai.com) shipped GPT-6.1 Sol at $2 / $10 at DevDay. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/) (1T total, 49B active) is in preview with weights promised by month-end, and was the top Hacker News AI story. See the [October model roundup](https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html).",
+      "why_it_matters": "Cost per completed task now matters more than price per token.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Route simple calls to small models and keep a second model qualified, since releases get gated or cancelled (OpenAI's GPT-6.1 Astra reportedly was)."
+      },
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://aicatchup.com/news/claude-haiku-5-5"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Mistral Large 4",
+          "url": "https://mistral.ai/news/mistral-large-4/"
+        },
+        {
+          "label": "October model roundup",
+          "url": "https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "openai-math-retraction-and-researcher-firings",
+      "section": "AI Industry News",
+      "headline": "OpenAI: math retraction and researcher firings",
+      "summary": "After announcing [AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/), OpenAI [withdrew three results](https://twitter.com/danintheory/status/2108065033070789090). It also [fired three safety researchers](https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/) over \"mishandling research information.\"",
+      "why_it_matters": "Verification and trust are the live issues.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Design AI features with visible provenance and easy ways to check claims."
+      },
+      "links": [
+        {
+          "label": "AI progress in mathematics",
+          "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+        },
+        {
+          "label": "withdrew three results",
+          "url": "https://twitter.com/danintheory/status/2108065033070789090"
+        },
+        {
+          "label": "fired three safety researchers",
+          "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "infrastructure-nvidia-and-amd-push-open-racks",
+      "section": "AI Industry News",
+      "headline": "Infrastructure: NVIDIA and AMD push open racks",
+      "summary": "[NVIDIA](https://www.nvidia.com) contributed [Vera Rubin rack designs](https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories) to open MGX standards. [AMD](https://www.amd.com) introduced the [Helion agentic AI rack](https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale) and the [Ryzen AI Halo](https://www.amd.com/en/blogs/2026/meet-the-next-amd-ryzen-ai-halo.html) developer box (192GB unified memory, 300B-parameter models at 4-bit).",
+      "why_it_matters": "Agent workloads are driving hardware design, and local 300B inference is arriving on a desk.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Local-first AI features become realistic for prototypes."
+      },
+      "links": [
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "Vera Rubin rack designs",
+          "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories"
+        },
+        {
+          "label": "AMD",
+          "url": "https://www.amd.com"
+        },
+        {
+          "label": "Helion agentic AI rack",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale"
+        },
+        {
+          "label": "Ryzen AI Halo",
+          "url": "https://www.amd.com/en/blogs/2026/meet-the-next-amd-ryzen-ai-halo.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "figma-agent-is-generally-available",
+      "section": "Product Design & UX",
+      "headline": "Figma agent is generally available",
+      "summary": "The [October release log](https://spyingbee.com/updates/figma/2026-10) shows the [Figma](https://www.figma.com) agent in design files with custom tools, more context and parallel multi-prompt execution. You can now attach designs, images, PDFs, spreadsheets and code to prompts in the agent and Figma Make, on all plans.",
+      "why_it_matters": "Bring real source material into the prompt instead of describing it.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "October release log",
+          "url": "https://spyingbee.com/updates/figma/2026-10"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "design-system-upkeep-on-autopilot",
+      "section": "Product Design & UX",
+      "headline": "Design system upkeep on autopilot",
+      "summary": "A new agent handles documentation, component audits, token adherence and naming cleanup. Design System Analytics shows how many teams use each library.",
+      "why_it_matters": "The maintenance work that eats design system teams can be delegated and measured.",
+      "why_label": "Practical value",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "branching-code-connect-via-github-figma-mcp-server",
+      "section": "Product Design & UX",
+      "headline": "Branching, Code Connect via GitHub, Figma MCP server",
+      "summary": "Branching gives isolated spaces to test ideas without touching main files. Code Connect now links GitHub repos to libraries, and the Figma MCP server feeds agentic coding tools. Background on the larger bet: [Config 2026 analysis](https://www.martincid.com/technology-sv/figma-config-2026-code-design-merge-2/) (Code Layers, Motion, Shader Effects) and the [official recap](https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026).",
+      "why_it_matters": "Safer exploration and tighter design-to-code handoff.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Config 2026 analysis",
+          "url": "https://www.martincid.com/technology-sv/figma-config-2026-code-design-merge-2/"
+        },
+        {
+          "label": "official recap",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "figma-weave",
+      "section": "Product Design & UX",
+      "headline": "Figma Weave",
+      "summary": "The node-based canvas for AI image and video workflows ([background](https://designcompass.org/en/2026/06/26/figma-weave-tools-community-workflows/)) gets a fresh push this month.",
+      "why_it_matters": "Reusable, batchable visual pipelines instead of one-off prompts.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "background",
+          "url": "https://designcompass.org/en/2026/06/26/figma-weave-tools-community-workflows/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "rill-browser",
+      "section": "New AI Tools",
+      "headline": "Rill Browser",
+      "summary": "Mac, free. Press ⌘E on any page to create an agent task for Claude Code or Codex, using your existing subscription. No Chrome extensions yet.",
+      "why_it_matters": null,
+      "audience": "builders who research and code in the same hour.",
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "figma-weave-2",
+      "section": "New AI Tools",
+      "headline": "Figma Weave",
+      "summary": "Node-based AI image and video workflows with batch processing.",
+      "why_it_matters": null,
+      "audience": "designers building repeatable asset pipelines.",
+      "links": [
+        {
+          "label": "Figma Weave",
+          "url": "https://www.figma.com/solutions/ai-batch-processing/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "section": "New AI Tools",
+      "headline": "Claude Haiku 5.5",
+      "summary": "Anthropic's fastest Haiku with effort levels, at $0.10 / $0.50 per million tokens.",
+      "why_it_matters": null,
+      "audience": "anyone running subagents or high-volume summarization.",
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://www.producthunt.com/products/claude-haiku-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "fastrouter-ai",
+      "section": "New AI Tools",
+      "headline": "FastRouter.ai",
+      "summary": "Routes each request to the right LLM for cost, latency and quality.",
+      "why_it_matters": null,
+      "audience": "teams whose AI bill is growing.",
+      "links": [
+        {
+          "label": "FastRouter.ai",
+          "url": "https://www.producthunt.com/products/fastrouter-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "genpage-3-0",
+      "section": "New AI Tools",
+      "headline": "GenPage 3.0",
+      "summary": "Builds, personalizes and optimizes landing pages with AI. Promoted placement on Product Hunt.",
+      "why_it_matters": null,
+      "audience": "marketers and designers testing page variants fast.",
+      "links": [
+        {
+          "label": "GenPage 3.0",
+          "url": "https://www.producthunt.com/products/genpage"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "openswarm",
+      "section": "New AI Tools",
+      "headline": "OpenSwarm",
+      "summary": "A swarm of agents inside the place you already work.",
+      "why_it_matters": null,
+      "audience": "people exploring multi-agent setups.",
+      "links": [
+        {
+          "label": "OpenSwarm",
+          "url": "https://www.producthunt.com/products/openswarm-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "audr-by-chargebee",
+      "section": "New AI Tools",
+      "headline": "AUDR by Chargebee",
+      "summary": "Open standard for tracking agent run costs.",
+      "why_it_matters": null,
+      "audience": "product owners who need to price agentic features.",
+      "links": [
+        {
+          "label": "AUDR by Chargebee",
+          "url": "https://www.producthunt.com/products/chargebee"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "big-arrow-on-the-screen",
+      "section": "New AI Tools",
+      "headline": "Big Arrow on the Screen",
+      "summary": "Lets AI agents paint arrows, boxes and text over your screen.",
+      "why_it_matters": null,
+      "audience": "anyone prototyping agent-to-human guidance.",
+      "links": [
+        {
+          "label": "Big Arrow on the Screen",
+          "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "agent-harnesses-over-single-agents",
+      "section": "Trends to Watch",
+      "headline": "Agent harnesses over single agents",
+      "summary": "Repos like [ECC](https://github.com/affaan-m/ECC) and [ruflo](https://github.com/ruvnet/ruflo) wrap coding agents with skills, memory and swarms.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how skills and memory files shape agent behavior."
+      },
+      "links": [
+        {
+          "label": "ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        },
+        {
+          "label": "ruflo",
+          "url": "https://github.com/ruvnet/ruflo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "token-economics-as-a-design-constraint",
+      "section": "Trends to Watch",
+      "headline": "Token economics as a design constraint",
+      "summary": "Haiku 5.5 pricing, [rtk](https://github.com/rtk-ai/rtk) and [headroom](https://github.com/headroomlabs-ai/headroom) all attack cost.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "cost per completed task, effort settings, model routing."
+      },
+      "links": [
+        {
+          "label": "rtk",
+          "url": "https://github.com/rtk-ai/rtk"
+        },
+        {
+          "label": "headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "ai-browsers-and-agent-surfaces",
+      "section": "Trends to Watch",
+      "headline": "AI browsers and agent surfaces",
+      "summary": "[Rill](https://www.producthunt.com/products/rill-3) turns browsing into task dispatch.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "context handoff patterns between a page and an agent."
+      },
+      "links": [
+        {
+          "label": "Rill",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "design-and-code-on-one-canvas",
+      "section": "Trends to Watch",
+      "headline": "Design and code on one canvas",
+      "summary": "Figma's agent, MCP server and GitHub-linked Code Connect narrow the gap.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "[Figma](https://www.figma.com/solutions/ai-batch-processing/) variables plus MCP basics."
+      },
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com/solutions/ai-batch-processing/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "trust-and-verification-ux",
+      "section": "Trends to Watch",
+      "headline": "Trust and verification UX",
+      "summary": "The OpenAI retraction and a [false police tip from an AI model](https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/) show the cost of confident errors.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "provenance, citations and confirmation patterns."
+      },
+      "links": [
+        {
+          "label": "false police tip from an AI model",
+          "url": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "rill-browser-page-to-task-in-one-keystroke",
+      "section": "Product Design Inspiration",
+      "headline": "Rill Browser, page to task in one keystroke",
+      "summary": "[Rill Browser](https://www.producthunt.com/products/rill-3): pressing ⌘E picks the matching project and passes page context to the agent while you keep browsing.",
+      "why_it_matters": "It removes the copy, paste and context switch between reading and delegating.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "big-arrow-on-the-screen-agents-that-point",
+      "section": "Product Design Inspiration",
+      "headline": "Big Arrow on the Screen, agents that point",
+      "summary": "[Big Arrow on the Screen](https://github.com/franzenzenhofer/big-arrow-on-the-screen): agents annotate the real screen with arrows, boxes and text ([HN thread](https://news.ycombinator.com/item?id=50018817)).",
+      "why_it_matters": "Guidance shows up where the user is already looking, instead of in a chat sidebar.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Big Arrow on the Screen",
+          "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen"
+        },
+        {
+          "label": "HN thread",
+          "url": "https://news.ycombinator.com/item?id=50018817"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "figma-agent-attach-anything-and-run-in-parallel",
+      "section": "Product Design Inspiration",
+      "headline": "Figma agent, attach anything and run in parallel",
+      "summary": "The [Figma](https://www.figma.com) agent lets you drop PDFs, spreadsheets and code into one prompt, then run several prompts at once, which matches how designers actually gather inputs.",
+      "why_it_matters": "The input model mirrors real project material.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "morluto-rea",
+      "section": "GitHub & Open Source",
+      "headline": "morluto/rea",
+      "summary": "An agent framework for reverse engineering apps down to native binaries. Posted the biggest daily star gain in the latest trends digest.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "morluto/rea",
+          "url": "https://github.com/morluto/rea"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "affaan-m-ecc",
+      "section": "GitHub & Open Source",
+      "headline": "affaan-m/ECC",
+      "summary": "An agent harness for Claude Code and Codex with skills, memory and security features. Gaining attention as a foundation for agentic development.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "rtk-ai-rtk",
+      "section": "GitHub & Open Source",
+      "headline": "rtk-ai/rtk",
+      "summary": "A Rust CLI proxy that claims to cut token usage 60% to 90% on common dev commands.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "rtk-ai/rtk",
+          "url": "https://github.com/rtk-ai/rtk"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "juliusbrussee-caveman",
+      "section": "GitHub & Open Source",
+      "headline": "JuliusBrussee/caveman",
+      "summary": "A skill that compresses agent output by about 65% for lower cost and latency.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "headroomlabs-ai-headroom",
+      "section": "GitHub & Open Source",
+      "headline": "headroomlabs-ai/headroom",
+      "summary": "Compresses tool outputs, logs and RAG chunks before they hit the model, reporting 20% to 95% savings.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "headroomlabs-ai/headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "hugohe3-ppt-master",
+      "section": "GitHub & Open Source",
+      "headline": "hugohe3/ppt-master",
+      "summary": "Turns documents or topics into animated, data-backed decks. Relevant to designers who present often.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "hugohe3/ppt-master",
+          "url": "https://github.com/hugohe3/ppt-master"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "mem0ai-mem0",
+      "section": "GitHub & Open Source",
+      "headline": "mem0ai/mem0",
+      "summary": "A persistent memory layer for agents, a recurring need in every harness above. Star counts come from a third-party digest and are unverified.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mem0ai/mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "hacker-news",
+      "section": "Social Buzz",
+      "headline": "Hacker News",
+      "kicker": "Hacker News",
+      "summary": "[Mistral Large 4](https://news.ycombinator.com/item?id=49977979) led at 2,036 points, with praise for its reasoning and a strong European lab. [OpenAI's math progress](https://news.ycombinator.com/item?id=49984923) drew 1,527 comments, mixing excitement and worry, followed by [the retraction thread](https://news.ycombinator.com/item?id=50002650) questioning verification rigor.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mistral Large 4",
+          "url": "https://news.ycombinator.com/item?id=49977979"
+        },
+        {
+          "label": "OpenAI's math progress",
+          "url": "https://news.ycombinator.com/item?id=49984923"
+        },
+        {
+          "label": "the retraction thread",
+          "url": "https://news.ycombinator.com/item?id=50002650"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "hacker-news-design-relevant",
+      "section": "Social Buzz",
+      "headline": "Hacker News, design-relevant",
+      "kicker": "Hacker News",
+      "summary": "[Agents painting arrows and boxes on your screen](https://news.ycombinator.com/item?id=50018817) (412 points) is a useful signal that on-screen agent guidance is getting attention. [The false police tip thread](https://news.ycombinator.com/item?id=50027118) is worth skimming for failure-mode UX.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents painting arrows and boxes on your screen",
+          "url": "https://news.ycombinator.com/item?id=50018817"
+        },
+        {
+          "label": "The false police tip thread",
+          "url": "https://news.ycombinator.com/item?id=50027118"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "product-hunt",
+      "section": "Social Buzz",
+      "headline": "Product Hunt",
+      "kicker": "Product Hunt",
+      "summary": "[The week of October 5](https://www.producthunt.com/leaderboard/weekly/2026/41) was dominated by agent tools: Rill Browser, IrisGo, Velozity and OpenSwarm. Several entries were promoted placements.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The week of October 5",
+          "url": "https://www.producthunt.com/leaderboard/weekly/2026/41"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "agentic-ux-when-the-interface-stops-waiting-for-you",
+      "section": "Learning Corner",
+      "headline": "Agentic UX: When the Interface Stops Waiting for You",
+      "kicker": "Article",
+      "summary": "Worth reading for how interfaces change once the system acts without a prompt.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agentic UX: When the Interface Stops Waiting for You",
+          "url": "https://uxmag.com/articles/agentic-ux-when-the-interface-stops-waiting-for-you"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "from-figma-to-function-using-ai-mcp-to-convert-design-to-cod",
+      "section": "Learning Corner",
+      "headline": "From Figma to Function: Using AI + MCP to Convert Design to Code",
+      "kicker": "Video",
+      "summary": "A practical walkthrough of the handoff workflow Figma is investing in.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "From Figma to Function: Using AI + MCP to Convert Design to Code",
+          "url": "https://uxpa.org/aiovg_videos/from-figma-to-function-using-ai-mcp-to-convert-design-to-code/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "rtk-ai-rtk-2",
+      "section": "Learning Corner",
+      "headline": "rtk-ai/rtk",
+      "kicker": "GitHub project",
+      "summary": "Read the code to learn how to cut agent token costs without changing your workflow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "rtk-ai/rtk",
+          "url": "https://github.com/rtk-ai/rtk"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "what-s-new-from-config-2026",
+      "section": "Learning Corner",
+      "headline": "What's new from Config 2026",
+      "kicker": "Design resource",
+      "summary": "The most direct map of where Figma's design-and-code strategy is going.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What's new from Config 2026",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "figma-mcp-setup-for-designers",
+      "section": "Learning Corner",
+      "headline": "Figma MCP setup for designers",
+      "kicker": "AI workflow",
+      "summary": "A step-by-step path to letting a coding agent read your Figma files.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma MCP setup for designers",
+          "url": "https://www.925studios.co/blog/figma-mcp-setup-designers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "agent-oversight-ux",
+      "section": "Opportunities",
+      "headline": "Agent oversight UX",
+      "summary": "With self-replication research and retractions in the news, products need clear controls, logs and confirmations. Few designers specialize here.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "design-system-agent-ops",
+      "section": "Opportunities",
+      "headline": "Design system agent ops",
+      "summary": "Figma's upkeep agent needs rules, token conventions and audit criteria. Offer to set these up for teams.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "cost-aware-ai-product-design",
+      "section": "Opportunities",
+      "headline": "Cost-aware AI product design",
+      "summary": "Use [AUDR](https://www.producthunt.com/products/chargebee) style cost tracking to design pricing tiers and effort controls users can understand.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AUDR",
+          "url": "https://www.producthunt.com/products/chargebee"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "browser-and-desktop-agent-surfaces",
+      "section": "Opportunities",
+      "headline": "Browser and desktop agent surfaces",
+      "summary": "[Rill](https://www.producthunt.com/products/rill-3) shows demand for page-to-agent handoff. Prototype alternatives for other workflows.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Rill",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "open-source-security-tooling-ux",
+      "section": "Opportunities",
+      "headline": "Open source security tooling UX",
+      "summary": "Free scanning from [Anthropic](https://edtechinnovationhub.com/news/anthropic-offers-free-ai-security-scans-as-bug-discoveries-outpace-human-review) creates a flood of findings that maintainers must triage. Triage interfaces are an open design problem.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://edtechinnovationhub.com/news/anthropic-offers-free-ai-security-scans-as-bug-discoveries-outpace-human-review"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    },
+    {
+      "id": "route-one-workflow-to-a-small-model",
+      "section": "Today's Experiment",
+      "headline": "Route one workflow to a small model",
+      "kicker": "25 minutes",
+      "summary": "Pick a repetitive task you currently run on a frontier model, such as summarizing user interview notes. Run the same 5 inputs through [Claude Haiku 5.5](https://www.producthunt.com/products/claude-haiku-5-5) at low and medium effort and through your usual model. Score each output 1 to 5 for usefulness, and record time and cost. If Haiku scores within one point, switch that task and note the savings.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://www.producthunt.com/products/claude-haiku-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-14"
+    }
+  ],
+  "dont_miss": [
+    "Read the [Anthropic self-replication research](https://www.anthropic.com/research/self-replicating-ai). It shapes how agent autonomy will be regulated and designed.",
+    "Try the [Figma](https://www.figma.com) agent with an attached PDF or spreadsheet. It is the clearest new capability for designers this week.",
+    "Run today's Haiku 5.5 experiment. Cost cuts of this size change what you can afford to ship."
+  ],
+  "footnote": "Sources: news and tool details come from the linked articles, Product Hunt listings, Hacker News threads and GitHub repositories. Some items (Haiku 5.5, Figma agent GA, Product Hunt week of Oct 5) are from the past week because fewer major stories landed in the last 24 hours. Star counts and Product Hunt rankings are third-party and may include promoted placements. The Anthropic research page could not be opened directly, so its details come from the October 13 news summary."
+}
