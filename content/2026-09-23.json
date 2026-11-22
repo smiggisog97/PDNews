@@ -1,0 +1,907 @@
+{
+  "date": "2026-09-23",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1G4IlXPXqZuiTuTmOSHT0GmMybr5e-cJoKgBs5S2F3u0/edit",
+  "highlights": [
+    {
+      "headline": "Frontier model prices just got cut in half, twice, in one day.",
+      "summary": "[OpenAI](https://openai.com/index/introducing-gpt-6-sol-and-luna/) shipped [GPT-6 Sol and Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/) and [Anthropic](https://www.anthropic.com/claude-opus-5-5) shipped [Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) on the same day, September 22, both at roughly 40 to 50 percent lower cost per token than their predecessors. For builders, this is the biggest practical story of the week: your coding agent bill is about to drop.",
+      "ref": "openai-gpt-6-sol-luna"
+    },
+    {
+      "headline": "Both labs are opening up pre-release testing to outsiders, but the details diverge sharply.",
+      "summary": "[Anthropic picked Accenture](https://www.anthropic.com/news/accenture-embedded-evaluation) to embed safety evaluators inside the company, a move that [TechCrunch](https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/) and outside researchers found surprising given Accenture's commercial ties to Anthropic. [OpenAI's parallel announcement](https://thenextweb.com/news/openai-evaluators-training-phase) was vaguer on access and partners.",
+      "ref": "external-evaluators"
+    },
+    {
+      "headline": "Apple is betting on the desk, not the data center.",
+      "summary": "New networked [Mac Studios and Mac Minis](https://kfgo.com/2026/09/22/with-new-macs-apple-aims-to-take-on-microsoft-nvidia-in-a-rush-to-lower-ai-costs/), priced up to nearly $20,000, let four units run trillion-parameter models locally, pitched directly at enterprises tired of per-token cloud bills.",
+      "ref": "apple-owned-ai-compute"
+    },
+    {
+      "headline": "The design-to-code line keeps dissolving.",
+      "summary": "[Figma's Config 2026 recap](https://www.figma.com/blog/config-2026-recap/) confirms Code Layers, an in-canvas animation timeline called Figma Motion, and AI-generated shader effects are all shipping this cycle, alongside a more capable [Figma Agent](https://www.figma.com/release-notes/) in beta.",
+      "ref": "figma-config-2026"
+    },
+    {
+      "headline": "Open source agent tooling is showing real usage, not just launch-day noise.",
+      "summary": "[Kilo Code](https://github.com/Kilo-Org/kilocode) reports 1.5M+ users and ranks #1 on [OpenRouter](https://openrouter.ai/), while [Switch](https://github.com/sandbox-quantum/switch) from [SandboxAQ](https://www.sandboxaq.com/) went fully open source this week for wiring any agent into team chat."
+    }
+  ],
+  "entries": [
+    {
+      "id": "openai-gpt-6-sol-luna",
+      "section": "AI Industry News",
+      "headline": "OpenAI launches GPT-6 Sol and Luna at half the price",
+      "summary": "[OpenAI](https://openai.com/) [introduced GPT-6 Sol and GPT-6 Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/) on September 22, positioned below flagship GPT-6 Astra. Sol targets coding and agentic work with a 1.05M-token context window, pricing at $2 per million input tokens and $10 per million output tokens (jumping to $4/$15 above 272K input). Luna handles high-volume, low-complexity tasks at $0.10/$0.50 per million tokens. [TechCrunch reports](https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/) Sol beats [Claude Opus 5](https://www.anthropic.com/claude/opus) on AutomationBench at 9 percent of the cost, and nears [Claude Fable 5.1](https://www.anthropic.com/news/claude-fable-5-1) coding quality at roughly 80 percent lower cost on DeepSWE. Both models are live now in the API, [ChatGPT](https://chatgpt.com/) Work, and [Codex](https://openai.com/codex/) for paid plans.",
+      "why_it_matters": "if you're budgeting agent workflows, this resets the cost floor for \"good enough\" coding and clerical models.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/"
+        },
+        {
+          "label": "introduced GPT-6 Sol and GPT-6 Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        },
+        {
+          "label": "TechCrunch reports",
+          "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
+        },
+        {
+          "label": "Claude Opus 5",
+          "url": "https://www.anthropic.com/claude/opus"
+        },
+        {
+          "label": "Claude Fable 5.1",
+          "url": "https://www.anthropic.com/news/claude-fable-5-1"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com/"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23",
+      "lead": true
+    },
+    {
+      "id": "claude-opus-5-5",
+      "section": "AI Industry News",
+      "headline": "Anthropic ships Claude Opus 5.5, cheaper and faster",
+      "summary": "[Anthropic](https://www.anthropic.com/) [announced Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) the same day, matching [Claude Fable 5.1](https://www.anthropic.com/news/claude-fable-5-1)-level performance at 40 percent lower operating cost than Opus 5, with output roughly 30 percent faster and a 20 percent list-price cut to $4/M input and $20/M output tokens. It scores 66.4 percent on Terminal-Bench 4.0 and is reported as 85 percent less likely than Opus 5 or Mythos 5.1 to attempt to bypass its guardrails, per [US News](https://money.usnews.com/investing/news/articles/2026-09-22/anthropic-unveils-claude-opus-5-5).",
+      "why_it_matters": "Anthropic and OpenAI are now racing on price-per-capability, not just raw capability, which is good news for anyone running agents at volume.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/"
+        },
+        {
+          "label": "announced Claude Opus 5.5",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "label": "Claude Fable 5.1",
+          "url": "https://www.anthropic.com/news/claude-fable-5-1"
+        },
+        {
+          "label": "US News",
+          "url": "https://money.usnews.com/investing/news/articles/2026-09-22/anthropic-unveils-claude-opus-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "external-evaluators",
+      "section": "AI Industry News",
+      "headline": "OpenAI and Anthropic both open pre-release testing to outsiders, but not the same way",
+      "summary": "[OpenAI said](https://thenextweb.com/news/openai-evaluators-training-phase) it will let external groups, including conversations with [METR](https://metr.org/) and [Redwood Research](https://redwoodresearch.org/), assess model safety during training rather than only pre-launch, though the plan is light on specifics: office access \"may\" happen, no named partners, no firm access terms. [Anthropic went further](https://www.anthropic.com/news/accenture-embedded-evaluation), embedding staff from [Accenture](https://www.accenture.com/)'s Faculty division (acquired in January) directly inside the company to red-team models and test safeguards, backed by a pledge of at least $1 billion over five years, per the [official Accenture release](https://newsroom.accenture.com/news/2026/accenture-and-anthropic-partner-to-build-team-of-embedded-evaluators-at-anthropic). [TechCrunch](https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/) notes this surprised observers expecting a specialized safety research group instead of a consulting firm, and [a public letter covered by CNBC](https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html) argues both labs need genuinely independent evaluators.",
+      "why_it_matters": "external evaluation is becoming table stakes for frontier labs, but who counts as \"independent\" is now a live argument worth watching.",
+      "links": [
+        {
+          "label": "OpenAI said",
+          "url": "https://thenextweb.com/news/openai-evaluators-training-phase"
+        },
+        {
+          "label": "METR",
+          "url": "https://metr.org/"
+        },
+        {
+          "label": "Redwood Research",
+          "url": "https://redwoodresearch.org/"
+        },
+        {
+          "label": "Anthropic went further",
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation"
+        },
+        {
+          "label": "Accenture",
+          "url": "https://www.accenture.com/"
+        },
+        {
+          "label": "official Accenture release",
+          "url": "https://newsroom.accenture.com/news/2026/accenture-and-anthropic-partner-to-build-team-of-embedded-evaluators-at-anthropic"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/"
+        },
+        {
+          "label": "a public letter covered by CNBC",
+          "url": "https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "apple-owned-ai-compute",
+      "section": "AI Industry News",
+      "headline": "Apple pitches AI compute you own instead of rent",
+      "summary": "[Apple](https://www.apple.com/) unveiled upgraded [Mac Studio](https://www.apple.com/mac-studio/) and [Mac Mini](https://www.apple.com/mac-mini/) configurations aimed at corporate AI buyers, per [this report](https://kfgo.com/2026/09/22/with-new-macs-apple-aims-to-take-on-microsoft-nvidia-in-a-rush-to-lower-ai-costs/). Four networked Mac Studios, using chip-to-chip RDMA over Thunderbolt and unified memory, can run trillion-parameter models from a single wall outlet, at a price up to nearly $20,000. Apple's hardware chief framed it as \"no cost per token, you're just using the machine again and again.\" Apple holds only about 4.6 percent of enterprise desktop share versus Windows' 91.3 percent, so this is an uphill sell.",
+      "why_it_matters": "for teams with predictable, heavy local inference needs, the math on owning hardware versus renting tokens just got more interesting.",
+      "links": [
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com/"
+        },
+        {
+          "label": "Mac Studio",
+          "url": "https://www.apple.com/mac-studio/"
+        },
+        {
+          "label": "Mac Mini",
+          "url": "https://www.apple.com/mac-mini/"
+        },
+        {
+          "label": "this report",
+          "url": "https://kfgo.com/2026/09/22/with-new-macs-apple-aims-to-take-on-microsoft-nvidia-in-a-rush-to-lower-ai-costs/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "snorkel-ai-series-e",
+      "section": "AI Industry News",
+      "headline": "Snorkel AI triples valuation to $3.5B on data-for-AI demand",
+      "summary": "[Snorkel AI](https://snorkel.ai/) [raised a $350M Series E](https://www.unite.ai/snorkel-ai-raises-350m-series-e-at-3-5b-valuation-to-build-the-frontier-lab-for-ai-data/) at a $3.5B valuation, with annualized revenue up 17x year over year as it pivots from tooling to a full data-labeling service for frontier labs.",
+      "why_it_matters": "as models get cheaper, the bottleneck is shifting further upstream to high-quality training and evaluation data.",
+      "links": [
+        {
+          "label": "Snorkel AI",
+          "url": "https://snorkel.ai/"
+        },
+        {
+          "label": "raised a $350M Series E",
+          "url": "https://www.unite.ai/snorkel-ai-raises-350m-series-e-at-3-5b-valuation-to-build-the-frontier-lab-for-ai-data/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "closedquorum-malware",
+      "section": "AI Industry News",
+      "headline": "First reported fully autonomous AI-driven malware disclosed",
+      "summary": "[Cisco Talos](https://blog.talosintelligence.com/) [disclosed CLOSEDQUORUM](https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/), described as the first reported fully autonomous, multi-model AI command-and-control implant, where a committee of LLMs votes on the malware's next move. Talos simultaneously open-sourced [CAIRN](https://www.unite.ai/cisco-talos-open-sources-cairn-to-hunt-ai-integrated-malware/), a detection toolkit for AI-integrated malware.",
+      "why_it_matters": "this is a concrete, documented case of agentic AI being weaponized end-to-end, not a hypothetical.",
+      "links": [
+        {
+          "label": "Cisco Talos",
+          "url": "https://blog.talosintelligence.com/"
+        },
+        {
+          "label": "disclosed CLOSEDQUORUM",
+          "url": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/"
+        },
+        {
+          "label": "CAIRN",
+          "url": "https://www.unite.ai/cisco-talos-open-sources-cairn-to-hunt-ai-integrated-malware/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "figma-config-2026",
+      "section": "Product Design & UX",
+      "headline": "Figma Config 2026: the canvas absorbs code, motion, and shaders",
+      "summary": "[Figma's Config 2026 recap](https://www.figma.com/blog/config-2026-recap/) confirms three big shifts. Code Layers let designers turn a layer into interactive code with one click and explore variants side by side (\"code is material, just like images, vectors and design layers\"). Figma Motion adds a built-in timeline editor with keyframes, exportable as CSS, JSON, React, MP4, WebM, or animated SVG. Shader Fills let you describe an effect or upload a reference image and have the [Figma Agent](https://www.figma.com/release-notes/) generate a parameterized, stackable shader. Generative Plugins and Figma Weave round out the cycle, letting anyone build custom no-code tools on canvas.",
+      "why_it_matters": "motion and code exploration move from handoff friction into the design phase itself, which should shrink design-to-dev review cycles.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma's Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "Figma Agent",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "framer-agent-reasoning",
+      "section": "Product Design & UX",
+      "headline": "Framer's Agent gets reasoning modes and 3D transforms",
+      "summary": "[Framer](https://www.framer.com/)'s [latest updates](https://www.framer.com/updates) add a model picker with Light versus deeper reasoning for the Agent, plus a Fast mode for compatible models like Opus 5 that trades tokens for speed. A new 3D Transforms release (Rotate XYZ, Perspective, Depth, Backface) keeps 3D layers fully editable on canvas. A CMS List field also ships, letting the Agent migrate repeating content like FAQs without duplicating fields.",
+      "why_it_matters": "the reasoning/fast toggle is a rare example of an AI cost-versus-quality dial being exposed directly in a design tool's UI, worth studying if you're building your own agent surface.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com/"
+        },
+        {
+          "label": "latest updates",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "linear-loops",
+      "section": "Product Design & UX",
+      "headline": "Linear ships \"Loops\" for automated project coordination",
+      "summary": "[Linear](https://linear.app/)'s [Loops feature](https://linear.app/changelog/2026-09-14-loops-for-product-management) are recurring agent workflows that trigger on workspace events (a project's status, dates, or ownership changing), update Linear documents to keep plans in sync, and post tailored Slack updates. After a Loop runs, you can keep going in conversation with the Linear Agent to review or adjust its work.",
+      "why_it_matters": "it's a clean pattern for \"ambient\" agent automation that surfaces its work where the team already looks, rather than in a separate inbox.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Linear",
+          "url": "https://linear.app/"
+        },
+        {
+          "label": "Loops feature",
+          "url": "https://linear.app/changelog/2026-09-14-loops-for-product-management"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "gpt-6-sol-tool",
+      "section": "New AI Tools",
+      "headline": "GPT-6 Sol",
+      "summary": "OpenAI's mid-tier coding and agentic model at a fraction of flagship cost.",
+      "why_it_matters": null,
+      "audience": "teams running high-volume coding agents who don't need the top-end model.",
+      "links": [
+        {
+          "label": "GPT-6 Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "claude-opus-5-5-tool",
+      "section": "New AI Tools",
+      "headline": "Claude Opus 5.5",
+      "summary": "Anthropic's fastest, cheapest Opus yet, with meaningfully lower jailbreak/bypass rates.",
+      "why_it_matters": null,
+      "audience": "anyone already on Opus who wants the same quality for less.",
+      "links": [
+        {
+          "label": "Claude Opus 5.5",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "figma-agent-beta-tool",
+      "section": "New AI Tools",
+      "headline": "Figma Agent (Beta)",
+      "summary": "a canvas-aware AI assistant that generates and remixes designs, automates rote work, and respects existing design systems.",
+      "why_it_matters": null,
+      "audience": "design teams wanting AI help that stays inside their component library.",
+      "links": [
+        {
+          "label": "Figma Agent (Beta)",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "kilo-code-tool",
+      "section": "New AI Tools",
+      "headline": "Kilo Code",
+      "summary": "open source, all-in-one agentic engineering platform, currently #1 on [OpenRouter](https://openrouter.ai/) with 1.5M+ users.",
+      "why_it_matters": null,
+      "audience": "developers who want a self-hostable alternative to closed coding agents.",
+      "links": [
+        {
+          "label": "Kilo Code",
+          "url": "https://github.com/Kilo-Org/kilocode"
+        },
+        {
+          "label": "OpenRouter",
+          "url": "https://openrouter.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "mastra-tool",
+      "section": "New AI Tools",
+      "headline": "Mastra",
+      "summary": "a modern TypeScript framework for building AI agents and apps, with built-in RAG and observability, model-agnostic across GPT, Claude, Gemini, and Llama.",
+      "why_it_matters": null,
+      "audience": "JS/TS teams building production agents rather than prototypes.",
+      "links": [
+        {
+          "label": "Mastra",
+          "url": "https://mastra.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "switch-tool",
+      "section": "New AI Tools",
+      "headline": "Switch",
+      "summary": "now fully open source from [SandboxAQ](https://www.sandboxaq.com/), connects any AI agent into Slack, Teams, or Discord so agents and humans share context in the same channels.",
+      "why_it_matters": null,
+      "audience": "teams tired of agents living in isolated chat windows.",
+      "links": [
+        {
+          "label": "Switch",
+          "url": "https://github.com/sandbox-quantum/switch"
+        },
+        {
+          "label": "SandboxAQ",
+          "url": "https://www.sandboxaq.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "voiskey-tool",
+      "section": "New AI Tools",
+      "headline": "Voiskey",
+      "summary": "AI voice typing with context-aware polish across messages, emails, notes, and AI prompts; currently trending on [Product Hunt](https://www.producthunt.com/).",
+      "why_it_matters": null,
+      "audience": "anyone who thinks faster than they type.",
+      "links": [
+        {
+          "label": "Voiskey",
+          "url": "https://www.voiskey.ai/"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "ami-ai-tool",
+      "section": "New AI Tools",
+      "headline": "Ami AI",
+      "summary": "an AI go-to-market agent that researches and runs outbound sales outreach, pitched as \"Lovable for getting customers.\"",
+      "why_it_matters": null,
+      "audience": "small teams without a dedicated SDR.",
+      "links": [
+        {
+          "label": "Ami AI",
+          "url": "https://aisdr.com/ai-gtm-agent-ami/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "frontier-price-wars",
+      "section": "Trends to Watch",
+      "headline": "Frontier price wars",
+      "summary": "Two labs cutting prices roughly in half on the same day is not a coincidence, it's competitive signaling. Expect Google and others to respond within weeks.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "track cost-per-task benchmarks, not just raw capability scores, when picking a model for production agents."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "embedded-not-independent-safety-evaluation",
+      "section": "Trends to Watch",
+      "headline": "Embedded, not independent, safety evaluation",
+      "summary": "Both [Anthropic's Accenture deal](https://www.anthropic.com/news/accenture-embedded-evaluation) and [OpenAI's evaluator plan](https://thenextweb.com/news/openai-evaluators-training-phase) favor evaluators with commercial or access relationships to the lab being evaluated.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "watch whether regulators (Europe's mandated adversarial testing standards are already stricter) force a more arm's-length model."
+      },
+      "links": [
+        {
+          "label": "Anthropic's Accenture deal",
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation"
+        },
+        {
+          "label": "OpenAI's evaluator plan",
+          "url": "https://thenextweb.com/news/openai-evaluators-training-phase"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "on-device-enterprise-ai-compute",
+      "section": "Trends to Watch",
+      "headline": "On-device enterprise AI compute",
+      "summary": "Apple's networked Mac Studio pitch is a direct bet that predictable, heavy inference workloads are cheaper owned than rented.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "if your org runs agents at real volume, model the breakeven between local hardware and API spend."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "design-to-code-convergence",
+      "section": "Trends to Watch",
+      "headline": "Design-to-code convergence",
+      "summary": "Figma's Code Layers and Motion timeline, plus Framer's Agent-driven CMS migrations, both point at the same shift: the design tool increasingly ships production-ready output, not just specs.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "get fluent in exporting from these tools directly into your codebase now, before it's the default expectation."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "agents-joining-team-chat-as-first-class-participan",
+      "section": "Trends to Watch",
+      "headline": "Agents joining team chat as first-class participants",
+      "summary": "[Switch](https://github.com/sandbox-quantum/switch) and Linear's Loops both treat Slack/Teams/Discord as the place agents report and take follow-up input, rather than a separate dashboard.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "think about where your team already looks, and route agent output there."
+      },
+      "links": [
+        {
+          "label": "Switch",
+          "url": "https://github.com/sandbox-quantum/switch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "figma-motion-timeline",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Motion's in-canvas timeline",
+      "summary": "Rather than bolting animation onto a separate prototyping mode, [Figma Motion](https://www.figma.com/blog/config-2026-recap/) puts keyframes and presets directly on the same canvas as static design, and makes the result inspectable in Dev Mode.",
+      "why_it_matters": "it removes a context switch that used to send motion work to a different tool entirely.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma Motion",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "framer-agent-s-reasoning-fast-mode-picker",
+      "section": "Product Design Inspiration",
+      "headline": "Framer Agent's reasoning/fast mode picker",
+      "summary": "[Framer's model picker](https://www.framer.com/updates) exposes a genuinely useful trade-off (depth of reasoning versus speed and token cost) as a simple UI control instead of hiding it in settings.",
+      "why_it_matters": "it treats \"how hard should the AI think about this\" as a first-class creative decision, not a technical one.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Framer's model picker",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "linear-loops-conversational-handoff",
+      "section": "Product Design Inspiration",
+      "headline": "Linear Loops' conversational handoff",
+      "summary": "[Linear's Loops](https://linear.app/changelog/2026-09-14-loops-for-product-management) run automated coordination work, then hand control back to a chat interface so a human can review or adjust what the agent did.",
+      "why_it_matters": "it avoids the two failure modes of automation, fully opaque or fully manual, and lands on \"automated, then reviewable.\"",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Linear's Loops",
+          "url": "https://linear.app/changelog/2026-09-14-loops-for-product-management"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "kilo-org-kilocode-gh",
+      "section": "GitHub & Open Source",
+      "headline": "Kilo-Org/kilocode",
+      "summary": "the all-in-one open source agentic engineering platform behind Kilo Code, now #1 on [OpenRouter](https://openrouter.ai/) with 1.5M+ users and 25T+ tokens processed.",
+      "why_it_matters": "for being a credible open alternative to closed coding agents at real scale.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "Kilo-Org/kilocode",
+          "url": "https://github.com/Kilo-Org/kilocode"
+        },
+        {
+          "label": "OpenRouter",
+          "url": "https://openrouter.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "mastra-ai-mastra-gh",
+      "section": "GitHub & Open Source",
+      "headline": "mastra-ai/mastra",
+      "summary": "the TypeScript framework for AI agents with built-in assistants, RAG, and observability, supporting GPT, Claude, Gemini, and Llama.",
+      "why_it_matters": "as the default pick for JS/TS teams who don't want to reach for a Python framework just to build an agent.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "mastra-ai/mastra",
+          "url": "https://github.com/mastra-ai/mastra"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "sandbox-quantum-switch-gh",
+      "section": "GitHub & Open Source",
+      "headline": "sandbox-quantum/switch",
+      "summary": "newly open-sourced by [SandboxAQ](https://www.sandboxaq.com/), connects any AI agent to Slack, Teams, and Discord, self-hostable.",
+      "why_it_matters": "because it solves the \"agents work alone\" isolation problem without locking teams into one vendor's chat agent.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "sandbox-quantum/switch",
+          "url": "https://github.com/sandbox-quantum/switch"
+        },
+        {
+          "label": "SandboxAQ",
+          "url": "https://www.sandboxaq.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "tolkonepiu-best-of-mcp-servers-gh",
+      "section": "GitHub & Open Source",
+      "headline": "tolkonepiu/best-of-mcp-servers",
+      "summary": "a ranked, weekly-updated list of [MCP](https://modelcontextprotocol.io/) servers.",
+      "why_it_matters": "as the MCP ecosystem keeps growing faster than any single person can track by hand.",
+      "why_label": "Why now",
+      "links": [
+        {
+          "label": "tolkonepiu/best-of-mcp-servers",
+          "url": "https://github.com/tolkonepiu/best-of-mcp-servers"
+        },
+        {
+          "label": "MCP",
+          "url": "https://modelcontextprotocol.io/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "the-independence-question-won-t-die-down",
+      "section": "Social Buzz",
+      "headline": "The independence question won't die down",
+      "summary": "A public letter covered by [CNBC](https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html) argues Anthropic and OpenAI both need evaluators with no commercial ties to the lab, a direct rebuttal to this week's Accenture and METR/Redwood Research conversations. This is the debate to watch through next week.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "agents-isolated-post",
+      "section": "Social Buzz",
+      "headline": "\"AI agents are powerful. They're also isolated.\"",
+      "summary": "A widely shared [post on X](https://x.com/anujcodes_21/status/2097390577830801731) from a builder using Switch makes the case that most agent tools fail because every new chat is a fresh start with no shared team context, which is exactly the gap [Switch](https://github.com/sandbox-quantum/switch) is trying to close.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "post on X",
+          "url": "https://x.com/anujcodes_21/status/2097390577830801731"
+        },
+        {
+          "label": "Switch",
+          "url": "https://github.com/sandbox-quantum/switch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "kilo-numbers-buzz",
+      "section": "Social Buzz",
+      "headline": "Kilo Code's numbers are doing the talking",
+      "summary": "Its GitHub description now reads \"#1 on OpenRouter, 1.5M+ Kilo Coders, 25T+ tokens processed,\" the kind of usage-based bragging right that's harder to dismiss than a launch-day upvote count.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "voiskey-buzz",
+      "section": "Social Buzz",
+      "headline": "Voiskey is climbing the Product Hunt leaderboard",
+      "summary": "After ranking #2 on launch day, [Voiskey](https://www.voiskey.ai/) held on to a #5 weekly leaderboard spot, a signal that its context-aware voice typing is getting sustained usage rather than a one-day spike. ([Product Hunt](https://www.producthunt.com/))",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Voiskey",
+          "url": "https://www.voiskey.ai/"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "learn-techcrunch-sol-luna",
+      "section": "Learning Corner",
+      "headline": "TechCrunch on GPT-6 Sol and Luna",
+      "kicker": "Article",
+      "summary": "Worth the read because it puts OpenAI's new pricing directly against Anthropic's same-day Opus 5.5 cut, the clearest single read on where model economics stand right now.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "TechCrunch on GPT-6 Sol and Luna",
+          "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "config-2026-keynote-with-dylan-field",
+      "section": "Learning Corner",
+      "headline": "Config 2026 Keynote with Dylan Field",
+      "kicker": "Video",
+      "summary": "Worth the watch for the full context behind Code Layers, Figma Motion, and Shader Fills straight from Figma's CEO, more nuance than any recap can capture.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 Keynote with Dylan Field",
+          "url": "https://www.youtube.com/watch?v=2ZCc4k_IV5w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "learn-kilocode",
+      "section": "Learning Corner",
+      "headline": "Kilo-Org/kilocode",
+      "kicker": "GitHub project",
+      "summary": "Worth exploring because it's a working, self-hostable reference for what a full agentic engineering platform looks like end to end, not just a wrapper around one model call.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kilo-Org/kilocode",
+          "url": "https://github.com/Kilo-Org/kilocode"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "learn-config-recap",
+      "section": "Learning Corner",
+      "headline": "Figma Config 2026 recap",
+      "kicker": "Design resource",
+      "summary": "Worth the read because it's the single best summary of where design tooling is headed for the next year, straight from the source.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Config 2026 recap",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "beyond-autocomplete-best-agentic-coding-workflow-i",
+      "section": "Learning Corner",
+      "headline": "Beyond Autocomplete: Best Agentic Coding Workflow in 2026",
+      "kicker": "AI workflow",
+      "summary": "From [Kilo](https://kilo.ai/). Worth the read for a concrete walkthrough of moving from autocomplete-style AI coding to a full agentic workflow, useful whether or not you end up using their tool.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Beyond Autocomplete: Best Agentic Coding Workflow in 2026",
+          "url": "https://kilo.ai/articles/beyond-autocomplete"
+        },
+        {
+          "label": "Kilo",
+          "url": "https://kilo.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "vertical-agent-in-chat-integrations",
+      "section": "Opportunities",
+      "headline": "Vertical agent-in-chat integrations",
+      "summary": "With [Switch](https://github.com/sandbox-quantum/switch) now open source, there's room to build niche, industry-specific agent-to-Slack/Teams integrations (legal, agency, healthcare ops) on top of an already-solved plumbing layer.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Switch",
+          "url": "https://github.com/sandbox-quantum/switch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "shader-and-motion-template-packs",
+      "section": "Opportunities",
+      "headline": "Shader and motion template packs",
+      "summary": "[Figma's new Shader Fills and Motion tools](https://www.figma.com/blog/config-2026-recap/) are brand new and undersupplied with ready-made presets, a real opening for a paid template or plugin business on [Figma Community](https://www.figma.com/community).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's new Shader Fills and Motion tools",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "Figma Community",
+          "url": "https://www.figma.com/community"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "trust-and-safety-dashboards-for-ai-teams",
+      "section": "Opportunities",
+      "headline": "Trust and safety dashboards for AI teams",
+      "summary": "As embedded evaluation becomes standard (Accenture at Anthropic, possibly METR or Redwood Research at OpenAI), there's a design gap for tooling that makes evaluator findings legible to non-safety-specialist stakeholders.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "agent-status-ui-for-project-management",
+      "section": "Opportunities",
+      "headline": "Agent-status UI for project management",
+      "summary": "[Linear's Loops](https://linear.app/changelog/2026-09-14-loops-for-product-management) pattern (trigger, act, hand back to conversation) is a template other PM tools haven't copied yet; building a similar layer for tools that lack it is a clear white space.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Linear's Loops",
+          "url": "https://linear.app/changelog/2026-09-14-loops-for-product-management"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "cost-tier-model-routing-as-a-product-feature",
+      "section": "Opportunities",
+      "headline": "Cost-tier model routing as a product feature",
+      "summary": "With GPT-6 Sol/Luna and Claude Opus 5.5 both offering steep price tiers, there's demand for lightweight routing tools that pick the cheapest model that clears a quality bar per task, similar to what [OpenRouter](https://openrouter.ai/) does at the infra level but exposed as an end-user feature.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenRouter",
+          "url": "https://openrouter.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    },
+    {
+      "id": "framer-reasoning-experiment",
+      "section": "Today's Experiment",
+      "headline": "Compare Framer Agent reasoning modes",
+      "kicker": "Under 30 minutes",
+      "summary": "Pick one real onboarding screen from your current project. Recreate it twice using [Framer's Agent](https://www.framer.com/updates): once with Light reasoning, once with a higher reasoning setting, keeping the prompt identical. Compare output quality, generation time, and how much you had to manually fix in each version. This gives you a concrete, personal answer to \"when is the reasoning trade-off actually worth it\" instead of relying on vendor claims.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Framer's Agent",
+          "url": "https://www.framer.com/updates"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-23"
+    }
+  ],
+  "dont_miss": [
+    "**The Sol/Luna vs. Opus 5.5 price cuts.** If you run agent workflows at any real volume, re-check your model choice this week: [GPT-6 Sol and Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/) and [Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) both likely beat your current cost-per-task.",
+    "**Figma Config 2026's Code Layers and Motion.** If you touch design-to-dev handoff, [read the recap](https://www.figma.com/blog/config-2026-recap/) today, this changes what \"done\" looks like for a design file.",
+    "**The embedded-evaluator debate.** Whether you build with these models or just rely on their safety claims, [Anthropic's Accenture partnership](https://www.anthropic.com/news/accenture-embedded-evaluation) and the [pushback against it](https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html) are worth 5 minutes, this is shaping how \"safety-tested\" gets defined industry-wide."
+  ],
+  "footnote": "Sourced from OpenAI, Anthropic, Figma, Framer, Linear, Accenture, Cisco Talos, TechCrunch, CNBC, Bloomberg, US News, Unite.AI, SandboxAQ, GitHub, Product Hunt, and X. Compiled September 23, 2026."
+}
