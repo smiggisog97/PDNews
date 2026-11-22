@@ -1,0 +1,758 @@
+{
+  "date": "2026-09-30",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1-5gvF9P36Fc7ke4t9kqiGOer1UrP2_ahvrhb2U0udvg/edit",
+  "highlights": [
+    {
+      "headline": "OpenAI DevDay landed yesterday.",
+      "summary": "[Dots](https://openai.com/index/introducing-dots/) (always-on agents), [GPT-6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/) (agentic coding at about one fifth the token cost) and [the Agents API](https://openai.com/index/introducing-the-agents-api/) with computer use."
+    },
+    {
+      "headline": "ChatGPT Space and collaborative Slides/Pages",
+      "summary": "push [OpenAI](https://openai.com) directly into Notion, Slack and Drive territory."
+    },
+    {
+      "headline": "Codex in the Cloud",
+      "summary": "lets you run and monitor coding agents from your phone, raising the bar for [Cursor](https://cursor.com) and [Claude Code](https://www.anthropic.com/claude-code)."
+    },
+    {
+      "headline": "Design-to-code loops are closing.",
+      "summary": "[Figma](https://www.figma.com) shipped a design agent, visual editing in Figma Make, Weave tools and shaders in September."
+    },
+    {
+      "headline": "Frontier cyber models are gated.",
+      "summary": "[Claude Fable 5.1 and Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1), Google's Gemini 3.8 Flash Cyber and OpenAI's Astra all ship with restricted access tiers."
+    }
+  ],
+  "section_notes": {
+    "Social Buzz": "Hacker News, X and Reddit could not be fetched in this unattended run, so this section relies on Product Hunt and press coverage."
+  },
+  "entries": [
+    {
+      "id": "openai-devday-2026-agents-everywhere",
+      "section": "AI Industry News",
+      "headline": "OpenAI DevDay 2026: agents everywhere",
+      "summary": "[OpenAI's DevDay recap](https://openai.com/index/devday-2026-recap/) lists 20+ products. Headliners: [Dots](https://openai.com/index/introducing-dots/), always-on agents powered by GPT-6 Astra that connect to 4,000+ apps and work through ChatGPT, Slack, Teams and voice. [GPT-6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/) matches Astra on coding and computer use at much lower cost. The Decisions API lets companies hand narrow, repeatable choices to a model. Sources: [Axios](https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol).",
+      "why_it_matters": "Agents move from a chat tab to a persistent teammate. Dots is included for Pro and Business Premium users, so adoption will be fast.",
+      "takeaway": {
+        "label": "For builders and designers",
+        "text": "Design the activity view, permissions and handoff moments. Those are the new UX surface, not the prompt box."
+      },
+      "links": [
+        {
+          "label": "OpenAI's DevDay recap",
+          "url": "https://openai.com/index/devday-2026-recap/"
+        },
+        {
+          "label": "Dots",
+          "url": "https://openai.com/index/introducing-dots/"
+        },
+        {
+          "label": "GPT-6.1 Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        },
+        {
+          "label": "Axios",
+          "url": "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "codex-in-the-cloud-a-refreshed-cli-and-plugin-extensions",
+      "section": "AI Industry News",
+      "headline": "Codex in the Cloud, a refreshed CLI and plugin extensions",
+      "summary": "Codex now runs remotely with reusable environments, a voice-steered CLI and scheduled repo scanning. ChatGPT plugins can add sidebar experiences and file viewers, and MCP events can trigger automations. Details in the [recap](https://openai.com/index/devday-2026-recap/).",
+      "why_it_matters": "Plugins with sidebar UIs make ChatGPT an app platform. MCP events make it reactive.",
+      "links": [
+        {
+          "label": "recap",
+          "url": "https://openai.com/index/devday-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "anthropic-ships-fable-5-1-and-mythos-5-1",
+      "section": "AI Industry News",
+      "headline": "Anthropic ships Fable 5.1 and Mythos 5.1",
+      "summary": "[Fable 5.1](https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/) costs about 25% less for typical workloads (up to 45% for agentic ones) through cheaper cache reads, and cuts cyber false positives for Claude Code users by about 60%. [Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1) is limited to trusted-access programs.",
+      "why_it_matters": "Long agent sessions get materially cheaper, which changes what is worth automating.",
+      "links": [
+        {
+          "label": "Fable 5.1",
+          "url": "https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/"
+        },
+        {
+          "label": "Mythos 5.1",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "cyber-models-across-labs",
+      "section": "AI Industry News",
+      "headline": "Cyber models across labs",
+      "summary": "[The Hacker News](https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html) reports [Google](https://deepmind.google) launched Gemini 3.8 Flash Cyber via the Fairwind Program (650+ partner orgs), and OpenAI says Astra crossed its critical cyber capability threshold, offered through the Daybreak Blue program.",
+      "why_it_matters": "Frontier capability is now released in tiers. Expect more gated features and verification flows in the products you build on top.",
+      "links": [
+        {
+          "label": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html"
+        },
+        {
+          "label": "Google",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "figma-s-september-run",
+      "section": "Product Design & UX",
+      "headline": "Figma's September run",
+      "summary": "Per [Spyingbee's Figma tracker](https://spyingbee.com/updates/figma/2026-09): shaders in open beta (Sept 1), Weave tools for image generation and retouching inside design files (Sept 16), and on Sept 24 visual editing in Figma Make plus a new design agent with contextual prompting. The [Figma](https://www.figma.com) MCP server links design files to coding tools, and Code Connect cut Coinbase's token costs by 22.5% and task time by 22%.",
+      "why_it_matters": "Map your components with Code Connect once and every agent that reads your file generates code with your real components.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Spyingbee's Figma tracker",
+          "url": "https://spyingbee.com/updates/figma/2026-09"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "claude-code-to-figma",
+      "section": "Product Design & UX",
+      "headline": "Claude Code to Figma",
+      "summary": "The \"code to canvas\" flow sends a running UI from [Claude Code](https://www.anthropic.com/claude-code) into [Figma](https://www.figma.com) as editable layers. See [Muzli's walkthrough](https://muz.li/blog/claude-code-to-figma-how-the-new-code-to-canvas-integration-works/).",
+      "why_it_matters": "Prototype in code, then critique and annotate on canvas with the team.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Muzli's walkthrough",
+          "url": "https://muz.li/blog/claude-code-to-figma-how-the-new-code-to-canvas-integration-works/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "collaborative-pages-and-slides-in-chatgpt",
+      "section": "Product Design & UX",
+      "headline": "Collaborative Pages and Slides in ChatGPT",
+      "summary": "Human-agent documents and multi-user decks with PowerPoint and Google Slides export, inside [ChatGPT](https://openai.com) Space ([details](https://openai.com/index/devday-2026-recap/)).",
+      "why_it_matters": "Worth testing for stakeholder decks and research readouts. Compare against [Notion](https://www.notion.com) for editing control.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "details",
+          "url": "https://openai.com/index/devday-2026-recap/"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "dots-openai",
+      "section": "New AI Tools",
+      "headline": "Dots (OpenAI)",
+      "summary": "Always-on agent across ChatGPT, Slack and voice.",
+      "why_it_matters": null,
+      "audience": "PMs, designers and engineers who delegate recurring work.",
+      "links": [
+        {
+          "label": "Dots (OpenAI)",
+          "url": "https://openai.com/index/introducing-dots/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "section": "New AI Tools",
+      "headline": "GPT-6.1 Sol",
+      "summary": "Cheaper agentic coding model.",
+      "why_it_matters": null,
+      "audience": "teams burning tokens on agent loops.",
+      "links": [
+        {
+          "label": "GPT-6.1 Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "claude-fable-5-1",
+      "section": "New AI Tools",
+      "headline": "Claude Fable 5.1",
+      "summary": "Lower-cost long-running coding and knowledge work.",
+      "why_it_matters": null,
+      "audience": "anyone using Claude Code daily.",
+      "links": [
+        {
+          "label": "Claude Fable 5.1",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "stitch-2-0-by-google",
+      "section": "New AI Tools",
+      "headline": "Stitch 2.0 by Google",
+      "summary": "Vibe-design production-ready UI in seconds.",
+      "why_it_matters": null,
+      "audience": "designers seeding first drafts.",
+      "links": [
+        {
+          "label": "Stitch 2.0 by Google",
+          "url": "https://www.producthunt.com/products/stitch-2-0-by-google-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "framer",
+      "section": "New AI Tools",
+      "headline": "Framer",
+      "summary": "An AI design agent from idea to launch.",
+      "why_it_matters": null,
+      "audience": "designers who publish sites.",
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.producthunt.com/products/framer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "magic-patterns",
+      "section": "New AI Tools",
+      "headline": "Magic Patterns",
+      "summary": "Design product ideas with AI.",
+      "why_it_matters": null,
+      "audience": "quick prototypes and concept exploration.",
+      "links": [
+        {
+          "label": "Magic Patterns",
+          "url": "https://www.producthunt.com/products/magicpatterns"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "kombai",
+      "section": "New AI Tools",
+      "headline": "Kombai",
+      "summary": "\"AI Design Engineer\" that turns designs into frontend code.",
+      "why_it_matters": null,
+      "audience": "designers handing off to code.",
+      "links": [
+        {
+          "label": "Kombai",
+          "url": "https://www.producthunt.com/products/kombai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "thread",
+      "section": "New AI Tools",
+      "headline": "Thread",
+      "summary": "AI journal linking thoughts into a memory graph.",
+      "why_it_matters": null,
+      "audience": "researchers and note-takers who want connected notes.",
+      "links": [
+        {
+          "label": "Thread",
+          "url": "https://www.producthunt.com/products/thread-ai-journal-memory"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "always-on-agents",
+      "section": "Trends to Watch",
+      "headline": "Always-on agents",
+      "summary": "Dots and Team Tasks run on schedules and events, not prompts.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to design activity feeds, approvals and interruption rules."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "agent-memory",
+      "section": "Trends to Watch",
+      "headline": "Agent memory",
+      "summary": "[Hindsight](https://github.com/vectorize-io/hindsight) gained 4,520 stars in a day per [this radar](https://github.com/kouweizhu/agents-radar/issues/236), and [mem0](https://github.com/mem0ai/mem0) keeps climbing. Persistent context is the current bottleneck.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hindsight",
+          "url": "https://github.com/vectorize-io/hindsight"
+        },
+        {
+          "label": "this radar",
+          "url": "https://github.com/kouweizhu/agents-radar/issues/236"
+        },
+        {
+          "label": "mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "mcp-as-the-connective-layer",
+      "section": "Trends to Watch",
+      "headline": "MCP as the connective layer",
+      "summary": "Figma, OpenAI plugins and coding agents all speak it.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to write and consume MCP servers."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "tiered-model-access",
+      "section": "Trends to Watch",
+      "headline": "Tiered model access",
+      "summary": "Restricted capability programs mean your product may need identity and trust tiers.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "design-code-convergence",
+      "section": "Trends to Watch",
+      "headline": "Design-code convergence",
+      "summary": "Code Connect plus MCP means components are the shared source of truth.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to invest in your design system's structure and naming."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "dots-activity-view",
+      "section": "Product Design Inspiration",
+      "headline": "Dots activity view",
+      "summary": "The [Dots](https://openai.com/index/introducing-dots/) Activity View surfaces background work so users trust an agent they cannot watch.",
+      "why_it_matters": "transparency without demanding attention.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Dots",
+          "url": "https://openai.com/index/introducing-dots/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "one-agent-many-channels",
+      "section": "Product Design Inspiration",
+      "headline": "One agent, many channels",
+      "summary": "Dots keeps context across ChatGPT, Slack, Teams and voice.",
+      "why_it_matters": "the user meets the agent where they already are, and continuity removes re-explaining.",
+      "why_label": "Why it works",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "code-to-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Code to canvas",
+      "summary": "[Figma](https://www.figma.com)'s code-to-canvas flow with [Claude Code](https://www.anthropic.com/claude-code) turns a working UI into editable layers.",
+      "why_it_matters": "it respects that both code and canvas are valid starting points.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "vectorize-io-hindsight",
+      "section": "GitHub & Open Source",
+      "headline": "vectorize-io/hindsight",
+      "summary": "Agent memory that learns over time. Trending because persistent context is the top agent pain point.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vectorize-io/hindsight",
+          "url": "https://github.com/vectorize-io/hindsight"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "paperclipai-paperclip",
+      "section": "GitHub & Open Source",
+      "headline": "paperclipai/paperclip",
+      "summary": "Open-source management app for workplace agents. Trending as teams look for an orchestration UI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "debpalash-voicestudio",
+      "section": "GitHub & Open Source",
+      "headline": "debpalash/VoiceStudio",
+      "summary": "Fully local voice cloning and dubbing across 646 languages. Trending for privacy-first audio.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "dream-num-univer",
+      "section": "GitHub & Open Source",
+      "headline": "dream-num/univer",
+      "summary": "Office runtime (sheets, docs, slides) built for AI agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "nvidia-openshell",
+      "section": "GitHub & Open Source",
+      "headline": "NVIDIA/OpenShell",
+      "summary": "A safe, private runtime for autonomous agents, addressing secure execution.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "NVIDIA/OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "browser-use-browser-use",
+      "section": "GitHub & Open Source",
+      "headline": "browser-use/browser-use",
+      "summary": "Web automation via agents, a staple for AI browser work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "browser-use/browser-use",
+          "url": "https://github.com/browser-use/browser-use"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "devday-reaction",
+      "section": "Social Buzz",
+      "headline": "DevDay reaction",
+      "summary": "The main thread today is whether Dots and ChatGPT Space commoditize standalone workspace tools. Coverage from [Axios](https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol) notes OpenAI held back GPT-6.1 Astra over security concerns, which is drawing safety-focused discussion.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Axios",
+          "url": "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "product-hunt",
+      "section": "Social Buzz",
+      "headline": "Product Hunt",
+      "summary": "The [AI designer category](https://www.producthunt.com/categories/ai-designer) is led by [Framer](https://www.producthunt.com/products/framer), [Magic Patterns](https://www.producthunt.com/products/magicpatterns) and [Builder.io](https://www.producthunt.com/products/builder-io), showing where designer attention sits.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI designer category",
+          "url": "https://www.producthunt.com/categories/ai-designer"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.producthunt.com/products/framer"
+        },
+        {
+          "label": "Magic Patterns",
+          "url": "https://www.producthunt.com/products/magicpatterns"
+        },
+        {
+          "label": "Builder.io",
+          "url": "https://www.producthunt.com/products/builder-io"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "claude-code-to-figma-tutorial-limitations-and-a-better-appro",
+      "section": "Learning Corner",
+      "headline": "Claude Code to Figma: Tutorial, Limitations, and a Better Approach",
+      "kicker": "Article",
+      "summary": "Honest look at where the workflow breaks.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code to Figma: Tutorial, Limitations, and a Better Approach",
+          "url": "https://www.builder.io/blog/claude-code-to-figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "figma-claude-just-changed-ui-design-forever",
+      "section": "Learning Corner",
+      "headline": "Figma & Claude Just Changed UI Design Forever",
+      "kicker": "Video",
+      "summary": "A quick visual tour of the flow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma & Claude Just Changed UI Design Forever",
+          "url": "https://www.youtube.com/watch?v=Xcgr-7LpzDM"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "mem0",
+      "section": "Learning Corner",
+      "headline": "mem0",
+      "kicker": "GitHub project",
+      "summary": "Read how a memory layer is structured before you design one.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "muzli-on-code-to-canvas",
+      "section": "Learning Corner",
+      "headline": "Muzli on code to canvas",
+      "kicker": "Design resource",
+      "summary": "Useful framing for design and engineering handoff.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Muzli on code to canvas",
+          "url": "https://muz.li/blog/claude-code-to-figma-how-the-new-code-to-canvas-integration-works/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "devday-recap",
+      "section": "Learning Corner",
+      "headline": "DevDay recap",
+      "kicker": "AI workflow",
+      "summary": "Read the Team Tasks and MCP events sections and sketch one recurring task you could automate.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "DevDay recap",
+          "url": "https://openai.com/index/devday-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "agent-ux-specialist",
+      "section": "Opportunities",
+      "headline": "Agent UX specialist",
+      "summary": "Always-on agents need activity views, approval flows and trust patterns. Few designers have shipped these.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "chatgpt-plugin-and-sidebar-design",
+      "section": "Opportunities",
+      "headline": "ChatGPT plugin and sidebar design",
+      "summary": "New plugin extensions create demand for well-designed in-chat experiences.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "design-system-for-agents",
+      "section": "Opportunities",
+      "headline": "Design system for agents",
+      "summary": "Structure [Figma](https://www.figma.com) libraries with Code Connect so agents output on-brand code. Offer this as a service.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "shaders-and-generative-plugins",
+      "section": "Opportunities",
+      "headline": "Shaders and generative plugins",
+      "summary": "Figma now lets you publish these to Community. Early publishers gain reach.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    },
+    {
+      "id": "map-one-component-with-code-connect",
+      "section": "Today's Experiment",
+      "headline": "Map one component with Code Connect",
+      "kicker": "25 minutes",
+      "summary": "Pick a single button or card in a Figma file, connect it via the [Figma](https://www.figma.com) MCP server, then ask [Claude Code](https://www.anthropic.com/claude-code) to build a screen using it. Compare output with and without the mapping.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-30"
+    }
+  ],
+  "dont_miss": [
+    "Read the [DevDay 2026 recap](https://openai.com/index/devday-2026-recap/), focusing on Dots, plugins and MCP events.",
+    "Try [Claude Fable 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1) on a long agent task and compare cost.",
+    "Run the Code Connect experiment above."
+  ],
+  "footnote": "Sources: OpenAI DevDay pages, Axios, The Hacker News, MacRumors, Spyingbee, Product Hunt, Muzli, agents-radar GitHub digests. Compiled September 30, 2026."
+}
