@@ -1,0 +1,915 @@
+{
+  "date": "2026-09-26",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1xxmH1iS7PAZiBl25madiYOMTXEA_DugdaC3rZTKfgmc/edit",
+  "highlights": [
+    {
+      "headline": "The model price war is now measured in minutes.",
+      "summary": "[Anthropic shipped Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) with a 40% lower operational cost and faster agentic coding, and [OpenAI answered with GPT-6 Sol and Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/) minutes later, per [Decrypt's reporting](https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5)."
+    },
+    {
+      "headline": "A 950-agent Claude swarm found real biology.",
+      "summary": "[Anthropic reports](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) the agents spent 21 hours combing DNA databases and surfaced a novel, CRISPR-like enzyme system now headed to human lab validation."
+    },
+    {
+      "headline": "Microsoft rebuilt Copilot around agents, not chat.",
+      "summary": "[Copilot Home, Code, and Autopilot](https://www.bnnbloomberg.ca/business/company-news/2026/09/25/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools/) launched this week, with [Bloomberg framing it](https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot) as Microsoft ceding the personal-chatbot fight to focus on enterprise agents."
+    },
+    {
+      "headline": "Coding agents are now a real revenue line, not a demo.",
+      "summary": "[Cognition's Devin crossed a $1B annualized revenue run rate](https://www.benzinga.com/markets/private-markets/26/09/62006714/ai-coding-startup-cognition-tops-1-billion-revenue-run-rate), up from $492M just four months ago."
+    },
+    {
+      "headline": "Design tools are racing to close the design-to-code loop.",
+      "summary": "[Figma's Code Layers](https://www.figma.com/blog/config-2026-recap/), [Cursor 3.0's Design Mode](https://cursor.com/changelog/3-0), and [Framer's autonomous site agents](https://www.framer.com/agents/) all point the same direction: less handoff, more direct manipulation of shipped code."
+    }
+  ],
+  "entries": [
+    {
+      "id": "anthropic-and-openai-trade-flagship-releases-within-minutes",
+      "section": "AI Industry News",
+      "headline": "Anthropic and OpenAI trade flagship releases within minutes of each other",
+      "summary": "[Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) landed with agentic-coding gains strong enough that one tester finished a 680,000-line code migration in under a day, while running 20% cheaper on input and output tokens and 60% cheaper on cache reads than Opus 5. Anthropic says it now matches Claude Fable 5.1 on most work at a fraction of the cost. [OpenAI's response](https://openai.com/index/introducing-gpt-6-sol-and-luna/), GPT-6 Sol and Luna, undercuts on price (Sol at $2/$10 per million tokens, Luna at $0.10/$0.50) and claims wins on automation benchmarks.",
+      "why_it_matters": "builders now have a materially cheaper frontier tier on both sides, which changes the math on running agents at volume rather than testing them in a sandbox.",
+      "links": [
+        {
+          "label": "Claude Opus 5.5",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "label": "OpenAI's response",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "claude-s-agent-swarm-discovers-a-crispr-like-enzyme-system",
+      "section": "AI Industry News",
+      "headline": "Claude's agent swarm discovers a CRISPR-like enzyme system",
+      "summary": "In [an Anthropic writeup](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) covered by [Al Jazeera](https://www.aljazeera.com/economy/2026/9/24/ai-model-claude-discovers-crispr-like-enzyme-system-anthropic-says) and [Unite.AI](https://www.unite.ai/anthropic-says-claude-discovered-a-new-enzyme-system-resembling-crispr/), roughly 950 Claude agents spent 21 hours reviewing literature, flagging uncharacterized protein families, and self-generating hundreds of candidate reports before one agent spotted a tandem repeat array next to an unusual reverse transcriptase and flagged it as CRISPR-like. Human scientists still ran every wet-lab step.",
+      "why_it_matters": "this is one of the clearest public examples yet of agent swarms doing open-ended scientific triage rather than answering a posed question.",
+      "links": [
+        {
+          "label": "an Anthropic writeup",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        },
+        {
+          "label": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/9/24/ai-model-claude-discovers-crispr-like-enzyme-system-anthropic-says"
+        },
+        {
+          "label": "Unite.AI",
+          "url": "https://www.unite.ai/anthropic-says-claude-discovered-a-new-enzyme-system-resembling-crispr/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "microsoft-rebuilds-copilot-around-three-agent-products",
+      "section": "AI Industry News",
+      "headline": "Microsoft rebuilds Copilot around three agent products",
+      "summary": "[Copilot now ships as Home (embedded Word/Excel/PowerPoint), Code (natural-language app and dashboard building on GitHub Copilot's engine), and Autopilot](https://www.bnnbloomberg.ca/business/company-news/2026/09/25/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools/), an upgraded persistent agent with its own directory identity and permissions aimed at enterprise governance concerns. [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot) reads this as Microsoft stepping back from competing head-on with ChatGPT and Claude for personal use.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "For builders",
+        "text": "natural-language app creation moving into a 400M-seat productivity suite is a big distribution unlock for whoever nails the underlying agent UX."
+      },
+      "links": [
+        {
+          "label": "Copilot now ships as Home (embedded Word/Excel/PowerPoint), Code (natural-language app and dashboard building on GitHub Copilot's engine), and Autopilot",
+          "url": "https://www.bnnbloomberg.ca/business/company-news/2026/09/25/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools/"
+        },
+        {
+          "label": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "google-deepmind-signals-gemini-4-is-close",
+      "section": "AI Industry News",
+      "headline": "Google DeepMind signals Gemini 4 is close",
+      "summary": "DeepMind's new research chief said [Gemini 4 could ship well before year-end](https://www.newsbytesapp.com/news/science/google-deepmind-chief-teases-gemini-4-launch-ahead-of-year-end/story), with [Startup Fortune](https://startupfortune.com/google-deepminds-new-chief-says-gemini-4-could-ship-much-sooner-than-planned/) and [Tech Insider](https://tech-insider.org/gemini-4-google-launch-deepmind-post-training-2026/) both reporting post-training has already begun.",
+      "why_it_matters": "Google enters the current Opus 5.5 / GPT-6 Sol price-and-performance fight from behind, and a faster Gemini 4 timeline is a direct response to that pressure.",
+      "links": [
+        {
+          "label": "Gemini 4 could ship well before year-end",
+          "url": "https://www.newsbytesapp.com/news/science/google-deepmind-chief-teases-gemini-4-launch-ahead-of-year-end/story"
+        },
+        {
+          "label": "Startup Fortune",
+          "url": "https://startupfortune.com/google-deepminds-new-chief-says-gemini-4-could-ship-much-sooner-than-planned/"
+        },
+        {
+          "label": "Tech Insider",
+          "url": "https://tech-insider.org/gemini-4-google-launch-deepmind-post-training-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "openai-opens-its-agents-api-to-every-developer",
+      "section": "AI Industry News",
+      "headline": "OpenAI opens its Agents API to every developer",
+      "summary": "[The Agents API](https://openai.com/index/introducing-the-agents-api/) now ships broadly with durable sessions, native subagents, and flexible execution environments, per [OpenAI's developer community post](https://community.openai.com/t/announcing-gpt-6-sol-and-gpt-6-luna-in-the-api-codex-and-chatgpt/1399925) and [DEV Community's breakdown](https://dev.to/thefluxread/openai-just-opened-its-agents-api-to-everyone-what-it-actually-changes-for-developers-3j1j). OpenAI also pushed ChatGPT Work to mobile with voice-driven document drafting and connected-app workflows.",
+      "why_it_matters": "this narrows the gap with Anthropic's own agent tooling and makes multi-agent orchestration a first-party, not bolted-on, feature.",
+      "links": [
+        {
+          "label": "The Agents API",
+          "url": "https://openai.com/index/introducing-the-agents-api/"
+        },
+        {
+          "label": "OpenAI's developer community post",
+          "url": "https://community.openai.com/t/announcing-gpt-6-sol-and-gpt-6-luna-in-the-api-codex-and-chatgpt/1399925"
+        },
+        {
+          "label": "DEV Community's breakdown",
+          "url": "https://dev.to/thefluxread/openai-just-opened-its-agents-api-to-everyone-what-it-actually-changes-for-developers-3j1j"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "cognition-s-devin-passes-1b-in-annualized-revenue",
+      "section": "AI Industry News",
+      "headline": "Cognition's Devin passes $1B in annualized revenue",
+      "summary": "[Cognition's coding agent Devin](https://www.benzinga.com/markets/private-markets/26/09/62006714/ai-coding-startup-cognition-tops-1-billion-revenue-run-rate) crossed the milestone less than two years after general availability, with enterprise deployments at GE Aerospace and Rivian cited by [Runtime Wire](https://runtimewire.com/article/cognition-billion-annualized-revenue-scott-wu).",
+      "why_it_matters": "this is one of the first hard revenue numbers proving coding agents convert into durable enterprise spend, not just trial usage.",
+      "links": [
+        {
+          "label": "Cognition's coding agent Devin",
+          "url": "https://www.benzinga.com/markets/private-markets/26/09/62006714/ai-coding-startup-cognition-tops-1-billion-revenue-run-rate"
+        },
+        {
+          "label": "Runtime Wire",
+          "url": "https://runtimewire.com/article/cognition-billion-annualized-revenue-scott-wu"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "alibaba-cloud-launches-agentcore-for-enterprise-agent-manage",
+      "section": "AI Industry News",
+      "headline": "Alibaba Cloud launches AgentCore for enterprise agent management",
+      "summary": "[Alibaba's AgentCore](https://aibusiness.com/agentic-ai/alibaba-launches-enterprise-ai-agent-platform) is a full-stack platform for deploying and governing enterprise agents, with an \"Agent Context\" feature Alibaba says [cuts token usage up to 67%](https://www.kucoin.com/news/flash/aliyun-cto-li-feifei-unveils-agentic-cloud-strategy-launches-enterprise-agent-platform-agentcore) in knowledge-intensive workloads.",
+      "why_it_matters": "it's another sign the \"agent governance\" layer is becoming its own product category rather than a feature of a model provider (see Trends, below).",
+      "links": [
+        {
+          "label": "Alibaba's AgentCore",
+          "url": "https://aibusiness.com/agentic-ai/alibaba-launches-enterprise-ai-agent-platform"
+        },
+        {
+          "label": "cuts token usage up to 67%",
+          "url": "https://www.kucoin.com/news/flash/aliyun-cto-li-feifei-unveils-agentic-cloud-strategy-launches-enterprise-agent-platform-agentcore"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "pentagon-s-anthropic-blacklist-upheld-on-appeal",
+      "section": "AI Industry News",
+      "headline": "Pentagon's Anthropic blacklist upheld on appeal",
+      "summary": "A D.C. Circuit appeals court [upheld the Pentagon's national-security designation](https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html) barring Claude from certain DoD systems, a ruling [CNN](https://www.cnn.com/2026/09/25/tech/anthropic-pentagon-blacklist-dc-ruling) and [The Hill](https://thehill.com/policy/technology/6111414-dc-circuit-upholds-anthropic-blacklist/) both note sets precedent for using model safety behavior as a procurement bar.",
+      "why_it_matters": "it's an early legal marker for how \"the model refused certain requests\" gets treated as a security risk in government contracting.",
+      "links": [
+        {
+          "label": "upheld the Pentagon's national-security designation",
+          "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html"
+        },
+        {
+          "label": "CNN",
+          "url": "https://www.cnn.com/2026/09/25/tech/anthropic-pentagon-blacklist-dc-ruling"
+        },
+        {
+          "label": "The Hill",
+          "url": "https://thehill.com/policy/technology/6111414-dc-circuit-upholds-anthropic-blacklist/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "figma-s-config-2026-wave-keeps-shipping",
+      "section": "Product Design & UX",
+      "headline": "Figma's Config 2026 wave keeps shipping",
+      "summary": "[Figma's Config 2026 announcements](https://www.figma.com/blog/config-2026-recap/) are landing through the fall: Code Layers convert design layers straight into interactive code, Figma Motion adds timelines and keyframes exportable to CSS or React, Shader Fills bring AI-generated procedural graphics to the canvas, and Figma Agent now supports reusable Skills and Connectors into Notion, Slack, and GitHub. See the [full recap](https://www.figma.com/blog/config-2026-recap/) or the [Config 2026 keynote](https://www.youtube.com/watch?v=2ZCc4k_IV5w).",
+      "why_it_matters": "teams can prototype in code-accurate fidelity without a separate handoff step.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma's Config 2026 announcements",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "Config 2026 keynote",
+          "url": "https://www.youtube.com/watch?v=2ZCc4k_IV5w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "cursor-3-0-adds-a-design-mode-built-for-ui-feedback",
+      "section": "Product Design & UX",
+      "headline": "Cursor 3.0 adds a Design Mode built for UI feedback",
+      "summary": "[Cursor's Design Mode](https://cursor.com/changelog/3-0) lets developers annotate and select UI elements directly in a live browser (⌘+Shift+D to annotate, ⌘+L to hand off to an agent), inside a new Agents Window that runs multiple parallel agents across local, cloud, and SSH environments.",
+      "why_it_matters": "it shortens the loop between \"this button looks wrong\" and a working code diff to a single gesture.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor's Design Mode",
+          "url": "https://cursor.com/changelog/3-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "rive-ships-editor-quality-of-life-upgrades",
+      "section": "Product Design & UX",
+      "headline": "Rive ships editor-quality-of-life upgrades",
+      "summary": "[Rive's editor](https://alternativeto.net/news/2026/9/rive-editor-adds-constraint-navigation-and-path-simplification/) added constraint navigation and path simplification tools this month.",
+      "why_it_matters": "cleaner vector paths and easier debugging of layout constraints for motion designers building interactive state machines.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Rive's editor",
+          "url": "https://alternativeto.net/news/2026/9/rive-editor-adds-constraint-navigation-and-path-simplification/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "notion-keeps-building-out-agent-trust-and-control",
+      "section": "Product Design & UX",
+      "headline": "Notion keeps building out agent trust and control",
+      "summary": "[Notion 3.7](https://www.notion.com/releases/2026-09-15) introduced shareable, reusable \"agent skills\" for whole teams, following a [September 9 release](https://www.notion.com/releases/2026-09-09) letting workspace owners restrict which AI models agents can use, and an [August 28 update](https://www.notion.com/releases) letting agents propose line-by-line edits for approval instead of applying changes outright.",
+      "why_it_matters": "this is a concrete pattern for building user trust in AI edits (more in Design Inspiration, below).",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Notion 3.7",
+          "url": "https://www.notion.com/releases/2026-09-15"
+        },
+        {
+          "label": "September 9 release",
+          "url": "https://www.notion.com/releases/2026-09-09"
+        },
+        {
+          "label": "August 28 update",
+          "url": "https://www.notion.com/releases"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "framer-s-agents-now-handle-qa-and-seo-not-just-layout",
+      "section": "Product Design & UX",
+      "headline": "Framer's agents now handle QA and SEO, not just layout",
+      "summary": "[Framer's AI agents](https://www.framer.com/agents/) can now scan a live site for broken links, missing alt text, and accessibility issues and fix them automatically, alongside their existing rebrand, migration, and CMS-building capabilities.",
+      "why_it_matters": "site maintenance work that used to be a manual audit is becoming a standing agent job.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer's AI agents",
+          "url": "https://www.framer.com/agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "claude-opus-5-5",
+      "section": "New AI Tools",
+      "headline": "Claude Opus 5.5",
+      "summary": "Anthropic's new flagship: faster, cheaper, and stronger at long agentic coding runs.",
+      "why_it_matters": null,
+      "audience": "teams already on Claude who want lower per-task cost without downgrading quality.",
+      "links": [
+        {
+          "label": "Claude Opus 5.5",
+          "url": "https://www.anthropic.com/claude-opus-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "gpt-6-sol-and-luna",
+      "section": "New AI Tools",
+      "headline": "GPT-6 Sol and Luna",
+      "summary": "OpenAI's mid-tier and lightweight models, undercutting on price and tuned for high-volume business automation tasks.",
+      "why_it_matters": null,
+      "audience": "cost-sensitive production agents.",
+      "links": [
+        {
+          "label": "GPT-6 Sol and Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "ando",
+      "section": "New AI Tools",
+      "headline": "Ando",
+      "summary": "a team chat platform built with AI agents as first-class participants in every conversation, positioned as a Slack challenger, per [TechCrunch](https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/).",
+      "why_it_matters": null,
+      "audience": "teams already running multiple agents who want them visible in the same thread as people.",
+      "links": [
+        {
+          "label": "Ando",
+          "url": "https://ando.com/"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "strada",
+      "section": "New AI Tools",
+      "headline": "Strada",
+      "summary": "browser automation built for legacy portals and carrier systems with no API, plus audit logging.",
+      "why_it_matters": null,
+      "audience": "ops and insurance teams stuck integrating with old web systems.",
+      "links": [
+        {
+          "label": "Strada",
+          "url": "https://www.getstrada.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "dataiku-agent-management",
+      "section": "New AI Tools",
+      "headline": "Dataiku Agent Management",
+      "summary": "an inventory and governance layer for tracking agent KPIs, technical performance, and risk tier across an organization.",
+      "why_it_matters": null,
+      "audience": "enterprises with agent sprawl and no central visibility.",
+      "links": [
+        {
+          "label": "Dataiku Agent Management",
+          "url": "https://www.dataiku.com/company/news/dataiku-agent-management-general-availability"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "cursor-3-0-design-mode",
+      "section": "New AI Tools",
+      "headline": "Cursor 3.0 Design Mode",
+      "summary": "annotate live UI and hand it directly to a coding agent.",
+      "why_it_matters": null,
+      "audience": "designers and engineers doing rapid UI iteration together.",
+      "links": [
+        {
+          "label": "Cursor 3.0 Design Mode",
+          "url": "https://cursor.com/changelog/3-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "openai-agents-api",
+      "section": "New AI Tools",
+      "headline": "OpenAI Agents API",
+      "summary": "durable sessions, native subagents, and flexible execution environments now open to all developers.",
+      "why_it_matters": null,
+      "audience": "teams building custom multi-agent systems on OpenAI models.",
+      "links": [
+        {
+          "label": "OpenAI Agents API",
+          "url": "https://openai.com/index/introducing-the-agents-api/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "sider-omni",
+      "section": "New AI Tools",
+      "headline": "Sider Omni",
+      "summary": "an AI agent sidebar that overlays every Mac app, one of this week's top Product Hunt launches.",
+      "why_it_matters": null,
+      "audience": "anyone who wants one assistant following them across apps instead of switching tabs.",
+      "links": [
+        {
+          "label": "Sider Omni",
+          "url": "https://www.producthunt.com/products/chatgpt-sidebar-chrome-extension"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "agent-governance-is-becoming-its-own-product-category",
+      "section": "Trends to Watch",
+      "headline": "Agent governance is becoming its own product category",
+      "summary": "[Dataiku's Agent Management](https://www.dataiku.com/company/news/dataiku-agent-management-general-availability), [Alibaba's AgentCore](https://aibusiness.com/agentic-ai/alibaba-launches-enterprise-ai-agent-platform), and [HubSpot's Agent Hub](https://www.hubspot.com/company-news/meet-agent-hub-and-agent-builder) all launched inventory-and-oversight tooling within the same week.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "this is where a lot of near-term enterprise UX work will land, since none of these dashboards have settled conventions yet."
+      },
+      "links": [
+        {
+          "label": "Dataiku's Agent Management",
+          "url": "https://www.dataiku.com/company/news/dataiku-agent-management-general-availability"
+        },
+        {
+          "label": "Alibaba's AgentCore",
+          "url": "https://aibusiness.com/agentic-ai/alibaba-launches-enterprise-ai-agent-platform"
+        },
+        {
+          "label": "HubSpot's Agent Hub",
+          "url": "https://www.hubspot.com/company-news/meet-agent-hub-and-agent-builder"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "frontier-model-pricing-is-now-a-live-negotiation",
+      "section": "Trends to Watch",
+      "headline": "Frontier model pricing is now a live negotiation",
+      "summary": "Claude Opus 5.5 and GPT-6 Sol/Luna landed within minutes of each other with matching cost-cutting narratives, per [Decrypt](https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "budget for model costs to keep dropping and plan to re-evaluate model choice quarterly, not once a year."
+      },
+      "links": [
+        {
+          "label": "Decrypt",
+          "url": "https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "design-and-code-are-merging-into-one-surface",
+      "section": "Trends to Watch",
+      "headline": "Design and code are merging into one surface",
+      "summary": "Figma's Code Layers, Cursor's Design Mode, and Framer's self-repairing sites are all removing the handoff step between a mockup and shipped code.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "fluency in reading a code diff is becoming as important for product designers as fluency in a design tool."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "ai-native-workplace-chat-is-a-new-front",
+      "section": "Trends to Watch",
+      "headline": "AI-native workplace chat is a new front",
+      "summary": "[Ando's $20M launch](https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/) targets Slack directly by making agents first-class members of a conversation rather than bots bolted onto one.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "watch whether Slack or Teams ship a comparable \"agent-as-teammate\" identity model in response."
+      },
+      "links": [
+        {
+          "label": "Ando's $20M launch",
+          "url": "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "agent-swarms-are-being-pointed-at-open-ended-discovery-not-j",
+      "section": "Trends to Watch",
+      "headline": "Agent swarms are being pointed at open-ended discovery, not just tasks",
+      "summary": "Anthropic's [950-agent biology run](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system) is a template: give a large agent population a broad mandate, let them self-direct, and have humans validate the output.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "this pattern (breadth-first agent search, narrow human validation) is likely to spread beyond science into research-heavy product and market work."
+      },
+      "links": [
+        {
+          "label": "950-agent biology run",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "cursor-s-design-mode-annotate-the-real-thing-not-a-mockup-of",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor's Design Mode: annotate the real thing, not a mockup of it",
+      "summary": "Instead of screenshotting a live site into a design tool, [Cursor 3.0](https://cursor.com/changelog/3-0) lets you circle the actual rendered element in a browser and hand that annotation straight to a coding agent.",
+      "why_it_matters": "it removes an entire translation step (mockup to code) that has caused drift between design and shipped product for years.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Cursor 3.0",
+          "url": "https://cursor.com/changelog/3-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "notion-s-line-by-line-agent-approval",
+      "section": "Product Design Inspiration",
+      "headline": "Notion's line-by-line agent approval",
+      "summary": "Rather than letting an agent apply edits directly, [Notion's August 28 release](https://www.notion.com/releases) has agents propose changes for line-by-line approval.",
+      "why_it_matters": "it builds calibrated trust: users can say yes to 90% of an edit and catch the 10% that's wrong, instead of an all-or-nothing accept/reject.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Notion's August 28 release",
+          "url": "https://www.notion.com/releases"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "framer-s-self-auditing-sites",
+      "section": "Product Design Inspiration",
+      "headline": "Framer's self-auditing sites",
+      "summary": "[Framer's agents](https://www.framer.com/agents/) now continuously scan live sites for broken links, missing alt text, and accessibility gaps, then fix them without a human opening a ticket.",
+      "why_it_matters": "it turns \"site maintenance\" from a scheduled audit into a background process, which is a genuinely new interaction pattern rather than a faster version of an old one.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Framer's agents",
+          "url": "https://www.framer.com/agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "anthropics-claude-plugins-official",
+      "section": "GitHub & Open Source",
+      "headline": "anthropics/claude-plugins-official",
+      "summary": "Anthropic's own official, curated directory of Claude Code plugins. Gaining attention because it formalizes plugin distribution instead of leaving it to scattered community repos.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "obra-superpowers",
+      "section": "GitHub & Open Source",
+      "headline": "obra/superpowers",
+      "summary": "An agentic skills framework and software development methodology for Claude Code, plus a companion [curated plugin marketplace](https://github.com/obra/superpowers-marketplace). Gaining attention as one of the most complete third-party takes on reusable, teachable agent skills.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        },
+        {
+          "label": "curated plugin marketplace",
+          "url": "https://github.com/obra/superpowers-marketplace"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "google-ax",
+      "section": "GitHub & Open Source",
+      "headline": "google/ax",
+      "summary": "A Go-based agent orchestration runtime, up roughly 1,379 stars this week per [OSSInsight](https://ossinsight.io/trending/ai)-style tracking. Gaining attention as a lightweight alternative to heavier Python agent frameworks.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "google/ax",
+          "url": "https://github.com/google/ax"
+        },
+        {
+          "label": "OSSInsight",
+          "url": "https://ossinsight.io/trending/ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "vectorize-io-hindsight",
+      "section": "GitHub & Open Source",
+      "headline": "vectorize-io/hindsight",
+      "summary": "An adaptive memory layer for agents, up around 1,653 stars this week. Gaining attention as agent builders hit the limits of simple context windows for long-running tasks.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vectorize-io/hindsight",
+          "url": "https://github.com/vectorize-io/hindsight"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "dream-num-univer",
+      "section": "GitHub & Open Source",
+      "headline": "dream-num/univer",
+      "summary": "An AI-powered, open-source office suite (spreadsheets, docs, and more). Gaining attention as a serious open alternative in a category currently dominated by Notion and Microsoft.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "microsoft-s-copilot-reboot",
+      "section": "Social Buzz",
+      "headline": "Microsoft's Copilot reboot",
+      "summary": "The framing of Microsoft's Copilot reboot is doing most of the talking this week: [Bloomberg's \"Microsoft abandons the personal chatbot race\"](https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot) headline is being debated as either a candid strategic retreat or smart focus on Microsoft's actual strength (enterprise seats).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Bloomberg's \"Microsoft abandons the personal chatbot race\"",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-25/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "devin-s-1b-milestone",
+      "section": "Social Buzz",
+      "headline": "Devin's $1B milestone",
+      "summary": "Cognition's [$1B Devin revenue milestone](https://www.benzinga.com/markets/private-markets/26/09/62006714/ai-coding-startup-cognition-tops-1-billion-revenue-run-rate) is being cited as evidence the \"AI coding agent bubble\" argument is weaker than skeptics claimed, since this is metered usage revenue, not funding.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "$1B Devin revenue milestone",
+          "url": "https://www.benzinga.com/markets/private-markets/26/09/62006714/ai-coding-startup-cognition-tops-1-billion-revenue-run-rate"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "solid-on-product-hunt",
+      "section": "Social Buzz",
+      "headline": "Solid on Product Hunt",
+      "summary": "On Product Hunt, [Solid](https://www.producthunt.com/products/solid-3), an agent product that gives autonomous agents \"personal computers, accounts, and budgets,\" is drawing pointed discussion about how much financial autonomy an agent should be handed by default.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Solid",
+          "url": "https://www.producthunt.com/products/solid-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "opus-5-5-and-gpt-6-sol-luna-release-cadence",
+      "section": "Social Buzz",
+      "headline": "Opus 5.5 and GPT-6 Sol/Luna release cadence",
+      "summary": "The near-simultaneous [Claude Opus 5.5 / GPT-6 Sol and Luna](https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5) releases are being discussed less for the benchmarks and more for what the release cadence itself signals about competitive pressure between the two labs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Opus 5.5 / GPT-6 Sol and Luna",
+          "url": "https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "decrypt-s-writeup-of-the-opus-5-5-gpt-6-releases",
+      "section": "Learning Corner",
+      "headline": "Decrypt's writeup of the Opus 5.5 / GPT-6 releases",
+      "kicker": "Article",
+      "summary": "The clearest single read on where model pricing and performance both sit right now. Worth the 5 minutes because it's the baseline you'll be comparing every future release against.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Decrypt's writeup of the Opus 5.5 / GPT-6 releases",
+          "url": "https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "figma-config-2026-keynote",
+      "section": "Learning Corner",
+      "headline": "Figma Config 2026 keynote",
+      "kicker": "Video",
+      "summary": "Walks through Code Layers, Figma Motion, and Figma Agent live. Worth the watch because seeing Code Layers used on stage makes the design-to-code pitch much more concrete than reading about it.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Config 2026 keynote",
+          "url": "https://www.youtube.com/watch?v=2ZCc4k_IV5w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "obra-superpowers-2",
+      "section": "Learning Corner",
+      "headline": "obra/superpowers",
+      "kicker": "GitHub project",
+      "summary": "A genuinely useful reference for how to structure reusable, well-documented agent skills rather than one-off prompts. Worth the read because the methodology transfers to any agent tool, not just Claude Code.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "state-of-ai-design-2026-tools-chapter",
+      "section": "Learning Corner",
+      "headline": "State of AI Design 2026, tools chapter",
+      "kicker": "Design resource",
+      "summary": "A maintained, opinionated map of the current AI design tool landscape. Worth bookmarking because it's updated rather than a one-time listicle.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "State of AI Design 2026, tools chapter",
+          "url": "https://stateofaidesign.com/chapters/tools"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "anthropic-s-950-agent-biology-discovery-writeup",
+      "section": "Learning Corner",
+      "headline": "Anthropic's 950-agent biology discovery writeup",
+      "kicker": "AI workflow",
+      "summary": "One of the best public case studies of how to structure a large agent swarm: broad autonomous search, self-generated hypotheses, then narrow human validation. Worth studying even outside biology as a pattern for any large-scale agentic research task.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic's 950-agent biology discovery writeup",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "agent-governance-ux",
+      "section": "Opportunities",
+      "headline": "Agent governance UX",
+      "summary": "Dataiku, Alibaba, and HubSpot all shipped agent-management dashboards this week and none of them have settled on shared conventions yet. Someone fluent in both enterprise IT patterns and clean information design has an open lane here.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "design-to-code-hybrid-roles",
+      "section": "Opportunities",
+      "headline": "Design-to-code hybrid roles",
+      "summary": "Figma's Code Layers and Cursor's Design Mode both assume the same person (or tight pair) can move between visual design and reviewing a code diff. That combined skill set is still rare and in demand.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "defining-ai-native-chat-ux",
+      "section": "Opportunities",
+      "headline": "Defining AI-native chat UX",
+      "summary": "Ando and similar tools are inventing interaction patterns for humans and agents sharing a thread from scratch. Early conventions set now (how an agent signals it's \"thinking,\" how permissions are shown inline) will likely become the default others copy.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "trust-the-diff-interaction-design",
+      "section": "Opportunities",
+      "headline": "\"Trust the diff\" interaction design",
+      "summary": "Notion's line-by-line agent approval pattern is a specific answer to a general problem: every product with agent-written output needs a review UX. Consulting or template work here has a clear, repeatable brief.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "model-cost-routing-advice",
+      "section": "Opportunities",
+      "headline": "Model-cost routing advice",
+      "summary": "With Opus 5.5, GPT-6 Sol, and GPT-6 Luna all live at different price/performance points, teams need help deciding which tasks route to which tier. This is a concrete, billable specialty for anyone comfortable with both product needs and API pricing.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    },
+    {
+      "id": "try-cursor-3-0-design-mode-on-a-live-page",
+      "section": "Today's Experiment",
+      "headline": "Try Cursor 3.0 Design Mode on a live page",
+      "kicker": "Under 20 minutes",
+      "summary": "Open [Cursor 3.0](https://cursor.com/changelog/3-0), switch on Design Mode, and point it at a live page you maintain. Annotate one element with ⌘+Shift+D, describe the change you want in plain language, and hand it to the agent with ⌘+L. Read the code diff it proposes before accepting anything. Total time: under 20 minutes, and you'll come away with a concrete feel for how far the \"annotate the live UI\" pattern has come.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Try Cursor 3.0 Design Mode on a live page",
+          "url": "https://cursor.com/changelog/3-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-26"
+    }
+  ],
+  "dont_miss": [
+    "**Claude Opus 5.5 launches, and GPT-6 Sol and Luna answer within minutes.** This resets the frontier price/performance bar for both agentic coding and everyday tasks, per [Anthropic](https://www.anthropic.com/claude-opus-5-5) and [OpenAI](https://openai.com/index/introducing-gpt-6-sol-and-luna/).",
+    "**A 950-agent Claude swarm discovers a CRISPR-like enzyme system in 21 hours.** One of the clearest public demonstrations yet of autonomous agents doing open-ended scientific discovery, per [Anthropic](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system).",
+    "**Microsoft rebuilds Copilot around three agent products.** Home, Code, and Autopilot mark the biggest incumbent bet on agent-first UX this week, per [Bloomberg](https://www.bnnbloomberg.ca/business/company-news/2026/09/25/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools/)."
+  ],
+  "footnote": "Sourced from Anthropic, OpenAI, Microsoft, Figma, Notion, Cursor, Framer, Rive, Bloomberg, CNBC, CNN, TechCrunch, Decrypt, Product Hunt, GitHub, and other outlets linked throughout. Compiled September 26, 2026."
+}
