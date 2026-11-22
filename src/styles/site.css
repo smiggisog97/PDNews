@@ -658,3 +658,14 @@ mark { background: var(--tone-faint); color: inherit; border-radius: 2px; }
   .drawer__links li { opacity: 1; transform: none; }
   .statement__text .w { color: var(--tone-strong); }
 }
+
+/* Titles that open the original source carry a small "opens elsewhere" arrow,
+   drawn in currentColor so it follows the title in every theme and on photos. */
+:is(h2, h3) a[target='_blank']::after {
+  content: ''; display: inline-block; width: .55em; height: .55em; margin-left: .3em; vertical-align: .2em;
+  background: currentColor; opacity: .45;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5 8.5 3.5M4.5 3.5h4v4'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5 8.5 3.5M4.5 3.5h4v4'/%3E%3C/svg%3E") center / contain no-repeat;
+  transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+:is(h2, h3) a[target='_blank']:hover::after { opacity: 1; transform: translate(1px, -1px); }
