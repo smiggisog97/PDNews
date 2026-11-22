@@ -1,0 +1,841 @@
+{
+  "date": "2026-11-01",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1rWKFXduw400wMT4WAmAdHfRO3VMXiCPZ0l1CJdyPQQo/edit",
+  "highlights": [
+    {
+      "headline": "1. Anthropic IPO.",
+      "summary": "[Anthropic](https://www.anthropic.com) filed its S-1 on Oct 26 for a Nasdaq listing under \"ANT\". Reported H1 2026 revenue was $16.3B. [WSJ takeaways](https://www.wsj.com/tech/ai/anthropic-ipo-s1-report-takeaways-6eebd721?st=UXMUpV)."
+    },
+    {
+      "headline": "2. Cheaper frontier models.",
+      "summary": "[OpenAI](https://openai.com) shipped [GPT-6.1 Terra](https://openai.com/index/introducing-gpt-6-1-terra/) at $1 input and $5 output per million tokens, about half the prior price."
+    },
+    {
+      "headline": "3. Open weights keep closing the gap.",
+      "summary": "[Kimi K3.1 Pro](https://www.kimi.ai/blog/kimi-k3-1-pro) has a 1M context window and weights due Nov 4. [Mistral Large 4](https://huggingface.co/blog/mistral-large4) is open weights."
+    },
+    {
+      "headline": "4. Supply chain warning for coding agents.",
+      "summary": "[The Hacker News reports](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html) a malicious Claude Code VS Code extension build (2.1.313) was live in the [Cursor](https://cursor.com) marketplace for about 11 hours on Oct 29. I could not corroborate this with a second source, so check your installed version."
+    },
+    {
+      "headline": "5. Model routing goes mainstream.",
+      "summary": "[GitHub Copilot Fusion](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion) is generally available with automatic model routing."
+    }
+  ],
+  "section_notes": {
+    "Product Design & UX": "The past 24 hours were light on design-tool launches, so this section includes the most relevant recent context.",
+    "New AI Tools": "Ratings are my own judgment from the listing pages, not hands-on testing.",
+    "GitHub & Open Source": "Star counts are from [RPABots World](https://rpabotsworld.com/top-trending-open-source-agentic-ai-repos-october-2026/)'s October snapshot and were not verified on GitHub.",
+    "Social Buzz": "Hacker News, Reddit and X were not reachable in this unattended run, so this section reflects [Product Hunt](https://www.producthunt.com/) and press discussion only."
+  },
+  "entries": [
+    {
+      "id": "anthropic-files-for-ipo",
+      "section": "AI Industry News",
+      "headline": "Anthropic files for IPO",
+      "summary": "The S-1 shows 11,900+ customers spending at least $100K a year, $112.4B cash, and a narrowed operating loss of $693M. A Long-Term Benefit Trust appoints a board majority. Source: [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-filing-puts-ant-150305077.html).",
+      "why_it_matters": "public filings give builders hard data on where frontier lab revenue comes from (enterprise and coding).",
+      "takeaway": {
+        "label": "Impact",
+        "text": "expect pricing and roadmap stability signals for [Claude](https://claude.ai) users."
+      },
+      "links": [
+        {
+          "label": "Anthropic files for IPO",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-filing-puts-ant-150305077.html"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01",
+      "lead": true
+    },
+    {
+      "id": "openai-cheaper-model-tighter-training-smaller-rais",
+      "section": "AI Industry News",
+      "headline": "OpenAI: cheaper model, tighter training, smaller raise",
+      "summary": "GPT-6.1 Terra scores 50.3% on Terminal-Bench 4.0 at half the price of its siblings. OpenAI also [cut frontier training off from the live internet](https://openai.com/index/securing-our-frontier-model-training-environment/) after a September incident. The FT reports its raise shrank from $30B to about $20B ([CoinDesk](https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters)). OpenAI is also [buying Google TPUs](https://thenextweb.com/news/openai-google-tpu-chips).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "lower per-token cost makes always-on design and research agents cheaper to run."
+      },
+      "links": [
+        {
+          "label": "OpenAI: cheaper model, tighter training, smaller raise",
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
+        },
+        {
+          "label": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/10/30/openai-reportedly-cuts-fundraising-target-amid-ai-jitters"
+        },
+        {
+          "label": "buying Google TPUs",
+          "url": "https://thenextweb.com/news/openai-google-tpu-chips"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "google-gemini-hits-1b-users-new-world-model",
+      "section": "AI Industry News",
+      "headline": "Google: Gemini hits 1B users, new world model",
+      "summary": "[Google](https://about.google) reported Cloud revenue of $30.7B (+103%) and the Gemini app passing 1B users ([9to5Google](https://9to5google.com/2026/10/28/alphabet-q3-2026-earnings/)). [Gemini 4 Carbon](https://9to5google.com/2026/10/28/gemini-4-carbon-announcement/) targets vulnerability finding and patching. [Genie 4](https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/) adds native audio and about two minutes of scene consistency.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "world models are becoming a prototyping surface for spatial and game-like interfaces."
+      },
+      "links": [
+        {
+          "label": "Google: Gemini hits 1B users, new world model",
+          "url": "https://about.google"
+        },
+        {
+          "label": "9to5Google",
+          "url": "https://9to5google.com/2026/10/28/alphabet-q3-2026-earnings/"
+        },
+        {
+          "label": "Gemini 4 Carbon",
+          "url": "https://9to5google.com/2026/10/28/gemini-4-carbon-announcement/"
+        },
+        {
+          "label": "Genie 4",
+          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "hyperscaler-spend",
+      "section": "AI Industry News",
+      "headline": "Hyperscaler spend",
+      "summary": "[Microsoft](https://www.microsoft.com) Azure grew 48% ([report](https://vestedfinance.com/blog/microsoft-q1-fy27-results-revenue-jumps-19-to-92-3-billion-as-azure-grows-48/)). [Amazon](https://www.amazon.com) AWS grew 39.3% and Anthropic committed at least $110B on AWS through 2036 ([Fortune](https://fortune.com/2026/10/29/amazon-shares-sink-as-spending-on-ai-overshadows-growth-in-cloud-unit/)). [Meta](https://about.meta.com) is raising up to $95B in equity, with [NVIDIA](https://www.nvidia.com) buying $3B ([The Decoder](https://the-decoder.com/meta-gets-3-billion-from-nvidia-and-plans-to-spend-more-on-nvidia-chips/)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "compute is still the constraint, so expect rate limits and usage tiers to stay tight."
+      },
+      "links": [
+        {
+          "label": "Hyperscaler spend",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "label": "report",
+          "url": "https://vestedfinance.com/blog/microsoft-q1-fy27-results-revenue-jumps-19-to-92-3-billion-as-azure-grows-48/"
+        },
+        {
+          "label": "Amazon",
+          "url": "https://www.amazon.com"
+        },
+        {
+          "label": "Fortune",
+          "url": "https://fortune.com/2026/10/29/amazon-shares-sink-as-spending-on-ai-overshadows-growth-in-cloud-unit/"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.meta.com"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "The Decoder",
+          "url": "https://the-decoder.com/meta-gets-3-billion-from-nvidia-and-plans-to-spend-more-on-nvidia-chips/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "security-notes-for-agent-users",
+      "section": "AI Industry News",
+      "headline": "Security notes for agent users",
+      "summary": "A shared [ChatGPT](https://chatgpt.com) link flaw was patched Oct 26 ([The Hacker News](https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html)). [Cisco](https://www.cisco.com) open-sourced Project Quarry to detect multi-step agent attacks ([Cisco blog](https://blogs.cisco.com/?p=499498)). [1Password](https://1password.com) released [1Password for Agents](https://1password.com/blog/1password-for-ai-agents), free on Individual and Family plans.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Security notes for agent users",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html"
+        },
+        {
+          "label": "Cisco",
+          "url": "https://www.cisco.com"
+        },
+        {
+          "label": "Cisco blog",
+          "url": "https://blogs.cisco.com/?p=499498"
+        },
+        {
+          "label": "1Password",
+          "url": "https://1password.com"
+        },
+        {
+          "label": "1Password for Agents",
+          "url": "https://1password.com/blog/1password-for-ai-agents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "claude-design-is-the-reference-point-for-ai-native",
+      "section": "Product Design & UX",
+      "headline": "Claude Design is the reference point for AI-native design tools",
+      "summary": "[Claude Design](https://www.trendingtopics.eu/anthropic-launches-claude-design-challenging-lovable-and-figma/) (launched April 2026, research preview on paid Claude plans) builds a design system from your codebase and design files, produces interactive prototypes, and hands off a bundle to [Claude Code](https://www.anthropic.com/claude-code). It competes directly with [Lovable](https://lovable.dev) and [Figma](https://www.figma.com).",
+      "why_it_matters": "brand consistency without manual token setup, and a prototype-to-code path with one command.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude Design is the reference point for AI-native design tools",
+          "url": "https://www.trendingtopics.eu/anthropic-launches-claude-design-challenging-lovable-and-figma/"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "figma-keeps-moving-into-the-agent-loop",
+      "section": "Product Design & UX",
+      "headline": "Figma keeps moving into the agent loop",
+      "summary": "Figma now has an official MCP server covering design-to-code, code-to-design and Code Connect, and brought [FigJam diagramming into Claude](https://createwith.com/tool/figma/updates/figma-brings-figjam-diagramming-directly-into-claude). See also the [Figma release notes tracker](https://releasebot.io/updates/figma).",
+      "why_it_matters": "you can generate and edit diagrams and frames from inside an agent chat.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma keeps moving into the agent loop",
+          "url": "https://createwith.com/tool/figma/updates/figma-brings-figjam-diagramming-directly-into-claude"
+        },
+        {
+          "label": "Figma release notes tracker",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "replit-ships-on-a-steady-cadence",
+      "section": "Product Design & UX",
+      "headline": "Replit ships on a steady cadence",
+      "summary": "[Replit](https://replit.com) posts changelogs frequently, for example [October 9](https://docs.replit.com/updates/2026/10/09/changelog). Worth skimming if you prototype in-browser.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Replit ships on a steady cadence",
+          "url": "https://replit.com"
+        },
+        {
+          "label": "October 9",
+          "url": "https://docs.replit.com/updates/2026/10/09/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "useit-studio",
+      "section": "New AI Tools",
+      "headline": "UseIt Studio",
+      "summary": "AI design agent that outputs editable files with real dimensions, bleed and dielines for physical products. See also the [site](https://useit.im/).",
+      "why_it_matters": null,
+      "audience": "packaging and merch designers.",
+      "links": [
+        {
+          "label": "UseIt Studio",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        },
+        {
+          "label": "site",
+          "url": "https://useit.im/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "canva-brush",
+      "section": "New AI Tools",
+      "headline": "Canva Brush",
+      "summary": "A vision-language model that edits your designs.",
+      "why_it_matters": null,
+      "audience": "anyone working in [Canva](https://www.canva.com).",
+      "links": [
+        {
+          "label": "Canva Brush",
+          "url": "https://www.producthunt.com/products/canva"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "fastbrowse",
+      "section": "New AI Tools",
+      "headline": "fastbrowse",
+      "summary": "Open source browser agent, billed as the fastest.",
+      "why_it_matters": null,
+      "audience": "builders testing agentic web flows.",
+      "links": [
+        {
+          "label": "fastbrowse",
+          "url": "https://www.producthunt.com/products/fastbrowse"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "ilse",
+      "section": "New AI Tools",
+      "headline": "ilse",
+      "summary": "Point at your running app and your coding agent changes the code.",
+      "why_it_matters": null,
+      "audience": "designers who want to tweak UI without leaving the browser.",
+      "links": [
+        {
+          "label": "ilse",
+          "url": "https://www.producthunt.com/products/ilse"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "faylee",
+      "section": "New AI Tools",
+      "headline": "Faylee",
+      "summary": "Bug reports your coding agent can fix from one link.",
+      "why_it_matters": null,
+      "audience": "small product teams.",
+      "links": [
+        {
+          "label": "Faylee",
+          "url": "https://www.producthunt.com/products/faylee"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "mcp-server-by-xwiki",
+      "section": "New AI Tools",
+      "headline": "MCP Server by XWiki",
+      "summary": "Exposes your wiki to AI with access control.",
+      "why_it_matters": null,
+      "audience": "teams with internal docs.",
+      "links": [
+        {
+          "label": "MCP Server by XWiki",
+          "url": "https://www.producthunt.com/products/xwiki"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "sitesolide",
+      "section": "New AI Tools",
+      "headline": "sitesolide",
+      "summary": "Deploy vibe-coded apps on your own server.",
+      "why_it_matters": null,
+      "audience": "designers shipping prototypes.",
+      "links": [
+        {
+          "label": "sitesolide",
+          "url": "https://www.producthunt.com/products/sitesolide"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "kestrix",
+      "section": "New AI Tools",
+      "headline": "Kestrix",
+      "summary": "Repo-agnostic CI control plane with DAG triggers.",
+      "why_it_matters": null,
+      "audience": "engineering-heavy teams.",
+      "links": [
+        {
+          "label": "Kestrix",
+          "url": "https://www.producthunt.com/products/kestrix"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "model-routing-and-orchestration",
+      "section": "Trends to Watch",
+      "headline": "Model routing and orchestration",
+      "summary": "Copilot Fusion's automatic routing signals that picking one model per task is becoming a platform job.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to define task tiers (cheap draft, strong review)."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "agent-security",
+      "section": "Trends to Watch",
+      "headline": "Agent security",
+      "summary": "A reported extension compromise, Project Quarry, and 1Password for Agents all landed this week.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "least-privilege tokens and extension pinning for coding agents."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "cheap-long-context-open-models",
+      "section": "Trends to Watch",
+      "headline": "Cheap long-context open models",
+      "summary": "Kimi K3.1 Pro and Mistral Large 4 make self-hosted design-system or research agents plausible.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "direct-manipulation-coding",
+      "section": "Trends to Watch",
+      "headline": "Direct-manipulation coding",
+      "summary": "Tools like ilse let you point at UI and have an agent edit code.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "design-to-code feedback loops that start from the running app, not a mockup."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "agentic-commerce-is-slow",
+      "section": "Trends to Watch",
+      "headline": "Agentic commerce is slow",
+      "summary": "[DoorDash](https://www.doordash.com) reports only \"several hundred\" agent orders against about 3M daily deliveries ([TechCrunch](https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/)). Design for humans first, agents second.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agentic commerce is slow",
+          "url": "https://www.doordash.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "useit-studio-conversational-brief",
+      "section": "Product Design Inspiration",
+      "headline": "UseIt Studio conversational brief",
+      "summary": "It asks designer-style questions before generating, then lets you refine by pointing at details. See [UseIt Studio](https://www.producthunt.com/products/useit-studio-from-idea-to-delivery).",
+      "why_it_matters": "it replaces a blank prompt box with guided scoping, and checks output against manufacturing rules before export.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "UseIt Studio conversational brief",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "claude-design-onboarding",
+      "section": "Product Design Inspiration",
+      "headline": "Claude Design onboarding",
+      "summary": "It reads your codebase and design files to build a design system up front. See [Claude Design](https://www.trendingtopics.eu/anthropic-launches-claude-design-challenging-lovable-and-figma/).",
+      "why_it_matters": "setup effort is absorbed by the tool, and every later output starts on brand.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Claude Design onboarding",
+          "url": "https://www.trendingtopics.eu/anthropic-launches-claude-design-challenging-lovable-and-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "ilse-point-to-edit",
+      "section": "Product Design Inspiration",
+      "headline": "ilse point-to-edit",
+      "summary": "Selecting a live UI element as the prompt anchor. See [ilse](https://www.producthunt.com/products/ilse).",
+      "why_it_matters": "it removes the translation step between \"this button\" and a text description.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ilse point-to-edit",
+          "url": "https://www.producthunt.com/products/ilse"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "browser-use",
+      "section": "GitHub & Open Source",
+      "headline": "browser-use",
+      "summary": "Lets any LLM drive a browser (116.7k stars). Popular because it is the simplest path to web-capable agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "browser-use",
+          "url": "https://github.com/browser-use/browser-use"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "firecrawl",
+      "section": "GitHub & Open Source",
+      "headline": "Firecrawl",
+      "summary": "Turns sites into LLM-ready markdown with native MCP support (188.9k). Useful for competitive and UX research pipelines.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "mem0",
+      "section": "GitHub & Open Source",
+      "headline": "Mem0",
+      "summary": "Persistent memory layer for agents across sessions (65.9k).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mem0",
+          "url": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "langgraph",
+      "section": "GitHub & Open Source",
+      "headline": "LangGraph",
+      "summary": "Stateful multi-step agents with human-in-the-loop checkpoints (38.1k).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "LangGraph",
+          "url": "https://github.com/langchain-ai/langgraph"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "crawl4ai",
+      "section": "GitHub & Open Source",
+      "headline": "Crawl4AI",
+      "summary": "Open crawler with adaptive crawling and MCP integration (84.6k).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Crawl4AI",
+          "url": "https://github.com/unclecode/crawl4ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "dify",
+      "section": "GitHub & Open Source",
+      "headline": "Dify",
+      "summary": "Visual builder for agentic workflows (152.4k). Check the license file before commercial use.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Dify",
+          "url": "https://github.com/langgenius/dify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "agent-reach",
+      "section": "GitHub & Open Source",
+      "headline": "Agent-Reach",
+      "summary": "Multi-platform web access for agents (92.2k, new). The source flags terms-of-service risk.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "product-hunt-today",
+      "section": "Social Buzz",
+      "headline": "Product Hunt today",
+      "kicker": "Product Hunt",
+      "summary": "The front page skews heavily to agent tooling: voice agents ([Vaani](https://www.producthunt.com/products/vaani-developer-platfrom)), browser agents (fastbrowse), and agent-fixable bug reports (Faylee). The signal is that \"agent-ready\" is now a default product requirement.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt today",
+          "url": "https://www.producthunt.com/products/vaani-developer-platfrom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "valuable-debate",
+      "section": "Social Buzz",
+      "headline": "Valuable debate",
+      "summary": "Whether AI infrastructure spending is outrunning returns. Amazon's free cash flow swung negative and OpenAI trimmed its raise (see section 02).",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "anthropic-launches-claude-design",
+      "section": "Learning Corner",
+      "headline": "Anthropic Launches Claude Design",
+      "kicker": "Article",
+      "summary": "Explains the new design-to-code handoff model and where it threatens existing tools. [Anthropic Launches Claude Design](https://www.trendingtopics.eu/anthropic-launches-claude-design-challenging-lovable-and-figma/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic Launches Claude Design",
+          "url": "https://www.trendingtopics.eu/anthropic-launches-claude-design-challenging-lovable-and-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "anthropic-youtube-channel",
+      "section": "Learning Corner",
+      "headline": "Anthropic YouTube channel",
+      "kicker": "Video",
+      "summary": "Browse the [Anthropic YouTube channel](https://www.youtube.com/@anthropic-ai) for current agent and Claude Code walkthroughs. I could not verify a specific new video today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic YouTube channel",
+          "url": "https://www.youtube.com/@anthropic-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "browser-use-2",
+      "section": "Learning Corner",
+      "headline": "browser-use",
+      "kicker": "GitHub project",
+      "summary": "Best hands-on way to understand agentic browsing. [browser-use](https://github.com/browser-use/browser-use).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "browser-use",
+          "url": "https://github.com/browser-use/browser-use"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "html-ai-figma-plugin",
+      "section": "Learning Corner",
+      "headline": "Html.Ai Figma plugin",
+      "kicker": "Design resource",
+      "summary": "The [Html.Ai Figma plugin](https://www.figma.com/community/plugin/1643234166966008877/html-ai-ai-designs-html-to-figma-claude-v0-bolt-lovable-cursor) moves AI-generated UIs from Claude, v0, Bolt, Lovable and Cursor into Figma.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Html.Ai Figma plugin",
+          "url": "https://www.figma.com/community/plugin/1643234166966008877/html-ai-ai-designs-html-to-figma-claude-v0-bolt-lovable-cursor"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "claude-code-to-figma-workflow",
+      "section": "Learning Corner",
+      "headline": "Claude Code to Figma workflow",
+      "kicker": "AI workflow",
+      "summary": "Generate a UI in [v0](https://v0.app) or Claude, push it into Figma, then refine and map components with Code Connect. Practical write-up: [I Tested Claude Code to Figma](https://dishantsharma.dev/blog/i-tested-claude-code-to-figma-heres-what-actually-works-4p19).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code to Figma workflow",
+          "url": "https://v0.app"
+        },
+        {
+          "label": "I Tested Claude Code to Figma",
+          "url": "https://dishantsharma.dev/blog/i-tested-claude-code-to-figma-heres-what-actually-works-4p19"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "agent-readable-design-systems",
+      "section": "Opportunities",
+      "headline": "Agent-readable design systems",
+      "summary": "Publish tokens and components in a form agents consume (MCP plus docs). Few teams have done this well.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "agent-security-ux",
+      "section": "Opportunities",
+      "headline": "Agent security UX",
+      "summary": "Permission prompts, extension trust cues and audit views for coding agents are underdesigned, and this week showed why.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "physical-product-ai-design",
+      "section": "Opportunities",
+      "headline": "Physical-product AI design",
+      "summary": "UseIt Studio shows demand for manufacturable output. Niche tools for packaging and merch are open territory.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "cost-aware-model-routing-ui",
+      "section": "Opportunities",
+      "headline": "Cost-aware model routing UI",
+      "summary": "With Copilot Fusion mainstreaming routing, designing transparent controls for cost versus quality is a clear gap.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    },
+    {
+      "id": "point-to-edit-your-own-prototype",
+      "section": "Today's Experiment",
+      "headline": "Point-to-edit your own prototype",
+      "kicker": "25 minutes",
+      "summary": "Take a small UI you built in [v0](https://v0.app) or [Lovable](https://lovable.dev). Try [ilse](https://www.producthunt.com/products/ilse) on the running app and change three elements by pointing. Then do the same three edits by typing prompts. Note which took fewer steps and where precision broke down.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Point-to-edit your own prototype",
+          "url": "https://v0.app"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "ilse",
+          "url": "https://www.producthunt.com/products/ilse"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-01"
+    }
+  ],
+  "dont_miss": [
+    "Check your Claude Code VS Code extension version and confirm it is not 2.1.313 ([report](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html)).",
+    "Skim the [Anthropic S-1 coverage](https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-filing-puts-ant-150305077.html) for what it says about enterprise coding revenue.",
+    "Price out your agent workflows against [GPT-6.1 Terra](https://openai.com/index/introducing-gpt-6-1-terra/), and watch for Kimi K3.1 Pro weights on Nov 4."
+  ],
+  "footnote": "Sources: AI Weekly, Trew Knowledge and Rupak Ganguly newsletters (Oct 30 to 31, 2026), Product Hunt, RPABots World, and the linked articles. Hacker News, Reddit and X were not accessible. Figures are as reported by those sources and not independently verified."
+}
