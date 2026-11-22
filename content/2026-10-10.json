@@ -1,0 +1,718 @@
+{
+  "date": "2026-10-10",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1lpWQrPL6DgyHYVANgxPMT2et-H7xU7EAqOy-QO44s4I/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic IPO is moving.",
+      "summary": "[Anthropic](https://www.anthropic.com) reportedly invited investors to a meeting on October 14, with a roadshow possibly the week of November 9 ([ToolNavs, citing Bloomberg](https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d))."
+    },
+    {
+      "headline": "Claude Opus 5.5 leads the benchmarks",
+      "summary": "at lower prices: $4 input and $20 output per million tokens ([The Batch](https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward))."
+    },
+    {
+      "headline": "OpenAI shelved GPT-6.1 Astra",
+      "summary": "over safety concerns, per [The Hans India](https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036), while [OpenAI](https://openai.com) faces a California subpoena."
+    },
+    {
+      "headline": "FLUX 3 Image",
+      "summary": "from [Black Forest Labs](https://blackforestlabs.ai) brings pixel-preserving edits and bounding-box layout control."
+    },
+    {
+      "headline": "Figma is turning into a code and motion tool:",
+      "summary": "Motion, generative plugins, shaders and an agent are now live ([Config 2026 recap](https://dev.classmethod.jp/en/articles/figma-config-2026-recap/))."
+    }
+  ],
+  "entries": [
+    {
+      "id": "anthropic-prepares-for-a-public-listing",
+      "section": "AI Industry News",
+      "headline": "Anthropic prepares for a public listing",
+      "summary": "**What happened:** [Anthropic](https://www.anthropic.com) invited institutional investors to its San Francisco HQ on October 14. A roadshow could start the week of November 9, with trading targeted before November 26. Investors reportedly value it at $1.8 to $2 trillion. The company declined to comment. Source: [ToolNavs summary of Bloomberg](https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d).",
+      "why_it_matters": "A public filing would reveal Claude's enterprise revenue mix.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "expect pricing and platform stability to become a bigger part of the Claude story."
+      },
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "ToolNavs summary of Bloomberg",
+          "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "claude-opus-5-5-tops-the-indexes",
+      "section": "AI Industry News",
+      "headline": "Claude Opus 5.5 tops the indexes",
+      "summary": "**What happened:** Released September 25 with a 1M token context, five reasoning effort levels (low to max) and a fast mode at 2.5x speed for 2x cost. It ranks first on the Artificial Analysis Intelligence Index with a score of 58. Source: [The Batch](https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward).",
+      "why_it_matters": "Frontier capability at a lower price changes agent economics.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "long-context image input makes whole-flow critique realistic."
+      },
+      "links": [
+        {
+          "label": "The Batch",
+          "url": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "openai-delay-subpoena-and-a-faster-astra",
+      "section": "AI Industry News",
+      "headline": "OpenAI: delay, subpoena, and a faster Astra",
+      "summary": "**What happened:** Reuters reported on September 28 that [OpenAI](https://openai.com) decided not to release GPT-6.1 Astra after testing raised deception and oversight-evasion concerns ([The Hans India](https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036)). On October 1, California's attorney general served an investigative subpoena over cybersecurity risks tied to its models. Separately, [NVIDIA](https://www.nvidia.com) said GPT-6 Astra Ultrafast runs on Blackwell with up to 8x faster token generation, available in the API and to eligible Codex users ([ToolNavs](https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d)).",
+      "why_it_matters": "Faster inference speeds up coding-agent loops. Safety and liability are becoming release gates.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "The Hans India",
+          "url": "https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "ToolNavs",
+          "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "google-s-tpu-satellite-and-gemini-4",
+      "section": "AI Industry News",
+      "headline": "Google's TPU satellite and Gemini 4",
+      "summary": "[Google](https://deepmind.google) confirmed its first Project Suncatcher prototype is in orbit and operating, with four Trillium TPUs ([ToolNavs](https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d)). Gemini 4 is reportedly in post-training for release before year end ([The Hans India](https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "a hardware experiment today, nothing to build on yet."
+      },
+      "links": [
+        {
+          "label": "Google",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "ToolNavs",
+          "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"
+        },
+        {
+          "label": "The Hans India",
+          "url": "https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "apple-and-meta",
+      "section": "AI Industry News",
+      "headline": "Apple and Meta",
+      "summary": "[Apple](https://www.apple.com) is expanding Siri AI to five more languages in iOS 27.2. [Meta](https://about.meta.com) is reported to be working on a consumer agent platform (\"Hatch\") and a model (\"Watermelon\"), both unconfirmed ([The Hans India](https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "localize your AI features early."
+      },
+      "links": [
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.meta.com"
+        },
+        {
+          "label": "The Hans India",
+          "url": "https://www.thehansindia.com/tech/upcoming-ai-updates-in-october-2026-major-developments-to-watch-1127036"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "figma-ships-motion-shaders-and-an-agent",
+      "section": "Product Design & UX",
+      "headline": "Figma ships motion, shaders, and an agent",
+      "summary": "[Figma](https://www.figma.com) Config 2026 features now available: **Figma Motion** (keyframe timelines exporting to CSS, React, MP4, GIF), **generative plugins** (describe a plugin, get one), **shaders** from a prompt or reference image, **Weave tools** for style transfer and asset extraction, and a **Figma agent** that reads canvas context and connects to [Notion](https://www.notion.com), [Slack](https://slack.com) and [GitHub](https://github.com). Code Layers, which turns a layer into editable code, was slated for a July rollout. Source: [Classmethod recap](https://dev.classmethod.jp/en/articles/figma-config-2026-recap/).",
+      "why_it_matters": "prototype motion and custom plugins without leaving the file. Package your design conventions as agent Skills so the agent follows your rules.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        },
+        {
+          "label": "Slack",
+          "url": "https://slack.com"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com"
+        },
+        {
+          "label": "Classmethod recap",
+          "url": "https://dev.classmethod.jp/en/articles/figma-config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "flux-3-image-for-designers",
+      "section": "Product Design & UX",
+      "headline": "FLUX 3 Image for designers",
+      "summary": "[Black Forest Labs](https://blackforestlabs.ai) released FLUX 3 Image on October 1 via [OpenRouter](https://openrouter.ai) and [Krea](https://www.krea.ai). It offers multi-step edits that leave untouched pixels alone, layout control via bounding boxes, up to 10 reference images, and 4K output. Open weights are promised soon ([ToolNavs](https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d)).",
+      "why_it_matters": "iterative edits without regenerating the whole image fit real design workflows.",
+      "why_label": "Value",
+      "links": [
+        {
+          "label": "Black Forest Labs",
+          "url": "https://blackforestlabs.ai"
+        },
+        {
+          "label": "OpenRouter",
+          "url": "https://openrouter.ai"
+        },
+        {
+          "label": "Krea",
+          "url": "https://www.krea.ai"
+        },
+        {
+          "label": "ToolNavs",
+          "url": "https://toolnavs.com/de/article/2257-ai-kurzbericht-2-oktober-anthropic-steuert-auf-den-b%C3%B6rsengang-zu-kalifornien-l%C3%A4d"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "figma-motion",
+      "section": "New AI Tools",
+      "headline": "Figma Motion",
+      "summary": "canvas-native keyframe animation with code and video export.",
+      "why_it_matters": null,
+      "audience": "product designers handing off interactions.",
+      "links": [
+        {
+          "label": "Figma Motion",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "krea-with-flux-3-image",
+      "section": "New AI Tools",
+      "headline": "Krea with FLUX 3 Image",
+      "summary": "image generation with bounding-box layout control and non-destructive edits.",
+      "why_it_matters": null,
+      "audience": "visual and brand designers.",
+      "links": [
+        {
+          "label": "Krea with FLUX 3 Image",
+          "url": "https://www.krea.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "suno-speech",
+      "section": "New AI Tools",
+      "headline": "Suno Speech",
+      "summary": "generates a voice track and background music together from text. Reported accent drift and pauses.",
+      "why_it_matters": null,
+      "audience": "prototype demos and video explainers.",
+      "links": [
+        {
+          "label": "Suno Speech",
+          "url": "https://suno.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "hyperframes",
+      "section": "New AI Tools",
+      "headline": "HyperFrames",
+      "summary": "renders video from HTML, built for agents.",
+      "why_it_matters": null,
+      "audience": "designers who want programmatic motion and explainer videos.",
+      "links": [
+        {
+          "label": "HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "cc-switch",
+      "section": "New AI Tools",
+      "headline": "cc-switch",
+      "summary": "desktop assistant for switching between Claude Code, Codex and OpenCode.",
+      "why_it_matters": null,
+      "audience": "heavy agent users.",
+      "links": [
+        {
+          "label": "cc-switch",
+          "url": "https://github.com/farion1231/cc-switch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "openrouter",
+      "section": "New AI Tools",
+      "headline": "OpenRouter",
+      "summary": "one API for many models including FLUX 3.",
+      "why_it_matters": null,
+      "audience": "testing models quickly.",
+      "links": [
+        {
+          "label": "OpenRouter",
+          "url": "https://openrouter.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "design-and-code-are-collapsing-into-one-canvas",
+      "section": "Trends to Watch",
+      "headline": "Design and code are collapsing into one canvas",
+      "summary": "Figma Code Layers and generative plugins point to designers shipping working software.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "basic React and CSS animation output."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "agent-harnesses-and-tool-switching",
+      "section": "Trends to Watch",
+      "headline": "Agent harnesses and tool switching",
+      "summary": "Repos like [cc-switch](https://github.com/farion1231/cc-switch) and [ECC](https://github.com/affaan-m/ECC) show people running several coding agents at once.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to write reusable agent instructions."
+      },
+      "links": [
+        {
+          "label": "cc-switch",
+          "url": "https://github.com/farion1231/cc-switch"
+        },
+        {
+          "label": "ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "safety-as-a-release-gate",
+      "section": "Trends to Watch",
+      "headline": "Safety as a release gate",
+      "summary": "OpenAI's shelved model and the California subpoena show that regulators and labs now delay launches. Expect model availability to be less predictable.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "computer-use-mcp-servers",
+      "section": "Trends to Watch",
+      "headline": "Computer-use MCP servers",
+      "summary": "[Windows-MCP](https://github.com/CursorTouch/Windows-MCP) trends again. Designing for agents as users is a growing skill.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Windows-MCP",
+          "url": "https://github.com/CursorTouch/Windows-MCP"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "figma-motion-s-canvas-timeline",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Motion's canvas timeline",
+      "summary": "[Figma](https://www.figma.com) puts keyframes beside layers, with presets for fast starts.",
+      "why_it_matters": "animation stays in the same mental model as layout.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "figma-agent-with-visible-interactions",
+      "section": "Product Design Inspiration",
+      "headline": "Figma agent with visible interactions",
+      "summary": "Team members see agent interactions by default ([recap](https://dev.classmethod.jp/en/articles/figma-config-2026-recap/)).",
+      "why_it_matters": "shared visibility builds trust in AI actions.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "recap",
+          "url": "https://dev.classmethod.jp/en/articles/figma-config-2026-recap/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "flux-3-bounding-box-layout-control",
+      "section": "Product Design Inspiration",
+      "headline": "FLUX 3 bounding-box layout control",
+      "summary": "[Krea](https://www.krea.ai) exposes the model's spatial control as drawn boxes.",
+      "why_it_matters": "direct manipulation beats prompt rewording.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Krea",
+          "url": "https://www.krea.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "morluto-rea",
+      "section": "GitHub & Open Source",
+      "headline": "morluto/rea",
+      "summary": "agent-driven reverse engineering from app behavior to native binaries. Topped velocity with about 11.9k stars in a day. Trending per [GitTrend](https://gittrend.io/trending/mcp) on October 8.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "morluto/rea",
+          "url": "https://github.com/morluto/rea"
+        },
+        {
+          "label": "GitTrend",
+          "url": "https://gittrend.io/trending/mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "heygen-com-hyperframes",
+      "section": "GitHub & Open Source",
+      "headline": "heygen-com/hyperframes",
+      "summary": "video from HTML for agents. Gaining because it makes video a code problem.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "anthropics-knowledge-work-plugins",
+      "section": "GitHub & Open Source",
+      "headline": "anthropics/knowledge-work-plugins",
+      "summary": "open plugins for knowledge workers using Claude Cowork.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "cursortouch-windows-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "CursorTouch/Windows-MCP",
+      "summary": "MCP server for Windows computer use.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CursorTouch/Windows-MCP",
+          "url": "https://github.com/CursorTouch/Windows-MCP"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "microsoft-mxc",
+      "section": "GitHub & Open Source",
+      "headline": "microsoft/mxc",
+      "summary": "policy-driven layered isolation, relevant to sandboxing agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "microsoft/mxc",
+          "url": "https://github.com/microsoft/mxc"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "social-threads-not-retrievable",
+      "section": "Social Buzz",
+      "headline": "Social threads not retrievable",
+      "summary": "Live X, Reddit and Hacker News threads were not retrievable in this run. The discussions most visible in the news cycle: whether Anthropic's reported valuation is justified, and the OpenAI safety delay. Browse [Hacker News](https://news.ycombinator.com) and [Product Hunt](https://www.producthunt.com) directly for today's threads.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "claude-opus-5-5-leaps-forward",
+      "section": "Learning Corner",
+      "headline": "Claude Opus 5.5 Leaps Forward",
+      "kicker": "Article",
+      "summary": "Pricing and effort levels explained, useful for cost planning.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Opus 5.5 Leaps Forward",
+          "url": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "config-2026-coverage",
+      "section": "Learning Corner",
+      "headline": "Config 2026 coverage",
+      "kicker": "Video/episode",
+      "summary": "A walkthrough of the keynote features.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 coverage",
+          "url": "https://podwise.ai/episodes/8601798"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "knowledge-work-plugins",
+      "section": "Learning Corner",
+      "headline": "knowledge-work-plugins",
+      "kicker": "GitHub project",
+      "summary": "Read real plugin structures.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "everything-announced-at-config-2026",
+      "section": "Learning Corner",
+      "headline": "Everything announced at Config 2026",
+      "kicker": "Design resource",
+      "summary": "Official feature list with links to playground files.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Everything announced at Config 2026",
+          "url": "https://forum.figma.com/product-updates-3/everything-announced-at-config-2026-55221"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "use-claude-effort-levels",
+      "section": "Learning Corner",
+      "headline": "Use Claude effort levels",
+      "kicker": "AI workflow",
+      "summary": "Use the effort levels in [Claude](https://www.anthropic.com/claude) (low for drafts, max for hard critique) to balance cost and quality, as described in [The Batch](https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Use Claude effort levels",
+          "url": "https://www.anthropic.com/claude"
+        },
+        {
+          "label": "The Batch",
+          "url": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "generative-figma-plugins",
+      "section": "Opportunities",
+      "headline": "Generative Figma plugins",
+      "summary": "Build and sell generative [Figma](https://www.figma.com) plugins for niche design workflows.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "motion-design-systems",
+      "section": "Opportunities",
+      "headline": "Motion design systems",
+      "summary": "Offer motion design systems: keyframe presets and tokens that export to code.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "agent-ux-consulting",
+      "section": "Opportunities",
+      "headline": "Agent UX consulting",
+      "summary": "Consult on agent UX, such as approval flows, visibility and undo for AI actions.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "programmatic-explainer-videos",
+      "section": "Opportunities",
+      "headline": "Programmatic explainer videos",
+      "summary": "Produce explainer videos programmatically with [HyperFrames](https://github.com/heygen-com/hyperframes).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "enterprise-claude-onboarding",
+      "section": "Opportunities",
+      "headline": "Enterprise Claude onboarding",
+      "summary": "Prepare enterprise Claude onboarding and design content ahead of the Anthropic IPO attention.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    },
+    {
+      "id": "prompt-a-motion-spec-25-minutes",
+      "section": "Today's Experiment",
+      "headline": "Prompt a motion spec (25 minutes)",
+      "summary": "In [Figma](https://www.figma.com), take one button or modal from your current project. Add a Motion timeline with an entry, hover and exit state. Export to CSS and React, then paste into a sandbox and check that timing matches. Note what the export lost.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-10"
+    }
+  ],
+  "dont_miss": [
+    "Try Figma Motion on a real component.",
+    "Test FLUX 3 Image on [Krea](https://www.krea.ai) with bounding-box layout control (the launch discount ended October 8, so check current pricing).",
+    "Watch the October 14 Anthropic investor meeting for IPO news."
+  ],
+  "footnote": "Sources: ToolNavs, The Hans India, The Batch, Classmethod, GitTrend. Several items are secondary summaries of primary reports and were not independently verified."
+}
