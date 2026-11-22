@@ -1,0 +1,771 @@
+{
+  "date": "2026-10-09",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1aOPy8xF5A_HCq98HB6RxGm7ESlruoQdBTFpTPEuhHn4/edit",
+  "highlights": [
+    {
+      "headline": "Figma agent is now generally available.",
+      "summary": "[Figma](https://releasebot.io/updates/figma) shipped the agent out of beta on Oct 6, plus generally available generative plugins."
+    },
+    {
+      "headline": "OpenAI rolled GPT-6 to every ChatGPT tier",
+      "summary": "with an \"intelligent UI\" that renders charts, buttons and forms inside replies ([report](https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6))."
+    },
+    {
+      "headline": "[Anthropic](https://www.anthropic.com) launched Cyber Mission",
+      "summary": "with 11 founding partners ([announcement](https://www.anthropic.com/news/anthropic-cyber-mission))."
+    },
+    {
+      "headline": "Agent infrastructure is the hot layer:",
+      "summary": "cost tracking, sandboxed workstations and secrets proxies dominate this week's launches and trending repos."
+    },
+    {
+      "headline": "Security warning:",
+      "summary": "a CVSS 9.8 unpatched RCE in LMCache, used with vLLM ([The Hacker News](https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html))."
+    }
+  ],
+  "entries": [
+    {
+      "id": "gpt-6-with-generative-ui-reaches-all-chatgpt-tiers",
+      "section": "AI Industry News",
+      "headline": "GPT-6 with generative UI reaches all ChatGPT tiers",
+      "summary": "[OpenAI](https://openai.com) now lets ChatGPT replies render interactive elements such as charts, buttons and forms ([source](https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6)).",
+      "why_it_matters": "the chat reply is becoming a UI surface.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "you now design components that a model composes at runtime, so component APIs and constraints matter more than fixed screens."
+      },
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "source",
+          "url": "https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "openai-decisions-api-opens-in-public-beta",
+      "section": "AI Industry News",
+      "headline": "OpenAI Decisions API opens in public beta",
+      "summary": "The API runs on GPT-6 Luna at $0.10 per million input tokens ([source](https://aiweekly.co/alerts/openai-launches-decisions-api-public-beta-on-gpt-6-luna)).",
+      "why_it_matters": "cheap structured decisions make in-product automation affordable for small teams.",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://aiweekly.co/alerts/openai-launches-decisions-api-public-beta-on-gpt-6-luna"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "openai-retakes-the-lead-in-openrouter-spend",
+      "section": "AI Industry News",
+      "headline": "OpenAI retakes the lead in OpenRouter spend",
+      "summary": "OpenAI passed [Anthropic](https://www.anthropic.com) in weekly model spend on [OpenRouter](https://openrouter.ai) for the first time in 2.5 years ([source](https://aiweekly.co/alerts/openai-retakes-openrouter-weekly-spend-lead-after-25-years)).",
+      "why_it_matters": "model choice is shifting fast, so keep your stack model-agnostic.",
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "OpenRouter",
+          "url": "https://openrouter.ai"
+        },
+        {
+          "label": "source",
+          "url": "https://aiweekly.co/alerts/openai-retakes-openrouter-weekly-spend-lead-after-25-years"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "anthropic-cyber-mission",
+      "section": "AI Industry News",
+      "headline": "Anthropic Cyber Mission",
+      "summary": "Anthropic launched a security initiative with 11 founding partners on Oct 8 ([source](https://www.anthropic.com/news/anthropic-cyber-mission)).",
+      "why_it_matters": "AI-assisted vulnerability work is becoming a formal program, which raises the baseline for secure agent tooling.",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://www.anthropic.com/news/anthropic-cyber-mission"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "funding-and-chips",
+      "section": "AI Industry News",
+      "headline": "Funding and chips",
+      "summary": "[Manus parent Butterfly Effect raised over $500M at a $4B valuation](https://technode.com/2026/10/08/manus-parent-butterfly-effect-completes-more-than-500-million-funding-round/). Separately, [Broadcom is reportedly seeking $50B+ in private credit for OpenAI chips](https://aiweekly.co/alerts/broadcom-lines-up-50b-private-credit-deal-for-openai-chips).",
+      "why_it_matters": "general-purpose agents keep attracting large rounds.",
+      "links": [
+        {
+          "label": "Manus parent Butterfly Effect raised over $500M at a $4B valuation",
+          "url": "https://technode.com/2026/10/08/manus-parent-butterfly-effect-completes-more-than-500-million-funding-round/"
+        },
+        {
+          "label": "Broadcom is reportedly seeking $50B+ in private credit for OpenAI chips",
+          "url": "https://aiweekly.co/alerts/broadcom-lines-up-50b-private-credit-deal-for-openai-chips"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "model-releases",
+      "section": "AI Industry News",
+      "headline": "Model releases",
+      "summary": "[StepFun opened Step 5 Preview](https://openrouter.ai/stepfun/step-5-preview) (600B MoE, 1M context, per the [summary](https://aiweekly.co/alerts/stepfun-opens-step-5-preview-a-600b-moe-with-1m-context)). [Perplexity](https://www.perplexity.ai) [released pplx-embed-v2-late](https://community.perplexity.ai/t/were-releasing-pplx-embed-v2-late-two-late-interaction-embedding-models-that-retrieve-text-images-and-pages-with-a-shared-embedding-space-for-cross-model-querying/6296), embedders for text, images and pages in one space.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "multimodal retrieval is now easy to add to design-asset search."
+      },
+      "links": [
+        {
+          "label": "StepFun opened Step 5 Preview",
+          "url": "https://openrouter.ai/stepfun/step-5-preview"
+        },
+        {
+          "label": "summary",
+          "url": "https://aiweekly.co/alerts/stepfun-opens-step-5-preview-a-600b-moe-with-1m-context"
+        },
+        {
+          "label": "Perplexity",
+          "url": "https://www.perplexity.ai"
+        },
+        {
+          "label": "released pplx-embed-v2-late",
+          "url": "https://community.perplexity.ai/t/were-releasing-pplx-embed-v2-late-two-late-interaction-embedding-models-that-retrieve-text-images-and-pages-with-a-shared-embedding-space-for-cross-model-querying/6296"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "safety-and-policy",
+      "section": "AI Industry News",
+      "headline": "Safety and policy",
+      "summary": "[Common Sense Media rated ChatGPT for teens an \"unacceptable risk\"](https://aiweekly.co/alerts/common-sense-media-rates-chatgpt-for-teens-unacceptable-risk) after crisis alerts failed in its tests. [Anthropic, OpenAI, Google and Meta execs testified at an NYC Council AI hearing](https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html).",
+      "why_it_matters": "expect more regulatory pressure on consumer AI UX, especially for minors.",
+      "links": [
+        {
+          "label": "Common Sense Media rated ChatGPT for teens an \"unacceptable risk\"",
+          "url": "https://aiweekly.co/alerts/common-sense-media-rates-chatgpt-for-teens-unacceptable-risk"
+        },
+        {
+          "label": "Anthropic, OpenAI, Google and Meta execs testified at an NYC Council AI hearing",
+          "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "figma-agent-generally-available",
+      "section": "Product Design & UX",
+      "headline": "Figma agent generally available",
+      "summary": "Lower latency, file search in chat, configurable design library guidelines, live viewing of teammates' agents, and custom skills on Starter ([Figma release notes](https://releasebot.io/updates/figma)).",
+      "why_it_matters": "encode your design system rules once as guidelines and let the agent follow them.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "figma-motion-open-beta",
+      "section": "Product Design & UX",
+      "headline": "Figma Motion (open beta)",
+      "summary": "Reusable animation styles, audio on timelines, text animation, and export to Lottie, dotLottie, MP4 or WebM.",
+      "why_it_matters": "prototype motion and ship it to engineering in a format they can use.",
+      "why_label": "Practical value",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "vertical-wrap-in-auto-layout-riffs-weave",
+      "section": "Product Design & UX",
+      "headline": "Vertical wrap in auto layout, Riffs, Weave",
+      "summary": "Auto layout now wraps into columns, closer to CSS flexbox. Riffs let you post experiments to Community. Figma frames can feed Weave workflows.",
+      "why_it_matters": "fewer layout hacks and easier sharing of prototypes.",
+      "why_label": "Practical value",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "multiple-github-organizations-per-figma-plan",
+      "section": "Product Design & UX",
+      "headline": "Multiple GitHub organizations per Figma plan",
+      "summary": "Available on Organization and Enterprise plans.",
+      "why_it_matters": "agencies and multi-team orgs can connect design to several code orgs from one plan.",
+      "why_label": "Practical value",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "rill-browser",
+      "section": "New AI Tools",
+      "headline": "Rill Browser",
+      "summary": "a browser where Claude Code and Codex work beside you.",
+      "why_it_matters": null,
+      "audience": "developers and design engineers who want agents in the page context.",
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "genpage-3-0",
+      "section": "New AI Tools",
+      "headline": "GenPage 3.0",
+      "summary": "builds, personalizes and optimizes landing pages with AI.",
+      "why_it_matters": null,
+      "audience": "marketers and designers testing variants.",
+      "links": [
+        {
+          "label": "GenPage 3.0",
+          "url": "https://www.producthunt.com/products/genpage"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "velozity",
+      "section": "New AI Tools",
+      "headline": "Velozity",
+      "summary": "a multiplayer AI office where your team and agents work together.",
+      "why_it_matters": null,
+      "audience": "small teams experimenting with shared agent workspaces.",
+      "links": [
+        {
+          "label": "Velozity",
+          "url": "https://www.producthunt.com/products/velozity-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "audr-by-chargebee",
+      "section": "New AI Tools",
+      "headline": "AUDR by Chargebee",
+      "summary": "an open standard for tracking agent run costs.",
+      "why_it_matters": null,
+      "audience": "anyone shipping agent features who needs cost visibility.",
+      "links": [
+        {
+          "label": "AUDR by Chargebee",
+          "url": "https://www.producthunt.com/products/chargebee"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "incredible",
+      "section": "New AI Tools",
+      "headline": "Incredible",
+      "summary": "control your computer with your voice.",
+      "why_it_matters": null,
+      "audience": "prototyping voice-first interaction ideas.",
+      "links": [
+        {
+          "label": "Incredible",
+          "url": "https://www.producthunt.com/products/incredible"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "openseo",
+      "section": "New AI Tools",
+      "headline": "OpenSEO",
+      "summary": "open source Semrush alternative.",
+      "why_it_matters": null,
+      "audience": "designers and indie builders who ship their own sites.",
+      "links": [
+        {
+          "label": "OpenSEO",
+          "url": "https://www.producthunt.com/products/openseo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "section": "New AI Tools",
+      "headline": "Claude Haiku 5.5",
+      "summary": "Anthropic's fastest Haiku yet.",
+      "why_it_matters": null,
+      "audience": "high-volume, low-latency UI features such as inline suggestions.",
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://www.producthunt.com/products/claude-haiku-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "fastrouter-ai",
+      "section": "New AI Tools",
+      "headline": "FastRouter.ai",
+      "summary": "routes requests to the right LLM by cost, latency and quality.",
+      "why_it_matters": null,
+      "audience": "teams that want model-agnostic products.",
+      "links": [
+        {
+          "label": "FastRouter.ai",
+          "url": "https://www.producthunt.com/products/fastrouter-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "generative-ui-in-chat",
+      "section": "Trends to Watch",
+      "headline": "Generative UI in chat",
+      "summary": "GPT-6 renders forms and charts in replies.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to define constrained component sets a model can safely compose."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "design-agents-with-system-awareness",
+      "section": "Trends to Watch",
+      "headline": "Design agents with system awareness",
+      "summary": "The [Figma agent](https://releasebot.io/updates/figma) now reads library guidelines.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to write design system rules as machine-readable guidance."
+      },
+      "links": [
+        {
+          "label": "Figma agent",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "agent-cost-and-governance",
+      "section": "Trends to Watch",
+      "headline": "Agent cost and governance",
+      "summary": "AUDR, [treg](https://github.com/superdesigndev/treg) and [OpenBot](https://github.com/CopilotKit/OpenBot) all address tracking, secrets and auditing.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "what a trustworthy agent activity log looks like in UI."
+      },
+      "links": [
+        {
+          "label": "treg",
+          "url": "https://github.com/superdesigndev/treg"
+        },
+        {
+          "label": "OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "agent-native-browsers",
+      "section": "Trends to Watch",
+      "headline": "Agent-native browsers",
+      "summary": "[Rill Browser](https://www.producthunt.com/products/rill-3) puts coding agents next to the page.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "side-by-side human and agent interaction patterns."
+      },
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "chatgpt-intelligent-ui",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT intelligent UI",
+      "summary": "Replies contain real controls instead of text instructions.",
+      "why_it_matters": "the user acts in place, with no context switch to a separate screen.",
+      "why_label": "Why it works",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "figma-agent-live-viewing",
+      "section": "Product Design Inspiration",
+      "headline": "Figma agent live viewing",
+      "summary": "Watching a teammate's agent work turns a black box into a shared, observable process.",
+      "why_it_matters": "visibility builds trust and enables mid-course correction.",
+      "why_label": "Why it works",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "figma-motion-export-options",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Motion export options",
+      "summary": "Lottie, dotLottie, MP4 and WebM from one timeline.",
+      "why_it_matters": "it removes the handoff question of \"what format do you need?\"",
+      "why_label": "Why it works",
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "copilotkit-openbot",
+      "section": "GitHub & Open Source",
+      "headline": "CopilotKit/OpenBot",
+      "summary": "(6,043 stars): each agent gets a sandboxed workstation with an auditable action log, and supports AG-UI agents. Gaining attention for observable agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CopilotKit/OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "superdesigndev-treg",
+      "section": "GitHub & Open Source",
+      "headline": "superdesigndev/treg",
+      "summary": "(4,153 stars): a registry and proxy that centrally manages API keys for agent tools. Solves secret sprawl.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "superdesigndev/treg",
+          "url": "https://github.com/superdesigndev/treg"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "zvec-ai-zvec-grep",
+      "section": "GitHub & Open Source",
+      "headline": "zvec-ai/zvec-grep",
+      "summary": "(3,920 stars): local code search combining keyword and vector search for humans and agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "zvec-ai/zvec-grep",
+          "url": "https://github.com/zvec-ai/zvec-grep"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "ryze-ai-adgent-open-seo-mcp-skills",
+      "section": "GitHub & Open Source",
+      "headline": "Ryze-AI-Adgent/open-seo-mcp-skills",
+      "summary": "(3,806 stars): an MCP server connecting Claude to search, analytics and ad data.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Ryze-AI-Adgent/open-seo-mcp-skills",
+          "url": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "fuxicodex-fuxi",
+      "section": "GitHub & Open Source",
+      "headline": "fuxicodex/Fuxi",
+      "summary": "(3,350 stars): a terminal coding agent that routes across LLM providers to control cost. Star counts come from a [weekly MCP roundup](https://www.josedacruz.com/2026/10/06/github-weekly-mcp-tools-trending-right-now-september-28-october-4-2026/) and may have moved.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "fuxicodex/Fuxi",
+          "url": "https://github.com/fuxicodex/Fuxi"
+        },
+        {
+          "label": "weekly MCP roundup",
+          "url": "https://www.josedacruz.com/2026/10/06/github-weekly-mcp-tools-trending-right-now-september-28-october-4-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "product-hunt-weekly-leaderboard",
+      "section": "Social Buzz",
+      "headline": "Product Hunt weekly leaderboard",
+      "summary": "[Product Hunt's week of Oct 5](https://producthunt.com/leaderboard/weekly/2026/41) is led by agent workspaces and infrastructure (Velozity, Rill Browser, OpenBot, OpenSwarm), with open source alternatives ranking well. Some listings are promoted, so treat rank with care.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt weekly leaderboard",
+          "url": "https://producthunt.com/leaderboard/weekly/2026/41"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "developer-discussion",
+      "section": "Social Buzz",
+      "headline": "Developer discussion",
+      "summary": "Developer discussion centers on [the LMCache flaw](https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html) and on agent safety: a [SafeActBench paper](https://aiweekly.co/alerts/safeactbench-paper-shows-tool-using-agents-pass-97-static-but-act-before) found tool-using agents act before evidence 37 to 67 percent of the time.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Takeaway for designers",
+        "text": "confirmation and evidence-display patterns are real product work."
+      },
+      "links": [
+        {
+          "label": "Developer discussion",
+          "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html"
+        },
+        {
+          "label": "SafeActBench paper",
+          "url": "https://aiweekly.co/alerts/safeactbench-paper-shows-tool-using-agents-pass-97-static-but-act-before"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "figma-release-notes",
+      "section": "Learning Corner",
+      "headline": "Figma release notes",
+      "kicker": "Article",
+      "summary": "Read the agent GA and Motion entries to see where the design tool is heading.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "figma-youtube-channel",
+      "section": "Learning Corner",
+      "headline": "Figma YouTube channel",
+      "kicker": "Video",
+      "summary": "Look for walkthroughs of the agent and Motion beta.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma YouTube channel",
+          "url": "https://www.youtube.com/@Figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "openbot",
+      "section": "Learning Corner",
+      "headline": "OpenBot",
+      "kicker": "GitHub project",
+      "summary": "Study how it presents an agent's audit log.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "figma-community",
+      "section": "Learning Corner",
+      "headline": "Figma Community",
+      "kicker": "Design resource",
+      "summary": "Browse new Riffs and generative plugins.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Community",
+          "url": "https://www.figma.com/community"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "pair-the-figma-agent-with-library-guidelines",
+      "section": "Learning Corner",
+      "headline": "Pair the Figma agent with library guidelines",
+      "kicker": "AI workflow",
+      "summary": "Pair the [Figma](https://www.figma.com) agent with library guidelines so output matches your design system on the first pass.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Pair the Figma agent with library guidelines",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "generative-ui-component-kits",
+      "section": "Opportunities",
+      "headline": "Generative UI component kits",
+      "summary": "design constrained component libraries that models can compose in chat.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "agent-observability-ux",
+      "section": "Opportunities",
+      "headline": "Agent observability UX",
+      "summary": "audit logs, approval prompts and cost dashboards are under-designed.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "teen-safe-ai-patterns",
+      "section": "Opportunities",
+      "headline": "Teen-safe AI patterns",
+      "summary": "the Common Sense Media rating signals demand for better crisis and safeguard flows.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "motion-systems",
+      "section": "Opportunities",
+      "headline": "Motion systems",
+      "summary": "Figma Motion makes reusable animation styles a design system deliverable.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "design-system-guidelines-for-agents",
+      "section": "Opportunities",
+      "headline": "Design system guidelines for agents",
+      "summary": "offer services that turn brand rules into agent-ready guidelines.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    },
+    {
+      "id": "teach-the-figma-agent-your-system-25-minutes",
+      "section": "Today's Experiment",
+      "headline": "Teach the Figma agent your system (25 minutes)",
+      "summary": "In [Figma](https://www.figma.com), add design library guidelines to one small component library (spacing, naming, when to use each button). Ask the agent to build a settings screen. Compare it to a screen generated without guidelines and note which rules it ignored.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-09"
+    }
+  ],
+  "dont_miss": [
+    "**Figma agent is generally available:** try it with library guidelines.",
+    "**GPT-6 generative UI in ChatGPT:** study how replies render controls.",
+    "**LMCache RCE (CVSS 9.8):** check whether your stack uses it ([details](https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html))."
+  ],
+  "footnote": "Sources: aiweekly.co, Figma release notes via Releasebot, Product Hunt weekly leaderboard, a weekly GitHub MCP roundup, The Hacker News, TechNode, CNBC. Details on some items rely on aggregator summaries; the Anthropic Cyber Mission page could not be fetched, so its details are limited to the headline."
+}
