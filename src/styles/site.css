@@ -200,35 +200,6 @@ a.tag:hover { background: var(--bg-lift); }
 .logo__word { font: 500 15px/1 var(--font-heading); letter-spacing: -0.3px; }
 .logo .tag { padding: 3px 8px; }
 
-/* Product bento under the mark (from the Pathao hub), restyled: a hairline
-   panel instead of a shadow, line icons instead of renders, no accent. */
-.hub-menu {
-  position: fixed; z-index: 100; width: 360px; padding: 5px;
-  border-radius: var(--radius-10); background: var(--surface); border: 1px solid var(--border-subtle);
-  opacity: 0; visibility: hidden; transform: translateY(-5px); pointer-events: none;
-  transition: opacity var(--dur-fast) var(--ease-in), transform var(--dur-fast) var(--ease-in), visibility 0s linear var(--dur-fast);
-}
-.hub-menu.is-open {
-  opacity: 1; visibility: visible; transform: none; pointer-events: auto;
-  transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out), visibility 0s;
-}
-.hub-menu__home { display: flex; justify-content: space-between; align-items: center; padding: 10px 10px 10px; color: var(--text-muted); }
-.hub-menu__home:hover { color: var(--tone-strong); }
-.hub-menu ul { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
-.hub-menu li.is-wide { grid-column: span 2; }
-.hub-menu li.is-full { grid-column: 1 / -1; }
-.hub-menu li > a, .hub-menu li > span {
-  display: flex; flex-direction: column; justify-content: space-between; gap: 10px;
-  height: 80px; padding: 10px; border-radius: var(--radius-5);
-  background: var(--bg-base); font: 500 var(--body-sm-size)/var(--body-sm-lh) var(--font-body);
-  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
-}
-.hub-menu li.is-full > a { flex-direction: row; align-items: center; justify-content: space-between; height: 50px; }
-.hub-menu li > a:hover { background: var(--bg-lift); }
-.hub-menu li > a[aria-current='page'] { background: var(--tone-strong); color: var(--on-strong); }
-.hub-menu li > span { color: var(--tone-faint); cursor: default; }
-.hub-menu svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; }
-
 /* Mobile drawer */
 .drawer {
   position: fixed; inset: 0; z-index: 40; padding: calc(var(--nav-h) + 40px) var(--grid-margin) 40px;

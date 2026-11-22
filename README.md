@@ -96,8 +96,6 @@ masked headline reveals, image unmasks, the word-by-word statement).
 - `src/scripts/motion.ts` is a TypeScript port of the system's `motion.js`.
 - No accent colours. Colour lives in the article photographs, the Pathao mark,
   and one signal dot in the experiment drawing.
-- The Pathao Design product bento still opens under the top-left mark, linking
-  to the hub, prototypes, Motive and the rest, restyled to the system.
 
 **No em dashes, anywhere.** `scripts/check-dashes.mjs` runs before and after
 every build and fails it on a single one. Use a comma, a colon, or two sentences.

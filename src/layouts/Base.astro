@@ -13,35 +13,12 @@ interface Props {
 const { title, description = 'The daily AI and product design brief for the Pathao design team.', nav = null, overCover = false } = Astro.props;
 const pageTitle = title === 'Pathao Design News' ? title : `${title} | Pathao Design News`;
 
-// The product bento under the mark, as in the Pathao Design hub (hub-shell.js).
 const HUB = 'https://pathaoprototype.vercel.app';
-const ICON: Record<string, string> = {
-  prototypes: '<rect x="6" y="2.5" width="8" height="15" rx="1.5"/><path d="M9 15h2"/>',
-  tracker: '<path d="M4.5 17.5V3"/><path d="M4.5 3.5h10l-2 3.5 2 3.5h-10"/>',
-  clone: '<rect x="3" y="6" width="9" height="11" rx="1"/><path d="M8 6V3.5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1V13a1 1 0 0 1-1 1h-4"/>',
-  motive: '<path d="M2.5 15C6 15 7 5 10 5s4 10 7.5 10"/><circle cx="10" cy="5" r="1"/>',
-  assets: '<rect x="2.5" y="3.5" width="15" height="13" rx="1.5"/><circle cx="7" cy="8" r="1.5"/><path d="m17.5 13-4-4-8 7.5"/>',
-  foundation: '<path d="m10 3 7.5 4L10 11 2.5 7z"/><path d="m2.5 10.5 7.5 4 7.5-4"/><path d="m2.5 14 7.5 4 7.5-4"/>',
-  icons: '<path d="m10 2.8 2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L2.8 8.1l5-.7z"/>',
-  components: '<rect x="3" y="3" width="6" height="6" rx="1"/><rect x="11" y="3" width="6" height="6" rx="1"/><rect x="3" y="11" width="6" height="6" rx="1"/><rect x="11" y="11" width="6" height="6" rx="1"/>',
-  news: '<path d="M3 4h11v12.5H5a2 2 0 0 1-2-2z"/><path d="M14 7.5h3v7a2 2 0 0 1-2 2h-1"/><path d="M6 7.5h5M6 10.5h5M6 13.5h3"/>',
-};
-const PRODUCTS = [
-  { name: 'Prototypes', href: `${HUB}/prototypes`, icon: 'prototypes', wide: true },
-  { name: 'Tracker', href: `${HUB}/tracker`, icon: 'tracker' },
-  { name: 'Main clone', href: 'https://pathaotwin.vercel.app', icon: 'clone', ext: true },
-  { name: 'Motive', href: 'https://pathao-animation-handoff.vercel.app', icon: 'motive', ext: true },
-  { name: 'Assets', href: `${HUB}/assets`, icon: 'assets' },
-  { name: 'Foundation', href: `${HUB}/foundation`, icon: 'foundation' },
-  { name: 'Icons', icon: 'icons' },
-  { name: 'Components', href: `${HUB}/components`, icon: 'components' },
-];
 const NAV = [
   { key: 'today', label: 'Today', href: '/' },
   { key: 'archive', label: 'Archive', href: '/archive/' },
   { key: 'tools', label: 'Tools', href: '/tools/' },
 ];
-const icon = (k: string) => `<svg viewBox="0 0 20 20" aria-hidden="true">${ICON[k]}</svg>`;
 ---
 <!doctype html>
 <html lang="en">
@@ -75,30 +52,11 @@ const icon = (k: string) => `<svg viewBox="0 0 20 20" aria-hidden="true">${ICON[
 
     <header class:list={["nav", { "is-over": overCover }]} data-over={overCover ? "" : undefined}>
       <div class="container nav__inner">
-        <a class="logo" href="/" data-brand aria-label="Pathao Design News, home">
+        <a class="logo" href="/" aria-label="Pathao Design News, home">
           <img src="/assets/brand/pathao-icon-colour.svg" alt="" width="22" height="22" />
           <span class="logo__word">Pathao Design</span>
           <span class="tag">News</span>
         </a>
-        <nav class="hub-menu" aria-label="All Pathao Design products" data-menu>
-          <a class="hub-menu__home eyebrow" href={HUB}>Pathao Design <span>Hub</span></a>
-          <ul>
-            {PRODUCTS.map((p) => (
-              <li class:list={{ 'is-wide': p.wide }}>
-                {p.href ? (
-                  <a href={p.href} target={p.ext ? '_blank' : undefined} rel={p.ext ? 'noopener' : undefined}>
-                    <Fragment set:html={icon(p.icon)} /><span>{p.name}</span>
-                  </a>
-                ) : (
-                  <span aria-disabled="true"><Fragment set:html={icon(p.icon)} /><span>{p.name}</span></span>
-                )}
-              </li>
-            ))}
-            <li class="is-full">
-              <a href="/" aria-current="page"><span>News</span><Fragment set:html={icon('news')} /></a>
-            </li>
-          </ul>
-        </nav>
         <div class="nav__right">
           <nav class="nav__links" aria-label="Sections">
             {NAV.map((n) => <a class="nav__link" href={n.href} aria-current={nav === n.key ? 'page' : undefined}>{n.label}</a>)}

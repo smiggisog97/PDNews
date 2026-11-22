@@ -1,4 +1,4 @@
-// Page furniture: theme switch, the product bento under the mark, the drawer.
+// Page furniture: theme switch, the drawer, the nav over the cover.
 import './motion';
 
 const root = document.documentElement;
@@ -18,52 +18,6 @@ toggles.forEach((toggle) =>
     label();
   }),
 );
-
-/* -------------------------------------------------------------- menu ---
- * Hovering the mark opens every Pathao Design product right under it, as
- * in the hub. Pointer only; on touch the mark just links home. Keyboard
- * focus on the mark opens it too. */
-const brand = document.querySelector<HTMLAnchorElement>('[data-brand]');
-const panel = document.querySelector<HTMLElement>('[data-menu]');
-if (brand && panel && matchMedia('(hover: hover)').matches) {
-  let openTimer: number | undefined;
-  let closeTimer: number | undefined;
-  let suppress = false;
-  const place = () => {
-    const b = brand.getBoundingClientRect();
-    panel.style.left = `${Math.max(10, b.left - 10)}px`;
-    panel.style.top = `${b.bottom + 15}px`;
-  };
-  const open = (now = false) => {
-    clearTimeout(closeTimer);
-    if (panel.classList.contains('is-open')) return;
-    const go = () => { place(); panel.classList.add('is-open'); };
-    if (now) go(); else openTimer = window.setTimeout(go, 120);
-  };
-  const close = (now = false) => {
-    clearTimeout(openTimer);
-    closeTimer = window.setTimeout(() => panel.classList.remove('is-open'), now ? 0 : 220);
-  };
-  [brand, panel].forEach((el) => {
-    el.addEventListener('mouseenter', () => open());
-    el.addEventListener('mouseleave', () => close());
-  });
-  brand.addEventListener('focus', () => { if (!suppress) open(true); });
-  const leave = (e: FocusEvent) => {
-    const to = e.relatedTarget as Node | null;
-    if (!to || (!panel.contains(to) && to !== brand)) close(true);
-  };
-  brand.addEventListener('blur', leave);
-  panel.addEventListener('focusout', leave);
-  document.addEventListener('keydown', (e) => {
-    if (e.key !== 'Escape' || !panel.classList.contains('is-open')) return;
-    if (panel.contains(document.activeElement)) { suppress = true; brand.focus(); suppress = false; }
-    close(true);
-  });
-  addEventListener('scroll', () => close(true), { passive: true });
-} else if (panel) {
-  panel.remove();
-}
 
 /* ------------------------------------------------------------ drawer --- */
 const menuBtn = document.querySelector<HTMLButtonElement>('[data-drawer-toggle]');

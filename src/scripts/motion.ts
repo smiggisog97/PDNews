@@ -97,7 +97,7 @@ if (nav && !reduced) {
   const update = () => {
     const y = scrollY;
     if (Math.abs(y - last) > 6) {
-      const hide = y > last && y > innerHeight * 0.6 && !document.body.classList.contains('drawer-open') && !nav.matches(':focus-within') && !document.querySelector('.hub-menu.is-open');
+      const hide = y > last && y > innerHeight * 0.6 && !document.body.classList.contains('drawer-open') && !nav.matches(':focus-within');
       nav.classList.toggle('is-hidden', hide);
       last = y;
     }
