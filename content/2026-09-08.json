@@ -1,0 +1,777 @@
+{
+  "date": "2026-09-08",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1cbwN1f7cFBmU4yhcuzssw1HFEn6PJzMAiUAPHjsrtho/edit",
+  "highlights": [
+    {
+      "headline": "OpenAI shipped GPT-6 Astra,",
+      "summary": "[GPT-6 Astra](https://openai.com/index/gpt-6-astra/), its first model to cross the \"Critical\" cybersecurity capability threshold under its Preparedness Framework, rolling out to ChatGPT, the API, Azure, and AWS Bedrock this week."
+    },
+    {
+      "headline": "Anthropic answered with Claude Fable 5.1 and Mythos 5.1,",
+      "summary": "and cut cache-read pricing by 75 percent, per [reporting on the new wave of cyber-focused AI models](https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html)."
+    },
+    {
+      "headline": "Over 100 companies,",
+      "summary": "including [OpenAI](https://openai.com), Anthropic, and [Google DeepMind](https://deepmind.google), [signed a joint letter urging coordinated defenses against rogue AI agents](https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/)."
+    },
+    {
+      "headline": "Figma opened its Weave AI image tools to outside agents,",
+      "summary": "so [ChatGPT](https://openai.com/chatgpt), [Claude](https://claude.com), and [Cursor](https://cursor.com) can now run them directly, per the [Figma blog](https://www.figma.com/blog/connecting-figma-and-weave/)."
+    },
+    {
+      "headline": "On GitHub, visual agent builders",
+      "summary": "like [Langflow](https://github.com/langflow-ai/langflow), [Dify](https://github.com/langgenius/dify), and [Flowise](https://github.com/FlowiseAI/Flowise) still lead on stars, while composable \"agent skill\" repositories are the fastest-growing new category, per [this week's GitHub trending digest](https://startupcorners.com/digest/devtools-digest-2026-09-04)."
+    }
+  ],
+  "entries": [
+    {
+      "id": "gpt-6-astra-crosses-into-critical-cyber-capability",
+      "section": "AI Industry News",
+      "headline": "GPT-6 Astra crosses into \"Critical\" cyber capability",
+      "summary": "[GPT-6 Astra](https://openai.com/index/gpt-6-astra/) is [OpenAI's first model to trigger its Critical-level cybersecurity safeguard](https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html), meaning it can meaningfully assist skilled defenders with tasks like secure code review, but OpenAI says it will refuse advanced offensive requests such as building proof-of-concept exploits. It trained on more than 100,000 GPUs, OpenAI's largest run yet. API pricing lands at $10 per million input tokens and $50 per million output tokens.",
+      "why_it_matters": "for builders, this is the first mainstream model where the safety tier itself is now a marketed feature, not a footnote.",
+      "links": [
+        {
+          "label": "GPT-6 Astra",
+          "url": "https://openai.com/index/gpt-6-astra/"
+        },
+        {
+          "label": "OpenAI's first model to trigger its Critical-level cybersecurity safeguard",
+          "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "anthropic-ships-fable-5-1-and-mythos-5-1-cuts-cach",
+      "section": "AI Industry News",
+      "headline": "Anthropic ships Fable 5.1 and Mythos 5.1, cuts cache pricing 75%",
+      "summary": "[Anthropic](https://www.anthropic.com) released Claude Fable 5.1 alongside Claude Mythos 5.1, a higher-safeguard variant gated behind trusted-access programs for cybersecurity work, according to [this roundup of the new cyber-focused model releases](https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html). The 75 percent cut to cache-read pricing is the more immediately useful detail for anyone building long-context agents or design copilots on Claude, since repeated-context workflows just got meaningfully cheaper.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "this roundup of the new cyber-focused model releases",
+          "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "google-s-gemini-3-8-flash-cyber-leads-on-autonomou",
+      "section": "AI Industry News",
+      "headline": "Google's Gemini 3.8 Flash Cyber leads on autonomous vulnerability discovery",
+      "summary": "[Google DeepMind](https://deepmind.google)'s Gemini 3.8 Flash Cyber reportedly [outperforms larger frontier models from Anthropic and OpenAI on autonomous vulnerability discovery](https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html). It is a sign that specialized, cheaper models are starting to beat general frontier models on narrow, high-value tasks.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "outperforms larger frontier models from Anthropic and OpenAI on autonomous vulnerability discovery",
+          "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "100-companies-sign-a-joint-letter-on-rogue-ai-defe",
+      "section": "AI Industry News",
+      "headline": "100+ companies sign a joint letter on rogue AI defense",
+      "summary": "[OpenAI](https://openai.com), [Anthropic](https://www.anthropic.com), [Google](https://deepmind.google), [Microsoft](https://microsoft.com), and over 100 other companies [called for coordinated private and public sector action against AI-related cyber threats](https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/). Expect this to translate into more enterprise procurement requirements around agent monitoring and kill-switches over the next few months.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "openai-is-gaining-on-anthropic-with-business-users",
+      "section": "AI Industry News",
+      "headline": "OpenAI is gaining on Anthropic with business users",
+      "summary": "[New data indicates OpenAI is growing faster than Anthropic among U.S. business users this quarter](https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/), a shift worth tracking if your team is choosing a primary model vendor for internal tooling.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "New data indicates OpenAI is growing faster than Anthropic among U.S. business users this quarter",
+          "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "figma-makes-weave-tools-callable-from-any-agent",
+      "section": "Product Design & UX",
+      "headline": "Figma makes Weave tools callable from any agent",
+      "summary": "[Figma](https://www.figma.com) now lets its [Weave AI image tools run from ChatGPT, Claude, or Cursor via its MCP server](https://www.figma.com/blog/connecting-figma-and-weave/), without opening Weave directly. Describe what you need, the agent finds the right tool, runs it, and returns the result in your chat. Browse the full set at the [Figma MCP Catalog](https://www.figma.com/mcp-catalog/).",
+      "why_it_matters": "design ops teams can wire style transfers, product shoots, and material extraction into existing agent workflows instead of context-switching into Figma for one-off image tasks.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma blog",
+          "url": "https://www.figma.com/blog/connecting-figma-and-weave/"
+        },
+        {
+          "label": "Figma MCP Catalog",
+          "url": "https://www.figma.com/mcp-catalog/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "config-2026-aftershocks-code-layers-and-gpu-shader",
+      "section": "Product Design & UX",
+      "headline": "Config 2026 aftershocks: code layers and GPU shaders",
+      "summary": "Fallout from [Figma's Config 2026 keynote](https://www.figma.com/blog/config-2026-recap/) continues to shape the roadmap, with code layers positioning Figma as a shared canvas for design and code, and GPU-accelerated shaders now rolling out on paid plans, per [this coverage of the update](https://www.techtimes.com/articles/319041/20260625/figma-config-2026-code-layers-challenge-cursor-gpu-shaders-hit-paid-plans.htm). Worth watching whether this narrows the gap between Figma and code-first tools like [Cursor](https://cursor.com).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's Config 2026 keynote",
+          "url": "https://www.figma.com/blog/config-2026-recap/"
+        },
+        {
+          "label": "this coverage of the update",
+          "url": "https://www.techtimes.com/articles/319041/20260625/figma-config-2026-code-layers-challenge-cursor-gpu-shaders-hit-paid-plans.htm"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "gpt-6-astra",
+      "section": "New AI Tools",
+      "headline": "GPT-6 Astra",
+      "summary": "OpenAI's new flagship model, strong on computer use, browsing, and multi-step workflows.",
+      "why_it_matters": null,
+      "audience": "engineers and agent builders who need a more reliable long-horizon model.",
+      "links": [
+        {
+          "label": "GPT-6 Astra",
+          "url": "https://openai.com/index/gpt-6-astra/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "kilo-code-for-jetbrains",
+      "section": "New AI Tools",
+      "headline": "Kilo Code for JetBrains",
+      "summary": "Open-source, model-agnostic coding agent now native inside IntelliJ, WebStorm, PyCharm, and other JetBrains IDEs.",
+      "why_it_matters": null,
+      "audience": "developers who live in JetBrains and want parallel agent worktrees.",
+      "links": [
+        {
+          "label": "Kilo Code for JetBrains",
+          "url": "https://www.producthunt.com/products/kilocode"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "figma-mcp-catalog",
+      "section": "New AI Tools",
+      "headline": "Figma MCP Catalog",
+      "summary": "A directory of Figma tools you can call from any MCP-compatible agent.",
+      "why_it_matters": null,
+      "audience": "design ops teams automating repetitive visual tasks.",
+      "links": [
+        {
+          "label": "Figma MCP Catalog",
+          "url": "https://www.figma.com/mcp-catalog/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "tovel",
+      "section": "New AI Tools",
+      "headline": "Tovel",
+      "summary": "An AI recorder that turns calls and meetings into summaries, tasks, and calendar events for your approval.",
+      "why_it_matters": null,
+      "audience": "PMs and designers who run a lot of user interviews.",
+      "links": [
+        {
+          "label": "Tovel",
+          "url": "https://tovel.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "gstack",
+      "section": "New AI Tools",
+      "headline": "gstack",
+      "summary": "A set of 23 opinionated Claude Code tools covering CEO, designer, eng manager, and QA roles.",
+      "why_it_matters": null,
+      "audience": "teams standardizing how agents work across functions.",
+      "links": [
+        {
+          "label": "gstack",
+          "url": "https://github.com/garrytan/gstack"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "thunderphone",
+      "section": "New AI Tools",
+      "headline": "ThunderPhone",
+      "summary": "A platform for building reliable AI phone agents starting at two cents per minute.",
+      "why_it_matters": null,
+      "audience": "teams prototyping voice-based customer support.",
+      "links": [
+        {
+          "label": "ThunderPhone",
+          "url": "https://thunderphone.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "notchling",
+      "section": "New AI Tools",
+      "headline": "Notchling",
+      "summary": "A small animated creature that lives in your MacBook notch and reacts to idle time, battery, and dragged files.",
+      "why_it_matters": null,
+      "audience": "a light, low-stakes look at ambient/desktop-companion UI patterns.",
+      "links": [
+        {
+          "label": "Notchling",
+          "url": "https://www.producthunt.com/products/notchling-lives-in-your-notch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "safety-tier-as-a-product-feature",
+      "section": "Trends to Watch",
+      "headline": "Safety tier as a product feature",
+      "summary": "With [GPT-6 Astra](https://openai.com/index/gpt-6-astra/) hitting \"Critical\" and Google and Anthropic shipping cyber-specific model variants, safety classification is becoming something vendors market rather than bury in a system card.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how your team's model-selection criteria should account for capability tiers, not just benchmark scores."
+      },
+      "links": [
+        {
+          "label": "GPT-6 Astra",
+          "url": "https://openai.com/index/gpt-6-astra/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "mcp-s-resurgence-after-a-rough-start",
+      "section": "Trends to Watch",
+      "headline": "MCP's resurgence after a rough start",
+      "summary": "[Early 2026 saw MCP criticized on Hacker News for painful setup and token overhead](https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026); usage is now climbing again, with reported adoption growth around 35 percent in a month for some providers.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "revisit MCP if you wrote it off six months ago, tooling has matured."
+      },
+      "links": [
+        {
+          "label": "Early 2026 saw MCP criticized on Hacker News for painful setup and token overhead",
+          "url": "https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "design-tools-embedding-agents-instead-of-staying-p",
+      "section": "Trends to Watch",
+      "headline": "Design tools embedding agents instead of staying passive canvases",
+      "summary": "[Figma's Weave-via-MCP move](https://www.figma.com/blog/connecting-figma-and-weave/) is part of a broader shift: design software is becoming something agents act inside of, not just files agents read.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "audit which of your design tools have (or lack) an MCP or API surface for agents."
+      },
+      "links": [
+        {
+          "label": "Figma's Weave-via-MCP move",
+          "url": "https://www.figma.com/blog/connecting-figma-and-weave/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "composable-agent-skills-replacing-one-off-prompts",
+      "section": "Trends to Watch",
+      "headline": "Composable agent skills replacing one-off prompts",
+      "summary": "Repositories like [gstack](https://github.com/garrytan/gstack) point to skills, not prompts, becoming the reusable packaging unit for coding agents, per [this week's GitHub trending roundup](https://startupcorners.com/digest/devtools-digest-2026-09-04).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "start treating your best prompts as versioned, shareable skill files."
+      },
+      "links": [
+        {
+          "label": "gstack",
+          "url": "https://github.com/garrytan/gstack"
+        },
+        {
+          "label": "this week's GitHub trending roundup",
+          "url": "https://startupcorners.com/digest/devtools-digest-2026-09-04"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "figma-s-canvas-first-onboarding",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's canvas-first onboarding",
+      "summary": "New users are dropped straight into a canvas and prompted to draw a shape, apply a color, and create a frame, per [this onboarding pattern roundup](https://design4users.com/design-onboarding-ui-examples-web-and-mobile/).",
+      "why_it_matters": "it teaches the core interaction loop through doing, not through a tour overlay.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Onboarding pattern roundup",
+          "url": "https://design4users.com/design-onboarding-ui-examples-web-and-mobile/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "linear-s-60-second-setup",
+      "section": "Product Design Inspiration",
+      "headline": "Linear's 60-second setup",
+      "summary": "Linear onboards in under a minute with no guided tour, per [this 2026 onboarding analysis](https://userpilot.com/blog/best-user-onboarding-experience/). The underlying idea: confidence before completeness, get the user to a working state fast and let them discover depth later.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Linear",
+          "url": "https://linear.app"
+        },
+        {
+          "label": "2026 onboarding analysis",
+          "url": "https://userpilot.com/blog/best-user-onboarding-experience/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "airtable-s-role-based-contextual-onboarding",
+      "section": "Product Design Inspiration",
+      "headline": "Airtable's role-based contextual onboarding",
+      "summary": "Airtable adapts onboarding content to different user cohorts based on role, surfacing relevant value quickly instead of a generic walkthrough, per the same [onboarding analysis](https://userpilot.com/blog/best-user-onboarding-experience/). Useful pattern for any product with distinct buyer and end-user personas.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Airtable",
+          "url": "https://airtable.com"
+        },
+        {
+          "label": "Onboarding analysis",
+          "url": "https://userpilot.com/blog/best-user-onboarding-experience/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "langflow",
+      "section": "GitHub & Open Source",
+      "headline": "Langflow",
+      "summary": "A visual builder for AI agent pipelines, one of the most-starred agent frameworks on GitHub right now, per [this ranking of top AI repositories](https://blog.bytebytego.com/p/top-ai-github-repositories-in-2026).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Langflow",
+          "url": "https://github.com/langflow-ai/langflow"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "dify",
+      "section": "GitHub & Open Source",
+      "headline": "Dify",
+      "summary": "Another leading drag-and-drop agent pipeline builder, gaining stars alongside Langflow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Dify",
+          "url": "https://github.com/langgenius/dify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "flowise",
+      "section": "GitHub & Open Source",
+      "headline": "Flowise",
+      "summary": "The third of the top visual agent-builder trio, all pointing to drag-and-drop interfaces as the preferred way to design agent pipelines.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Flowise",
+          "url": "https://github.com/FlowiseAI/Flowise"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "gstack-2",
+      "section": "GitHub & Open Source",
+      "headline": "gstack",
+      "summary": "23 opinionated Claude Code tools spanning CEO, designer, engineering manager, and QA roles, gaining attention as a template for role-based agent skills, per [this GitHub trending digest](https://startupcorners.com/digest/devtools-digest-2026-09-04).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "gstack",
+          "url": "https://github.com/garrytan/gstack"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "atlas",
+      "section": "GitHub & Open Source",
+      "headline": "atlas",
+      "summary": "A source control layer built specifically to track and query changes made by multiple coding agents working on the same codebase.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "atlas",
+          "url": "https://github.com/pacifio/atlas"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "nodeterm",
+      "section": "GitHub & Open Source",
+      "headline": "nodeterm",
+      "summary": "A tmux-backed terminal manager that surfaces parallel agent sessions as nodes on a pan-and-zoom canvas, useful once you're running more than two or three agents at once.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "nodeterm",
+          "url": "https://github.com/eneskirca/nodeterm"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "claude-code-codex-skills-and-orchestration",
+      "section": "Social Buzz",
+      "headline": "Claude Code, Codex, skills, and orchestration",
+      "kicker": "Hacker News",
+      "summary": "Still being argued about, with a recurring conclusion that workflows matter more than demos and verification is the real bottleneck, per [this summary of the discourse](https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026). Tools in play: [Claude Code](https://claude.com/product/claude-code), [Codex](https://openai.com/codex/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Summary of the discourse",
+          "url": "https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "malicious-mcp-servers-can-split-instructions-acros",
+      "section": "Social Buzz",
+      "headline": "Malicious MCP servers can split instructions across channels",
+      "kicker": "Security researchers",
+      "summary": "Security researchers flagged that [malicious MCP servers can split instructions across channels to make coding agents exfiltrate secrets](https://thehackernews.com/2026/08/malicious-mcp-servers-can-split.html), worth a read before you connect a third-party MCP server to anything with production credentials.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "malicious MCP servers can split instructions across channels to make coding agents exfiltrate secrets",
+          "url": "https://thehackernews.com/2026/08/malicious-mcp-servers-can-split.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "a-heavy-wave-of-ai-agent-launches",
+      "section": "Social Buzz",
+      "headline": "A heavy wave of AI agent launches",
+      "kicker": "Product Hunt",
+      "summary": "[Product Hunt](https://www.producthunt.com) saw a heavy wave of AI agent launches this week, per [this tracker of top launches](https://hunted.space/top-products/latest), reinforcing that agent infrastructure for production deployment is now a mainstream launch category rather than a niche.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Tracker of top launches",
+          "url": "https://hunted.space/top-products/latest"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "what-hacker-news-gets-right-about-ai-coding-agents",
+      "section": "Learning Corner",
+      "headline": "What Hacker News Gets Right About AI Coding Agents in 2026",
+      "kicker": "Article",
+      "summary": "A grounded read on what's actually working versus hype.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What Hacker News Gets Right About AI Coding Agents in 2026",
+          "url": "https://www.developersdigest.tech/blog/what-hacker-news-gets-right-about-ai-coding-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "new-ux-ui-tools-of-2026-ai-tools",
+      "section": "Learning Corner",
+      "headline": "New UX/UI Tools of 2026 + AI Tools",
+      "kicker": "Video",
+      "summary": "A fast tour of new prototyping tools including AI animators, useful if you want a visual overview instead of reading roundups.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "New UX/UI Tools of 2026 + AI Tools",
+          "url": "https://www.youtube.com/watch?v=EbyjnAMMQSk"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "awesome-ai-agents-2026",
+      "section": "Learning Corner",
+      "headline": "awesome-ai-agents-2026",
+      "kicker": "GitHub project",
+      "summary": "A maintained, categorized list of 300+ agent frameworks and tools, worth bookmarking as a reference rather than reading in one sitting.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awesome-ai-agents-2026",
+          "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "state-of-ai-design-report-2026-tools-chapter",
+      "section": "Learning Corner",
+      "headline": "State of AI Design Report 2026, Tools chapter",
+      "kicker": "Design resource",
+      "summary": "A survey-backed look at which AI design tools practitioners actually use versus which get the most hype.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "State of AI Design Report 2026, Tools chapter",
+          "url": "https://stateofaidesign.com/chapters/tools"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "figma-weave-mcp-image-to-svg-pipeline-tutorial",
+      "section": "Learning Corner",
+      "headline": "Figma Weave + MCP image-to-SVG pipeline tutorial",
+      "kicker": "AI workflow",
+      "summary": "A concrete walkthrough of wiring Figma's new agent-callable tools into a real asset pipeline.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Weave + MCP image-to-SVG pipeline tutorial",
+          "url": "https://vectosolve.com/blog/figma-weave-mcp-image-to-svg-pipeline"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "agent-skill-design-systems",
+      "section": "Opportunities",
+      "headline": "Agent-skill design systems",
+      "summary": "Package your best design and review prompts as versioned skill files (following the [gstack](https://github.com/garrytan/gstack) pattern) and sell or license them to teams standardizing agent use.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "gstack",
+          "url": "https://github.com/garrytan/gstack"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "design-ops-automation-consulting",
+      "section": "Opportunities",
+      "headline": "Design-ops automation consulting",
+      "summary": "Help brand and design teams wire the new [Figma MCP Catalog](https://www.figma.com/mcp-catalog/) tools into existing production pipelines.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma MCP Catalog",
+          "url": "https://www.figma.com/mcp-catalog/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "security-aware-ux-for-cyber-tooling",
+      "section": "Opportunities",
+      "headline": "Security-aware UX for cyber tooling",
+      "summary": "As models like [GPT-6 Astra](https://openai.com/index/gpt-6-astra/) reach Critical capability tiers, there is growing demand for interfaces that make agent permissions, logging, and kill-switches legible to non-security users.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "GPT-6 Astra",
+          "url": "https://openai.com/index/gpt-6-astra/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "voice-agent-front-ends",
+      "section": "Opportunities",
+      "headline": "Voice agent front-ends",
+      "summary": "Platforms like [ThunderPhone](https://thunderphone.com/) make it cheap to spin up AI phone agents; the open gap is good conversational UX and escalation design layered on top.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ThunderPhone",
+          "url": "https://thunderphone.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "interview-to-insight-tooling",
+      "section": "Opportunities",
+      "headline": "Interview-to-insight tooling",
+      "summary": "Build lightweight layers on top of recorders like [Tovel](https://tovel.ai/) that turn raw research calls into structured, shareable design artifacts.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Tovel",
+          "url": "https://tovel.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    },
+    {
+      "id": "run-a-weave-tool-from-chat-via-the-figma-mcp-serve",
+      "section": "Today's Experiment",
+      "headline": "Run a Weave tool from chat via the Figma MCP server",
+      "kicker": "15 to 25 minutes",
+      "summary": "Install the [Figma MCP server](https://www.figma.com/mcp-catalog/) and connect it to [Claude](https://claude.com) or [Cursor](https://cursor.com). Run one Weave tool (a style transfer or product shot) entirely from chat, without opening Figma. Time the round-trip and note where the handoff still feels clunky. Fifteen to twenty-five minutes.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma MCP server",
+          "url": "https://www.figma.com/mcp-catalog/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.com"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-09-08"
+    }
+  ],
+  "dont_miss": [
+    "[GPT-6 Astra](https://openai.com/index/gpt-6-astra/) rollout, the first Critical-tier model, which changes what \"safe enough to ship\" means for anyone building on top of it.",
+    "Anthropic's Fable and Mythos 5.1 plus a [75 percent cache-pricing cut](https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html), making long-context Claude workflows meaningfully cheaper today.",
+    "[Figma Weave via MCP](https://www.figma.com/blog/connecting-figma-and-weave/), Figma's design tools are now callable from any agent chat, not just inside Figma itself."
+  ],
+  "footnote": "Sourced from OpenAI, Anthropic, Google, Figma, TechCrunch, The Hacker News, CNBC, Product Hunt, GitHub, and Hacker News community discussion, covering the 24 to 72 hours prior to this brief."
+}
