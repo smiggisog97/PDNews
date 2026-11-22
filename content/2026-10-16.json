@@ -1,0 +1,698 @@
+{
+  "date": "2026-10-16",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1mEyQT1JN_ggJzS7rt-x53AwpfSiyxI1aILO7LmLvVi0/edit",
+  "highlights": [
+    {
+      "headline": "Figma bets on agents.",
+      "summary": "[Figma](https://www.figma.com) launched Specs, a Markdown editor for design rules that agents read, and moved code layers to open beta ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform))."
+    },
+    {
+      "headline": "Regulators close in.",
+      "summary": "The FTC sent civil investigative demands to [OpenAI](https://www.openai.com) and [Anthropic](https://www.anthropic.com), and the EU AI Office opened its first AI Act probes into both ([AI Weekly](https://aiweekly.co/alerts/ftc-hits-openai-and-anthropic-with-50-page-civil-investigative-demands-over-ai))."
+    },
+    {
+      "headline": "Open weights surge.",
+      "summary": "[Meta](https://about.meta.com) released Muse Spark Open (816B MoE, 1M context) and [NVIDIA](https://www.nvidia.com) open-sourced Nemotron 3.5 Super VL ([AI Weekly](https://aiweekly.co/ai-news-today))."
+    },
+    {
+      "headline": "Generative UI goes mainstream.",
+      "summary": "ChatGPT now renders charts, buttons and forms inside answers alongside GPT-6 ([AI Weekly](https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6))."
+    },
+    {
+      "headline": "Anthropic financials.",
+      "summary": "Anthropic reportedly told investors Q3 revenue hit $16.8B, up 45% ([AI Weekly](https://aiweekly.co/alerts/anthropic-tells-investors-q3-revenue-hit-168b-up-45))."
+    }
+  ],
+  "entries": [
+    {
+      "id": "regulators-target-openai-and-anthropic",
+      "section": "AI Industry News",
+      "headline": "Regulators target OpenAI and Anthropic",
+      "summary": "The FTC issued 50-page civil investigative demands to both labs over security incidents, safeguards and privacy, and plans to subpoena more firms ([AI Weekly](https://aiweekly.co/ai-news-today)). The EU AI Office opened its first AI Act probes into both ([AI Weekly](https://aiweekly.co/alerts/eu-ai-office-opens-first-ai-act-probes-into-openai-anthropic)). Eight state attorneys general also sued OpenAI over ChatGPT harms to minors ([AI Weekly](https://aiweekly.co/alerts/eight-state-ags-sue-openai-over-chatgpt-child-safety-claims)).",
+      "why_it_matters": "Compliance requirements will reach product teams. Expect more disclosure, age-gating and logging work in AI features.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/ai-news-today"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/eu-ai-office-opens-first-ai-act-probes-into-openai-anthropic"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/eight-state-ags-sue-openai-over-chatgpt-child-safety-claims"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16",
+      "lead": true
+    },
+    {
+      "id": "meta-and-nvidia-push-open-weights",
+      "section": "AI Industry News",
+      "headline": "Meta and NVIDIA push open weights",
+      "summary": "Meta's Muse Spark Open is an 816B-parameter MoE with 42B active and a 1M context window ([Meta](https://research.meta.ai/blog/muse-spark-open)). NVIDIA released Nemotron 3.5 Super VL, a 120B MoE with weights under the OpenMDW license ([VentureBeat](https://venturebeat.com/technology/nvidias-new-open-nemotron-3-5-super-vl-with-post-training-beats-claude-opus-5-gpt-6-1-sol-on-specialized-task-benchmarks)). NVIDIA's benchmark claims are self-reported.",
+      "why_it_matters": "Strong local and self-hosted models make private prototyping cheaper. Anthropic executives are arguing publicly that open weights carry misuse risk ([Fortune](https://fortune.com/2026/10/15/anthropic-dual-use-ai-defends-oversight-singapore)).",
+      "links": [
+        {
+          "label": "Meta",
+          "url": "https://research.meta.ai/blog/muse-spark-open"
+        },
+        {
+          "label": "VentureBeat",
+          "url": "https://venturebeat.com/technology/nvidias-new-open-nemotron-3-5-super-vl-with-post-training-beats-claude-opus-5-gpt-6-1-sol-on-specialized-task-benchmarks"
+        },
+        {
+          "label": "Fortune",
+          "url": "https://fortune.com/2026/10/15/anthropic-dual-use-ai-defends-oversight-singapore"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "openai-model-retirements-and-ads",
+      "section": "AI Industry News",
+      "headline": "OpenAI: model retirements and ads",
+      "summary": "OpenAI will retire GPT-4o, GPT-4o-mini and GPT-4.1 from its API on Jan 14 ([AI Weekly](https://aiweekly.co/alerts/openai-deprecates-three-image-apis-by-december-2026)). It is also cutting ChatGPT ad prices to court small businesses ([AI Weekly](https://aiweekly.co/alerts/the-information-openai-cuts-chatgpt-ad-prices-and-hires-from-meta-to-court)).",
+      "why_it_matters": "Audit any product still calling the retiring models. Ads inside AI answers will reshape how users trust conversational UI.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/openai-deprecates-three-image-apis-by-december-2026"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/the-information-openai-cuts-chatgpt-ad-prices-and-hires-from-meta-to-court"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "anthropic-scion-singapore-and-cheaper-haiku",
+      "section": "AI Industry News",
+      "headline": "Anthropic: Scion, Singapore and cheaper Haiku",
+      "summary": "Anthropic open-sourced Scion, a Git replacement built with Claude ([AI Weekly](https://aiweekly.co/alerts/anthropic-builds-scion-to-replace-git-after-merges-hit-30000day)), opened a Singapore office ([AI Weekly](https://aiweekly.co/alerts/anthropic-opens-singapore-office-signs-government-mou)), and cut Claude Haiku 5.5 pricing 75% versus Haiku 4.5 ([AI Weekly](https://aiweekly.co/alerts/anthropic-cuts-claude-haiku-55-price-75-below-haiku-45)). These items come from a news tracker summarizing original reports. Check the primary source before acting on any single claim.",
+      "why_it_matters": "Cheaper fast models make always-on, in-product AI features economically viable.",
+      "links": [
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/anthropic-builds-scion-to-replace-git-after-merges-hit-30000day"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/anthropic-opens-singapore-office-signs-government-mou"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/anthropic-cuts-claude-haiku-55-price-75-below-haiku-45"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "figma-specs-and-agent-context",
+      "section": "Product Design & UX",
+      "headline": "Figma Specs and agent context",
+      "summary": "[Figma](https://www.figma.com) introduced Specs at Config India: a Markdown editor to define a design language, referencing canvas elements, FigJam diagrams and code layers. Teams can centralize design libraries, code libraries and guidelines so agents follow brand rules ([Dataconomy](https://dataconomy.com/2026/10/15/figma-launches-specs-to-guide-ai-with-design-rules)).",
+      "why_it_matters": "Your design system becomes machine-readable instructions, not just components.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Dataconomy",
+          "url": "https://dataconomy.com/2026/10/15/figma-launches-specs-to-guide-ai-with-design-rules"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "code-layers-in-open-beta-mcp-expansion",
+      "section": "Product Design & UX",
+      "headline": "Code layers in open beta, MCP expansion",
+      "summary": "Code layers add real code to canvas designs for interactive prototypes, and the agent can convert a design to code. Figma added 20+ tools to its MCP, and is integrating the Payload CMS with [Figma Make](https://www.figma.com/make/) ([TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform)).",
+      "why_it_matters": "Prototypes can carry real logic and content without a handoff.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "chatgpt-generative-ui",
+      "section": "Product Design & UX",
+      "headline": "ChatGPT generative UI",
+      "summary": "[ChatGPT](https://chatgpt.com) now renders charts, buttons and forms in responses ([AI Weekly](https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6)).",
+      "why_it_matters": "Designing the components an AI can assemble is becoming a core design task.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "rill-browser",
+      "section": "New AI Tools",
+      "headline": "Rill Browser",
+      "summary": "A browser where Claude Code and Codex work beside you. Promoted listing, verify claims.",
+      "why_it_matters": null,
+      "audience": "developers and designers testing agent-driven workflows.",
+      "links": [
+        {
+          "label": "Rill Browser",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "section": "New AI Tools",
+      "headline": "Claude Haiku 5.5",
+      "summary": "Anthropic's fastest Haiku, now 75% cheaper.",
+      "why_it_matters": null,
+      "audience": "anyone adding low-latency AI to a product.",
+      "links": [
+        {
+          "label": "Claude Haiku 5.5",
+          "url": "https://www.producthunt.com/products/claude-haiku-5-5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "diagram-design",
+      "section": "New AI Tools",
+      "headline": "diagram-design",
+      "summary": "42 diagram types for coding agents, output as self-contained HTML and SVG.",
+      "why_it_matters": null,
+      "audience": "designers documenting systems and flows.",
+      "links": [
+        {
+          "label": "diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "artcraft",
+      "section": "New AI Tools",
+      "headline": "ArtCraft",
+      "summary": "Visual environment for AI image and video work across 62 models, with compositing and character consistency.",
+      "why_it_matters": null,
+      "audience": "creative and motion designers.",
+      "links": [
+        {
+          "label": "ArtCraft",
+          "url": "https://github.com/storytold/artcraft"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "openswarm",
+      "section": "New AI Tools",
+      "headline": "OpenSwarm",
+      "summary": "A swarm of agents in the place you work. Promoted listing.",
+      "why_it_matters": null,
+      "audience": "teams experimenting with multi-agent workflows.",
+      "links": [
+        {
+          "label": "OpenSwarm",
+          "url": "https://www.producthunt.com/products/openswarm-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "genpage-3-0",
+      "section": "New AI Tools",
+      "headline": "GenPage 3.0",
+      "summary": "Build, personalize and optimize landing pages with AI. Promoted listing.",
+      "why_it_matters": null,
+      "audience": "marketers and solo founders.",
+      "links": [
+        {
+          "label": "GenPage 3.0",
+          "url": "https://www.producthunt.com/products/genpage"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "design-systems-as-agent-instructions",
+      "section": "Trends to Watch",
+      "headline": "Design systems as agent instructions",
+      "summary": "Figma Specs and the expanding Figma MCP signal that written rules, not only components, will steer AI output.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "writing precise design principles and token documentation."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "generative-ui",
+      "section": "Trends to Watch",
+      "headline": "Generative UI",
+      "summary": "Interfaces assembled by the model at response time.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "designing component libraries and constraints for AI composition."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "token-cost-compression",
+      "section": "Trends to Watch",
+      "headline": "Token-cost compression",
+      "summary": "Several trending repos exist to cut agent token use ([agents-radar digest](https://github.com/ghub1821239/agents-radar/issues/628)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "context budgeting for agent workflows."
+      },
+      "links": [
+        {
+          "label": "agents-radar digest",
+          "url": "https://github.com/ghub1821239/agents-radar/issues/628"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "open-weight-frontier",
+      "section": "Trends to Watch",
+      "headline": "Open-weight frontier",
+      "summary": "Big open models plus regulatory pressure will shape what you can ship and where.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "chatgpt-inline-interactive-responses",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT inline interactive responses",
+      "summary": "Buttons and forms appear where the answer is, so users act without leaving the thread ([source](https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6)).",
+      "why_it_matters": "It removes a context switch and keeps intent and action together.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "source",
+          "url": "https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "figma-agent-on-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Figma agent on canvas",
+      "summary": "The [Figma](https://www.figma.com) agent works inside the canvas you already use, constrained by Specs.",
+      "why_it_matters": "Guardrails live next to the work, so output is predictable and reviewable.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "rill-browser-2",
+      "section": "Product Design Inspiration",
+      "headline": "Rill Browser",
+      "summary": "[Rill](https://www.producthunt.com/products/rill-3) places coding agents beside the page you browse. The pattern, a human and agent sharing one surface, is worth studying for supervision and handoff UX.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Rill",
+          "url": "https://www.producthunt.com/products/rill-3"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "morluto-rea",
+      "section": "GitHub & Open Source",
+      "headline": "morluto/rea",
+      "summary": "Agent reverse-engineering framework using MCP, running locally. Gained about 25.8K stars in one day per the digest ([source](https://github.com/ghub1821239/agents-radar/issues/628)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "morluto/rea",
+          "url": "https://github.com/morluto/rea"
+        },
+        {
+          "label": "source",
+          "url": "https://github.com/ghub1821239/agents-radar/issues/628"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "thedotmack-claude-mem",
+      "section": "GitHub & Open Source",
+      "headline": "thedotmack/claude-mem",
+      "summary": "Long-term memory across agent sessions, which lowers repeated-context token costs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "affaan-m-ecc",
+      "section": "GitHub & Open Source",
+      "headline": "affaan-m/ECC",
+      "summary": "Agent harness for Claude Code and Codex with skills, memory and security, now the largest project on the digest at about 276K stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "juliusbrussee-caveman",
+      "section": "GitHub & Open Source",
+      "headline": "JuliusBrussee/caveman",
+      "summary": "A skill that compresses agent output, reportedly saving about 65% of tokens (unverified).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "hugohe3-ppt-master",
+      "section": "GitHub & Open Source",
+      "headline": "hugohe3/ppt-master",
+      "summary": "Turns documents or topics into animated PowerPoint decks.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "hugohe3/ppt-master",
+          "url": "https://github.com/hugohe3/ppt-master"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "anthropics-knowledge-work-plugins",
+      "section": "GitHub & Open Source",
+      "headline": "anthropics/knowledge-work-plugins",
+      "summary": "File-based plugins for Claude Cowork across sales, legal, finance and data.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "social-buzz-this-run",
+      "section": "Social Buzz",
+      "headline": "Social buzz this run",
+      "summary": "I could not load [Hacker News](https://news.ycombinator.com) or X live this run, so this section reflects what dominates coverage instead. Open-weight safety versus access is the loudest debate, driven by Anthropic's public stance ([Fortune](https://fortune.com/2026/10/15/anthropic-dual-use-ai-defends-oversight-singapore)). On [Product Hunt](https://www.producthunt.com), agent infrastructure and cost tracking led the week, including [AUDR by Chargebee](https://www.producthunt.com/products/chargebee), an open standard for tracking agent run costs. Many top Product Hunt placements are promoted, so treat rank as weak signal ([weekly leaderboard](https://www.producthunt.com/leaderboard/weekly/2026/41)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "label": "Fortune",
+          "url": "https://fortune.com/2026/10/15/anthropic-dual-use-ai-defends-oversight-singapore"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com"
+        },
+        {
+          "label": "AUDR by Chargebee",
+          "url": "https://www.producthunt.com/products/chargebee"
+        },
+        {
+          "label": "weekly leaderboard",
+          "url": "https://www.producthunt.com/leaderboard/weekly/2026/41"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "techcrunch-on-figma-s-agent-features",
+      "section": "Learning Corner",
+      "headline": "TechCrunch on Figma's agent features",
+      "kicker": "Article",
+      "summary": "Read it to understand where design tooling is heading.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "TechCrunch on Figma's agent features",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "figma-youtube-channel",
+      "section": "Learning Corner",
+      "headline": "Figma YouTube channel",
+      "kicker": "Video",
+      "summary": "None verified this run. Search the channel for Config sessions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma YouTube channel",
+          "url": "https://www.youtube.com/@Figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "diagram-design-2",
+      "section": "Learning Corner",
+      "headline": "diagram-design",
+      "kicker": "GitHub project",
+      "summary": "Study how skills encode a design vocabulary for agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "figma-community",
+      "section": "Learning Corner",
+      "headline": "Figma Community",
+      "kicker": "Design resource",
+      "summary": "Browse design system files to see how libraries are structured for reuse.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Community",
+          "url": "https://www.figma.com/community"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "figma-mcp-with-cursor",
+      "section": "Learning Corner",
+      "headline": "Figma MCP with Cursor",
+      "kicker": "AI workflow",
+      "summary": "Pair the [Figma](https://www.figma.com) MCP with [Cursor](https://cursor.com) to move from design to code ([product designer's walkthrough](https://medium.com/@mariamargarida/brain-dump-how-using-figma-mcp-server-with-cursor-is-changing-my-life-as-a-product-designer-830ae2e95a65)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "product designer's walkthrough",
+          "url": "https://medium.com/@mariamargarida/brain-dump-how-using-figma-mcp-server-with-cursor-is-changing-my-life-as-a-product-designer-830ae2e95a65"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "design-system-for-agents-consulting",
+      "section": "Opportunities",
+      "headline": "Design-system-for-agents consulting",
+      "summary": "Teams need Specs-style rule documents so AI output stays on brand.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "generative-ui-component-kits",
+      "section": "Opportunities",
+      "headline": "Generative UI component kits",
+      "summary": "Design constrained component libraries models can safely assemble.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "compliance-ux",
+      "section": "Opportunities",
+      "headline": "Compliance UX",
+      "summary": "With FTC, EU and state actions, disclosure, consent and age-gating flows need designers.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "model-migration-audits",
+      "section": "Opportunities",
+      "headline": "Model migration audits",
+      "summary": "OpenAI's Jan 14 retirements create paid work updating AI features.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    },
+    {
+      "id": "write-a-1-page-design-spec-for-an-agent",
+      "section": "Today's Experiment",
+      "headline": "Write a 1-page design spec for an agent",
+      "kicker": "25 minutes",
+      "summary": "Pick one of your products. Write a Markdown file with your color, spacing, tone and component rules. Give it to [Claude](https://claude.ai) or [Cursor](https://cursor.com) alongside the [Figma](https://www.figma.com) MCP, ask for one screen, and note which rules it ignored. Revise the rules and rerun.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-10-16"
+    }
+  ],
+  "dont_miss": [
+    "[Figma Specs and code layers](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform): the clearest signal of where design tooling is going.",
+    "[ChatGPT's generative UI](https://aiweekly.co/alerts/openai-launches-chatgpt-intelligent-ui-alongside-gpt-6): it changes what interface design means.",
+    "[OpenAI's Jan 14 model retirements](https://aiweekly.co/alerts/openai-deprecates-three-image-apis-by-december-2026): check your dependencies now."
+  ],
+  "footnote": "Sources: TechCrunch, Dataconomy, Fortune, AI Weekly (a news tracker summarizing original reports), Product Hunt, and GitHub digests. Hacker News and X could not be read this run. Tracker-sourced claims are unverified against primary reports."
+}
