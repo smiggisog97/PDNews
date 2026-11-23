@@ -1,0 +1,984 @@
+{
+  "date": "2026-11-07",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1JfwN-GZu8KoWDaseXsPNFuu0SZwGUvSj3sfmiXMZJPU/edit",
+  "highlights": [
+    {
+      "headline": "AI spending is cooling and valuations are sliding.",
+      "summary": "[Ramp data](https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/) shows token spend grew just 1.5% across August and September, while [Anthropic](https://www.anthropic.com) and [OpenAI](https://openai.com) IPO valuation targets reportedly dropped."
+    },
+    {
+      "headline": "Figma is turning into a code-and-agent workspace.",
+      "summary": "[Figma](https://www.figma.com) shipped agent-generated vector illustrations (Nov 5) and a code layer agent that reads prototype connections (Nov 3)."
+    },
+    {
+      "headline": "OpenAI ships a Critical-rated security model.",
+      "summary": "[OpenAI's Linux kernel study](https://openai.com/index/a-thousand-fewer-paths-to-root/) reports 948 working privilege-escalation exploits from a model at about $1,279 each."
+    },
+    {
+      "headline": "Agent orchestration is consolidating.",
+      "summary": "[Meta](https://www.meta.com) is acquiring [Conductor](https://conductor.build/), and [OpenAI](https://openai.com) is buying [Pierre](https://openai.com/index/openai-to-acquire-pierre/), whose libraries power parts of the Codex app."
+    },
+    {
+      "headline": "Trust and cost are the new agent friction.",
+      "summary": "A top [Hacker News thread](https://news.ycombinator.com/item?id=50385272) (1,547 points) flags Claude Code sending email addresses to websites, and Apple is cutting engineers' AI token allowances."
+    }
+  ],
+  "section_notes": {
+    "GitHub & Open Source": "Star counts come from third-party roundups and were not independently verified."
+  },
+  "entries": [
+    {
+      "id": "ai-spend-stalls-as-price-cuts-bite",
+      "section": "AI Industry News",
+      "headline": "AI spend stalls as price cuts bite",
+      "summary": "[Ramp's AI Index](https://ramp.com/data/ai-index?metric=token-spend&detail=maker&mode=volume) shows token spend up only 1.5% across August and September after a 42% jump from June to July, then 8.9% growth from Sept 23 to Oct 23. Median firms spend $12 to $15 per employee per month. [OpenAI halved API prices for GPT-6 Sol and Luna](https://openai.com/index/introducing-gpt-6-sol-and-luna/), and Anthropic cut prices too. Bloomberg reported Anthropic's potential valuation fell from about $2 trillion to $1.2 to $1.3 trillion. Source: [TechCrunch](https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/).",
+      "why_it_matters": "Usage is rising while revenue per token falls.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "expect cheaper models and more pressure to prove ROI on every AI feature you ship."
+      },
+      "links": [
+        {
+          "label": "AI spend stalls as price cuts bite",
+          "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/"
+        },
+        {
+          "label": "Ramp's AI Index",
+          "url": "https://ramp.com/data/ai-index?metric=token-spend&detail=maker&mode=volume"
+        },
+        {
+          "label": "OpenAI halved API prices for GPT-6 Sol and Luna",
+          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07",
+      "lead": true
+    },
+    {
+      "id": "openai-gpt-6-cyber-and-the-linux-kernel-study",
+      "section": "AI Industry News",
+      "headline": "OpenAI GPT-6 Cyber and the Linux kernel study",
+      "summary": "OpenAI launched GPT-6 Cyber, rated \"Critical\" under its Preparedness Framework, to vetted customers first via API and Codex. Its [Linux study](https://openai.com/index/a-thousand-fewer-paths-to-root/) reports 1,724 reproduced issues and 948 working local privilege-escalation exploits, against 166 in a prior run. Coverage: [DEV Community digest](https://dev.to/hiroki-ii-ai/ai-daily-digest-november-6-2026-openai-ships-gpt-6-cyber-meta-buys-conductor-anthropic-locks-1jij).",
+      "why_it_matters": "Agents now find real vulnerabilities at scale.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "assume AI-assisted attackers and tighten dependency and sandbox hygiene."
+      },
+      "links": [
+        {
+          "label": "OpenAI GPT-6 Cyber and the Linux kernel study",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+        },
+        {
+          "label": "DEV Community digest",
+          "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-6-2026-openai-ships-gpt-6-cyber-meta-buys-conductor-anthropic-locks-1jij"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "meta-buys-conductor-openai-buys-pierre",
+      "section": "AI Industry News",
+      "headline": "Meta buys Conductor, OpenAI buys Pierre",
+      "summary": "[Conductor announced it is joining Meta](https://conductor.build/announcement). New sign-ups closed Nov 4, cloud goes read-only Nov 13, and data deletion starts Nov 20. [OpenAI said it will acquire Pierre](https://openai.com/index/openai-to-acquire-pierre/), pending regulatory approval. Source: [Agent Tools Today](https://munderdiffl.in/blog/agent-tools-today-2026-11-05/).",
+      "why_it_matters": "Multi-agent workspaces are becoming platform features.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "if you use Conductor Cloud, export your data before Nov 13."
+      },
+      "links": [
+        {
+          "label": "Meta buys Conductor, OpenAI buys Pierre",
+          "url": "https://conductor.build/announcement"
+        },
+        {
+          "label": "OpenAI said it will acquire Pierre",
+          "url": "https://openai.com/index/openai-to-acquire-pierre/"
+        },
+        {
+          "label": "Agent Tools Today",
+          "url": "https://munderdiffl.in/blog/agent-tools-today-2026-11-05/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "anthropic-ships-enterprise-security-controls",
+      "section": "AI Industry News",
+      "headline": "Anthropic ships enterprise security controls",
+      "summary": "[Anthropic](https://claude.com/news) made prompt hooks and pre-tool-call hooks generally available for [Claude](https://claude.com), so DLP vendors can inspect prompts and tool calls. A security center and a multi-org parent console are in beta. Anthropic's revised IPO filing also says it \"may imminently meet\" its definition of dramatically accelerated AI-driven progress ([TechCrunch](https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/)).",
+      "why_it_matters": "Agent governance is now a purchasing criterion.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "hook-based approval flows are a UX surface worth designing well."
+      },
+      "links": [
+        {
+          "label": "Anthropic ships enterprise security controls",
+          "url": "https://claude.com/news"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "agents-are-not-buying-anything-yet",
+      "section": "AI Industry News",
+      "headline": "Agents are not buying anything yet",
+      "summary": "[Uber](https://www.uber.com) said agents booked 4 rides and about 500 food orders in its busiest October week out of roughly 320 million trips and orders ([TechCrunch](https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/)). [DoorDash](https://www.doordash.com) reported only several hundred agent orders ([TechCrunch](https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/)).",
+      "why_it_matters": "Agentic commerce is hype ahead of behavior.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "human-in-the-loop checkout is still the real product."
+      },
+      "links": [
+        {
+          "label": "Agents are not buying anything yet",
+          "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/"
+        },
+        {
+          "label": "Uber",
+          "url": "https://www.uber.com"
+        },
+        {
+          "label": "DoorDash",
+          "url": "https://www.doordash.com"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "cost-control-at-the-big-companies",
+      "section": "AI Industry News",
+      "headline": "Cost control at the big companies",
+      "summary": "[Apple](https://www.apple.com) reportedly cut some engineers' daily AI cap from $300 to $200 ([9to5Mac](https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/)). [Revolut](https://www.revolut.com) says it cut AI coding costs about 90% by self-hosting GLM ([The Register](https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345), company-reported).",
+      "why_it_matters": "token efficiency is a skill. Learn to pick the cheapest model that passes your evals.",
+      "links": [
+        {
+          "label": "Cost control at the big companies",
+          "url": "https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com"
+        },
+        {
+          "label": "Revolut",
+          "url": "https://www.revolut.com"
+        },
+        {
+          "label": "The Register",
+          "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "figma-agent-made-vectors-and-code-layers",
+      "section": "Product Design & UX",
+      "headline": "Figma: agent-made vectors and code layers",
+      "summary": "[Figma](https://www.figma.com) now lets agents generate vector illustrations and icons with editable layers and strokes, ready for Figma Motion (Nov 5). The code layer agent reads prototype connections in open beta (Nov 3), and shader export reaches 4096px (Nov 2). Details: [Figma release notes via Releasebot](https://releasebot.io/updates/figma), plus the [code layers announcement](https://www.figma.com/blog/design-together-with-code-layers/).",
+      "why_it_matters": "prototypes can carry real logic without a handoff, and icon sets can be drafted by an agent then hand-tuned.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: agent-made vectors and code layers",
+          "url": "https://releasebot.io/updates/figma"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "code layers announcement",
+          "url": "https://www.figma.com/blog/design-together-with-code-layers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "figma-mcp-gains-weave-models",
+      "section": "Product Design & UX",
+      "headline": "Figma MCP gains Weave models",
+      "summary": "Weave video and image models are now reachable through the [Figma](https://www.figma.com) MCP (Oct 26), and organizations can publish internal Weave tools (Oct 30).",
+      "why_it_matters": "generate assets from the same agent session that edits your file.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma MCP gains Weave models",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "cursor-agents-as-products",
+      "section": "Product Design & UX",
+      "headline": "Cursor: agents as products",
+      "summary": "[Cursor](https://cursor.com) released an [Agent SDK](https://cursor.com/changelog/agent-sdk) (Oct 20), [cloud agent canvases](https://cursor.com/changelog/cloud-agent-canvases-and-environments) that produce shareable artifacts (Oct 16), and an [app marketplace](https://cursor.com/changelog/origin-app-marketplace) with partners such as [Linear](https://linear.app) (Oct 13).",
+      "why_it_matters": "designers can ask a cloud agent for a shareable canvas instead of screenshots.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor: agents as products",
+          "url": "https://cursor.com/changelog/agent-sdk"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "cloud agent canvases",
+          "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
+        },
+        {
+          "label": "app marketplace",
+          "url": "https://cursor.com/changelog/origin-app-marketplace"
+        },
+        {
+          "label": "Linear",
+          "url": "https://linear.app"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "grok-bot-phones-people-for-you",
+      "section": "Product Design & UX",
+      "headline": "Grok Bot phones people for you",
+      "summary": "xAI's Grok Bot can hold calls, book appointments, and negotiate bills, and the terms make the user the \"caller of record\" ([post on X](https://x.com/bot/status/2118043939592942052)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Design angle",
+        "text": "consent and liability language is now part of the interface."
+      },
+      "links": [
+        {
+          "label": "Grok Bot phones people for you",
+          "url": "https://x.com/bot/status/2118043939592942052"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "glasshand",
+      "section": "New AI Tools",
+      "headline": "Glasshand",
+      "summary": "(Product Hunt, 377 votes): gives agents a real iPhone and Mac to operate.",
+      "why_it_matters": null,
+      "audience": "teams testing mobile flows with agents.",
+      "links": [
+        {
+          "label": "Glasshand",
+          "url": "https://www.producthunt.com/products/glasshand"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "gauge-cli",
+      "section": "New AI Tools",
+      "headline": "Gauge CLI",
+      "summary": "Open-source CLI that runs real agents against your product and records where they get stuck.",
+      "why_it_matters": null,
+      "audience": "designers checking agent-readiness of their UI.",
+      "links": [
+        {
+          "label": "Gauge CLI",
+          "url": "https://github.com/gauge-sh/gauge-cli"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "autocua",
+      "section": "New AI Tools",
+      "headline": "AutoCua",
+      "summary": "Computer-use agent across macOS, Windows, Linux, browser, iOS, and Android (MIT, pip install AutoCua).",
+      "why_it_matters": null,
+      "audience": "automating QA and repetitive UI tasks.",
+      "links": [
+        {
+          "label": "AutoCua",
+          "url": "https://github.com/ComputerUseAgent/AutoCua"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "rerun",
+      "section": "New AI Tools",
+      "headline": "Rerun",
+      "summary": "(263 votes): coordinates your existing AI subscriptions as a team of agents, with open-source backing.",
+      "why_it_matters": null,
+      "audience": "solo builders juggling several tools.",
+      "links": [
+        {
+          "label": "Rerun",
+          "url": "https://www.producthunt.com/products/rerun-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "living-brain",
+      "section": "New AI Tools",
+      "headline": "Living Brain",
+      "summary": "(248 votes): interoperable memory layer shared across agent frameworks.",
+      "why_it_matters": null,
+      "audience": "anyone tired of re-explaining context.",
+      "links": [
+        {
+          "label": "Living Brain",
+          "url": "https://www.producthunt.com/products/chatandbuild"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "pushary-for-teams",
+      "section": "New AI Tools",
+      "headline": "Pushary for Teams",
+      "summary": "(194 votes): shared visibility into which agent actions a team approved.",
+      "why_it_matters": null,
+      "audience": "teams adopting agents with oversight.",
+      "links": [
+        {
+          "label": "Pushary for Teams",
+          "url": "https://www.producthunt.com/products/pushary"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "stitch-ai",
+      "section": "New AI Tools",
+      "headline": "Stitch.ai",
+      "summary": "(103 votes): AI workspace combining mail, calendar, notes, and tasks.",
+      "why_it_matters": null,
+      "audience": "personal productivity experiments.",
+      "links": [
+        {
+          "label": "Stitch.ai",
+          "url": "https://www.producthunt.com/products/stitch-ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "scenario-agent-skills",
+      "section": "New AI Tools",
+      "headline": "Scenario Agent Skills",
+      "summary": "Skills that let coding agents create images, video, audio, and 3D through the Scenario MCP server (MIT).",
+      "why_it_matters": null,
+      "audience": "designers who want asset generation inside Claude Code or Codex.",
+      "links": [
+        {
+          "label": "Scenario Agent Skills",
+          "url": "https://github.com/scenario-labs/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "agent-governance-and-approvals",
+      "section": "Trends to Watch",
+      "headline": "Agent governance and approvals",
+      "summary": "Anthropic's hooks, [Pushary](https://www.producthunt.com/products/pushary), and Cursor's enterprise controls point the same direction.",
+      "why_it_matters": "approval UX decides adoption.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "permission models and audit-trail design."
+      },
+      "links": [
+        {
+          "label": "Pushary",
+          "url": "https://www.producthunt.com/products/pushary"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "skills-as-a-distribution-layer",
+      "section": "Trends to Watch",
+      "headline": "Skills as a distribution layer",
+      "summary": "[google/skills](https://github.com/google/skills) and [scenario-labs/skills](https://github.com/scenario-labs/skills) show vendors shipping capabilities as agent skills.",
+      "why_it_matters": "your product may be used through an agent, not a screen.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "writing clear skill and MCP descriptions."
+      },
+      "links": [
+        {
+          "label": "google/skills",
+          "url": "https://github.com/google/skills"
+        },
+        {
+          "label": "scenario-labs/skills",
+          "url": "https://github.com/scenario-labs/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "computer-use-via-accessibility-trees",
+      "section": "Trends to Watch",
+      "headline": "Computer use via accessibility trees",
+      "summary": "[vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) reads OS accessibility trees instead of screenshots.",
+      "why_it_matters": "accessible UI is now also agent-operable UI.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "semantic labeling and ARIA."
+      },
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "design-and-code-merging",
+      "section": "Trends to Watch",
+      "headline": "Design and code merging",
+      "summary": "Figma code layers and Cursor canvases blur the handoff.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "enough front-end to prototype real behavior."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "cost-discipline",
+      "section": "Trends to Watch",
+      "headline": "Cost discipline",
+      "summary": "Price cuts, token caps, and self-hosting (see Revolut above) mean model choice is a design constraint.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "figma-s-editable-agent-illustrations",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's editable agent illustrations",
+      "summary": "The [Nov 5 update](https://releasebot.io/updates/figma) returns agent output as real layers and strokes rather than flattened images.",
+      "why_it_matters": "the result stays inside the designer's existing editing model.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma's editable agent illustrations",
+          "url": "https://releasebot.io/updates/figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "cursor-cloud-agent-canvases",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor cloud agent canvases",
+      "summary": "[Canvases](https://cursor.com/changelog/cloud-agent-canvases-and-environments) give agents a shareable visual output instead of a wall of text.",
+      "why_it_matters": "stakeholders can review without opening a repo.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Cursor cloud agent canvases",
+          "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "conductor-s-parallel-workspaces",
+      "section": "Product Design Inspiration",
+      "headline": "Conductor's parallel workspaces",
+      "summary": "[Conductor](https://conductor.build/) showed one workspace per agent, side by side, with diffs front and center.",
+      "why_it_matters": "it makes parallel work legible, which is why [Meta](https://www.meta.com) bought it.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Conductor's parallel workspaces",
+          "url": "https://conductor.build/"
+        },
+        {
+          "label": "Meta",
+          "url": "https://www.meta.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "vercel-labs-agent-desktop",
+      "section": "GitHub & Open Source",
+      "headline": "vercel-labs/agent-desktop",
+      "summary": "(8.4k stars, +2,243 in a day): Rust desktop computer use through accessibility trees, with MCP. Gaining attention for reliability over screenshots. Source: [CoddyKit](https://www.coddykit.com/pages/blog-detail?id=5130015&slug=github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "CoddyKit",
+          "url": "https://www.coddykit.com/pages/blog-detail?id=5130015&slug=github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "google-skills",
+      "section": "GitHub & Open Source",
+      "headline": "google/skills",
+      "summary": "(22k stars): Google's official skills for Cloud, Workspace, Gemini, and Firebase. Notable as the first major platform skills release.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "google/skills",
+          "url": "https://github.com/google/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "microsoft-vibevoice",
+      "section": "GitHub & Open Source",
+      "headline": "microsoft/VibeVoice",
+      "summary": "(56k stars): open-source voice AI with cloning and multi-speaker synthesis (MIT). A free alternative to paid voice APIs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "microsoft/VibeVoice",
+          "url": "https://github.com/microsoft/VibeVoice"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "conardli-garden-skills",
+      "section": "GitHub & Open Source",
+      "headline": "ConardLi/garden-skills",
+      "summary": "(14k stars): curated skills for web design, retrieval, and image generation.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ConardLi/garden-skills",
+          "url": "https://github.com/ConardLi/garden-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "yetone-magpie",
+      "section": "GitHub & Open Source",
+      "headline": "yetone/magpie",
+      "summary": "(19k stars): menu-bar router that points different agents at different models. Fits the cost-control theme.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "yetone/magpie",
+          "url": "https://github.com/yetone/magpie"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "rivet-dev-rivet",
+      "section": "GitHub & Open Source",
+      "headline": "rivet-dev/rivet",
+      "summary": "Agent orchestration on S3, launched on [Hacker News](https://news.ycombinator.com/item?id=50381687).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "rivet-dev/rivet",
+          "url": "https://github.com/rivet-dev/rivet"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=50381687"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "claude-code-sends-your-email-address-to-websites",
+      "section": "Social Buzz",
+      "headline": "Claude Code sends your email address to websites",
+      "kicker": "Hacker News",
+      "summary": "([Hacker News](https://news.ycombinator.com/), 1,547 points, 490 comments). Linked [GitHub issue](https://github.com/anthropics/claude-code/issues/107757). Commenters want disclosure and a fix. Worth reading before you wire agents into signed-in browsers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code sends your email address to websites",
+          "url": "https://news.ycombinator.com/item?id=50385272"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "label": "GitHub issue",
+          "url": "https://github.com/anthropics/claude-code/issues/107757"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "ai-is-forcing-us-to-pay-off-40-years-of-technical-debt",
+      "section": "Social Buzz",
+      "headline": "AI is forcing us to pay off 40 years of technical debt",
+      "kicker": "Hacker News",
+      "summary": "(1,292 points). Practitioners share legacy war stories, source [IEEE Spectrum](https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI is forcing us to pay off 40 years of technical debt",
+          "url": "https://news.ycombinator.com/item?id=50364336"
+        },
+        {
+          "label": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "ask-hn-coding-harnesses-and-interfaces",
+      "section": "Social Buzz",
+      "headline": "Ask HN: coding harnesses and interfaces",
+      "kicker": "Hacker News",
+      "summary": "(154 points, 182 comments). Useful field notes on how people actually set up agent workflows.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Ask HN: coding harnesses and interfaces",
+          "url": "https://news.ycombinator.com/item?id=50366117"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "small-model-that-escalates-to-a-larger-one",
+      "section": "Social Buzz",
+      "headline": "Small model that escalates to a larger one",
+      "kicker": "Hacker News",
+      "summary": "(305 points). Pattern: let a cheap model ask a strong model for help, per [Hightouch](https://hightouch.com/blog/llm-judges-identity-resolution). Matches the cost trend above.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Small model that escalates to a larger one",
+          "url": "https://news.ycombinator.com/item?id=50397429"
+        },
+        {
+          "label": "Hightouch",
+          "url": "https://hightouch.com/blog/llm-judges-identity-resolution"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "agent-infrastructure-launches",
+      "section": "Social Buzz",
+      "headline": "Agent infrastructure launches",
+      "kicker": "Product Hunt",
+      "summary": "Today's agent infrastructure launches, led by [Glasshand](https://www.producthunt.com/products/glasshand) and [Rerun](https://www.producthunt.com/products/rerun-2), show the crowd building tooling around agents, not new models.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent infrastructure launches",
+          "url": "https://www.producthunt.com/"
+        },
+        {
+          "label": "Glasshand",
+          "url": "https://www.producthunt.com/products/glasshand"
+        },
+        {
+          "label": "Rerun",
+          "url": "https://www.producthunt.com/products/rerun-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "design-together-with-code-layers",
+      "section": "Learning Corner",
+      "headline": "Design together with code layers",
+      "kicker": "Article",
+      "summary": "From Figma. Explains the biggest shift in the design file this quarter.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design together with code layers",
+          "url": "https://www.figma.com/blog/design-together-with-code-layers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "behind-the-craft-claude-code-figma-mcp-for-design",
+      "section": "Learning Corner",
+      "headline": "Behind the Craft: Claude Code + Figma MCP for design",
+      "kicker": "Video / walkthrough",
+      "summary": "A practitioner walkthrough of a design-to-code loop you can copy.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Behind the Craft: Claude Code + Figma MCP for design",
+          "url": "https://creatoreconomy.so/p/master-claude-code-figma-mcp-for-design-felix-lee"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "agent-desktop",
+      "section": "Learning Corner",
+      "headline": "agent-desktop",
+      "kicker": "GitHub project",
+      "summary": "Read how accessibility trees drive agents, which will change how you label UI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "build-by-design",
+      "section": "Learning Corner",
+      "headline": "Build by design",
+      "kicker": "Design resource",
+      "summary": "From Figma, on shipping working software from design files.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Build by design",
+          "url": "https://www.figma.com/blog/build-by-design/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "scenario-agent-skills-with-claude",
+      "section": "Learning Corner",
+      "headline": "Scenario Agent Skills with Claude",
+      "kicker": "AI workflow",
+      "summary": "Pair [Scenario Agent Skills](https://github.com/scenario-labs/skills) with [Claude](https://claude.com) to generate and iterate on assets from one prompt thread.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Scenario Agent Skills",
+          "url": "https://github.com/scenario-labs/skills"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "agent-approval-ux",
+      "section": "Opportunities",
+      "headline": "Agent-approval UX",
+      "summary": "With hooks and tools like [Pushary](https://www.producthunt.com/products/pushary), few designers specialize in permission and audit flows. Build a case study.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Pushary",
+          "url": "https://www.producthunt.com/products/pushary"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "agent-readiness-audits",
+      "section": "Opportunities",
+      "headline": "Agent-readiness audits",
+      "summary": "Use [Gauge CLI](https://github.com/gauge-sh/gauge-cli) to test products with real agents and sell the findings.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gauge CLI",
+          "url": "https://github.com/gauge-sh/gauge-cli"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "conductor-refugees",
+      "section": "Opportunities",
+      "headline": "Conductor refugees",
+      "summary": "Cloud users must migrate by Nov 13 ([announcement](https://conductor.build/announcement)). A short migration guide or comparison could earn attention.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "announcement",
+          "url": "https://conductor.build/announcement"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "skills-and-mcp-packaging",
+      "section": "Opportunities",
+      "headline": "Skills and MCP packaging",
+      "summary": "Vendors are shipping skills ([google/skills](https://github.com/google/skills)). Design-system teams can package theirs the same way.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "google/skills",
+          "url": "https://github.com/google/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "cost-aware-ai-features",
+      "section": "Opportunities",
+      "headline": "Cost-aware AI features",
+      "summary": "Companies are capping tokens. Designers who can scope features to cheap models are valuable.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    },
+    {
+      "id": "agent-test-your-own-onboarding",
+      "section": "Today's Experiment",
+      "headline": "Agent-test your own onboarding",
+      "kicker": "25 minutes",
+      "summary": "Install [Gauge CLI](https://github.com/gauge-sh/gauge-cli), point it at one onboarding flow of a product you built, and read where the agent gets stuck. Fix the two worst labels or missing states, then rerun. Note the before and after. If install fails, use [AutoCua](https://github.com/ComputerUseAgent/AutoCua) for the same task.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gauge CLI",
+          "url": "https://github.com/gauge-sh/gauge-cli"
+        },
+        {
+          "label": "AutoCua",
+          "url": "https://github.com/ComputerUseAgent/AutoCua"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-07"
+    }
+  ],
+  "dont_miss": [
+    "[Figma's Nov 3 to Nov 5 updates](https://releasebot.io/updates/figma) (code layer agent, agent-made vectors).",
+    "[The Claude Code email-exposure thread](https://news.ycombinator.com/item?id=50385272), before you grant agents browser access.",
+    "[Ramp's AI spend data](https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/), which frames every AI roadmap decision this quarter."
+  ],
+  "footnote": "Sources: TechCrunch, Releasebot (Figma), Cursor changelog, Product Hunt digest, Hacker News digest, Agent Tools Today, CoddyKit, DEV Community. Figures such as GitHub stars and vote counts come from secondary roundups and were not independently verified. The Mantlr design-tools comparison could not be fetched, so it is not used. The Behind the Craft link was selected from search results without being opened."
+}
