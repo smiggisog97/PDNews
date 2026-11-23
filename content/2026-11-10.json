@@ -1,0 +1,798 @@
+{
+  "date": "2026-11-10",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1Dk9QlICJ8FVQT9lfmxoKm7o7nPLvjqo0ncipeFmMKSw/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic shipped Claude Fable 5.2 and Mythos 5.2 (Nov 9)",
+      "summary": "at 8/40 per million tokens, and its IPO filing targets a Nasdaq debut as soon as the week of Nov 16. Details in [Anthropic's announcement](https://www.anthropic.com/claude-fable-and-mythos-5-2)."
+    },
+    {
+      "headline": "[Cursor](https://cursor.com) can now build and host live apps",
+      "summary": "(Postgres, auth, hosting) from cloud agents, plus realtime voice chat with agents. Coding agents are becoming full app platforms."
+    },
+    {
+      "headline": "Figma keeps pushing agent-first features:",
+      "summary": "editable agent-generated vectors, code layers that read prototype connections, and all Weave models exposed through the [Figma](https://www.figma.com) MCP."
+    },
+    {
+      "headline": "Google released Gemini 4 Carbon",
+      "summary": "(late October), edging Claude Opus 5.5 on the Artificial Analysis index at lower cost per task. Source: [Google](https://blog.google/)."
+    },
+    {
+      "headline": "Security is the sleeper story:",
+      "summary": "Claude Code's \"Don't Ask Again\" file is leaking secrets into public repos, and Fireworks AI disclosed a second breach."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Product Hunt and Hacker News could not be reached this run, so these come from changelogs and GitHub.",
+    "Social Buzz": "Hacker News, Product Hunt, Reddit and X were not reachable this run. These are the discussions that surfaced in news coverage."
+  },
+  "entries": [
+    {
+      "id": "anthropic-releases-claude-fable-5-2-and-mythos-5-2",
+      "section": "AI Industry News",
+      "headline": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
+      "summary": "[Anthropic](https://www.anthropic.com) priced both models at $8 input and $40 output per million tokens. It reports a 1,000-agent Fable 5.2 team formalizing Fermat's Last Theorem in 30 hours, and says Mythos 5.2 found 10.2% more vulnerabilities than Opus 5.5 on a CVE rediscovery test (Anthropic's own claims).",
+      "why_it_matters": "Long-horizon agent work is the selling point, not chat quality.",
+      "takeaway": {
+        "label": "For builders and designers",
+        "text": "expect longer unattended runs in design-to-code pipelines, and budget for the higher token price."
+      },
+      "links": [
+        {
+          "label": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10",
+      "lead": true
+    },
+    {
+      "id": "anthropic-ipo-terms-surface",
+      "section": "AI Industry News",
+      "headline": "Anthropic IPO terms surface",
+      "summary": "The filing reportedly covers about 867M shares at $70 to $80, raising up to $69.3B under ticker ANT, with a $26B private placement from Google, NVIDIA, Microsoft and others. Separately, [CNBC reports a $3.4B gas generator purchase](https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html) for data centers.",
+      "why_it_matters": "Compute supply is now the constraint.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "pricing and rate limits for tools built on Claude will track these capital moves."
+      },
+      "links": [
+        {
+          "label": "Anthropic IPO terms surface",
+          "url": "https://www.investing.com/news/stock-market-news/exclusiveanthropic-aims-to-raise-up-to-693-billion-in-blockbuster-ipo-5013861"
+        },
+        {
+          "label": "CNBC reports a $3.4B gas generator purchase",
+          "url": "https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "google-gemini-4-carbon",
+      "section": "AI Industry News",
+      "headline": "Google Gemini 4 Carbon",
+      "summary": "[Google DeepMind](https://deepmind.google)'s model scores 59 on Artificial Analysis Intelligence Index V5, one point ahead of Opus 5.5, at roughly 4/20 per million tokens and a lower cost per task. It is offered first to cyber defenders. Its hallucination rate rose versus Gemini 4 Argon, so read the \"least likely to hallucinate\" headline carefully.",
+      "why_it_matters": "The frontier is a three-way tie, so price and latency decide.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "test Carbon for cost-sensitive agent loops."
+      },
+      "links": [
+        {
+          "label": "Google Gemini 4 Carbon",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-reveals-new-gemini-4-carbon-ai-model-narrowly-beating-claude-opus-5-5-frontier-ai-model-is-also-the-least-likely-to-hallucinate-benchmarks-claim"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "meta-muse-ember",
+      "section": "AI Industry News",
+      "headline": "Meta Muse Ember",
+      "summary": "[Meta](https://ai.meta.com) released the cheap, high-volume Muse tier at 0.10/0.50 per million tokens, claiming 37.8% on AutomationBench-AA versus 13.9% for Claude Haiku 5.5.",
+      "why_it_matters": "Near-free inference makes always-on UX research and tagging agents affordable. Vendor benchmarks, so verify on your own data.",
+      "links": [
+        {
+          "label": "Meta Muse Ember",
+          "url": "https://research.meta.ai/blog/muse-ember"
+        },
+        {
+          "label": "Meta",
+          "url": "https://ai.meta.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "apple-intelligence-usage-packs",
+      "section": "AI Industry News",
+      "headline": "Apple Intelligence Usage Packs",
+      "summary": "[Apple](https://www.apple.com) launched one-time $49.99 packs, its first paid Apple Intelligence tier.",
+      "why_it_matters": "Metered AI inside the OS changes how designers should think about paywalls and usage UI.",
+      "links": [
+        {
+          "label": "Apple Intelligence Usage Packs",
+          "url": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "security-watch",
+      "section": "AI Industry News",
+      "headline": "Security watch",
+      "summary": "[Apiiro found Claude Code's \"Don't Ask Again\" approvals saved in plaintext](https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html) in .claude/settings.local.json, with 2,539 secrets across 1,994 public repos reported. Add that file to .gitignore today. Also, [Fireworks AI disclosed a second breach](https://runtimewire.com/article/fireworks-ai-second-security-breach-customer-data) reaching billing records and stored secrets for some accounts.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Security watch",
+          "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+        },
+        {
+          "label": "Fireworks AI disclosed a second breach",
+          "url": "https://runtimewire.com/article/fireworks-ai-second-security-breach-customer-data"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "cursor-build-live-apps-and-voice-chat",
+      "section": "Product Design & UX",
+      "headline": "Cursor: Build Live Apps and Voice Chat",
+      "summary": "Cloud agents deploy apps with Postgres, auth behind Cursor SSO and hosting, gated by security checks before anything goes live. Voice calls with agents run in the IDE, web and iOS app, with zero data retention in Privacy Mode. [Voice Chat](https://www.cursor.com/changelog/voice-chat).",
+      "why_it_matters": "A designer can go from prompt to shareable prototype with real auth and data. Admin visibility into every app and secret is the governance piece teams need.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor: Build Live Apps and Voice Chat",
+          "url": "https://www.cursor.com/changelog/build-live-apps"
+        },
+        {
+          "label": "Voice Chat",
+          "url": "https://www.cursor.com/changelog/voice-chat"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "figma-agent-vectors-code-layers-weave",
+      "section": "Product Design & UX",
+      "headline": "Figma: agent vectors, code layers, Weave",
+      "summary": "Agent-generated [illustrations and icons are now editable](https://www.figma.com/release-notes/?title=improvements-agent-generated-vector). [Code layers read prototype connections](https://www.figma.com/release-notes/?title=your-prototype-connections-now-context-for-code-layers) between frames. [Weave video and image models are reachable via the Figma MCP](https://www.figma.com/release-notes/?title=access-video-and-image-models-from-figma-weave-via-the-figma-mcp), and [Google Drive connects to the Figma agent](https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans) on all plans.",
+      "why_it_matters": "Flow logic you already drew now feeds generated code, and generated assets stay editable instead of being dead pixels.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: agent vectors, code layers, Weave",
+          "url": "https://www.figma.com/release-notes/?title=improvements-agent-generated-vector"
+        },
+        {
+          "label": "Code layers read prototype connections",
+          "url": "https://www.figma.com/release-notes/?title=your-prototype-connections-now-context-for-code-layers"
+        },
+        {
+          "label": "Weave video and image models are reachable via the Figma MCP",
+          "url": "https://www.figma.com/release-notes/?title=access-video-and-image-models-from-figma-weave-via-the-figma-mcp"
+        },
+        {
+          "label": "Google Drive connects to the Figma agent",
+          "url": "https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "framer-harness-2",
+      "section": "Product Design & UX",
+      "headline": "Framer: Harness 2",
+      "summary": "[Framer](https://www.framer.com) rebuilt its agent harness to run whole workflows in one program, reporting 2x fewer tool steps and 39% fewer cached input tokens per message, also available to external agents via MCP. The [Convert update](https://www.framer.com/updates/convert-update) adds agent-built funnels and A/B tests.",
+      "why_it_matters": "Cheaper, faster site-building agents, and experiment setup without leaving the canvas.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer: Harness 2",
+          "url": "https://www.framer.com/updates/harness-2"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Convert update",
+          "url": "https://www.framer.com/updates/convert-update"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "notion-agent-apis-generally-available",
+      "section": "Product Design & UX",
+      "headline": "Notion: Agent APIs generally available",
+      "summary": "[Notion](https://www.notion.com) made its Agent APIs GA on Nov 2 and added a notion-restore-version MCP tool. Version restore through MCP is a safety net for agent-edited docs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Notion: Agent APIs generally available",
+          "url": "https://www.notion.com/releases"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "cursor-build-live-apps",
+      "section": "New AI Tools",
+      "headline": "Cursor Build Live Apps",
+      "summary": "Prompt to hosted app with database and auth.",
+      "why_it_matters": null,
+      "audience": "designers and PMs shipping working prototypes.",
+      "links": [
+        {
+          "label": "Cursor Build Live Apps",
+          "url": "https://www.cursor.com/changelog/build-live-apps"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "cursor-voice-chat",
+      "section": "New AI Tools",
+      "headline": "Cursor Voice Chat",
+      "summary": "Talk to coding agents in realtime on Grok Voice.",
+      "why_it_matters": null,
+      "audience": "hands-free iteration.",
+      "links": [
+        {
+          "label": "Cursor Voice Chat",
+          "url": "https://www.cursor.com/changelog/voice-chat"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "figma-ai-image-select-and-erase",
+      "section": "New AI Tools",
+      "headline": "Figma AI image select-and-erase",
+      "summary": "Isolate or remove image regions with AI.",
+      "why_it_matters": null,
+      "audience": "quick asset cleanup.",
+      "links": [
+        {
+          "label": "Figma AI image select-and-erase",
+          "url": "https://www.figma.com/release-notes/?title=select-objects-even-faster-with-figmas-ai-image-editing-tools"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "kubai-icons",
+      "section": "New AI Tools",
+      "headline": "kubai-icons",
+      "summary": "An agent skill that draws animated icons in one consistent style, with 2,600+ open-source icons for React, Vue and SVG.",
+      "why_it_matters": null,
+      "audience": "UI designers using coding agents.",
+      "links": [
+        {
+          "label": "kubai-icons",
+          "url": "https://github.com/kubai087/kubai-icons"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "vork",
+      "section": "New AI Tools",
+      "headline": "Vork",
+      "summary": "Headless 3D and VFX engine for agents (research preview).",
+      "why_it_matters": null,
+      "audience": "motion and 3D experimenters.",
+      "links": [
+        {
+          "label": "Vork",
+          "url": "https://github.com/voyager-so/vork"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "poki",
+      "section": "New AI Tools",
+      "headline": "Poki",
+      "summary": "Lets AI agents operate a real iPhone through a local MCP server, no jailbreak.",
+      "why_it_matters": null,
+      "audience": "mobile UX testing automation.",
+      "links": [
+        {
+          "label": "Poki",
+          "url": "https://github.com/JosssphZhou/poki"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "agent-autoloop",
+      "section": "New AI Tools",
+      "headline": "agent-autoloop",
+      "summary": "Runs CLI agents in the background and pings you with a card only when a decision is needed.",
+      "why_it_matters": null,
+      "audience": "anyone running long agent jobs.",
+      "links": [
+        {
+          "label": "agent-autoloop",
+          "url": "https://github.com/KKKKhazix/agent-autoloop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "agents-become-app-platforms",
+      "section": "Trends to Watch",
+      "headline": "Agents become app platforms",
+      "summary": "[Cursor](https://cursor.com) hosting, [Framer](https://www.framer.com) Harness 2 and [Notion](https://www.notion.com) Agent APIs all ship the same idea: the agent owns the deploy, not just the code.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to specify an app so an agent can finish it."
+      },
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "mcp-as-the-design-to-code-bus",
+      "section": "Trends to Watch",
+      "headline": "MCP as the design-to-code bus",
+      "summary": "Figma exposing Weave models and Framer exposing its harness through MCP means your design tool is now a tool inside someone else's agent.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to write good MCP tool descriptions."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "voice-as-an-agent-interface",
+      "section": "Trends to Watch",
+      "headline": "Voice as an agent interface",
+      "summary": "Cursor joins [OpenAI](https://openai.com) and Google in voice for coding agents. Voice UX for long-running tasks (interrupts, status, confirmation) is an open design problem.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "agent-security-hygiene",
+      "section": "Trends to Watch",
+      "headline": "Agent security hygiene",
+      "summary": "Plaintext approval files and breached inference hosts show that agent permissions UI is a design surface with real consequences.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "agent-autoloop-the-decision-card",
+      "section": "Product Design Inspiration",
+      "headline": "agent-autoloop, the decision card",
+      "summary": "The agent stays quiet and escalates only when unsure.",
+      "why_it_matters": "it respects attention by making interruption the exception.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "agent-autoloop, the decision card",
+          "url": "https://github.com/KKKKhazix/agent-autoloop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "cursor-s-publish-gate",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor's publish gate",
+      "summary": "Nothing goes live until security checks pass and a human publishes.",
+      "why_it_matters": "the safe path is the default path, with admin visibility behind it.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Cursor's publish gate",
+          "url": "https://www.cursor.com/changelog/build-live-apps"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "figma-s-editable-agent-output",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's editable agent output",
+      "summary": "Generated vectors are meant to be restyled, not just accepted.",
+      "why_it_matters": "it treats AI output as a draft the designer can keep shaping.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma's editable agent output",
+          "url": "https://www.figma.com/release-notes/?title=improvements-agent-generated-vector"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "kkkkhazix-agent-autoloop",
+      "section": "GitHub & Open Source",
+      "headline": "KKKKhazix/agent-autoloop",
+      "summary": "(about 4.3k stars, created this month): background agents that self-follow-up and only ask when uncertain. Gaining attention because it fixes agent babysitting.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "KKKKhazix/agent-autoloop",
+          "url": "https://github.com/KKKKhazix/agent-autoloop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "voyager-so-vork",
+      "section": "GitHub & Open Source",
+      "headline": "voyager-so/vork",
+      "summary": "(about 1.3k stars): headless 3D and VFX engine for agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "voyager-so/vork",
+          "url": "https://github.com/voyager-so/vork"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "josssphzhou-poki",
+      "section": "GitHub & Open Source",
+      "headline": "JosssphZhou/poki",
+      "summary": "(about 780 stars): real iPhone control for agents via local MCP.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JosssphZhou/poki",
+          "url": "https://github.com/JosssphZhou/poki"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "kubai087-kubai-icons",
+      "section": "GitHub & Open Source",
+      "headline": "kubai087/kubai-icons",
+      "summary": "(about 580 stars): animated icon skill with 2,600+ icons.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "kubai087/kubai-icons",
+          "url": "https://github.com/kubai087/kubai-icons"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "shanselman-sandbox-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "shanselman/sandbox-mcp",
+      "summary": "(about 380 stars): throwaway Windows Sandbox machines for testing, via MCP and CLI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "shanselman/sandbox-mcp",
+          "url": "https://github.com/shanselman/sandbox-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "glen-web-app-best-agent-memory-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "Glen-Web-App/best-agent-memory-mcp",
+      "summary": "(about 240 stars): ranked comparison of agent memory MCP servers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Glen-Web-App/best-agent-memory-mcp",
+          "url": "https://github.com/Glen-Web-App/best-agent-memory-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "claude-code-secret-leak",
+      "section": "Social Buzz",
+      "headline": "Claude Code secret leak",
+      "summary": "The [plaintext approvals story](https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html) is the most actionable thread for working developers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code secret leak",
+          "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "max-plan-usage-class-action",
+      "section": "Social Buzz",
+      "headline": "Max plan usage class action",
+      "summary": "A judge let a [class action over Claude Max 5x and 20x usage proceed](https://aiweekly.co/alerts/judge-lets-anthropic-face-class-action-alleging-claude-max-5x-and-20x-plans). Relevant if you budget around plan limits.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Max plan usage class action",
+          "url": "https://aiweekly.co/alerts/judge-lets-anthropic-face-class-action-alleging-claude-max-5x-and-20x-plans"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "cat-wu-to-openai",
+      "section": "Social Buzz",
+      "headline": "Cat Wu to OpenAI",
+      "summary": "[OpenAI hired Anthropic's Claude Code product lead](https://aiweekly.co/alerts/openai-hires-anthropics-claude-code-product-lead-cat-wu), a signal on where coding-agent product talent is moving.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cat Wu to OpenAI",
+          "url": "https://aiweekly.co/alerts/openai-hires-anthropics-claude-code-product-lead-cat-wu"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "framer-s-harness-2-write-up",
+      "section": "Learning Corner",
+      "headline": "Framer's Harness 2 write-up",
+      "kicker": "Article",
+      "summary": "A concrete look at cutting agent tool steps by half.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Framer's Harness 2 write-up",
+          "url": "https://www.framer.com/blog/harness-2/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "no-verified-video-this-run",
+      "section": "Learning Corner",
+      "headline": "No verified video this run",
+      "kicker": "Video",
+      "summary": "No verified video link surfaced this run. Skip today rather than pad it.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "figma-code-connect",
+      "section": "Learning Corner",
+      "headline": "figma/code-connect",
+      "kicker": "GitHub project",
+      "summary": "v2.1.0 shipped Oct 26 with a skill replacing the setup wizard, a good model of agent-friendly tooling.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "figma/code-connect",
+          "url": "https://github.com/figma/code-connect"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "figma-release-notes",
+      "section": "Learning Corner",
+      "headline": "Figma release notes",
+      "kicker": "Design resource",
+      "summary": "Worth skimming weekly to track the agent-in-canvas direction.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "install-kubai-icons-as-an-agent-skill",
+      "section": "Learning Corner",
+      "headline": "Install kubai-icons as an agent skill",
+      "kicker": "AI workflow",
+      "summary": "So every generated screen uses one consistent animated icon set.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Install kubai-icons as an agent skill",
+          "url": "https://github.com/kubai087/kubai-icons"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "agent-permission-and-approval-ux",
+      "section": "Opportunities",
+      "headline": "Agent permission and approval UX",
+      "summary": "The plaintext approvals leak shows the category is under-designed.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "voice-ux-for-long-running-agents",
+      "section": "Opportunities",
+      "headline": "Voice UX for long-running agents",
+      "summary": "Interrupts, progress and confirmation patterns are unsolved.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "prototype-to-production-gates",
+      "section": "Opportunities",
+      "headline": "Prototype-to-production gates",
+      "summary": "Cursor's publish flow shows demand for review and security surfaces non-engineers can use.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "consistent-style-asset-skills",
+      "section": "Opportunities",
+      "headline": "Consistent-style asset skills",
+      "summary": "Packaging a house style as an agent skill (like kubai-icons) is a niche with traction.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "metered-ai-pricing-ui",
+      "section": "Opportunities",
+      "headline": "Metered AI pricing UI",
+      "summary": "Apple's usage packs make usage meters and paywalls a mainstream design problem.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    },
+    {
+      "id": "audit-your-agent-secrets",
+      "section": "Today's Experiment",
+      "headline": "Audit your agent secrets",
+      "kicker": "25 minutes",
+      "summary": "Search your repos for .claude/settings.local.json and check for committed approvals, add it to .gitignore, then rotate any exposed key. Spend the remaining time sketching how a safer approval prompt should look (scope, expiry, revoke).",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-10"
+    }
+  ],
+  "dont_miss": [
+    "Add .claude/settings.local.json to .gitignore now ([source](https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html)).",
+    "Try [Cursor Build Live Apps](https://www.cursor.com/changelog/build-live-apps) on a prototype you would normally mock in Figma.",
+    "Read [Anthropic's Fable 5.2 and Mythos 5.2 post](https://www.anthropic.com/claude-fable-and-mythos-5-2) and compare pricing against Gemini 4 Carbon for your agent workloads."
+  ],
+  "footnote": "Sources: aiweekly.co daily digest, Tom's Hardware, Figma release notes via releases.sh, Framer updates, Releasebot feeds for Cursor and Notion, and GitHub search. Hacker News, Product Hunt and Reddit were unreachable this run. Benchmark and security figures are as reported by the linked sources."
+}
