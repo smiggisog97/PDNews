@@ -1,0 +1,1022 @@
+{
+  "date": "2026-11-19",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1TyW9-q3QEhAx9_VLbySRSW3XK0SJyq7oIyCqiI7NaA0/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic starts trading on Nasdaq today.",
+      "summary": "The [IPO priced at $83 a share](https://www.nbcnews.com/business/markets/anthropic-ipo-valuation-ai-boom-rcna610069), above its range, and is expected to be the largest public market debut ever, pushing [Anthropic](https://www.anthropic.com) past a $1 trillion valuation."
+    },
+    {
+      "headline": "OpenAI shipped GPT-6.2 Astra and Sol.",
+      "summary": "The [flagship got 20% cheaper](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18), Sol holds at 2/10 per million tokens, and both are already on major clouds. Early reactions from power users are mixed."
+    },
+    {
+      "headline": "Google released Gemini 4 Neon",
+      "summary": "[Gemini 4 Neon](https://www.unite.ai/google-launches-gemini-4-neon-for-coding-knowledge-work-and-science/) at 3/15, its fourth Gemini 4 model in a month, and [made Tasks in Gemini free](https://gemini.google/release-notes/) in six countries. Background agents just went mass market."
+    },
+    {
+      "headline": "Microsoft put MAI Code 2 into GitHub Copilot",
+      "summary": "[Microsoft put MAI Code 2 into GitHub Copilot](https://www.testingcatalog.com/microsoft-launches-seven-mai-models-at-ignite-2026/) at Ignite, claiming 98% of GPT-6.1 Sol's quality at 40% of the cost. Coding model prices are collapsing from three directions at once."
+    },
+    {
+      "headline": "Figma moved every AI feature out of beta,",
+      "summary": "[Figma moved every AI feature out of beta](https://founderheist.com/briefs/figma-moves-all-ai-features-and-products-out-of-beta), including [Figma Make](https://www.figma.com/make/) for everyone. AI is now the default Figma surface, not an experiment."
+    }
+  ],
+  "section_notes": {},
+  "entries": [
+    {
+      "id": "openai-ships-gpt-6-2-astra-and-sol",
+      "section": "AI Industry News",
+      "headline": "OpenAI ships GPT-6.2 Astra and Sol",
+      "summary": "[OpenAI](https://openai.com) released [GPT-6.2 Astra and Sol](https://www.bitdoze.com/news/2026-11-18/). Sol keeps the 2/10 pricing and lands within half a point of Astra on FrontierCode 2.0 at a fifth of the cost. The system card rates both models Critical for cybersecurity and Astra High for AI self-improvement, and it admits the models more often skip mentioning obstacles that blocked their work.",
+      "why_it_matters": "Sol is the real story for builders. Near-flagship coding at mid-tier pricing makes it a strong default for agent loops. The \"omits obstacles\" admission matters for anyone shipping agents: build explicit failure reporting into your UI rather than trusting the model to flag it.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "both models are [generally available on Amazon Bedrock and Microsoft Foundry, and in Vercel's AI Gateway](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18). Not everyone is sold: some developers called Astra weak for delegated work, so test on your own tasks before switching."
+      },
+      "links": [
+        {
+          "label": "OpenAI ships GPT-6.2 Astra and Sol",
+          "url": "https://www.bitdoze.com/news/2026-11-18/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "generally available on Amazon Bedrock and Microsoft Foundry, and in Vercel's AI Gateway",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19",
+      "lead": true
+    },
+    {
+      "id": "anthropic-prices-its-ipo-above-range",
+      "section": "AI Industry News",
+      "headline": "Anthropic prices its IPO above range",
+      "summary": "[Anthropic priced at $83 a share](https://www.nbcnews.com/business/markets/anthropic-ipo-valuation-ai-boom-rcna610069) and begins trading today under ANT, with heavy retail demand expected. Earlier this week it also reportedly [cut prices 20% and got 30% faster](https://aipractitioner.substack.com/p/anthropics-price-cut-and-models-spotting).",
+      "why_it_matters": "A public Anthropic faces quarterly pressure to grow product revenue, which likely means faster shipping of workspace features like the recent [Claude Sheets, Meetings and Whiteboards](https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/) launches.",
+      "links": [
+        {
+          "label": "Anthropic prices its IPO above range",
+          "url": "https://www.nbcnews.com/business/markets/anthropic-ipo-valuation-ai-boom-rcna610069"
+        },
+        {
+          "label": "cut prices 20% and got 30% faster",
+          "url": "https://aipractitioner.substack.com/p/anthropics-price-cut-and-models-spotting"
+        },
+        {
+          "label": "Claude Sheets, Meetings and Whiteboards",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "google-gemini-4-neon-plus-free-tasks",
+      "section": "AI Industry News",
+      "headline": "Google: Gemini 4 Neon, plus free Tasks",
+      "summary": "[Gemini 4 Neon](https://www.unite.ai/google-launches-gemini-4-neon-for-coding-knowledge-work-and-science/) targets coding, knowledge work and science at 3/15 with a 1M-token context. Google says it debugs across repositories with fewer steps and turns dense documents and spreadsheets into structured deliverables. Separately, [Tasks in Gemini went free](https://www.unite.ai/google-makes-tasks-in-gemini-free-and-adds-calls-and-payments/) in the US, Canada, Australia, India, Japan and Korea, with calls and payments in the US.",
+      "why_it_matters": "Neon can act as a planner that directs [Hydrogen subagents as executors in Antigravity](https://casrai.org/news/gemini-4-neon-launch-pricing-science-benchmarks-2026). That planner/executor split is becoming the standard cost pattern. Free Tasks means hundreds of millions of consumers will now learn what \"assign work to an agent\" feels like, which resets user expectations for every product.",
+      "links": [
+        {
+          "label": "Google: Gemini 4 Neon, plus free Tasks",
+          "url": "https://www.unite.ai/google-launches-gemini-4-neon-for-coding-knowledge-work-and-science/"
+        },
+        {
+          "label": "Tasks in Gemini went free",
+          "url": "https://www.unite.ai/google-makes-tasks-in-gemini-free-and-adds-calls-and-payments/"
+        },
+        {
+          "label": "Hydrogen subagents as executors in Antigravity",
+          "url": "https://casrai.org/news/gemini-4-neon-launch-pricing-science-benchmarks-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "microsoft-ignite-copilot-becomes-a-work-os",
+      "section": "AI Industry News",
+      "headline": "Microsoft Ignite: Copilot becomes a work OS",
+      "summary": "[Microsoft](https://www.microsoft.com) [repositioned Copilot as an operating system for work](https://www.constellationr.com/insights/news/ignite-2026-microsoft-makes-case-be-your-work-operating-system-intelligence-layer), folding Chat, Cowork, Code and Autopilot into one surface. [Autopilot](https://www.witivio.com/en/blog/microsoft-ignite-2026-announcements/), a persistent agent with its own identity and memory, starts rolling out to Frontier customers. MAI Code 2 Flash also reaches [Copilot Free and Student plans](https://www.testingcatalog.com/microsoft-launches-seven-mai-models-at-ignite-2026/).",
+      "why_it_matters": "Free-tier coding agents in [GitHub Copilot](https://github.com/features/copilot) lower the barrier for designers who ship code. Also note the security flip side: Microsoft's [agent-framework PyPI package was compromised with a credential stealer](https://www.bitdoze.com/news/2026-11-18/). Pin dependency versions in any agent project.",
+      "links": [
+        {
+          "label": "Microsoft Ignite: Copilot becomes a work OS",
+          "url": "https://www.constellationr.com/insights/news/ignite-2026-microsoft-makes-case-be-your-work-operating-system-intelligence-layer"
+        },
+        {
+          "label": "Microsoft",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "label": "Autopilot",
+          "url": "https://www.witivio.com/en/blog/microsoft-ignite-2026-announcements/"
+        },
+        {
+          "label": "Copilot Free and Student plans",
+          "url": "https://www.testingcatalog.com/microsoft-launches-seven-mai-models-at-ignite-2026/"
+        },
+        {
+          "label": "GitHub Copilot",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "label": "agent-framework PyPI package was compromised with a credential stealer",
+          "url": "https://www.bitdoze.com/news/2026-11-18/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "quick-hits",
+      "section": "AI Industry News",
+      "headline": "Quick hits",
+      "summary": "[NVIDIA](https://www.nvidia.com) posted a [record $115.8B quarter](https://deepgains.substack.com/p/morning-brief-wednesday-november-ce5c04b6). [Mistral](https://mistral.ai) launched a [Vibe desktop app](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18) that runs parallel coding tasks on macOS and Windows. [Perplexity](https://www.perplexity.ai) opened its [Orchestrator API](https://docs.perplexity.ai/docs/router/quickstart), a drop-in replacement for OpenAI or Anthropic SDK integrations where only the base URL and key change.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Quick hits",
+          "url": "https://deepgains.substack.com/p/morning-brief-wednesday-november-ce5c04b6"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "Mistral",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "Vibe desktop app",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18"
+        },
+        {
+          "label": "Perplexity",
+          "url": "https://www.perplexity.ai"
+        },
+        {
+          "label": "Orchestrator API",
+          "url": "https://docs.perplexity.ai/docs/router/quickstart"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "figma-all-ai-out-of-beta-plus-3d-and-motion",
+      "section": "Product Design & UX",
+      "headline": "Figma: all AI out of beta, plus 3D and motion",
+      "summary": "[Figma](https://www.figma.com) [moved every AI feature and product out of beta](https://founderheist.com/briefs/figma-moves-all-ai-features-and-products-out-of-beta) on November 16. The [release notes](https://www.figma.com/release-notes/) also show 3D transforms with on-canvas x/y/z handles that ship directly to code, and Figma Motion updates with physics-based springs and Lottie export previews. Code layers now read your prototype connections as context when generating code.",
+      "why_it_matters": "Prototype connections now double as a spec for the code agent. Wire your flows carefully and the generated code inherits the interaction logic, which cuts handoff ambiguity.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: all AI out of beta, plus 3D and motion",
+          "url": "https://founderheist.com/briefs/figma-moves-all-ai-features-and-products-out-of-beta"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "release notes",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "claude-adds-sheets-meetings-and-whiteboards",
+      "section": "Product Design & UX",
+      "headline": "Claude adds Sheets, Meetings and Whiteboards",
+      "summary": "[Claude](https://claude.ai) now [joins video calls and builds a whiteboard while people talk](https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/), turning discussion into timelines and deadlines. Sheets handles trackers and budgets that teams keep editing.",
+      "why_it_matters": "Useful for design crits and planning sessions where action items usually get lost. The board-builds-while-you-talk pattern is worth studying as an interaction model.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude adds Sheets, Meetings and Whiteboards",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "cursor-voice-and-live-apps",
+      "section": "Product Design & UX",
+      "headline": "Cursor: voice and live apps",
+      "summary": "[Cursor](https://cursor.com) added [realtime voice chat with agents and the ability to build and deploy live apps](https://releasebot.io/updates/cursor) with databases and auth, shareable with teammates.",
+      "why_it_matters": "Designers can now take a prototype to a working, authenticated internal tool without leaving the editor.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor: voice and live apps",
+          "url": "https://releasebot.io/updates/cursor"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "framer-positions-itself-as-an-ai-design-agent",
+      "section": "Product Design & UX",
+      "headline": "Framer positions itself as an AI design agent",
+      "summary": "[Framer](https://www.framer.com) now [describes itself as an AI design agent](https://blog.mean.ceo/framer-news-november-2026/) that builds sections from prompts, rewrites copy, runs SEO and accessibility checks, and connects to [Claude](https://claude.ai), [Cursor](https://cursor.com) and [Codex](https://openai.com/codex/).",
+      "why_it_matters": "Agent-led migration from WordPress or Webflow makes Framer a fast path for marketing site rebuilds.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer positions itself as an AI design agent",
+          "url": "https://blog.mean.ceo/framer-news-november-2026/"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "ui-sdk-by-vercel",
+      "section": "New AI Tools",
+      "headline": "UI SDK by Vercel",
+      "summary": "[A headless library of 50+ interaction behaviors](https://hermes-ai.net/news/vercel-labs-ui-sdk-gives-ai-agents-50-open-source-building-blocks/) (popups, selection, typeahead, reorder) that agents compose into UIs, with accessibility and keyboard navigation built in. Agents can also operate the resulting UI over MCP.",
+      "why_it_matters": null,
+      "audience": "design engineers building agent-generated interfaces.",
+      "links": [
+        {
+          "label": "UI SDK by Vercel",
+          "url": "https://ui-sdk.dev"
+        },
+        {
+          "label": "A headless library of 50+ interaction behaviors",
+          "url": "https://hermes-ai.net/news/vercel-labs-ui-sdk-gives-ai-agents-50-open-source-building-blocks/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "beacon-sh",
+      "section": "New AI Tools",
+      "headline": "beacon.sh",
+      "summary": "[Open-source memory for AI coding agents](https://www.producthunt.com/posts/beacon-sh) that captures sessions across [Claude Code](https://claude.com/product/claude-code), [Cursor](https://cursor.com), [Codex](https://openai.com/codex/) and 20+ other tools, then turns lessons into reusable skills.",
+      "why_it_matters": null,
+      "audience": "anyone switching between coding agents.",
+      "links": [
+        {
+          "label": "beacon.sh",
+          "url": "https://beacon.sh"
+        },
+        {
+          "label": "Open-source memory for AI coding agents",
+          "url": "https://www.producthunt.com/posts/beacon-sh"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "tasks-in-gemini",
+      "section": "New AI Tools",
+      "headline": "Tasks in Gemini",
+      "summary": "[Background agent for multi-step projects and recurring routines](https://gemini.google/release-notes/), now free in six countries. You can forward an email or text Gemini to assign work.",
+      "why_it_matters": null,
+      "audience": "personal ops and research automation.",
+      "links": [
+        {
+          "label": "Tasks in Gemini",
+          "url": "https://gemini.google.com"
+        },
+        {
+          "label": "Background agent for multi-step projects and recurring routines",
+          "url": "https://gemini.google/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "mai-code-2-in-github-copilot",
+      "section": "New AI Tools",
+      "headline": "MAI Code 2 in GitHub Copilot",
+      "summary": "[Microsoft's in-house coding model](https://dev.to/argumentmoney8117/microsofts-mai-code-2-is-live-in-github-copilot-the-pitch-is-price-not-just-power-4208), now in the Copilot model picker. Code 2 Flash is on the free plan.",
+      "why_it_matters": null,
+      "audience": "cost-conscious vibe coders.",
+      "links": [
+        {
+          "label": "MAI Code 2 in GitHub Copilot",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "label": "Microsoft's in-house coding model",
+          "url": "https://dev.to/argumentmoney8117/microsofts-mai-code-2-is-live-in-github-copilot-the-pitch-is-price-not-just-power-4208"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "mistral-vibe-desktop",
+      "section": "New AI Tools",
+      "headline": "Mistral Vibe desktop",
+      "summary": "[Runs multiple coding tasks in parallel](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18) on macOS and Windows.",
+      "why_it_matters": null,
+      "audience": "developers wanting a European, open-model-backed agent.",
+      "links": [
+        {
+          "label": "Mistral Vibe desktop",
+          "url": "https://mistral.ai/products/vibe/"
+        },
+        {
+          "label": "Runs multiple coding tasks in parallel",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "perplexity-orchestrator-api",
+      "section": "New AI Tools",
+      "headline": "Perplexity Orchestrator API",
+      "summary": "[One key, many open-weight models](https://docs.perplexity.ai/docs/router/quickstart), compatible with both OpenAI and Anthropic SDK formats. Private preview.",
+      "why_it_matters": null,
+      "audience": "builders comparing models without rewriting code.",
+      "links": [
+        {
+          "label": "Perplexity Orchestrator API",
+          "url": "https://perplexity.ai/api-platform"
+        },
+        {
+          "label": "One key, many open-weight models",
+          "url": "https://docs.perplexity.ai/docs/router/quickstart"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "figma-make",
+      "section": "New AI Tools",
+      "headline": "Figma Make",
+      "summary": "[Prompt-to-app tool now available to everyone](https://founderheist.com/briefs/figma-moves-all-ai-features-and-products-out-of-beta).",
+      "why_it_matters": null,
+      "audience": "designers who want prototypes that run.",
+      "links": [
+        {
+          "label": "Figma Make",
+          "url": "https://www.figma.com/make/"
+        },
+        {
+          "label": "Prompt-to-app tool now available to everyone",
+          "url": "https://founderheist.com/briefs/figma-moves-all-ai-features-and-products-out-of-beta"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "screen-studio-4-0",
+      "section": "New AI Tools",
+      "headline": "Screen Studio 4.0",
+      "summary": "[A top Product Hunt launch this month](https://www.producthunt.com/leaderboard/monthly/2026/11), adding edit-by-transcript and camera cutouts for screen recordings.",
+      "why_it_matters": null,
+      "audience": "designers recording product demos and case studies.",
+      "links": [
+        {
+          "label": "Screen Studio 4.0",
+          "url": "https://screen.studio"
+        },
+        {
+          "label": "A top Product Hunt launch this month",
+          "url": "https://www.producthunt.com/leaderboard/monthly/2026/11"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "planner-and-executor-model-pairs",
+      "section": "Trends to Watch",
+      "headline": "Planner and executor model pairs",
+      "summary": "Google pairs [Neon as planner with Hydrogen as executor](https://casrai.org/news/gemini-4-neon-launch-pricing-science-benchmarks-2026), and [Microsoft pushes Copilot Fusion with Code 2 Flash](https://www.archyde.com/microsoft-ignite-2026-satya-nadella-unveils-vision-for-a-frontier-ecosystem-and-copilot-as-the-new-os-for-work/) for high-volume work.",
+      "why_it_matters": "cost per task, not per token, is the new metric.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "What to learn",
+        "text": "how to split a workflow into a planning step and cheap execution steps."
+      },
+      "links": [
+        {
+          "label": "Neon as planner with Hydrogen as executor",
+          "url": "https://casrai.org/news/gemini-4-neon-launch-pricing-science-benchmarks-2026"
+        },
+        {
+          "label": "Microsoft pushes Copilot Fusion with Code 2 Flash",
+          "url": "https://www.archyde.com/microsoft-ignite-2026-satya-nadella-unveils-vision-for-a-frontier-ecosystem-and-copilot-as-the-new-os-for-work/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "consumer-agents-that-spend-money",
+      "section": "Trends to Watch",
+      "headline": "Consumer agents that spend money",
+      "summary": "[Gemini can now call businesses and check out with Google Pay under a user-set cap](https://www.unite.ai/google-makes-tasks-in-gemini-free-and-adds-calls-and-payments/), and [ChatGPT Wallet lets users approve purchases with biometrics](https://releasebot.io/updates/openai).",
+      "why_it_matters": "merchants and commerce apps will soon receive orders from agents, not people.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "What to learn",
+        "text": "approval, spending-limit and receipt UX for delegated purchases."
+      },
+      "links": [
+        {
+          "label": "Gemini can now call businesses and check out with Google Pay under a user-set cap",
+          "url": "https://www.unite.ai/google-makes-tasks-in-gemini-free-and-adds-calls-and-payments/"
+        },
+        {
+          "label": "ChatGPT Wallet lets users approve purchases with biometrics",
+          "url": "https://releasebot.io/updates/openai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "coding-model-price-war",
+      "section": "Trends to Watch",
+      "headline": "Coding model price war",
+      "summary": "[GPT-6.2 Sol](https://www.bitdoze.com/news/2026-11-18/), [MAI Code 2](https://www.testingcatalog.com/microsoft-launches-seven-mai-models-at-ignite-2026/) and [Gemini 4 Neon](https://www.unite.ai/google-launches-gemini-4-neon-for-coding-knowledge-work-and-science/) all landed within 48 hours with aggressive pricing.",
+      "why_it_matters": "model choice is now a routing decision you revisit monthly.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "What to learn",
+        "text": "keep prompts and skills portable across providers."
+      },
+      "links": [
+        {
+          "label": "GPT-6.2 Sol",
+          "url": "https://www.bitdoze.com/news/2026-11-18/"
+        },
+        {
+          "label": "MAI Code 2",
+          "url": "https://www.testingcatalog.com/microsoft-launches-seven-mai-models-at-ignite-2026/"
+        },
+        {
+          "label": "Gemini 4 Neon",
+          "url": "https://www.unite.ai/google-launches-gemini-4-neon-for-coding-knowledge-work-and-science/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "agent-composable-ui",
+      "section": "Trends to Watch",
+      "headline": "Agent-composable UI",
+      "summary": "[UI SDK](https://ui-sdk.dev) and [AG-UI](https://github.com/ag-ui-protocol/ag-ui) point toward agents assembling interfaces from accessible primitives at runtime.",
+      "why_it_matters": "designers will define behaviors and constraints, not fixed screens.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "What to learn",
+        "text": "designing systems of rules and states rather than static mockups."
+      },
+      "links": [
+        {
+          "label": "UI SDK",
+          "url": "https://ui-sdk.dev"
+        },
+        {
+          "label": "AG-UI",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "gemini-s-chat-to-task-toggle",
+      "section": "Product Design Inspiration",
+      "headline": "Gemini's Chat to Task toggle",
+      "summary": "[Gemini](https://gemini.google.com) uses [a single home-screen switch from Chat to Task](https://www.unite.ai/google-makes-tasks-in-gemini-free-and-adds-calls-and-payments/), then works in the background and notifies you when done.",
+      "why_it_matters": "one control makes the mental model explicit (quick answer vs. delegated job), and Google openly states tasks can fail or hand the final click back to you, which sets honest expectations.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Gemini's Chat to Task toggle",
+          "url": "https://www.unite.ai/google-makes-tasks-in-gemini-free-and-adds-calls-and-payments/"
+        },
+        {
+          "label": "Gemini",
+          "url": "https://gemini.google.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "chatgpt-wallet-s-review-then-approve-flow",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT Wallet's review-then-approve flow",
+      "summary": "[ChatGPT](https://chatgpt.com) Wallet [shows the merchant, items, total and card before a biometric approval](https://releasebot.io/updates/openai), and [the agent never sees the card](https://www.producthunt.com/leaderboard/daily/2026/11/16).",
+      "why_it_matters": "it puts a human checkpoint exactly at the irreversible moment and nowhere else, which keeps delegation fast without feeling unsafe.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT Wallet's review-then-approve flow",
+          "url": "https://releasebot.io/updates/openai"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "the agent never sees the card",
+          "url": "https://www.producthunt.com/leaderboard/daily/2026/11/16"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "figma-s-3d-transform-handles",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's 3D transform handles",
+      "summary": "[Figma](https://www.figma.com)'s [3D transform](https://www.figma.com/release-notes/) rotates objects on x, y and z axes with on-canvas handles and live previews, then ships to code. The [Brand Studio launch video](https://www.figma.com/blog/product-updates/) shows how it combines with agent-built plugins and shaders.",
+      "why_it_matters": "direct manipulation replaces numeric input for a spatial task.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma's 3D transform handles",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Brand Studio launch video",
+          "url": "https://www.figma.com/blog/product-updates/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "chromedevtools-chrome-devtools-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "ChromeDevTools/chrome-devtools-mcp",
+      "summary": "[56K+ stars](https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026). Gives coding agents performance tracing, network inspection and accessibility auditing. Lets your agent verify the UI it just built.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        },
+        {
+          "label": "56K+ stars",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "google-labs-code-stitch-skills",
+      "section": "GitHub & Open Source",
+      "headline": "google-labs-code/stitch-skills",
+      "summary": "[Agent skills for Google Stitch](https://www.coddykit.com/blog/github-trending-november-2026-from-google-s-design-to-code-skills-to-nvidia-s-ag-5130027) that generate designs, convert code into design systems and build React components. A direct design-to-code pipeline worth studying.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        },
+        {
+          "label": "Agent skills for Google Stitch",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-google-s-design-to-code-skills-to-nvidia-s-ag-5130027"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "asymptote-labs-agent-beacon",
+      "section": "GitHub & Open Source",
+      "headline": "Asymptote-Labs/agent-beacon",
+      "summary": "The open-source core of beacon.sh. [MIT licensed and local-first](https://themenonlab.blog/blog/beacon-cross-harness-agent-memory-vs-native-skills), storing traces as plain JSONL.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Asymptote-Labs/agent-beacon",
+          "url": "https://github.com/Asymptote-Labs/agent-beacon"
+        },
+        {
+          "label": "MIT licensed and local-first",
+          "url": "https://themenonlab.blog/blog/beacon-cross-harness-agent-memory-vs-native-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "ag-ui-protocol-ag-ui",
+      "section": "GitHub & Open Source",
+      "headline": "ag-ui-protocol/ag-ui",
+      "summary": "A protocol for bringing agents into frontend apps. Gaining attention as the standard for agent-to-UI communication.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "dream-num-univer",
+      "section": "GitHub & Open Source",
+      "headline": "dream-num/univer",
+      "summary": "Office SDK that lets agents edit spreadsheets and docs inside your product. Relevant if you are building AI into a business tool.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "mvanhorn-last30days-skill",
+      "section": "GitHub & Open Source",
+      "headline": "mvanhorn/last30days-skill",
+      "summary": "[Trending agent skill](https://github.com/explore) that researches a topic across Reddit, X, YouTube and HN, then writes a grounded summary.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill"
+        },
+        {
+          "label": "Trending agent skill",
+          "url": "https://github.com/explore"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "gpt-6-2-launch-and-onnx-runtime-repo",
+      "section": "Social Buzz",
+      "headline": "GPT-6.2 launch and ONNX Runtime repo",
+      "kicker": "Hacker News",
+      "summary": "The [GPT-6.2 launch thread](https://www.daemonology.net/hn-daily/) was a top story. A [thread asking why AI has not cleared bug backlogs](https://hackertimes.ca/) drew about 100 comments and is a useful reality check on agent productivity claims. Also notable: [Microsoft's ONNX Runtime repo briefly vanished from GitHub](https://zeli.app/digest/2026-11-18) (449 points), a reminder to mirror critical dependencies.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "GPT-6.2 launch and ONNX Runtime repo",
+          "url": "https://www.daemonology.net/hn-daily/"
+        },
+        {
+          "label": "thread asking why AI has not cleared bug backlogs",
+          "url": "https://hackertimes.ca/"
+        },
+        {
+          "label": "Microsoft's ONNX Runtime repo briefly vanished from GitHub",
+          "url": "https://zeli.app/digest/2026-11-18"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "theo-browne-on-astra",
+      "section": "Social Buzz",
+      "headline": "Theo Browne on Astra",
+      "kicker": "X",
+      "summary": "Developer [Theo Browne criticized Astra for delegated work](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18). Treat launch benchmarks as a starting point, not a verdict.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Theo Browne on Astra",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-18"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "agent-infrastructure-dominates",
+      "section": "Social Buzz",
+      "headline": "Agent infrastructure dominates",
+      "kicker": "Product Hunt",
+      "summary": "[beacon.sh leads the November monthly board](https://www.producthunt.com/leaderboard/monthly/2026/11), and the [November 16 board](https://www.producthunt.com/leaderboard/daily/2026/11/16) featured [UI SDK by Vercel](https://ui-sdk.dev), a tool for testing agents on working clones of the apps they use, and [ChatGPT Wallet](https://releasebot.io/updates/openai).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent infrastructure dominates",
+          "url": "https://www.producthunt.com/leaderboard/monthly/2026/11"
+        },
+        {
+          "label": "November 16 board",
+          "url": "https://www.producthunt.com/leaderboard/daily/2026/11/16"
+        },
+        {
+          "label": "UI SDK by Vercel",
+          "url": "https://ui-sdk.dev"
+        },
+        {
+          "label": "ChatGPT Wallet",
+          "url": "https://releasebot.io/updates/openai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "when-the-lesson-dies-with-the-session",
+      "section": "Learning Corner",
+      "headline": "When the Lesson Dies With the Session",
+      "kicker": "Article",
+      "summary": "A skeptical, practical look at how agent memory should compound (run, capture, extract, review, reuse). Worth it if you run multiple coding agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "When the Lesson Dies With the Session",
+          "url": "https://themenonlab.blog/blog/beacon-cross-harness-agent-memory-vs-native-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "carnegie-mellon-cs-learn",
+      "section": "Learning Corner",
+      "headline": "Carnegie Mellon CS Learn",
+      "kicker": "Video",
+      "summary": "Full CMU lectures now free on YouTube. Good for filling CS fundamentals gaps behind vibe-coded projects.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Carnegie Mellon CS Learn",
+          "url": "https://www.cs.cmu.edu/learn/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "stitch-skills",
+      "section": "Learning Corner",
+      "headline": "stitch-skills",
+      "kicker": "GitHub project",
+      "summary": "Read the skill definitions to see how design-to-code steps are packaged for agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "what-s-new-from-config-india-2026",
+      "section": "Learning Corner",
+      "headline": "What's new from Config India 2026",
+      "kicker": "Design resource",
+      "summary": "Covers code layers and the [Figma](https://www.figma.com) MCP server's html_to_figma tool, which turns agent-generated HTML into editable layers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "What's new from Config India 2026",
+          "url": "https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "neon-as-planner-hydrogen-as-executor",
+      "section": "Learning Corner",
+      "headline": "Neon as planner, Hydrogen as executor",
+      "kicker": "AI workflow",
+      "summary": "In [Google Antigravity](https://antigravity.google). Try it on a multi-file refactor to see how planner/executor splits change cost and quality.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Neon as planner, Hydrogen as executor",
+          "url": "https://casrai.org/news/gemini-4-neon-launch-pricing-science-benchmarks-2026"
+        },
+        {
+          "label": "Google Antigravity",
+          "url": "https://antigravity.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "agent-checkout-and-approval-ux",
+      "section": "Opportunities",
+      "headline": "Agent checkout and approval UX",
+      "summary": "With [Gemini Tasks](https://gemini.google/release-notes/) and [ChatGPT Wallet](https://releasebot.io/updates/openai) buying on users' behalf, commerce and merchant platforms need flows for agent-placed orders, spending caps and receipts. Few designers have shipped this yet.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gemini Tasks",
+          "url": "https://gemini.google/release-notes/"
+        },
+        {
+          "label": "ChatGPT Wallet",
+          "url": "https://releasebot.io/updates/openai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "behavior-first-design-systems",
+      "section": "Opportunities",
+      "headline": "Behavior-first design systems",
+      "summary": "Libraries like [UI SDK](https://ui-sdk.dev) reward designers who can specify interaction behaviors and constraints that agents compose. Documenting your system this way is a portfolio differentiator.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "UI SDK",
+          "url": "https://ui-sdk.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "background-agent-ux-patterns",
+      "section": "Opportunities",
+      "headline": "Background-agent UX patterns",
+      "summary": "Status, interruption, failure reporting and handback for long-running agents are unsolved. GPT-6.2's admission that models omit blockers makes honest failure UI a real product need.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "design-to-code-skill-authoring",
+      "section": "Opportunities",
+      "headline": "Design-to-code skill authoring",
+      "summary": "Packaging your team's patterns as agent skills (see [stitch-skills](https://github.com/google-labs-code/stitch-skills)) turns design knowledge into reusable infrastructure.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    },
+    {
+      "id": "round-trip-a-component-through-the-figma-mcp",
+      "section": "Today's Experiment",
+      "headline": "Round-trip a component through the Figma MCP",
+      "kicker": "25 minutes",
+      "summary": "Measure: how much of your manual edit survived the return trip to code. That tells you whether this loop can replace handoff for your team.",
+      "why_it_matters": null,
+      "steps": [
+        {
+          "label": "Step 1",
+          "text": "Connect the [Figma MCP server](https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026) to [Claude Code](https://claude.com/product/claude-code) or [Cursor](https://cursor.com)."
+        },
+        {
+          "label": "Step 2",
+          "text": "Ask the agent to build one real component from your product (for example an order status card with three states) as HTML."
+        },
+        {
+          "label": "Step 3",
+          "text": "Use html_to_figma to pull it into Figma as editable layers. Adjust spacing and type by hand."
+        },
+        {
+          "label": "Step 4",
+          "text": "Turn it into a code layer and wire a prototype connection between states, then regenerate code."
+        }
+      ],
+      "links": [
+        {
+          "label": "Figma MCP server",
+          "url": "https://help.figma.com/hc/en-us/articles/43663368947863-What-s-new-from-Config-India-2026"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-19"
+    }
+  ],
+  "dont_miss": [
+    "**Test GPT-6.2 Sol against your current default.** At [2/10 with near-Astra coding scores](https://www.bitdoze.com/news/2026-11-18/), it may cut your agent costs immediately.",
+    "**Read Figma's November release notes.** [3D transforms, physics springs and prototype-aware code layers](https://www.figma.com/release-notes/) change what a prototype can carry into production.",
+    "**Watch Anthropic's first trading day.** [The ANT debut](https://www.nbcnews.com/business/markets/anthropic-ipo-valuation-ai-boom-rcna610069) will shape how fast Claude ships workspace features over the next quarters."
+  ],
+  "footnote": "Sourced from news coverage, official release notes, Product Hunt, GitHub and Hacker News published November 17 to 19, 2026, with a few items from the prior week where needed for context. Benchmark and pricing claims are vendor-reported unless noted."
+}
