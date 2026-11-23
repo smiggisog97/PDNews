@@ -1,0 +1,775 @@
+{
+  "date": "2026-11-16",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1zUU73kgi8CbpQ7OmrJKSzbrmRvgh5AMIJB58RoG1IZY/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic goes public this week.",
+      "summary": "[Anthropic](https://www.anthropic.com) prices its IPO on November 18 and expects to trade on Nasdaq as ANT on November 19, with a [$70 to $78 range](https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html) and a valuation near $1.4 trillion at the top end."
+    },
+    {
+      "headline": "Claude becomes a workspace, not just a chat.",
+      "summary": "Anthropic launched [Claude Sheets, Whiteboards and Meetings](https://betanews.com/article/claude-meetings-whiteboards-sheets-anthropic/) on November 10, plus the new [Fable 5.2 and Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2) models on November 9."
+    },
+    {
+      "headline": "Agents can now pay.",
+      "summary": "[OpenAI](https://openai.com) launched [ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet): agents fill the cart, you approve each purchase with Face ID or a fingerprint."
+    },
+    {
+      "headline": "Design and code keep merging.",
+      "summary": "[Cursor now builds, hosts and shares live apps](https://www.cursor.com/changelog/build-live-apps) from one prompt, and [Figma](https://www.figma.com) has [code layers in open beta](https://www.figma.com/blog/design-together-with-code-layers/) on the canvas."
+    },
+    {
+      "headline": "Nvidia lost its founder CEO.",
+      "summary": "[NVIDIA](https://www.nvidia.com) announced on November 12 that [Jensen Huang resigned](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm) and CFO Colette Kress is interim CEO."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Launch dates are noted where verified. Several Product Hunt listings were not date-stamped, so treat \"new\" loosely."
+  },
+  "entries": [
+    {
+      "id": "anthropic-ipo-week-and-fable-5-2",
+      "section": "AI Industry News",
+      "headline": "Anthropic IPO week and Fable 5.2",
+      "summary": "[Anthropic](https://www.anthropic.com) is selling 825 million shares at $70 to $78, listing as ANT on Nasdaq. Pricing is expected November 18, first trade November 19, per [CNBC](https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html). On November 9 it shipped [Claude Fable 5.2 and Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2). [The New Stack](https://thenewstack.io/anthropic-fable-coding-upgrade/) reports output up to 30 percent faster, a 20 percent price cut ($8 input, $40 output per million tokens) and a Fast mode.",
+      "why_it_matters": "Fable 5.2 beats Opus 5.5 on Anthropic's own coding benchmarks (49.1 percent vs 45.5 percent on FrontierCode 2.0), but these are vendor numbers. Early reaction is lukewarm: one [UX Planet write-up](https://uxplanet.org/why-nobody-is-talking-about-claude-fable-5-2-9395c67d1722) says most users can barely tell it from Opus 5.5 in daily work.",
+      "takeaway": {
+        "label": "Impact for builders",
+        "text": "keep Opus 5.5 as your default and reserve Fable 5.2 for long, ambiguous agentic jobs where first-pass completeness saves review time."
+      },
+      "links": [
+        {
+          "label": "Anthropic IPO week and Fable 5.2",
+          "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Claude Fable 5.2 and Mythos 5.2",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "label": "The New Stack",
+          "url": "https://thenewstack.io/anthropic-fable-coding-upgrade/"
+        },
+        {
+          "label": "UX Planet write-up",
+          "url": "https://uxplanet.org/why-nobody-is-talking-about-claude-fable-5-2-9395c67d1722"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16",
+      "lead": true
+    },
+    {
+      "id": "chatgpt-wallet-gives-agents-a-payment-token",
+      "section": "AI Industry News",
+      "headline": "ChatGPT Wallet gives agents a payment token",
+      "summary": "[ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet) launched Friday with American Express, Mastercard and Visa, starting with US Pro subscribers. Per [CNBC](https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html), the agent never sees your card, only a single-use payment token, and every purchase needs biometric approval.",
+      "why_it_matters": "OpenAI says it expects users to later pre-approve agents with spending limits, categories and time windows. That is a new permission design surface.",
+      "takeaway": {
+        "label": "Impact for designers",
+        "text": "approval moments, spend limits and \"undo\" for agent purchases are now real product design problems, not concepts."
+      },
+      "links": [
+        {
+          "label": "ChatGPT Wallet gives agents a payment token",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet"
+        },
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "nvidia-ceo-change-gemini-4-carbon-and-a-freeze-lawsuit",
+      "section": "AI Industry News",
+      "headline": "Nvidia CEO change, Gemini 4 Carbon, and a freeze lawsuit",
+      "summary": "**NVIDIA:** Jensen Huang resigned as CEO and director effective immediately, and Colette Kress is interim CEO, per the [8-K filing](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm). Expect supply and roadmap questions in the near term.\n\n**Google:** [Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/) opened to developers on November 10 at an introductory $2 input and $10 output per million tokens. A [summary of the week's releases](https://note.com/kohei2292/n/n89a78280506d?hl=en) says the price doubles on December 1, so test it now.\n\n**Legal:** Four nonprofits [sued OpenAI, Anthropic, Google, Meta and SpaceX](https://decrypt.co/383270/openai-anthropic-google-ai-giants-lawsuit-development-freeze) in San Francisco to freeze frontier models at their November 12 capability. No ruling yet, and enforcement looks hard even to the plaintiffs.\n\n**OpenAI robotics:** OpenAI [disbanded its standalone robotics team](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots), betting general models can drive robots directly.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Nvidia CEO change, Gemini 4 Carbon, and a freeze lawsuit",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+        },
+        {
+          "label": "Gemini 4 Carbon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        },
+        {
+          "label": "summary of the week's releases",
+          "url": "https://note.com/kohei2292/n/n89a78280506d?hl=en"
+        },
+        {
+          "label": "sued OpenAI, Anthropic, Google, Meta and SpaceX",
+          "url": "https://decrypt.co/383270/openai-anthropic-google-ai-giants-lawsuit-development-freeze"
+        },
+        {
+          "label": "disbanded its standalone robotics team",
+          "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "cursor-builds-live-apps-with-hosting-included",
+      "section": "Product Design & UX",
+      "headline": "Cursor builds live apps with hosting included",
+      "summary": "Released November 5. Describe an app to a [Cursor](https://cursor.com) cloud agent and it scaffolds the app, spins up Postgres, sets up auth behind Cursor SSO and deploys to a link. Security checks run before anything goes live, and admins can unpublish any app, per the [changelog](https://www.cursor.com/changelog/build-live-apps). It competes directly with [Lovable](https://lovable.dev) and [Replit](https://replit.com).",
+      "why_it_matters": "a designer can ship an internal tool or working prototype to teammates without a handoff.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor builds live apps with hosting included",
+          "url": "https://www.cursor.com/changelog/build-live-apps"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "figma-code-layers-and-motion-in-open-beta",
+      "section": "Product Design & UX",
+      "headline": "Figma code layers and motion in open beta",
+      "summary": "[Figma](https://www.figma.com) put [code layers](https://www.figma.com/blog/design-together-with-code-layers/) on the canvas (open beta since October 14), and the company says its MCP server was its [fastest-growing product in Q3](https://investingnews.com/figma-announces-third-quarter-2026-financial-results/). Figma's own [examples](https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/) show a designer asking the Figma agent to turn static frames into a working card-wallet interaction.",
+      "why_it_matters": "test real interaction behavior without leaving the file.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma code layers and motion in open beta",
+          "url": "https://www.figma.com/blog/design-together-with-code-layers/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "fastest-growing product in Q3",
+          "url": "https://investingnews.com/figma-announces-third-quarter-2026-financial-results/"
+        },
+        {
+          "label": "examples",
+          "url": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "claude-whiteboards-and-sheets",
+      "section": "Product Design & UX",
+      "headline": "Claude Whiteboards and Sheets",
+      "summary": "Both are in beta on paid [Claude](https://claude.ai) plans across web, desktop and mobile. Whiteboards ties into Meetings, which joins Google Meet calls on Team and Enterprise plans. Details in [BetaNews](https://betanews.com/article/claude-meetings-whiteboards-sheets-anthropic/).",
+      "why_it_matters": "workshop synthesis and research tables can stay inside Claude. Sheets only has basic spreadsheet functions so far.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude Whiteboards and Sheets",
+          "url": "https://betanews.com/article/claude-meetings-whiteboards-sheets-anthropic/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "cursor-build-live-apps",
+      "section": "New AI Tools",
+      "headline": "Cursor Build Live Apps",
+      "summary": "(Nov 5). Prompt to deployed app with database and auth.",
+      "why_it_matters": null,
+      "audience": "designers who vibe code and want to share working tools.",
+      "links": [
+        {
+          "label": "Cursor Build Live Apps",
+          "url": "https://www.cursor.com/changelog/build-live-apps"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "claude-whiteboards-and-sheets-2",
+      "section": "New AI Tools",
+      "headline": "Claude Whiteboards and Sheets",
+      "summary": "(Nov 10, beta). Shared canvases and spreadsheets built with Claude.",
+      "why_it_matters": null,
+      "audience": "research synthesis and planning.",
+      "links": [
+        {
+          "label": "Claude Whiteboards and Sheets",
+          "url": "https://betanews.com/article/claude-meetings-whiteboards-sheets-anthropic/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "figma-code-layers",
+      "section": "New AI Tools",
+      "headline": "Figma Code Layers",
+      "summary": "(open beta). Working code on the canvas, generated by the Figma agent.",
+      "why_it_matters": null,
+      "audience": "designers prototyping real interactions.",
+      "links": [
+        {
+          "label": "Figma Code Layers",
+          "url": "https://www.figma.com/blog/design-together-with-code-layers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "open-design",
+      "section": "New AI Tools",
+      "headline": "Open Design",
+      "summary": "(open source, Apache-2.0). Local-first alternative to Claude Design that drives your installed coding agent, with 100+ design systems.",
+      "why_it_matters": null,
+      "audience": "designers who want control and bring-your-own-key.",
+      "links": [
+        {
+          "label": "Open Design",
+          "url": "https://github.com/nexu-io/open-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "magic-patterns",
+      "section": "New AI Tools",
+      "headline": "Magic Patterns",
+      "summary": "(Agent 2.0 launched April 2026, rebuilt editor). Prototypes that use your real design system and export via [MCP to coding agents](https://www.magicpatterns.com/blog/magic-patterns-agent-2-0).",
+      "why_it_matters": null,
+      "audience": "product teams with a mature system.",
+      "links": [
+        {
+          "label": "Magic Patterns",
+          "url": "https://www.magicpatterns.com"
+        },
+        {
+          "label": "MCP to coding agents",
+          "url": "https://www.magicpatterns.com/blog/magic-patterns-agent-2-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "ai-designer-mcp",
+      "section": "New AI Tools",
+      "headline": "AI Designer MCP",
+      "summary": "Gives coding agents tools to create UI consistent with your codebase.",
+      "why_it_matters": null,
+      "audience": "vibe coders who want less generic output.",
+      "links": [
+        {
+          "label": "AI Designer MCP",
+          "url": "https://www.producthunt.com/products/aidesigner/launches"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "wayframe",
+      "section": "New AI Tools",
+      "headline": "Wayframe",
+      "summary": "AI design editor for graphics and UI mockups. Early, few reviews.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Wayframe",
+          "url": "https://www.producthunt.com/products/wayframe"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "cloudflare-kitesurf",
+      "section": "New AI Tools",
+      "headline": "Cloudflare Kitesurf",
+      "summary": "([Cloudflare](https://www.cloudflare.com), free beta). Agent-first browser that runs on Workers and works with Playwright and Puppeteer.",
+      "why_it_matters": null,
+      "audience": "builders of browsing agents.",
+      "links": [
+        {
+          "label": "Cloudflare Kitesurf",
+          "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/"
+        },
+        {
+          "label": "Cloudflare",
+          "url": "https://www.cloudflare.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "agentic-commerce",
+      "section": "Trends to Watch",
+      "headline": "Agentic commerce",
+      "summary": "Wallet tokens, spend limits and approval prompts are becoming core UX. Stripe's [agentic commerce write-up](https://stripe.com/mx/blog/introducing-our-agentic-commerce-solutions) is a good primer.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how tokenized payments and delegated approvals work."
+      },
+      "links": [
+        {
+          "label": "agentic commerce write-up",
+          "url": "https://stripe.com/mx/blog/introducing-our-agentic-commerce-solutions"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "canvas-absorbs-code",
+      "section": "Trends to Watch",
+      "headline": "Canvas absorbs code",
+      "summary": "Figma code layers and Cursor's live apps both erase the handoff.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "enough React to read what an agent produced."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "mcp-as-the-design-to-code-bus",
+      "section": "Trends to Watch",
+      "headline": "MCP as the design-to-code bus",
+      "summary": "Figma's agent-write access is growing, though CEO Dylan Field called MCP [\"not a perfect protocol\"](https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how MCP servers expose design context."
+      },
+      "links": [
+        {
+          "label": "\"not a perfect protocol\"",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "ai-workspaces-replace-point-tools",
+      "section": "Trends to Watch",
+      "headline": "AI workspaces replace point tools",
+      "summary": "Claude Sheets and Whiteboards push the chat app toward an office suite. Expect more tools to bundle research, tables and boards.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "open-agent-harnesses",
+      "section": "Trends to Watch",
+      "headline": "Open agent harnesses",
+      "summary": "[Grok Build](https://github.com/xai-org/grok-build) is open source but accepts no outside pull requests, which shows \"open\" now has tiers worth checking.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Grok Build",
+          "url": "https://github.com/xai-org/grok-build"
+        }
+      ],
+      "image_url": "https://avatars.githubusercontent.com/u/130314967?s=400&v=4",
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "chatgpt-wallet-approval-moment",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT Wallet approval moment",
+      "summary": "[OpenAI](https://openai.com/index/introducing-chatgpt-wallet) keeps the human in the loop with one biometric tap per purchase while hiding the card entirely.",
+      "why_it_matters": "the high-trust step is a single, familiar gesture, and the agent's autonomy ends exactly where money moves.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT Wallet approval moment",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "figma-s-agent-to-code-layer-flow",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's agent-to-code-layer flow",
+      "summary": "In [Figma's examples](https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/), a designer converts static card frames into a scrollable, flippable wallet in the same file.",
+      "why_it_matters": "the prototype lives beside the design, so feedback happens on real behavior.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma's agent-to-code-layer flow",
+          "url": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "cursor-s-publish-gate",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor's publish gate",
+      "summary": "In [Build Live Apps](https://www.cursor.com/changelog/build-live-apps), nothing goes live until security checks pass and you explicitly publish, and the agent explains what to fix.",
+      "why_it_matters": "it turns a risky capability into a guided, reversible checklist, with admin unpublish as the backstop.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Cursor's publish gate",
+          "url": "https://www.cursor.com/changelog/build-live-apps"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "nexu-io-open-design",
+      "section": "GitHub & Open Source",
+      "headline": "nexu-io/open-design",
+      "summary": "Open-source Claude Design alternative with skills and design systems, driving Claude Code, Codex, Cursor and others as the engine. It is gaining attention because designers want local-first, bring-your-own-model control.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "nexu-io/open-design",
+          "url": "https://github.com/nexu-io/open-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "voltagent-awesome-design-md",
+      "section": "GitHub & Open Source",
+      "headline": "voltagent/awesome-design-md",
+      "summary": "Ready-made DESIGN.md files extracted from real products so agents generate consistent UI. A [write-up](https://emelia.io/hub/design-md-ai-agents-standard) reported 40,700 stars within ten days of its March launch. It solves the \"generic AI UI\" problem with a plain text file.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "voltagent/awesome-design-md",
+          "url": "https://github.com/voltagent/awesome-design-md"
+        },
+        {
+          "label": "write-up",
+          "url": "https://emelia.io/hub/design-md-ai-agents-standard"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "xai-org-grok-build",
+      "section": "GitHub & Open Source",
+      "headline": "xai-org/grok-build",
+      "summary": "SpaceXAI's Rust coding agent harness and terminal UI, Apache-2.0. Interesting to inspect, but issues are disabled and external pull requests are not accepted.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "xai-org/grok-build",
+          "url": "https://github.com/xai-org/grok-build"
+        }
+      ],
+      "image_url": "https://avatars.githubusercontent.com/u/130314967?s=400&v=4",
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "can-we-please-limit-the-ai-news-flood",
+      "section": "Social Buzz",
+      "headline": "Can we please limit the AI news flood?",
+      "kicker": "Hacker News",
+      "summary": "An Ask HN thread hit 343 points and 187 comments. The signal: builders are tired of model-release noise and want practical workflow content. Separately, commenters on the [OpenAI robotics story](https://news.ycombinator.com/item?id=50487184) sketched a stack where a big model sets goals and small fast models handle movement.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Can we please limit the AI news flood?",
+          "url": "https://prismix.dev/news/bb14ea3bc782"
+        },
+        {
+          "label": "OpenAI robotics story",
+          "url": "https://news.ycombinator.com/item?id=50487184"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "fable-5-2-reaction",
+      "section": "Social Buzz",
+      "headline": "Fable 5.2 reaction",
+      "kicker": "Reddit and X",
+      "summary": "The consistent theme in coverage such as [UX Planet](https://uxplanet.org/why-nobody-is-talking-about-claude-fable-5-2-9395c67d1722) is incremental gains over Opus 5.5 and faster usage-limit burn. Useful for deciding which model to default to.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Fable 5.2 reaction",
+          "url": "https://uxplanet.org/why-nobody-is-talking-about-claude-fable-5-2-9395c67d1722"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "design-system-for-agents-tools",
+      "section": "Social Buzz",
+      "headline": "Design-system-for-agents tools",
+      "kicker": "Product Hunt",
+      "summary": "Design-system-for-agents tools (such as [Magic Patterns](https://www.producthunt.com/products/magicpatterns) and Design.MD) keep appearing in top listings, which matches the DESIGN.md momentum on GitHub. I could not verify today's exact leaderboard.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design-system-for-agents tools",
+          "url": "https://www.producthunt.com/products/magicpatterns"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "6-ways-teams-are-experimenting-with-code-layers",
+      "section": "Learning Corner",
+      "headline": "6 ways teams are experimenting with code layers",
+      "kicker": "Article",
+      "summary": "Six concrete team examples, good for stealing patterns.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "6 ways teams are experimenting with code layers",
+          "url": "https://www.figma.com/blog/6-ways-teams-are-experimenting-with-code-layers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "lovable-s-design-and-ui-video-collection",
+      "section": "Learning Corner",
+      "headline": "Lovable's Design and UI video collection",
+      "kicker": "Video",
+      "summary": "Tutorials on Figma to [Lovable](https://lovable.dev) workflows and visual editing.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Lovable's Design and UI video collection",
+          "url": "https://lovable.dev/videos/design"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "awesome-design-md",
+      "section": "Learning Corner",
+      "headline": "awesome-design-md",
+      "kicker": "GitHub project",
+      "summary": "Read two or three files to learn what agents need to know about a design system.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "awesome-design-md",
+          "url": "https://github.com/voltagent/awesome-design-md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "config-2026-recap-and-what-to-do-as-a-designer",
+      "section": "Learning Corner",
+      "headline": "Config 2026 recap and what to do as a designer",
+      "kicker": "Design resource",
+      "summary": "Lists what shipped, who can use it today and one concrete move per feature.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 recap and what to do as a designer",
+          "url": "https://designbuddies.substack.com/p/config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "design-md-in-your-project-root",
+      "section": "Learning Corner",
+      "headline": "DESIGN.md in your project root",
+      "kicker": "AI workflow",
+      "summary": "Put a DESIGN.md in your project root and tell your coding agent to follow it. The [Better Stack guide](https://betterstack.com/community/guides/ai/design-md-ai/) walks through it step by step.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "DESIGN.md in your project root",
+          "url": "https://betterstack.com/community/guides/ai/design-md-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "design-the-agent-permission-layer",
+      "section": "Opportunities",
+      "headline": "Design the agent permission layer",
+      "summary": "Spend limits, scopes, receipts and dispute flows for agent purchases are unsolved. Few designers specialize here yet.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "ship-internal-tools-directly",
+      "section": "Opportunities",
+      "headline": "Ship internal tools directly",
+      "summary": "With [Cursor live apps](https://www.cursor.com/changelog/build-live-apps), a designer can own ops and merchant tools end to end, including hosting and auth.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor live apps",
+          "url": "https://www.cursor.com/changelog/build-live-apps"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "productize-your-design-system-for-agents",
+      "section": "Opportunities",
+      "headline": "Productize your design system for agents",
+      "summary": "Writing and maintaining a DESIGN.md plus Figma skills is a new, valuable team role.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "build-figma-plugins-and-skills",
+      "section": "Opportunities",
+      "headline": "Build Figma plugins and skills",
+      "summary": "Figma lets users create custom plugins from text prompts, per the [Config recap](https://designbuddies.substack.com/p/config-2026), so workflow-specific tools are cheap to make and share.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config recap",
+          "url": "https://designbuddies.substack.com/p/config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    },
+    {
+      "id": "generate-one-screen-from-a-design-md",
+      "section": "Today's Experiment",
+      "headline": "Generate one screen from a DESIGN.md",
+      "kicker": "25 minutes",
+      "summary": "Drift between the generated screen and your real system is your DESIGN.md backlog.",
+      "why_it_matters": null,
+      "steps": [
+        {
+          "label": "Step 1",
+          "text": "Clone [awesome-design-md](https://github.com/voltagent/awesome-design-md) and copy one DESIGN.md that is close to your product's feel."
+        },
+        {
+          "label": "Step 2",
+          "text": "Edit the color, type and spacing tokens to match your real system."
+        },
+        {
+          "label": "Step 3",
+          "text": "In [Claude Code](https://claude.ai/code), prompt: \"Use DESIGN.md as the design system and build a checkout approval screen for an agent purchase.\""
+        },
+        {
+          "label": "Step 4",
+          "text": "Compare the result to your Figma component library and note every place it drifted. The drift list is your real DESIGN.md backlog."
+        }
+      ],
+      "links": [
+        {
+          "label": "awesome-design-md",
+          "url": "https://github.com/voltagent/awesome-design-md"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.ai/code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-16"
+    }
+  ],
+  "dont_miss": [
+    "[Cursor Build Live Apps](https://www.cursor.com/changelog/build-live-apps): highest direct impact on how designers ship working tools.",
+    "[ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet): study the approval flow, because agent payments will be a design discipline.",
+    "[Anthropic IPO pricing](https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html) on November 18: sets the tone for AI tool pricing and funding."
+  ],
+  "footnote": "Sources: CNBC, The New Stack, BetaNews, Decrypt, Fortune, SEC filings, Figma, Cursor, GitHub and Product Hunt, retrieved November 16, 2026. Vendor benchmark figures are company-reported. Reddit and X sentiment is drawn from secondary coverage, not direct reading."
+}
