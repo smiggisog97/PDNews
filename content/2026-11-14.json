@@ -1,0 +1,835 @@
+{
+  "date": "2026-11-14",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1KmwovMsUGkIZMfxjz_RESxC5yWS5xZzWRMfcusyTtCU/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic IPO is in market.",
+      "summary": "[Anthropic](https://www.anthropic.com) launched its roadshow on November 10 for 825 million Class A shares at an expected $70 to $78 each, ticker ANT on Nasdaq, with a debut targeted for the week of November 16 ([SiliconANGLE](https://siliconangle.com/?p=853744), [Forkast](https://forkast.news/?p=133082))."
+    },
+    {
+      "headline": "Claude moves into the office suite.",
+      "summary": "The same day, Anthropic shipped Claude Sheets, Whiteboards and Meetings in beta and took Claude Data to general availability ([BetaNews](https://betanews.com/article/claude-meetings-whiteboards-sheets-anthropic/))."
+    },
+    {
+      "headline": "Gemini 4 Carbon is generally available.",
+      "summary": "[Google released it](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/) to developers, enterprises and consumers on November 10 at $2 input and $10 output per million tokens."
+    },
+    {
+      "headline": "OpenAI's Cursor cutoff took effect November 12.",
+      "summary": "[OpenAI ended direct model supply](https://openai.com/blog/our-decision-on-cursor-following-its-acquisition-by-spacex) to [Cursor](https://cursor.com) after [SpaceX](https://www.spacex.com) bought it. Cursor keeps Grok, Anthropic and Google models ([TBreak](https://tbreak.com/openai-cuts-off-cursor-spacex-acquisition/))."
+    },
+    {
+      "headline": "Design and code keep merging.",
+      "summary": "[Figma](https://www.figma.com) is shipping code layers, an agent that draws editable vectors, and 4096px shader export, while [Wonder](https://www.producthunt.com/products/wonder-public-alpha) pushes canvas-to-code over MCP."
+    }
+  ],
+  "section_notes": {
+    "Social Buzz": "Live ranking data from [X](https://x.com), [Reddit](https://www.reddit.com), [Hacker News](https://news.ycombinator.com) and [Product Hunt](https://www.producthunt.com) was not retrievable today, so this section lists only discussions with a source."
+  },
+  "entries": [
+    {
+      "id": "anthropic-goes-public-and-ships-an-office-suite-the-same-day",
+      "section": "AI Industry News",
+      "headline": "Anthropic goes public, and ships an office suite the same day",
+      "summary": "The roadshow opened November 10 with a price range of $70 to $78 and a Nasdaq listing application under ANT ([SmartScope](https://smartscope.blog/en/blog/anthropic-ipo-roadshow-launched-announced-november-10-offering-2026/)). Anthropic's [Sheets, Whiteboards and Data](https://claude.com/resources/articles/sheets-whiteboards-data) launched alongside it. Sheets and Whiteboards are beta for paid plans. Meetings is beta for Team and Enterprise through Google Meet.",
+      "why_it_matters": "Claude is now a place where non-coding work happens, not only a chat window. On Enterprise, Whiteboards and Sheets start disabled, and Claude Data turns on automatically November 19 ([Glitchwire](https://glitchwire.com/news/anthropic-launches-spreadsheets-whiteboards-and-meeting-bots-for-claude/article.md)).",
+      "takeaway": {
+        "label": "Impact for builders and designers",
+        "text": "Whiteboards inside Meetings means flows and plans get drafted live during a call. Expect stakeholders to arrive with AI-made boards before you do."
+      },
+      "links": [
+        {
+          "label": "Anthropic goes public, and ships an office suite the same day",
+          "url": "https://smartscope.blog/en/blog/anthropic-ipo-roadshow-launched-announced-november-10-offering-2026/"
+        },
+        {
+          "label": "Sheets, Whiteboards and Data",
+          "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+        },
+        {
+          "label": "Glitchwire",
+          "url": "https://glitchwire.com/news/anthropic-launches-spreadsheets-whiteboards-and-meeting-bots-for-claude/article.md"
+        }
+      ],
+      "image_url": "https://claude.com/resources/articles/sheets-whiteboards-data/opengraph-image/og",
+      "tool_rating": null,
+      "date": "2026-11-14",
+      "lead": true
+    },
+    {
+      "id": "google-makes-gemini-4-carbon-public",
+      "section": "AI Industry News",
+      "headline": "Google makes Gemini 4 Carbon public",
+      "summary": "[Google DeepMind](https://deepmind.google) moved Carbon from a cyber-defender preview to general availability via the Gemini API, Google AI Studio and Gemini for business ([Let's Data Science](https://letsdatascience.com/news/google-rolls-out-gemini-4-carbon-to-general-public-9b41bcb4)). The Verge notes the company's own benchmarks put it behind Fable 5.2 on most metrics.",
+      "why_it_matters": "Google recommends Gemini 4 Argon for most software and knowledge work. Carbon targets long-horizon agent runs and security.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "price parity with Argon ($2 and $10 per million tokens) makes Carbon an easy model to add to a multi-model test set."
+      },
+      "links": [
+        {
+          "label": "Google makes Gemini 4 Carbon public",
+          "url": "https://letsdatascience.com/news/google-rolls-out-gemini-4-carbon-to-general-public-9b41bcb4"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "openai-cuts-off-cursor-after-devday-s-agent-push",
+      "section": "AI Industry News",
+      "headline": "OpenAI cuts off Cursor, after DevDay's agent push",
+      "summary": "[OpenAI](https://openai.com) ended direct model access for Cursor on November 12. Cursor's CEO said OpenAI models were about 5% of traffic ([DevOps.com](https://devops.com/openai-cuts-off-cursors-model-access-after-spacex-acquisition/)). Earlier in the autumn, [DevDay 2026](https://openai.com/index/devday-2026-recap/) introduced Dots, an always-on agent with its own cloud computer ([Decrypt](https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "model access is now a competitive lever. Keep your tooling model-agnostic."
+      },
+      "links": [
+        {
+          "label": "OpenAI cuts off Cursor, after DevDay's agent push",
+          "url": "https://devops.com/openai-cuts-off-cursors-model-access-after-spacex-acquisition/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "DevDay 2026",
+          "url": "https://openai.com/index/devday-2026-recap/"
+        },
+        {
+          "label": "Decrypt",
+          "url": "https://decrypt.co/379584/openai-ai-agents-computers-devday-2026-everything-announced"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "smaller-signals",
+      "section": "AI Industry News",
+      "headline": "Smaller signals",
+      "summary": "[NVIDIA](https://www.nvidia.com)'s GR00T 2 drew attention for learning robot tasks from human video, with independent testing still pending ([The Neuron](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-11-2026/)). [METR](https://metr.org) estimated Anthropic's capability progress is running at about twice its prior pace ([The Neuron](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-6-2026/)). [DeepSeek](https://www.deepseek.com)'s open-source Harness agent app reached 1.54 million daily users via API as of November 4 ([AF.net](https://af.net/realtime/page/278/?news_page=9)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Smaller signals",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-11-2026/"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "METR",
+          "url": "https://metr.org"
+        },
+        {
+          "label": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-6-2026/"
+        },
+        {
+          "label": "DeepSeek",
+          "url": "https://www.deepseek.com"
+        },
+        {
+          "label": "AF.net",
+          "url": "https://af.net/realtime/page/278/?news_page=9"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "figma-s-agent-gets-more-visual",
+      "section": "Product Design & UX",
+      "headline": "Figma's agent gets more visual",
+      "summary": "The [week of November 2 release digest](https://releases.sh/collections/productivity-apps/digest/2026-11-02) lists a Figma agent that now produces editable vector illustrations and icons, a Select area tool for isolating or erasing parts of an image, and repository cloning on by default for new GitHub connections. Shader rendering and export up to 4096px became generally available November 2 ([AI Picks](https://aipicks.jp/news/20261103-figma-ai-4096px)).",
+      "why_it_matters": "icon and illustration passes no longer need a round trip to another tool.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma's agent gets more visual",
+          "url": "https://releases.sh/collections/productivity-apps/digest/2026-11-02"
+        },
+        {
+          "label": "AI Picks",
+          "url": "https://aipicks.jp/news/20261103-figma-ai-4096px"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "code-layers-the-free-window-closed",
+      "section": "Product Design & UX",
+      "headline": "Code layers: the free window closed",
+      "summary": "Code layers bring executable React code onto the canvas, with repo cloning and sync back to code ([The Next Web](https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations)). A Japanese report says paid plans had no extra charge for it through November 4 ([AI Picks](https://aipicks.jp/news/20261015-figma-figma-ai-11-4)), so check your credit usage. [Figma Specs](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/), a markdown file defining your design language for agents, is the companion feature.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Code layers: the free window closed",
+          "url": "https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations"
+        },
+        {
+          "label": "AI Picks",
+          "url": "https://aipicks.jp/news/20261015-figma-figma-ai-11-4"
+        },
+        {
+          "label": "Figma Specs",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "linear-puts-code-review-on-your-phone",
+      "section": "Product Design & UX",
+      "headline": "Linear puts code review on your phone",
+      "summary": "[Linear](https://linear.app) brought [Diffs to iOS and Android](https://linear.app/changelog/2026-11-04-mobile-diffs) on November 4. Designers who review implementation PRs can now do it away from a desk.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Linear puts code review on your phone",
+          "url": "https://linear.app/changelog/2026-11-04-mobile-diffs"
+        },
+        {
+          "label": "Linear",
+          "url": "https://linear.app"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "cursor-ships-managed-deployment",
+      "section": "Product Design & UX",
+      "headline": "Cursor ships managed deployment",
+      "summary": "Cursor agents now provision databases, logins and hosting, and run security checks before an app goes live ([The New Stack](https://thenewstack.io/?p=22842955)). This puts it against [Lovable](https://lovable.dev) and [Replit](https://replit.com) for internal tools.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor ships managed deployment",
+          "url": "https://thenewstack.io/?p=22842955"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "wonder",
+      "section": "New AI Tools",
+      "headline": "Wonder",
+      "summary": "([wonder.design](https://wonder.design)): AI design agent on a canvas with an MCP server that connects to Cursor, Claude Code, Codex and Lovable, exporting React and Tailwind. Public alpha with a free tier.",
+      "why_it_matters": null,
+      "audience": "designers who ship through coding agents.",
+      "links": [
+        {
+          "label": "Wonder",
+          "url": "https://www.producthunt.com/products/wonder-public-alpha"
+        },
+        {
+          "label": "wonder.design",
+          "url": "https://wonder.design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "agent-desktop",
+      "section": "New AI Tools",
+      "headline": "agent-desktop",
+      "summary": "By [Vercel](https://vercel.com) Labs: open-source CLI that lets agents drive desktop apps through OS accessibility trees instead of pixels, on macOS, Windows and Linux ([details](https://en.spaziocrypto.com/ai/vercel-labs-agent-desktop-ai-agents-desktop-apps/)).",
+      "why_it_matters": null,
+      "audience": "anyone building agent-based UI testing.",
+      "links": [
+        {
+          "label": "agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "Vercel",
+          "url": "https://vercel.com"
+        },
+        {
+          "label": "details",
+          "url": "https://en.spaziocrypto.com/ai/vercel-labs-agent-desktop-ai-agents-desktop-apps/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "claude-whiteboards",
+      "section": "New AI Tools",
+      "headline": "Claude Whiteboards",
+      "summary": "Shared boards you build with Claude for flows, plans and brainstorms, beta on paid plans.",
+      "why_it_matters": null,
+      "audience": "design teams that run workshops in chat.",
+      "links": [
+        {
+          "label": "Claude Whiteboards",
+          "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+        }
+      ],
+      "image_url": "https://claude.com/resources/articles/sheets-whiteboards-data/opengraph-image/og",
+      "tool_rating": 7,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "toools-design-2-0",
+      "section": "New AI Tools",
+      "headline": "TOOOLS.design 2.0",
+      "summary": "A 2,400-plus design tool directory rebuilt with AI search and an MCP connection for Claude, Cursor and Codex. Free.",
+      "why_it_matters": null,
+      "audience": "picking tools by price, platform and use case.",
+      "links": [
+        {
+          "label": "TOOOLS.design 2.0",
+          "url": "https://www.producthunt.com/posts/1285496"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "aidesigner-mcp",
+      "section": "New AI Tools",
+      "headline": "AIDesigner MCP",
+      "summary": "Gives coding agents access to generate UI consistent with your existing project.",
+      "why_it_matters": null,
+      "audience": "vibe coders who want fewer generic layouts.",
+      "links": [
+        {
+          "label": "AIDesigner MCP",
+          "url": "https://www.producthunt.com/products/aidesigner/launches"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "artique",
+      "section": "New AI Tools",
+      "headline": "Artique",
+      "summary": "AI design tool aimed at web and mobile interfaces that feel premium rather than template-like. Free options.",
+      "why_it_matters": null,
+      "audience": "founders and solo designers.",
+      "links": [
+        {
+          "label": "Artique",
+          "url": "https://www.producthunt.com/posts/artique-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "google-ai-studio-with-gemini-4-carbon",
+      "section": "New AI Tools",
+      "headline": "Google AI Studio with Gemini 4 Carbon",
+      "summary": "The quickest place to try the new model for long agent runs.",
+      "why_it_matters": null,
+      "audience": "anyone comparing frontier models on real tasks.",
+      "links": [
+        {
+          "label": "Google AI Studio with Gemini 4 Carbon",
+          "url": "https://aistudio.google.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mistral-apps-and-managed-agents",
+      "section": "New AI Tools",
+      "headline": "Mistral Apps and Managed Agents",
+      "summary": "In public preview, with Workflows on Mistral Cloud ([The Neuron](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-6-2026/)).",
+      "why_it_matters": null,
+      "audience": "teams that want a European agent platform.",
+      "links": [
+        {
+          "label": "Mistral Apps and Managed Agents",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-6-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "canvas-absorbs-code",
+      "section": "Trends to Watch",
+      "headline": "Canvas absorbs code",
+      "summary": "Figma code layers, Wonder and Cursor deployment all collapse design, build and ship into one surface.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "read React well enough to review what the canvas generates."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mcp-as-the-default-seam",
+      "section": "Trends to Watch",
+      "headline": "MCP as the default seam",
+      "summary": "Wonder, TOOOLS.design, AIDesigner and Figma all expose MCP. The [GitHub MCP Server](https://github.com/github/github-mcp-server) tops Glama's November ranking ([Glama](https://glama.ai/mcp/best/github)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "wire one MCP server into your daily workflow."
+      },
+      "links": [
+        {
+          "label": "GitHub MCP Server",
+          "url": "https://github.com/github/github-mcp-server"
+        },
+        {
+          "label": "Glama",
+          "url": "https://glama.ai/mcp/best/github"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "agents-inside-live-collaboration",
+      "section": "Trends to Watch",
+      "headline": "Agents inside live collaboration",
+      "summary": "Claude Meetings joins calls as a visible participant and needs admin approval for external guests.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "design consent and visibility cues for agents in shared spaces."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "model-access-as-leverage",
+      "section": "Trends to Watch",
+      "headline": "Model access as leverage",
+      "summary": "The Cursor cutoff shows a tool's model menu can change in one contract notice.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "evaluate tools on how gracefully they swap models."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "claude-meetings",
+      "section": "Product Design Inspiration",
+      "headline": "Claude Meetings",
+      "summary": "The agent identifies itself when it joins, leaves automatically on late joins, and requires admin authorization when external guests attend ([iTechPost](https://www.itechpost.com/articles/237776/20261111/claude-gets-new-workplace-tools-anthropic-takes-aim-microsoft-office-google-workspace.htm)).",
+      "why_it_matters": "trust is built through visible presence and clear permission gates.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Claude Meetings",
+          "url": "https://www.itechpost.com/articles/237776/20261111/claude-gets-new-workplace-tools-anthropic-takes-aim-microsoft-office-google-workspace.htm"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "figma-code-layers",
+      "section": "Product Design Inspiration",
+      "headline": "Figma code layers",
+      "summary": "The official demo shows a design, a runnable ticket-booking prototype and the matching App.tsx side by side on one canvas ([Rar Design](https://rar.design/posts/figma-config-2026-highlights)).",
+      "why_it_matters": "it shows state and code beside the visual, so handoff questions answer themselves.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma code layers",
+          "url": "https://rar.design/posts/figma-config-2026-highlights"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "linear-mobile-diffs",
+      "section": "Product Design Inspiration",
+      "headline": "Linear mobile Diffs",
+      "summary": "Code review on a phone is a hard layout problem, and [Linear's release](https://linear.app/changelog/2026-11-04-mobile-diffs) treats it as a first-class surface.",
+      "why_it_matters": "it picks one job, review, and designs the small screen around it.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Linear mobile Diffs",
+          "url": "https://linear.app/changelog/2026-11-04-mobile-diffs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "vercel-labs-agent-desktop",
+      "section": "GitHub & Open Source",
+      "headline": "vercel-labs/agent-desktop",
+      "summary": "Trended on GitHub after its October 31 launch. Accessibility-tree control is sturdier than pixel guessing ([AIToolly](https://aitoolly.com/ai-news/article/2026-11-04-vercel-labs-introduces-agent-desktop-a-specialized-computer-use-cli-tool-for-autonomous-ai-agents)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "AIToolly",
+          "url": "https://aitoolly.com/ai-news/article/2026-11-04-vercel-labs-introduces-agent-desktop-a-specialized-computer-use-cli-tool-for-autonomous-ai-agents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "d4vinci-scrapling",
+      "section": "GitHub & Open Source",
+      "headline": "D4Vinci/Scrapling",
+      "summary": "A scraping framework with an MCP server so Claude and Cursor can fetch any site in one tool call ([CoddyKit](https://www.coddykit.com/pages/blog-detail?id=5130015)). Useful for design research and competitor teardowns.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling"
+        },
+        {
+          "label": "CoddyKit",
+          "url": "https://www.coddykit.com/pages/blog-detail?id=5130015"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "github-github-mcp-server",
+      "section": "GitHub & Open Source",
+      "headline": "github/github-mcp-server",
+      "summary": "GitHub's official MCP server with a hosted endpoint, up 911 stars in 30 days per Glama.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "github/github-mcp-server",
+          "url": "https://github.com/github/github-mcp-server"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "upstash-context7",
+      "section": "GitHub & Open Source",
+      "headline": "upstash/context7",
+      "summary": "The top MCP server in OSS Insight's AI collection. Keeps agents on current library docs ([OSS Insight](https://ossinsight.io/trending/ai)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "upstash/context7",
+          "url": "https://github.com/upstash/context7"
+        },
+        {
+          "label": "OSS Insight",
+          "url": "https://ossinsight.io/trending/ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "anthropics-claude-code",
+      "section": "GitHub & Open Source",
+      "headline": "anthropics/claude-code",
+      "summary": "A top mover over the last 28 days with about 5.1k new stars on the same ranking.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "anthropics/claude-code",
+          "url": "https://github.com/anthropics/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "design-to-code-round-trip",
+      "section": "Social Buzz",
+      "headline": "Design-to-code round trip",
+      "summary": "The top question under Wonder's Product Hunt thread asks whether code tweaks reflect back on the canvas or whether generation is one-way ([Product Hunt](https://www.producthunt.com/products/wonder-public-alpha)). It is the question that decides if these tools replace handoff.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design-to-code round trip",
+          "url": "https://www.producthunt.com/products/wonder-public-alpha"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "agents-on-the-desktop",
+      "section": "Social Buzz",
+      "headline": "Agents on the desktop",
+      "summary": "Developers are weighing accessibility-tree control against screenshot-based computer use after agent-desktop trended ([AIToolly](https://aitoolly.com/ai-news/article/2026-11-06-vercel-labs-introduces-agent-desktop-a-dedicated-command-line-tool-for-ai-agent-computer-use-capabil)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents on the desktop",
+          "url": "https://aitoolly.com/ai-news/article/2026-11-06-vercel-labs-introduces-agent-desktop-a-dedicated-command-line-tool-for-ai-agent-computer-use-capabil"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "designer-sentiment",
+      "section": "Social Buzz",
+      "headline": "Designer sentiment",
+      "summary": "Figma's State of the Designer survey of 906 designers found 91% say AI tools improve their designs and 89% say they work faster, while the role question centers on tasks, not headcount ([Qt](https://www.qt.io/software-insights/will-ai-replace-ux-designers-what-a-year-of-ai-actually-changed)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Designer sentiment",
+          "url": "https://www.qt.io/software-insights/will-ai-replace-ux-designers-what-a-year-of-ai-actually-changed"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "rethinking-figma-in-an-ai-world",
+      "section": "Learning Corner",
+      "headline": "Rethinking Figma in an AI world",
+      "kicker": "Article",
+      "summary": "A seven-minute read on why Figma is expanding into code, and what it means for handoff. Worth it to form your own view before the next team debate.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Rethinking Figma in an AI world",
+          "url": "https://uxdesign.cc/rethinking-figma-in-an-ai-world-0facba587ba5"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "config-2026-keynote-with-dylan-field",
+      "section": "Learning Corner",
+      "headline": "Config 2026 Keynote with Dylan Field",
+      "kicker": "Video",
+      "summary": "The \"code is material\" argument sits in the first third. Worth it because it frames the whole design-and-code shift in Figma's own words.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 Keynote with Dylan Field",
+          "url": "https://podwise.ai/episodes/8601798"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "agent-desktop-2",
+      "section": "Learning Corner",
+      "headline": "agent-desktop",
+      "kicker": "GitHub project",
+      "summary": "Read the README and changelog to see how agent computer use is being engineered for reliability.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "the-visual-identity-behind-config-2026",
+      "section": "Learning Corner",
+      "headline": "The visual identity behind Config 2026",
+      "kicker": "Design resource",
+      "summary": "A clean example of motion, glyph and texture direction built for a keynote. Worth it for the art direction detail.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The visual identity behind Config 2026",
+          "url": "https://figma.com/blog/the-visual-identity-behind-config-2026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "wonder-s-mcp-handoff",
+      "section": "Learning Corner",
+      "headline": "Wonder's MCP handoff",
+      "kicker": "AI workflow",
+      "summary": "To a coding agent. Generate a screen, connect the MCP server, and pull the result into a repo. It is the clearest current example of skipping Figma handoff.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Wonder's MCP handoff",
+          "url": "https://www.producthunt.com/products/wonder-public-alpha"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "design-agent-permission-and-consent-patterns",
+      "section": "Opportunities",
+      "headline": "Design agent permission and consent patterns",
+      "summary": "Claude Meetings shows the need for visibility, disclosure and admin gates. Few teams have a pattern library for it.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "own-the-design-system-file-for-agents",
+      "section": "Opportunities",
+      "headline": "Own the design system file for agents",
+      "summary": "Figma Specs makes a markdown design language the reference for agents. Whoever writes it controls output quality.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "data-storytelling-surfaces",
+      "section": "Opportunities",
+      "headline": "Data storytelling surfaces",
+      "summary": "Claude Data builds dashboards and short narrated videos from Snowflake and Salesforce data. Commerce and logistics products need the same layer for merchants.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "model-agnostic-design-tooling",
+      "section": "Opportunities",
+      "headline": "Model-agnostic design tooling",
+      "summary": "The Cursor cutoff creates demand for workflows that survive a model swap. Document and test your prompts across Claude, Gemini and GPT.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "design-engineer-roles",
+      "section": "Opportunities",
+      "headline": "Design engineer roles",
+      "summary": "With code layers and canvas-to-code tools, designers who can review and ship frontend code have a clear edge.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    },
+    {
+      "id": "canvas-to-repo",
+      "section": "Today's Experiment",
+      "headline": "Canvas to repo",
+      "kicker": "25 minutes",
+      "summary": "Take a flow you already own from a generated screen to a scratch branch, and note where the round trip breaks.",
+      "why_it_matters": null,
+      "steps": [
+        {
+          "label": "Minutes 0 to 5",
+          "text": "Open [Wonder](https://wonder.design) on the free tier and generate one real screen from a flow you already own."
+        },
+        {
+          "label": "Minutes 5 to 12",
+          "text": "Edit three details by hand: spacing, one component, one piece of copy."
+        },
+        {
+          "label": "Minutes 12 to 20",
+          "text": "Connect the MCP server to your coding agent of choice and pull the screen into a scratch branch."
+        },
+        {
+          "label": "Minutes 20 to 25",
+          "text": "Write down what drifted from your design system and where the round trip broke. That list is your evaluation of design-to-code handoff."
+        }
+      ],
+      "links": [
+        {
+          "label": "Wonder",
+          "url": "https://wonder.design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-14"
+    }
+  ],
+  "dont_miss": [
+    "**Anthropic's IPO pricing week.** The target debut is the week of November 16, so watch the final price range ([SiliconANGLE](https://siliconangle.com/?p=853744)).",
+    "**Claude Whiteboards, Sheets and Meetings.** Try Whiteboards for a real flow. If you are on Enterprise, note Claude Data switches on November 19.",
+    "**Your model strategy after the Cursor cutoff.** Check which models your tools route to, and test Gemini 4 Carbon at $2 and $10 per million tokens."
+  ],
+  "footnote": "Sources compiled from web searches on November 14, 2026. Product claims link to their original reports. Benchmarks and adoption figures come from the cited publications and company statements, not independent testing."
+}
