@@ -1,0 +1,910 @@
+{
+  "date": "2026-11-09",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1IHBKERN1ZRdvBfM8IOzmqT116W2LjHWia-00Jw3iViY/edit",
+  "highlights": [
+    {
+      "headline": "Self-improving AI is now a stated filing risk.",
+      "summary": "[Anthropic](https://www.anthropic.com) warned in its updated listing filing that future models may \"imminently\" reach its safety threshold for AI-driven research speed-ups, and [METR's assessment](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/) puts AI research at roughly 2x faster."
+    },
+    {
+      "headline": "Security is the new agent proving ground.",
+      "summary": "[OpenAI](https://openai.com) released [GPT-6 Cyber](https://openai.com/index/introducing-gpt-6-cyber/) to vetted defenders after its agents found 81 new Firefox bugs, while a Hacker News thread flagged that [Claude Code's \"Don't Ask Again\" setting exposed passwords in 1,122 public GitHub files](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again)."
+    },
+    {
+      "headline": "Multi-agent coding is consolidating.",
+      "summary": "[Meta](https://about.meta.com) acquired Conductor, which runs several coding agents in parallel, and the cloud service shuts down Nov 20."
+    },
+    {
+      "headline": "Figma keeps pushing agents into the canvas.",
+      "summary": "This week's release notes added an agent that draws editable vector icons, a code layer agent that reads prototype interactions, and generally available shaders."
+    },
+    {
+      "headline": "Agent products hit a reality check.",
+      "summary": "[Uber](https://www.uber.com) reported only four rides booked through an AI agent in its busiest October week, and [Airbnb](https://www.airbnb.com) pushed its AI travel agent to H1 2027. Design for trust and handoff, not just autonomy."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Several Product Hunt entries are promoted placements, so treat ranking as a weak quality signal."
+  },
+  "entries": [
+    {
+      "id": "anthropic-flags-near-term-recursive-self-improvement-risk",
+      "section": "AI Industry News",
+      "headline": "Anthropic flags near-term recursive self-improvement risk",
+      "summary": "On Nov 2, [Anthropic](https://www.anthropic.com) said no current model has crossed its threshold, but future ones may soon. Coverage: [Rupak Ganguly's digest](https://rupakganguly.substack.com/p/latest-in-ai-news-rsi-capability). METR spent Aug 12 to Oct 29 inside the company and estimates a 1.3x to 3x research speed-up ([METR report](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/)).",
+      "why_it_matters": "Model release cadence will keep accelerating.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "assume capabilities you design around today will be outdated within a quarter, so keep product logic model-agnostic."
+      },
+      "links": [
+        {
+          "label": "Anthropic flags near-term recursive self-improvement risk",
+          "url": "https://rupakganguly.substack.com/p/latest-in-ai-news-rsi-capability"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "METR report",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09",
+      "lead": true
+    },
+    {
+      "id": "openai-ships-gpt-6-cyber-and-a-large-linux-bug-hunt",
+      "section": "AI Industry News",
+      "headline": "OpenAI ships GPT-6 Cyber and a large Linux bug hunt",
+      "summary": "[GPT-6 Cyber](https://openai.com/index/introducing-gpt-6-cyber/) went to selected defenders and found 81 new Firefox bugs, all reported and patched. Separately, per [CampusX's weekly roundup](https://campusxblogs.substack.com/p/top-ai-news-of-the-week-36-november), an OpenAI agent pipeline found 948 Linux bugs with working root exploits at about $1,279 per bug. OpenAI is also buying Pierre Computer (Code Storage) and upgraded ChatGPT image generation with animated GIFs.",
+      "why_it_matters": "Agent cost per verified result is now a real, quotable number.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "expect security review flows and permission prompts to become core UX surfaces."
+      },
+      "links": [
+        {
+          "label": "OpenAI ships GPT-6 Cyber and a large Linux bug hunt",
+          "url": "https://openai.com/index/introducing-gpt-6-cyber/"
+        },
+        {
+          "label": "CampusX's weekly roundup",
+          "url": "https://campusxblogs.substack.com/p/top-ai-news-of-the-week-36-november"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "meta-buys-conductor-dropbox-buys-tigris-data",
+      "section": "AI Industry News",
+      "headline": "Meta buys Conductor, Dropbox buys Tigris Data",
+      "summary": "[Meta](https://about.meta.com) acquired Conductor, a parallel coding agent runner with over 100,000 users ([InfoWorld](https://www.infoworld.com/article/4245065/meta-acquires-conductor-as-ai-coding-shifts-toward-multi-agent-development.html)). [Dropbox](https://www.dropbox.com) bought Tigris Data for $350 million ([SiliconANGLE](https://siliconangle.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-releases-new-ai-productivity-features/)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "if you depend on a standalone agent tool, have an exit plan."
+      },
+      "links": [
+        {
+          "label": "Meta buys Conductor, Dropbox buys Tigris Data",
+          "url": "https://www.infoworld.com/article/4245065/meta-acquires-conductor-as-ai-coding-shifts-toward-multi-agent-development.html"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.meta.com"
+        },
+        {
+          "label": "Dropbox",
+          "url": "https://www.dropbox.com"
+        },
+        {
+          "label": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-releases-new-ai-productivity-features/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "perplexity-launches-teammates",
+      "section": "AI Industry News",
+      "headline": "Perplexity launches Teammates",
+      "summary": "[Perplexity](https://www.perplexity.ai) launched persistent agents for ongoing work, reportedly for Max subscribers at about $200 a month. See the [official post](https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work). The interesting design question is how long-running agents report progress without nagging.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Perplexity launches Teammates",
+          "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+        },
+        {
+          "label": "Perplexity",
+          "url": "https://www.perplexity.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "google-and-schools-apple-budgets-kimi-k3-1",
+      "section": "AI Industry News",
+      "headline": "Google and schools, Apple budgets, Kimi K3.1",
+      "summary": "[Google](https://www.google.com) will turn AI tools off by default for US K-12 student accounts starting early 2027 ([CBS News](https://cbsnews.com/news/google-search-access-schools-ai-tools/)). [Apple](https://www.apple.com) reportedly trimmed some engineers' daily AI spend cap from $300 to $200 (see [CampusX](https://campusxblogs.substack.com/p/top-ai-news-of-the-week-36-november)). [Moonshot](https://www.moonshot.ai) released open weights for Kimi K3.1 Pro. Market context: [Anthropic](https://www.anthropic.com) IPO buyers reportedly see valuations as low as $1.1T ([HN thread](https://news.ycombinator.com/item?id=50394906)), and [OpenAI](https://openai.com) reportedly raised $11B at $1.25T ([HN thread](https://news.ycombinator.com/item?id=50413822)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google and schools, Apple budgets, Kimi K3.1",
+          "url": "https://cbsnews.com/news/google-search-access-schools-ai-tools/"
+        },
+        {
+          "label": "Google",
+          "url": "https://www.google.com"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com"
+        },
+        {
+          "label": "CampusX",
+          "url": "https://campusxblogs.substack.com/p/top-ai-news-of-the-week-36-november"
+        },
+        {
+          "label": "Moonshot",
+          "url": "https://www.moonshot.ai"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "HN thread",
+          "url": "https://news.ycombinator.com/item?id=50394906"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "HN thread",
+          "url": "https://news.ycombinator.com/item?id=50413822"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "figma-ships-a-dense-week-of-agent-features",
+      "section": "Product Design & UX",
+      "headline": "Figma ships a dense week of agent features",
+      "summary": "From [Releasebot's Figma feed](https://releasebot.io/updates/figma) (sourced from [Figma release notes](https://www.figma.com/release-notes/)): on Nov 6, one-click object selection in the Select area AI image tool (macOS app); on Nov 5, the agent generates editable stroke-based vector icons ready for Figma Motion; on Nov 3, the code layer agent reads prototype connections (open beta) and GitHub repo cloning is on by default for new connections; on Nov 2, shaders became generally available with 4096px exports. A Google Drive connector landed Oct 30 on all plans.",
+      "why_it_matters": "Icons you can edit as vectors, not rasters, close a long-standing gap in AI image output. Note that code layers were free on paid plans only through Nov 4, so check your seat's credit usage.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma ships a dense week of agent features",
+          "url": "https://releasebot.io/updates/figma"
+        },
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "figma-mcp-opens-to-more-agents",
+      "section": "Product Design & UX",
+      "headline": "Figma MCP opens to more agents",
+      "summary": "[Startup Fortune](https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/) reports Figma added 20 MCP partners including [Linear](https://linear.app), [Notion](https://www.notion.com), [Mistral](https://mistral.ai) and [Junie](https://www.jetbrains.com/junie/). Dylan Field publicly called MCP \"not a perfect protocol.\"",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Takeaway",
+        "text": "design files are becoming a context source for every coding agent, so naming, tokens and component structure now matter to machines too."
+      },
+      "links": [
+        {
+          "label": "Figma MCP opens to more agents",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/"
+        },
+        {
+          "label": "Linear",
+          "url": "https://linear.app"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        },
+        {
+          "label": "Mistral",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "Junie",
+          "url": "https://www.jetbrains.com/junie/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "claude-design-matures",
+      "section": "Product Design & UX",
+      "headline": "Claude Design matures",
+      "summary": "Per a [Nov 4 roundup](https://blog.mean.ceo/claude-design-news-november-2026/), [Claude Design](https://claude.ai/design) is now usable as an artifact template in any chat, has a Claude Code /design command, revamped design systems, mobile access, and exports to PDF, PPTX, HTML and Canva. It still lacks native Figma export, version history and live multiplayer. The roundup is opinion-heavy and undated per feature, so verify plan and availability details before relying on them.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Design matures",
+          "url": "https://blog.mean.ceo/claude-design-news-november-2026/"
+        },
+        {
+          "label": "Claude Design",
+          "url": "https://claude.ai/design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "lovable-keeps-shipping-enterprise-controls",
+      "section": "Product Design & UX",
+      "headline": "Lovable keeps shipping enterprise controls",
+      "summary": "The latest [Lovable changelog](https://docs.lovable.dev/changelog) entries (Oct 16 to 21) added workspace publishing policies, organizations for Enterprise, and new connectors. Useful if you prototype in [Lovable](https://lovable.dev) inside a team with review requirements.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Lovable keeps shipping enterprise controls",
+          "url": "https://docs.lovable.dev/changelog"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "beacon-sh",
+      "section": "New AI Tools",
+      "headline": "beacon.sh",
+      "summary": "Open-source self-improving memory for AI coding agents. Top of Product Hunt's November board (promoted placement).",
+      "why_it_matters": null,
+      "audience": "developers and design engineers who lose context between sessions.",
+      "links": [
+        {
+          "label": "beacon.sh",
+          "url": "https://www.producthunt.com/products/asymptotelabs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "screen-studio-4-0",
+      "section": "New AI Tools",
+      "headline": "Screen Studio 4.0",
+      "summary": "Polished screen recordings with automatic zoom and motion.",
+      "why_it_matters": null,
+      "audience": "designers who demo prototypes or record changelogs.",
+      "links": [
+        {
+          "label": "Screen Studio 4.0",
+          "url": "https://www.producthunt.com/products/screen-studio"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "clayzo",
+      "section": "New AI Tools",
+      "headline": "Clayzo",
+      "summary": "Motion design driven by your coding agent.",
+      "why_it_matters": null,
+      "audience": "designers who want animation without a timeline editor.",
+      "links": [
+        {
+          "label": "Clayzo",
+          "url": "https://www.producthunt.com/products/clayzo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "hera",
+      "section": "New AI Tools",
+      "headline": "Hera",
+      "summary": "AI creative canvas.",
+      "why_it_matters": null,
+      "audience": "quick visual exploration and motion concepts.",
+      "links": [
+        {
+          "label": "Hera",
+          "url": "https://www.producthunt.com/products/hera-6"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "display-1-0",
+      "section": "New AI Tools",
+      "headline": "Display 1.0",
+      "summary": "Docs and apps with any agent.",
+      "why_it_matters": null,
+      "audience": "anyone turning agent output into shareable artifacts.",
+      "links": [
+        {
+          "label": "Display 1.0",
+          "url": "https://www.producthunt.com/products/display-dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "glasshand",
+      "section": "New AI Tools",
+      "headline": "Glasshand",
+      "summary": "Gives an agent a real iPhone and Mac to operate.",
+      "why_it_matters": null,
+      "audience": "QA of prototypes and onboarding flows on real devices.",
+      "links": [
+        {
+          "label": "Glasshand",
+          "url": "https://www.producthunt.com/products/glasshand"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "scalekit",
+      "section": "New AI Tools",
+      "headline": "Scalekit",
+      "summary": "MCP gateway for production agents (auth and access).",
+      "why_it_matters": null,
+      "audience": "teams shipping agent features beyond demos.",
+      "links": [
+        {
+          "label": "Scalekit",
+          "url": "https://www.producthunt.com/products/scalekit"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "perplexity-teammates",
+      "section": "New AI Tools",
+      "headline": "Perplexity Teammates",
+      "summary": "Persistent agents for ongoing research and work tasks. Pricey at about $200 a month.",
+      "why_it_matters": null,
+      "audience": "researchers and PMs with recurring analysis.",
+      "links": [
+        {
+          "label": "Perplexity Teammates",
+          "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "agent-memory-becomes-infrastructure",
+      "section": "Trends to Watch",
+      "headline": "Agent memory becomes infrastructure",
+      "summary": "[Anthropic's \"Components of Agent Memory\"](https://www.anthropic.com/research/components-of-agent-memory), [beacon.sh](https://www.producthunt.com/products/asymptotelabs) and [claude-mem](https://github.com/thedotmack/claude-mem) all point the same way.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "what to persist, what to forget, and how users inspect and edit memory."
+      },
+      "links": [
+        {
+          "label": "Anthropic's \"Components of Agent Memory\"",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        },
+        {
+          "label": "beacon.sh",
+          "url": "https://www.producthunt.com/products/asymptotelabs"
+        },
+        {
+          "label": "claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "multi-agent-and-parallel-coding",
+      "section": "Trends to Watch",
+      "headline": "Multi-agent and parallel coding",
+      "summary": "Meta's Conductor deal confirms demand for running agents side by side.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "review UIs for comparing parallel diffs and approving in batches."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "security-and-permissions-as-ux",
+      "section": "Trends to Watch",
+      "headline": "Security and permissions as UX",
+      "summary": "The Claude Code secrets and email-sharing threads on Hacker News show that \"remember my choice\" consent patterns carry real risk.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "scoped, expiring permissions."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "design-files-as-agent-context",
+      "section": "Trends to Watch",
+      "headline": "Design files as agent context",
+      "summary": "Figma's MCP expansion and code layer agent make design systems an API.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "token hygiene, component documentation, [Code Connect](https://www.figma.com/code-connect-docs/)."
+      },
+      "links": [
+        {
+          "label": "Code Connect",
+          "url": "https://www.figma.com/code-connect-docs/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "agent-hype-versus-real-usage",
+      "section": "Trends to Watch",
+      "headline": "Agent hype versus real usage",
+      "summary": "Uber's four-rides stat ([Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/uber-reveals-ai-agents-barely-213042380.html)) and Airbnb's delay ([The Verge](https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings)) show consumer agent adoption lags.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "where users actually want delegation."
+      },
+      "links": [
+        {
+          "label": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/technology/ai/articles/uber-reveals-ai-agents-barely-213042380.html"
+        },
+        {
+          "label": "The Verge",
+          "url": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "figma-s-vector-icon-agent",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's vector icon agent",
+      "summary": "Output lands as real strokes and paths you can edit, not a flat image.",
+      "why_it_matters": "the AI result enters the user's existing tools and mental model, so correcting it costs seconds.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma's vector icon agent",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "screen-studio-4-0-2",
+      "section": "Product Design Inspiration",
+      "headline": "Screen Studio 4.0",
+      "summary": "Automatic zoom and cursor smoothing make a rough recording look directed.",
+      "why_it_matters": "it removes the editing step entirely and defaults to a good result, with manual override available.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Screen Studio 4.0",
+          "url": "https://www.producthunt.com/products/screen-studio"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "perplexity-teammates-2",
+      "section": "Product Design Inspiration",
+      "headline": "Perplexity Teammates",
+      "summary": "Agents that persist and follow up in Slack rather than living in a chat window. Study how it handles status and interruption.",
+      "why_it_matters": "it meets work where it already happens.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Perplexity Teammates",
+          "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "thedotmack-claude-mem",
+      "section": "GitHub & Open Source",
+      "headline": "thedotmack/claude-mem",
+      "summary": "Captures and compresses agent session activity, then injects context into later sessions. About 109.6K stars as of Nov 2, up 1,526 in a day. Gaining attention because memory is the top pain point.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "headroomlabs-ai-headroom",
+      "section": "GitHub & Open Source",
+      "headline": "headroomlabs-ai/headroom",
+      "summary": "Compresses tool outputs, logs and RAG chunks before they reach the model, claiming up to 95% token reduction for JSON. Cuts agent costs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "headroomlabs-ai/headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "affaan-m-ecc",
+      "section": "GitHub & Open Source",
+      "headline": "affaan-m/ECC",
+      "summary": "An agent-harness optimization system (skills, memory, research-first workflows) for Claude Code and Cursor. Around 295K stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "beenuar-aisoc",
+      "section": "GitHub & Open Source",
+      "headline": "beenuar/AiSOC",
+      "summary": "Self-hosted AI security operations center with an MCP server for Claude and Cursor. New this week, tracking the security theme.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "beenuar/AiSOC",
+          "url": "https://github.com/beenuar/AiSOC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "donchitos-claude-code-game-studios",
+      "section": "GitHub & Open Source",
+      "headline": "Donchitos/Claude-Code-Game-Studios",
+      "summary": "Turns Claude Code into a simulated studio with 49 agents and 72 workflow skills. A good study in multi-agent role design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Donchitos/Claude-Code-Game-Studios",
+          "url": "https://github.com/Donchitos/Claude-Code-Game-Studios"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "cjpais-handy",
+      "section": "GitHub & Open Source",
+      "headline": "cjpais/Handy",
+      "summary": "Offline speech-to-text app. Useful for voice-driven prototyping notes. Star counts come from a bot digest dated Nov 2, so they are a week old.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "cjpais/Handy",
+          "url": "https://github.com/cjpais/Handy"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "claude-code-sends-your-email-address-to-websites",
+      "section": "Social Buzz",
+      "headline": "Claude Code sends your email address to websites",
+      "kicker": "Hacker News",
+      "summary": "(about 1,600 points) and the [\"Don't Ask Again\" secrets exposure](https://news.ycombinator.com/item?id=50407882) thread (about 570 points) are driving a privacy and permissions debate. Design lesson: make data flows visible.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code sends your email address to websites",
+          "url": "https://news.ycombinator.com/item?id=50385272"
+        },
+        {
+          "label": "\"Don't Ask Again\" secrets exposure",
+          "url": "https://news.ycombinator.com/item?id=50407882"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "ai-is-forcing-us-to-pay-off-40-years-of-technical-debt",
+      "section": "Social Buzz",
+      "headline": "AI is forcing us to pay off 40 years of technical debt",
+      "kicker": "Hacker News",
+      "summary": "(IEEE Spectrum, about 1,300 points). Agents work best on clean codebases, which raises the value of well-structured design systems too.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI is forcing us to pay off 40 years of technical debt",
+          "url": "https://news.ycombinator.com/item?id=50364336"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "goodbye-claude-hello-pi",
+      "section": "Social Buzz",
+      "headline": "Goodbye Claude, hello Pi",
+      "kicker": "Hacker News",
+      "summary": "And [Goldman Sachs pulling Claude Code from bankers and traders](https://news.ycombinator.com/item?id=50415628) show enterprises and individuals reassessing tool choices. [\"AI is dramatically accelerating AI research\"](https://news.ycombinator.com/item?id=50397994) (about 360 points) debates the METR finding.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Goodbye Claude, hello Pi",
+          "url": "https://news.ycombinator.com/item?id=50410107"
+        },
+        {
+          "label": "Goldman Sachs pulling Claude Code from bankers and traders",
+          "url": "https://news.ycombinator.com/item?id=50415628"
+        },
+        {
+          "label": "\"AI is dramatically accelerating AI research\"",
+          "url": "https://news.ycombinator.com/item?id=50397994"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "beacon-sh-screen-studio-4-0-and-scalekit-lead-november",
+      "section": "Social Buzz",
+      "headline": "beacon.sh, Screen Studio 4.0 and Scalekit lead November",
+      "kicker": "Product Hunt",
+      "summary": "Scores come from a bot digest, so confirm before citing.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "beacon.sh, Screen Studio 4.0 and Scalekit lead November",
+          "url": "https://www.producthunt.com/leaderboard/monthly/2026/11"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "components-of-agent-memory",
+      "section": "Learning Corner",
+      "headline": "Components of Agent Memory",
+      "kicker": "Article",
+      "summary": "A clear model of what agent memory needs, which directly informs how you design memory controls.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Components of Agent Memory",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "from-claude-code-to-figma-and-back-again",
+      "section": "Learning Corner",
+      "headline": "From Claude Code to Figma, and Back Again",
+      "kicker": "Video",
+      "summary": "(Figma webinar). Walks through round-tripping between code and canvas, matching this week's Figma agent updates.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "From Claude Code to Figma, and Back Again",
+          "url": "https://www.figma.com/webinars/claude-code-cs/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "claude-mem",
+      "section": "Learning Corner",
+      "headline": "claude-mem",
+      "kicker": "GitHub project",
+      "summary": "Read the README to see how session capture and context injection are structured.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "figma-release-notes",
+      "section": "Learning Corner",
+      "headline": "Figma release notes",
+      "kicker": "Design resource",
+      "summary": "Skim weekly; it is the fastest way to track what agents can now do on the canvas.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "from-figma-to-claude-code-and-back",
+      "section": "Learning Corner",
+      "headline": "From Figma to Claude Code and back",
+      "kicker": "AI workflow",
+      "summary": "(Lenny's Newsletter). A practical design-to-code loop you can copy.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "From Figma to Claude Code and back",
+          "url": "https://www.lennysnewsletter.com/p/from-figma-to-claude-code-and-back"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "permission-and-consent-ux-for-coding-agents",
+      "section": "Opportunities",
+      "headline": "Permission and consent UX for coding agents",
+      "summary": "The week's HN threads show demand for scoped, understandable approval patterns. Publish a case study or a redesign.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "memory-management-interfaces",
+      "section": "Opportunities",
+      "headline": "Memory management interfaces",
+      "summary": "Few products let users inspect, edit and forget agent memory well. A strong concept here is portfolio-worthy and sellable.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "parallel-agent-review-ui",
+      "section": "Opportunities",
+      "headline": "Parallel-agent review UI",
+      "summary": "With Meta's Conductor purchase, the review layer for multiple agents is open territory.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "design-system-cleanup-as-a-service",
+      "section": "Opportunities",
+      "headline": "Design system cleanup as a service",
+      "summary": "Agents consume design systems via MCP, so teams need tokens and components machine-ready. Offer audits.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "agent-trust-and-handoff-patterns",
+      "section": "Opportunities",
+      "headline": "Agent trust and handoff patterns",
+      "summary": "Uber's and Airbnb's retreat suggests consumer agent flows need better onboarding and fallbacks.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    },
+    {
+      "id": "audit-your-design-system-for-agent-readability",
+      "section": "Today's Experiment",
+      "headline": "Audit your design system for agent readability",
+      "kicker": "25 minutes",
+      "summary": "Open a Figma file with your component library. Connect it to your coding agent through the [Figma MCP server](https://help.figma.com/hc/en-us/articles/36189347137047-Figma-MCP-collection-Figma-Developer-Workflows-design-systems-Code-Connect-MCP-and-Make-feat-Jake-Albaugh). Ask the agent to build one screen from a single frame, then list every place it guessed (unnamed layers, hard-coded colors, missing variants). Fix the top three and rerun. Record the before and after.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma MCP server",
+          "url": "https://help.figma.com/hc/en-us/articles/36189347137047-Figma-MCP-collection-Figma-Developer-Workflows-design-systems-Code-Connect-MCP-and-Make-feat-Jake-Albaugh"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-09"
+    }
+  ],
+  "dont_miss": [
+    "Read [METR's Anthropic assessment](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/). It frames the pace of change for the next year.",
+    "Skim the [\"Don't Ask Again\" secrets thread](https://news.ycombinator.com/item?id=50407882) and review your own agent permission settings.",
+    "Try the experiment above using Figma's new [code layer and icon agent updates](https://releasebot.io/updates/figma)."
+  ],
+  "footnote": "Sources: weekly digests from CampusX and Rupak Ganguly, Releasebot's Figma feed, Startup Fortune, Hacker News and Product Hunt digests via GitHub agents-radar bots, and linked primary pages. Several figures come from secondary newsletters and bot digests that were not independently verified. Lovable's changelog showed no entries after Oct 21."
+}
