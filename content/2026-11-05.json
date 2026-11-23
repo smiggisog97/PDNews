@@ -1,0 +1,683 @@
+{
+  "date": "2026-11-05",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1xH7hwJ_1g-cw9WMg3GSkwzFI-VgOiL3ihv8V72NwgJQ/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic IPO filing:",
+      "summary": "[Anthropic](https://www.anthropic.com) filed to list on the Nasdaq on October 26, with a possible Thanksgiving-week debut, per [lablab.ai's weekly roundup](https://lablab.ai/ai-articles/this-week-in-ai-2026-11-02)."
+    },
+    {
+      "headline": "Gemini 4 Carbon:",
+      "summary": "[Google DeepMind](https://deepmind.google) shipped it October 28, restricted at first to trusted security defenders."
+    },
+    {
+      "headline": "Open weights at scale:",
+      "summary": "[Mistral](https://mistral.ai) released Large 4, a 1T-parameter multimodal model, on October 29."
+    },
+    {
+      "headline": "OpenAI goes political:",
+      "summary": "[OpenAI](https://openai.com) published a 2028 election policy essay, covered by [TechCrunch](https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/)."
+    },
+    {
+      "headline": "Design handoff is shifting to files:",
+      "summary": "DESIGN.md plus [Google Stitch](https://stitch.withgoogle.com) is becoming the bridge from vibe design to coding agents."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Every entry on that Product Hunt leaderboard was marked Promoted, so treat the ranking as sponsored placement.",
+    "GitHub & Open Source": "Star counts per the [November 3 trends digest](https://github.com/datnguyenquy94/news-radar/issues/967).",
+    "Social Buzz": "Live threads could not be retrieved this run, so this section sticks to verified discussion sources."
+  },
+  "entries": [
+    {
+      "id": "anthropic-files-to-list-on-the-nasdaq",
+      "section": "AI Industry News",
+      "headline": "Anthropic files to list on the Nasdaq",
+      "summary": "Per [lablab.ai](https://lablab.ai/ai-articles/this-week-in-ai-2026-11-02), [Anthropic](https://www.anthropic.com) reported $16.3B in six-month revenue to June, with nearly half flowing through the [AWS](https://aws.amazon.com), [Google Cloud](https://cloud.google.com) and [Microsoft](https://www.microsoft.com) marketplaces. Figures come from a secondary roundup, so verify against the filing.",
+      "why_it_matters": "Public financials will expose real pricing power and margins.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "expect vendor-risk and roadmap questions from your own clients."
+      },
+      "links": [
+        {
+          "label": "Anthropic files to list on the Nasdaq",
+          "url": "https://lablab.ai/ai-articles/this-week-in-ai-2026-11-02"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "AWS",
+          "url": "https://aws.amazon.com"
+        },
+        {
+          "label": "Google Cloud",
+          "url": "https://cloud.google.com"
+        },
+        {
+          "label": "Microsoft",
+          "url": "https://www.microsoft.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05",
+      "lead": true
+    },
+    {
+      "id": "gemini-4-carbon-launches-with-limited-access",
+      "section": "AI Industry News",
+      "headline": "Gemini 4 Carbon launches with limited access",
+      "summary": "[Google DeepMind](https://deepmind.google) reports 88.2% on SEC-bench Pro and 71.0% on CWE-bench, with introductory pricing of 2/10 per million tokens.",
+      "why_it_matters": "A security-focused model gated to defenders signals a new release pattern.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "general availability for builders is not announced yet."
+      },
+      "links": [
+        {
+          "label": "Gemini 4 Carbon launches with limited access",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mistral-opens-large-4",
+      "section": "AI Industry News",
+      "headline": "Mistral opens Large 4",
+      "summary": "[Mistral](https://mistral.ai) published weights under a modified MIT license (hosted resale needs a commercial license). It runs on vLLM and SGLang and is on [Hugging Face](https://huggingface.co).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "a frontier-scale open model lowers the cost of self-hosted agents and prototypes."
+      },
+      "links": [
+        {
+          "label": "Mistral opens Large 4",
+          "url": "https://mistral.ai"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "cloud-earnings-and-capex",
+      "section": "AI Industry News",
+      "headline": "Cloud earnings and capex",
+      "summary": "Per the same roundup, [AWS](https://aws.amazon.com) grew 39%, Azure 48%, and Google Cloud more than doubled. Alphabet fell 12.6% on October 29 after heavy capex.",
+      "why_it_matters": "Compute supply shapes API pricing and rate limits you design around.",
+      "links": [
+        {
+          "label": "Cloud earnings and capex",
+          "url": "https://aws.amazon.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "publishers-get-a-shared-ai-opt-out-token",
+      "section": "AI Industry News",
+      "headline": "Publishers get a shared AI opt-out token",
+      "summary": "[OpenAI](https://openai.com), [Google](https://about.google), Microsoft and Anthropic will honor a shared robots.txt token for training opt-out, with rollouts from coming months to early 2027.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Publishers get a shared AI opt-out token",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Google",
+          "url": "https://about.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "design-md-becomes-the-handoff-format",
+      "section": "Product Design & UX",
+      "headline": "DESIGN.md becomes the handoff format",
+      "summary": "Per [Mean CEO's November roundup](https://blog.mean.ceo/vibedesigning-news-november-2026/), teams are moving design intent from [Google Stitch](https://stitch.withgoogle.com) into [Claude](https://claude.ai), [v0](https://v0.app) or [Lovable](https://lovable.dev) using a plain DESIGN.md. See the [MindStudio guide](https://www.mindstudio.ai/blog/what-is-vibe-design-google-stitch).",
+      "why_it_matters": "A text spec of tokens and rules keeps generated UI consistent across tools.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "DESIGN.md becomes the handoff format",
+          "url": "https://blog.mean.ceo/vibedesigning-news-november-2026/"
+        },
+        {
+          "label": "Google Stitch",
+          "url": "https://stitch.withgoogle.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "v0",
+          "url": "https://v0.app"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "MindStudio guide",
+          "url": "https://www.mindstudio.ai/blog/what-is-vibe-design-google-stitch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "framer-ships-ai-agents",
+      "section": "Product Design & UX",
+      "headline": "Framer ships AI agents",
+      "summary": "[Framer](https://www.framer.com) launched [AI Agents](https://www.producthunt.com/products/framer) to design and publish sites.",
+      "why_it_matters": "Faster marketing-site iteration without a handoff to engineering.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Framer ships AI agents",
+          "url": "https://www.producthunt.com/products/framer"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "hera",
+      "section": "New AI Tools",
+      "headline": "Hera",
+      "summary": "AI creative canvas for motion and visuals.",
+      "why_it_matters": null,
+      "audience": "designers exploring animation.",
+      "links": [
+        {
+          "label": "Hera",
+          "url": "https://www.producthunt.com/products/hera-6"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "clayzo",
+      "section": "New AI Tools",
+      "headline": "Clayzo",
+      "summary": "Motion design driven by your coding agent.",
+      "why_it_matters": null,
+      "audience": "designer-engineers.",
+      "links": [
+        {
+          "label": "Clayzo",
+          "url": "https://www.producthunt.com/products/clayzo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "framer-ai-agents",
+      "section": "New AI Tools",
+      "headline": "Framer AI Agents",
+      "summary": "Design and publish sites with AI.",
+      "why_it_matters": null,
+      "audience": "marketers and designers.",
+      "links": [
+        {
+          "label": "Framer AI Agents",
+          "url": "https://www.producthunt.com/products/framer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "display-1-0",
+      "section": "New AI Tools",
+      "headline": "Display 1.0",
+      "summary": "Docs and apps with any agent in one workspace.",
+      "why_it_matters": null,
+      "audience": "teams mixing agents.",
+      "links": [
+        {
+          "label": "Display 1.0",
+          "url": "https://www.producthunt.com/products/display-dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "agentkit-by-scalekit",
+      "section": "New AI Tools",
+      "headline": "AgentKit by Scalekit",
+      "summary": "MCP gateway for production agents.",
+      "why_it_matters": null,
+      "audience": "builders shipping agent features.",
+      "links": [
+        {
+          "label": "AgentKit by Scalekit",
+          "url": "https://www.producthunt.com/products/scalekit"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "testifly",
+      "section": "New AI Tools",
+      "headline": "Testifly",
+      "summary": "Autonomous QA with no maintenance.",
+      "why_it_matters": null,
+      "audience": "small product teams.",
+      "links": [
+        {
+          "label": "Testifly",
+          "url": "https://www.producthunt.com/products/testifly-launch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "text-files-as-design-systems",
+      "section": "Trends to Watch",
+      "headline": "Text files as design systems",
+      "summary": "DESIGN.md and agent skills encode taste as portable context.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to write tight, testable design rules."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mcp-gateways",
+      "section": "Trends to Watch",
+      "headline": "MCP gateways",
+      "summary": "[AgentKit](https://www.producthunt.com/products/scalekit) and similar products show agent auth and access control becoming a product category.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "permission and consent UX for agents."
+      },
+      "links": [
+        {
+          "label": "AgentKit",
+          "url": "https://www.producthunt.com/products/scalekit"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "parallel-agent-workspaces",
+      "section": "Trends to Watch",
+      "headline": "Parallel agent workspaces",
+      "summary": "[agent-desktop](https://github.com/vercel-labs/agent-desktop) and [worktrunk](https://github.com/max-sixty/worktrunk) manage many agents at once.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "the interaction patterns for supervising agents."
+      },
+      "links": [
+        {
+          "label": "agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "google-stitch-comparison-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Google Stitch comparison canvas",
+      "summary": "Showing variants side by side turns generation into choosing, which lowers prompt effort.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google Stitch comparison canvas",
+          "url": "https://stitch.withgoogle.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "teamily-ai",
+      "section": "Product Design Inspiration",
+      "headline": "Teamily AI",
+      "summary": "Puts personal agents, agent teams and people in one messenger. The familiar chat frame makes agents feel like teammates.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Teamily AI",
+          "url": "https://www.producthunt.com/products/teamily-ai-human-ai-social-network"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "xmind-2027",
+      "section": "Product Design Inspiration",
+      "headline": "Xmind 2027",
+      "summary": "A mind map with an AI thinking partner keeps AI inside a spatial, editable artifact instead of a chat log.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Xmind 2027",
+          "url": "https://www.producthunt.com/products/xmind"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "vercel-labs-agent-desktop",
+      "section": "GitHub & Open Source",
+      "headline": "vercel-labs/agent-desktop",
+      "summary": "Terminal as a multi-agent workspace, new, 10.7k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "karpathy-nanochat",
+      "section": "GitHub & Open Source",
+      "headline": "karpathy/nanochat",
+      "summary": "Cheap local ChatGPT-style chatbot, 60k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "karpathy/nanochat",
+          "url": "https://github.com/karpathy/nanochat"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "thedotmack-claude-mem",
+      "section": "GitHub & Open Source",
+      "headline": "thedotmack/claude-mem",
+      "summary": "Persistent session memory for agents, 111k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mattpocock-skills",
+      "section": "GitHub & Open Source",
+      "headline": "mattpocock/skills",
+      "summary": "Curated agent skills, 310k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "max-sixty-worktrunk",
+      "section": "GitHub & Open Source",
+      "headline": "max-sixty/worktrunk",
+      "summary": "Git worktree CLI for parallel agents, 10k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "max-sixty/worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "discussion-sources-this-week",
+      "section": "Social Buzz",
+      "headline": "Discussion sources this week",
+      "summary": "The [r/vibecoding DESIGN.md thread](https://www.reddit.com/r/vibecoding/comments/1sbbiei/using_designmd_for_more_consistent_ui_when_vibe) is the most useful design discussion linked this week. [Hacker News](https://news.ycombinator.com) and [Product Hunt](https://www.producthunt.com) are dominated by agent infrastructure launches.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Discussion sources this week",
+          "url": "https://www.reddit.com/r/vibecoding/comments/1sbbiei/using_designmd_for_more_consistent_ui_when_vibe"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "eleken-s-eight-phase-vibe-design-process",
+      "section": "Learning Corner",
+      "headline": "Eleken's eight-phase vibe design process",
+      "kicker": "Article",
+      "summary": "Built on a year of client work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Eleken's eight-phase vibe design process",
+          "url": "https://www.eleken.co/blog-posts/vibe-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "no-verified-video-this-run",
+      "section": "Learning Corner",
+      "headline": "No verified video this run",
+      "kicker": "Video",
+      "summary": "None verified this run. Search the [Figma YouTube channel](https://www.youtube.com/@Figma) for current Make walkthroughs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma YouTube channel",
+          "url": "https://www.youtube.com/@Figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mattpocock-skills-2",
+      "section": "Learning Corner",
+      "headline": "mattpocock/skills",
+      "kicker": "GitHub project",
+      "summary": "Study how skills are structured.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "mindstudio-on-stitch-and-design-md",
+      "section": "Learning Corner",
+      "headline": "MindStudio on Stitch and DESIGN.md",
+      "kicker": "Design resource",
+      "summary": "MindStudio on Stitch and DESIGN.md.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "MindStudio on Stitch and DESIGN.md",
+          "url": "https://www.mindstudio.ai/blog/what-is-vibe-design-google-stitch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "stitch-to-design-md-to-claude",
+      "section": "Learning Corner",
+      "headline": "Stitch to DESIGN.md to Claude",
+      "kicker": "AI workflow",
+      "summary": "Stitch to DESIGN.md to [Claude](https://claude.ai) for implementation.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "agent-supervision-ux",
+      "section": "Opportunities",
+      "headline": "Agent supervision UX",
+      "summary": "Parallel-agent tools lack good review and approval patterns.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "design-md-consulting",
+      "section": "Opportunities",
+      "headline": "DESIGN.md consulting",
+      "summary": "Convert brand systems into agent-readable specs for clients.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "agent-permission-flows",
+      "section": "Opportunities",
+      "headline": "Agent permission flows",
+      "summary": "MCP gateway vendors need consent and access interfaces.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "open-model-prototypes",
+      "section": "Opportunities",
+      "headline": "Open-model prototypes",
+      "summary": "[Mistral](https://mistral.ai) Large 4 enables self-hosted demos for privacy-sensitive clients.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mistral",
+          "url": "https://mistral.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    },
+    {
+      "id": "write-a-design-md",
+      "section": "Today's Experiment",
+      "headline": "Write a DESIGN.md",
+      "kicker": "25 minutes",
+      "summary": "Take one product you know, list color tokens, type scale, spacing, and five interaction rules. Generate the same screen in [Stitch](https://stitch.withgoogle.com) or [v0](https://v0.app) with and without the file, then compare consistency.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Stitch",
+          "url": "https://stitch.withgoogle.com"
+        },
+        {
+          "label": "v0",
+          "url": "https://v0.app"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-05"
+    }
+  ],
+  "dont_miss": [
+    "[Anthropic's IPO filing and the weekly roundup](https://lablab.ai/ai-articles/this-week-in-ai-2026-11-02).",
+    "[DESIGN.md as the new handoff format](https://blog.mean.ceo/vibedesigning-news-november-2026/).",
+    "[Mistral Large 4 open weights](https://mistral.ai)."
+  ],
+  "footnote": "Sources: [lablab.ai](https://lablab.ai/ai-articles/this-week-in-ai-2026-11-02), [TechCrunch](https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/), [Mean CEO](https://blog.mean.ceo/vibedesigning-news-november-2026/), [Product Hunt](https://www.producthunt.com/leaderboard/weekly/2026/45), [GitHub trends digest](https://github.com/datnguyenquy94/news-radar/issues/967). Several items come from secondary roundups and were not independently verified."
+}
