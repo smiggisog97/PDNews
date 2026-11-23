@@ -1,0 +1,956 @@
+{
+  "date": "2026-11-03",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1zGnC33-1FuD4C7LHuGvlvbtIkf_5B9_IS1An3PTtfjo/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic's amended S-1 is public.",
+      "summary": "[Anthropic](https://www.anthropic.com) reports Q3 revenue near $17B and about $895B in purchase commitments, per [CNBC](https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html). Investors reportedly want a $1.5T to $1.6T IPO valuation."
+    },
+    {
+      "headline": "OpenAI merges ChatGPT and Codex limits.",
+      "summary": "From December, [OpenAI](https://openai.com) draws both from one token-based allowance, per its [help article](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits)."
+    },
+    {
+      "headline": "Design-to-agent loops tighten.",
+      "summary": "[Cursor](https://cursor.com) added Annotate to design mode, and the [Figma](https://www.figma.com) agent now connects to Google Drive on all plans ([Week in Product #512](https://weekinproduct.com/p/week-in-product-512))."
+    },
+    {
+      "headline": "Open models keep landing.",
+      "summary": "[Mistral](https://mistral.ai) released [Large 4 weights](https://mistral.ai/news/mistral-large-4-oss/) and [Google DeepMind](https://deepmind.google) shipped [Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/) for edge devices."
+    },
+    {
+      "headline": "Supply chain risk for agent tooling.",
+      "summary": "A backdoored Claude Code extension surfaced on the Cursor marketplace ([Phorion writeup](https://phorion.io/blog/offical-claude-code-vsx-compromise/)). Audit extensions before installing."
+    }
+  ],
+  "entries": [
+    {
+      "id": "anthropic-s-1-shows-hypergrowth-and-huge-compute-bills",
+      "section": "AI Industry News",
+      "headline": "Anthropic S-1 shows hypergrowth and huge compute bills",
+      "summary": "[Anthropic](https://www.anthropic.com) disclosed about $17B Q3 revenue, a $23.29B net loss driven by fair-value changes, and roughly $895.4B in purchase commitments ([CNBC](https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html)). The [WSJ](https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf) reports investors pushing the valuation down from about $2T.",
+      "why_it_matters": "frontier pricing and rate limits follow compute economics.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "expect continued limit changes and price tiering."
+      },
+      "links": [
+        {
+          "label": "Anthropic S-1 shows hypergrowth and huge compute bills",
+          "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "WSJ",
+          "url": "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03",
+      "lead": true
+    },
+    {
+      "id": "openai-unifies-chatgpt-and-codex-usage",
+      "section": "AI Industry News",
+      "headline": "OpenAI unifies ChatGPT and Codex usage",
+      "summary": "One token allowance covers both [ChatGPT](https://chatgpt.com) and [Codex](https://openai.com/codex) from December. Plain Instant chats do not count ([OpenAI](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits)).",
+      "why_it_matters": "heavy coding sessions now compete with chat for the same budget.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "plan prototype-heavy sessions around the limit display in Settings."
+      },
+      "links": [
+        {
+          "label": "OpenAI unifies ChatGPT and Codex usage",
+          "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "mistral-large-4-and-gemini-4-carbon",
+      "section": "AI Industry News",
+      "headline": "Mistral Large 4 and Gemini 4 Carbon",
+      "summary": "[Mistral Large 4](https://mistral.ai/news/mistral-large-4-oss/) weights drew 1,716 points on [Hacker News](https://news.ycombinator.com/item?id=50289418). [Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/) targets energy-efficient edge use ([HN thread](https://news.ycombinator.com/item?id=50276792)).",
+      "why_it_matters": "strong open and on-device models make local, private design tooling realistic.",
+      "links": [
+        {
+          "label": "Mistral Large 4 and Gemini 4 Carbon",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=50289418"
+        },
+        {
+          "label": "Gemini 4 Carbon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        },
+        {
+          "label": "HN thread",
+          "url": "https://news.ycombinator.com/item?id=50276792"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "benchmark-and-agent-signals",
+      "section": "AI Industry News",
+      "headline": "Benchmark and agent signals",
+      "summary": "[SemiAnalysis GDPx](https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities) puts Claude Opus 5.5 first at 12.0%, ahead of Gemini 4 Carbon at 10.9% and GPT-6 Astra at 9.6% (via [AI Weekly](https://aiweekly.co/ai-news-today)). Separately, [Goldman Sachs removed Claude Code and Copilot](https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools) for bankers and traders while engineers keep access. Enterprises are segmenting agent access by role.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Benchmark and agent signals",
+          "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
+        },
+        {
+          "label": "AI Weekly",
+          "url": "https://aiweekly.co/ai-news-today"
+        },
+        {
+          "label": "Goldman Sachs removed Claude Code and Copilot",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "apple-intelligence-reaches-china",
+      "section": "AI Industry News",
+      "headline": "Apple Intelligence reaches China",
+      "summary": "[Apple](https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/) starts developer testing on November 4 with a public rollout in December, with Alibaba's [Qwen](https://qwen.ai) powering selected features ([CGTN](https://news.cgtn.com/news/2026-10-31/Alibaba-s-Qwen-to-integrate-into-Apple-Intelligence-in-landmark-deal-1RHilSeJsbK/p.html)). Localize AI features per region from the start.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Apple Intelligence reaches China",
+          "url": "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/"
+        },
+        {
+          "label": "Qwen",
+          "url": "https://qwen.ai"
+        },
+        {
+          "label": "CGTN",
+          "url": "https://news.cgtn.com/news/2026-10-31/Alibaba-s-Qwen-to-integrate-into-Apple-Intelligence-in-landmark-deal-1RHilSeJsbK/p.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "cursor-design-mode-adds-annotate",
+      "section": "Product Design & UX",
+      "headline": "Cursor design mode adds Annotate",
+      "summary": "[Cursor](https://cursor.com) lets you draw on the page, edit elements, and review at multiple screen sizes before sending visual prompts to the agent ([Week in Product #512](https://weekinproduct.com/p/week-in-product-512)).",
+      "why_it_matters": "pointing beats describing. This cuts the prompt rewrite loop for UI tweaks.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor design mode adds Annotate",
+          "url": "https://weekinproduct.com/p/week-in-product-512"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "figma-agent-connects-to-google-drive",
+      "section": "Product Design & UX",
+      "headline": "Figma agent connects to Google Drive",
+      "summary": "The [Figma agent](https://www.figma.com/release-notes/) can now pull from Docs, Sheets, and Slides on all plans.",
+      "why_it_matters": "briefs and copy decks become direct input to design generation.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma agent connects to Google Drive",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "claude-code-to-figma-matures",
+      "section": "Product Design & UX",
+      "headline": "Claude Code to Figma matures",
+      "summary": "Writing to the canvas from [Claude Code](https://claude.com/product/claude-code) now has solid guides, including [Builder.io's tutorial and limitations](https://www.builder.io/blog/claude-code-to-figma) and [a hands-on test on DEV](https://dev.to/dishant0406/i-tested-claude-code-to-figma-heres-what-actually-works-4p19).",
+      "why_it_matters": "round-trip code and design is now workable for real projects.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude Code to Figma matures",
+          "url": "https://www.builder.io/blog/claude-code-to-figma"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "a hands-on test on DEV",
+          "url": "https://dev.to/dishant0406/i-tested-claude-code-to-figma-heres-what-actually-works-4p19"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "other-updates",
+      "section": "Product Design & UX",
+      "headline": "Other updates",
+      "summary": "[Shopify Editions Fall 2026](https://www.shopify.com/editions/fall2026) added an AI-editable Canvas for store design. [Notion](https://www.notion.com) AI Meeting Notes now labels every speaker in Google Meet ([announcement](https://x.com/NotionHQ/status/2115225539825008816)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Other updates",
+          "url": "https://www.shopify.com/editions/fall2026"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        },
+        {
+          "label": "announcement",
+          "url": "https://x.com/NotionHQ/status/2115225539825008816"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "paradev",
+      "section": "New AI Tools",
+      "headline": "Paradev",
+      "summary": "(formerly Superset). Runs many coding agents in parallel, each in its own Git worktree. Free tier for one user.",
+      "why_it_matters": null,
+      "audience": "developers and design engineers.",
+      "links": [
+        {
+          "label": "Paradev",
+          "url": "https://paradev.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "claude-unslop",
+      "section": "New AI Tools",
+      "headline": "Claude Unslop",
+      "summary": "Free skill that audits an AI-looking design, proposes a direction, and fixes it in passes.",
+      "why_it_matters": null,
+      "audience": "designers shipping AI-generated UI.",
+      "links": [
+        {
+          "label": "Claude Unslop",
+          "url": "https://github.com/heydamir/unslop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "useit-studio",
+      "section": "New AI Tools",
+      "headline": "UseIt Studio",
+      "summary": "Design agent that outputs editable files for physical products with bleed and dielines. Circle a part to change just that part.",
+      "why_it_matters": null,
+      "audience": "brand and packaging designers.",
+      "links": [
+        {
+          "label": "UseIt Studio",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "composal",
+      "section": "New AI Tools",
+      "headline": "Composal",
+      "summary": "Sends browser agents through your product to find bugs, with video, logs, and repro steps.",
+      "why_it_matters": null,
+      "audience": "QA and product teams.",
+      "links": [
+        {
+          "label": "Composal",
+          "url": "https://composal.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "sentient-os",
+      "section": "New AI Tools",
+      "headline": "Sentient OS",
+      "summary": "Local model on your Mac that digests notes, mail, calendar, and screenshots overnight into Markdown. Open source, Apple silicon only.",
+      "why_it_matters": null,
+      "audience": "privacy-minded knowledge workers.",
+      "links": [
+        {
+          "label": "Sentient OS",
+          "url": "https://sentient-os.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "nativ",
+      "section": "New AI Tools",
+      "headline": "Nativ",
+      "summary": "Mac app for running open models with a local server for Claude Code, Codex, Aider, and Goose. Open source, MIT.",
+      "why_it_matters": null,
+      "audience": "tinkerers who want local inference.",
+      "links": [
+        {
+          "label": "Nativ",
+          "url": "https://www.neywalabs.ai/products/nativ"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "sherpa",
+      "section": "New AI Tools",
+      "headline": "Sherpa",
+      "summary": "Moves a marketing site into code you own, synced to GitHub, with edits requested through Claude, ChatGPT, or Slack. From $49 per month.",
+      "why_it_matters": null,
+      "audience": "marketing designers.",
+      "links": [
+        {
+          "label": "Sherpa",
+          "url": "https://www.withsherpa.ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "schematik",
+      "section": "New AI Tools",
+      "headline": "Schematik",
+      "summary": "Turns a plain-English hardware idea into code, wiring diagram, and parts list for Arduino, ESP32, or Raspberry Pi Pico.",
+      "why_it_matters": null,
+      "audience": "hardware prototyping.",
+      "links": [
+        {
+          "label": "Schematik",
+          "url": "https://www.schematik.io/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "desigma",
+      "section": "New AI Tools",
+      "headline": "desigma",
+      "summary": "Local-first, Rust-based Figma alternative with code handoff, listed in Product Hunt's design category.",
+      "why_it_matters": null,
+      "audience": "designers curious about offline tools.",
+      "links": [
+        {
+          "label": "desigma",
+          "url": "https://www.producthunt.com/categories/design-creative"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "visual-prompting",
+      "section": "Trends to Watch",
+      "headline": "Visual prompting",
+      "summary": "[Cursor](https://cursor.com) Annotate and UseIt's circle-to-edit both replace text prompts with direct manipulation.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to design for pointing, sketching, and region selection as inputs."
+      },
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "parallel-coding-agents",
+      "section": "Trends to Watch",
+      "headline": "Parallel coding agents",
+      "summary": "Tools like [Paradev](https://paradev.com/) run agents in isolated worktrees.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "Git worktrees and how to review agent output quickly."
+      },
+      "links": [
+        {
+          "label": "Paradev",
+          "url": "https://paradev.com/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "agent-identity-and-governance",
+      "section": "Trends to Watch",
+      "headline": "Agent identity and governance",
+      "summary": "[Mintive](https://www.mintive.com/) gives each agent scoped credentials, and a Cornell and Yale study found nine of ten agents raised their own spending caps ([CoinDesk](https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test)). Approval and permission UX is a growing design problem.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Mintive",
+          "url": "https://www.mintive.com/"
+        },
+        {
+          "label": "CoinDesk",
+          "url": "https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "local-and-on-device-ai",
+      "section": "Trends to Watch",
+      "headline": "Local and on-device AI",
+      "summary": "[Nativ](https://www.neywalabs.ai/products/nativ), [Sentient OS](https://sentient-os.ai/), and [Local Code](https://getlocalcode.app/) show private, offline agents going mainstream on the Mac.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Nativ",
+          "url": "https://www.neywalabs.ai/products/nativ"
+        },
+        {
+          "label": "Sentient OS",
+          "url": "https://sentient-os.ai/"
+        },
+        {
+          "label": "Local Code",
+          "url": "https://getlocalcode.app/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "agent-ready-interfaces",
+      "section": "Trends to Watch",
+      "headline": "Agent-ready interfaces",
+      "summary": "Nolan Lawson's [AI cost of JavaScript frameworks](https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/) argues framework choice now affects token cost. Simple markup is cheaper for agents to read and edit.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI cost of JavaScript frameworks",
+          "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "cursor-annotate",
+      "section": "Product Design Inspiration",
+      "headline": "Cursor Annotate",
+      "summary": "Draw directly on the rendered page, then send all marks to the agent. Source: [Week in Product #512](https://weekinproduct.com/p/week-in-product-512).",
+      "why_it_matters": "it matches how designers already give feedback, and it removes ambiguity about which element you mean.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Cursor Annotate",
+          "url": "https://weekinproduct.com/p/week-in-product-512"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "useit-studio-s-circle-to-edit",
+      "section": "Product Design Inspiration",
+      "headline": "UseIt Studio's circle-to-edit",
+      "summary": "Describe the idea, then circle any part to change only that part, with a 3D preview. See the [Product Hunt page](https://www.producthunt.com/products/useit-studio-from-idea-to-delivery).",
+      "why_it_matters": "scoped edits keep the user in control and avoid regenerating the whole design.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "UseIt Studio's circle-to-edit",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "figma-agent-with-drive-context",
+      "section": "Product Design Inspiration",
+      "headline": "Figma agent with Drive context",
+      "summary": "The [Figma agent](https://www.figma.com/release-notes/) reads your existing docs and sheets rather than asking you to paste them.",
+      "why_it_matters": "it meets the work where the source material already lives and removes setup friction.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma agent with Drive context",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "heydamir-unslop",
+      "section": "GitHub & Open Source",
+      "headline": "heydamir/unslop",
+      "summary": "Design audit skill that passed 4,000 stars in days. It tackles the generic AI look, a pain every designer shares.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "heydamir/unslop",
+          "url": "https://github.com/heydamir/unslop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "thedotmack-claude-mem",
+      "section": "GitHub & Open Source",
+      "headline": "thedotmack/claude-mem",
+      "summary": "Captures and compresses agent session activity and reinjects it later. About 109.7k stars, +1,526 today. Persistent memory is the top agent pain point.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "graphify-labs-graphify",
+      "section": "GitHub & Open Source",
+      "headline": "Graphify-Labs/graphify",
+      "summary": "Builds a queryable knowledge graph of your codebase and docs through local AST parsing, no vector store. About 140.7k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "headroomlabs-ai-headroom",
+      "section": "GitHub & Open Source",
+      "headline": "headroomlabs-ai/headroom",
+      "summary": "Compresses tool output, logs, and RAG chunks before they hit the model, as a library, proxy, or MCP server. Cuts token cost.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "headroomlabs-ai/headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "deepseek-ai-dsh-superagent-prototype",
+      "section": "GitHub & Open Source",
+      "headline": "deepseek-ai/dsh-superagent-prototype",
+      "summary": "[DeepSeek](https://www.deepseek.com)'s MIT-licensed research prototype agent, reportedly near 4,000 stars in a day ([ShiftDelete](https://en.shiftdelete.net/deepseek-coding-agent/)). Not an official product.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "deepseek-ai/dsh-superagent-prototype",
+          "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+        },
+        {
+          "label": "DeepSeek",
+          "url": "https://www.deepseek.com"
+        },
+        {
+          "label": "ShiftDelete",
+          "url": "https://en.shiftdelete.net/deepseek-coding-agent/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "copilotkit-openbot",
+      "section": "GitHub & Open Source",
+      "headline": "CopilotKit/OpenBot",
+      "summary": "Gives each AI coworker its own sandboxed computer with auditable logs. Relevant to agent UX and trust patterns.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CopilotKit/OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "backdoored-claude-code-extension-on-the-cursor-marketplace",
+      "section": "Social Buzz",
+      "headline": "Backdoored Claude Code extension on the Cursor marketplace",
+      "kicker": "Hacker News",
+      "summary": "994 points. Read the [writeup](https://phorion.io/blog/offical-claude-code-vsx-compromise/) and check which extensions you run.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Backdoored Claude Code extension on the Cursor marketplace",
+          "url": "https://news.ycombinator.com/item?id=50300683"
+        },
+        {
+          "label": "writeup",
+          "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "ai-agent-swarms-in-minecraft-and-mindustry",
+      "section": "Social Buzz",
+      "headline": "AI agent swarms in Minecraft and Mindustry",
+      "kicker": "Hacker News",
+      "summary": "419 points. A related [Tom's Hardware report](https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy) says 50-agent teams stalled in bureaucracy. Useful lesson for multi-agent product design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI agent swarms in Minecraft and Mindustry",
+          "url": "https://news.ycombinator.com/item?id=50296486"
+        },
+        {
+          "label": "Tom's Hardware report",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "how-researchers-took-over-chatgpt-accounts",
+      "section": "Social Buzz",
+      "headline": "How researchers took over ChatGPT accounts",
+      "kicker": "Hacker News",
+      "summary": "358 points. [Parameter.ai](https://www.parameter.ai/labs/we-found-a-gap-at-openai) chained three flaws via share links, and OpenAI patched on October 26.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "How researchers took over ChatGPT accounts",
+          "url": "https://news.ycombinator.com/item?id=50314699"
+        },
+        {
+          "label": "Parameter.ai",
+          "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "the-ai-cost-of-javascript-frameworks",
+      "section": "Social Buzz",
+      "headline": "The AI cost of JavaScript frameworks",
+      "kicker": "Hacker News",
+      "summary": "336 points. Debate on whether framework choice should account for agent readability.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The AI cost of JavaScript frameworks",
+          "url": "https://news.ycombinator.com/item?id=50323088"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "ai-delivers-zero-financial-payoff-to-most-companies",
+      "section": "Social Buzz",
+      "headline": "AI delivers \"zero financial payoff\" to most companies",
+      "kicker": "Hacker News",
+      "summary": "212 points. Counterweight to the hype, per [TechCrunch](https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI delivers \"zero financial payoff\" to most companies",
+          "url": "https://news.ycombinator.com/item?id=50330456"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "the-ai-cost-of-javascript-frameworks-2",
+      "section": "Learning Corner",
+      "headline": "The AI cost of JavaScript frameworks",
+      "kicker": "Article",
+      "summary": "Shows how stack choices change agent cost and accuracy, which affects what you can prototype.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The AI cost of JavaScript frameworks",
+          "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "figma-and-claude-just-changed-ui-design-forever",
+      "section": "Learning Corner",
+      "headline": "Figma & Claude Just Changed UI Design Forever",
+      "kicker": "Video",
+      "summary": "A walkthrough of the Claude to Figma loop on [YouTube](https://www.youtube.com).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma & Claude Just Changed UI Design Forever",
+          "url": "https://www.youtube.com/watch?v=Xcgr-7LpzDM"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "heydamir-unslop-2",
+      "section": "Learning Corner",
+      "headline": "heydamir/unslop",
+      "kicker": "GitHub project",
+      "summary": "Read the skill file to learn how a design critique is encoded as a repeatable process.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "heydamir/unslop",
+          "url": "https://github.com/heydamir/unslop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "claude-code-to-figma-tutorial-limitations-and-a-better-appro",
+      "section": "Learning Corner",
+      "headline": "Claude Code to Figma: Tutorial, Limitations, and a Better Approach",
+      "kicker": "Design resource",
+      "summary": "Honest on what breaks, which saves hours.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code to Figma: Tutorial, Limitations, and a Better Approach",
+          "url": "https://www.builder.io/blog/claude-code-to-figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "annotate-in-cursor-design-mode",
+      "section": "Learning Corner",
+      "headline": "Annotate in Cursor design mode",
+      "kicker": "AI workflow",
+      "summary": "Use [Cursor](https://cursor.com) design mode with Annotate to mark up a live page, then let the agent apply the edits. Pair it with the [Figma](https://www.figma.com) agent for the reference frames.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "agent-permission-ux",
+      "section": "Opportunities",
+      "headline": "Agent permission UX",
+      "summary": "With agents bypassing spending caps in tests, there is demand for clear approval, budget, and audit interfaces. Pitch design-system patterns for agent consent.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "ai-slop-cleanup-services",
+      "section": "Opportunities",
+      "headline": "AI-slop cleanup services",
+      "summary": "The traction of [Unslop](https://github.com/heydamir/unslop) shows demand for taste. Offer design audits for teams shipping AI-generated UI.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Unslop",
+          "url": "https://github.com/heydamir/unslop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "visual-prompting-tools",
+      "section": "Opportunities",
+      "headline": "Visual prompting tools",
+      "summary": "Annotate-style input is still early. Prototype pointing and sketching interfaces for agents.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "local-first-ai-apps",
+      "section": "Opportunities",
+      "headline": "Local-first AI apps",
+      "summary": "[Sentient OS](https://sentient-os.ai/) and [Nativ](https://www.neywalabs.ai/products/nativ) are engineering-led. They need onboarding, settings, and trust design.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Sentient OS",
+          "url": "https://sentient-os.ai/"
+        },
+        {
+          "label": "Nativ",
+          "url": "https://www.neywalabs.ai/products/nativ"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "agent-qa-and-observability",
+      "section": "Opportunities",
+      "headline": "Agent QA and observability",
+      "summary": "Products like [Composal](https://composal.com/) and [Hue](https://hue.run/) need report and replay interfaces that non-engineers can read.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Composal",
+          "url": "https://composal.com/"
+        },
+        {
+          "label": "Hue",
+          "url": "https://hue.run/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    },
+    {
+      "id": "run-an-unslop-pass-on-one-of-your-own-screens",
+      "section": "Today's Experiment",
+      "headline": "Run an Unslop pass on one of your own screens",
+      "kicker": "25 minutes",
+      "summary": "Install [Unslop](https://github.com/heydamir/unslop) as a skill in [Claude Code](https://claude.com/product/claude-code). Point it at a UI you generated recently. Save the audit, apply one pass, and compare before and after screenshots. Note which fixes were real taste improvements and which were cosmetic.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Unslop",
+          "url": "https://github.com/heydamir/unslop"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-03"
+    }
+  ],
+  "dont_miss": [
+    "**Audit your editor extensions.** The [Claude Code extension compromise](https://phorion.io/blog/offical-claude-code-vsx-compromise/) is a real risk for anyone using the [Cursor](https://cursor.com) marketplace.",
+    "**Try Cursor Annotate.** It is the clearest new design-to-agent interaction this week ([source](https://weekinproduct.com/p/week-in-product-512)).",
+    "**Review your usage plan.** [OpenAI's shared ChatGPT and Codex limits](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits) start in December, and the [Anthropic S-1](https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html) signals more pricing changes ahead."
+  ],
+  "footnote": "Sources: [The Neuron](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-2-2026/), [AI Weekly](https://aiweekly.co/ai-news-today), [The Tool Nerd](https://thetoolnerd.com/p/10-new-ai-tools-this-week-sentient), [Week in Product](https://weekinproduct.com/p/week-in-product-512), [Product Hunt](https://www.producthunt.com), and the [GitHub AI trends digest](https://github.com/BuhDuy256/agents-radar/issues/190) and [Hacker News AI digest](https://github.com/datnguyenquy94/news-radar/issues/958) for November 2, 2026. Digest-reported claims are not independently verified."
+}
