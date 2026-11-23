@@ -1,0 +1,727 @@
+{
+  "date": "2026-11-23",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1-8koAjU_lKWEbIl55cQ5DVnGYrAl1XoDGIX1ETeKOgY/edit",
+  "highlights": [
+    {
+      "headline": "Google ships Gemini 4 Neon.",
+      "summary": "A faster mid-tier model, 3x quicker than Carbon by Google's claim, in the API, the Gemini app and [Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/).",
+      "ref": "gemini-4-neon"
+    },
+    {
+      "headline": "OpenAI ships GPT-6.2 Astra and Sol.",
+      "summary": "Two tiers for pro and everyday work, lower cost, in [ChatGPT](https://chatgpt.com) and the API.",
+      "ref": "gpt-6-2"
+    },
+    {
+      "headline": "Anthropic's record IPO.",
+      "summary": "ANT priced at $83 and closed day one at $97.17 ([Al Jazeera](https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo)).",
+      "ref": "anthropic-ipo"
+    },
+    {
+      "headline": "Figma's MCP server is its fastest-growing product.",
+      "summary": "Revenue up 43% to $391.4 million ([Investing News](https://investingnews.com/figma-announces-third-quarter-2026-financial-results/)).",
+      "ref": "figma-q3"
+    },
+    {
+      "headline": "Agent skills dominate GitHub trending.",
+      "summary": "[CLI-Anything](https://github.com/HKUDS/CLI-Anything), [diagram-design](https://github.com/cathrynlavery/diagram-design) and [stitch-skills](https://github.com/google-labs-code/stitch-skills) all trend.",
+      "ref": "sb-gh"
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Few brand-new design tools surfaced in the past 48 hours, so this list includes strong recent launches."
+  },
+  "entries": [
+    {
+      "id": "gemini-4-neon",
+      "section": "AI Industry News",
+      "headline": "Google ships Gemini 4 Neon, the middle tier of the Gemini 4 family",
+      "summary": "On November 18, [Google](https://blog.google) launched [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/), positioned between the fast Hydrogen model and the top-end Carbon. It rolls out in the Gemini API via Google AI Studio, in the Gemini app for Pro and Ultra, and in [Google Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/). Google claims roughly 3x faster task completion than Carbon, and [Digital Trends](https://digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less) reports it competes with Claude Opus 5.5 and GPT-6.2 Sol at lower cost.",
+      "why_it_matters": "Speed and cost per task are now the competitive axis at the frontier. Benchmark figures are launch-time claims, so run your own tasks before switching.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "A mid-tier model that is fast enough for interactive UI generation changes what you can put in a live prototyping loop. Test it on your own design-to-code prompts."
+      },
+      "links": [
+        {
+          "label": "Google ships Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        },
+        {
+          "label": "Google Antigravity",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        },
+        {
+          "label": "Digital Trends",
+          "url": "https://digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23",
+      "lead": true
+    },
+    {
+      "id": "gpt-6-2",
+      "section": "AI Industry News",
+      "headline": "OpenAI releases GPT-6.2 Astra and Sol",
+      "summary": "On November 17, [OpenAI](https://openai.com) released GPT-6.2 Astra (demanding professional work) and GPT-6.2 Sol (everyday tasks), both live in [ChatGPT](https://chatgpt.com) and the API with upgrades for coding and computer use at lower cost ([GCN](https://gcn.com/?p=23366)). Google and OpenAI shipping flagship updates in the same week keeps pricing pressure high.",
+      "why_it_matters": "Two tiers per vendor is now the norm. Route routine work to the cheaper tier and keep the premium model for hard tasks.",
+      "links": [
+        {
+          "label": "OpenAI releases GPT-6.2 Astra and Sol",
+          "url": "https://gcn.com/?p=23366"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "anthropic-ipo",
+      "section": "AI Industry News",
+      "headline": "Anthropic's record IPO",
+      "summary": "[Anthropic](https://www.anthropic.com) began trading on Nasdaq as ANT on November 19. It priced at $83, opened at $111.50 and closed day one at $97.17 in the largest IPO on record ([Al Jazeera](https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo), [TechRepublic](https://www.techrepublic.com/article/news-anthropic-ipo-nasdaq-trading-debut/)). Sources differ on the exact close, and a lock-up expiry for early holders comes later.",
+      "why_it_matters": "[Claude](https://claude.ai) is now a public-company product. Expect regular financial disclosures and faster commercial shipping.",
+      "links": [
+        {
+          "label": "Anthropic's record IPO",
+          "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "TechRepublic",
+          "url": "https://www.techrepublic.com/article/news-anthropic-ipo-nasdaq-trading-debut/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "figma-q3",
+      "section": "AI Industry News",
+      "headline": "Figma Q3: revenue up 43%, and its MCP server is the fastest-growing product",
+      "summary": "[Figma](https://www.figma.com) reported third-quarter revenue of $391.4 million, up 43% year over year, and said the Figma MCP server was its fastest-growing product by weekly active users ([Investing News](https://investingnews.com/figma-announces-third-quarter-2026-financial-results/)).",
+      "why_it_matters": "Designers' files are becoming agent context. The fastest-growing surface in the leading design tool is one that machines read.",
+      "links": [
+        {
+          "label": "Figma Q3 2026 results",
+          "url": "https://investingnews.com/figma-announces-third-quarter-2026-financial-results/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "figma-code-layers",
+      "section": "Product Design & UX",
+      "headline": "Figma Code Layers puts working code on the canvas",
+      "summary": "[Figma](https://www.figma.com) began rolling out Code Layers in open beta on October 14, bringing working code onto the canvas alongside design layers. Config 2026 also added custom AI skills and plugins and animation tools ([Next Web](https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations)).",
+      "why_it_matters": "Real code and real data on the canvas shrink the gap between mock and product.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Code Layers",
+          "url": "https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "figma-motion-springs",
+      "section": "Product Design & UX",
+      "headline": "Figma Motion adds physics-based springs and Lottie export previews",
+      "summary": "The November 10 [Figma release notes](https://www.figma.com/release-notes/archive/?page=2) add physics-based springs plus style and Lottie export previews to Figma Motion. A November 3 update also clones connected GitHub repositories into Figma by default.",
+      "why_it_matters": "Springs designed in the tool match what engineers ship, so motion specs stop being a translation exercise.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/archive/?page=2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "figma-agent",
+      "section": "Product Design & UX",
+      "headline": "Figma Agent: prompt-driven layouts and bulk edits in canvas",
+      "summary": "[Figma Agent](https://www.producthunt.com/posts/figma-agent) adds prompt-driven layouts, bulk screen edits and functional prototyping on the canvas, pulling context from Notion, Slack, GitHub and Linear via MCP ([AIToolly](https://aitoolly.com/ai-news/article/2026-10-08-figma-agent-launches-on-product-hunt-transforming-in-canvas-design-workflows-with-native-ai-integrat)).",
+      "why_it_matters": "Bulk edits across dozens of screens are the unglamorous work an agent does best.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Agent",
+          "url": "https://www.producthunt.com/posts/figma-agent"
+        },
+        {
+          "label": "AIToolly",
+          "url": "https://aitoolly.com/ai-news/article/2026-10-08-figma-agent-launches-on-product-hunt-transforming-in-canvas-design-workflows-with-native-ai-integrat"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "t-figma-agent",
+      "section": "New AI Tools",
+      "headline": "Figma Agent",
+      "summary": "Prompt-driven layouts, bulk screen edits and functional prototyping inside Figma, with MCP context from Notion, Slack, GitHub and Linear.",
+      "why_it_matters": null,
+      "audience": "Product designers already working in Figma.",
+      "links": [
+        {
+          "label": "Figma Agent",
+          "url": "https://www.producthunt.com/posts/figma-agent"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "t-code-layers",
+      "section": "New AI Tools",
+      "headline": "Figma Code Layers",
+      "summary": "Put working code layers directly on the Figma canvas (open beta).",
+      "why_it_matters": null,
+      "audience": "Design engineers and designers who prototype with real data.",
+      "links": [
+        {
+          "label": "Figma Code Layers",
+          "url": "https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "t-neon",
+      "section": "New AI Tools",
+      "headline": "Gemini 4 Neon in Google Antigravity",
+      "summary": "Google's new mid-tier model inside its agentic IDE, built for fast, complex software workflows.",
+      "why_it_matters": null,
+      "audience": "Designers and developers who build with coding agents (needs Pro or Ultra).",
+      "links": [
+        {
+          "label": "Gemini 4 Neon in Google Antigravity",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "t-diagram-design",
+      "section": "New AI Tools",
+      "headline": "diagram-design",
+      "summary": "An agent skill that draws diagrams as one self-contained HTML and SVG file in your brand, with 45 to 51 diagram types, and imports Mermaid, draw.io and Excalidraw. MIT licensed.",
+      "why_it_matters": null,
+      "audience": "Anyone documenting flows or architecture with Claude Code, Cursor or Codex.",
+      "links": [
+        {
+          "label": "diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "t-stitch-skills",
+      "section": "New AI Tools",
+      "headline": "stitch-skills",
+      "summary": "16 agent skills for the Stitch MCP server: generate screens, extract design systems from code, produce DESIGN.md, and output React or shadcn/ui. Not an official Google product.",
+      "why_it_matters": null,
+      "audience": "Designers who want design-to-code inside a coding agent.",
+      "links": [
+        {
+          "label": "stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "t-magic-patterns",
+      "section": "New AI Tools",
+      "headline": "Magic Patterns",
+      "summary": "AI design tool for software product teams. Agent 2.0 launched in April; included because it keeps appearing in prototyping workflows.",
+      "why_it_matters": null,
+      "audience": "PMs and designers prototyping UI quickly.",
+      "links": [
+        {
+          "label": "Magic Patterns",
+          "url": "https://producthunt.com/products/magicpatterns"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "tr-mcp-design",
+      "section": "Trends to Watch",
+      "headline": "Design files as agent context",
+      "summary": "Figma's MCP server being its fastest-growing product, plus Stitch and its skills library, show design systems being consumed by agents first and humans second.",
+      "why_it_matters": "Tokens, naming and component documentation now function as prompts.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Write your design system's rules in a form an agent can read, such as a DESIGN.md."
+      },
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "tr-cli",
+      "section": "Trends to Watch",
+      "headline": "Make every app agent-native",
+      "summary": "[CLI-Anything](https://github.com/HKUDS/CLI-Anything) generates structured CLIs for existing software so agents can drive real apps instead of screenshots.",
+      "why_it_matters": "Reliable, scriptable interfaces beat pixel-clicking for agents.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Study how a SKILL.md describes a tool to an agent."
+      },
+      "links": [
+        {
+          "label": "CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "tr-two-tier",
+      "section": "Trends to Watch",
+      "headline": "Two-tier models and cost per task",
+      "summary": "Gemini 4 Neon and GPT-6.2 Astra and Sol both split capability from speed and price.",
+      "why_it_matters": "Model routing becomes a product decision, not only an infrastructure one.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Measure cost per completed task, not cost per token."
+      },
+      "links": [
+        {
+          "label": "Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "label": "GPT-6.2",
+          "url": "https://gcn.com/?p=23366"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "in-figma-springs",
+      "section": "Product Design Inspiration",
+      "headline": "Spring physics in the motion tool itself",
+      "summary": "Figma Motion's physics-based springs let designers tune feel with the same model engineers use.",
+      "why_it_matters": "Shared motion primitives remove handoff guesswork.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/archive/?page=2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "in-code-on-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Code as a first-class layer",
+      "summary": "Code Layers treat code as a layer type next to frames and text, so the prototype is the product.",
+      "why_it_matters": "One artifact, not two, keeps design intent intact.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma Code Layers",
+          "url": "https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "in-diagram",
+      "section": "Product Design Inspiration",
+      "headline": "Constraint as brand: one accent, hairlines, no shadows",
+      "summary": "[diagram-design](https://github.com/cathrynlavery/diagram-design) enforces a tight rule set (one accent, 1px lines, 4px grid) that yields consistent output at scale.",
+      "why_it_matters": "Strict rules make generated work look designed.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "gh-cli-anything",
+      "section": "GitHub & Open Source",
+      "headline": "HKUDS/CLI-Anything",
+      "kicker": "Trending",
+      "summary": "Makes desktop, web and developer software usable by agents via generated CLIs, with JSON output and a registry (CLI-Hub). About 62.9k stars; 699 today. Apache-2.0.",
+      "why_it_matters": "Agents get structured access to real apps.",
+      "links": [
+        {
+          "label": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "gh-diagram",
+      "section": "GitHub & Open Source",
+      "headline": "cathrynlavery/diagram-design",
+      "kicker": "Trending",
+      "summary": "Agent skill for brand-matched diagrams as single HTML plus SVG files. 518 stars today, MIT.",
+      "why_it_matters": "Design-quality output from a coding agent.",
+      "links": [
+        {
+          "label": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "gh-stitch",
+      "section": "GitHub & Open Source",
+      "headline": "google-labs-code/stitch-skills",
+      "kicker": "Trending",
+      "summary": "16 skills across design, build and utilities for the Stitch MCP server. About 12k stars, Apache-2.0.",
+      "why_it_matters": "Bridges AI design and code in one agent.",
+      "links": [
+        {
+          "label": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "gh-superpowers",
+      "section": "GitHub & Open Source",
+      "headline": "obra/superpowers",
+      "kicker": "Trending",
+      "summary": "Agentic skills framework and software development methodology. 788 stars today.",
+      "why_it_matters": "Skills are becoming the standard way to package agent workflows.",
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "gh-cursor-plugins",
+      "section": "GitHub & Open Source",
+      "headline": "cursor/plugins",
+      "kicker": "Trending",
+      "summary": "Cursor's plugin specification and official plugins. 294 stars today.",
+      "why_it_matters": "Signals how plugin ecosystems form around coding agents.",
+      "links": [
+        {
+          "label": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins"
+        }
+      ],
+      "image_url": "https://avatars.githubusercontent.com/u/126759922?s=400&v=4",
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "sb-gh",
+      "section": "Social Buzz",
+      "headline": "Agent skills dominate GitHub trending",
+      "kicker": "GitHub",
+      "summary": "Five of the top trending repos today are agent skills or agent tooling (superpowers, CLI-Anything, diagram-design, stitch-skills, last30days-skill).",
+      "why_it_matters": "The community is converging on skills as the unit of reuse.",
+      "links": [
+        {
+          "label": "GitHub Trending",
+          "url": "https://github.com/trending?since=daily"
+        },
+        {
+          "label": "last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "sb-ipo",
+      "section": "Social Buzz",
+      "headline": "The AI bubble question after the Anthropic IPO",
+      "kicker": "Markets",
+      "summary": "Coverage of the debut focuses on whether the record valuation holds, with [Needham](https://www.needham.com) initiating at buy and early-holder lock-up expiry ahead ([The Next Web](https://thenextweb.com/news/anthropic-ipo-amodei-nasdaq-bell-ant-debut-needham-staff-sales)).",
+      "why_it_matters": "Vendor stability matters when you build on one platform.",
+      "links": [
+        {
+          "label": "The Next Web",
+          "url": "https://thenextweb.com/news/anthropic-ipo-amodei-nasdaq-bell-ant-debut-needham-staff-sales"
+        },
+        {
+          "label": "Needham",
+          "url": "https://www.needham.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "lc-article",
+      "section": "Learning Corner",
+      "headline": "Article: Introducing Gemini 4 Neon",
+      "kicker": "Article",
+      "summary": "Read Google's primary announcement for tier positioning and availability.",
+      "why_it_matters": "15 minutes to understand the model tiering you will route between.",
+      "links": [
+        {
+          "label": "Introducing Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "lc-gh",
+      "section": "Learning Corner",
+      "headline": "GitHub project: CLI-Anything",
+      "kicker": "GitHub",
+      "summary": "Read the README and one generated SKILL.md.",
+      "why_it_matters": "Shows how to describe a tool so an agent can use it.",
+      "links": [
+        {
+          "label": "CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "lc-design",
+      "section": "Learning Corner",
+      "headline": "Design resource: Figma release notes",
+      "kicker": "Design resource",
+      "summary": "Scan the November 3 and November 10 entries on GitHub cloning and Motion springs.",
+      "why_it_matters": "Keeps you current on what Figma now handles natively.",
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/archive/?page=2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "lc-workflow",
+      "section": "Learning Corner",
+      "headline": "AI workflow: design to code with Stitch skills",
+      "kicker": "Workflow",
+      "summary": "Install stitch-skills in your coding agent, generate a screen and extract a DESIGN.md.",
+      "why_it_matters": "A repeatable design-to-code loop in one agent.",
+      "links": [
+        {
+          "label": "stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "op-1",
+      "section": "Opportunities",
+      "headline": "DESIGN.md consulting for design systems",
+      "summary": "Teams need their design systems written as agent-readable specs. [stitch-skills](https://github.com/google-labs-code/stitch-skills) already generates DESIGN.md files, so there is demand for people who can author and audit them.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "op-2",
+      "section": "Opportunities",
+      "headline": "Design engineering with Code Layers",
+      "summary": "[Figma Code Layers](https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations) rewards designers who can write enough code to prototype with real data.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Code Layers",
+          "url": "https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "op-3",
+      "section": "Opportunities",
+      "headline": "Agent skills for design workflows",
+      "summary": "Skills for audits, handoff and diagrams are trending. Publish one for a workflow you repeat, following [superpowers](https://github.com/obra/superpowers).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "op-4",
+      "section": "Opportunities",
+      "headline": "Model routing for design tools",
+      "summary": "With two-tier models from [Google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) and [OpenAI](https://gcn.com/?p=23366), teams need guidance on which tier to use for which design task.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://gcn.com/?p=23366"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    },
+    {
+      "id": "ex-1",
+      "section": "Today's Experiment",
+      "headline": "Generate a brand diagram from your own product",
+      "kicker": "25 minutes",
+      "summary": "Install [diagram-design](https://github.com/cathrynlavery/diagram-design) in your coding agent and draw one flow from your product in your brand.",
+      "why_it_matters": null,
+      "steps": [
+        {
+          "label": "Step 1 (5 min)",
+          "text": "Install the skill in Claude Code, Cursor or Codex and run its brand onboarding against your site."
+        },
+        {
+          "label": "Step 2 (10 min)",
+          "text": "Ask for a user flow diagram of your onboarding as one HTML and SVG file."
+        },
+        {
+          "label": "Step 3 (10 min)",
+          "text": "Compare it with your current Figma diagram. Note what you would change and what the agent got right."
+        }
+      ],
+      "links": [
+        {
+          "label": "diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-23"
+    }
+  ],
+  "dont_miss": [
+    "Try [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) on one of your own design-to-code prompts.",
+    "Install [diagram-design](https://github.com/cathrynlavery/diagram-design) and run today's experiment.",
+    "Read the [Figma release notes](https://www.figma.com/release-notes/archive/?page=2) for Motion springs and GitHub cloning."
+  ],
+  "footnote": "Sourced from Google, OpenAI, Anthropic and Figma announcements, GitHub repository pages and trending, and news coverage linked above. Hacker News, X and Reddit were not reachable from this run, so Social Buzz uses GitHub trending and market coverage. The past 24 hours were light on new design tool launches, so items include the strongest of the past week. No verified video was found, so Learning Corner has no video entry."
+}
