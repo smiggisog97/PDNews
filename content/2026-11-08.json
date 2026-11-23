@@ -1,0 +1,798 @@
+{
+  "date": "2026-11-08",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1Ye2lPvOPT5WRN5pbRFHAZIAb5AYUlo1JIEzdKZn7_x4/edit",
+  "highlights": [
+    {
+      "headline": "Figma's agent keeps absorbing the build step.",
+      "summary": "[Figma](https://www.figma.com/release-notes/) now generates editable vector icons and illustrations, and its code layer agent reads prototype interactions (open beta)."
+    },
+    {
+      "headline": "Always-on agents are the new product category.",
+      "summary": "[Perplexity](https://www.perplexity.ai) launched Teammates, and [Meta](https://www.meta.ai) added voice, avatars and Spaces to its Muse agent."
+    },
+    {
+      "headline": "AI is now finding real security holes at scale.",
+      "summary": "[Google DeepMind](https://deepmind.google) agents found weaknesses in legacy 1024-bit RSA, and [OpenAI](https://openai.com) reported 948 local privilege-escalation exploits from a Linux kernel prototype."
+    },
+    {
+      "headline": "Agent tooling is consolidating.",
+      "summary": "Meta absorbed Conductor and OpenAI is acquiring Pierre, the team behind libraries in the Codex app."
+    },
+    {
+      "headline": "Markets are jittery.",
+      "summary": "The Nasdaq-100 fell 6.4% Thursday and chip supply is tightening as AI buyers crowd out other customers."
+    }
+  ],
+  "section_notes": {},
+  "entries": [
+    {
+      "id": "deepmind-agents-weaken-legacy-rsa-1024",
+      "section": "AI Industry News",
+      "headline": "DeepMind agents weaken legacy RSA-1024",
+      "summary": "[Google DeepMind](https://deepmind.google) agents, guided by cryptanalysts, found two advances against 1024-bit RSA: signature forgery on short digests about 1,600x more efficient, and batch-factoring cost down about 30x. RSA-2048 is not affected ([source](https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/)).",
+      "why_it_matters": "expert-guided agents now produce publishable cryptanalysis.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "audit any system still using 1024-bit keys."
+      },
+      "links": [
+        {
+          "label": "DeepMind agents weaken legacy RSA-1024",
+          "url": "https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08",
+      "lead": true
+    },
+    {
+      "id": "openai-finds-a-thousand-fewer-paths-to-root",
+      "section": "AI Industry News",
+      "headline": "OpenAI finds a thousand fewer paths to root",
+      "summary": "An [OpenAI](https://openai.com) prototype scanned the Linux kernel, producing 2,308 candidates, reproducing 1,724 and building 948 local privilege-escalation exploits ([post](https://openai.com/index/a-thousand-fewer-paths-to-root/)).",
+      "why_it_matters": "defensive and offensive capability scale together.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "expect agent-driven security review to become a standard CI step."
+      },
+      "links": [
+        {
+          "label": "OpenAI finds a thousand fewer paths to root",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "perplexity-launches-teammates",
+      "section": "AI Industry News",
+      "headline": "Perplexity launches Teammates",
+      "summary": "[Perplexity](https://www.perplexity.ai) released always-on work agents for Max subscribers ($200/month) that can collaborate via Slack ([PCMag](https://au.pcmag.com/ai/120788/perplexity-teammates-ai-agent-help-you-work)).",
+      "why_it_matters": "the interface shifts from chat to a colleague that persists.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "design for delegation, status and handoff, not prompts."
+      },
+      "links": [
+        {
+          "label": "Perplexity launches Teammates",
+          "url": "https://au.pcmag.com/ai/120788/perplexity-teammates-ai-agent-help-you-work"
+        },
+        {
+          "label": "Perplexity",
+          "url": "https://www.perplexity.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "meta-muse-gets-voice-avatars-and-spaces",
+      "section": "AI Industry News",
+      "headline": "Meta Muse gets voice, avatars and Spaces",
+      "summary": "[Meta](https://www.meta.ai) added real-time voice with an animated avatar for US users ([Techbooky](https://techbooky.com/meta-adds-voice-and-expressive-avatars-to-muse-ai-agent)) and Spaces for ongoing projects ([Superpower Daily](https://superpowerdaily.com/posts/meta-adds-spaces-to-organize-ongoing-projects-with-its-muse-ai-agent)).",
+      "why_it_matters": "project-scoped memory plus voice is the template for consumer agents.",
+      "links": [
+        {
+          "label": "Meta Muse gets voice, avatars and Spaces",
+          "url": "https://techbooky.com/meta-adds-voice-and-expressive-avatars-to-muse-ai-agent"
+        },
+        {
+          "label": "Meta",
+          "url": "https://www.meta.ai"
+        },
+        {
+          "label": "Superpower Daily",
+          "url": "https://superpowerdaily.com/posts/meta-adds-spaces-to-organize-ongoing-projects-with-its-muse-ai-agent"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "anthropic-publishes-agent-memory-research",
+      "section": "AI Industry News",
+      "headline": "Anthropic publishes agent memory research",
+      "summary": "[Anthropic](https://www.anthropic.com) described a three-layer memory model including idle-time \"dreaming\" consolidation ([research](https://www.anthropic.com/research/components-of-agent-memory)). Separately, [METR](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/) estimates AI tooling drove about 80% of Anthropic's internal R&D speedup, though most evidence was redacted.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "For builders",
+        "text": "memory architecture is now a product design decision."
+      },
+      "links": [
+        {
+          "label": "Anthropic publishes agent memory research",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "METR",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "thinking-machines-ships-inkling-2-small",
+      "section": "AI Industry News",
+      "headline": "Thinking Machines ships Inkling 2 Small",
+      "summary": "[Inkling 2 Small](https://thinkingmachines.ai/news/inkling-2-small/) is a 594B MoE (17B active) scoring 86.3% on SWEBench Pro Hard. Apache 2.0 weights are promised next week.",
+      "why_it_matters": "a strong open-weight coding model is close.",
+      "links": [
+        {
+          "label": "Thinking Machines ships Inkling 2 Small",
+          "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "consolidation-and-friction",
+      "section": "AI Industry News",
+      "headline": "Consolidation and friction",
+      "summary": "[Microsoft](https://www.microsoft.com) Research AI Frontiers, the group behind Autogen, was shut down per [John Langford](https://hunch.net/?p=13764006). [Conductor](https://www.conductor.build/announcement) joins Meta and closes signups, with cloud data deletion starting Nov 20. [OpenAI is acquiring Pierre](https://openai.com/index/openai-to-acquire-pierre/). [NVIDIA](https://www.nvidia.com) faces a House GOP briefing request on Nov 18 over Megaspeed ([CNBC](https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Consolidation and friction",
+          "url": "https://hunch.net/?p=13764006"
+        },
+        {
+          "label": "Microsoft",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "label": "Conductor",
+          "url": "https://www.conductor.build/announcement"
+        },
+        {
+          "label": "OpenAI is acquiring Pierre",
+          "url": "https://openai.com/index/openai-to-acquire-pierre/"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "CNBC",
+          "url": "https://www.cnbc.com/2026/11/05/nvidia-jensen-huang-china-spy-congress.html"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "figma-agent-now-makes-editable-vectors",
+      "section": "Product Design & UX",
+      "headline": "Figma agent now makes editable vectors",
+      "summary": "Nov 5: the [Figma](https://www.figma.com/release-notes/) agent generates editable vector illustrations and icons with style references and strokes, tied into Figma Motion.",
+      "why_it_matters": "icon sets that stay editable instead of raster dead ends.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma agent now makes editable vectors",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "code-layer-agent-reads-prototype-interactions",
+      "section": "Product Design & UX",
+      "headline": "Code layer agent reads prototype interactions",
+      "summary": "Nov 3: in open beta, the agent reads prototype connections and interactions, so behavior is specified by the design itself. Learn more in [Design together with code layers](https://www.figma.com/blog/design-together-with-code-layers/).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Code layer agent reads prototype interactions",
+          "url": "https://www.figma.com/blog/design-together-with-code-layers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "shaders-ga-weave-models-through-mcp",
+      "section": "Product Design & UX",
+      "headline": "Shaders GA, Weave models through MCP",
+      "summary": "Shaders are generally available with exports to 4096px and use in code layers. Weave image and video models (Seedance, Kling, Nano Banana) are reachable through the Figma MCP server. A Google Drive connector for the agent is available on all plans.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Shaders GA, Weave models through MCP",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "specs-in-open-beta",
+      "section": "Product Design & UX",
+      "headline": "Specs in open beta",
+      "summary": "[Figma Specs](https://www.figma.com/blog/introducing-figma-specs/) is open beta on paid plans. [Build by design](https://www.figma.com/blog/build-by-design/) names 20 MCP partners including OpenCode and Junie by JetBrains.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Specs in open beta",
+          "url": "https://www.figma.com/blog/introducing-figma-specs/"
+        },
+        {
+          "label": "Build by design",
+          "url": "https://www.figma.com/blog/build-by-design/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "autocua",
+      "section": "New AI Tools",
+      "headline": "AutoCua",
+      "summary": "MIT computer-use agent for macOS, Windows, Linux, browser, iOS and Android.",
+      "why_it_matters": null,
+      "audience": "QA and automation tinkerers.",
+      "links": [
+        {
+          "label": "AutoCua",
+          "url": "https://github.com/ComputerUseAgent/AutoCua"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "scenario-agent-skills",
+      "section": "New AI Tools",
+      "headline": "Scenario Agent Skills",
+      "summary": "Teaches coding agents to generate game and visual content via the Scenario MCP server.",
+      "why_it_matters": null,
+      "audience": "designers who prototype with agents.",
+      "links": [
+        {
+          "label": "Scenario Agent Skills",
+          "url": "https://github.com/scenario-labs/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "agent-autoloop",
+      "section": "New AI Tools",
+      "headline": "Agent Autoloop",
+      "summary": "Runs CLI agents in a background loop with Slack, Discord or desktop notifications (macOS, Linux).",
+      "why_it_matters": null,
+      "audience": "long-running agent tasks.",
+      "links": [
+        {
+          "label": "Agent Autoloop",
+          "url": "https://github.com/KKKKhazix/agent-autoloop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "shim",
+      "section": "New AI Tools",
+      "headline": "shim",
+      "summary": "Local-first harness for any model with MCP and Agent Skills.",
+      "why_it_matters": null,
+      "audience": "people avoiding vendor lock-in.",
+      "links": [
+        {
+          "label": "shim",
+          "url": "https://github.com/Balanov/shim"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "verdict",
+      "section": "New AI Tools",
+      "headline": "verdict",
+      "summary": "Local semantic verifier for agent tool calls.",
+      "why_it_matters": null,
+      "audience": "teams worried about destructive agent actions.",
+      "links": [
+        {
+          "label": "verdict",
+          "url": "https://github.com/Balanov/verdict"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "arete-27b",
+      "section": "New AI Tools",
+      "headline": "Arete-27B",
+      "summary": "Apache 2.0 fine-tune of Qwen3.8-27B with better factuality.",
+      "why_it_matters": null,
+      "audience": "local model users.",
+      "links": [
+        {
+          "label": "Arete-27B",
+          "url": "https://huggingface.co/NousResearch/Arete-27B"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "t3-code-0-1-7",
+      "section": "New AI Tools",
+      "headline": "T3 Code 0.1.7",
+      "summary": "Multi-agent coding app, 659 changes, adds Kiro beta.",
+      "why_it_matters": null,
+      "audience": "developers comparing harnesses.",
+      "links": [
+        {
+          "label": "T3 Code 0.1.7",
+          "url": "https://github.com/pingdotgg/t3code/releases/tag/v0.1.7"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "persistent-agents",
+      "section": "Trends to Watch",
+      "headline": "Persistent agents",
+      "summary": "Teammates, Muse Spaces and Agent Autoloop all assume agents that run when you are away.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "notification, approval and audit-trail patterns."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "design-to-code-convergence",
+      "section": "Trends to Watch",
+      "headline": "Design-to-code convergence",
+      "summary": "Figma code layers, MCP partners and prototype-aware agents blur the handoff.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to specify interaction in the prototype itself."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "agent-safety-ux",
+      "section": "Trends to Watch",
+      "headline": "Agent safety UX",
+      "summary": "A [Codex issue](https://github.com/openai/codex/issues/59060) reports destructive actions and large costs (reporter's claims), and a professor reported [Claude deleting lecture notes](https://www.dexerto.com/entertainment/professor-returns-from-lunch-to-find-ai-deleted-years-worth-of-lecture-notes-3425652/) during a renumbering task. Guardrails, undo and dry-run previews are design problems.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Codex issue",
+          "url": "https://github.com/openai/codex/issues/59060"
+        },
+        {
+          "label": "Claude deleting lecture notes",
+          "url": "https://www.dexerto.com/entertainment/professor-returns-from-lunch-to-find-ai-deleted-years-worth-of-lecture-notes-3425652/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "tooling-consolidation",
+      "section": "Trends to Watch",
+      "headline": "Tooling consolidation",
+      "summary": "Big labs are buying the harness layer. Favor open, portable skills and MCP over single-vendor workflows.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "meta-muse-spaces",
+      "section": "Product Design Inspiration",
+      "headline": "Meta Muse Spaces",
+      "summary": "Project containers with background trackers make an agent feel like a workspace.",
+      "why_it_matters": "context is scoped and visible.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Meta Muse Spaces",
+          "url": "https://www.meta.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "figma-one-click-object-selection",
+      "section": "Product Design Inspiration",
+      "headline": "Figma one-click object selection",
+      "summary": "Select-area image editing reduces a masking task to a click.",
+      "why_it_matters": "it removes a skill barrier at the exact moment of intent.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma one-click object selection",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "perplexity-teammates-in-slack",
+      "section": "Product Design Inspiration",
+      "headline": "Perplexity Teammates in Slack",
+      "summary": "Meeting people inside their existing channel avoids a new app to learn.",
+      "why_it_matters": "adoption cost is near zero.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Perplexity Teammates in Slack",
+          "url": "https://www.perplexity.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "vercel-labs-agent-desktop",
+      "section": "GitHub & Open Source",
+      "headline": "vercel-labs/agent-desktop",
+      "summary": "Rust desktop agent using OS accessibility trees instead of screenshots, with MCP. Gaining attention for speed and reliability over pixel-based control.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "karpathy-nanochat",
+      "section": "GitHub & Open Source",
+      "headline": "karpathy/nanochat",
+      "summary": "Minimal local-first chat stack, a learning favorite.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "karpathy/nanochat",
+          "url": "https://github.com/karpathy/nanochat"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "d4vinci-scrapling",
+      "section": "GitHub & Open Source",
+      "headline": "D4Vinci/Scrapling",
+      "summary": "Scraping engine with an MCP server and adaptive selectors.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "justvugg-colibri",
+      "section": "GitHub & Open Source",
+      "headline": "JustVugg/colibri",
+      "summary": "Pure C inference that streams MoE experts from disk, aimed at running large models on modest hardware.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JustVugg/colibri",
+          "url": "https://github.com/JustVugg/colibri"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "computeruseagent-autocua-and-scenario-labs-skills",
+      "section": "GitHub & Open Source",
+      "headline": "ComputerUseAgent/AutoCua and scenario-labs/skills",
+      "summary": "[scenario-labs/skills](https://github.com/scenario-labs/skills) (2,516 stars, +224 in a day) and AutoCua round out the week's risers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ComputerUseAgent/AutoCua and scenario-labs/skills",
+          "url": "https://github.com/ComputerUseAgent/AutoCua"
+        },
+        {
+          "label": "scenario-labs/skills",
+          "url": "https://github.com/scenario-labs/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "gemini-saved-chat-privacy",
+      "section": "Social Buzz",
+      "headline": "Gemini saved-chat privacy",
+      "kicker": "Hacker News",
+      "summary": "A Tell HN on [Gemini saved-chat privacy](https://support.google.com/gemini/answer/13594961?hl=en) hit 634 points over Keep Activity training use. An [Ask HN on coding harnesses](https://news.ycombinator.com/item?id=50366117) (154 points) is a useful comparison of real setups.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gemini saved-chat privacy",
+          "url": "https://support.google.com/gemini/answer/13594961?hl=en"
+        },
+        {
+          "label": "Ask HN on coding harnesses",
+          "url": "https://news.ycombinator.com/item?id=50366117"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "codex-incident-thread",
+      "section": "Social Buzz",
+      "headline": "Codex incident thread",
+      "kicker": "GitHub",
+      "summary": "The [Codex incident thread](https://github.com/openai/codex/issues/59060) has 321 comments and is a case study in agent permissions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Codex incident thread",
+          "url": "https://github.com/openai/codex/issues/59060"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "iclr-2027-reviews",
+      "section": "Social Buzz",
+      "headline": "ICLR 2027 reviews",
+      "kicker": "Reddit",
+      "summary": "[r/MachineLearning on shallow ICLR 2027 reviews](https://www.reddit.com/r/MachineLearning/comments/1xq1f1m/are_iclr_2027_reviews_unusually_shallow_this_year/), with LLM-use disclosure now required for reviewers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ICLR 2027 reviews",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1xq1f1m/are_iclr_2027_reviews_unusually_shallow_this_year/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "components-of-agent-memory",
+      "section": "Learning Corner",
+      "headline": "Components of agent memory",
+      "kicker": "Article",
+      "summary": "From Anthropic. A clear model for designing what agents remember.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Components of agent memory",
+          "url": "https://www.anthropic.com/research/components-of-agent-memory"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "ai-search-weekly-roundup",
+      "section": "Learning Corner",
+      "headline": "AI Search weekly roundup",
+      "kicker": "Video",
+      "summary": "A video-led recap of recent model releases to catch up fast.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI Search weekly roundup",
+          "url": "https://aisearch.substack.com/p/gemini-4-carbon-anthropic-ipo-gpt"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "vercel-labs-agent-desktop-2",
+      "section": "Learning Corner",
+      "headline": "vercel-labs/agent-desktop",
+      "kicker": "GitHub project",
+      "summary": "Read how accessibility trees replace screenshots.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "introducing-figma-specs",
+      "section": "Learning Corner",
+      "headline": "Introducing Figma Specs",
+      "kicker": "Design resource",
+      "summary": "Shows where design documentation for agents is heading.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Introducing Figma Specs",
+          "url": "https://www.figma.com/blog/introducing-figma-specs/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "build-by-design",
+      "section": "Learning Corner",
+      "headline": "Build by design",
+      "kicker": "AI workflow",
+      "summary": "Outlines connecting design files to coding agents through MCP.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Build by design",
+          "url": "https://www.figma.com/blog/build-by-design/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "agent-safety-ux-2",
+      "section": "Opportunities",
+      "headline": "Agent safety UX",
+      "summary": "Design undo, previews and permission prompts; incidents this week show the gap.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "always-on-agent-interfaces",
+      "section": "Opportunities",
+      "headline": "Always-on agent interfaces",
+      "summary": "Status, handoff and notification patterns for Teammates-style products are unsolved.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "figma-mcp-and-code-layer-specialists",
+      "section": "Opportunities",
+      "headline": "Figma MCP and code layer specialists",
+      "summary": "Teams need people who can make designs agent-readable.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "conductor-refugees",
+      "section": "Opportunities",
+      "headline": "Conductor refugees",
+      "summary": "Users must migrate before Nov 13 read-only; a migration guide or tool has an audience.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    },
+    {
+      "id": "prototype-an-interaction-and-let-the-code-layer-agent-build-",
+      "section": "Today's Experiment",
+      "headline": "Prototype an interaction and let the code layer agent build it",
+      "kicker": "25 minutes",
+      "summary": "Pick one screen, prototype a hover and click interaction in [Figma](https://www.figma.com), then let the code layer agent build it from the prototype. Compare the result to your intent and note which interactions it missed. Output: a short list of what to specify more explicitly.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-08"
+    }
+  ],
+  "dont_miss": [
+    "Try the Figma [vector agent and code layer interaction reading](https://www.figma.com/release-notes/).",
+    "Read [Anthropic's agent memory research](https://www.anthropic.com/research/components-of-agent-memory).",
+    "Skim the [Codex incident thread](https://github.com/openai/codex/issues/59060) for agent safety lessons."
+  ],
+  "footnote": "Sources: [AI Weekly](https://aiweekly.co/ai-news-today), [AI Agents Directory](https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-november-7-2026), [Munder Difflin](https://munderdiffl.in/blog/agent-tools-today-2026-11-05/), [Releasebot](https://releasebot.io/updates/figma), [CoddyKit](https://www.coddykit.com/pages/blog-detail?id=5130015&slug=github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w). Figures are as reported by those sources and not independently verified. Product Hunt coverage was thin this run."
+}
