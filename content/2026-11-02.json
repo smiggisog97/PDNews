@@ -1,0 +1,732 @@
+{
+  "date": "2026-11-02",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1RpJnXUrqV2NBeCGBlZbv2VzNjQfuCxS5vPAxWvgkzfs/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic is going public.",
+      "summary": "[Anthropic](https://www.anthropic.com) filed an S-1 (ticker \"ANT\" on Nasdaq, listing targeted for the week of Nov 16, per [The Next Web](https://thenextweb.com/news/anthropic-ipo-filing-nasdaq-ant-s-1)), showing first-half revenue of $16.3B."
+    },
+    {
+      "headline": "Google consolidates its coding agents.",
+      "summary": "[Jules](https://jules.google) goes read-only after Nov 11 and offline Dec 31, folded into Antigravity, which also launched a Plugin Marketplace (Figma, Stripe, Canva and others)."
+    },
+    {
+      "headline": "Figma keeps opening its canvas to agents.",
+      "summary": "The [Figma MCP server now has 20 more partners](https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot), including [Linear](https://linear.app), [Notion](https://www.notion.com) and [Mistral](https://mistral.ai)."
+    },
+    {
+      "headline": "Claude plan changes.",
+      "summary": "The $100 plan is now \"Max\", the $200 plan is \"Ultra\", and verified Ultra accounts lose the 5-hour rolling limit ([pricing](https://www.anthropic.com/pricing))."
+    },
+    {
+      "headline": "Markets are nervous about AI spend.",
+      "summary": "Disclosed AI commitments pass $3T, and [Alphabet fell about 13% in a day](https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/) on negative free cash flow."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Ratings reflect fit for a product designer working with AI. Several are established tools with fresh news this week, since live launch feeds were not reachable on this run.",
+    "Social Buzz": "Live Hacker News, Product Hunt and Reddit feeds were not reachable on this run, so this section reflects discussion themes reported in [today's DEV digest](https://dev.to/hiroki-ii-ai/ai-daily-digest-november-1-2026-google-folds-jules-into-antigravity-claude-ultra-drops-the-3e5e) and [AI Unraveled](https://enoumen.substack.com/p/anthropic-opens-its-books-as-the)."
+  },
+  "entries": [
+    {
+      "id": "anthropic-files-to-list-on-nasdaq",
+      "section": "AI Industry News",
+      "headline": "Anthropic files to list on Nasdaq",
+      "summary": "The S-1 reports first-half revenue of $16.3B (about 14x a year earlier) and Q2 operating profit of $974M. The $80.7B headline loss is mostly a non-cash revaluation of convertible notes ([TechCrunch](https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/)).",
+      "why_it_matters": "Public financials give builders the first hard look at what a frontier lab spends on compute (obligations reported near $650B).",
+      "takeaway": {
+        "label": "For builders",
+        "text": "expect pricing and plan tiers to keep shifting as the company optimizes for margins."
+      },
+      "links": [
+        {
+          "label": "Anthropic files to list on Nasdaq",
+          "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02",
+      "lead": true
+    },
+    {
+      "id": "google-folds-jules-into-antigravity",
+      "section": "AI Industry News",
+      "headline": "Google folds Jules into Antigravity",
+      "summary": "Jules stops accepting new work after Nov 11 and shuts Dec 31. Export covers settings, scheduled tasks, memories and session history. [Google](https://deepmind.google) launched an Antigravity Plugin Marketplace the same day ([DEV digest](https://dev.to/hiroki-ii-ai/ai-daily-digest-november-1-2026-google-folds-jules-into-antigravity-claude-ultra-drops-the-3e5e)).",
+      "why_it_matters": "One agent surface with a plugin ecosystem is the pattern every vendor is converging on.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "Figma and Canva are launch partners, so design context will flow into coding sessions."
+      },
+      "links": [
+        {
+          "label": "Google folds Jules into Antigravity",
+          "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-1-2026-google-folds-jules-into-antigravity-claude-ultra-drops-the-3e5e"
+        },
+        {
+          "label": "Google",
+          "url": "https://deepmind.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "gemini-4-carbon-arrives-for-cyber-defense",
+      "section": "AI Industry News",
+      "headline": "Gemini 4 Carbon arrives for cyber defense",
+      "summary": "Google released [Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/), scoring 59 on the Artificial Analysis index, with access limited to vetted defenders.",
+      "why_it_matters": "Frontier models are now being gated by use case, not just price. Not directly relevant for UI work, but it signals tighter access tiers ahead.",
+      "links": [
+        {
+          "label": "Gemini 4 Carbon arrives for cyber defense",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "claude-plan-renaming-and-safety-review",
+      "section": "AI Industry News",
+      "headline": "Claude plan renaming and safety review",
+      "summary": "Anthropic renamed its plans and removed the 5-hour limit for verified Ultra users. OpenAI separately doubled Pro usage on Codex. Text watermarking reportedly extends to more Claude models on Nov 3 ahead of the EU AI Act deadline on Dec 2.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "For builders",
+        "text": "heavy agentic users get more headroom on both sides, so compare [OpenAI](https://openai.com) and Anthropic limits before committing a workflow."
+      },
+      "links": [
+        {
+          "label": "Claude plan renaming and safety review",
+          "url": "https://www.anthropic.com/pricing"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "open-weights-and-funding",
+      "section": "AI Industry News",
+      "headline": "Open weights and funding",
+      "summary": "[NVIDIA](https://www.nvidia.com) released [Nemotron 3.5 Transcribe](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary) (open weights, 40 languages, speaker attribution), useful for research interview transcription. [Cohere](https://cohere.com) is raising with Canadian government participation. [OpenAI updated its Model Spec](https://openai.com/index/updated-model-spec/) with a stated goal of cutting sycophancy in GPT-6.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Open weights and funding",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "Cohere",
+          "url": "https://cohere.com"
+        },
+        {
+          "label": "OpenAI updated its Model Spec",
+          "url": "https://openai.com/index/updated-model-spec/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "figma-mcp-goes-broad",
+      "section": "Product Design & UX",
+      "headline": "Figma MCP goes broad",
+      "summary": "At Config India, [Figma](https://www.figma.com) added 20 partners to its MCP server. Clients can read layout, type styles, color tokens and component structure, and write changes back to the file. Dylan Field has publicly called MCP \"not a perfect protocol\", noting gaps around artifacts and cloud resources. Source: [Startup Fortune](https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot).",
+      "why_it_matters": "if your design system is tokenized and componentized, agents in [Claude Code](https://claude.com/product/claude-code), [Cursor](https://cursor.com) and Antigravity can now build against it. Messy files produce messy output, so cleanup pays off.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma MCP goes broad",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "canva-s-platform-pivot",
+      "section": "Product Design & UX",
+      "headline": "Canva's platform pivot",
+      "summary": "[Canva](https://www.canva.com) describes itself as \"an AI platform with design tools\", with an assistant that chains internal tools and connects to Gmail, Slack, Drive and Zoom.",
+      "why_it_matters": "the competition is moving from editor features to agent orchestration over your work context.",
+      "links": [
+        {
+          "label": "Canva's platform pivot",
+          "url": "https://www.canva.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "antigravity-plugins-reach-design-tools",
+      "section": "Product Design & UX",
+      "headline": "Antigravity plugins reach design tools",
+      "summary": "Plugins from Figma and Canva inside Antigravity mean a design reference can sit next to the code it spawns. Worth testing whether your handoff spec survives that round trip.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Antigravity plugins reach design tools",
+          "url": "https://antigravity.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "agent-desktop",
+      "section": "New AI Tools",
+      "headline": "Agent Desktop",
+      "summary": "From [Vercel](https://vercel.com) Labs: reliable computer use through OS accessibility trees.",
+      "why_it_matters": null,
+      "audience": "anyone testing agent-driven UI flows.",
+      "links": [
+        {
+          "label": "Agent Desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "Vercel",
+          "url": "https://vercel.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "hyperframes",
+      "section": "New AI Tools",
+      "headline": "Hyperframes",
+      "summary": "From [HeyGen](https://www.heygen.com): write HTML, render video, built for agents. Great for motion mockups and product demos.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes"
+        },
+        {
+          "label": "HeyGen",
+          "url": "https://www.heygen.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "google-antigravity",
+      "section": "New AI Tools",
+      "headline": "Google Antigravity",
+      "summary": "Now with a Plugin Marketplace including Figma and Canva.",
+      "why_it_matters": null,
+      "audience": "designers who code with agents.",
+      "links": [
+        {
+          "label": "Google Antigravity",
+          "url": "https://antigravity.google"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "imcp",
+      "section": "New AI Tools",
+      "headline": "iMCP",
+      "summary": "macOS MCP server for Messages, Contacts and Reminders.",
+      "why_it_matters": null,
+      "audience": "personal workflow automation.",
+      "links": [
+        {
+          "label": "iMCP",
+          "url": "https://github.com/mattt/iMCP"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "solidcraft",
+      "section": "New AI Tools",
+      "headline": "Solidcraft",
+      "summary": "Parametric 3D CAD with MCP automation.",
+      "why_it_matters": null,
+      "audience": "product and hardware designers prototyping physical objects.",
+      "links": [
+        {
+          "label": "Solidcraft",
+          "url": "https://github.com/tangency-labs/solidcraft"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "nemotron-3-5-transcribe",
+      "section": "New AI Tools",
+      "headline": "Nemotron 3.5 Transcribe",
+      "summary": "Open-weights transcription with speaker labels for UX research interviews.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Nemotron 3.5 Transcribe",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "cc-switch",
+      "section": "New AI Tools",
+      "headline": "cc-switch",
+      "summary": "Desktop assistant for switching between Claude Code, Codex, OpenCode and DeepSeek setups.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "cc-switch",
+          "url": "https://github.com/farion1231/cc-switch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "agent-consolidation",
+      "section": "Trends to Watch",
+      "headline": "Agent consolidation",
+      "summary": "Google retiring Jules for Antigravity mirrors the market: fewer, bigger agent surfaces with plugin marketplaces.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how plugins and MCP servers are packaged, since that is the new distribution channel."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "design-systems-as-agent-inputs",
+      "section": "Trends to Watch",
+      "headline": "Design systems as agent inputs",
+      "summary": "Figma's MCP expansion makes tokens and component structure machine-readable context.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "variables, naming conventions and component documentation."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "computer-use-agents-going-open-source",
+      "section": "Trends to Watch",
+      "headline": "Computer-use agents going open source",
+      "summary": "Agent Desktop's quick climb on GitHub suggests agents operating real apps via accessibility trees is becoming a commodity.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "accessibility semantics, which now double as agent affordances."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "agent-security",
+      "section": "Trends to Watch",
+      "headline": "Agent security",
+      "summary": "A reported [Chainalysis incident](https://www.chainalysis.com/blog/security-incident-october-30/) involving \"offensive agentic techniques\" and a reported malicious Claude Code extension in the [Cursor](https://cursor.com) marketplace are reminders to vet extensions and scope agent permissions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Chainalysis incident",
+          "url": "https://www.chainalysis.com/blog/security-incident-october-30/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "canva-s-assistant-that-chains-tools",
+      "section": "Product Design Inspiration",
+      "headline": "Canva's assistant that chains tools",
+      "summary": "It pulls context from mail, chat and drive before generating.",
+      "why_it_matters": "the user states an outcome and the product assembles inputs, removing the blank-canvas step.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Canva's assistant that chains tools",
+          "url": "https://www.canva.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "agent-desktop-s-accessibility-tree-approach",
+      "section": "Product Design Inspiration",
+      "headline": "Agent Desktop's accessibility-tree approach",
+      "summary": "Instead of screenshots, agents act on semantic structure.",
+      "why_it_matters": "well-labeled interfaces serve both screen-reader users and agents.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Agent Desktop's accessibility-tree approach",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "hyperframes-html-to-video-model",
+      "section": "Product Design Inspiration",
+      "headline": "Hyperframes' HTML-to-video model",
+      "summary": "Video authored in a medium designers already know.",
+      "why_it_matters": "it lowers the tool-switching cost for motion work.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Hyperframes' HTML-to-video model",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "vercel-labs-agent-desktop",
+      "section": "GitHub & Open Source",
+      "headline": "vercel-labs/agent-desktop",
+      "summary": "Rust computer-use layer, roughly 4.4k stars with +2.6k in a day ([GitTrend](https://gittrend.io/trending/mcp)). Gaining on reliability claims.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "GitTrend",
+          "url": "https://gittrend.io/trending/mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "heygen-com-hyperframes",
+      "section": "GitHub & Open Source",
+      "headline": "heygen-com/hyperframes",
+      "summary": "\"Write HTML. Render video. Built for agents.\"",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "mattt-imcp",
+      "section": "GitHub & Open Source",
+      "headline": "mattt/iMCP",
+      "summary": "Swift MCP server for macOS apps, steady daily growth.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mattt/iMCP",
+          "url": "https://github.com/mattt/iMCP"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "farion1231-cc-switch",
+      "section": "GitHub & Open Source",
+      "headline": "farion1231/cc-switch",
+      "summary": "Multi-agent config switcher, reflecting how many people now run several coding agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "farion1231/cc-switch",
+          "url": "https://github.com/farion1231/cc-switch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "affaan-m-ecc",
+      "section": "GitHub & Open Source",
+      "headline": "affaan-m/ECC",
+      "summary": "Agent harness optimization for Claude Code, Codex, OpenCode and Cursor.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "qybaihe-bla",
+      "section": "GitHub & Open Source",
+      "headline": "qybaihe/bla",
+      "summary": "Obfuscation aimed at defeating AI reverse-engineering agents, a sign of the emerging counter-agent tooling category.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "qybaihe/bla",
+          "url": "https://github.com/qybaihe/bla"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "anthropic-s-1-economics",
+      "section": "Social Buzz",
+      "headline": "Anthropic S-1 economics",
+      "summary": "Debate centers on whether $16.3B in half-year revenue justifies compute obligations near $650B.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "coding-agent-switching",
+      "section": "Social Buzz",
+      "headline": "Coding-agent switching",
+      "summary": "Reports of OpenAI winning coding customers with discounts (per The Information, via AI Unraveled) fuel talk of vendor lock-in and multi-agent setups.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "agents-with-too-much-access",
+      "section": "Social Buzz",
+      "headline": "Agents with too much access",
+      "summary": "A [WIRED](https://www.wired.com) report about a contractor connecting a sensitive system to a personal Claude Code account (Accenture disputes it) sparked permissions-scoping conversations.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "WIRED",
+          "url": "https://www.wired.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "figma-opens-its-canvas-to-ai-coding-agents",
+      "section": "Learning Corner",
+      "headline": "Figma Opens Its Canvas to AI Coding Agents",
+      "kicker": "Article",
+      "summary": "A clear read on where design tooling is heading and what MCP can and cannot do today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Opens Its Canvas to AI Coding Agents",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "lovable-x-figma-integration-walkthrough",
+      "section": "Learning Corner",
+      "headline": "Lovable x Figma integration walkthrough",
+      "kicker": "Video",
+      "summary": "Shows a design-to-app handoff end to end, useful for judging how much cleanup your files need.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Lovable x Figma integration walkthrough",
+          "url": "https://lovable.dev/video/brand-new-lovable-x-figma-integration-build-amazing-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "agent-desktop-2",
+      "section": "Learning Corner",
+      "headline": "agent-desktop",
+      "kicker": "GitHub project",
+      "summary": "Read the README to see how accessibility trees become agent actions.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "figma-help-center",
+      "section": "Learning Corner",
+      "headline": "Figma Help Center",
+      "kicker": "Design resource",
+      "summary": "On the MCP server setup, to learn what the server exposes before you build on it.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma Help Center",
+          "url": "https://help.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "figma-frame-to-component-with-claude-code",
+      "section": "Learning Corner",
+      "headline": "Figma frame to component with Claude Code",
+      "kicker": "AI workflow",
+      "summary": "Pull a Figma frame into [Claude Code](https://claude.com/product/claude-code) via the Figma MCP, generate the component, then diff it against your tokens. It exposes where your design system is ambiguous.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "design-system-readiness-audits",
+      "section": "Opportunities",
+      "headline": "Design-system readiness audits",
+      "summary": "Teams adopting Figma MCP need tokens, naming and component docs cleaned up so agents produce usable output.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "agent-ux-patterns",
+      "section": "Opportunities",
+      "headline": "Agent UX patterns",
+      "summary": "Permission prompts, scoped access and review flows are under-designed, and this week's security stories show demand.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "plugin-and-mcp-server-design",
+      "section": "Opportunities",
+      "headline": "Plugin and MCP server design",
+      "summary": "Antigravity's marketplace and Figma's partner list reward people who can design both the tool and its interaction model.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "research-tooling",
+      "section": "Opportunities",
+      "headline": "Research tooling",
+      "summary": "Open transcription with speaker attribution makes in-house interview analysis pipelines cheap to build.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    },
+    {
+      "id": "accessibility-tree-audit",
+      "section": "Today's Experiment",
+      "headline": "Accessibility-tree audit",
+      "kicker": "25 minutes",
+      "summary": "Pick one screen of your product. Inspect its accessibility tree in browser dev tools, and list every control with a missing or vague label. Then try describing the screen's main task to an agent using only that tree. Where the agent fails, a screen-reader user probably would too. Fix three labels and compare.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-02"
+    }
+  ],
+  "dont_miss": [
+    "Read the [Anthropic S-1 coverage](https://thenextweb.com/news/anthropic-ipo-filing-nasdaq-ant-s-1) for the compute-cost picture behind your tooling.",
+    "If you use Jules, export your data before Nov 11 and try [Antigravity](https://antigravity.google).",
+    "Review your Figma variables and component naming ahead of wider [MCP adoption](https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot)."
+  ],
+  "footnote": "Sourced from secondary newsletters and aggregators (DEV Community, Mind and Machine Weekly, AI Unraveled, Startup Fortune, GitTrend), so figures are as reported and not independently verified. Live Hacker News, Product Hunt and Reddit access was unavailable this run."
+}
