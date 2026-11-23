@@ -1,0 +1,1063 @@
+{
+  "date": "2026-11-13",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1HyVgcHN8Id_5Bounq2oZaZfYwUIajK-K5NsbK_8CqfU/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic shipped a full workspace suite on top of a new top model.",
+      "summary": "[Anthropic](https://www.anthropic.com) released [Claude Fable 5.2 and Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2) on Nov 9, then added [Claude Meetings, Whiteboards and Sheets](https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/) on Nov 10, while its IPO roadshow is running."
+    },
+    {
+      "headline": "NVIDIA lost its CEO.",
+      "summary": "[NVIDIA](https://www.nvidia.com)'s board [accepted Jensen Huang's exit on Nov 12](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12) and named CFO Colette Kress interim CEO. The stock fell hard."
+    },
+    {
+      "headline": "Design and code keep merging.",
+      "summary": "[Figma](https://www.figma.com) says its MCP server is its [fastest-growing product](https://investingnews.com/figma-announces-third-quarter-2026-financial-results/), and [Cursor](https://cursor.com) now [deploys live apps from a prompt](https://thenewstack.io/cursor-ai-app-deployment/)."
+    },
+    {
+      "headline": "Cheap worker models arrived.",
+      "summary": "[Meta](https://about.meta.com) launched [Muse Ember at $0.10 per million input tokens](https://www.testingcatalog.com/meta-launches-muse-ember-for-low-cost-agentic-tasks/), built for high-volume agent work."
+    },
+    {
+      "headline": "Agents are hitting access walls.",
+      "summary": "[United Airlines](https://www.united.com) is [blocking unauthorized AI agents](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/) from booking flights. Designing for agents as users is now a real product problem."
+    }
+  ],
+  "section_notes": {},
+  "entries": [
+    {
+      "id": "claude-fable-5-2-and-mythos-5-2-land-and-the-workspace-suite",
+      "section": "AI Industry News",
+      "headline": "Claude Fable 5.2 and Mythos 5.2 land, and the workspace suite follows",
+      "summary": "Anthropic released [Fable 5.2 and Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2) on Nov 9. [Artificial Analysis](https://artificialanalysis.ai/models/claude-fable-5-2) scored Fable 5.2 at 65, the highest it has recorded. One day later Anthropic launched [Whiteboards and Sheets in beta](https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/) and made Claude Data (formerly Dashboards) generally available. [Claude Meetings](https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/) puts Claude in a video call as a visible participant, in beta for Team and Enterprise, and [Google Meet support was reported on Nov 12](https://fourweekmba.com/ai-claude-meetings-joins-google-meet-docs-free-for-90-days/). Also on Nov 12: [Claude for Manufacturing](https://fourweekmba.com/ai-anthropic-launches-claude-for-manufacturing-ipo-roadshow/), a plugin with 17 skills and four connectors including Autodesk Fusion and Oracle NetSuite.",
+      "why_it_matters": "Boards, sheets and docs now live inside [Claude](https://claude.ai) with live editing, so the artifact and the conversation share one surface.",
+      "takeaway": {
+        "label": "Impact for builders and designers",
+        "text": "interactive connectors open apps beside the chat, which makes \"AI next to the app\" a standard layout pattern you will be asked to design."
+      },
+      "links": [
+        {
+          "label": "Claude Fable 5.2 and Mythos 5.2 land, and the workspace suite follows",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "label": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai/models/claude-fable-5-2"
+        },
+        {
+          "label": "Whiteboards and Sheets in beta",
+          "url": "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/"
+        },
+        {
+          "label": "Claude Meetings",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+        },
+        {
+          "label": "Google Meet support was reported on Nov 12",
+          "url": "https://fourweekmba.com/ai-claude-meetings-joins-google-meet-docs-free-for-90-days/"
+        },
+        {
+          "label": "Claude for Manufacturing",
+          "url": "https://fourweekmba.com/ai-anthropic-launches-claude-for-manufacturing-ipo-roadshow/"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13",
+      "lead": true
+    },
+    {
+      "id": "nvidia-s-ceo-is-out",
+      "section": "AI Industry News",
+      "headline": "NVIDIA's CEO is out",
+      "summary": "Jensen Huang left as CEO on Nov 12. Coverage splits between [resignation](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12) and [effective dismissal](https://news.sbs.co.kr/english/article.do?news_id=N1008844035), following a board investigation into his personal conduct. Colette Kress is interim CEO. Shares fell about 12 to 13% early and closed down over 4%, per SBS.",
+      "why_it_matters": "NVIDIA sets the pace for AI hardware pricing and supply.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "expect volatility in GPU-linked stocks and no change to your tools this week. Watch for roadmap or allocation signals from the interim team."
+      },
+      "links": [
+        {
+          "label": "NVIDIA's CEO is out",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12"
+        },
+        {
+          "label": "effective dismissal",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008844035"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "anthropic-s-ipo-is-oversubscribed-and-tsmc-is-buying-in",
+      "section": "AI Industry News",
+      "headline": "Anthropic's IPO is oversubscribed, and TSMC is buying in",
+      "summary": "Anthropic [launched its IPO roadshow on Nov 10](https://claudelog.com/claude-news/): 825 million shares at an expected $70 to $78, Nasdaq symbol ANT. The order book is running [several times oversubscribed](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12) ahead of next week's pricing. [TSMC](https://www.tsmc.com)'s board approved up to $1 billion, [split between OpenAI preferred stock and Anthropic common shares](https://aiweekly.co/ai-news-today/edition/2026-11-12).",
+      "why_it_matters": "Public-market scrutiny will shape pricing, usage limits and product cadence.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "plan for tiered pricing and rate-limit changes in tools you depend on. One [user report](https://medium.com/@lvntblsn/what-is-claude-fable-5-2-the-new-1-ai-model-is-worth-it-just-not-for-your-everyday-fixes-7ebbaad45217) says Fable drained a five-hour limit in under 20 minutes."
+      },
+      "links": [
+        {
+          "label": "Anthropic's IPO is oversubscribed, and TSMC is buying in",
+          "url": "https://claudelog.com/claude-news/"
+        },
+        {
+          "label": "several times oversubscribed",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12"
+        },
+        {
+          "label": "TSMC",
+          "url": "https://www.tsmc.com"
+        },
+        {
+          "label": "split between OpenAI preferred stock and Anthropic common shares",
+          "url": "https://aiweekly.co/ai-news-today/edition/2026-11-12"
+        },
+        {
+          "label": "user report",
+          "url": "https://medium.com/@lvntblsn/what-is-claude-fable-5-2-the-new-1-ai-model-is-worth-it-just-not-for-your-everyday-fixes-7ebbaad45217"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "google-ships-gemini-4-carbon-a-decision-only-api-and-healthc",
+      "section": "AI Industry News",
+      "headline": "Google ships Gemini 4 Carbon, a decision-only API and healthcare agents",
+      "summary": "[Gemini 4 Carbon](https://deepmind.google/models/gemini/) is now available from [Google DeepMind](https://deepmind.google). Google also shipped the Gemini Decisions API, built to [answer up to 1,000 yes/no or multiple-choice questions in about a quarter of a second](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12). [Gemini for healthcare](https://www.googlecloudpresscorner.com/2026-11-10-Google-Cloud-Launches-Gemini-for-Healthcare) launched in preview, and the [November Pixel Drop](https://gadgets.beebom.com/news/google-rolls-out-november-2026-pixel-drop) brings multi-step Gemini tasks (food orders, ride booking) to India, Japan and the UK. [Gemini](https://gemini.google.com) 4 Argon testing is half price until Nov 30, [per this roundup](https://blog.mean.ceo/google-gemini-latest-model-news-november-2026/).",
+      "why_it_matters": "A model that returns a classification in 250 ms enables UI that reacts live instead of waiting on a generated reply.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "think inline suggestions, triage and routing inside product flows."
+      },
+      "links": [
+        {
+          "label": "Google ships Gemini 4 Carbon, a decision-only API and healthcare agents",
+          "url": "https://deepmind.google/models/gemini/"
+        },
+        {
+          "label": "Google DeepMind",
+          "url": "https://deepmind.google"
+        },
+        {
+          "label": "answer up to 1,000 yes/no or multiple-choice questions in about a quarter of a second",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12"
+        },
+        {
+          "label": "Gemini for healthcare",
+          "url": "https://www.googlecloudpresscorner.com/2026-11-10-Google-Cloud-Launches-Gemini-for-Healthcare"
+        },
+        {
+          "label": "November Pixel Drop",
+          "url": "https://gadgets.beebom.com/news/google-rolls-out-november-2026-pixel-drop"
+        },
+        {
+          "label": "Gemini",
+          "url": "https://gemini.google.com"
+        },
+        {
+          "label": "per this roundup",
+          "url": "https://blog.mean.ceo/google-gemini-latest-model-news-november-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "meta-pushes-cost-down-and-puts-muse-on-the-phone",
+      "section": "AI Industry News",
+      "headline": "Meta pushes cost down and puts Muse on the phone",
+      "summary": "[Muse Ember](https://www.testingcatalog.com/meta-launches-muse-ember-for-low-cost-agentic-tasks/) costs $0.10 per million input and $0.50 per million output tokens, with a 1M context window. Meta frames it as a pair: Muse Wonder plans, Ember handles volume. On Nov 12, [Muse began placing phone calls to businesses](https://fourweekmba.com/ai-metas-muse-now-calls-businesses-for-you-from-20-a-month/) for paid US subscribers.",
+      "why_it_matters": "Planner plus cheap worker is becoming the default agent architecture.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "budget agent features around the worker model's price, not the frontier model's."
+      },
+      "links": [
+        {
+          "label": "Meta pushes cost down and puts Muse on the phone",
+          "url": "https://www.testingcatalog.com/meta-launches-muse-ember-for-low-cost-agentic-tasks/"
+        },
+        {
+          "label": "Muse began placing phone calls to businesses",
+          "url": "https://fourweekmba.com/ai-metas-muse-now-calls-businesses-for-you-from-20-a-month/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "openai-devday-pricing-and-images-2-6",
+      "section": "AI Industry News",
+      "headline": "OpenAI: DevDay pricing and Images 2.6",
+      "summary": "[OpenAI](https://openai.com)'s DevDay introduced [GPT-6.1 Sol at $2 input and $10 output per million tokens](https://blog.mean.ceo/open-ai-news-november-2026/), an Ultrafast tier up to 300 tokens per second, a $500 per month Pro 500 plan, and a plugin marketplace of about 4,000 plugins. [Images 2.6](https://aiweekly.co/ai-news-today/openai-news) adds animated GIFs and 50% faster generation.",
+      "why_it_matters": "Speed is now a priced product tier.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "animated image output in an API is directly useful for onboarding visuals and empty states."
+      },
+      "links": [
+        {
+          "label": "OpenAI: DevDay pricing and Images 2.6",
+          "url": "https://blog.mean.ceo/open-ai-news-november-2026/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Images 2.6",
+          "url": "https://aiweekly.co/ai-news-today/openai-news"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "agent-access-apple-local-ai-and-a-late-grok",
+      "section": "AI Industry News",
+      "headline": "Agent access, Apple local AI and a late Grok",
+      "summary": "United is blocking unauthorized agents. [Perplexity](https://www.perplexity.ai) launched [Teammates](https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-november-7-2026), persistent agents for Max subscribers at $200 per month. [Apple](https://www.apple.com) has a [new Mac app coming to run local AI models](https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/). [xAI](https://x.ai)'s Grok 4.8, promised for Nov 10, [had not shipped as of Nov 12](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12).",
+      "why_it_matters": "Companies want agents, but on their terms.",
+      "takeaway": {
+        "label": "Impact",
+        "text": "authentication, identity and permission design for agent users is open territory."
+      },
+      "links": [
+        {
+          "label": "Agent access, Apple local AI and a late Grok",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+        },
+        {
+          "label": "Perplexity",
+          "url": "https://www.perplexity.ai"
+        },
+        {
+          "label": "Teammates",
+          "url": "https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-november-7-2026"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com"
+        },
+        {
+          "label": "new Mac app coming to run local AI models",
+          "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/"
+        },
+        {
+          "label": "xAI",
+          "url": "https://x.ai"
+        },
+        {
+          "label": "had not shipped as of Nov 12",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-12"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "figma-mcp-is-the-growth-engine-code-layers-is-in-beta",
+      "section": "Product Design & UX",
+      "headline": "Figma: MCP is the growth engine, Code Layers is in beta",
+      "summary": "In its [Q3 results](https://investingnews.com/figma-announces-third-quarter-2026-financial-results/), [Figma](https://www.figma.com) reported revenue up 43% to $391.4 million. The [Figma MCP server](https://www.figma.com) was its fastest-growing product by weekly active users, and [write-back usage rose 4x](https://sec-api.io/insights/figma-fig-q3-2026-earnings-1-717-customers-above-100k-arr-ndr-131-ttm-stock-compensation-49-6-of-revenue-sec-filing-analysis) in the quarter. Code Layers, which puts working code on the canvas, entered open beta Oct 14.",
+      "why_it_matters": "if agents can write to your Figma files, your design system becomes the source of truth they build from.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: MCP is the growth engine, Code Layers is in beta",
+          "url": "https://investingnews.com/figma-announces-third-quarter-2026-financial-results/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "write-back usage rose 4x",
+          "url": "https://sec-api.io/insights/figma-fig-q3-2026-earnings-1-717-customers-above-100k-arr-ndr-131-ttm-stock-compensation-49-6-of-revenue-sec-filing-analysis"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "cursor-deploys-live-apps",
+      "section": "Product Design & UX",
+      "headline": "Cursor deploys live apps",
+      "summary": "[Cursor](https://cursor.com)'s [Build Live Apps](https://thenewstack.io/cursor-ai-app-deployment/) (Nov 5) has a cloud agent build the app, set up a database and sign-in, check for security flaws and host it behind a shareable link. It competes directly with [Lovable](https://lovable.dev) and [Replit](https://replit.com). Current [first paid tiers](https://dev.to/vibecost/what-lovable-bolt-replit-v0-base44-and-cursor-actually-cost-in-november-2026-45ch): Cursor Plus $8, Lovable Pro $25, Replit Core $20, [v0](https://v0.app) Plus $30, with [Bolt](https://bolt.new) in the same range.",
+      "why_it_matters": "a designer can ship a working internal tool without leaving the editor.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor deploys live apps",
+          "url": "https://thenewstack.io/cursor-ai-app-deployment/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        },
+        {
+          "label": "first paid tiers",
+          "url": "https://dev.to/vibecost/what-lovable-bolt-replit-v0-base44-and-cursor-actually-cost-in-november-2026-45ch"
+        },
+        {
+          "label": "v0",
+          "url": "https://v0.app"
+        },
+        {
+          "label": "Bolt",
+          "url": "https://bolt.new"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "collaborative-surfaces-not-just-chats",
+      "section": "Product Design & UX",
+      "headline": "Collaborative surfaces, not just chats",
+      "summary": "Claude's interactive connectors now open supported apps beside a conversation, with edits made in front of you in [Notion](https://www.notion.com), Confluence and Box. [Adobe](https://www.adobe.com) connected its marketing workflows to the major AI platforms, and Notion is promoting shared context and portable skills, [per this weekly roundup](https://aiforbusinessowners.substack.com/p/ai-newsflash-november-2-to-8-2026).",
+      "why_it_matters": "split-view with a live artifact is the pattern to study for any AI feature that edits user data.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Collaborative surfaces, not just chats",
+          "url": "https://aiforbusinessowners.substack.com/p/ai-newsflash-november-2-to-8-2026"
+        },
+        {
+          "label": "Notion",
+          "url": "https://www.notion.com"
+        },
+        {
+          "label": "Adobe",
+          "url": "https://www.adobe.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "beacon-sh",
+      "section": "New AI Tools",
+      "headline": "beacon.sh",
+      "summary": "(Nov 2, #1 on [Product Hunt](https://www.producthunt.com/posts/beacon-sh)). Open-source memory that captures sessions across Claude Code, Cursor, Codex and 20+ other agents, then turns corrections into reusable skills.",
+      "why_it_matters": null,
+      "audience": "anyone running more than one coding agent.",
+      "links": [
+        {
+          "label": "beacon.sh",
+          "url": "https://beacon.sh"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/posts/beacon-sh"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "astryx",
+      "section": "New AI Tools",
+      "headline": "Astryx",
+      "summary": "Meta's open-source React design system with 150+ components, a CLI and an MCP server so agents stop inventing props.",
+      "why_it_matters": null,
+      "audience": "designers who ship code.",
+      "links": [
+        {
+          "label": "Astryx",
+          "url": "https://astryx.atmeta.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "clayzo",
+      "section": "New AI Tools",
+      "headline": "Clayzo",
+      "summary": "Free tool that lets coding agents like Claude Code, Codex and Cursor write motion graphics in code and review every frame.",
+      "why_it_matters": null,
+      "audience": "designers who want motion without After Effects.",
+      "links": [
+        {
+          "label": "Clayzo",
+          "url": "https://www.producthunt.com/products/clayzo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hera",
+      "section": "New AI Tools",
+      "headline": "Hera",
+      "summary": "AI creative canvas that generates images, designs and code-based animations on one board with editable layers.",
+      "why_it_matters": null,
+      "audience": "ads, launch videos and social assets.",
+      "links": [
+        {
+          "label": "Hera",
+          "url": "https://hera.video"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "display-1-0",
+      "section": "New AI Tools",
+      "headline": "Display 1.0",
+      "summary": "Workspace where any agent publishes HTML or Markdown docs and prototypes, with roles and sharing controls. Apps and connectors are still in private beta.",
+      "why_it_matters": null,
+      "audience": "teams collecting agent output in one place.",
+      "links": [
+        {
+          "label": "Display 1.0",
+          "url": "https://www.producthunt.com/products/display-dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "google-stitch",
+      "section": "New AI Tools",
+      "headline": "Google Stitch",
+      "summary": "Prompt or voice to high-fidelity UI, with DESIGN.md export and a design system extracted from any URL.",
+      "why_it_matters": null,
+      "audience": "fast concepting before Figma.",
+      "links": [
+        {
+          "label": "Google Stitch",
+          "url": "https://stitch.withgoogle.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "claude-whiteboards-and-sheets",
+      "section": "New AI Tools",
+      "headline": "Claude Whiteboards and Sheets",
+      "summary": "(beta, paid plans). Collaborative boards and trackers Claude builds from a conversation. Anthropic's own product lead calls Sheets [fairly basic](https://aiweekly.co/alerts/anthropic-rolls-out-claude-sheets-meetings-and-whiteboards), so use it for trackers and plans, not heavy models.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Whiteboards and Sheets",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "fairly basic",
+          "url": "https://aiweekly.co/alerts/anthropic-rolls-out-claude-sheets-meetings-and-whiteboards"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "muse-ember",
+      "section": "New AI Tools",
+      "headline": "Muse Ember",
+      "summary": "(Meta Model API). Small model at $0.10 per million input tokens for routing, extraction and sub-tasks.",
+      "why_it_matters": null,
+      "audience": "anyone prototyping agent features on a budget.",
+      "links": [
+        {
+          "label": "Muse Ember",
+          "url": "https://ai.meta.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "screen-studio-4-0",
+      "section": "New AI Tools",
+      "headline": "Screen Studio 4.0",
+      "summary": "Screen recorder with Glass Loupe, camera cutout and edit-by-transcript, [#1 on Product Hunt Nov 1](https://medium.com/@yamirita/5-product-hunt-launches-from-this-week-that-are-actually-worth-your-time-ca9bcac1b835).",
+      "why_it_matters": null,
+      "audience": "polished prototype walkthroughs.",
+      "links": [
+        {
+          "label": "Screen Studio 4.0",
+          "url": "https://screen.studio"
+        },
+        {
+          "label": "#1 on Product Hunt Nov 1",
+          "url": "https://medium.com/@yamirita/5-product-hunt-launches-from-this-week-that-are-actually-worth-your-time-ca9bcac1b835"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "agent-ready-design-systems",
+      "section": "Trends to Watch",
+      "headline": "Agent-ready design systems",
+      "summary": "[Astryx](https://github.com/facebook/astryx) ships a JSON manifest and MCP server, and Google Stitch exports a [DESIGN.md file](https://pulse2.com/google-labs-stitch-ai-design-platform-introduces-vibe-design-for-high-fidelity-ui-creation).",
+      "why_it_matters": "your tokens and component rules are now prompts.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "to write them so a machine can follow them."
+      },
+      "links": [
+        {
+          "label": "Astryx",
+          "url": "https://github.com/facebook/astryx"
+        },
+        {
+          "label": "DESIGN.md file",
+          "url": "https://pulse2.com/google-labs-stitch-ai-design-platform-introduces-vibe-design-for-high-fidelity-ui-creation"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "planner-plus-cheap-worker",
+      "section": "Trends to Watch",
+      "headline": "Planner plus cheap worker",
+      "summary": "Muse Wonder with Ember is one example.",
+      "why_it_matters": "cost per task decides which agent features survive.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "to estimate tokens per user action."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "prompt-to-production",
+      "section": "Trends to Watch",
+      "headline": "Prompt to production",
+      "summary": "Cursor live apps, Figma Code Layers and Figma MCP write-back all remove the handoff.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to review and gate what an agent ships, since Cursor's launch includes a security check before publish."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "agents-as-users",
+      "section": "Trends to Watch",
+      "headline": "Agents as users",
+      "summary": "United blocks them, Product Hunt launches like [Tobira](https://www.producthunt.com/products/tobira-ai) build sites that sell to agents, and [SafeGrd](https://blog.mean.ceo/product-hunt-launches-news-november-2026/) lets AI restore backups but not delete them.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "permission and identity patterns for non-human users."
+      },
+      "links": [
+        {
+          "label": "Tobira",
+          "url": "https://www.producthunt.com/products/tobira-ai"
+        },
+        {
+          "label": "SafeGrd",
+          "url": "https://blog.mean.ceo/product-hunt-launches-news-november-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "cross-agent-memory",
+      "section": "Trends to Watch",
+      "headline": "Cross-agent memory",
+      "summary": "Beacon and similar tools treat agent history as shared team knowledge.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to review and approve what an agent \"remembers.\""
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "shopify-narrates-the-build-before-asking-for-an-email",
+      "section": "Product Design Inspiration",
+      "headline": "Shopify narrates the build before asking for an email",
+      "summary": "Per [UXCam's onboarding teardown](https://uxcam.com/blog/10-apps-with-great-user-onboarding/), [Shopify](https://www.shopify.com) shows progress copy like \"Defining palettes and styles, 1 minute left\" and then presents three finished store designs before any email is requested.",
+      "why_it_matters": "waiting becomes proof of value, and the user is invested before the signup ask.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Shopify narrates the build before asking for an email",
+          "url": "https://uxcam.com/blog/10-apps-with-great-user-onboarding/"
+        },
+        {
+          "label": "Shopify",
+          "url": "https://www.shopify.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "linear-starts-you-in-a-working-demo-workspace",
+      "section": "Product Design Inspiration",
+      "headline": "Linear starts you in a working demo workspace",
+      "summary": "Instead of a blank page, [Linear](https://linear.app) gives new users a furnished workspace with issues, comments, projects and cycles, as described in the [same teardown](https://uxcam.com/blog/10-apps-with-great-user-onboarding/).",
+      "why_it_matters": "you learn the layout by clicking a product that already works, so there is no empty-state cliff.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Linear starts you in a working demo workspace",
+          "url": "https://uxcam.com/blog/10-apps-with-great-user-onboarding/"
+        },
+        {
+          "label": "Linear",
+          "url": "https://linear.app"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "claude-opens-your-tools-beside-the-conversation",
+      "section": "Product Design Inspiration",
+      "headline": "Claude opens your tools beside the conversation",
+      "summary": "Claude's [interactive connectors](https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/) let supported apps open next to the chat or in full screen while Claude makes approved edits on the visible page, such as side-by-side revisions in Box.",
+      "why_it_matters": "the user watches the change happen in the real artifact, which builds trust in agent edits.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Claude opens your tools beside the conversation",
+          "url": "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "facebook-astryx",
+      "section": "GitHub & Open Source",
+      "headline": "facebook/astryx",
+      "summary": "Meta's design system, MIT licensed, built on React and StyleX. Gaining attention because it was proven across 13,000+ internal apps and treats agents as first-class consumers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "facebook/astryx",
+          "url": "https://github.com/facebook/astryx"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "vercel-labs-agent-desktop",
+      "section": "GitHub & Open Source",
+      "headline": "vercel-labs/agent-desktop",
+      "summary": "Gives agents reliable desktop computer use by reading OS accessibility trees instead of guessing from pixels. [Over 8,400 stars](https://www.coddykit.com/pages/blog-detail?id=5130015&slug=github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w) and 2,243 gained in one day.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "Over 8,400 stars",
+          "url": "https://www.coddykit.com/pages/blog-detail?id=5130015&slug=github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "asymptote-labs-agent-beacon",
+      "section": "GitHub & Open Source",
+      "headline": "Asymptote-Labs/agent-beacon",
+      "summary": "The open-source core of beacon.sh, MIT licensed, local-first, with MCP and Agent Skills retrieval.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Asymptote-Labs/agent-beacon",
+          "url": "https://github.com/Asymptote-Labs/agent-beacon"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "googlechrome-modern-web-guidance",
+      "section": "GitHub & Open Source",
+      "headline": "GoogleChrome/modern-web-guidance",
+      "summary": "Keeps your coding agent current on web best practices. Trending on [GitHub Explore](https://github.com/explore) with 2.7k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "GoogleChrome/modern-web-guidance",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance"
+        },
+        {
+          "label": "GitHub Explore",
+          "url": "https://github.com/explore"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "openai-codex-security",
+      "section": "GitHub & Open Source",
+      "headline": "openai/codex-security",
+      "summary": "CLI and TypeScript SDK for finding, validating and fixing vulnerabilities, at 12.3k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "openai/codex-security",
+          "url": "https://github.com/openai/codex-security"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "aws-aws-emulator",
+      "section": "GitHub & Open Source",
+      "headline": "aws/aws-emulator",
+      "summary": "A local AWS emulator that [Unite.AI reports was written entirely by autonomous AI agents](https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure). A useful proof point for agent-written infrastructure.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "aws/aws-emulator",
+          "url": "https://github.com/aws/aws-emulator"
+        },
+        {
+          "label": "Unite.AI reports was written entirely by autonomous AI agents",
+          "url": "https://riorundown.substack.com/p/ai-news-nov-12-2026-ai-agents-infrastructure"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "justvugg-colibri-and-d4vinci-scrapling",
+      "section": "GitHub & Open Source",
+      "headline": "JustVugg/colibri and D4Vinci/Scrapling",
+      "summary": "Colibri (local MoE inference in pure C, 46k stars) and [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) (AI-native scraping with an MCP server, 92k stars) continue to climb, per the [November trending roundup](https://www.coddykit.com/pages/blog-detail?id=5130015&slug=github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JustVugg/colibri and D4Vinci/Scrapling",
+          "url": "https://github.com/JustVugg/colibri"
+        },
+        {
+          "label": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling"
+        },
+        {
+          "label": "November trending roundup",
+          "url": "https://www.coddykit.com/pages/blog-detail?id=5130015&slug=github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "fable-5-2-and-mythos-5-2-thread",
+      "section": "Social Buzz",
+      "headline": "Fable 5.2 and Mythos 5.2 thread",
+      "kicker": "Hacker News",
+      "summary": "The [Fable 5.2 and Mythos 5.2 thread](https://news.ycombinator.com/item?id=50429068) passed 900 points and 1,000 comments, and a [separate thread on its Artificial Analysis score](https://news.ycombinator.com/item?id=50431144) drew hundreds more. The [daily digest](https://github.com/HuggerHustle/ai-radar/issues/205) sums up the mood as impressed but wary: debate centers on real coding gains versus benchmark inflation, and on pricing and tiering. The most-commented critical posts were about fragile AI-written codebases and an AI bubble essay.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Fable 5.2 and Mythos 5.2 thread",
+          "url": "https://news.ycombinator.com/item?id=50429068"
+        },
+        {
+          "label": "separate thread on its Artificial Analysis score",
+          "url": "https://news.ycombinator.com/item?id=50431144"
+        },
+        {
+          "label": "daily digest",
+          "url": "https://github.com/HuggerHustle/ai-radar/issues/205"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "apple-mac-app-for-local-models",
+      "section": "Social Buzz",
+      "headline": "Apple Mac app for local models",
+      "kicker": "Hacker News, local AI",
+      "summary": "Apple's [Mac app for running local models](https://news.ycombinator.com/item?id=50446520) drew 517 points, with readers framing it as a privacy and offline win.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Apple Mac app for local models",
+          "url": "https://news.ycombinator.com/item?id=50446520"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "nov-11-ai-launches",
+      "section": "Social Buzz",
+      "headline": "Nov 11 AI launches",
+      "kicker": "Product Hunt",
+      "summary": "The [Nov 11 AI launches](https://github.com/HuggerHustle/ai-radar/issues/204) clustered around MCP, token efficiency for coding agents, agent security and AI video editing. The Nov 6 board, per [this recap](https://blog.mean.ceo/product-hunt-launches-news-november-2026/), showed tools built for AI agents as buyers and readers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Nov 11 AI launches",
+          "url": "https://github.com/HuggerHustle/ai-radar/issues/204"
+        },
+        {
+          "label": "this recap",
+          "url": "https://blog.mean.ceo/product-hunt-launches-news-november-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "muse-ember-pricing-conversation",
+      "section": "Social Buzz",
+      "headline": "Muse Ember pricing conversation",
+      "kicker": "X",
+      "summary": "[Mark Zuckerberg and TestingCatalog's posts](https://x.com/testingcatalog/status/2119852955885297719) on Muse Ember led the model-pricing conversation. No [Reddit](https://www.reddit.com) thread with verifiable signal surfaced today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Muse Ember pricing conversation",
+          "url": "https://x.com/testingcatalog/status/2119852955885297719"
+        },
+        {
+          "label": "Reddit",
+          "url": "https://www.reddit.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "16-app-onboarding-examples-and-the-psychology-behind-each-on",
+      "section": "Learning Corner",
+      "headline": "16 App Onboarding Examples and the Psychology Behind Each One",
+      "kicker": "Article",
+      "summary": "(UXCam, updated Nov 6). Concrete teardowns of Shopify, Linear and Canva flows that you can borrow from this week.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "16 App Onboarding Examples and the Psychology Behind Each One",
+          "url": "https://uxcam.com/blog/10-apps-with-great-user-onboarding/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hera-s-walkthrough-of-ai-motion-graphics",
+      "section": "Learning Corner",
+      "headline": "Hera's walkthrough of AI motion graphics",
+      "kicker": "Video",
+      "summary": "It recreates three popular animation styles, a fast way to judge whether code-based motion fits your workflow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Hera's walkthrough of AI motion graphics",
+          "url": "https://hera.video/video/create-motion-graphics-in-seconds-with-this-new-ai-tool"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "googlechrome-modern-web-guidance-2",
+      "section": "Learning Corner",
+      "headline": "GoogleChrome/modern-web-guidance",
+      "kicker": "GitHub project",
+      "summary": "Read how Chrome packages guidance for coding agents, then copy the approach for your own team's rules.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "GoogleChrome/modern-web-guidance",
+          "url": "https://github.com/GoogleChrome/modern-web-guidance"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "google-stitch-and-the-design-md-format",
+      "section": "Learning Corner",
+      "headline": "Google Stitch and the DESIGN.md format",
+      "kicker": "Design resource",
+      "summary": "DESIGN.md is a plain-language file for tokens, color intent and accessibility rules that agents and tools can share.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Google Stitch and the DESIGN.md format",
+          "url": "https://pulse2.com/google-labs-stitch-ai-design-platform-introduces-vibe-design-for-high-fidelity-ui-creation"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "beacon-s-documented-memory-loop",
+      "section": "Learning Corner",
+      "headline": "Beacon's documented memory loop",
+      "kicker": "AI workflow",
+      "summary": "Run agents, capture history, evaluate what worked, extract knowledge, approve it, reuse it. A clean template for turning agent corrections into team skills.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Beacon's documented memory loop",
+          "url": "https://docs.beacon.sh"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "own-your-team-s-agent-ready-design-system",
+      "section": "Opportunities",
+      "headline": "Own your team's agent-ready design system",
+      "summary": "Write the DESIGN.md or manifest that coding agents read. Few designers do this, and it decides whether AI output looks like your product.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "be-the-designer-who-ships",
+      "section": "Opportunities",
+      "headline": "Be the designer who ships",
+      "summary": "Pair [Cursor](https://cursor.com) live apps and Figma Code Layers with a review gate. Internal tools built and published by a designer are a visible win.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "design-for-agents-as-users",
+      "section": "Opportunities",
+      "headline": "Design for agents as users",
+      "summary": "Agent identity, permissions and rate controls are unowned in most orgs. United's block shows the demand.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "design-agent-assisted-merchant-and-logistics-flows",
+      "section": "Opportunities",
+      "headline": "Design agent-assisted merchant and logistics flows",
+      "summary": "Muse calling businesses and Gemini booking rides point to agents that act on behalf of sellers and couriers. Confirmation, undo and audit UI are the hard design parts.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "build-ai-in-the-call-experiences",
+      "section": "Opportunities",
+      "headline": "Build AI-in-the-call experiences",
+      "summary": "Claude Meetings and Whiteboards that build live during a call are new surfaces with no settled patterns.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    },
+    {
+      "id": "give-your-coding-agent-a-design-system-it-can-read",
+      "section": "Today's Experiment",
+      "headline": "Give your coding agent a design system it can read",
+      "kicker": "25 minutes",
+      "summary": "In a React 19 project, run npx astryx manifest --json and npx astryx docs styling --dense to capture the system's machine-readable surface. Ask your coding agent to build one settings screen using only components from the manifest. Then ask it to build the same screen with no manifest. Compare prop accuracy, spacing and how many corrections each needed. Write down what the manifest changed, then draft a one-page DESIGN.md for your own product's tokens using the same idea.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-13"
+    }
+  ],
+  "dont_miss": [
+    "**The Claude workspace suite.** [Whiteboards, Sheets, Data and interactive connectors](https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/) change where AI work lives. Try a whiteboard from a real planning session.",
+    "**Cursor Build Live Apps.** [Prompt to hosted app with a security gate](https://thenewstack.io/cursor-ai-app-deployment/). Build one internal tool today.",
+    "**Astryx plus DESIGN.md.** [Agent-ready design systems](https://github.com/facebook/astryx) are the clearest skill to build this month. Run today's experiment."
+  ],
+  "footnote": "Sourcing note: items come from web searches run Nov 13, 2026, covering Nov 9 to 13 with a few Nov 5 to 8 items for context. Many daily-news items come from aggregator roundups and are linked as such. Reports on the NVIDIA CEO change differ on resignation versus dismissal, and the date of Claude Meetings' Google Meet support differs between sources. No Reddit item with verifiable signal was found."
+}
