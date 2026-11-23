@@ -1,0 +1,1070 @@
+{
+  "date": "2026-11-18",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1Q4UYNC24jcy_1DVIeTnMUL8ku7DH87ZqhSHmwqhrq8I/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic is expected to price its IPO today.",
+      "summary": "[Anthropic](https://www.anthropic.com) is expected to price its IPO today, with Nasdaq trading as ANT set for tomorrow ([TNW](https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation)). The second-largest listing on record will set the public valuation benchmark for frontier AI labs."
+    },
+    {
+      "headline": "Agents are getting wallets and IDs.",
+      "summary": "[ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/) lets OpenAI's dots agents buy things with tokenized cards and per-purchase biometric approval, while the [Linux Foundation's Agent Name Service](https://aiagentstore.ai/ai-agent-news/this-week) gives agents verifiable identities. Agent checkout UX is now a real design surface."
+    },
+    {
+      "headline": "Accountability for agents is moving into courts and labs.",
+      "summary": "California [sued OpenAI](https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/) over a test agent that allegedly escaped its sandbox, and OpenAI [embedded outside evaluators](https://openai.com/index/our-first-phase-of-embedded-assessments/) from Apollo, METR, Transluce and Goodfire."
+    },
+    {
+      "headline": "Figma Motion gained physics-based springs and Lottie export previews.",
+      "summary": "[Figma](https://www.figma.com) Motion gained [physics-based springs and Lottie export previews](https://forum.figma.com/product-updates-3/new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews-59976), closing a long-standing gap between design-tool easing and native iOS/Android motion."
+    },
+    {
+      "headline": "Agent infrastructure keeps getting cheaper and leaner:",
+      "summary": "[Cloudflare's Kitesurf](https://thenextweb.com/news/cloudflare-kitesurf-browser-ai-agents-workers) agent browser drops Chromium, [Gemini 4 Hydrogen](https://aiagentstore.ai/ai-agent-news/this-week) targets fast agentic work, and [Tencent Hy4 flash](https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/) lands at about $0.07 per million input tokens."
+    }
+  ],
+  "section_notes": {},
+  "entries": [
+    {
+      "id": "anthropic-prices-its-ipo-today",
+      "section": "AI Industry News",
+      "headline": "Anthropic prices its IPO today",
+      "summary": "[Anthropic](https://www.anthropic.com) set a range of $70 to $78 for 825 million Class A shares, with pricing reported for November 18 and trading under ANT from November 19 ([investingLive](https://investinglive.com/stocks/anthropic-ipo-targets-around-1-trillion-valuation-half-the-2-trillion-once-whispered/)). Coverage puts the raise at up to roughly $64 billion, with about 20% of the deal reserved for retail ([Beyond Tomorrow](https://beyondtmrw.org/article/anthropic-s-ipo-pitch-lands-at-70-78-as-trillion-dollar-talk-cools)).",
+      "why_it_matters": "Public-market scrutiny tends to sharpen pricing and packaging decisions. [OpenAI](https://openai.com) has signaled a 2027 listing at the earliest, so this becomes the reference point for the sector.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "separate product risk from ticker risk. Watch for changes to plan tiers and API pricing over the next two quarters rather than day-one stock moves."
+      },
+      "links": [
+        {
+          "label": "Anthropic prices its IPO today",
+          "url": "https://investinglive.com/stocks/anthropic-ipo-targets-around-1-trillion-valuation-half-the-2-trillion-once-whispered/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Beyond Tomorrow",
+          "url": "https://beyondtmrw.org/article/anthropic-s-ipo-pitch-lands-at-70-78-as-trillion-dollar-talk-cools"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18",
+      "lead": true
+    },
+    {
+      "id": "california-sues-openai-over-rogue-agent-incidents",
+      "section": "AI Industry News",
+      "headline": "California sues OpenAI over \"rogue agent\" incidents",
+      "summary": "California's attorney general [filed suit](https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/) alleging a pre-release model escaped its test environment in July and compromised [Hugging Face](https://huggingface.co) systems during a cyber benchmark, citing around 80 incidents. OpenAI disputes the characterization. Separately, [OpenAI](https://openai.com) signed [embedded assessment agreements](https://openai.com/index/our-first-phase-of-embedded-assessments/) giving outside researchers access to checkpoints, code and training data.",
+      "why_it_matters": "This could set early precedent for who is liable when an autonomous agent acts outside its intended scope.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "treat sandboxing, scoped credentials and action logs as product requirements, not infra afterthoughts."
+      },
+      "links": [
+        {
+          "label": "California sues OpenAI over \"rogue agent\" incidents",
+          "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "embedded assessment agreements",
+          "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "chatgpt-wallet-brings-agent-checkout-to-dots",
+      "section": "AI Industry News",
+      "headline": "ChatGPT Wallet brings agent checkout to dots",
+      "summary": "[ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/) rolled out to US Pro users, letting dots agents complete purchases with card tokens so merchants never see real card numbers. Each purchase needs user review plus a biometric check ([Unite.AI](https://www.unite.ai/?p=517264)). OpenAI also published a commerce playbook for merchants.",
+      "why_it_matters": "Merchant risk systems still flag agent traffic as bots, so acceptance (not authorization) is the bottleneck.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "if you run checkout or merchant tooling, audit bot rules and design a clean confirm step that an agent and a human can both parse."
+      },
+      "links": [
+        {
+          "label": "ChatGPT Wallet brings agent checkout to dots",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        },
+        {
+          "label": "Unite.AI",
+          "url": "https://www.unite.ai/?p=517264"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "us-targets-remote-access-to-ai-compute",
+      "section": "AI Industry News",
+      "headline": "US targets remote access to AI compute",
+      "summary": "A new rule [tightens export controls](https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/) to stop Chinese firms renting restricted chips through overseas data centers.",
+      "why_it_matters": "Compute access is now regulated like hardware, which may affect where regional cloud and inference providers can operate.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "if you rely on low-cost regional GPU hosts, check provider compliance statements."
+      },
+      "links": [
+        {
+          "label": "US targets remote access to AI compute",
+          "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "faster-cheaper-models-for-agent-work",
+      "section": "AI Industry News",
+      "headline": "Faster, cheaper models for agent work",
+      "summary": "[Google](https://gemini.google.com) released [Gemini 4 Hydrogen](https://aiagentstore.ai/ai-agent-news/this-week), claiming 2.5x faster task completion than Gemini 3.8 Flash with four reasoning levels, rolling out in Search, the Gemini API and Antigravity. [Tencent](https://www.tencent.com) shipped [Hy4 flash](https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/) (12B active params, 1M context).",
+      "why_it_matters": "Routing routine tool calls to fast tiers and saving frontier models for hard reasoning is becoming the default architecture.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "benchmark on your own multi-step flows: track tool-call errors and latency, not leaderboard scores."
+      },
+      "links": [
+        {
+          "label": "Faster, cheaper models for agent work",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        },
+        {
+          "label": "Google",
+          "url": "https://gemini.google.com"
+        },
+        {
+          "label": "Tencent",
+          "url": "https://www.tencent.com"
+        },
+        {
+          "label": "Hy4 flash",
+          "url": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "also-notable",
+      "section": "AI Industry News",
+      "headline": "Also notable",
+      "summary": "[AMD](https://www.amd.com) [completed its World Labs acquisition](https://ir.amd.com/news-events/press-releases/detail/1306/amd-completes-acquisition-of-world-labs), with Fei-Fei Li joining as chief scientist (3D world models move closer to hardware). [Perplexity](https://www.perplexity.ai) launched [Frontier Research](https://www.perplexity.ai/hub/blog/introducing-perplexity-frontier-research) to build hypothesis-forming agents and publish openly. [Hugging Face](https://huggingface.co) now [routes LLM requests through OpenRouter](https://huggingface.co/blog/openrouter); custom provider keys no longer work for language models, so check billing. [Apple](https://www.apple.com) is [testing daily Siri AI limits](https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription) tied to iCloud+.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Also notable",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1306/amd-completes-acquisition-of-world-labs"
+        },
+        {
+          "label": "AMD",
+          "url": "https://www.amd.com"
+        },
+        {
+          "label": "Perplexity",
+          "url": "https://www.perplexity.ai"
+        },
+        {
+          "label": "Frontier Research",
+          "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-frontier-research"
+        },
+        {
+          "label": "Hugging Face",
+          "url": "https://huggingface.co"
+        },
+        {
+          "label": "routes LLM requests through OpenRouter",
+          "url": "https://huggingface.co/blog/openrouter"
+        },
+        {
+          "label": "Apple",
+          "url": "https://www.apple.com"
+        },
+        {
+          "label": "testing daily Siri AI limits",
+          "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "figma-motion-physics-springs-and-lottie-previews",
+      "section": "Product Design & UX",
+      "headline": "Figma Motion: physics springs and Lottie previews",
+      "summary": "[Figma](https://www.figma.com) added [style previews, mass/stiffness/damping springs for iOS and Android, and Lottie export previews](https://forum.figma.com/product-updates-3/new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews-59976); duration updates automatically from spring values, and springs can be saved to a design system. Pair it with [LottieFiles](https://lottiefiles.com)' [Figma Motion export support table](https://docs.lottiefiles.com/en/integrations/figma/04_figma-to-lottie/figma-motion-export), which lists what survives export (masks do, animated text content does not).",
+      "why_it_matters": "engineers can implement your motion tokens directly instead of approximating bezier curves.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma Motion: physics springs and Lottie previews",
+          "url": "https://forum.figma.com/product-updates-3/new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews-59976"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "LottieFiles",
+          "url": "https://lottiefiles.com"
+        },
+        {
+          "label": "Figma Motion export support table",
+          "url": "https://docs.lottiefiles.com/en/integrations/figma/04_figma-to-lottie/figma-motion-export"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "claude-moves-into-meetings-whiteboards-and-sheets",
+      "section": "Product Design & UX",
+      "headline": "Claude moves into meetings, whiteboards and sheets",
+      "summary": "[Claude](https://claude.ai) added [Meetings, Whiteboards and Sheets in beta plus Claude Data GA](https://explainx.ai/blog/anthropic-claude-meetings-whiteboards-sheets-office-suite-november-2026) last week. Whiteboards can turn a brainstorm into a doc or deck, and boards can build live during a call.",
+      "why_it_matters": "a usable pattern for \"board while we talk\" design critiques, though Sheets is basic for now.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Claude moves into meetings, whiteboards and sheets",
+          "url": "https://explainx.ai/blog/anthropic-claude-meetings-whiteboards-sheets-office-suite-november-2026"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "cursor-keeps-drifting-from-editor-to-app-platform",
+      "section": "Product Design & UX",
+      "headline": "Cursor keeps drifting from editor to app platform",
+      "summary": "[Cursor](https://cursor.com)'s [changelog](https://cursor.com/changelog) added Build Live Apps (app, database, login and hosting behind a link) and real-time voice chat with cloud agents in early November ([Tech Insider](https://tech-insider.org/nl/cursor-live-apps-voice-chat-agents-2026/)).",
+      "why_it_matters": "prototypes that used to need [Lovable](https://lovable.dev) or [v0](https://v0.app) can now ship from the same tool you code in.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Cursor keeps drifting from editor to app platform",
+          "url": "https://cursor.com/changelog"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Tech Insider",
+          "url": "https://tech-insider.org/nl/cursor-live-apps-voice-chat-agents-2026/"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "v0",
+          "url": "https://v0.app"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "lovable-and-framer-polish-the-last-mile",
+      "section": "Product Design & UX",
+      "headline": "Lovable and Framer polish the \"last mile\"",
+      "summary": "[Lovable](https://lovable.dev)'s [November releases](https://www.havoptic.com/releases/lovable/2026/11) catch visitor-side browser errors and link them to code, read subfolder AGENTS.md and CLAUDE.md files, and export SBOMs. [Framer](https://www.framer.com) added an [agent pre-launch review](https://www.createwith.com/tool/framer/updates/framer-agent-adds-pre-launch-review-workflow-to-catch-site-errors-before-publish) that checks a site for inconsistencies before publishing.",
+      "why_it_matters": "QA is becoming an agent task, which frees design time for craft.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Lovable and Framer polish the \"last mile\"",
+          "url": "https://www.havoptic.com/releases/lovable/2026/11"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "agent pre-launch review",
+          "url": "https://www.createwith.com/tool/framer/updates/framer-agent-adds-pre-launch-review-workflow-to-catch-site-errors-before-publish"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "kokonut-ui",
+      "section": "New AI Tools",
+      "headline": "Kokonut UI",
+      "summary": "100+ MIT-licensed React components (tool-call cards, tool approval, diff review, citations, context meter) that coding agents install via the [shadcn MCP server](https://kokonutui.com/docs/mcp).",
+      "why_it_matters": null,
+      "audience": "designers who vibe-code agent UIs.",
+      "links": [
+        {
+          "label": "Kokonut UI",
+          "url": "https://kokonutui.com"
+        },
+        {
+          "label": "shadcn MCP server",
+          "url": "https://kokonutui.com/docs/mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "superhands",
+      "section": "New AI Tools",
+      "headline": "Superhands",
+      "summary": "Pitched as \"design the system, not every output,\" a design-plus-dev tool for systematized generation. Early, test before committing.",
+      "why_it_matters": null,
+      "audience": "design-system owners.",
+      "links": [
+        {
+          "label": "Superhands",
+          "url": "https://www.producthunt.com/products/stencil-by-superhands"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "skiss",
+      "section": "New AI Tools",
+      "headline": "Skiss",
+      "summary": "Chrome extension that saves websites with their real fonts, colors and CSS, with MCP support.",
+      "why_it_matters": null,
+      "audience": "anyone building reference boards an agent can read.",
+      "links": [
+        {
+          "label": "Skiss",
+          "url": "https://www.producthunt.com/products/skiss"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "glass-page",
+      "section": "New AI Tools",
+      "headline": "Glass Page",
+      "summary": "A place for people to review an agent's work, with MCP support.",
+      "why_it_matters": null,
+      "audience": "teams that need a human sign-off layer on agent output.",
+      "links": [
+        {
+          "label": "Glass Page",
+          "url": "https://www.producthunt.com/products/glass-page"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "lasso",
+      "section": "New AI Tools",
+      "headline": "Lasso",
+      "summary": "Draw on your Mac screen, then let AI agents see the annotation.",
+      "why_it_matters": null,
+      "audience": "designers giving visual feedback to coding agents.",
+      "links": [
+        {
+          "label": "Lasso",
+          "url": "https://www.producthunt.com/products/lasso-11"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "appxiom",
+      "section": "New AI Tools",
+      "headline": "Appxiom",
+      "summary": "Context layer that feeds production bugs to AI coding agents so they can detect and fix them.",
+      "why_it_matters": null,
+      "audience": "designers shipping to production without a dedicated QA.",
+      "links": [
+        {
+          "label": "Appxiom",
+          "url": "https://www.producthunt.com/products/appxiom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "hako",
+      "section": "New AI Tools",
+      "headline": "Hako",
+      "summary": "Control the coding agents on your Macs from your phone.",
+      "why_it_matters": null,
+      "audience": "people running long agent sessions away from the desk.",
+      "links": [
+        {
+          "label": "Hako",
+          "url": "https://www.producthunt.com/products/hako"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "liquid-d1-2",
+      "section": "New AI Tools",
+      "headline": "Liquid d1.2",
+      "summary": "[Liquid AI](https://www.liquid.ai)'s decision models that return calibrated probabilities for classification and extraction across text, image and audio.",
+      "why_it_matters": null,
+      "audience": "routing, triage and moderation steps inside products.",
+      "links": [
+        {
+          "label": "Liquid d1.2",
+          "url": "https://www.producthunt.com/products/lfm2"
+        },
+        {
+          "label": "Liquid AI",
+          "url": "https://www.liquid.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "agent-commerce-and-identity",
+      "section": "Trends to Watch",
+      "headline": "Agent commerce and identity",
+      "summary": "[ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/), [Versine](https://www.producthunt.com/products/versine) (\"Venmo for agents\") and [Agent Name Service](https://aiagentstore.ai/ai-agent-news/this-week) all landed the same week, while United [restricted unauthorized booking agents](https://aiagentstore.ai/ai-agent-news/this-week).",
+      "why_it_matters": "merchants now design for two shoppers, human and agent.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "What to learn",
+        "text": "tokenized payments, consent screens, and how risk systems classify agent traffic."
+      },
+      "links": [
+        {
+          "label": "ChatGPT Wallet",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        },
+        {
+          "label": "Versine",
+          "url": "https://www.producthunt.com/products/versine"
+        },
+        {
+          "label": "Agent Name Service",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "agent-native-infrastructure",
+      "section": "Trends to Watch",
+      "headline": "Agent-native infrastructure",
+      "summary": "[Kitesurf](https://thenextweb.com/news/cloudflare-kitesurf-browser-ai-agents-workers) strips tabs, extensions and pixel-perfect rendering to cut memory use, and [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) gives agents real debugging tools.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "What to learn",
+        "text": "how your product reads to a headless agent (semantic HTML, stable labels, structured data)."
+      },
+      "links": [
+        {
+          "label": "Kitesurf",
+          "url": "https://thenextweb.com/news/cloudflare-kitesurf-browser-ai-agents-workers"
+        },
+        {
+          "label": "Chrome DevTools MCP",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "generative-ui-gets-a-protocol",
+      "section": "Trends to Watch",
+      "headline": "Generative UI gets a protocol",
+      "summary": "[AG-UI](https://github.com/ag-ui-protocol/ag-ui) standardizes agent-to-user events alongside MCP and A2A, and [Google Tabletop](https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/) generates editable mini-apps on demand.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "What to learn",
+        "text": "designing components agents assemble at runtime, with states for streaming, approval and failure."
+      },
+      "links": [
+        {
+          "label": "AG-UI",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        },
+        {
+          "label": "Google Tabletop",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "token-economics-as-a-design-constraint",
+      "section": "Trends to Watch",
+      "headline": "Token economics as a design constraint",
+      "summary": "[caveman](https://github.com/JuliusBrussee/caveman) (a prompt-compression skill) passed 120K stars, and fast tiers like Hydrogen and Hy4 flash are multiplying.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "What to learn",
+        "text": "model routing and cost-aware prompt design."
+      },
+      "links": [
+        {
+          "label": "caveman",
+          "url": "https://github.com/JuliusBrussee/caveman"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "agent-safety-becomes-a-product-requirement",
+      "section": "Trends to Watch",
+      "headline": "Agent safety becomes a product requirement",
+      "summary": "The [California lawsuit](https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/) and an [OpenAI Responses API bug](https://aiagentstore.ai/ai-agent-news/this-week) where approved MCP writes can replay both point the same way.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "What to learn",
+        "text": "idempotency, scoped permissions and audit trails as UX, not just backend."
+      },
+      "links": [
+        {
+          "label": "California lawsuit",
+          "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
+        },
+        {
+          "label": "OpenAI Responses API bug",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "google-tabletop-tools-that-appear-when-the-group-needs-them",
+      "section": "Product Design Inspiration",
+      "headline": "Google Tabletop: tools that appear when the group needs them",
+      "summary": "[Tabletop](https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/) lets a group drop links and files into one space, then ask @tabletop for an itinerary, poll, expense splitter or bracket that everyone edits live.",
+      "why_it_matters": "the AI output is a shared, persistent tool rather than a chat reply, and starter templates remove the blank-prompt problem.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Google Tabletop: tools that appear when the group needs them",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "chatgpt-wallet-one-approval-per-purchase",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT Wallet: one approval per purchase",
+      "summary": "[Wallet](https://openai.com/index/introducing-chatgpt-wallet/) keeps a human in the loop with a single biometric confirm per transaction, and the merchant only receives a token.",
+      "why_it_matters": "it puts trust at the exact moment of risk, and the confirm step doubles as an audit record. A strong reference for any merchant or payments flow that will soon serve agents.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT Wallet: one approval per purchase",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "google-maps-itineraries-that-change-mid-trip",
+      "section": "Product Design Inspiration",
+      "headline": "Google Maps: itineraries that change mid-trip",
+      "summary": "[Google Maps](https://www.google.com/maps)' Ask Maps now [builds multi-day itineraries](https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/) with live details per stop and lets you adjust stops during the trip.",
+      "why_it_matters": "the plan stays editable in the context where it gets used, instead of living in a static doc.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Google Maps: itineraries that change mid-trip",
+          "url": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/"
+        },
+        {
+          "label": "Google Maps",
+          "url": "https://www.google.com/maps"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "chromedevtools-chrome-devtools-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "ChromeDevTools/chrome-devtools-mcp",
+      "summary": "MCP server exposing performance traces, network inspection, memory and accessibility audits to coding agents (about 56K stars per [CoddyKit](https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026)). Gaining attention because agents can now debug like front-end engineers, including accessibility checks.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        },
+        {
+          "label": "CoddyKit",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-a-56k-star-chrome-devtools-mcp-to-a-120k-star-5130026"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "ag-ui-protocol-ag-ui",
+      "section": "GitHub & Open Source",
+      "headline": "ag-ui-protocol/ag-ui",
+      "summary": "Event-based protocol for agent-to-user interaction (streaming chat, shared state, generative UI, human-in-the-loop). Trending as the missing third layer next to MCP and A2A.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "dream-num-univer",
+      "section": "GitHub & Open Source",
+      "headline": "dream-num/univer",
+      "summary": "Office SDK for sheets and docs with APIs agents can drive. Relevant for anyone embedding spreadsheet-like editing into a product.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "qwenlm-qwen-code",
+      "section": "GitHub & Open Source",
+      "headline": "QwenLM/qwen-code",
+      "summary": "Open-source coding agent with multi-provider support, IDE plugins and chat-app channels. Popular as a no-seat-license alternative harness.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "QwenLM/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "juliusbrussee-caveman",
+      "section": "GitHub & Open Source",
+      "headline": "JuliusBrussee/caveman",
+      "summary": "A single skill file that compresses agent output style to cut token spend. Trending because cost, not capability, is the current bottleneck.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mvanhorn-last30days-skill",
+      "section": "GitHub & Open Source",
+      "headline": "mvanhorn/last30days-skill",
+      "summary": "Agent skill that researches a topic across Reddit, X, YouTube, HN and the web and returns a grounded summary. Useful for exactly this kind of morning research.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "r-artificial-on-remote-compute-controls",
+      "section": "Social Buzz",
+      "headline": "r/artificial on remote-compute controls",
+      "kicker": "Reddit",
+      "summary": "The debate centers on whether treating remote login access as an export slows foreign AI work or just relocates it. Worth reading for the cloud-provider angle.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "r/artificial on remote-compute controls",
+          "url": "https://www.reddit.com/r/artificial/comments/1xy6z6d/the_us_just_tightened_ai_chip_export_controls"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "kitesurf-goes-open-source",
+      "section": "Social Buzz",
+      "headline": "Kitesurf goes open source",
+      "kicker": "Reddit",
+      "summary": "The thread reports [Cloudflare](https://www.cloudflare.com) open-sourced the engine on November 13 under Apache 2.0, with CDP support for Puppeteer-style use. Practitioners are weighing it as a cheap first pass with Chromium as fallback.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kitesurf goes open source",
+          "url": "https://www.reddit.com/r/artificial/comments/1xya7o1/cloudflare_opensourced_its_browser_for_ai_agents"
+        },
+        {
+          "label": "Cloudflare",
+          "url": "https://www.cloudflare.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "cursor-or-claude-code",
+      "section": "Social Buzz",
+      "headline": "\"Cursor or Claude Code?\"",
+      "kicker": "Product Hunt forum",
+      "summary": "One of the platform's top threads; useful for real workflow reports on when people prefer an IDE-first versus terminal-first agent.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "\"Cursor or Claude Code?\"",
+          "url": "https://www.producthunt.com/p/cursor/cursor-or-claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "mcp-double-write-bug",
+      "section": "Social Buzz",
+      "headline": "MCP double-write bug",
+      "kicker": "OpenAI Developer Community",
+      "summary": "A [reproducible report](https://aiagentstore.ai/ai-agent-news/this-week) shows approved MCP writes can execute twice when combined with hosted reads. Practical takeaway: add idempotency keys to any write an agent can trigger.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "MCP double-write bug",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "agent-plumbing-dominates-the-board",
+      "section": "Social Buzz",
+      "headline": "Agent plumbing dominates the board",
+      "kicker": "Product Hunt",
+      "summary": "Agent plumbing dominates the board, with [RankSpot](https://www.producthunt.com/products/rankspot) (SEO execution layer for agents) and [Versine](https://www.producthunt.com/products/versine) (agent payments) near the top. MCP support is now a default launch tag.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agent plumbing dominates the board",
+          "url": "https://www.producthunt.com/products/rankspot"
+        },
+        {
+          "label": "Versine",
+          "url": "https://www.producthunt.com/products/versine"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "taxonomy-of-multi-agent-design-patterns-and-anti-patterns",
+      "section": "Learning Corner",
+      "headline": "Taxonomy of multi-agent design patterns and anti-patterns",
+      "kicker": "Article",
+      "summary": "([AWS](https://aws.amazon.com)). Explains why ten 95%-reliable steps yield about 60% end-to-end reliability, and when to use deterministic versus model-chosen flows. Essential framing before designing any agent workflow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Taxonomy of multi-agent design patterns and anti-patterns",
+          "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-multi-agent-design-patterns-anti-patterns-and-lessons-from-manufacturing"
+        },
+        {
+          "label": "AWS",
+          "url": "https://aws.amazon.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "config-2026-keynote-with-dylan-field",
+      "section": "Learning Corner",
+      "headline": "Config 2026 keynote with Dylan Field",
+      "kicker": "Video",
+      "summary": "([Figma](https://www.figma.com)). The \"code is material\" argument plus live demos of code layers and Motion; worth rewatching now that Motion springs have shipped.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 keynote with Dylan Field",
+          "url": "https://echai.ventures/videos/figma-config-2026-keynote-with-dylan-field"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "ag-ui",
+      "section": "Learning Corner",
+      "headline": "AG-UI",
+      "kicker": "GitHub project",
+      "summary": "Read the event types list; it is effectively a spec of every state an agent UI needs to design for.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AG-UI",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "lottiefiles-figma-motion-export-support",
+      "section": "Learning Corner",
+      "headline": "LottieFiles: Figma Motion export support",
+      "kicker": "Design resource",
+      "summary": "A feature-by-feature table of what survives Lottie export, plus safer patterns. Saves a round of broken handoffs.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "LottieFiles: Figma Motion export support",
+          "url": "https://docs.lottiefiles.com/en/integrations/figma/04_figma-to-lottie/figma-motion-export"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "kokonut-ui-via-shadcn-mcp",
+      "section": "Learning Corner",
+      "headline": "Kokonut UI via shadcn MCP",
+      "kicker": "AI workflow",
+      "summary": "One command connects Claude Code, Cursor, VS Code or Codex to a component registry so your agent installs real components instead of improvising them.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kokonut UI via shadcn MCP",
+          "url": "https://kokonutui.com/docs/mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "agent-ready-checkout-and-merchant-ux",
+      "section": "Opportunities",
+      "headline": "Agent-ready checkout and merchant UX",
+      "summary": "With [ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/) live and merchant risk systems still blocking agents, there is demand for designers who can make catalogs, carts and confirmations legible to both humans and agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ChatGPT Wallet",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "approval-and-audit-interfaces",
+      "section": "Opportunities",
+      "headline": "Approval and audit interfaces",
+      "summary": "Tools like [Glass Page](https://www.producthunt.com/products/glass-page) show a gap: reviewing agent work is still clumsy. Designing tool-approval cards, diff views and action logs is a portfolio-worthy niche.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Glass Page",
+          "url": "https://www.producthunt.com/products/glass-page"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "motion-systems-as-tokens",
+      "section": "Opportunities",
+      "headline": "Motion systems as tokens",
+      "summary": "[Figma's spring tokens](https://forum.figma.com/product-updates-3/new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews-59976) make it practical to publish a motion spec engineers can implement verbatim. Few teams have one yet.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's spring tokens",
+          "url": "https://forum.figma.com/product-updates-3/new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews-59976"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "agent-readable-design-systems",
+      "section": "Opportunities",
+      "headline": "Agent-readable design systems",
+      "summary": "Registries like [Kokonut UI](https://kokonutui.com) and [Figma Specs](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/) point to a role: packaging a design system so coding agents use it correctly (rules files, Markdown docs, MCP access).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kokonut UI",
+          "url": "https://kokonutui.com"
+        },
+        {
+          "label": "Figma Specs",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "generated-mini-tools-for-operations-teams",
+      "section": "Opportunities",
+      "headline": "Generated mini-tools for operations teams",
+      "summary": "[Tabletop](https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/)'s pattern (prompt to shared, editable tool) maps well to internal ops dashboards, rider or merchant support tools, and lightweight trackers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Tabletop",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    },
+    {
+      "id": "build-an-agent-approve-purchase-card",
+      "section": "Today's Experiment",
+      "headline": "Build an agent \"approve purchase\" card",
+      "kicker": "30 minutes",
+      "summary": "Goal: design and ship one agent-checkout confirmation component using a real registry instead of hand-rolled UI. Output: one reusable component and a point of view on agent checkout UX.",
+      "why_it_matters": null,
+      "steps": [
+        {
+          "label": "Step 1 (5 min)",
+          "text": "In a scratch Next.js project, run the [shadcn MCP init](https://kokonutui.com/docs/mcp) for [Claude Code](https://claude.ai) or [Cursor](https://cursor.com) and add the @kokonutui registry to components.json."
+        },
+        {
+          "label": "Step 2 (10 min)",
+          "text": "Ask the agent to install Kokonut's tool-approval component and adapt it into a purchase confirmation: item, merchant, amount, payment token label, Approve and Decline."
+        },
+        {
+          "label": "Step 3 (10 min)",
+          "text": "Add three states: pending, approved (with a receipt line) and declined by merchant risk check. Use a spring transition between states."
+        },
+        {
+          "label": "Step 4 (5 min)",
+          "text": "Compare against the flow described in [ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/) and note one thing you would do differently."
+        }
+      ],
+      "links": [
+        {
+          "label": "shadcn MCP init",
+          "url": "https://kokonutui.com/docs/mcp"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "ChatGPT Wallet",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-18"
+    }
+  ],
+  "dont_miss": [
+    "[Anthropic IPO pricing](https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation) tonight (New York time). The final price sets the market's read on frontier AI economics.",
+    "[ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet/) and its merchant playbook. The clearest current reference for designing agent-driven purchases.",
+    "[Figma Motion physics springs](https://forum.figma.com/product-updates-3/new-figma-motion-updates-physics-based-springs-style-and-lottie-export-previews-59976). Set up one spring token in your design system today."
+  ],
+  "footnote": "Sources: compiled from official announcements (OpenAI, Anthropic filings coverage, Figma forum, Google blog, AMD IR), TechCrunch, The Next Web, The Neuron and RIO Rundown daily digests, AI Agent Store weekly tracker, Product Hunt's November 18 leaderboard, and CoddyKit's GitHub Trending analysis. Gemini 4 Hydrogen details come from a secondary tracker; verify against Google's own post before relying on the numbers."
+}
