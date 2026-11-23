@@ -1,0 +1,889 @@
+{
+  "date": "2026-11-04",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1KfrmTLPffmInQRbui3hwSlrpecJnwrhUBOs-yXJwT_Y/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic flags a self-improvement threshold.",
+      "summary": "Its amended S-1/A says [Anthropic](https://www.anthropic.com) may soon reach an internal threshold for dramatically accelerated AI-assisted research, per [TechCrunch](https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/)."
+    },
+    {
+      "headline": "Figma is now an agent canvas.",
+      "summary": "The [use_figma tool](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) lets coding agents write to [Figma](https://www.figma.com) files, and code layers and Specs are in beta."
+    },
+    {
+      "headline": "Framer rebuilt its agent.",
+      "summary": "[Harness 2](https://www.framer.com/updates/harness-2) uses 2x fewer tool steps, and the same power reaches external agents through MCP."
+    },
+    {
+      "headline": "Enterprises are rationing coding agents.",
+      "summary": "[Goldman Sachs restricted Claude Code and similar tools](https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/) to engineers."
+    },
+    {
+      "headline": "Agent memory is the hot open source category.",
+      "summary": "[claude-mem](https://github.com/thedotmack/claude-mem) passed 109k stars, and [beacon.sh](https://www.producthunt.com/products/asymptotelabs) launched a similar tool."
+    }
+  ],
+  "section_notes": {
+    "Social Buzz": "Coverage of X and Reddit was thin in this run, so this section sticks to what could be verified."
+  },
+  "entries": [
+    {
+      "id": "anthropic-warns-it-may-soon-hit-a-recursive-self-improvement",
+      "section": "AI Industry News",
+      "headline": "Anthropic warns it may soon hit a recursive self-improvement threshold",
+      "summary": "The updated filing says no current [Anthropic](https://www.anthropic.com) model has crossed the line, and the company does not expect to let Claude build successive frontier generations without human supervision. It is considering Responsible Scaling Policy updates.",
+      "why_it_matters": "Expect tighter oversight features and policy changes around autonomous agents. Builders should design human checkpoints into agent flows now.",
+      "links": [
+        {
+          "label": "Anthropic warns it may soon hit a recursive self-improvement threshold",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04",
+      "lead": true
+    },
+    {
+      "id": "anthropic-ipo-numbers-draw-scrutiny",
+      "section": "AI Industry News",
+      "headline": "Anthropic IPO numbers draw scrutiny",
+      "summary": "The amended S-1 reportedly discloses Q3 revenue near $17B and $895.4B in compute commitments, per [AI Weekly](https://aiweekly.co/alerts/anthropic-amended-s-1-discloses-q3-revenue-near-17b-and-8954b-in-compute). The [Australian Financial Review](https://www.afr.com/chanticleer/anthropic-s-shocking-new-number-could-crack-the-ai-trade-in-two-ways-20261103-p61atd) questions the scale of that spend.",
+      "why_it_matters": "Compute costs shape API pricing. Plan for price shifts in the tools you build on.",
+      "links": [
+        {
+          "label": "Anthropic IPO numbers draw scrutiny",
+          "url": "https://aiweekly.co/alerts/anthropic-amended-s-1-discloses-q3-revenue-near-17b-and-8954b-in-compute"
+        },
+        {
+          "label": "Australian Financial Review",
+          "url": "https://www.afr.com/chanticleer/anthropic-s-shocking-new-number-could-crack-the-ai-trade-in-two-ways-20261103-p61atd"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "goldman-sachs-pulls-coding-agents-from-traders-and-bankers",
+      "section": "AI Industry News",
+      "headline": "Goldman Sachs pulls coding agents from traders and bankers",
+      "summary": "[Goldman Sachs](https://www.goldmansachs.com) reserved Claude Code and other coding tools mostly for engineers, citing productivity and risk management.",
+      "why_it_matters": "Regulated companies want governed, auditable agent access. Permissioning and audit UI is a real design problem.",
+      "links": [
+        {
+          "label": "Goldman Sachs pulls coding agents from traders and bankers",
+          "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/"
+        },
+        {
+          "label": "Goldman Sachs",
+          "url": "https://www.goldmansachs.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "claude-code-adds-limits-on-game-cloning",
+      "section": "AI Industry News",
+      "headline": "Claude Code adds limits on game cloning",
+      "summary": "[Anthropic](https://www.anthropic.com) confirmed new instructions to prevent unauthorized recreation of specific games. Some developers report refusals on legitimate reverse-engineering work.",
+      "why_it_matters": "Refusal behavior is now a product surface. Test your prompts against it before shipping.",
+      "links": [
+        {
+          "label": "Claude Code adds limits on game cloning",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "openai-ships-lifeval-and-signs-abu-dhabi-deals",
+      "section": "AI Industry News",
+      "headline": "OpenAI ships LifeVal and signs Abu Dhabi deals",
+      "summary": "[OpenAI](https://openai.com) released [LifeVal](https://openai.com/index/lifeval/), a benchmark for everyday tasks like childcare search and paperwork. It also signed four agreements in Abu Dhabi, per [Semafor](https://www.semafor.com/article/11/02/2026/openais-sam-altman-courts-abu-dhabi-ahead-of-ipo).",
+      "why_it_matters": "Consumer-task benchmarks signal where assistants are heading: messy, multi-step life admin.",
+      "links": [
+        {
+          "label": "OpenAI ships LifeVal and signs Abu Dhabi deals",
+          "url": "https://openai.com/index/lifeval/"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Semafor",
+          "url": "https://www.semafor.com/article/11/02/2026/openais-sam-altman-courts-abu-dhabi-ahead-of-ipo"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "other-items",
+      "section": "AI Industry News",
+      "headline": "Other items",
+      "summary": "[Meituan](https://www.meituan.com) launched [LongCat-2.5](https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/) (1.6T parameters, about 48B active). [ElevenLabs](https://elevenlabs.io) found [voice agents succeed 31.7% more often than text chat](https://elevenlabs.io/blog/voice-wins-complex-stressful-conversations) in conversations over two minutes. A [WIRED investigation](https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/) found 400+ AI apps hiding deepfake features.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Other items",
+          "url": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/"
+        },
+        {
+          "label": "Meituan",
+          "url": "https://www.meituan.com"
+        },
+        {
+          "label": "ElevenLabs",
+          "url": "https://elevenlabs.io"
+        },
+        {
+          "label": "voice agents succeed 31.7% more often than text chat",
+          "url": "https://elevenlabs.io/blog/voice-wins-complex-stressful-conversations"
+        },
+        {
+          "label": "WIRED investigation",
+          "url": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "figma-agents-write-to-the-canvas",
+      "section": "Product Design & UX",
+      "headline": "Figma: agents write to the canvas",
+      "summary": "[Figma](https://www.figma.com) expanded its MCP server with [use_figma](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/). Agents like Claude Code, Codex and Cursor can create and update files, components, variables and auto layout, and they self-correct by screenshotting their output. It is free in beta and will become usage-based.",
+      "why_it_matters": "write skills as markdown files that enforce your design system.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: agents write to the canvas",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "figma-code-layers-and-specs",
+      "section": "Product Design & UX",
+      "headline": "Figma code layers and Specs",
+      "summary": "Per the [code layers post](https://www.figma.com/blog/design-together-with-code-layers/), creating and editing code layers is free on paid plans **through today, November 4**. [Specs](https://www.figma.com/blog/introducing-figma-specs/) turns Markdown into a canvas container for design context.",
+      "why_it_matters": "try code layers today before the free window closes.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma code layers and Specs",
+          "url": "https://www.figma.com/blog/design-together-with-code-layers/"
+        },
+        {
+          "label": "Specs",
+          "url": "https://www.figma.com/blog/introducing-figma-specs/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "figma-shaders-and-agent-connectors",
+      "section": "Product Design & UX",
+      "headline": "Figma shaders and agent connectors",
+      "summary": "Per [Figma release notes](https://www.figma.com/release-notes/), shaders export up to 4096px and render in code layers (Nov 2). Google Drive now connects to the Figma agent on all plans (Oct 30).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma shaders and agent connectors",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "framer-harness-2-and-convert",
+      "section": "Product Design & UX",
+      "headline": "Framer: Harness 2 and Convert",
+      "summary": "[Framer](https://www.framer.com) rebuilt its agent harness with 2x fewer tool steps and 39% fewer cached input tokens per message, per [Harness 2](https://www.framer.com/updates/harness-2). The [Convert update](https://www.framer.com/updates/convert-update) lets the agent create, edit and analyze funnels and A/B tests, with country-based overlay triggers. A [localization Content panel](https://www.framer.com/updates/localization-opt-in) also shipped.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Framer: Harness 2 and Convert",
+          "url": "https://www.framer.com/updates/harness-2"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Convert update",
+          "url": "https://www.framer.com/updates/convert-update"
+        },
+        {
+          "label": "localization Content panel",
+          "url": "https://www.framer.com/updates/localization-opt-in"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "useit-studio",
+      "section": "New AI Tools",
+      "headline": "UseIt Studio",
+      "summary": "([Product Hunt](https://www.producthunt.com/products/useit-studio-from-idea-to-delivery)): AI design agent for physical products such as pins, stickers and gift boxes. It outputs editable files with dielines and bleed. Early, pricing unclear.",
+      "why_it_matters": null,
+      "audience": "brand and packaging designers.",
+      "links": [
+        {
+          "label": "UseIt Studio",
+          "url": "https://useit.im/"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "beacon-sh",
+      "section": "New AI Tools",
+      "headline": "beacon.sh",
+      "summary": "Open-source memory for coding agents. It captures sessions from Claude Code, Cursor and Codex so later sessions reuse findings.",
+      "why_it_matters": null,
+      "audience": "anyone running long agent projects.",
+      "links": [
+        {
+          "label": "beacon.sh",
+          "url": "https://www.producthunt.com/products/asymptotelabs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "xmind-2027",
+      "section": "New AI Tools",
+      "headline": "Xmind 2027",
+      "summary": "Mind mapping with a built-in agent and MCP support, so assistants can read and update maps.",
+      "why_it_matters": null,
+      "audience": "research and planning.",
+      "links": [
+        {
+          "label": "Xmind 2027",
+          "url": "https://www.producthunt.com/products/xmind"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "unleashx",
+      "section": "New AI Tools",
+      "headline": "UnleashX",
+      "summary": "Configurable AI employees with 100+ integrations and human escalation. Unproven.",
+      "why_it_matters": null,
+      "audience": "ops teams.",
+      "links": [
+        {
+          "label": "UnleashX",
+          "url": "https://www.producthunt.com/products/unleashx"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "hex",
+      "section": "New AI Tools",
+      "headline": "hex",
+      "summary": "On-device voice dictation (Rust, macOS, Windows, Linux). Hold a key, speak, text is pasted.",
+      "why_it_matters": null,
+      "audience": "anyone who drafts a lot.",
+      "links": [
+        {
+          "label": "hex",
+          "url": "https://github.com/anomalyco/hex"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "aisoc",
+      "section": "New AI Tools",
+      "headline": "AiSOC",
+      "summary": "Local AI security operations center with an MCP server. Rated 5/10 for designers, 8/10 for security teams.",
+      "why_it_matters": null,
+      "audience": "security-minded engineers.",
+      "links": [
+        {
+          "label": "AiSOC",
+          "url": "https://github.com/beenuar/AiSOC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "figma-use-figma-skills",
+      "section": "New AI Tools",
+      "headline": "Figma use_figma skills",
+      "summary": "Markdown skills such as /figma-generate-library and /apply-design-system.",
+      "why_it_matters": null,
+      "audience": "design system owners.",
+      "links": [
+        {
+          "label": "Figma use_figma skills",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "design-tools-become-agent-surfaces",
+      "section": "Trends to Watch",
+      "headline": "Design tools become agent surfaces",
+      "summary": "[Figma](https://www.figma.com) and [Framer](https://www.framer.com) both expose their canvas to external agents over MCP.",
+      "why_it_matters": "your design system becomes machine-readable instructions.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "writing skills in markdown."
+      },
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "agent-memory",
+      "section": "Trends to Watch",
+      "headline": "Agent memory",
+      "summary": "[claude-mem](https://github.com/thedotmack/claude-mem), [OpenViking](https://github.com/volcengine/OpenViking) and [beacon.sh](https://www.producthunt.com/products/asymptotelabs) all attack context loss between sessions.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how context compression and handoff work."
+      },
+      "links": [
+        {
+          "label": "claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        },
+        {
+          "label": "OpenViking",
+          "url": "https://github.com/volcengine/OpenViking"
+        },
+        {
+          "label": "beacon.sh",
+          "url": "https://www.producthunt.com/products/asymptotelabs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "governed-agents-in-enterprise",
+      "section": "Trends to Watch",
+      "headline": "Governed agents in enterprise",
+      "summary": "The [Goldman Sachs restriction](https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/) shows demand for permissions and audit trails.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "designing approval and oversight UX."
+      },
+      "links": [
+        {
+          "label": "Goldman Sachs restriction",
+          "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "voice-agents",
+      "section": "Trends to Watch",
+      "headline": "Voice agents",
+      "summary": "[ElevenLabs data](https://elevenlabs.io/blog/voice-wins-complex-stressful-conversations) says voice wins on complex conversations.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "conversation design beyond chat bubbles."
+      },
+      "links": [
+        {
+          "label": "ElevenLabs data",
+          "url": "https://elevenlabs.io/blog/voice-wins-complex-stressful-conversations"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "figma-specs-markdown-as-a-design-medium",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Specs: Markdown as a design medium",
+      "summary": "[Specs](https://www.figma.com/blog/introducing-figma-specs/) puts plain-text intent beside visuals on the canvas.",
+      "why_it_matters": "it gives humans and agents the same readable source of truth.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma Specs: Markdown as a design medium",
+          "url": "https://www.figma.com/blog/introducing-figma-specs/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "framer-convert-the-agent-inside-the-workflow",
+      "section": "Product Design Inspiration",
+      "headline": "Framer Convert: the agent inside the workflow",
+      "summary": "The [Convert update](https://www.framer.com/updates/convert-update) lets users ask for funnels and A/B tests in plain language where the work already lives.",
+      "why_it_matters": "the agent acts on real objects, not a separate chat window.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Framer Convert: the agent inside the workflow",
+          "url": "https://www.framer.com/updates/convert-update"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "useit-studio-point-to-refine",
+      "section": "Product Design Inspiration",
+      "headline": "UseIt Studio: point to refine",
+      "summary": "[UseIt Studio](https://useit.im/) lets users point at details instead of rewriting prompts, and checks output against factory rules.",
+      "why_it_matters": "direct manipulation beats prompt rewording for visual tweaks.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "UseIt Studio: point to refine",
+          "url": "https://useit.im/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "thedotmack-claude-mem",
+      "section": "GitHub & Open Source",
+      "headline": "thedotmack/claude-mem",
+      "summary": "Compresses agent sessions and injects context into future ones across Claude Code, Codex and Gemini. About 109.7k stars (+1,526 in a day, per the [agents-radar issue](https://github.com/BuhDuy256/agents-radar/issues/190)). Gaining because context loss is the top agent pain.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        },
+        {
+          "label": "agents-radar issue",
+          "url": "https://github.com/BuhDuy256/agents-radar/issues/190"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "graphify-labs-graphify",
+      "section": "GitHub & Open Source",
+      "headline": "Graphify-Labs/graphify",
+      "summary": "Turns a codebase and docs into a queryable knowledge graph without a vector store. Gaining because it works as a skill.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "headroomlabs-ai-headroom",
+      "section": "GitHub & Open Source",
+      "headline": "headroomlabs-ai/headroom",
+      "summary": "Compresses tool outputs and logs before they reach the model. Gaining because it cuts token spend.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "headroomlabs-ai/headroom",
+          "url": "https://github.com/headroomlabs-ai/headroom"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "shareai-lab-learn-claude-code",
+      "section": "GitHub & Open Source",
+      "headline": "shareAI-lab/learn-claude-code",
+      "summary": "A minimal agent harness built from scratch. Gaining as a teaching tool.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "shareAI-lab/learn-claude-code",
+          "url": "https://github.com/shareAI-lab/learn-claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "patchy631-ai-engineering-hub",
+      "section": "GitHub & Open Source",
+      "headline": "patchy631/ai-engineering-hub",
+      "summary": "93+ runnable AI projects covering RAG, agents and MCP. About 40k stars.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "patchy631/ai-engineering-hub",
+          "url": "https://github.com/patchy631/ai-engineering-hub"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "copilotkit-openbot",
+      "section": "GitHub & Open Source",
+      "headline": "CopilotKit/OpenBot",
+      "summary": "Sandboxed computers with auditable action logs for AI coworkers. Relevant to the governance trend. Star counts come from third-party trend listings and were not checked on GitHub.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "CopilotKit/OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "useit-studio-and-new-agent-launches",
+      "section": "Social Buzz",
+      "headline": "UseIt Studio and new agent launches",
+      "kicker": "Product Hunt",
+      "summary": "[UseIt Studio](https://www.producthunt.com/products/useit-studio-from-idea-to-delivery) took the #1 day rank on October 21. [Xmind](https://www.producthunt.com/products/xmind) and [beacon.sh](https://www.producthunt.com/products/asymptotelabs) are the newest agent-related launches.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "UseIt Studio and new agent launches",
+          "url": "https://www.producthunt.com/products/useit-studio-from-idea-to-delivery"
+        },
+        {
+          "label": "Xmind",
+          "url": "https://www.producthunt.com/products/xmind"
+        },
+        {
+          "label": "beacon.sh",
+          "url": "https://www.producthunt.com/products/asymptotelabs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "garry-tan-s-200-000-token-bill",
+      "section": "Social Buzz",
+      "headline": "Garry Tan's $200,000 token bill",
+      "kicker": "Token spend",
+      "summary": "[Y Combinator's Garry Tan says he spends up to $200,000 a year on AI tokens](https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/). The takeaway is that heavy agent use is now a budget line.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Garry Tan's $200,000 token bill",
+          "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "ask-hn-on-ai-front-end-design-tools",
+      "section": "Social Buzz",
+      "headline": "Ask HN on AI front-end design tools",
+      "kicker": "Hacker News",
+      "summary": "A recent [Ask HN on AI front-end design tools](https://news.ycombinator.com/item?id=48670254) shows continued skepticism. The poster found [Google Stitch](https://stitch.withgoogle.com), [Claude Code](https://claude.com/product/claude-code) and [Lovable](https://lovable.dev) all lacking. That thread is from June and thin, so treat it as a mood signal only.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Ask HN on AI front-end design tools",
+          "url": "https://news.ycombinator.com/item?id=48670254"
+        },
+        {
+          "label": "Google Stitch",
+          "url": "https://stitch.withgoogle.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "agents-meet-the-figma-canvas",
+      "section": "Learning Corner",
+      "headline": "Agents, meet the Figma canvas",
+      "kicker": "Article",
+      "summary": "The clearest explanation of skills and self-healing loops.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agents, meet the Figma canvas",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "figma-and-claude-just-changed-ui-design-forever",
+      "section": "Learning Corner",
+      "headline": "Figma & Claude Just Changed UI Design Forever",
+      "kicker": "Video",
+      "summary": "A walkthrough of the Claude to Figma workflow (not watched in full, check length first).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma & Claude Just Changed UI Design Forever",
+          "url": "https://www.youtube.com/watch?v=Xcgr-7LpzDM"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "learn-claude-code",
+      "section": "Learning Corner",
+      "headline": "learn-claude-code",
+      "kicker": "GitHub project",
+      "summary": "Build a small agent harness from scratch to understand what tools like Claude Code do.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "learn-claude-code",
+          "url": "https://github.com/shareAI-lab/learn-claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "introducing-figma-specs",
+      "section": "Learning Corner",
+      "headline": "Introducing Figma Specs",
+      "kicker": "Design resource",
+      "summary": "Shows how to document intent in Markdown for humans and agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Introducing Figma Specs",
+          "url": "https://www.figma.com/blog/introducing-figma-specs/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "claude-code-to-figma-tutorial-limitations-and-a-better-appro",
+      "section": "Learning Corner",
+      "headline": "Claude Code to Figma: Tutorial, Limitations, and a Better Approach",
+      "kicker": "AI workflow",
+      "summary": "A practical code-to-canvas workflow with honest caveats.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Code to Figma: Tutorial, Limitations, and a Better Approach",
+          "url": "https://www.builder.io/blog/claude-code-to-figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "skill-authoring-for-design-systems",
+      "section": "Opportunities",
+      "headline": "Skill authoring for design systems",
+      "summary": "Package your team's rules as markdown skills for [Figma agents](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/). Few designers do this yet.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma agents",
+          "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "agent-oversight-ux",
+      "section": "Opportunities",
+      "headline": "Agent oversight UX",
+      "summary": "Enterprise caution, as at [Goldman Sachs](https://www.goldmansachs.com), creates demand for approval, audit and permission interfaces.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Goldman Sachs",
+          "url": "https://www.goldmansachs.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "memory-and-context-ui",
+      "section": "Opportunities",
+      "headline": "Memory and context UI",
+      "summary": "Tools like [claude-mem](https://github.com/thedotmack/claude-mem) have strong adoption and weak interfaces. Design the layer that shows what an agent remembers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "voice-agent-design",
+      "section": "Opportunities",
+      "headline": "Voice agent design",
+      "summary": "Per [ElevenLabs](https://elevenlabs.io/blog/voice-wins-complex-stressful-conversations), voice performs best in complex cases, and conversation design talent is scarce.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ElevenLabs",
+          "url": "https://elevenlabs.io/blog/voice-wins-complex-stressful-conversations"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "funnel-and-cro-design-with-agents",
+      "section": "Opportunities",
+      "headline": "Funnel and CRO design with agents",
+      "summary": "[Framer Convert](https://www.framer.com/convert/) makes experimentation cheap for small teams.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Framer Convert",
+          "url": "https://www.framer.com/convert/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    },
+    {
+      "id": "make-a-design-system-skill",
+      "section": "Today's Experiment",
+      "headline": "Make a design-system skill",
+      "kicker": "25 minutes",
+      "summary": "Open a [Figma](https://www.figma.com) file with a few components. In [Claude Code](https://claude.com/product/claude-code) or [Cursor](https://cursor.com) with the Figma MCP server connected, write a short markdown skill listing your spacing, color and naming rules. Ask the agent to build a settings screen using your components. Compare the result against your rules and note where it drifted. Then tighten the skill and rerun.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-04"
+    }
+  ],
+  "dont_miss": [
+    "Try Figma [code layers](https://www.figma.com/blog/design-together-with-code-layers/) before the free window for paid plans ends today.",
+    "Read [Agents, meet the Figma canvas](https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/) and run today's experiment.",
+    "Skim [Anthropic's self-improvement threshold warning](https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/) for the oversight implications."
+  ],
+  "footnote": "Sources: The Neuron daily digest (Nov 3), AI Weekly, Figma and Framer release notes, Product Hunt, and GitHub trend listings. Limited X and Reddit coverage in this run. Star counts and benchmark figures are as reported by those sources and not independently verified."
+}
