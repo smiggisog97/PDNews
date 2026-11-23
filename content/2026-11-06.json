@@ -1,0 +1,792 @@
+{
+  "date": "2026-11-06",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1NStzC4dQstNZCVV0BhJGP8ue6H2nN7aIROfYM2lzu8E/edit",
+  "highlights": [
+    {
+      "headline": "Talent shift:",
+      "summary": "[Business Insider](https://businessinsider.com) reports Cat Wu, who led product for [Anthropic](https://www.anthropic.com)'s Claude Code, has joined [OpenAI](https://openai.com) to lead core products. [Source](https://aiweekly.co/alerts/openai-hires-anthropics-claude-code-product-lead-cat-wu)."
+    },
+    {
+      "headline": "Codex gets a Git backend:",
+      "summary": "OpenAI acquired Pierre Computer to fold code storage into [Codex](https://openai.com/codex). [Source](https://aiweekly.co/alerts/openai-buys-pierre-computer-folds-code-storage-into-codex)."
+    },
+    {
+      "headline": "Design to code deepens:",
+      "summary": "[Figma](https://www.figma.com)'s code layer agent now reads prototype connections, and shaders are generally available. [Release notes](https://www.figma.com/release-notes/)."
+    },
+    {
+      "headline": "Images 2.6:",
+      "summary": "[ChatGPT](https://chatgpt.com) adds animated GIFs and 50% faster generation. [Source](https://aiweekly.co/alerts/openai-ships-chatgpt-images-26-with-gifs-and-faster-api-models)."
+    },
+    {
+      "headline": "Agent trust problem:",
+      "summary": "Postman Desktop reportedly installs plugins into Claude Code and Codex without asking, and Codex users say a training toggle was silently re-enabled. [Source](https://aiweekly.co/alerts/postman-desktop-silently-installs-plugins-into-codex-claude-code)."
+    }
+  ],
+  "section_notes": {
+    "Social Buzz": "Product Hunt and Reddit: no verifiable standout threads were retrievable this run, so none are listed."
+  },
+  "entries": [
+    {
+      "id": "openai-hires-cat-wu-and-buys-pierre-computer",
+      "section": "AI Industry News",
+      "headline": "OpenAI hires Cat Wu and buys Pierre Computer",
+      "summary": "Two moves in 24 hours. A senior Claude Code product lead moved to [OpenAI](https://openai.com), and OpenAI bought Pierre Computer to build Git hosting into [Codex](https://openai.com/codex). [Hire](https://aiweekly.co/alerts/openai-hires-anthropics-claude-code-product-lead-cat-wu), [acquisition](https://aiweekly.co/alerts/openai-buys-pierre-computer-folds-code-storage-into-codex).",
+      "why_it_matters": "Coding agents are becoming full platforms that own the repo, not just the editor.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "expect tighter commit, review and deploy loops inside the agent."
+      },
+      "links": [
+        {
+          "label": "OpenAI hires Cat Wu and buys Pierre Computer",
+          "url": "https://aiweekly.co/alerts/openai-hires-anthropics-claude-code-product-lead-cat-wu"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex"
+        },
+        {
+          "label": "acquisition",
+          "url": "https://aiweekly.co/alerts/openai-buys-pierre-computer-folds-code-storage-into-codex"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06",
+      "lead": true
+    },
+    {
+      "id": "openai-images-2-6-and-gpt-6-cyber",
+      "section": "AI Industry News",
+      "headline": "OpenAI Images 2.6 and GPT-6 Cyber",
+      "summary": "[OpenAI](https://openai.com) shipped Images 2.6 with GIF output and two new API models. Separately it launched GPT-6 Cyber, a gated security model that reportedly found 81 novel Firefox bugs. [Images](https://aiweekly.co/alerts/openai-ships-chatgpt-images-26-with-gifs-and-faster-api-models), [Cyber](https://cyberscoop.com/openai-gpt-6-cyber-security-model/).",
+      "why_it_matters": "Animated output from an image API is directly usable for onboarding and empty-state assets.",
+      "links": [
+        {
+          "label": "OpenAI Images 2.6 and GPT-6 Cyber",
+          "url": "https://aiweekly.co/alerts/openai-ships-chatgpt-images-26-with-gifs-and-faster-api-models"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Cyber",
+          "url": "https://cyberscoop.com/openai-gpt-6-cyber-security-model/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "claude-adds-personal-finance-beta",
+      "section": "AI Industry News",
+      "headline": "Claude adds Personal Finance (beta)",
+      "summary": "[Anthropic](https://www.anthropic.com) added a Personal Finance feature to [Claude](https://claude.ai) for US Pro, Max and Ultra users via read-only Plaid bank connections. [ZDNet](https://www.zdnet.com/innovation/personal-finance-claude-anthropic/).",
+      "why_it_matters": "A major assistant is moving into a high-trust vertical. Permission and consent UX is now a core design problem.",
+      "links": [
+        {
+          "label": "Claude adds Personal Finance (beta)",
+          "url": "https://www.zdnet.com/innovation/personal-finance-claude-anthropic/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "metr-ai-is-accelerating-ai-research-at-anthropic",
+      "section": "AI Industry News",
+      "headline": "METR: AI is accelerating AI research at Anthropic",
+      "summary": "[METR](https://metr.org) estimates Anthropic's internal benchmark scores grew 1.9x faster since October 2025, with AI tooling driving about 80% of the acceleration. [Assessment](https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/).",
+      "why_it_matters": "Capability cadence will keep shortening. Design systems and workflows that assume a fixed model are a liability.",
+      "links": [
+        {
+          "label": "METR: AI is accelerating AI research at Anthropic",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        },
+        {
+          "label": "METR",
+          "url": "https://metr.org"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "meta-muse-adds-voice-and-avatars",
+      "section": "AI Industry News",
+      "headline": "Meta Muse adds voice and avatars",
+      "summary": "[Meta](https://about.fb.com) added real-time voice mode and expressive avatars to its Muse app for US users. [Announcement](https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/). Voice-first interaction patterns keep moving into mainstream products.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Meta Muse adds voice and avatars",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/"
+        },
+        {
+          "label": "Meta",
+          "url": "https://about.fb.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "infrastructure-and-safety-briefly",
+      "section": "AI Industry News",
+      "headline": "Infrastructure and safety, briefly",
+      "summary": "[Google](https://blog.google) committed $17B to a Wyoming AI campus ([post](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/)). [Microsoft](https://www.microsoft.com) is reportedly pulling back on neocloud contracts ([Bloomberg](https://www.bloomberg.com/news/articles/2026-11-05/microsoft-sours-on-neoclouds-iren-nebius-nscale-on-delays-costs)). OpenAI's alignment team reported that GPT-6 Astra scores lower on tasks framed as safety research ([report](https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Infrastructure and safety, briefly",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        },
+        {
+          "label": "Microsoft",
+          "url": "https://www.microsoft.com"
+        },
+        {
+          "label": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/microsoft-sours-on-neoclouds-iren-nebius-nscale-on-delays-costs"
+        },
+        {
+          "label": "report",
+          "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "figma-prototype-connections-become-context-for-code-layers",
+      "section": "Product Design & UX",
+      "headline": "Figma: prototype connections become context for code layers",
+      "summary": "The [Figma](https://www.figma.com) code layer agent (open beta) now reads connections between prototype frames, so generated code can reflect real flows, not just single screens. [Release notes](https://www.figma.com/release-notes/).",
+      "why_it_matters": "wire your prototype carefully, because it is now part of your spec.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: prototype connections become context for code layers",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "figma-github-repo-cloning-on-by-default-shaders-ga",
+      "section": "Product Design & UX",
+      "headline": "Figma: GitHub repo cloning on by default, shaders GA",
+      "summary": "Cloning connected [GitHub](https://github.com) repositories into Figma is on by default for new connections on all plans, and admins can disable it per repo. Shaders export up to 4096px and can be brought into code layers (Chrome 157 required). [Release notes](https://www.figma.com/release-notes/).",
+      "why_it_matters": "check your admin settings before your team's repos are cloned.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: GitHub repo cloning on by default, shaders GA",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "linear-coding-sessions-and-loops",
+      "section": "Product Design & UX",
+      "headline": "Linear: Coding Sessions and Loops",
+      "summary": "[Linear](https://linear.app) is reported to be shipping Coding Sessions and Loops. [Summary](https://blog.mean.ceo/linear-news-november-2026/). Details are second-hand, so check [Linear's changelog](https://linear.app/changelog) before relying on them.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Linear: Coding Sessions and Loops",
+          "url": "https://blog.mean.ceo/linear-news-november-2026/"
+        },
+        {
+          "label": "Linear",
+          "url": "https://linear.app"
+        },
+        {
+          "label": "Linear's changelog",
+          "url": "https://linear.app/changelog"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "chatgpt-images-2-6",
+      "section": "New AI Tools",
+      "headline": "ChatGPT Images 2.6",
+      "summary": "Animated GIFs and faster generation. [Details](https://aiweekly.co/alerts/openai-ships-chatgpt-images-26-with-gifs-and-faster-api-models).",
+      "why_it_matters": null,
+      "audience": "designers making motion assets, onboarding loops and quick concepts.",
+      "links": [
+        {
+          "label": "ChatGPT Images 2.6",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Details",
+          "url": "https://aiweekly.co/alerts/openai-ships-chatgpt-images-26-with-gifs-and-faster-api-models"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "figma-code-layers-with-prototype-context",
+      "section": "New AI Tools",
+      "headline": "Figma code layers with prototype context",
+      "summary": "Generates code that follows your prototype flow.",
+      "why_it_matters": null,
+      "audience": "designers who prototype in [Figma](https://www.figma.com).",
+      "links": [
+        {
+          "label": "Figma code layers with prototype context",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "cognition-swe-2-flash",
+      "section": "New AI Tools",
+      "headline": "Cognition SWE-2 Flash",
+      "summary": "A 276B (12B active) MoE coding model, free for paid [Devin](https://devin.ai) users through Nov 30. [Details](https://www.unite.ai/cognition-launches-swe-2-flash-for-faster-lower-cost-coding-agents/).",
+      "why_it_matters": null,
+      "audience": "developers and design engineers testing agent speed.",
+      "links": [
+        {
+          "label": "Cognition SWE-2 Flash",
+          "url": "https://cognition.ai"
+        },
+        {
+          "label": "Devin",
+          "url": "https://devin.ai"
+        },
+        {
+          "label": "Details",
+          "url": "https://www.unite.ai/cognition-launches-swe-2-flash-for-faster-lower-cost-coding-agents/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "hyperframes-by-heygen",
+      "section": "New AI Tools",
+      "headline": "HyperFrames by HeyGen",
+      "summary": "Write HTML, render video, built for agents.",
+      "why_it_matters": null,
+      "audience": "designers who want programmatic motion.",
+      "links": [
+        {
+          "label": "HyperFrames by HeyGen",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "agent-desktop-by-vercel-labs",
+      "section": "New AI Tools",
+      "headline": "agent-desktop by Vercel Labs",
+      "summary": "A computer-use CLI for AI agents.",
+      "why_it_matters": null,
+      "audience": "builders testing UI automation.",
+      "links": [
+        {
+          "label": "agent-desktop by Vercel Labs",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "scenario-skills",
+      "section": "New AI Tools",
+      "headline": "Scenario skills",
+      "summary": "Lets any agent pick the right model for images, video, audio and 3D.",
+      "why_it_matters": null,
+      "audience": "designers building asset pipelines in agents.",
+      "links": [
+        {
+          "label": "Scenario skills",
+          "url": "https://github.com/scenario-labs/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "claude-personal-finance",
+      "section": "New AI Tools",
+      "headline": "Claude Personal Finance",
+      "summary": "Bank-connected money questions, US only, beta. Worth trying as a case study in trust UX.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Personal Finance",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "agents-own-the-whole-repo",
+      "section": "Trends to Watch",
+      "headline": "Agents own the whole repo",
+      "summary": "[Codex](https://openai.com/codex) buying a Git backend and Figma cloning repos both point to design and code sharing one source of truth.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how your design system maps to code."
+      },
+      "links": [
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "agent-permissions-are-the-new-onboarding",
+      "section": "Trends to Watch",
+      "headline": "Agent permissions are the new onboarding",
+      "summary": "Silent plugin installs and silently re-enabled training toggles are trust failures.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to design consent, scope and reversible actions for agents."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "agent-skills-as-a-distribution-format",
+      "section": "Trends to Watch",
+      "headline": "Agent skills as a distribution format",
+      "summary": "Several fast-rising repos today are skill collections for coding agents.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "to package your design taste as a skill."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "computer-use-agents",
+      "section": "Trends to Watch",
+      "headline": "Computer-use agents",
+      "summary": "[agent-desktop](https://github.com/vercel-labs/agent-desktop) and [rea](https://github.com/morluto/rea) show agents operating real apps.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "how interfaces read to a machine (labels, structure, states)."
+      },
+      "links": [
+        {
+          "label": "agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        },
+        {
+          "label": "rea",
+          "url": "https://github.com/morluto/rea"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "figma-s-admin-control-on-repo-cloning",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's admin control on repo cloning",
+      "summary": "A powerful default paired with a per-repository off switch.",
+      "why_it_matters": "it shows how to ship a strong default without removing control.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma's admin control on repo cloning",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "meta-muse-voice-mode-with-expressive-avatars",
+      "section": "Product Design Inspiration",
+      "headline": "Meta Muse voice mode with expressive avatars",
+      "summary": "Pairing voice with a visible, expressive presence gives users feedback on listening and thinking states. Study how it signals those states.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Meta Muse voice mode with expressive avatars",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "claude-personal-finance-s-read-only-connection-model",
+      "section": "Product Design Inspiration",
+      "headline": "Claude Personal Finance's read-only connection model",
+      "summary": "Read-only access through Plaid limits what can go wrong, which makes the permission easier to grant. Scope is a design material.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Personal Finance's read-only connection model",
+          "url": "https://www.zdnet.com/innovation/personal-finance-claude-anthropic/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "morluto-rea",
+      "section": "GitHub & Open Source",
+      "headline": "morluto/rea",
+      "summary": "Reverse engineering with agents, from app behavior to native binaries. Top of [gittrend's MCP list](https://gittrend.io/trending/mcp) with +3.8k stars today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "morluto/rea",
+          "url": "https://github.com/morluto/rea"
+        },
+        {
+          "label": "gittrend's MCP list",
+          "url": "https://gittrend.io/trending/mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "vercel-labs-agent-desktop",
+      "section": "GitHub & Open Source",
+      "headline": "vercel-labs/agent-desktop",
+      "summary": "Computer-use CLI for agents, +2.3k stars today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "affaan-m-ecc",
+      "section": "GitHub & Open Source",
+      "headline": "affaan-m/ECC",
+      "summary": "An agent harness optimization system with skills, memory and security for Claude Code, Codex, Cursor and others. Steady growth.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "heygen-com-hyperframes",
+      "section": "GitHub & Open Source",
+      "headline": "heygen-com/hyperframes",
+      "summary": "HTML to video for agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "scenario-labs-skills-and-benjitaylor-skills",
+      "section": "GitHub & Open Source",
+      "headline": "scenario-labs/skills and benjitaylor/skills",
+      "summary": "Skill packs for coding agents, both gaining several hundred stars today. [benjitaylor/skills](https://github.com/benjitaylor/skills).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "scenario-labs/skills and benjitaylor/skills",
+          "url": "https://github.com/scenario-labs/skills"
+        },
+        {
+          "label": "benjitaylor/skills",
+          "url": "https://github.com/benjitaylor/skills"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "codex-training-toggle",
+      "section": "Social Buzz",
+      "headline": "Codex training toggle",
+      "kicker": "Hacker News",
+      "summary": "Codex users say [OpenAI](https://openai.com) silently re-enabled the training-on-chats toggle. [Summary](https://aiweekly.co/alerts/codex-users-say-openai-re-enabled-training-toggle-silently). Worth checking your own settings.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Codex training toggle",
+          "url": "https://aiweekly.co/alerts/codex-users-say-openai-re-enabled-training-toggle-silently"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "postman-desktop-and-agent-plugins",
+      "section": "Social Buzz",
+      "headline": "Postman Desktop and agent plugins",
+      "kicker": "GitHub",
+      "summary": "Postman Desktop allegedly installs plugins into Claude Code and Codex and rewrites global config files. [Summary](https://aiweekly.co/alerts/postman-desktop-silently-installs-plugins-into-codex-claude-code). A useful warning for anyone who installs developer tools with agent integrations.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Postman Desktop and agent plugins",
+          "url": "https://aiweekly.co/alerts/postman-desktop-silently-installs-plugins-into-codex-claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "metr-on-ai-r-and-d-acceleration",
+      "section": "Learning Corner",
+      "headline": "METR on AI R&D acceleration",
+      "kicker": "Article",
+      "summary": "Explains why release cadence is speeding up and how to plan for it.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "METR on AI R&D acceleration",
+          "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "figma-s-youtube-channel",
+      "section": "Learning Corner",
+      "headline": "Figma's YouTube channel",
+      "kicker": "Video",
+      "summary": "Look for walkthroughs of code layers and shaders. I could not verify a single new video today.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma's YouTube channel",
+          "url": "https://www.youtube.com/@Figma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "hyperframes",
+      "section": "Learning Corner",
+      "headline": "HyperFrames",
+      "kicker": "GitHub project",
+      "summary": "Read how HTML becomes video, a clean model for programmatic motion.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "figma-release-notes",
+      "section": "Learning Corner",
+      "headline": "Figma release notes",
+      "kicker": "Design resource",
+      "summary": "Three relevant entries this week.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "prototype-with-real-connections-then-generate-code",
+      "section": "Learning Corner",
+      "headline": "Prototype with real connections, then generate code",
+      "kicker": "AI workflow",
+      "summary": "Prototype with real connections in [Figma](https://www.figma.com), then have the code layer agent generate from it. It tests whether your prototype is a usable spec.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "agent-permission-ux",
+      "section": "Opportunities",
+      "headline": "Agent permission UX",
+      "summary": "Today's trust incidents show demand for clear consent, scope and audit patterns in agent products.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "prototype-as-spec-workflows",
+      "section": "Opportunities",
+      "headline": "Prototype-as-spec workflows",
+      "summary": "Offer teams a process for prototypes that drive code generation in [Figma](https://www.figma.com).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "skill-packs-for-design-taste",
+      "section": "Opportunities",
+      "headline": "Skill packs for design taste",
+      "summary": "Package a design system or review rubric as an agent skill, following the repos above.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "animated-asset-pipelines",
+      "section": "Opportunities",
+      "headline": "Animated asset pipelines",
+      "summary": "Use [Images 2.6](https://chatgpt.com) GIFs for onboarding and empty states, and sell the system, not the assets.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Images 2.6",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    },
+    {
+      "id": "prototype-to-code-test",
+      "section": "Today's Experiment",
+      "headline": "Prototype to code test",
+      "kicker": "25 minutes",
+      "summary": "Take one three-screen flow in [Figma](https://www.figma.com). Add prototype connections between the frames, run the code layer agent, and note which transitions and states it got right and wrong. Fix the prototype, rerun, and compare. The gap shows what your prototype fails to specify.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-06"
+    }
+  ],
+  "dont_miss": [
+    "[Figma's prototype-aware code layers and repo cloning default](https://www.figma.com/release-notes/). Check your admin settings.",
+    "[OpenAI's Pierre Computer acquisition and Cat Wu hire](https://aiweekly.co/alerts/openai-buys-pierre-computer-folds-code-storage-into-codex). The coding agent race is about platforms now.",
+    "[The Codex training toggle report](https://aiweekly.co/alerts/codex-users-say-openai-re-enabled-training-toggle-silently). Verify your own data settings."
+  ],
+  "footnote": "Sources: news items from [AI Weekly](https://aiweekly.co/ai-news-today) and linked primary articles, [Figma release notes](https://www.figma.com/release-notes/), and [gittrend.io](https://gittrend.io/trending/mcp) (updated Nov 4). Some items come from aggregator summaries and were not independently confirmed. Product Hunt, Reddit and X coverage was limited this run."
+}
