@@ -8,8 +8,8 @@
       "summary": "at 8/40 per million tokens, and its IPO filing targets a Nasdaq debut as soon as the week of Nov 16. Details in [Anthropic's announcement](https://www.anthropic.com/claude-fable-and-mythos-5-2)."
     },
     {
-      "headline": "[Cursor](https://cursor.com) can now build and host live apps",
-      "summary": "(Postgres, auth, hosting) from cloud agents, plus realtime voice chat with agents. Coding agents are becoming full app platforms."
+      "headline": "Cursor can now build and host live apps",
+      "summary": "[Cursor](https://cursor.com) cloud agents deploy apps (Postgres, auth, hosting), plus realtime voice chat with agents. Coding agents are becoming full app platforms."
     },
     {
       "headline": "Figma keeps pushing agent-first features:",
