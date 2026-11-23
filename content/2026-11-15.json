@@ -1,0 +1,889 @@
+{
+  "date": "2026-11-15",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1JpyOwepgW_UOOsILfgYw0SACsNBMuu19zEJB68B18bQ/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic's IPO is locked in.",
+      "summary": "[Anthropic](https://www.anthropic.com) prices on Wednesday, Nov. 18 and starts trading on Nasdaq as ANT on Nov. 19, with a $70 to $78 range and the book reportedly about six times oversubscribed ([TNW](https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation), [AI Frontier Daily](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-14))."
+    },
+    {
+      "headline": "OpenAI launched ChatGPT Wallet.",
+      "summary": "[OpenAI](https://openai.com)'s always-on \"dots\" agents can now check out for you without seeing your card number. Checkout, trust and approval UI just became a core design surface ([AI News Morning Edition](https://note.com/gifted_ixora801/n/n624f48273f80?hl=en))."
+    },
+    {
+      "headline": "shadcn shipped an agent-first design system linter.",
+      "summary": "[shadcn](https://github.com/shadcn-ui) reportedly drops design system violations from AI-generated code to zero on its tests ([repo](https://github.com/shadcn-ui/lint)). Design system enforcement is moving into the agent loop."
+    },
+    {
+      "headline": "Cloudflare is pushing Kitesurf, a browser built for agents, not people.",
+      "summary": "[Cloudflare](https://www.cloudflare.com): one roundup says it is now open source ([AI Frontier Daily](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-14)). Earlier coverage said the code was not yet public ([InfoQ](https://infoq.com/news/2026/08/cloudflare-kitesurf-browser))."
+    },
+    {
+      "headline": "Open and local AI had a strong week.",
+      "summary": "[llama.cpp](https://github.com/ggml-org/llama.cpp) hit v1.0.0 with a stable API and ABI, and [Thinking Machines Lab](https://thinkingmachines.ai/) released Inkling 2 Small weights under Apache 2.0 ([RIO Rundown](https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem))."
+    }
+  ],
+  "section_notes": {},
+  "entries": [
+    {
+      "id": "anthropic-confirms-ipo-timeline",
+      "section": "AI Industry News",
+      "headline": "Anthropic confirms IPO timeline",
+      "summary": "[Anthropic](https://www.anthropic.com) is offering 825 million Class A shares at $70 to $78, raising up to $64.4 billion, with pricing Nov. 18 and first trade Nov. 19 ([FourWeekMBA](https://fourweekmba.com/ai-anthropics-ipo-day-by-day-pricing-18-nov-trading-19-nov/)). About 20% is reserved for retail investors.",
+      "why_it_matters": "A public Anthropic means quarterly scrutiny of pricing and usage limits.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "expect pricing and plan changes to follow the earnings cycle, so avoid hard-coding one vendor."
+      },
+      "links": [
+        {
+          "label": "Anthropic confirms IPO timeline",
+          "url": "https://fourweekmba.com/ai-anthropics-ipo-day-by-day-pricing-18-nov-trading-19-nov/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15",
+      "lead": true
+    },
+    {
+      "id": "openai-launches-chatgpt-wallet-and-a-merchant-playbook",
+      "section": "AI Industry News",
+      "headline": "OpenAI launches ChatGPT Wallet and a merchant playbook",
+      "summary": "[ChatGPT](https://chatgpt.com) Wallet lets its dots agents complete purchases using tokenized credentials built with [Visa](https://usa.visa.com), [Mastercard](https://www.mastercard.com) and [American Express](https://www.americanexpress.com). OpenAI is also publishing a Commerce Partner Playbook so merchants recognize legitimate agent traffic instead of blocking it as bots ([AI Frontier Daily](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-14)).",
+      "why_it_matters": "Visa's own earlier tests found AI shopping assistants failed to finish the purchase in about 43 of 100 tries.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "approval screens, spend limits and error recovery are now the product."
+      },
+      "links": [
+        {
+          "label": "OpenAI launches ChatGPT Wallet and a merchant playbook",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-14"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Visa",
+          "url": "https://usa.visa.com"
+        },
+        {
+          "label": "Mastercard",
+          "url": "https://www.mastercard.com"
+        },
+        {
+          "label": "American Express",
+          "url": "https://www.americanexpress.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "openai-disbands-its-robotics-team",
+      "section": "AI Industry News",
+      "headline": "OpenAI disbands its robotics team",
+      "summary": "OpenAI says general-purpose models can now run robots directly, so a separate hardware division is not needed ([RIO Rundown](https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem), [Reddit thread](https://www.reddit.com/r/artificial/comments/1xvivdy/openai_is_so_convinced_that_llms_will_become)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Impact",
+        "text": "a signal that the model is the product and the form factor is secondary."
+      },
+      "links": [
+        {
+          "label": "OpenAI disbands its robotics team",
+          "url": "https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem"
+        },
+        {
+          "label": "Reddit thread",
+          "url": "https://www.reddit.com/r/artificial/comments/1xvivdy/openai_is_so_convinced_that_llms_will_become"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "google-gemini-robotics-2-5-antigravity-teamwork-and-a-pricin",
+      "section": "AI Industry News",
+      "headline": "Google: Gemini Robotics 2.5, Antigravity /teamwork, and a pricing deadline",
+      "summary": "[Google](https://blog.google) DeepMind released Gemini Robotics 2.5 on Gemini 4 Argon ([SiliconANGLE](https://siliconangle.com/?p=853854)). Google Research also described Antigravity's /teamwork feature, which uses falsifiers and partitioned context for long tasks ([Google Research](https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature)).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Builder note",
+        "text": "Gemini 4 Argon's introductory $2 / $10 per million tokens ends Nov. 30, then rises to $4 / $20 ([Codersera](https://codersera.com/blog/gemini-4-argon-complete-guide-2026/))."
+      },
+      "links": [
+        {
+          "label": "Google: Gemini Robotics 2.5, Antigravity /teamwork, and a pricing deadline",
+          "url": "https://siliconangle.com/?p=853854"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        },
+        {
+          "label": "Google Research",
+          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature"
+        },
+        {
+          "label": "Codersera",
+          "url": "https://codersera.com/blog/gemini-4-argon-complete-guide-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "nvidia-leadership-search",
+      "section": "AI Industry News",
+      "headline": "Nvidia leadership search",
+      "summary": "Nvidia's board approached Arm CEO Rene Haas as a successor candidate after Jensen Huang's departure ([7 AI News Stories of the Day](https://note.com/hirokimiyano/n/nfbe1c6a4d41a?hl=en)). [Nvidia](https://www.nvidia.com) sets the cost curve for everything above it, so watch for roadmap signals.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Nvidia leadership search",
+          "url": "https://note.com/hirokimiyano/n/nfbe1c6a4d41a?hl=en"
+        },
+        {
+          "label": "Nvidia",
+          "url": "https://www.nvidia.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "infrastructure-and-agent-security-money",
+      "section": "AI Industry News",
+      "headline": "Infrastructure and agent security money",
+      "summary": "The SGLang Consortium ([NVIDIA](https://www.nvidia.com), [AMD](https://www.amd.com), Intel, Google, Meta, Cloudflare and others) formed to standardize open inference software across hardware ([RIO Rundown](https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem)). [LangChain](https://www.langchain.com) raised $300 million at a $3 billion valuation, and [CrowdStrike](https://www.crowdstrike.com) added an AI Kill Switch for rogue agents ([AI Agents News](https://aiagentstore.ai/ai-agent-news/this-week)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Infrastructure and agent security money",
+          "url": "https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem"
+        },
+        {
+          "label": "NVIDIA",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "AMD",
+          "url": "https://www.amd.com"
+        },
+        {
+          "label": "LangChain",
+          "url": "https://www.langchain.com"
+        },
+        {
+          "label": "CrowdStrike",
+          "url": "https://www.crowdstrike.com"
+        },
+        {
+          "label": "AI Agents News",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "figma-the-agent-is-now-the-center-of-the-canvas",
+      "section": "Product Design & UX",
+      "headline": "Figma: the agent is now the center of the canvas",
+      "summary": "Config 2026 shipped code layers, Figma Motion, generative plugins and agent skills ([The Next Web](https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations)). The agent has since reached general availability with lower latency and Gemini 4 Argon inside Figma Make ([Releases](https://releases.sh/figma/overview.md)).",
+      "why_it_matters": "package your team's conventions as skills so the agent stops guessing your system.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Figma: the agent is now the center of the canvas",
+          "url": "https://thenextweb.com/news/figma-config-code-layers-ai-skills-plugins-animations"
+        },
+        {
+          "label": "Releases",
+          "url": "https://releases.sh/figma/overview.md"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "cursor-goes-after-app-deployment",
+      "section": "Product Design & UX",
+      "headline": "Cursor goes after app deployment",
+      "summary": "[Cursor](https://cursor.com) agents now spin up databases, logins and hosting, and check for security flaws before apps go live, on all paid plans with cloud agents ([The New Stack](https://thenewstack.io/?p=22842955)). This puts Cursor against [Lovable](https://lovable.dev) and [Replit](https://replit.com).",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "For designers who ship",
+        "text": "the gap between prototype and production keeps shrinking."
+      },
+      "links": [
+        {
+          "label": "Cursor goes after app deployment",
+          "url": "https://thenewstack.io/?p=22842955"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "claude-design-spreads-into-every-chat",
+      "section": "Product Design & UX",
+      "headline": "Claude Design spreads into every chat",
+      "summary": "Per one November roundup, designs, prototypes and decks can now be created inside any Claude chat, Claude Code and mobile. It still lacks native Figma export and version history ([MEAN CEO](https://blog.mean.ceo/claude-design-news-november-2026/)). Pair it with [Opus 5.5](https://muz.li/blog/claude-opus-5-5-for-designers/), which costs $4 / $20 per million tokens.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Design spreads into every chat",
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+        },
+        {
+          "label": "MEAN CEO",
+          "url": "https://blog.mean.ceo/claude-design-news-november-2026/"
+        },
+        {
+          "label": "Opus 5.5",
+          "url": "https://muz.li/blog/claude-opus-5-5-for-designers/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "design-system-drift-is-the-new-bottleneck",
+      "section": "Product Design & UX",
+      "headline": "Design system drift is the new bottleneck",
+      "summary": "Agents write code that looks right but ignores your components. Read the argument for enforcement over documentation at [Thinslices](https://www.thinslices.com/insights/ai-assisted-product-design-system).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design system drift is the new bottleneck",
+          "url": "https://www.thinslices.com/insights/ai-assisted-product-design-system"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "shadcn-lint",
+      "section": "New AI Tools",
+      "headline": "@shadcn/lint",
+      "summary": "Agent-first Tailwind v4 linter for ESLint and Oxlint, works without shadcn/ui.",
+      "why_it_matters": null,
+      "audience": "designers who vibe code and want agents to respect the system.",
+      "links": [
+        {
+          "label": "@shadcn/lint",
+          "url": "https://github.com/shadcn-ui/lint"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 9,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "ai-designer-mcp",
+      "section": "New AI Tools",
+      "headline": "AI Designer MCP",
+      "summary": "Gives Claude Code codebase-aware UI tools and builds a design.md from your repo. Launched earlier this year, still relevant.",
+      "why_it_matters": null,
+      "audience": "solo builders tired of generic purple gradients.",
+      "links": [
+        {
+          "label": "AI Designer MCP",
+          "url": "https://www.producthunt.com/products/aidesigner/launches"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "onsystem",
+      "section": "New AI Tools",
+      "headline": "Onsystem",
+      "summary": "Catches hardcoded colors, invalid variants and native elements in React during AI generation and CI.",
+      "why_it_matters": null,
+      "audience": "teams with a real component library.",
+      "links": [
+        {
+          "label": "Onsystem",
+          "url": "https://mcpmarket.com/server/onsystem-1"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "kilo-code-v7",
+      "section": "New AI Tools",
+      "headline": "Kilo Code v7",
+      "summary": "Open-source VS Code agent with parallel subagents on git worktrees and multi-model comparison.",
+      "why_it_matters": null,
+      "audience": "engineers and design engineers who want to run several agents without conflicts.",
+      "links": [
+        {
+          "label": "Kilo Code v7",
+          "url": "https://www.producthunt.com/p/kilocode/kilo-code-v7-for-vs-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "product-hunt-mcp",
+      "section": "New AI Tools",
+      "headline": "Product Hunt MCP",
+      "summary": "Ask your assistant to find launches, compare alternatives and draft your own launch. Topped the Nov. 9 daily list with 417 votes.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt MCP",
+          "url": "https://aitoolly.com/en/producthunt-daily/2026-11-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "inkling-2-small",
+      "section": "New AI Tools",
+      "headline": "Inkling 2 Small",
+      "summary": "594B MoE with 17B active parameters, Apache 2.0, leads open-weights rankings on DesignArena ([RIO Rundown](https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem)).",
+      "why_it_matters": null,
+      "audience": "anyone testing local UI generation.",
+      "links": [
+        {
+          "label": "Inkling 2 Small",
+          "url": "https://thinkingmachines.ai/"
+        },
+        {
+          "label": "RIO Rundown",
+          "url": "https://riorundown.substack.com/p/ai-news-nov-14-2026-local-ai-ecosystem"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "agentic-ship",
+      "section": "New AI Tools",
+      "headline": "Agentic Ship",
+      "summary": "MIT-licensed open-source alternative pitch to Lovable, Bolt, v0 and Replit with verification gates. Early and self-compared, so treat the benchmark table as a claim.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Agentic Ship",
+          "url": "https://github.com/Simultech369/agentic-ship"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 5,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "agent-payments-and-trust",
+      "section": "Trends to Watch",
+      "headline": "Agent payments and trust",
+      "summary": "ChatGPT Wallet, tokenized cards and merchant-side bot recognition.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "consent, limits and recovery patterns for delegated spending."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "enforcement-over-documentation",
+      "section": "Trends to Watch",
+      "headline": "Enforcement over documentation",
+      "summary": "Linters, types and CI gates beat rules files for keeping agents on-system.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "design tokens as a single source of truth."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "browsers-for-agents",
+      "section": "Trends to Watch",
+      "headline": "Browsers for agents",
+      "summary": "[Kitesurf](https://www.digitaltrends.com/computing/cloudflares-new-browser-kitesurf-is-designed-for-ai-agents-to-browse-the-internet/) drops tabs and pixel-perfect rendering for low token cost and prompt injection isolation.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "design for machine readers (structured content) as well as human ones."
+      },
+      "links": [
+        {
+          "label": "Kitesurf",
+          "url": "https://www.digitaltrends.com/computing/cloudflares-new-browser-kitesurf-is-designed-for-ai-agents-to-browse-the-internet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "parallel-coding-agents",
+      "section": "Trends to Watch",
+      "headline": "Parallel coding agents",
+      "summary": "Kilo and Cursor push multi-agent work on isolated branches.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "branch-based review habits, which [Framer](https://www.framer.com) also adopted with [Framer 3.0 Branching](https://framer.com/blog/framer-3/)."
+      },
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Framer 3.0 Branching",
+          "url": "https://framer.com/blog/framer-3/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "local-and-open-models-gain-ground",
+      "section": "Trends to Watch",
+      "headline": "Local and open models gain ground",
+      "summary": "Stable llama.cpp plus strong open weights.",
+      "why_it_matters": null,
+      "takeaway": {
+        "label": "Learn",
+        "text": "running a model locally for private design research."
+      },
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "chatgpt-wallet-approval-flow",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT Wallet approval flow",
+      "summary": "Per the reports, you pick the item, the agent checks out, and you approve with a fingerprint or face scan ([AI Frontier Daily](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-14)).",
+      "why_it_matters": "the human only handles the one irreversible moment, and biometric approval is fast without being careless.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "ChatGPT Wallet approval flow",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-14"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "framer-agents-on-branches",
+      "section": "Product Design Inspiration",
+      "headline": "Framer Agents on branches",
+      "summary": "Agents auto-branch so the main site never breaks, and you inspect edits before merging ([Product Hunt thread](https://www.producthunt.com/p/framer/framer-3-0-2)). Launched in June but still the cleanest answer to \"how do I trust an agent in a live file.\"",
+      "why_it_matters": "safety is structural, not a warning dialog.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Framer Agents on branches",
+          "url": "https://www.producthunt.com/p/framer/framer-3-0-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "shadcn-lint-error-messages",
+      "section": "Product Design Inspiration",
+      "headline": "shadcn/lint error messages",
+      "summary": "Errors tell the agent what to do instead, for example \"button owns its padding, use a button size\" ([Stork](https://www.stork.ai/blog/the-ai-guardrail-for-tailwind-css)).",
+      "why_it_matters": "good microcopy is now written for an agent reader, and the same principle improves messages for humans.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "shadcn/lint error messages",
+          "url": "https://www.stork.ai/blog/the-ai-guardrail-for-tailwind-css"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "shadcn-ui-lint",
+      "section": "GitHub & Open Source",
+      "headline": "shadcn-ui/lint",
+      "summary": "Six rules, ESLint and Oxlint, React, Vue and Svelte. Gaining attention because it makes design system policy readable to agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "shadcn-ui/lint",
+          "url": "https://github.com/shadcn-ui/lint"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "sergioazoc-oxlint-tailwindcss",
+      "section": "GitHub & Open Source",
+      "headline": "sergioazoc/oxlint-tailwindcss",
+      "summary": "v1.14.0 adds a Claude Code plugin and a benchmark against @shadcn/lint. A close alternative worth comparing.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "sergioazoc/oxlint-tailwindcss",
+          "url": "https://github.com/sergioazoc/oxlint-tailwindcss"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "ggml-org-llama-cpp",
+      "section": "GitHub & Open Source",
+      "headline": "ggml-org/llama.cpp",
+      "summary": "v1.0.0 promises a stable API and ABI for downstream apps ([Hugging Face blog](https://huggingface.co/blog/ggml-org/llama-cpp-v1)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ggml-org/llama.cpp",
+          "url": "https://github.com/ggml-org/llama.cpp"
+        },
+        {
+          "label": "Hugging Face blog",
+          "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "mattpocock-skills",
+      "section": "GitHub & Open Source",
+      "headline": "mattpocock/skills",
+      "summary": "Small adaptable agent skills, one of the most-starred repos in the agent ecosystem this year ([Analytics Vidhya](https://www.analyticsvidhya.com/blog/2026/09/top-github-repositories-august-2026/)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills"
+        },
+        {
+          "label": "Analytics Vidhya",
+          "url": "https://www.analyticsvidhya.com/blog/2026/09/top-github-repositories-august-2026/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "tt-a1i-archify-and-cathrynlavery-diagram-design",
+      "section": "GitHub & Open Source",
+      "headline": "tt-a1i/archify and cathrynlavery/diagram-design",
+      "summary": "Agent-driven diagramming, relevant if you document flows and architecture. [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "tt-a1i/archify and cathrynlavery/diagram-design",
+          "url": "https://github.com/tt-a1i/archify"
+        },
+        {
+          "label": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "openai-robotics-team-shutdown",
+      "section": "Social Buzz",
+      "headline": "OpenAI robotics team shutdown",
+      "kicker": "Reddit, r/artificial",
+      "summary": "The OpenAI robotics team shutdown thread is driving debate on whether LLMs can really drive hardware ([thread](https://www.reddit.com/r/artificial/comments/1xvivdy/openai_is_so_convinced_that_llms_will_become)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenAI robotics team shutdown",
+          "url": "https://www.reddit.com/r/artificial/comments/1xvivdy/openai_is_so_convinced_that_llms_will_become"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "altman-s-local-inference-remark",
+      "section": "Social Buzz",
+      "headline": "Altman's local inference remark",
+      "kicker": "Reddit, r/LocalLLaMA",
+      "summary": "The week's central argument was Sam Altman's remark that local inference is a poor use of scarce resources, which drew thousands of comments and spilled into subscription cancellations. This is from late October but still shapes the local-model push ([AI Signal digest](https://buttondown.com/ai-signal/archive/ai-signal-november-03-2026/)). Japanese social media is also discussing saving open-weight models locally ([AI News Morning Edition](https://note.com/gifted_ixora801/n/n624f48273f80?hl=en)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Altman's local inference remark",
+          "url": "https://buttondown.com/ai-signal/archive/ai-signal-november-03-2026/"
+        },
+        {
+          "label": "AI News Morning Edition",
+          "url": "https://note.com/gifted_ixora801/n/n624f48273f80?hl=en"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "product-hunt-mcp-leads-nov-9",
+      "section": "Social Buzz",
+      "headline": "Product Hunt MCP leads Nov. 9",
+      "kicker": "Product Hunt",
+      "summary": "[Product Hunt MCP](https://aitoolly.com/en/producthunt-daily/2026-11-09) led Nov. 9, followed by Dageno AI 2.0 and Databox CLI. MCP-everything remains the launch pattern.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Product Hunt MCP leads Nov. 9",
+          "url": "https://aitoolly.com/en/producthunt-daily/2026-11-09"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "no-fresh-high-signal-threads",
+      "section": "Social Buzz",
+      "headline": "No fresh high-signal threads",
+      "kicker": "Hacker News and X",
+      "summary": "No fresh high-signal threads surfaced in today's search, so none are included.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "ai-assisted-product-design-what-your-design-system-must-enfo",
+      "section": "Learning Corner",
+      "headline": "AI-assisted product design: what your design system must enforce",
+      "kicker": "Article",
+      "summary": "Frames discovery, design and generation as three zones and shows where teams lose control. Worth 11 minutes.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "AI-assisted product design: what your design system must enforce",
+          "url": "https://www.thinslices.com/insights/ai-assisted-product-design-system"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "designing-with-ai-claude-codex-figma-ui-collective-87-min",
+      "section": "Learning Corner",
+      "headline": "Designing With AI: Claude, Codex, Figma (UI Collective, 87 min)",
+      "kicker": "Video",
+      "summary": "Covers the AI design stack, Figma skills and MCP setup, and how to avoid generic output. Watch the Figma MCP chapter first.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Designing With AI: Claude, Codex, Figma (UI Collective, 87 min)",
+          "url": "https://www.youtube.com/watch?v=j_ZPV10bu54"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "shadcn-ui-lint-2",
+      "section": "Learning Corner",
+      "headline": "shadcn-ui/lint",
+      "kicker": "GitHub project",
+      "summary": "Read the rule contracts to learn how to write policy for agent readers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "shadcn-ui/lint",
+          "url": "https://github.com/shadcn-ui/lint"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "figma-agent-video-tutorials",
+      "section": "Learning Corner",
+      "headline": "Figma agent video tutorials",
+      "kicker": "Design resource",
+      "summary": "Includes teaching the agent your design system with guidelines and building an agent-ready system.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma agent video tutorials",
+          "url": "https://forum.figma.com/product-updates-3/make-the-most-of-the-figma-agent-with-these-video-tutorials-59921"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "from-figma-to-claude-code-and-back-lenny-s-newsletter",
+      "section": "Learning Corner",
+      "headline": "From Figma to Claude Code and back (Lenny's Newsletter)",
+      "kicker": "AI workflow",
+      "summary": "Pull a running app into Figma via MCP, edit, and push changes back to code to eliminate drift.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "From Figma to Claude Code and back (Lenny's Newsletter)",
+          "url": "https://www.lennysnewsletter.com/p/from-figma-to-claude-code-and-back"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "agent-checkout-ux",
+      "section": "Opportunities",
+      "headline": "Agent checkout UX",
+      "summary": "ChatGPT Wallet creates demand for approval, limit and failure-recovery patterns. Publish a teardown or prototype to stand out.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "merchant-side-agent-traffic",
+      "section": "Opportunities",
+      "headline": "Merchant-side agent traffic",
+      "summary": "OpenAI's Commerce Partner Playbook means merchants need dashboards that show which agents visit, buy and bounce. A natural fit for courier and merchant product work.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "design-system-enforcement-for-agents",
+      "section": "Opportunities",
+      "headline": "Design system enforcement for agents",
+      "summary": "Write the rules, tokens and lint configs that keep AI output on-brand. Few designers can do this, and it pairs visual taste with tooling.",
+      "why_it_matters": null,
+      "links": [],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "agent-readable-content-design",
+      "section": "Opportunities",
+      "headline": "Agent-readable content design",
+      "summary": "With [Kitesurf](https://www.digitaltrends.com/computing/cloudflares-new-browser-kitesurf-is-designed-for-ai-agents-to-browse-the-internet/) style browsers, structured and token-light pages become a design deliverable.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kitesurf",
+          "url": "https://www.digitaltrends.com/computing/cloudflares-new-browser-kitesurf-is-designed-for-ai-agents-to-browse-the-internet/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "skill-packs-for-the-figma-agent",
+      "section": "Opportunities",
+      "headline": "Skill packs for the Figma agent",
+      "summary": "Package a team's conventions as [Figma](https://www.figma.com) agent skills and sell or share them.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    },
+    {
+      "id": "lint-your-own-ai-output",
+      "section": "Today's Experiment",
+      "headline": "Lint your own AI output",
+      "kicker": "25 minutes",
+      "summary": "Take a small Tailwind v4 project, ideally one an agent built. Run npm install -D @shadcn/lint eslint @typescript-eslint/parser, enable the rules from the [repo](https://github.com/shadcn-ui/lint), and count violations. Then ask your coding agent to fix them using the lint messages only. Note how many passes it takes, and which messages the agent misreads. Those are the messages to rewrite.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "repo",
+          "url": "https://github.com/shadcn-ui/lint"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-15"
+    }
+  ],
+  "dont_miss": [
+    "Read the [ChatGPT Wallet coverage](https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-14) and sketch the approval flow you would design. Agent payments are the biggest new design surface this week.",
+    "Run the [@shadcn/lint](https://github.com/shadcn-ui/lint) experiment above. Highest practical payoff for anyone shipping AI-built UI.",
+    "Block time Wednesday and Thursday for the [Anthropic IPO](https://fourweekmba.com/ai-anthropics-ipo-day-by-day-pricing-18-nov-trading-19-nov/), and lock in [Gemini 4 Argon](https://codersera.com/blog/gemini-4-argon-complete-guide-2026/) tests before pricing changes on Nov. 30."
+  ],
+  "footnote": "Sources: news and tool links above, gathered Nov. 14 and 15, 2026 from web searches. Several items come from daily roundups, so details like Kitesurf's open-source status and Anthropic's oversubscription figure are as reported by those roundups. Items older than 48 hours are marked."
+}
