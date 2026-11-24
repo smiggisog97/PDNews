@@ -1,0 +1,698 @@
+{
+  "date": "2026-11-24",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1M-m19_CV31j8KYXljmO6zHRKvfNTa0NzEoC-YnmNp9g/edit",
+  "highlights": [
+    {
+      "headline": "OpenAI ships GPT-6.2 Astra and Sol.",
+      "ref": "gpt-6-2-astra-sol",
+      "summary": "A frontier tier and an efficient tier, with Sol at $2 input per million tokens ([OpenAI](https://openai.com/index/introducing-gpt-6-2-astra-sol))."
+    },
+    {
+      "headline": "Google launches Gemini 4 Neon.",
+      "ref": "gemini-4-neon",
+      "summary": "A mid-tier model now in [AI Studio](https://aistudio.google.com) and [Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/), pairable with Hydrogen as planner and executor."
+    },
+    {
+      "headline": "Figma code layers now read prototype flows.",
+      "ref": "figma-code-layers-prototype-context",
+      "summary": "The [November 3 release](https://releases.sh/figma) makes prototype connections part of what the agent understands."
+    },
+    {
+      "headline": "Google tests a homepage without a Search button.",
+      "ref": "google-homepage-ai-shortcuts",
+      "summary": "Three verb shortcuts replace it for signed-out desktop users ([Digital Trends](https://www.digitaltrends.com/computing/google-is-testing-an-ai-first-homepage-and-the-search-button-is-reportedly-taking-a-back-seat/))."
+    },
+    {
+      "headline": "Agents that execute dominate Product Hunt.",
+      "ref": "social-product-hunt-weekly",
+      "summary": "[Shareuhack](https://www.shareuhack.com/en/posts/product-hunt-weekly-2026-11-19) counts 12 of the top 20 launches as AI products."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "The past 48 hours were light on brand-new design tools, so this list mixes this week's launches with recent tools that matter for today's news."
+  },
+  "entries": [
+    {
+      "why_it_matters": "A two-tier lineup makes cost routing a design decision. Cheap models handle most UI generation and copy; the expensive one is reserved for hard reasoning.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "gpt-6-2-astra-sol",
+      "section": "AI Industry News",
+      "headline": "OpenAI ships GPT-6.2 Astra and Sol",
+      "lead": true,
+      "summary": "On November 17, [OpenAI](https://openai.com) released GPT-6.2 Astra (frontier tier) and GPT-6.2 Sol (efficient tier) across [ChatGPT](https://chatgpt.com), [Codex](https://openai.com/codex) and the API. Astra lists at $8 input and $40 output per million tokens, Sol at $2 and $10 ([OpenAI](https://openai.com/index/introducing-gpt-6-2-astra-sol)). OpenAI says Sol lands within 0.5 points of Astra on coding at about one fifth of the cost. Independent testing is mixed: [Decrypt](https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark) reports Astra challenges [Anthropic](https://www.anthropic.com) on price but not on every benchmark.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Test Sol first for prototype and code-gen work. Escalate to Astra only where output quality visibly changes."
+      },
+      "links": [
+        {
+          "label": "OpenAI ships GPT-6.2 Astra and Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Codex",
+          "url": "https://openai.com/codex"
+        },
+        {
+          "label": "Decrypt",
+          "url": "https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Mid-tier models are now good enough for most agent work, which pushes the competition toward price per task rather than raw benchmarks.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "gemini-4-neon",
+      "section": "AI Industry News",
+      "headline": "Google launches Gemini 4 Neon",
+      "summary": "[Google](https://blog.google) released Gemini 4 Neon on November 18, positioned between Carbon (hardest long-horizon work) and Hydrogen (fast, everyday). It is live in [Google AI Studio](https://aistudio.google.com), the Gemini app for Pro and Ultra, and [Google Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/). [TestingCatalog](https://www.testingcatalog.com/google-launches-gemini-4-neon-on-gemini-antigravity-and-apis.md) reports it debuts second on the Vals Index at less than half the cost per task of the leader.",
+      "takeaway": {
+        "label": "For designers",
+        "text": "If you prototype with Gemini, Neon is the new default to try. Compare it against your current model on one real screen before switching."
+      },
+      "links": [
+        {
+          "label": "Google launches Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        },
+        {
+          "label": "Google AI Studio",
+          "url": "https://aistudio.google.com"
+        },
+        {
+          "label": "Google Antigravity",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        },
+        {
+          "label": "TestingCatalog",
+          "url": "https://www.testingcatalog.com/google-launches-gemini-4-neon-on-gemini-antigravity-and-apis.md"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "The most visited page on the web is promoting task shortcuts over a search box. Entry points are shifting from \"ask anything\" to \"pick a job.\"",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "google-homepage-ai-shortcuts",
+      "section": "AI Industry News",
+      "headline": "Google tests an AI-first desktop homepage",
+      "summary": "Google is testing a desktop homepage for signed-out users that drops the Google Search button for three shortcuts: Create images, Ask about files and Brainstorm ([Digital Trends](https://www.digitaltrends.com/computing/google-is-testing-an-ai-first-homepage-and-the-search-button-is-reportedly-taking-a-back-seat/), [PCGuide](https://www.pcguide.com/pro/news-pro/google-begins-rolling-out-ai-focused-homepage-ditches-search-button-to-make-room-for-tools-like-image-generation/)). Search VP Robby Stein called it a small test. The shortcuts vanish after sign-in.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Audit your own empty states. Verb-led shortcuts convert blank-prompt anxiety into a first action."
+      },
+      "links": [
+        {
+          "label": "Google tests an AI-first desktop homepage",
+          "url": "https://www.digitaltrends.com/computing/google-is-testing-an-ai-first-homepage-and-the-search-button-is-reportedly-taking-a-back-seat/"
+        },
+        {
+          "label": "PCGuide",
+          "url": "https://www.pcguide.com/pro/news-pro/google-begins-rolling-out-ai-focused-homepage-ditches-search-button-to-make-room-for-tools-like-image-generation/"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Flows, not single frames, are what get translated into code. Your prototype wiring now carries real meaning to an agent.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "figma-code-layers-prototype-context",
+      "section": "Product Design & UX",
+      "headline": "Figma code layers now read prototype connections",
+      "summary": "[Figma](https://www.figma.com)'s November 3 release notes say that when you create a code layer from design frames, the agent now reads the connections and interactions between those frames ([Figma release notes](https://releases.sh/figma)). It builds on October's Config India launch of [Figma Specs](https://aiweekly.co/alerts/figma-config-india-debuts-figma-specs-markdown-editor-and-opens-code-layers), a Markdown editor for design rules that both people and agents follow, and [TechCrunch](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/) coverage of the agent's code-editing abilities.",
+      "why_label": "Practical value",
+      "takeaway": {
+        "label": "For designers",
+        "text": "Clean up prototype connections and name your frames. The tidier the flow, the better the generated code."
+      },
+      "links": [
+        {
+          "label": "Figma code layers now read prototype connections",
+          "url": "https://releases.sh/figma"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Figma Specs",
+          "url": "https://aiweekly.co/alerts/figma-config-india-debuts-figma-specs-markdown-editor-and-opens-code-layers"
+        },
+        {
+          "label": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Splitting thinking from doing is a workflow pattern you can copy by hand in any tool: plan with the strong model, execute with the cheap one.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "antigravity-planner-executor",
+      "section": "Product Design & UX",
+      "headline": "Antigravity pairs a planner model with an executor model",
+      "summary": "[Google Antigravity](https://antigravity.google)'s Orchestrator can now run Gemini 4 Neon as the planner and Gemini 4 Hydrogen as the executor inside one session ([Antigravity blog](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/)).",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Antigravity pairs a planner model with an executor model",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        },
+        {
+          "label": "Google Antigravity",
+          "url": "https://antigravity.google"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-24",
+      "id": "magic-patterns-agent",
+      "section": "New AI Tools",
+      "headline": "Magic Patterns",
+      "summary": "AI design agent that takes an idea to production UI, with Skills (instruction files), Connectors for outside context and MCP 2.0 to export code to coding agents ([launch post](https://www.magicpatterns.com/blog/magic-patterns-agent-2-0)). Also on [Product Hunt](https://www.producthunt.com/products/magicpatterns).",
+      "audience": "product designers who want prototypes that hand off cleanly to engineers.",
+      "links": [
+        {
+          "label": "Magic Patterns",
+          "url": "https://www.magicpatterns.com"
+        },
+        {
+          "label": "launch post",
+          "url": "https://www.magicpatterns.com/blog/magic-patterns-agent-2-0"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/products/magicpatterns"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-24",
+      "id": "google-antigravity",
+      "section": "New AI Tools",
+      "headline": "Google Antigravity",
+      "summary": "Agent-first coding environment with an Orchestrator that can pair Gemini 4 Neon and Hydrogen in one session.",
+      "audience": "designers comfortable shipping real prototypes through a coding agent.",
+      "links": [
+        {
+          "label": "Google Antigravity",
+          "url": "https://antigravity.google"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-24",
+      "id": "chrome-devtools-mcp-tool",
+      "section": "New AI Tools",
+      "headline": "Chrome DevTools MCP",
+      "summary": "Lets coding agents inspect a live Chrome page, read console and network data and record performance traces. Setup is one `npx` line. Anything open in that browser is visible to the agent.",
+      "audience": "designers who want agents to check their own UI in a real browser.",
+      "links": [
+        {
+          "label": "Chrome DevTools MCP",
+          "url": "https://developer.chrome.com/blog/chrome-devtools-mcp"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-24",
+      "id": "figma-agent-code-layers",
+      "section": "New AI Tools",
+      "headline": "Figma agent and code layers",
+      "summary": "The Figma agent edits prototypes and design systems, and code layers put executable code on the canvas. Availability still varies by plan and beta status, so check your workspace.",
+      "audience": "teams already designing in Figma who want a path to code.",
+      "links": [
+        {
+          "label": "Figma agent and code layers",
+          "url": "https://www.figma.com"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-24",
+      "id": "google-ai-studio",
+      "section": "New AI Tools",
+      "headline": "Google AI Studio",
+      "summary": "Fastest way to try Gemini 4 Neon in a prompt playground and get an API key for prototypes.",
+      "audience": "designers testing a new model on real screens.",
+      "links": [
+        {
+          "label": "Google AI Studio",
+          "url": "https://aistudio.google.com"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Interfaces need approval steps, progress views and undo for work an agent did on your behalf.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "trend-agents-execution",
+      "section": "Trends to Watch",
+      "headline": "Agents move from answers to execution",
+      "summary": "[Shareuhack](https://www.shareuhack.com/en/posts/product-hunt-weekly-2026-11-19)'s Product Hunt weekly finds 12 of the top 20 launches carry an AI topic, with the theme of agents that execute, collaborate and test their own work.",
+      "why_label": "Why now",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Study how agent products show plans, diffs and confirmations before they act."
+      },
+      "links": [
+        {
+          "label": "Agents move from answers to execution",
+          "url": "https://www.shareuhack.com/en/posts/product-hunt-weekly-2026-11-19"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Picking the right model per task is becoming part of product design, because it sets latency, cost and quality.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "trend-tiered-models",
+      "section": "Trends to Watch",
+      "headline": "Tiered models and cost routing",
+      "summary": "[OpenAI](https://openai.com/index/introducing-gpt-6-2-astra-sol) and [Google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) both shipped frontier plus efficient tiers in the same week.",
+      "why_label": "Why now",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Learn to read cost per task, not just benchmark scores."
+      },
+      "links": [
+        {
+          "label": "Tiered models and cost routing",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Your design system now has two audiences, people and agents.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "trend-design-rules-for-agents",
+      "section": "Trends to Watch",
+      "headline": "Design rules written for agents",
+      "summary": "[Figma Specs](https://aiweekly.co/alerts/figma-config-india-debuts-figma-specs-markdown-editor-and-opens-code-layers) and Magic Patterns [Skills](https://www.magicpatterns.com/blog/magic-patterns-agent-2-0) both move design guidance into Markdown files that agents read.",
+      "why_label": "Why now",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Practice writing design rules as short, testable Markdown instructions."
+      },
+      "links": [
+        {
+          "label": "Design rules written for agents",
+          "url": "https://aiweekly.co/alerts/figma-config-india-debuts-figma-specs-markdown-editor-and-opens-code-layers"
+        },
+        {
+          "label": "Skills",
+          "url": "https://www.magicpatterns.com/blog/magic-patterns-agent-2-0"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Each verb names a job, so users skip the blank-prompt problem. Gating only image creation behind sign-in keeps the first step free.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "insp-google-homepage",
+      "section": "Product Design Inspiration",
+      "headline": "Google's verb-led homepage shortcuts",
+      "summary": "Three plain verbs replace the Search button: [Create images, Ask about files, Brainstorm](https://www.pcguide.com/pro/news-pro/google-begins-rolling-out-ai-focused-homepage-ditches-search-button-to-make-room-for-tools-like-image-generation/).",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Google's verb-led homepage shortcuts",
+          "url": "https://www.pcguide.com/pro/news-pro/google-begins-rolling-out-ai-focused-homepage-ditches-search-button-to-make-room-for-tools-like-image-generation/"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "It makes a complex architecture legible as one mental model: one thinks, one does.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "insp-orchestrator",
+      "section": "Product Design Inspiration",
+      "headline": "Antigravity's planner and executor in one session",
+      "summary": "[Antigravity](https://antigravity.google) exposes a model pairing as a single choice instead of two separate tools.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Antigravity's planner and executor in one session",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        },
+        {
+          "label": "Antigravity",
+          "url": "https://antigravity.google"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "One source of truth for both audiences removes the translation step where design intent usually gets lost.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "insp-figma-specs",
+      "section": "Product Design Inspiration",
+      "headline": "Figma Specs as a shared rulebook",
+      "summary": "[Figma](https://www.figma.com) frames Specs as one document that designers and agents obey equally.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Figma Specs as a shared rulebook",
+          "url": "https://aiweekly.co/alerts/figma-config-india-debuts-figma-specs-markdown-editor-and-opens-code-layers"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Agents that can see the real rendered page fix UI bugs instead of guessing.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "repo-chrome-devtools-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Official [Chrome](https://developer.chrome.com/blog/chrome-devtools-mcp) MCP server that gives coding agents browser debugging, traces and network data.",
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        },
+        {
+          "label": "Chrome",
+          "url": "https://developer.chrome.com/blog/chrome-devtools-mcp"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "The default way for agents to read issues, PRs and code, so it sets the pattern other servers follow.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "repo-github-mcp-server",
+      "section": "GitHub & Open Source",
+      "headline": "github/github-mcp-server",
+      "summary": "[GitHub](https://github.com)'s official MCP server, ranked first in [Glama's November comparison](https://glama.ai/mcp/best/github) and updated November 21.",
+      "links": [
+        {
+          "label": "github/github-mcp-server",
+          "url": "https://github.com/github/github-mcp-server"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com"
+        },
+        {
+          "label": "Glama's November comparison",
+          "url": "https://glama.ai/mcp/best/github"
+        }
+      ]
+    },
+    {
+      "why_it_matters": "Useful for pulling reference UI and competitor content into agent workflows. Star counts come from a secondary blog, so check the repo.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "repo-scrapling",
+      "section": "GitHub & Open Source",
+      "headline": "D4Vinci/Scrapling",
+      "summary": "Web scraping framework with MCP server integration, covered in a [November trending roundup](https://www.coddykit.com/blog/github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w).",
+      "links": [
+        {
+          "label": "D4Vinci/Scrapling",
+          "url": "https://github.com/D4Vinci/Scrapling"
+        },
+        {
+          "label": "November trending roundup",
+          "url": "https://www.coddykit.com/blog/github-trending-november-2026-from-an-8k-star-rust-desktop-agent-to-a-92k-star-w"
+        }
+      ]
+    },
+    {
+      "kicker": "Product Hunt",
+      "why_it_matters": "Agent products price by outcome, which changes how you design checkout, quotas and receipts.",
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "social-product-hunt-weekly",
+      "section": "Social Buzz",
+      "headline": "Product Hunt: agents that execute, collaborate and test",
+      "summary": "The week's top launch per [Shareuhack](https://www.shareuhack.com/en/posts/product-hunt-weekly-2026-11-19) was an SEO and AI search execution tool priced per use ($3 per article), with 427 upvotes. Usage-based pricing for agent work is spreading. [Product Hunt](https://www.producthunt.com) also lists [Magic Patterns](https://www.magicpatterns.com) among recent design launches.",
+      "links": [
+        {
+          "label": "Product Hunt: agents that execute, collaborate and test",
+          "url": "https://www.shareuhack.com/en/posts/product-hunt-weekly-2026-11-19"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com"
+        },
+        {
+          "label": "Magic Patterns",
+          "url": "https://www.magicpatterns.com"
+        }
+      ]
+    },
+    {
+      "kicker": "Article",
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "learn-chrome-devtools-mcp",
+      "section": "Learning Corner",
+      "headline": "Chrome DevTools (MCP) for your AI agent",
+      "summary": "The [Chrome team's](https://developer.chrome.com/blog/chrome-devtools-mcp) own explainer of what agents can do in a live browser. Ten minutes, and it shows what an agent-checked UI loop looks like.",
+      "links": [
+        {
+          "label": "Chrome DevTools (MCP) for your AI agent",
+          "url": "https://developer.chrome.com/blog/chrome-devtools-mcp"
+        }
+      ]
+    },
+    {
+      "kicker": "Video",
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "learn-figma-code-layers-event",
+      "section": "Learning Corner",
+      "headline": "Figma agent and code layers session",
+      "summary": "[Figma's event page](https://fig-events.figma.com/figma-agent-code-layers/) for the agent and code layers session. No newly published video surfaced in the last 48 hours, so this is the best primary source on the design-to-code workflow.",
+      "links": [
+        {
+          "label": "Figma agent and code layers session",
+          "url": "https://fig-events.figma.com/figma-agent-code-layers/"
+        }
+      ]
+    },
+    {
+      "kicker": "GitHub project",
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "learn-github-mcp-server",
+      "section": "Learning Corner",
+      "headline": "github/github-mcp-server",
+      "summary": "Read the tool list in the [README](https://github.com/github/github-mcp-server) to learn what a well-scoped MCP server exposes to agents.",
+      "links": [
+        {
+          "label": "github/github-mcp-server",
+          "url": "https://github.com/github/github-mcp-server"
+        }
+      ]
+    },
+    {
+      "kicker": "Design resource",
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "learn-figma-config-india",
+      "section": "Learning Corner",
+      "headline": "Everything from Config India 2026",
+      "summary": "[Figma's forum recap](https://forum.figma.com/product-updates-3/here-s-everything-from-config-india-2026-59008) lists Specs, code layers and the agent in one place, with links to each feature's help page.",
+      "links": [
+        {
+          "label": "Everything from Config India 2026",
+          "url": "https://forum.figma.com/product-updates-3/here-s-everything-from-config-india-2026-59008"
+        }
+      ]
+    },
+    {
+      "kicker": "AI workflow",
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "learn-planner-executor-workflow",
+      "section": "Learning Corner",
+      "headline": "Planner and executor workflow",
+      "summary": "Follow [Antigravity's pairing](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/): plan with a strong model, execute with a fast one. You can replicate it in any chat tool with two prompts.",
+      "links": [
+        {
+          "label": "Planner and executor workflow",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "opp-model-routing-ux",
+      "section": "Opportunities",
+      "headline": "Model routing UX",
+      "summary": "With [OpenAI](https://openai.com/index/introducing-gpt-6-2-astra-sol) and [Google](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) both shipping tiers, products need clear ways to show users which model ran and what it cost. A case study on that is a fresh portfolio piece.",
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "opp-agent-readable-design-systems",
+      "section": "Opportunities",
+      "headline": "Agent-readable design systems",
+      "summary": "Teams adopting [Figma Specs](https://aiweekly.co/alerts/figma-config-india-debuts-figma-specs-markdown-editor-and-opens-code-layers) need someone to translate their system into rules agents follow. Offer that as a service or internal role.",
+      "links": [
+        {
+          "label": "Figma Specs",
+          "url": "https://aiweekly.co/alerts/figma-config-india-debuts-figma-specs-markdown-editor-and-opens-code-layers"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "opp-verb-led-entry-points",
+      "section": "Opportunities",
+      "headline": "Verb-led entry point redesigns",
+      "summary": "[Google's homepage test](https://www.digitaltrends.com/computing/google-is-testing-an-ai-first-homepage-and-the-search-button-is-reportedly-taking-a-back-seat/) shows the pattern. Audit a product's blank states and redesign them around three jobs.",
+      "links": [
+        {
+          "label": "Google's homepage test",
+          "url": "https://www.digitaltrends.com/computing/google-is-testing-an-ai-first-homepage-and-the-search-button-is-reportedly-taking-a-back-seat/"
+        }
+      ]
+    },
+    {
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "opp-usage-pricing-ux",
+      "section": "Opportunities",
+      "headline": "Usage-based pricing and receipts UX",
+      "summary": "Per-outcome pricing like [this week's top Product Hunt launch](https://www.shareuhack.com/en/posts/product-hunt-weekly-2026-11-19) needs clear quotas, previews and receipts. Few teams design this well.",
+      "links": [
+        {
+          "label": "this week's top Product Hunt launch",
+          "url": "https://www.shareuhack.com/en/posts/product-hunt-weekly-2026-11-19"
+        }
+      ]
+    },
+    {
+      "kicker": "25 minutes",
+      "why_it_matters": null,
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-24",
+      "id": "exp-planner-executor",
+      "section": "Today's Experiment",
+      "headline": "Run a planner and executor split on one screen",
+      "summary": "Outcome: a side-by-side of one screen built with a single model versus a plan-then-execute split.",
+      "steps": [
+        {
+          "label": "Step 1 (5 min)",
+          "text": "Open [Google AI Studio](https://aistudio.google.com) and pick one screen from your backlog."
+        },
+        {
+          "label": "Step 2 (8 min)",
+          "text": "Ask Gemini 4 Neon for a component and state plan only, no code."
+        },
+        {
+          "label": "Step 3 (8 min)",
+          "text": "Paste the plan into a faster model such as Gemini 4 Hydrogen and have it build the screen."
+        },
+        {
+          "label": "Step 4 (4 min)",
+          "text": "Compare the result with a one-shot build. Note quality, time and cost."
+        }
+      ],
+      "links": [
+        {
+          "label": "Run a planner and executor split on one screen",
+          "url": "https://aistudio.google.com"
+        }
+      ]
+    }
+  ],
+  "dont_miss": [
+    "Compare [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) and [GPT-6.2 Sol](https://openai.com/index/introducing-gpt-6-2-astra-sol) on one of your own screens before choosing a default model.",
+    "Tidy your prototype connections and frame names, since [Figma code layers](https://releases.sh/figma) now read them.",
+    "Read the [Chrome DevTools MCP explainer](https://developer.chrome.com/blog/chrome-devtools-mcp) and try it on one of your pages."
+  ],
+  "footnote": "Sourced from company announcements, release notes, tech press, Product Hunt digests and GitHub roundups published November 17 to 24, 2026. Hacker News, Reddit and X had no verifiable dated threads in search, so Social Buzz leans on Product Hunt. Some benchmark and star figures come from secondary outlets. Tool ratings are editorial judgments for a product designer working in AI-native workflows."
+}
