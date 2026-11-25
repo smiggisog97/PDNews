@@ -1,0 +1,701 @@
+{
+  "date": "2026-11-25",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1PRYfyaf-aETApNoSllWsTiPo8FeFTrNUHNUrcqCSPBo/edit",
+  "highlights": [
+    {
+      "headline": "Nvidia halts licensed Hopper shipments to China.",
+      "ref": "nvidia-hopper-china-halt",
+      "summary": "Disclosed on the November 18 earnings call: $2.4 billion last quarter, about 2 percent of revenue, now excluded from guidance ([TweakTown](https://www.tweaktown.com/news/114771/nvidia-stops-shipping-licensed-hopper-ai-chips-including-h200-to-china/index.html))."
+    },
+    {
+      "headline": "OpenAI pitches shared standards and an industry brake.",
+      "ref": "openai-industry-brake",
+      "summary": "[TheStreet](https://thestreet.com/technology/openai-pitches-an-industry-brake-after-anthropics-ipo) frames it as arriving days after Anthropic's IPO; OpenAI's [post](https://openai.com/index/building-standards-next-phase-ai/) calls for outside-audited, capability-based requirements."
+    },
+    {
+      "headline": "Figma's agent in FigJam and Slides is still beta, with credits coming.",
+      "ref": "figma-agent-fjam-slides",
+      "summary": "Reports disagree on open versus closed beta; Figma says usage will count against AI credits at general availability ([Figma forum](https://forum.figma.com/product-updates-3/everything-announced-at-config-2026-55221))."
+    },
+    {
+      "headline": "Figma admins can approve MCP clients.",
+      "ref": "figma-mcp-admin",
+      "summary": "A new Extensions tab in the admin console covers OAuth apps including [Cursor](https://cursor.com) and [Claude Code](https://code.claude.com/docs) ([release notes](https://www.figma.com/release-notes/))."
+    },
+    {
+      "headline": "Privacy plus monitoring is now a single enterprise pitch.",
+      "ref": "anthropic-efs",
+      "summary": "[Anthropic](https://www.anthropic.com)'s Enterprise Frontier Safeguards rolls out in phases through this fall ([Help Net Security](https://www.helpnetsecurity.com/2026/09/02/anthropic-enterprise-frontier-safeguards/))."
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Few brand-new design tools were verifiable in the past 48 hours, so this list mixes recent launches with tools that matter for this week's news."
+  },
+  "entries": [
+    {
+      "id": "nvidia-hopper-china-halt",
+      "section": "AI Industry News",
+      "headline": "Nvidia halts licensed Hopper chip shipments to China",
+      "summary": "[Nvidia](https://www.nvidia.com) has stopped shipping its US-licensed Hopper-generation AI chips, including the H200, to China. Interim CEO Colette Kress disclosed it on the November 18 earnings call. Those shipments brought in $2.4 billion last quarter, about 2 percent of revenue, and are excluded from guidance ([TweakTown](https://www.tweaktown.com/news/114771/nvidia-stops-shipping-licensed-hopper-ai-chips-including-h200-to-china/index.html)). Kress did not say why or whether the halt is permanent ([Business Today](https://www.businesstoday.in/technology/news/story/nvidias-2-4-billion-china-chip-business-hits-pause-interim-ceo-confirms-shipment-halt-568089-2026-11-18)).",
+      "why_it_matters": "Compute supply for Chinese AI labs just got tighter, and Nvidia's guidance now assumes no China Hopper revenue. Expect knock-on effects in model pricing and release cadence from the labs that rely on those chips.",
+      "links": [
+        {
+          "label": "Nvidia halts licensed Hopper chip shipments to China",
+          "url": "https://www.tweaktown.com/news/114771/nvidia-stops-shipping-licensed-hopper-ai-chips-including-h200-to-china/index.html"
+        },
+        {
+          "label": "Nvidia",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "label": "Business Today",
+          "url": "https://www.businesstoday.in/technology/news/story/nvidias-2-4-billion-china-chip-business-hits-pause-interim-ceo-confirms-shipment-halt-568089-2026-11-18"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "lead": true,
+      "takeaway": {
+        "label": "For builders",
+        "text": "If your product depends on a single model vendor, keep a fallback provider wired in. Supply shocks reach API pricing and rate limits first."
+      }
+    },
+    {
+      "id": "openai-industry-brake",
+      "section": "AI Industry News",
+      "headline": "OpenAI pitches an industry-wide brake after Anthropic's IPO",
+      "summary": "[OpenAI](https://openai.com) is pushing for shared safety standards and conditions under which labs would slow or pause frontier development, a pitch [TheStreet](https://thestreet.com/technology/openai-pitches-an-industry-brake-after-anthropics-ipo) framed as arriving days after Anthropic's IPO. OpenAI's own [standards post](https://openai.com/index/building-standards-next-phase-ai/) argues for capability-based requirements backed by outside auditors.",
+      "why_it_matters": "Whatever the motive, shared standards would shape what ships and when. Design teams building on frontier models should expect compliance and disclosure requirements to reach product surfaces.",
+      "links": [
+        {
+          "label": "OpenAI pitches an industry-wide brake after Anthropic's IPO",
+          "url": "https://thestreet.com/technology/openai-pitches-an-industry-brake-after-anthropics-ipo"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "OpenAI standards post",
+          "url": "https://openai.com/index/building-standards-next-phase-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25"
+    },
+    {
+      "id": "anthropic-efs",
+      "section": "AI Industry News",
+      "headline": "Anthropic's Enterprise Frontier Safeguards roll out in phases",
+      "summary": "[Anthropic](https://www.anthropic.com) announced Enterprise Frontier Safeguards on September 1: zero data retention paired with misuse monitoring whose data stays in the customer's own cloud. Rollout is phased, with broad availability targeted for later this fall ([Help Net Security](https://www.helpnetsecurity.com/2026/09/02/anthropic-enterprise-frontier-safeguards/)). Anthropic says it built it with more than 100 customers.",
+      "why_it_matters": "Privacy and safety monitoring are being sold as one package. That sets a bar competitors will be asked to match in enterprise reviews.",
+      "links": [
+        {
+          "label": "Anthropic's Enterprise Frontier Safeguards roll out in phases",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "Help Net Security",
+          "url": "https://www.helpnetsecurity.com/2026/09/02/anthropic-enterprise-frontier-safeguards/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25"
+    },
+    {
+      "id": "figma-agent-fjam-slides",
+      "section": "Product Design & UX",
+      "headline": "Figma's agent works in FigJam and Slides, still in beta",
+      "summary": "[Figma](https://www.figma.com)'s Config 2026 recap lists its agent as co-creating decks and boards in FigJam and Slides, in open beta on all paid plans ([Figma forum](https://forum.figma.com/product-updates-3/everything-announced-at-config-2026-55221)). Figma's credits page describes the same feature as a closed beta that does not consume AI credits yet, and says usage will count against monthly credits once it is generally available.",
+      "why_it_matters": "Plan for credit consumption before rolling the agent out to a whole team. Free beta usage will not last.",
+      "links": [
+        {
+          "label": "Figma's agent works in FigJam and Slides, still in beta",
+          "url": "https://forum.figma.com/product-updates-3/everything-announced-at-config-2026-55221"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "figma-mcp-admin",
+      "section": "Product Design & UX",
+      "headline": "Figma admins can approve MCP clients like Cursor and Claude Code",
+      "summary": "Figma's release notes describe a new Extensions tab in the admin console where admins approve OAuth apps, including MCP clients such as [Cursor](https://cursor.com) and [Claude Code](https://code.claude.com/docs) ([Figma release notes](https://www.figma.com/release-notes/)).",
+      "why_it_matters": "Agents reading and writing design files now go through the same approval path as any other integration. Useful ammunition if your security team has been blocking MCP access.",
+      "links": [
+        {
+          "label": "Figma admins can approve MCP clients like Cursor and Claude Code",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://code.claude.com/docs"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "framer-mcp",
+      "section": "Product Design & UX",
+      "headline": "Framer MCP connects Claude, ChatGPT, Codex and Cursor to your site",
+      "summary": "[Framer](https://www.framer.com) launched its official MCP server on October 22, letting agents such as [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com) and [Cursor](https://cursor.com) work on Framer projects ([Rango guide](https://rango.design/articles/framer-mcp)).",
+      "why_it_matters": "Designers can hand repetitive site edits to an agent without leaving the tool where the design system lives.",
+      "links": [
+        {
+          "label": "Framer MCP connects Claude, ChatGPT, Codex and Cursor to your site",
+          "url": "https://rango.design/articles/framer-mcp"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        },
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "tool-framer-mcp",
+      "section": "New AI Tools",
+      "headline": "Framer MCP",
+      "summary": "Official MCP server that lets coding and chat agents edit Framer projects.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Framer MCP",
+          "url": "https://www.framer.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-25",
+      "audience": "designers who ship marketing sites in Framer and want agent help with bulk edits."
+    },
+    {
+      "id": "tool-chrome-devtools-mcp",
+      "section": "New AI Tools",
+      "headline": "Chrome DevTools MCP",
+      "summary": "Gives agents performance tracing, network inspection and accessibility audits so they can check the UI they just built.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Chrome DevTools MCP",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-25",
+      "audience": "designers vibe coding who want an agent to verify its own output."
+    },
+    {
+      "id": "tool-claude-design",
+      "section": "New AI Tools",
+      "headline": "Claude Design",
+      "summary": "Create designs and interactive prototypes by chatting, with your design system attached and on-canvas editing.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude Design",
+          "url": "https://support.claude.com/en/articles/14604416-get-started-with-claude-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-25",
+      "audience": "fast concepting and design-system-aware mockups."
+    },
+    {
+      "id": "tool-cursor-live-apps",
+      "section": "New AI Tools",
+      "headline": "Cursor Build Live Apps",
+      "summary": "Describe an app and get database, auth and hosting behind a shareable link.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Cursor Build Live Apps",
+          "url": "https://cursor.com/docs/release-notes"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-25",
+      "audience": "designers shipping internal tools and prototypes with real data."
+    },
+    {
+      "id": "tool-lokuma",
+      "section": "New AI Tools",
+      "headline": "Lokuma Design Agent",
+      "summary": "A design layer that agents like Claude Code and Codex can call. The 2.0 website builder listing adds a design-aware agent harness for sites.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Lokuma Design Agent",
+          "url": "https://www.producthunt.com/products/lokuma-ai"
+        },
+        {
+          "label": "Lokuma Agentic Website Builder 2.0",
+          "url": "https://www.producthunt.com/products/agentic-website-builder-2-0-by-lokuma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-25",
+      "audience": "people who want agent-built pages that do not look generic."
+    },
+    {
+      "id": "tool-kokonut-ui",
+      "section": "New AI Tools",
+      "headline": "Kokonut UI",
+      "summary": "Open-source UI components your agent installs over MCP.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kokonut UI",
+          "url": "https://www.producthunt.com/products/kokonutui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-25",
+      "audience": "designers vibe coding React UIs who want consistent components."
+    },
+    {
+      "id": "trend-mcp-in-design-tools",
+      "section": "Trends to Watch",
+      "headline": "MCP becomes the standard door into design tools",
+      "summary": "[Figma](https://www.figma.com) now has an admin approval path for MCP clients and [Framer](https://www.framer.com) ships its own MCP server. Design tools are treating agents as first-class users that need permissions, not just plugins.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "Framer",
+          "url": "https://rango.design/articles/framer-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "takeaway": {
+        "label": "Learn",
+        "text": "how scoped OAuth consent, audit logs and revocation work for agent access to shared files."
+      }
+    },
+    {
+      "id": "trend-privacy-as-product",
+      "section": "Trends to Watch",
+      "headline": "Privacy and safety monitoring sold together",
+      "summary": "[Anthropic](https://www.anthropic.com)'s Enterprise Frontier Safeguards pairs zero retention with misuse monitoring that stays in the customer's cloud ([Anthropic](https://www.anthropic.com/news/enterprise-frontier-safeguards)). Buyers want both promises in one contract.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "takeaway": {
+        "label": "Learn",
+        "text": "how to explain data handling in AI features in plain language inside the product, not only in policy pages."
+      }
+    },
+    {
+      "id": "trend-shared-standards",
+      "section": "Trends to Watch",
+      "headline": "Shared capability standards enter the product conversation",
+      "summary": "[OpenAI](https://openai.com)'s call for common safety standards and conditions to slow development ([OpenAI](https://openai.com/index/building-standards-next-phase-ai/)) signals that disclosure and evaluation requirements may soon sit between models and products.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com/index/building-standards-next-phase-ai/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "takeaway": {
+        "label": "Learn",
+        "text": "how model cards, evals and usage limits get surfaced to end users."
+      }
+    },
+    {
+      "id": "insp-figma-extensions-tab",
+      "section": "Product Design Inspiration",
+      "headline": "Figma's Extensions tab for approving agent access",
+      "summary": "Admins approve OAuth apps and MCP clients in one dedicated place ([Figma release notes](https://www.figma.com/release-notes/)).",
+      "why_it_matters": "One list, one decision point, and agents appear next to every other integration. That makes agent access reviewable rather than invisible.",
+      "links": [
+        {
+          "label": "Figma's Extensions tab for approving agent access",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "insp-walmart-agent-profiles",
+      "section": "Product Design Inspiration",
+      "headline": "Walmart's Agent Profiles",
+      "summary": "Each authorized agent gets its own profile in the customer's [Walmart](https://www.walmart.com) account, without full purchase history ([Consumer Goods Technology](https://consumergoods.com/walmart-builds-infrastructure-agentic-commerce-implications-brands)).",
+      "why_it_matters": "It treats an agent like a household member with scoped access, a model people already understand from family accounts and card limits.",
+      "links": [
+        {
+          "label": "Walmart's Agent Profiles",
+          "url": "https://consumergoods.com/walmart-builds-infrastructure-agentic-commerce-implications-brands"
+        },
+        {
+          "label": "Walmart",
+          "url": "https://www.walmart.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "insp-chatgpt-pinnable-tabs",
+      "section": "Product Design Inspiration",
+      "headline": "ChatGPT's pinnable tab bar",
+      "summary": "Long-press any tool in the grid to pin it to the bar ([Digital Trends](https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/)).",
+      "why_it_matters": "Users define their own primary navigation while Home and the agent tab stay fixed for orientation. A clean answer to feature sprawl in a multi-vertical app.",
+      "links": [
+        {
+          "label": "ChatGPT's pinnable tab bar",
+          "url": "https://www.digitaltrends.com/computing/chatgpt-new-mobile-design/"
+        },
+        {
+          "label": "ChatGPT",
+          "url": "https://chatgpt.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "gh-chrome-devtools-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "ChromeDevTools/chrome-devtools-mcp",
+      "summary": "Performance tracing, network inspection and accessibility auditing for agents through MCP.",
+      "why_it_matters": "lets an agent verify the UI it just built, which is the missing step in most vibe coding loops.",
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Why now",
+      "kicker": "Still trending"
+    },
+    {
+      "id": "gh-ag-ui",
+      "section": "GitHub & Open Source",
+      "headline": "ag-ui-protocol/ag-ui",
+      "summary": "An event protocol connecting agent backends to interactive frontends, the layer between MCP (agent to tool) and your UI.",
+      "why_it_matters": "its event types read like a state list for every agent interface you will design next.",
+      "links": [
+        {
+          "label": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Why now",
+      "kicker": "Still trending"
+    },
+    {
+      "id": "gh-mobile-taste-skill",
+      "section": "GitHub & Open Source",
+      "headline": "draftbit/mobile-taste-skill",
+      "summary": "Claude Code skills that steer agents away from generic AI-looking mobile UI and persist decisions in a MOBILE-DESIGN.md file.",
+      "why_it_matters": "directly useful for vibe-coded mobile work.",
+      "links": [
+        {
+          "label": "draftbit/mobile-taste-skill",
+          "url": "https://github.com/draftbit/mobile-taste-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Why now",
+      "kicker": "Still trending"
+    },
+    {
+      "id": "gh-paperclip",
+      "section": "GitHub & Open Source",
+      "headline": "paperclipai/paperclip",
+      "summary": "Open-source project management for teams running AI agents, with support for Claude Code, Codex and others.",
+      "why_it_matters": "signals that managing agents is becoming its own job.",
+      "links": [
+        {
+          "label": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "why_label": "Why now",
+      "kicker": "Still trending"
+    },
+    {
+      "id": "social-product-hunt-lokuma",
+      "section": "Social Buzz",
+      "headline": "Design agents keep landing on Product Hunt",
+      "summary": "The [Lokuma Design Agent](https://www.producthunt.com/products/lokuma-ai) listing shows a daily number one Launch Award from March 21, and the [2.0 website builder](https://www.producthunt.com/products/agentic-website-builder-2-0-by-lokuma) listing carries a launched-this-week label. Makers are building design intelligence layers that other agents call rather than standalone design apps.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design agents keep landing on Product Hunt",
+          "url": "https://www.producthunt.com/products/lokuma-ai"
+        },
+        {
+          "label": "Lokuma 2.0",
+          "url": "https://www.producthunt.com/products/agentic-website-builder-2-0-by-lokuma"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "kicker": "Product Hunt"
+    },
+    {
+      "id": "lc-article",
+      "section": "Learning Corner",
+      "headline": "Developing Enterprise Frontier Safeguards with our customers",
+      "summary": "Anthropic's own write-up of how zero retention and misuse monitoring fit together. Short, and the clearest view of what enterprise buyers now ask for.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Developing Enterprise Frontier Safeguards with our customers",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "kicker": "Article"
+    },
+    {
+      "id": "lc-video",
+      "section": "Learning Corner",
+      "headline": "Config 2026 Keynote with Dylan Field",
+      "summary": "The reference for where Figma is heading with code layers, Motion and its agent.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Config 2026 Keynote with Dylan Field",
+          "url": "https://echai.ventures/videos/figma-config-2026-keynote-with-dylan-field"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "kicker": "Video"
+    },
+    {
+      "id": "lc-github",
+      "section": "Learning Corner",
+      "headline": "ag-ui-protocol/ag-ui",
+      "summary": "Read the event types. They are effectively the state list for agent UIs: progress, tool calls, interrupts.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "kicker": "GitHub project"
+    },
+    {
+      "id": "lc-design",
+      "section": "Learning Corner",
+      "headline": "Everything announced at Config 2026",
+      "summary": "Figma's own recap of the agent, code layers and new beta features. Skim it to see which surfaces are shipping next.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Everything announced at Config 2026",
+          "url": "https://forum.figma.com/product-updates-3/everything-announced-at-config-2026-55221"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "kicker": "Design resource"
+    },
+    {
+      "id": "lc-workflow",
+      "section": "Learning Corner",
+      "headline": "Get started with Claude Design",
+      "summary": "Attach your design system, generate on canvas, then review on mobile. A good loop for async concept work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Get started with Claude Design",
+          "url": "https://support.claude.com/en/articles/14604416-get-started-with-claude-design"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "kicker": "AI workflow"
+    },
+    {
+      "id": "opp-agent-consent-ux",
+      "section": "Opportunities",
+      "headline": "Agent consent and access-review UX",
+      "summary": "[Figma](https://www.figma.com)'s Extensions tab and [Walmart](https://www.walmart.com)'s agent profiles show the pattern forming: scoped access, a review list, easy revocation. Case studies here are rare and valuable.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "Walmart",
+          "url": "https://consumergoods.com/walmart-builds-infrastructure-agentic-commerce-implications-brands"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25"
+    },
+    {
+      "id": "opp-data-handling-disclosure",
+      "section": "Opportunities",
+      "headline": "Data-handling disclosure inside AI features",
+      "summary": "With enterprise buyers asking for zero retention plus monitoring ([Anthropic](https://www.anthropic.com/news/enterprise-frontier-safeguards)), product teams need plain-language UI for where data goes. Few designers specialize in it yet.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25"
+    },
+    {
+      "id": "opp-agent-readable-design-systems",
+      "section": "Opportunities",
+      "headline": "Agent-readable design systems",
+      "summary": "Packaging your design system as an MCP server or skill file ([Kokonut UI](https://www.producthunt.com/products/kokonutui), [mobile-taste-skill](https://github.com/draftbit/mobile-taste-skill)) is high-leverage internal work.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Kokonut UI",
+          "url": "https://www.producthunt.com/products/kokonutui"
+        },
+        {
+          "label": "mobile-taste-skill",
+          "url": "https://github.com/draftbit/mobile-taste-skill"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25"
+    },
+    {
+      "id": "exp-devtools-mcp-audit",
+      "section": "Today's Experiment",
+      "headline": "Let an agent audit your own screen with DevTools MCP",
+      "summary": "Outcome: an accessibility and performance punch list for one live screen, produced by an agent.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Let an agent audit your own screen with DevTools MCP",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-25",
+      "kicker": "25 minutes",
+      "steps": [
+        {
+          "label": "Step 1 (8 min)",
+          "text": "Install [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) in your coding agent following the README."
+        },
+        {
+          "label": "Step 2 (7 min)",
+          "text": "Open one screen you shipped or prototyped in the browser and ask the agent to run an accessibility audit and a performance trace."
+        },
+        {
+          "label": "Step 3 (7 min)",
+          "text": "Compare the findings with your own review. Note what it caught that you missed and what it got wrong."
+        },
+        {
+          "label": "Step 4 (3 min)",
+          "text": "Fix the top two issues and save the prompt as a reusable review checklist."
+        }
+      ]
+    }
+  ],
+  "dont_miss": [
+    "Read [Anthropic's Enterprise Frontier Safeguards post](https://www.anthropic.com/news/enterprise-frontier-safeguards) and note how it packages privacy and monitoring for buyers.",
+    "Check whether your team's agents can be approved the way [Figma's Extensions tab](https://www.figma.com/release-notes/) handles MCP clients.",
+    "Run the 25 minute [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) audit experiment on one of your own screens."
+  ],
+  "footnote": "Sourced from search summaries of company posts, release notes and tech press dated September 1 to November 23, 2026. The past 24 hours were thin: outside pages could not be opened directly, so every claim here comes from search result summaries and is stated at that level. Hacker News, Reddit and X had no verifiable dated threads, so Social Buzz leans on Product Hunt, and several GitHub items are still trending from earlier briefs. Tool ratings are editorial judgments for a product designer working in AI-native workflows."
+}
