@@ -1,0 +1,677 @@
+{
+  "date": "2026-11-26",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1p3BLVWYmxsFHfnE_NCZVogqpLjoikm-IMoQks0Wr5BM/edit",
+  "highlights": [
+    {
+      "headline": "Google ships Gemini 4 Neon.",
+      "summary": "[Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) adds four thinking levels and a planner and executor pairing in [Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/).",
+      "ref": "gemini-4-neon"
+    },
+    {
+      "headline": "GPT-6.2 faces a skeptical reception.",
+      "summary": "Independent tests rank [Astra](https://openai.com/index/introducing-gpt-6-2-astra-sol) behind Claude Fable 5.2 ([Decrypt](https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark)).",
+      "ref": "gpt-6-2"
+    },
+    {
+      "headline": "Figma adds a Dev Mode agent.",
+      "summary": "It compares versions, requests code and exports assets ([Figma release notes feed](https://releasebot.io/updates/figma)).",
+      "ref": "figma-dev-mode-agent"
+    },
+    {
+      "headline": "Figma code layers read prototype connections.",
+      "summary": "Prototype flows now inform generated code ([Figma release notes](https://www.figma.com/release-notes/)).",
+      "ref": "figma-code-layers-agent"
+    },
+    {
+      "headline": "Agent access becomes an admin setting.",
+      "summary": "[Google Workspace MCP](https://developers.google.com/workspace/guides/configure-mcp-servers) requires an agent flag on OAuth clients.",
+      "ref": "workspace-mcp"
+    }
+  ],
+  "section_notes": {
+    "New AI Tools": "Few brand-new design tools were verifiable in the past 48 hours, so this list mixes this week's launches with recent ones that matter for the news."
+  },
+  "entries": [
+    {
+      "id": "gemini-4-neon",
+      "section": "AI Industry News",
+      "headline": "Google launches Gemini 4 Neon, a faster mid-tier model",
+      "summary": "On November 18, [Google](https://blog.google) released [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/), positioned between Gemini 4 Carbon and Gemini 4 Hydrogen. It offers 1 million token context, four thinking levels from Low to Extra High, and the model ID `gemini-4-neon` in the Gemini API and [Google AI Studio](https://aistudio.google.com). Google says it runs about three times faster than Carbon at comparable quality ([9to5Google](https://9to5google.com/2026/11/18/gemini-4-neon-announcement/)). In [Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/) you can pair Neon as planner with Hydrogen as executor in one session.",
+      "why_it_matters": "Speed and cost per task now decide model choice more than raw rank. Vendor figures are unverified, so test on your own prompts.",
+      "links": [
+        {
+          "label": "Google launches Gemini 4 Neon, a faster mid-tier model",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "label": "Google",
+          "url": "https://blog.google"
+        },
+        {
+          "label": "Google AI Studio",
+          "url": "https://aistudio.google.com"
+        },
+        {
+          "label": "9to5Google",
+          "url": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/"
+        },
+        {
+          "label": "Antigravity",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Route planning to the larger model and execution to the cheaper one. Neon's thinking levels give you a cost dial per request."
+      },
+      "lead": true
+    },
+    {
+      "id": "gpt-6-2",
+      "section": "AI Industry News",
+      "headline": "OpenAI ships GPT-6.2 Astra and Sol to a mixed reception",
+      "summary": "[OpenAI](https://openai.com) released [GPT-6.2 Astra and Sol](https://openai.com/index/introducing-gpt-6-2-astra-sol) on November 17. Astra is priced at $8 input and $40 output per million tokens, Sol at $2 and $10. OpenAI claims first place on its chosen benchmarks, but [Decrypt](https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark) reports independent tests rank Astra second behind Claude Fable 5.2, and [The Next Web](https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers) says Epoch AI found it trails on real work.",
+      "why_it_matters": "Launch benchmarks and independent evals disagree again. Keep a small private eval set so a model swap is a measured decision.",
+      "links": [
+        {
+          "label": "OpenAI ships GPT-6.2 Astra and Sol to a mixed reception",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        },
+        {
+          "label": "Decrypt",
+          "url": "https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark"
+        },
+        {
+          "label": "The Next Web",
+          "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Sol at one-fifth the price of Astra is the model to trial for high-volume UI generation and code review."
+      }
+    },
+    {
+      "id": "frontier-safety-warning",
+      "section": "AI Industry News",
+      "headline": "Staff at Anthropic and OpenAI reportedly doubt their top models can ship safely",
+      "summary": "[Digitimes](https://digitimes.com/news/a20261125VL225/openai-anthropic-llm-2026.html) reports, citing Axios, that many employees at [Anthropic](https://www.anthropic.com) and OpenAI no longer believe their most powerful unreleased models can be released safely.",
+      "why_it_matters": "Expect staggered, partner-first releases and tighter safeguards on the strongest models. Plan product roadmaps around the models you can actually get.",
+      "links": [
+        {
+          "label": "Staff at Anthropic and OpenAI reportedly doubt their top models can ship safely",
+          "url": "https://digitimes.com/news/a20261125VL225/openai-anthropic-llm-2026.html"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "workspace-mcp",
+      "section": "AI Industry News",
+      "headline": "Google Workspace MCP servers gate agent access with a dedicated OAuth flag",
+      "summary": "Google's [Workspace MCP setup guide](https://developers.google.com/workspace/guides/configure-mcp-servers) covers the remote servers for Gmail, Drive and Calendar. OAuth clients that call them must have \"Use this client for an AI-powered agent\" selected in Google Auth Platform, and admins can allowlist specific MCP tools.",
+      "why_it_matters": "Agents that touch user data are getting an explicit, admin-controlled consent layer. That is a design surface, not just a security setting.",
+      "links": [
+        {
+          "label": "Google Workspace MCP servers gate agent access with a dedicated OAuth flag",
+          "url": "https://developers.google.com/workspace/guides/configure-mcp-servers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "takeaway": {
+        "label": "For designers",
+        "text": "If your product connects agents to Gmail or Drive, design the approval, scope and revoke screens now."
+      }
+    },
+    {
+      "id": "figma-dev-mode-agent",
+      "section": "Product Design & UX",
+      "headline": "Figma adds a Dev Mode agent for inspecting and handing off designs",
+      "summary": "According to [Figma's release notes feed](https://releasebot.io/updates/figma), a November 19 update gives [Figma](https://www.figma.com) a Dev Mode agent that can explore designs, compare versions, request code snippets and download assets in bulk. Figma's [help article](https://help.figma.com/hc/en-us/articles/37998629035799) says Dev seats can chat with the agent while Full seats can also have it edit.",
+      "why_it_matters": "Handoff questions that used to wait on a designer can be answered by an agent that reads the file.",
+      "links": [
+        {
+          "label": "Figma adds a Dev Mode agent for inspecting and handing off designs",
+          "url": "https://releasebot.io/updates/figma"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Figma agent help article",
+          "url": "https://help.figma.com/hc/en-us/articles/37998629035799"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "figma-3d-transforms",
+      "section": "Product Design & UX",
+      "headline": "Figma 3D transforms bring perspective and depth to the canvas",
+      "summary": "A November 12 update adds 3D transforms with on-canvas rotation, adjustable depth and perspective, live previews, and handoff to motion and CSS ([Figma release notes](https://www.figma.com/release-notes/)).",
+      "why_it_matters": "Card flips, tilt effects and depth cues can be designed and handed off without leaving Figma.",
+      "links": [
+        {
+          "label": "Figma 3D transforms bring perspective and depth to the canvas",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "figma-code-layers-agent",
+      "section": "Product Design & UX",
+      "headline": "Code layers now read prototype connections",
+      "summary": "A November 3 note says the agent now reads prototype connections and interactions between frames when it creates a code layer, and that code layers are in open beta ([Figma release notes](https://www.figma.com/release-notes/)). Figma's own [help center](https://help.figma.com/hc/en-us/articles/37998629035799) still labels the agent beta, so check your plan before relying on GA.",
+      "why_it_matters": "Your prototype flows become the spec for generated code, so tidy connections now pay off later.",
+      "links": [
+        {
+          "label": "Code layers now read prototype connections",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "Figma agent help article",
+          "url": "https://help.figma.com/hc/en-us/articles/37998629035799"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "tool-antigravity",
+      "section": "New AI Tools",
+      "headline": "Google Antigravity",
+      "summary": "Google's agent-first coding environment, now running [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) with a planner and executor pairing.",
+      "why_it_matters": "Try the Neon plus Hydrogen split on one real feature and compare cost and speed.",
+      "links": [
+        {
+          "label": "Google Antigravity",
+          "url": "https://antigravity.google"
+        },
+        {
+          "label": "Gemini 4 Neon in Antigravity",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-26",
+      "audience": "Designers who prototype in code, and developers.",
+      "kicker": "Nov 18"
+    },
+    {
+      "id": "tool-figma-agent",
+      "section": "New AI Tools",
+      "headline": "Figma agent and Dev Mode agent",
+      "summary": "Canvas agent plus a Dev Mode agent that compares versions, pulls code and exports assets. See [Figma](https://www.figma.com).",
+      "why_it_matters": "Worth a trial on one real handoff this week.",
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Figma agent help article",
+          "url": "https://help.figma.com/hc/en-us/articles/37998629035799"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-26",
+      "audience": "Product designers and design-system owners.",
+      "kicker": "Nov 19"
+    },
+    {
+      "id": "tool-framelink",
+      "section": "New AI Tools",
+      "headline": "Framelink MCP for Figma",
+      "summary": "Open source MCP server that feeds Figma layout and styling data to coding agents. Works with any Figma account.",
+      "why_it_matters": "Useful if your agent should build from real frames, not screenshots.",
+      "links": [
+        {
+          "label": "Framelink MCP for Figma",
+          "url": "https://github.com/GLips/Figma-Context-MCP"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-26",
+      "audience": "Designers and engineers using Cursor or Claude Code.",
+      "kicker": "Open source"
+    },
+    {
+      "id": "tool-magic-patterns",
+      "section": "New AI Tools",
+      "headline": "Magic Patterns Agent 2.0",
+      "summary": "Design-system-aware prototyping agent that builds interactive mockups from your own components and hands off to engineering. See the [Product Hunt listing](https://www.producthunt.com/posts/magic-patterns-agent-2-0).",
+      "why_it_matters": "Strong for concept work that must look like your product.",
+      "links": [
+        {
+          "label": "Magic Patterns Agent 2.0",
+          "url": "https://www.magicpatterns.com/blog/magic-patterns-agent-2-0"
+        },
+        {
+          "label": "Product Hunt listing",
+          "url": "https://www.producthunt.com/posts/magic-patterns-agent-2-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-26",
+      "audience": "Product designers and PMs.",
+      "kicker": "Apr 23"
+    },
+    {
+      "id": "tool-canva-magic-layers",
+      "section": "New AI Tools",
+      "headline": "Canva Magic Layers",
+      "summary": "Turns a flat image into editable layers in the [Canva](https://www.canva.com) editor. Fast Company covers the launch.",
+      "why_it_matters": "Handy for rescuing AI-generated images you cannot edit.",
+      "links": [
+        {
+          "label": "Canva Magic Layers",
+          "url": "https://www.fastcompany.com/91506292/canva-new-magic-layers-ai-tool-will-break-your-design-process"
+        },
+        {
+          "label": "Canva",
+          "url": "https://www.canva.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 6,
+      "date": "2026-11-26",
+      "audience": "Designers and marketers.",
+      "kicker": "Mar 2026"
+    },
+    {
+      "id": "trend-agent-access",
+      "section": "Trends to Watch",
+      "headline": "Agent access is becoming an admin-controlled surface",
+      "summary": "[Figma](https://www.figma.com) now lets admins approve OAuth apps, with MCP clients such as [Cursor](https://cursor.com) and [Claude Code](https://claude.com/product/claude-code) on the allowlist ([Figma release notes](https://www.figma.com/release-notes/)). Google's [Workspace MCP guide](https://developers.google.com/workspace/guides/configure-mcp-servers) adds a per-client agent flag.",
+      "why_it_matters": "Consent, scope and revocation are product features, and users will judge you on them.",
+      "links": [
+        {
+          "label": "Figma release notes",
+          "url": "https://www.figma.com/release-notes/"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://claude.com/product/claude-code"
+        },
+        {
+          "label": "Google Workspace MCP guide",
+          "url": "https://developers.google.com/workspace/guides/configure-mcp-servers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Study how OAuth consent screens list scopes and how revocation is surfaced."
+      }
+    },
+    {
+      "id": "trend-planner-executor",
+      "section": "Trends to Watch",
+      "headline": "Planner and executor model pairing",
+      "summary": "[Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/) now pairs Gemini 4 Neon as planner with Gemini 4 Hydrogen as executor in one session.",
+      "why_it_matters": "Two-tier agents cut cost without losing plan quality, and the UI has to show which model did what.",
+      "links": [
+        {
+          "label": "Planner and executor model pairing",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Practice designing agent run views that separate plan steps from execution steps."
+      }
+    },
+    {
+      "id": "insp-3d-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "On-canvas 3D controls in Figma",
+      "summary": "Rotation and perspective handles sit directly on the selected layer, with a live preview ([Figma release notes](https://www.figma.com/release-notes/)).",
+      "why_it_matters": "Direct manipulation removes the numeric-field round trip.",
+      "links": [
+        {
+          "label": "On-canvas 3D controls in Figma",
+          "url": "https://www.figma.com/release-notes/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "insp-thinking-levels",
+      "section": "Product Design Inspiration",
+      "headline": "Thinking level as a visible dial",
+      "summary": "[Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) exposes four thinking levels, Low to Extra High, so users trade speed for depth per request.",
+      "why_it_matters": "It makes the cost-quality tradeoff explicit instead of hiding it.",
+      "links": [
+        {
+          "label": "Thinking level as a visible dial",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "insp-agent-seat",
+      "section": "Product Design Inspiration",
+      "headline": "Role-gated agent permissions",
+      "summary": "[Figma](https://help.figma.com/hc/en-us/articles/37998629035799) separates what the agent can do by seat: Dev seats chat without changing the design, Full seats can edit.",
+      "why_it_matters": "Permission follows an existing role, so nobody needs a new mental model.",
+      "links": [
+        {
+          "label": "Role-gated agent permissions",
+          "url": "https://help.figma.com/hc/en-us/articles/37998629035799"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "gh-framelink",
+      "section": "GitHub & Open Source",
+      "headline": "GLips/Figma-Context-MCP",
+      "summary": "MIT-licensed MCP server that gives coding agents Figma layout and styling data.",
+      "why_it_matters": "It is a common first step in design-to-code agent setups.",
+      "links": [
+        {
+          "label": "GLips/Figma-Context-MCP",
+          "url": "https://github.com/GLips/Figma-Context-MCP"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Why now",
+      "kicker": "Open source"
+    },
+    {
+      "id": "gh-mcp-guide",
+      "section": "GitHub & Open Source",
+      "headline": "figma/mcp-server-guide",
+      "summary": "[Figma](https://www.figma.com)'s official guide repository for its hosted MCP server.",
+      "why_it_matters": "First-party setup docs and rules files, directly relevant to this week's Dev Mode agent.",
+      "links": [
+        {
+          "label": "figma/mcp-server-guide",
+          "url": "https://github.com/figma/mcp-server-guide"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "why_label": "Why now",
+      "kicker": "Official"
+    },
+    {
+      "id": "social-gpt62",
+      "section": "Social Buzz",
+      "headline": "Builders push back on GPT-6.2 benchmarks",
+      "summary": "Early builder feedback on [GPT-6.2](https://openai.com/index/introducing-gpt-6-2-astra-sol) is rougher than OpenAI's claims, with Epoch AI reportedly finding it behind Claude Fable 5.2 on real work ([The Next Web](https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers)).",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Builders push back on GPT-6.2 benchmarks",
+          "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+        },
+        {
+          "label": "GPT-6.2",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "kicker": "Tech press"
+    },
+    {
+      "id": "social-magic-patterns",
+      "section": "Social Buzz",
+      "headline": "Design agents on Product Hunt",
+      "summary": "The [Magic Patterns Agent 2.0 listing](https://www.producthunt.com/posts/magic-patterns-agent-2-0) shows continued interest in design-system-aware agents.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Design agents on Product Hunt",
+          "url": "https://www.producthunt.com/posts/magic-patterns-agent-2-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "kicker": "Product Hunt"
+    },
+    {
+      "id": "lc-article",
+      "section": "Learning Corner",
+      "headline": "How Anthropic runs large-scale code migrations with Claude Code",
+      "summary": "Anthropic's write-up of the Bun Zig-to-Rust port. The lesson: fix the process loop, not the code.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "How Anthropic runs large-scale code migrations with Claude Code",
+          "url": "https://claude.com/blog/ai-code-migration"
+        }
+      ],
+      "image_url": "https://claude.com/resources/articles/ai-code-migration/opengraph-image/og",
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "kicker": "Article"
+    },
+    {
+      "id": "lc-github",
+      "section": "Learning Corner",
+      "headline": "GLips/Figma-Context-MCP",
+      "summary": "Read the README and try it on one frame.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "GLips/Figma-Context-MCP",
+          "url": "https://github.com/GLips/Figma-Context-MCP"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "kicker": "GitHub project"
+    },
+    {
+      "id": "lc-design",
+      "section": "Learning Corner",
+      "headline": "Guide to the Figma MCP server",
+      "summary": "Official setup and usage guide for connecting agents to your files.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Guide to the Figma MCP server",
+          "url": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "kicker": "Design resource"
+    },
+    {
+      "id": "lc-workflow",
+      "section": "Learning Corner",
+      "headline": "4 ways we're using our MCP server at Figma",
+      "summary": "Figma's own examples of agent workflows from design files.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "4 ways we're using our MCP server at Figma",
+          "url": "https://www.figma.com/blog/4-ways-were-using-our-mcp-server-at-figma/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "kicker": "AI workflow"
+    },
+    {
+      "id": "opp-agent-consent",
+      "section": "Opportunities",
+      "headline": "Agent consent and permission UX",
+      "summary": "[Figma](https://www.figma.com) and [Google](https://developers.google.com/workspace/guides/configure-mcp-servers) are both adding admin-controlled agent access. Case studies on consent, scope and revocation are scarce.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "label": "Google",
+          "url": "https://developers.google.com/workspace/guides/configure-mcp-servers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "opp-agent-run-views",
+      "section": "Opportunities",
+      "headline": "Agent run views for multi-model workflows",
+      "summary": "Planner and executor pairings ([Antigravity](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/)) need interfaces that show plan, execution and cost.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Antigravity",
+          "url": "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "opp-design-to-code-setup",
+      "section": "Opportunities",
+      "headline": "Design-to-code agent setups for your team",
+      "summary": "Configure [Framelink](https://github.com/GLips/Figma-Context-MCP) or the [Figma MCP server](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server) with your design system and document the workflow.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Framelink",
+          "url": "https://github.com/GLips/Figma-Context-MCP"
+        },
+        {
+          "label": "Figma MCP server",
+          "url": "https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26"
+    },
+    {
+      "id": "exp-framelink",
+      "section": "Today's Experiment",
+      "headline": "Build one screen from a real Figma frame",
+      "summary": "Outcome: one coded screen generated from a Figma frame through an agent.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Build one screen from a real Figma frame",
+          "url": "https://github.com/GLips/Figma-Context-MCP"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-26",
+      "kicker": "25 minutes",
+      "steps": [
+        {
+          "label": "Step 1 (8 min)",
+          "text": "Install [Framelink MCP for Figma](https://github.com/GLips/Figma-Context-MCP) in [Cursor](https://cursor.com) following the README."
+        },
+        {
+          "label": "Step 2 (7 min)",
+          "text": "Copy the link to one frame and ask the agent to build it with your component library."
+        },
+        {
+          "label": "Step 3 (7 min)",
+          "text": "Compare spacing, type and states with the frame. Note what the agent missed."
+        },
+        {
+          "label": "Step 4 (3 min)",
+          "text": "Save the prompt as a reusable handoff checklist."
+        }
+      ]
+    }
+  ],
+  "dont_miss": [
+    "Try the [Figma Dev Mode agent](https://help.figma.com/hc/en-us/articles/37998629035799) on one handoff.",
+    "Test [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) against your current model on one real prompt.",
+    "Run the [Framelink](https://github.com/GLips/Figma-Context-MCP) experiment on one frame."
+  ],
+  "footnote": "Sourced from search result summaries of company posts, release notes and tech press dated November 3 to November 26, 2026. The past 24 hours were thin on verified news. Outside pages could not be opened directly, so every claim is stated at the level of those summaries. Hacker News, Reddit and X had no verifiable dated threads, so Social Buzz is short. No verifiable video was found, so the Learning Corner has no video this time. Tool ratings are editorial judgments."
+}
