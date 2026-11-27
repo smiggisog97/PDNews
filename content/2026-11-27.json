@@ -1,0 +1,788 @@
+{
+  "date": "2026-11-27",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1APODVhIlH0GQzHZJ9kjznokXLQ-Cc_AhPMGNDmC3OUc/edit",
+  "highlights": [
+    {
+      "headline": "Anthropic is public",
+      "summary": "[Anthropic](https://www.anthropic.com) priced its IPO at $83 a share on Nov 18 and began trading on Nasdaq as ANT, raising about $81 billion in the largest listing on record.",
+      "ref": "anthropic-ipo"
+    },
+    {
+      "headline": "OpenAI's GPT-6.2 draws tester pushback",
+      "summary": "[OpenAI](https://openai.com) shipped GPT-6.2 Astra and Sol on Nov 17. Benchmarks look strong, but early testers report weak results on long agentic coding runs.",
+      "ref": "gpt-62-astra"
+    },
+    {
+      "headline": "Figma's agent is in open beta",
+      "summary": "The [Figma](https://www.figma.com) design agent is in open beta and does not use AI credits during the beta. Coding agents can also write back to Figma files over MCP.",
+      "ref": "figma-agent"
+    },
+    {
+      "headline": "Google Stitch gets a long-running product agent",
+      "summary": "[Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) introduced Stitch Loop on Nov 18, an agent that runs the cycle from discovery to implementation and security fixes.",
+      "ref": "stitch-loop"
+    },
+    {
+      "headline": "Design tools are becoming agent surfaces",
+      "summary": "Figma, Stitch, [Cursor](https://cursor.com) and [Replit](https://replit.com) all moved this month toward agents that act on the canvas, the codebase and the deploy step.",
+      "ref": "trend-agent-surfaces"
+    }
+  ],
+  "section_notes": {
+    "AI Industry News": "Quiet 24 hours. Items below span the past 10 days, with dates given."
+  },
+  "entries": [
+    {
+      "id": "anthropic-ipo",
+      "section": "AI Industry News",
+      "headline": "Anthropic prices its IPO at $83 and lists on Nasdaq as ANT",
+      "kicker": "Nov 18 to 19",
+      "summary": "[Anthropic](https://www.anthropic.com) priced 980 million Class A shares at $83, above the $70 to $78 range, for about $81.3 billion raised and a valuation near $1.5 trillion. [Reports](https://thenextweb.com/news/anthropic-ipo-prices-83-share-1-5-trillion-record-raise) differ on the opening trade, from about $111 to $115. Trading began on [Nasdaq](https://www.nasdaq.com) on Nov 19.",
+      "why_it_matters": "A public Claude maker faces quarterly scrutiny on margins and compute spend. Pricing, rate limits and roadmap commitments now carry investor pressure that builders should factor into vendor risk.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Keep your model layer swappable. Treat any single vendor's pricing as something that can change at earnings time."
+      },
+      "links": [
+        {
+          "label": "The Next Web: Anthropic prices its IPO at $83",
+          "url": "https://thenextweb.com/news/anthropic-ipo-prices-83-share-1-5-trillion-record-raise"
+        },
+        {
+          "label": "TechCrunch: IPO priced above range",
+          "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/?type=AI"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27",
+      "lead": true
+    },
+    {
+      "id": "gpt-62-astra",
+      "section": "AI Industry News",
+      "headline": "GPT-6.2 Astra and Sol launch, and early testers push back",
+      "kicker": "Nov 17",
+      "summary": "[OpenAI](https://openai.com) released GPT-6.2 Astra ($8 in, $40 out per million tokens) and Sol ($2 in, $10 out) in ChatGPT, Codex and the API. [The Next Web](https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers) reports testers such as Theo Browne saw failed long agentic runs, and [Epoch AI](https://epoch.ai) reportedly found Astra trailing Anthropic's Claude Fable 5.2 on real work. An [Artificial Analysis](https://artificialanalysis.ai) humanoid robotics benchmark, covered by [eWeek](https://eweek.com/news/openai-gpt-6-2-astra-humanoid-robotics-benchmark), ranked it first.",
+      "why_it_matters": "Benchmark wins and day-to-day agent reliability are diverging. Choose models on your own task suite, not leaderboards.",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Run Sol and Astra against five of your real agent tasks before switching defaults. Sol is the cheaper test."
+      },
+      "links": [
+        {
+          "label": "The Next Web: GPT-6.2 Astra and Sol launch",
+          "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+        },
+        {
+          "label": "eWeek: Humanoid robot benchmark",
+          "url": "https://eweek.com/news/openai-gpt-6-2-astra-humanoid-robotics-benchmark"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "claude-code-changelog",
+      "section": "AI Industry News",
+      "headline": "Claude Code 2.1.331 widens Code Mode across cloud platforms",
+      "kicker": "Nov 24",
+      "summary": "[Releasebot's changelog](https://releasebot.io/updates/anthropic/claude-code) lists [Claude Code](https://www.anthropic.com/claude-code) 2.1.331 with Code Mode on major cloud platforms plus gateway, diagnostics, plugin and VS Code improvements.",
+      "why_it_matters": "Release cadence is near weekly. Pin versions in team setups and read the changelog before upgrading shared configs.",
+      "links": [
+        {
+          "label": "Releasebot: Claude Code updates",
+          "url": "https://releasebot.io/updates/anthropic/claude-code"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "figma-agent",
+      "section": "Product Design & UX",
+      "headline": "Figma's design agent is in open beta, with new connections",
+      "kicker": "Nov 12 to 17",
+      "summary": "[Figma](https://www.figma.com) says its design agent is in open beta and does not consume AI credits during the beta, per its [help center](https://help.figma.com/hc/en-us/articles/39582753756695). A Nov 12 batch, listed by [Releasebot](https://releasebot.io/updates/figma), added a Google Drive connection for the agent on all plans and access to Figma Weave image and video models through the Figma MCP. On Nov 17 admins gained an allowlist for approving OAuth apps such as MCP clients.",
+      "why_it_matters": "Free beta usage is the moment to test the agent on real screens. The admin allowlist removes a common blocker for rolling MCP clients out to a whole team.",
+      "why_label": "Practical value",
+      "takeaway": {
+        "label": "For designers",
+        "text": "Ask your Figma admin to allowlist the MCP clients you use, then trial the agent on one flow."
+      },
+      "links": [
+        {
+          "label": "Figma help: design agent",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695"
+        },
+        {
+          "label": "Releasebot: Figma updates",
+          "url": "https://releasebot.io/updates/figma"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "figma-mcp-write",
+      "section": "Product Design & UX",
+      "headline": "Coding agents can now read and write Figma files over MCP",
+      "kicker": "Nov 2",
+      "summary": "[Startup Fortune](https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/) reports that tools such as Claude Code and [Cursor](https://cursor.com) can query a Figma file for layout, type styles, color tokens and component structure, then write changes back. A [guide to use_figma](https://www.toolworthy.ai/tool/figma-for-agents) describes agents creating frames and components on the canvas.",
+      "why_it_matters": "The design file stops being a handoff artifact and becomes a shared workspace for designers and agents. Clean tokens and components now pay off directly.",
+      "why_label": "Practical value",
+      "takeaway": {
+        "label": "For designers",
+        "text": "Tidy variables and component naming first. Agents follow your system only as well as it is structured."
+      },
+      "links": [
+        {
+          "label": "Startup Fortune: Figma opens its canvas to AI coding agents",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/"
+        },
+        {
+          "label": "Toolworthy: Figma for Agents",
+          "url": "https://www.toolworthy.ai/tool/figma-for-agents"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "stitch-loop",
+      "section": "Product Design & UX",
+      "headline": "Google introduces Stitch Loop, a long-running product agent",
+      "kicker": "Nov 18",
+      "summary": "[Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/) announced Stitch Loop as a new direction for [Stitch](https://stitch.withgoogle.com). [TestingCatalog](https://www.testingcatalog.com/early-look-at-loop-new-autonomous-ai-agent-from-google/) describes an autonomous agent that covers discovery through implementation and monitoring, with a security loop that scans code, flags vulnerabilities and opens fix PRs.",
+      "why_it_matters": "Design tooling is moving from one-shot generation to agents that keep running on a product. Designers will be reviewing agent output over time, not just prompting once.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "Google: Introducing Stitch Loop",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/"
+        },
+        {
+          "label": "TestingCatalog: early look at Loop",
+          "url": "https://www.testingcatalog.com/early-look-at-loop-new-autonomous-ai-agent-from-google/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "cursor-deploy",
+      "section": "Product Design & UX",
+      "headline": "Cursor adds managed app deployment",
+      "kicker": "Nov 6",
+      "summary": "[Cursor](https://cursor.com) agents can now spin up databases, configure logins and hosting, and check for security flaws before an app goes live, per [The New Stack](https://thenewstack.io/cursor-ai-app-deployment/). The pitch: most apps never make it off localhost.",
+      "why_it_matters": "It competes directly with [Lovable](https://lovable.dev) and [Replit](https://replit.com) on the prototype to production step, which is where designer-built prototypes usually stall.",
+      "why_label": "Practical value",
+      "links": [
+        {
+          "label": "The New Stack: Cursor app deployment",
+          "url": "https://thenewstack.io/cursor-ai-app-deployment/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "tool-stitch-loop",
+      "section": "New AI Tools",
+      "headline": "Stitch Loop",
+      "kicker": "Nov 18",
+      "summary": "Google's agent that carries a product from discovery to implementation, with a security loop that proposes fix PRs. Details beyond Google's post come from secondary coverage.",
+      "why_it_matters": null,
+      "audience": "Designers and PMs prototyping with Gemini-based tools",
+      "links": [
+        {
+          "label": "Stitch Loop announcement",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "tool-figma-agent",
+      "section": "New AI Tools",
+      "headline": "Figma design agent (open beta)",
+      "kicker": "Beta",
+      "summary": "Generates and edits full interface designs inside Figma. Free of AI credits while in beta.",
+      "why_it_matters": null,
+      "audience": "Product designers already working in Figma",
+      "links": [
+        {
+          "label": "Figma help: design agent",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "tool-magic-patterns",
+      "section": "New AI Tools",
+      "headline": "Magic Patterns Agent 2.0",
+      "kicker": "Launched Apr 23",
+      "summary": "AI design agent for going from idea to production UI. Agent Mode can browse sites to capture reference designs and fix bugs in its own output. Not new this week, but still a strong prototyping pick.",
+      "why_it_matters": null,
+      "audience": "Designers and PMs who need clickable prototypes fast",
+      "links": [
+        {
+          "label": "Magic Patterns Agent 2.0 launch post",
+          "url": "https://www.magicpatterns.com/blog/magic-patterns-agent-2-0"
+        },
+        {
+          "label": "Magic Patterns",
+          "url": "https://www.magicpatterns.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "tool-fei",
+      "section": "New AI Tools",
+      "headline": "Fei Design Mode by AutonomyAI",
+      "kicker": "Product Hunt",
+      "summary": "Point at any element in a live preview, tweak styles visually, then push changes to your codebase from Figma or Claude Design.",
+      "why_it_matters": null,
+      "audience": "Designers who want to fix UI in code without writing it",
+      "links": [
+        {
+          "label": "Fei on Product Hunt",
+          "url": "https://www.producthunt.com/products/autonomyai?launch=fei"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "tool-replit-missions",
+      "section": "New AI Tools",
+      "headline": "Replit Missions and Desktop",
+      "kicker": "Nov 20",
+      "summary": "[Replit](https://replit.com) shipped goal-driven Missions and general availability of local work in Replit Desktop, plus Microsoft Fabric and Teams integrations.",
+      "why_it_matters": null,
+      "audience": "Builders who want an agent to own a goal end to end",
+      "links": [
+        {
+          "label": "Releasebot: Replit release notes",
+          "url": "https://releasebot.io/updates/replit"
+        },
+        {
+          "label": "Replit",
+          "url": "https://replit.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "tool-cursor-deploy",
+      "section": "New AI Tools",
+      "headline": "Cursor managed deployment",
+      "kicker": "Nov 6",
+      "summary": "Agents provision databases, auth and hosting, and run security checks before launch.",
+      "why_it_matters": null,
+      "audience": "Designers and engineers shipping prototypes to real users",
+      "links": [
+        {
+          "label": "The New Stack: Cursor app deployment",
+          "url": "https://thenewstack.io/cursor-ai-app-deployment/"
+        },
+        {
+          "label": "Cursor",
+          "url": "https://cursor.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "trend-agent-surfaces",
+      "section": "Trends to Watch",
+      "headline": "Design tools are becoming agent surfaces",
+      "summary": "[Figma](https://www.figma.com) exposes its canvas to coding agents over MCP and ships its own agent. [Google Stitch](https://stitch.withgoogle.com) now runs a long-lived loop. [Cursor](https://cursor.com) and [Replit](https://replit.com) extend agents into deployment.",
+      "why_it_matters": "The unit of work shifts from a screen to a goal an agent keeps pursuing. Review, taste and system quality become the designer's leverage.",
+      "why_label": "Why it matters",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Structure design tokens and components so an agent can read them. Practice writing acceptance criteria for a design, not only mockups."
+      },
+      "links": [
+        {
+          "label": "Startup Fortune: Figma opens its canvas to AI coding agents",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "trend-harnesses",
+      "section": "Trends to Watch",
+      "headline": "From agent frameworks to harnesses and skills",
+      "summary": "The [agents-radar digest](https://github.com/duanyytop/agents-radar/issues/4481) for Nov 26 shows growth concentrated in harnesses, memory and skill bundles rather than new frameworks. Examples include [claude-mem](https://github.com/thedotmack/claude-mem) and [superpowers](https://github.com/obra/superpowers). The digest is auto-generated, so treat star counts as approximate.",
+      "why_it_matters": "Reusable skills and persistent memory are what make coding agents consistent across sessions and teammates.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Write one reusable skill for a repeated design task, such as a token audit or a QA checklist."
+      },
+      "links": [
+        {
+          "label": "agents-radar: AI Open Source Trends 2026-11-26",
+          "url": "https://github.com/duanyytop/agents-radar/issues/4481"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "insp-fei",
+      "section": "Product Design Inspiration",
+      "headline": "Direct manipulation on a live preview",
+      "summary": "[Fei Design Mode](https://www.producthunt.com/products/autonomyai?launch=fei) lets you click an element in the running app and adjust its styles, then sends the change to code.",
+      "why_it_matters": "It removes the translation step between what you see and what you ask for. The interaction is point, adjust, ship.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Fei on Product Hunt",
+          "url": "https://www.producthunt.com/products/autonomyai?launch=fei"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "insp-magic-patterns",
+      "section": "Product Design Inspiration",
+      "headline": "An agent that studies references before designing",
+      "summary": "[Magic Patterns](https://www.magicpatterns.com) Agent Mode browses real websites to capture reference designs and analyzes component libraries before it generates.",
+      "why_it_matters": "Grounding output in your references and your components mirrors how a good designer starts, and cuts generic results.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "Magic Patterns Agent 2.0",
+          "url": "https://www.magicpatterns.com/blog/magic-patterns-agent-2-0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "insp-cursor-localhost",
+      "section": "Product Design Inspiration",
+      "headline": "Naming the real pain in the product pitch",
+      "summary": "[Cursor](https://cursor.com) framed its deployment launch around one line: most apps never make it off localhost. The feature then removes exactly those steps: database, login, hosting, security check.",
+      "why_it_matters": "A launch that names a specific, familiar blocker and then collapses it into one flow is easy to understand and easy to try.",
+      "why_label": "Why it works",
+      "links": [
+        {
+          "label": "The New Stack: Cursor app deployment",
+          "url": "https://thenewstack.io/cursor-ai-app-deployment/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "gh-firecrawl",
+      "section": "GitHub & Open Source",
+      "headline": "firecrawl/firecrawl",
+      "kicker": "TypeScript",
+      "summary": "[Firecrawl](https://github.com/firecrawl/firecrawl) is a search and scrape API that gives agents access to 550+ data sources. The digest lists it above 210k stars with a gain of about 1.1k in a day.",
+      "why_it_matters": "Reliable web data is the common dependency for research and competitor-audit agents.",
+      "links": [
+        {
+          "label": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "gh-cli-anything",
+      "section": "GitHub & Open Source",
+      "headline": "HKUDS/CLI-Anything",
+      "kicker": "Python",
+      "summary": "[CLI-Anything](https://github.com/HKUDS/CLI-Anything) makes software usable by AI agents through a CLI layer. About 14.8k stars, up about 1.1k in a day.",
+      "why_it_matters": "A fast path to let agents drive apps that have no API or MCP server.",
+      "links": [
+        {
+          "label": "HKUDS/CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "gh-claude-context",
+      "section": "GitHub & Open Source",
+      "headline": "zilliztech/claude-context",
+      "kicker": "TypeScript",
+      "summary": "[claude-context](https://github.com/zilliztech/claude-context) is a code-search MCP server that supplies codebase context to Claude Code. About 12.7k stars.",
+      "why_it_matters": "Better retrieval on large repos is one of the cheapest ways to improve agent output.",
+      "links": [
+        {
+          "label": "zilliztech/claude-context",
+          "url": "https://github.com/zilliztech/claude-context"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "gh-superpowers",
+      "section": "GitHub & Open Source",
+      "headline": "obra/superpowers",
+      "kicker": "Shell",
+      "summary": "[superpowers](https://github.com/obra/superpowers) is an agentic skills framework and development methodology. About 2.8k stars, up about 900 in a day.",
+      "why_it_matters": "A ready-made set of skills you can read, fork and adapt to a design workflow.",
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "gh-graphify",
+      "section": "GitHub & Open Source",
+      "headline": "Graphify-Labs/graphify",
+      "kicker": "Python",
+      "summary": "[graphify](https://github.com/Graphify-Labs/graphify) builds queryable knowledge graphs from code and docs using AST parsing, without a vector store. About 153k stars.",
+      "why_it_matters": "Gives agents structural understanding of a codebase, which helps with design system audits.",
+      "links": [
+        {
+          "label": "Graphify-Labs/graphify",
+          "url": "https://github.com/Graphify-Labs/graphify"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "buzz-astra",
+      "section": "Social Buzz",
+      "headline": "Tester backlash on GPT-6.2 Astra",
+      "kicker": "X",
+      "summary": "Per [The Next Web](https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers), Matt Shumer called the release essentially unusable, and Theo Browne said a Rust compiler task got 56% slower. OpenAI's Thibault Sottiaux replied that late updates shipped before release.",
+      "why_it_matters": "A reminder to test on your own workload. Early-week sentiment often shifts after patches.",
+      "links": [
+        {
+          "label": "The Next Web: GPT-6.2 launch and tester reaction",
+          "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "buzz-ipo-bubble",
+      "section": "Social Buzz",
+      "headline": "Does Anthropic's debut settle the AI bubble question?",
+      "kicker": "Commentary",
+      "summary": "[NeoTeo](https://www.neoteo.com/en/anthropics-nasdaq-debut-leaves-the-ai-bubble-question-open) argues the Nasdaq debut leaves the bubble question open. Investor commentary, including from ARK's Cathie Wood via [Benzinga](https://www.benzinga.com/markets/equities/26/11/63661894/cathie-wood-says-openai-and-anthropic-have-stolen-the-show-but-criticizes-dario-amodeis-negative-headlines-on-human-extinction-odds-and-job-losses), says OpenAI and Anthropic have stolen the show.",
+      "why_it_matters": "Market sentiment drives funding and pricing for the tools you depend on.",
+      "links": [
+        {
+          "label": "NeoTeo: Anthropic's Nasdaq debut",
+          "url": "https://www.neoteo.com/en/anthropics-nasdaq-debut-leaves-the-ai-bubble-question-open"
+        },
+        {
+          "label": "Benzinga: Cathie Wood on OpenAI and Anthropic",
+          "url": "https://www.benzinga.com/markets/equities/26/11/63661894/cathie-wood-says-openai-and-anthropic-have-stolen-the-show-but-criticizes-dario-amodeis-negative-headlines-on-human-extinction-odds-and-job-losses"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "buzz-ph-design",
+      "section": "Social Buzz",
+      "headline": "Design agents keep landing on Product Hunt",
+      "kicker": "Product Hunt",
+      "summary": "[Product Hunt](https://www.producthunt.com) listings for [Magic Patterns Agent 2.0](https://www.producthunt.com/posts/magic-patterns-agent-2-0) and [Fei Design Mode](https://www.producthunt.com/products/autonomyai?launch=fei) show steady interest in agents that edit UI directly. I could not verify fresh Hacker News or Reddit threads for the past 24 hours.",
+      "why_it_matters": "Direct-edit design agents are the active product category to watch.",
+      "links": [
+        {
+          "label": "Magic Patterns Agent 2.0 on Product Hunt",
+          "url": "https://www.producthunt.com/posts/magic-patterns-agent-2-0"
+        },
+        {
+          "label": "Fei on Product Hunt",
+          "url": "https://www.producthunt.com/products/autonomyai?launch=fei"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "learn-article",
+      "section": "Learning Corner",
+      "headline": "Figma opens its canvas to AI coding agents",
+      "kicker": "Article",
+      "summary": "[Startup Fortune](https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/) explains how agents read and write Figma files and why Figma is making this move.",
+      "why_it_matters": "It frames the design file as agent infrastructure, which shapes how to structure your system.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "What an agent can read from a Figma file: layout, type styles, tokens and components."
+      },
+      "links": [
+        {
+          "label": "Startup Fortune article",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "learn-video",
+      "section": "Learning Corner",
+      "headline": "From Figma to Code: Build an Agent-Ready Design System With Claude",
+      "kicker": "Video",
+      "summary": "A [YouTube walkthrough](https://www.youtube.com/watch?v=tUnrxo0qTAw) on turning Figma components and tokens into a React component library with Claude. I saw only the title and description, not the full video.",
+      "why_it_matters": "Directly applicable to the Figma MCP changes above.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "How tokens and components map to code an agent can maintain."
+      },
+      "links": [
+        {
+          "label": "YouTube video",
+          "url": "https://www.youtube.com/watch?v=tUnrxo0qTAw"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "learn-github",
+      "section": "Learning Corner",
+      "headline": "obra/superpowers",
+      "kicker": "GitHub project",
+      "summary": "Read the skills in [superpowers](https://github.com/obra/superpowers) to see how a mature agent workflow is written down.",
+      "why_it_matters": "Good model for writing your own design-review skills.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "How to structure reusable agent skills."
+      },
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "learn-design",
+      "section": "Learning Corner",
+      "headline": "Figma design agent help article",
+      "kicker": "Design resource",
+      "summary": "The official [Figma help page](https://help.figma.com/hc/en-us/articles/39582753756695) for the design agent covers beta status and credit usage.",
+      "why_it_matters": "The first-party reference for what the agent can and cannot do today.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Current beta limits before you plan a team trial."
+      },
+      "links": [
+        {
+          "label": "Figma help: design agent",
+          "url": "https://help.figma.com/hc/en-us/articles/39582753756695"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "learn-workflow",
+      "section": "Learning Corner",
+      "headline": "Design to code with Antigravity and the Stitch MCP",
+      "kicker": "AI workflow",
+      "summary": "A [Google codelab](https://codelabs.developers.google.com/design-to-code-with-antigravity-stitch?hl=ja) walks through generating a design in [Stitch](https://stitch.withgoogle.com) and turning it into code in [Antigravity](https://en.wikipedia.org/wiki/Google_Antigravity) through the Stitch MCP server. The linked version is the Japanese edition.",
+      "why_it_matters": "A complete, hands-on design to code loop in one sitting.",
+      "takeaway": {
+        "label": "Learn",
+        "text": "How an MCP server connects a design tool to a coding agent."
+      },
+      "links": [
+        {
+          "label": "Google codelab",
+          "url": "https://codelabs.developers.google.com/design-to-code-with-antigravity-stitch?hl=ja"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "opp-token-ops",
+      "section": "Opportunities",
+      "headline": "Agent-ready design systems",
+      "summary": "Teams adopting [Figma](https://www.figma.com) MCP write access need tokens and components cleaned up so agents behave. Offer an audit and cleanup as a service or an internal project.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Startup Fortune: Figma opens its canvas to AI coding agents",
+          "url": "https://startupfortune.com/figma-opens-its-canvas-to-ai-coding-agents-answering-canvas-pivot/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "opp-prototype-to-prod",
+      "section": "Opportunities",
+      "headline": "Prototype to production specialist",
+      "summary": "With [Cursor](https://cursor.com) handling deployment, a designer who can ship a working, secured prototype has a rare profile. Pitch it to startups without engineers.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The New Stack: Cursor app deployment",
+          "url": "https://thenewstack.io/cursor-ai-app-deployment/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "opp-model-evals",
+      "section": "Opportunities",
+      "headline": "Task-suite evaluation for design agents",
+      "summary": "Model rankings and tester experience now disagree (see [GPT-6.2](https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers)). Build and sell a small UI-task benchmark that teams can run on each new model.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "The Next Web: GPT-6.2 launch and tester reaction",
+          "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "opp-skills",
+      "section": "Opportunities",
+      "headline": "Publish design skills for coding agents",
+      "summary": "Skills libraries such as [superpowers](https://github.com/obra/superpowers) are trending. A well-made set for accessibility checks, token audits or UX copy review builds reputation fast.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    },
+    {
+      "id": "experiment",
+      "section": "Today's Experiment",
+      "headline": "Restyle one screen through Figma MCP and Claude Code",
+      "kicker": "25 minutes",
+      "summary": "Connect [Claude Code](https://www.anthropic.com/claude-code) to a Figma file and ask it to apply your tokens to a single screen, then compare with your own pass.",
+      "why_it_matters": "You learn where your tokens and naming help or hurt an agent in 25 minutes.",
+      "why_label": "Why now",
+      "steps": [
+        {
+          "label": "Step 1 (8 min)",
+          "text": "Follow a [Figma MCP setup video](https://www.youtube.com/watch?v=fRIgugfo4SY) and connect Claude Code to a [Figma](https://www.figma.com) file you own."
+        },
+        {
+          "label": "Step 2 (10 min)",
+          "text": "Ask the agent to list the tokens and components on one screen, then apply your color and type tokens to it."
+        },
+        {
+          "label": "Step 3 (7 min)",
+          "text": "Diff the result against your design. Note which tokens or names the agent misread and fix them in the file."
+        }
+      ],
+      "links": [
+        {
+          "label": "Figma MCP setup video",
+          "url": "https://www.youtube.com/watch?v=fRIgugfo4SY"
+        },
+        {
+          "label": "Claude Code",
+          "url": "https://www.anthropic.com/claude-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-27"
+    }
+  ],
+  "dont_miss": [
+    "Test GPT-6.2 Sol on your own agent tasks before changing any default model ([The Next Web](https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers)).",
+    "Try the free [Figma design agent beta](https://help.figma.com/hc/en-us/articles/39582753756695) on one real flow while it costs no AI credits.",
+    "Read how [Stitch Loop](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/) works and decide where agent review fits in your design process."
+  ],
+  "footnote": "Sourced from [The Next Web](https://thenextweb.com), [TechCrunch](https://techcrunch.com), [The New Stack](https://thenewstack.io), [Startup Fortune](https://startupfortune.com), [Releasebot](https://releasebot.io), [Google](https://blog.google), [Figma](https://help.figma.com), [Product Hunt](https://www.producthunt.com) and the agents-radar digest. The past 24 hours were quiet, so several items are from the past 10 days and are dated. Direct fetches of some sites were blocked, so some details rely on secondary coverage; I could not verify fresh Hacker News or Reddit threads."
+}
