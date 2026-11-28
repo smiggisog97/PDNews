@@ -1,0 +1,664 @@
+{
+  "date": "2026-11-28",
+  "title": "AI + Product Design Morning Brief",
+  "doc_url": "https://docs.google.com/document/d/1Rolzx7Ks_au4Y1BLfbF5d8jGvEKpYW4P7mx_jSglzMw/edit",
+  "highlights": [
+    {
+      "headline": "Google ships Gemini 4 Neon",
+      "summary": "[Google](https://blog.google) launched [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) on Nov 18, a mid-tier model it says costs 32% less per task than Carbon.",
+      "ref": "gemini-4-neon"
+    },
+    {
+      "headline": "Claude becomes a shared workspace",
+      "summary": "[Anthropic](https://www.anthropic.com) added Whiteboards and Sheets in beta and made Data GA on Nov 10.",
+      "ref": "claude-collab"
+    },
+    {
+      "headline": "v0 now ships through pull requests",
+      "summary": "[Vercel](https://vercel.com)'s rebuilt [v0](https://v0.app) opens a branch per chat and PRs against main.",
+      "ref": "v0-git"
+    },
+    {
+      "headline": "Figma MCP is allowlisted",
+      "summary": "[Figma](https://www.figma.com)'s remote MCP server rejects unlisted clients with a 403. The Desktop server avoids it.",
+      "ref": "figma-mcp-gate"
+    },
+    {
+      "headline": "Agents get eyes in the browser",
+      "summary": "[Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) lets coding agents inspect live Chrome.",
+      "ref": "gh-chrome-mcp"
+    }
+  ],
+  "section_notes": {
+    "AI Industry News": "Quiet 24 hours. Items below span the past 18 days, with dates given. Some figures come from secondary coverage."
+  },
+  "entries": [
+    {
+      "id": "gemini-4-neon",
+      "section": "AI Industry News",
+      "headline": "Google launches Gemini 4 Neon, a mid-tier model aimed at software work",
+      "summary": "[Google](https://blog.google) released [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) on Nov 18. It sits between Gemini 4 Carbon (hardest long projects) and Gemini 4 Hydrogen (fast everyday work). It is available in the Gemini app for AI Pro and Ultra, the Gemini API and [Antigravity](https://antigravity.google). Google says it costs 32% less per task than Carbon. Benchmark rankings and pricing in third-party coverage vary, so check the model card before relying on them.",
+      "why_it_matters": "A cheaper model close to the top tier changes the default choice for agent loops and UI-to-code generation, where cost per task decides what you can run all day.",
+      "links": [
+        {
+          "label": "Google: Introducing Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "label": "9to5Google: Gemini 4 Neon announcement",
+          "url": "https://9to5google.com/2026/11/18/gemini-4-neon-announcement/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Nov 18",
+      "takeaway": {
+        "label": "For builders",
+        "text": "Run Neon against your own prompts and compare cost per finished task, not the leaderboard."
+      },
+      "lead": true
+    },
+    {
+      "id": "claude-collab",
+      "section": "AI Industry News",
+      "headline": "Anthropic ships Claude Whiteboards and Sheets in beta, Data goes GA",
+      "summary": "[Anthropic](https://www.anthropic.com) launched Claude Whiteboards and Claude Sheets in beta on Nov 10 and made Claude Dashboards generally available as Claude Data. Docs and Slides were already in beta. [Coverage](https://runtimewire.com/article/anthropic-claude-whiteboards-sheets-data-launch) says Team plans have all three on by default, while Enterprise starts with Whiteboards and Sheets off.",
+      "why_it_matters": "Chat is turning into a shared workspace with artifacts that teams edit together. That puts Claude closer to the territory of design and planning tools.",
+      "links": [
+        {
+          "label": "RuntimeWire: Claude Whiteboards, Sheets and Data",
+          "url": "https://runtimewire.com/article/anthropic-claude-whiteboards-sheets-data-launch"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://www.anthropic.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Nov 10",
+      "takeaway": {
+        "label": "For designers",
+        "text": "Try a whiteboard session in Claude for a workshop flow and note what it does better or worse than your current tool."
+      }
+    },
+    {
+      "id": "gpt-62-followup",
+      "section": "AI Industry News",
+      "headline": "GPT-6.2 Astra and Sol remain the model everyone is testing",
+      "summary": "[OpenAI](https://openai.com) released GPT-6.2 Astra and Sol on Nov 17. [Digital Trends](https://digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less) frames Gemini 4 Neon as competitive with GPT-6.2 Sol and Claude Opus 5.5 at lower cost.",
+      "why_it_matters": "The frontier is now a three-way race on price per task. Locking into one vendor costs more each month.",
+      "links": [
+        {
+          "label": "Digital Trends: Gemini 4 Neon vs Opus 5.5 and GPT-6.2 Sol",
+          "url": "https://digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less"
+        },
+        {
+          "label": "OpenAI",
+          "url": "https://openai.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Nov 17 to 28"
+    },
+    {
+      "id": "v0-git",
+      "section": "Product Design & UX",
+      "headline": "v0 rebuilt for production: branches, PRs and deploy on merge",
+      "summary": "[Vercel](https://vercel.com) says the [new v0](https://vercel.com/blog/introducing-the-new-v0) has a Git panel that creates a branch per chat, opens pull requests against main and deploys on merge. It also imports existing GitHub repos, per [VentureBeat](https://venturebeat.com/infrastructure/vercel-rebuilt-v0-to-tackle-the-90-problem-connecting-ai-generated-code-to). Community threads report sync problems when the chat branch matches main.",
+      "why_it_matters": "Designers can ship changes through the same review path as engineers, without pushing to main.",
+      "links": [
+        {
+          "label": "Vercel: Introducing the new v0",
+          "url": "https://vercel.com/blog/introducing-the-new-v0"
+        },
+        {
+          "label": "VentureBeat: Vercel rebuilt v0",
+          "url": "https://venturebeat.com/infrastructure/vercel-rebuilt-v0-to-tackle-the-90-problem-connecting-ai-generated-code-to"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Recent",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "figma-mcp-gate",
+      "section": "Product Design & UX",
+      "headline": "Figma's remote MCP server only accepts allowlisted clients",
+      "summary": "[Figma](https://www.figma.com)'s remote MCP server gates the connect scope to approved clients, and unlisted tools get a 403 during OAuth, per a [Figma forum thread](https://forum.figma.com/report-a-problem-6/grok-bot-cursor-remote-figma-mcp-oauth-fails-with-http-403-forbidden-client-allowlist-58274). Another thread says new clients are paused. The local Desktop MCP server in Dev Mode avoids the allowlist.",
+      "why_it_matters": "If your agent setup fails on Figma with a 403, the cause is the allowlist, not your config. Use the Desktop server as the workaround.",
+      "links": [
+        {
+          "label": "Figma forum: 403 client allowlist",
+          "url": "https://forum.figma.com/report-a-problem-6/grok-bot-cursor-remote-figma-mcp-oauth-fails-with-http-403-forbidden-client-allowlist-58274"
+        },
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Forum report",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "framer-agents",
+      "section": "Product Design & UX",
+      "headline": "Framer 3.0 agents work directly on the canvas",
+      "summary": "[Framer](https://www.framer.com) 3.0 (launched Jun 17) added agents that see and edit the canvas, build pages and components, connect the CMS and manage SEO. They plug into Claude Code, Cursor and Codex, per its [Product Hunt launch](https://www.producthunt.com/p/framer/framer-3-0-2). Older than 24 hours, included because it is the clearest example of the canvas-agent pattern.",
+      "why_it_matters": "It shows the canvas as an agent surface, which is where design tools are heading.",
+      "links": [
+        {
+          "label": "Framer 3.0 on Product Hunt",
+          "url": "https://www.producthunt.com/p/framer/framer-3-0-2"
+        },
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Jun 17",
+      "why_label": "Practical value"
+    },
+    {
+      "id": "tool-neon",
+      "section": "New AI Tools",
+      "headline": "Gemini 4 Neon",
+      "summary": "Google's mid-tier model, strong on software engineering and knowledge work, in the Gemini app and API.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Introducing Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-28",
+      "kicker": "Nov 18",
+      "audience": "Builders choosing a cost-efficient default model"
+    },
+    {
+      "id": "tool-v0",
+      "section": "New AI Tools",
+      "headline": "v0",
+      "summary": "Vercel's rebuilt generator with a Git panel, branch per chat and PRs against main.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "v0",
+          "url": "https://v0.app"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-28",
+      "kicker": "Rebuilt",
+      "audience": "Designers who want to ship to a real repo"
+    },
+    {
+      "id": "tool-chrome-mcp",
+      "section": "New AI Tools",
+      "headline": "Chrome DevTools MCP",
+      "summary": "Lets Claude, Cursor, Gemini or Copilot drive a live Chrome: network, console, screenshots, performance traces.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Chrome DevTools MCP",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 8,
+      "date": "2026-11-28",
+      "kicker": "Open source",
+      "audience": "Designers and engineers verifying UI in a real browser"
+    },
+    {
+      "id": "tool-claude-boards",
+      "section": "New AI Tools",
+      "headline": "Claude Whiteboards and Sheets",
+      "summary": "Shared whiteboards and spreadsheets inside Claude, in beta, with Claude Data now GA.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Claude",
+          "url": "https://claude.ai"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-28",
+      "kicker": "Nov 10",
+      "audience": "Teams running workshops and planning in Claude"
+    },
+    {
+      "id": "tool-framer",
+      "section": "New AI Tools",
+      "headline": "Framer",
+      "summary": "Site builder with canvas agents and branching, connecting to Claude Code, Cursor and Codex.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Framer",
+          "url": "https://www.framer.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": 7,
+      "date": "2026-11-28",
+      "kicker": "Agents",
+      "audience": "Designers shipping marketing sites"
+    },
+    {
+      "id": "trend-cost-per-task",
+      "section": "Trends to Watch",
+      "headline": "Cost per task replaces benchmark rank",
+      "summary": "Google leads its Neon launch with cost per task, and [coverage](https://digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less) compares it with Opus 5.5 and GPT-6.2 Sol on price.",
+      "why_it_matters": "Teams running agents all day care about what a finished task costs. Learn to measure it on your own work.",
+      "links": [
+        {
+          "label": "Digital Trends",
+          "url": "https://digitaltrends.com/computing/google-says-gemini-4-neon-can-hang-with-claude-opus-5-5-and-gpt-6-2-sol-for-less"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Log tokens and retries per task in your next prototype."
+      }
+    },
+    {
+      "id": "trend-git-for-designers",
+      "section": "Trends to Watch",
+      "headline": "Designers get a Git path through AI tools",
+      "summary": "[v0](https://v0.app) and [Framer](https://www.framer.com) now offer branches, PRs and branching for non-engineers.",
+      "why_it_matters": "Review, branch and merge habits are becoming part of the design workflow.",
+      "links": [
+        {
+          "label": "Vercel: new v0",
+          "url": "https://vercel.com/blog/introducing-the-new-v0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Learn pull request basics and how to read a diff."
+      }
+    },
+    {
+      "id": "trend-mcp-gating",
+      "section": "Trends to Watch",
+      "headline": "MCP access is getting gated",
+      "summary": "Figma's remote server allowlists clients, per [forum reports](https://forum.figma.com/report-a-problem-6/grok-bot-cursor-remote-figma-mcp-oauth-fails-with-http-403-forbidden-client-allowlist-58274).",
+      "why_it_matters": "Open protocol, controlled access. Plan for local servers as a fallback.",
+      "links": [
+        {
+          "label": "Figma forum",
+          "url": "https://forum.figma.com/report-a-problem-6/grok-bot-cursor-remote-figma-mcp-oauth-fails-with-http-403-forbidden-client-allowlist-58274"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "takeaway": {
+        "label": "Learn",
+        "text": "Know how to set up both remote and local MCP servers."
+      }
+    },
+    {
+      "id": "insp-v0-git",
+      "section": "Product Design Inspiration",
+      "headline": "v0's Git panel",
+      "summary": "A branch per chat and a visible pull request inside the chat sidebar.",
+      "why_it_matters": "It maps a familiar mental model (one conversation, one change) onto Git without exposing the commands. See [Vercel](https://vercel.com/blog/introducing-the-new-v0).",
+      "links": [
+        {
+          "label": "Vercel: Introducing the new v0",
+          "url": "https://vercel.com/blog/introducing-the-new-v0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "insp-framer-canvas",
+      "section": "Product Design Inspiration",
+      "headline": "Framer's agent on the canvas",
+      "summary": "The agent edits the same canvas you see, so changes appear where you work.",
+      "why_it_matters": "Output lands in the design surface, not a separate chat transcript. See [Framer 3.0](https://www.producthunt.com/p/framer/framer-3-0-2).",
+      "links": [
+        {
+          "label": "Framer 3.0 on Product Hunt",
+          "url": "https://www.producthunt.com/p/framer/framer-3-0-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "insp-claude-defaults",
+      "section": "Product Design Inspiration",
+      "headline": "Claude's plan-based defaults for new features",
+      "summary": "Team plans get Whiteboards, Sheets and Data on, Enterprise starts with some off, per [RuntimeWire](https://runtimewire.com/article/anthropic-claude-whiteboards-sheets-data-launch).",
+      "why_it_matters": "Rollout controls by plan respect admin concerns without blocking small teams.",
+      "links": [
+        {
+          "label": "RuntimeWire",
+          "url": "https://runtimewire.com/article/anthropic-claude-whiteboards-sheets-data-launch"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "why_label": "Why it works"
+    },
+    {
+      "id": "gh-chrome-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "ChromeDevTools/chrome-devtools-mcp",
+      "summary": "An Apache-2.0 MCP server that lets coding agents inspect and control live Chrome: network requests, console, screenshots and performance traces. Install with `npx chrome-devtools-mcp@latest`.",
+      "why_it_matters": "Roundups put it above 56K stars. Verify the count on GitHub, since it comes from a third-party roundup. Agents that can see the browser close the loop on UI work. The server exposes browser content to the client, so avoid sensitive sessions.",
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        },
+        {
+          "label": "Chrome for Developers blog",
+          "url": "https://developer.chrome.com/blog/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "MCP",
+      "why_label": "Why now"
+    },
+    {
+      "id": "gh-qwen-code",
+      "section": "GitHub & Open Source",
+      "headline": "QwenLM/qwen-code",
+      "summary": "[Alibaba](https://www.alibabagroup.com)'s open-source coding agent, reported at roughly 30K stars in a roundup (unverified).",
+      "why_it_matters": "An open alternative to closed coding agents.",
+      "links": [
+        {
+          "label": "QwenLM/qwen-code",
+          "url": "https://github.com/QwenLM/qwen-code"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Coding agent",
+      "why_label": "Why now"
+    },
+    {
+      "id": "gh-github-mcp",
+      "section": "GitHub & Open Source",
+      "headline": "github/github-mcp-server",
+      "summary": "GitHub's MCP server exposing issues, commits, branches and pull requests as agent tools.",
+      "why_it_matters": "Pairs with Git-based design workflows like v0's.",
+      "links": [
+        {
+          "label": "github/github-mcp-server",
+          "url": "https://github.com/github/github-mcp-server"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "MCP",
+      "why_label": "Why now"
+    },
+    {
+      "id": "buzz-neon",
+      "section": "Social Buzz",
+      "headline": "Gemini 4 Neon vs the field",
+      "summary": "Coverage compares Neon with Claude Fable 5.2 on the [Vals Index](https://letsdatascience.com/news/google-deepmind-launches-gemini-4-neon-with-lower-cost-per-t-00b19126), with Neon behind by 0.4 points at under half the cost per task.",
+      "why_it_matters": "Low-cost near-parity is the thread worth following. Check the numbers yourself.",
+      "links": [
+        {
+          "label": "Let's Data Science",
+          "url": "https://letsdatascience.com/news/google-deepmind-launches-gemini-4-neon-with-lower-cost-per-t-00b19126"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Commentary"
+    },
+    {
+      "id": "buzz-mcp-403",
+      "section": "Social Buzz",
+      "headline": "Figma MCP 403 threads",
+      "summary": "Developers report 403 errors connecting [Cursor](https://cursor.com) and other clients, see this [Cursor forum thread](https://forum.cursor.com/t/figma-mcp-shows-forbidden-in-automations-cloud-agents/162969).",
+      "why_it_matters": "Practical fix: use the Desktop MCP server.",
+      "links": [
+        {
+          "label": "Cursor forum",
+          "url": "https://forum.cursor.com/t/figma-mcp-shows-forbidden-in-automations-cloud-agents/162969"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Forum"
+    },
+    {
+      "id": "learn-article",
+      "section": "Learning Corner",
+      "headline": "Introducing the new v0",
+      "summary": "Vercel's write-up of how v0 now connects generated code to real repos and deploys.",
+      "why_it_matters": "Read it for the shape of a design-to-production flow.",
+      "links": [
+        {
+          "label": "Vercel: Introducing the new v0",
+          "url": "https://vercel.com/blog/introducing-the-new-v0"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Article",
+      "why_label": "Why read"
+    },
+    {
+      "id": "learn-video",
+      "section": "Learning Corner",
+      "headline": "Figma MCP setup video",
+      "summary": "Walkthrough of connecting an agent to Figma over MCP.",
+      "why_it_matters": "About 8 minutes to a working setup.",
+      "links": [
+        {
+          "label": "Figma MCP setup",
+          "url": "https://www.youtube.com/watch?v=fRIgugfo4SY"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Video",
+      "why_label": "Why watch"
+    },
+    {
+      "id": "learn-github",
+      "section": "Learning Corner",
+      "headline": "chrome-devtools-mcp",
+      "summary": "Read the README and docs for tool list and install steps.",
+      "why_it_matters": "Learn what an agent can observe in a live browser.",
+      "links": [
+        {
+          "label": "ChromeDevTools/chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "GitHub project",
+      "why_label": "Why explore"
+    },
+    {
+      "id": "learn-design",
+      "section": "Learning Corner",
+      "headline": "Framer 3.0 launch notes",
+      "summary": "A concise tour of agent, branching and community features.",
+      "why_it_matters": "Good reference for canvas-agent UX patterns.",
+      "links": [
+        {
+          "label": "Framer 3.0",
+          "url": "https://www.producthunt.com/p/framer/framer-3-0-2"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "Design resource",
+      "why_label": "Why study"
+    },
+    {
+      "id": "learn-workflow",
+      "section": "Learning Corner",
+      "headline": "Branch per chat with v0",
+      "summary": "Connect a repo, make a change in a chat, open the PR and review the preview deploy.",
+      "why_it_matters": "Teaches the review loop non-engineers need.",
+      "links": [
+        {
+          "label": "v0 GitHub docs",
+          "url": "https://v0.app/docs/github"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "AI workflow",
+      "why_label": "Why try"
+    },
+    {
+      "id": "opp-cost-evals",
+      "section": "Opportunities",
+      "headline": "Cost-per-task evaluation",
+      "summary": "Teams need someone to compare models on their own flows. Designers who can write test prompts and judge output quality are useful here.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28"
+    },
+    {
+      "id": "opp-pr-design",
+      "section": "Opportunities",
+      "headline": "Design-to-PR workflows",
+      "summary": "Build and document a path from design change to reviewed pull request using v0 or Framer.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "v0",
+          "url": "https://v0.app"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28"
+    },
+    {
+      "id": "opp-mcp-guides",
+      "section": "Opportunities",
+      "headline": "MCP setup guides for design teams",
+      "summary": "Allowlists and 403 errors confuse teams. A clear internal guide has real value.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Figma",
+          "url": "https://www.figma.com"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28"
+    },
+    {
+      "id": "opp-browser-agents",
+      "section": "Opportunities",
+      "headline": "Browser-verified UI QA",
+      "summary": "Use Chrome DevTools MCP to let agents check layouts, console errors and performance after a design change.",
+      "why_it_matters": null,
+      "links": [
+        {
+          "label": "Chrome DevTools MCP",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28"
+    },
+    {
+      "id": "experiment",
+      "section": "Today's Experiment",
+      "headline": "Let an agent inspect your own page with Chrome DevTools MCP",
+      "summary": "Connect [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) to your coding agent and have it audit one screen.",
+      "why_it_matters": "You see in 25 minutes what an agent can verify about your UI.",
+      "links": [
+        {
+          "label": "Chrome DevTools MCP",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        },
+        {
+          "label": "Chrome for Developers blog",
+          "url": "https://developer.chrome.com/blog/chrome-devtools-mcp"
+        }
+      ],
+      "image_url": null,
+      "tool_rating": null,
+      "date": "2026-11-28",
+      "kicker": "25 minutes",
+      "why_label": "Why now",
+      "steps": [
+        {
+          "label": "Step 1 (8 min)",
+          "text": "Add the server with `npx chrome-devtools-mcp@latest` to your agent client (needs current Node.js LTS)."
+        },
+        {
+          "label": "Step 2 (10 min)",
+          "text": "Open a page you own and ask the agent to list console errors, slow network requests and take a screenshot."
+        },
+        {
+          "label": "Step 3 (7 min)",
+          "text": "Fix one issue it found and ask it to verify. Note what it missed."
+        }
+      ]
+    }
+  ],
+  "dont_miss": [
+    "Run [Gemini 4 Neon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/) on one of your own agent tasks and compare cost.",
+    "Try [v0](https://v0.app)'s Git panel on a small change.",
+    "Install [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) and audit one page."
+  ],
+  "footnote": "Sourced from [Google](https://blog.google), [Vercel](https://vercel.com), [VentureBeat](https://venturebeat.com), [Digital Trends](https://digitaltrends.com), [9to5Google](https://9to5google.com), [RuntimeWire](https://runtimewire.com), [Product Hunt](https://www.producthunt.com) and [Figma forum](https://forum.figma.com). Most fetches were blocked, so details come from search snippets."
+}
